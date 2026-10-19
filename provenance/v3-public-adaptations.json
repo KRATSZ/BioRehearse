@@ -1,0 +1,44 @@
+{
+  "schema": "biorehearse.public-path-adaptation.v3",
+  "original_design_sha256": "8b3c60d5dd29f88f31439810f4294907936d238405b692d6d8937cd3273478a3",
+  "public_design_sha256": "a3d7ce8810c1401415503bfb16272da041138f3f773ba3424b576735f0bf9c8c",
+  "changes": [
+    {
+      "path": "benchmarks/v2/frozen.json",
+      "original_sha256": "7d83e77f8f5be5f5bffc6a6e84ef912cde68165dedfd5f360fa9bf0aacd68edc",
+      "public_sha256": "de9cbc6dccc974a097cf3ea0e358bfe4b7120c3867932ea7abbb3348b5ed8248",
+      "reason": "Existing public v2 privacy/path adaptation; scientific source unchanged"
+    },
+    {
+      "path": "benchmarks/v3/protocol-cp-sat-unknown-300s-followup.json",
+      "original_sha256": "03457b71b85192000aa874242fad87cb4c73f324270908953daac350576b2627",
+      "public_sha256": "eb76e0f9a4e304d3ef7f7f346898480ef0f7d41e2f47d89ce72fab230ef14a4d",
+      "reason": "Only dependency hash of public-adapted design; configuration and source hashes unchanged"
+    },
+    {
+      "path": "benchmarks/v3/protocol-sgs-budget-extension.json",
+      "original_sha256": "17c4ea0ef8bc78e7ba13a0467ac295055d5bd7b21bfe7be2991ebebab83e8808",
+      "public_sha256": "9f8b2d6e5054f03f23d41ab13cbe54244d41855b6dd4e87074740ff84cccbf3e",
+      "reason": "Only dependency hash of public-adapted design; configuration and source hashes unchanged"
+    },
+    {
+      "path": "benchmarks/v3/protocol-sgs-v32.json",
+      "original_sha256": "54d38c709182eeeff875f7bb33813998d320226f33b3e986fc6b9710c5099be5",
+      "public_sha256": "2b40ba08853c77a0113aef4ba1fc5f0cf4e157e560058a1ee8906bfa127d4d0f",
+      "reason": "Only dependency hash of public-adapted design; configuration and source hashes unchanged"
+    },
+    {
+      "path": "benchmarks/v3/protocol-sgs-v33.json",
+      "original_sha256": "f5603dac46b5ff75bd55f00bfb7cc6c10af3e2196a7a7f67e12d73cac1d8b867",
+      "public_sha256": "8221d0a36706516c4ae3d6ab6fd028f5224e8a9c448f2281ea2eeabc7d360286",
+      "reason": "Only dependency hash of public-adapted design; configuration and source hashes unchanged"
+    }
+  ],
+  "not_a_new_prospective_freeze": true,
+  "unchanged": [
+    "scientific source bytes",
+    "configuration and case membership",
+    "raw results",
+    "scorers"
+  ]
+}

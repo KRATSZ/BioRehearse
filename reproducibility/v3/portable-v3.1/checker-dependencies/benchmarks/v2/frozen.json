@@ -1,0 +1,354 @@
+{
+  "protocol": "v2.1",
+  "frozen_at": "2026-10-19T05:03:00.633244+00:00",
+  "public_preregistration": false,
+  "files": [
+    {
+      "path": "benchmarks/v2/repair.py",
+      "sha256": "b692906b36790b1772ce33fccb25b15127b1916b7da8e71155808a22aedaacc3"
+    },
+    {
+      "path": "benchmarks/v2/run.py",
+      "sha256": "a75b13540b4162134a4da49eb6fd6e5e8360a9d5b0d1bb1389a1319087079e66"
+    },
+    {
+      "path": "benchmarks/v2/language_design.py",
+      "sha256": "db211e8f40b3d77f5ee8841f572c1aebbb15b98cc8a0bf17ee710319a3e8e70a"
+    },
+    {
+      "path": "benchmarks/v2/greedy.py",
+      "sha256": "f1245bd6fe743a47c38ac5e28e6914387e7fcc8b1dc15b96742ab27e0a16e7e7"
+    },
+    {
+      "path": "benchmarks/v2/design.py",
+      "sha256": "e338e1aafbcc7de1a3e50f77b453fe4486909dce4eef688c4bbad85a4d768c70"
+    },
+    {
+      "path": "benchmarks/v2/common.py",
+      "sha256": "5a7abd2474e14641b1cd01d90eaa4be13d35fecb6de9f6600013b2ca641b3582"
+    },
+    {
+      "path": "benchmarks/v2/assets.py",
+      "sha256": "d76e3d76c171db553aac268c8ceb0119eeec04a7f9be23625c34f33b29f8ca04"
+    },
+    {
+      "path": "benchmarks/v2/language.py",
+      "sha256": "e4108a09e7b1409fe1969f2df168304a16e47457cc730451c3c8c65b8088f835"
+    },
+    {
+      "path": "benchmarks/v2/freeze.py",
+      "sha256": "b0aa942636a7bddb42ce47533d3f463a277c458f5556b26230bf2aae8f1951c8"
+    },
+    {
+      "path": "benchmarks/v2/test_regression.py",
+      "sha256": "1cd595341cd9be6f5f4d7a7955b9412b8d76502b6d868fa1bbb2d75d800d6163"
+    },
+    {
+      "path": "benchmarks/v2/scorer.py",
+      "sha256": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c"
+    },
+    {
+      "path": "benchmarks/v2/workloads.json",
+      "sha256": "5ba0470dde587a29eb175a5761d08e913077397b5f9fac1d4187168dd1246eaf"
+    },
+    {
+      "path": "benchmarks/v2/language.json",
+      "sha256": "b6e31ecae8452602635401b0e2087ec8793026b8062f4b7d5af18e717c35fe76"
+    },
+    {
+      "path": "benchmarks/v2/repair.json",
+      "sha256": "c18006eafd494e286de93e5bb3cfdb20696517a1e02cdb869dac040c241afa5b"
+    },
+    {
+      "path": "source-data/v2/catalog.json",
+      "sha256": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de"
+    },
+    {
+      "path": "source-data/catalog.json",
+      "sha256": "b23eee8cc35a60b65f731f636ae500792b5f65b1bdebdbe9be00d17d195fb79b"
+    },
+    {
+      "path": "benchmarks/scorer.py",
+      "sha256": "66360904c7d730bf1ae93b20591e4d9617f056023f425419d61339694f2e2787"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/__init__.py",
+      "sha256": "7a5f5000cf72aff8befbe9d0ae8fff4f2dbd08736d78b4b83ef452d068919441"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/delivery.py",
+      "sha256": "eb88631955a7119144f258d61544e3fdc94c76e4be80cc23e189cb81a1fe605e"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/playback.py",
+      "sha256": "79a69b925a8c13d0809e9be3a0d2e80047f89e7670ee8806881de3ece697fdef"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/baseline.py",
+      "sha256": "5e9ece5bf3b49166f498d9cba3956786102ad6af623fb651444680f703295172"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/methods.py",
+      "sha256": "69f29b5d6c8a4d1d149a7ced09dd41f9c4f8cde7de8c5230fd0a2d008c95e2ee"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/author.py",
+      "sha256": "8d30d0835e82e437f8ca539d2a23695355fea432573256147c4cd4d819f768ad"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/__init__.py",
+      "sha256": "39c75d16d41205ae2deb8affbf42052ed4e31752947a6fb0985a62f404361d4e"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/capabilities.py",
+      "sha256": "41f41942b05838d82ee18a68e1446729083db05ef48b46e3f989dd13fcde822d"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/planning.py",
+      "sha256": "eaa5ad8ee23faa03cc4d897ed26c915066fd036856b425fb80e90d7db91c4491"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/app.py",
+      "sha256": "e5c84e60f7a1b8501ffe80135d2c18910d934a590574dc6cea529e55a8e5a07c"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/island.py",
+      "sha256": "18376d1831bf1d2dfa20fa08a0f5f158af66f6c50df6e00b08e7ffee53b0e81b"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/scheduling.py",
+      "sha256": "e77309aafc7e6ef7f7b8cd7f904abac272f068b6b5793e7c1c32f416ae44751f"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/workflow.py",
+      "sha256": "845d41dd7a0a629e2ba73fb9503da47737b175208145dcc8eca3bda2210cdcb0"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/verify.py",
+      "sha256": "6fb7c8ab89c7155638f1bec9972018b5e72a37808001896c2557b8d8a14b3d04"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/portfolio.py",
+      "sha256": "926a8161162a55b3bb5eb5a734b334ac45b4cff2bc501f8c2fc0d0ca79d30d05"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/biofoundry/reservations.py",
+      "sha256": "145c88372f3189dc0c8c7bfc206020c905c05716346cfdae2396e2ac21d569ec"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/planir/skills.py",
+      "sha256": "413c96ba2987e8fe7a8230240262564684d1183a9c03a8daa712cbc75e3f85af"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/planir/__init__.py",
+      "sha256": "381c5e26a1aaf3de74decf1e333a85fdd875ad8ee25b526ba3391b8ac99c457b"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/planir/plr_sim.py",
+      "sha256": "6fe0e4392d56d43d2126e4f7c6f691323535a97783f148be63404811cdea0b1e"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/planir/evaluate.py",
+      "sha256": "6e46639bc569629beff8b84ecc7febdf9d1c76c54bd06806d4fcfdc6b9a5f701"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/planir/virtual_deck.py",
+      "sha256": "5fc69893cf1c171d7429931f944a798b65ce0d17f13d6c806abc6fdeb455088c"
+    },
+    {
+      "path": "reproducibility/source-v2/labscriptai/planir/schema.py",
+      "sha256": "666771df04123080631399224ece6834b1fed660fa99acef162d231b3419a9b3"
+    }
+  ],
+  "live_files": [
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/__init__.py",
+      "sha256": "39c75d16d41205ae2deb8affbf42052ed4e31752947a6fb0985a62f404361d4e"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/app.py",
+      "sha256": "e5c84e60f7a1b8501ffe80135d2c18910d934a590574dc6cea529e55a8e5a07c"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/author.py",
+      "sha256": "8d30d0835e82e437f8ca539d2a23695355fea432573256147c4cd4d819f768ad"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/baseline.py",
+      "sha256": "5e9ece5bf3b49166f498d9cba3956786102ad6af623fb651444680f703295172"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/capabilities.py",
+      "sha256": "41f41942b05838d82ee18a68e1446729083db05ef48b46e3f989dd13fcde822d"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/config.json",
+      "sha256": "980fac9d6a3fb778cb4aa735ac76ea266cc84fb36c46b2ee015741f625878b68"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/delivery.py",
+      "sha256": "eb88631955a7119144f258d61544e3fdc94c76e4be80cc23e189cb81a1fe605e"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/island.py",
+      "sha256": "18376d1831bf1d2dfa20fa08a0f5f158af66f6c50df6e00b08e7ffee53b0e81b"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/methods.py",
+      "sha256": "69f29b5d6c8a4d1d149a7ced09dd41f9c4f8cde7de8c5230fd0a2d008c95e2ee"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/planning.py",
+      "sha256": "eaa5ad8ee23faa03cc4d897ed26c915066fd036856b425fb80e90d7db91c4491"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/playback.py",
+      "sha256": "79a69b925a8c13d0809e9be3a0d2e80047f89e7670ee8806881de3ece697fdef"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/portfolio.py",
+      "sha256": "926a8161162a55b3bb5eb5a734b334ac45b4cff2bc501f8c2fc0d0ca79d30d05"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/reservations.py",
+      "sha256": "145c88372f3189dc0c8c7bfc206020c905c05716346cfdae2396e2ac21d569ec"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/scheduling.py",
+      "sha256": "e77309aafc7e6ef7f7b8cd7f904abac272f068b6b5793e7c1c32f416ae44751f"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/verify.py",
+      "sha256": "6fb7c8ab89c7155638f1bec9972018b5e72a37808001896c2557b8d8a14b3d04"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/biofoundry/workflow.py",
+      "sha256": "845d41dd7a0a629e2ba73fb9503da47737b175208145dcc8eca3bda2210cdcb0"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/planir/__init__.py",
+      "sha256": "381c5e26a1aaf3de74decf1e333a85fdd875ad8ee25b526ba3391b8ac99c457b"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/planir/evaluate.py",
+      "sha256": "6e46639bc569629beff8b84ecc7febdf9d1c76c54bd06806d4fcfdc6b9a5f701"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/planir/plr_sim.py",
+      "sha256": "6fe0e4392d56d43d2126e4f7c6f691323535a97783f148be63404811cdea0b1e"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/planir/schema.py",
+      "sha256": "666771df04123080631399224ece6834b1fed660fa99acef162d231b3419a9b3"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/planir/skills.py",
+      "sha256": "413c96ba2987e8fe7a8230240262564684d1183a9c03a8daa712cbc75e3f85af"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/planir/virtual_deck.py",
+      "sha256": "5fc69893cf1c171d7429931f944a798b65ce0d17f13d6c806abc6fdeb455088c"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/package-lock.json",
+      "sha256": "16f0d687425e8b665e05db6f980aedca29d7070d45c5b3930fb2592761862adb"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/package.json",
+      "sha256": "0d20bfad5c457f2ef4850b82e979dd4cc9cfc155a130a3df7c24eca390eef169"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/agent.ts",
+      "sha256": "42a60e666d97bd6ada41f710f006a53655878c4400e60722200d959f439dca9c"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/backend.ts",
+      "sha256": "e1662b51dd0ce8789c9888a099c281a2fe64526289552f55abfbf36062904130"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/biofoundry-author.ts",
+      "sha256": "d51890ce51bf9510a08c62701219e6861f7a743814cff177d2261782cd250aab"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/biofoundry.ts",
+      "sha256": "a653d1ca96b3cf04ec80fb56d67bd411707535f97f6669804374ed720e5ff874"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/consequences.ts",
+      "sha256": "c76281b95cf0348f2626b71d90c13869f59a9c219107453191ed7293d9149af6"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/devices.ts",
+      "sha256": "02f5c25aa25b7d4cb0cf2711c8717eade82ae0bb5694818890f0fb42a8f217ac"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/env.ts",
+      "sha256": "e8ecc9a1c677b894f4d631344fdbbb4b04653e2a80d55af38a2e3af8891599a5"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/events.ts",
+      "sha256": "734d7fc35248119a34671d6e492346015e8cff8897ec8fa988d2e327c1e4d456"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/fetch_url.ts",
+      "sha256": "1e126ebc339397339f70b3e297e61b1b4f19ab8f150327c479437ed47e143abb"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/flex3d.ts",
+      "sha256": "17da88a15fbe7b67efc851255a9fd98c67c7278c5c6d065957ce3ca48f20df91"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/gate.ts",
+      "sha256": "bdc723f63c432e2235c1e49e4224e33e2c82779982d2faf38bad85601edb1f66"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/index.ts",
+      "sha256": "e9acde423a5bb0a2e185a7c600852ed08d946e9aa72d6877cbcc293dbe485f50"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/prompt.ts",
+      "sha256": "874fd250806e883ff4980d9c81268c95ae99fe761059b6880f63d913df6605f7"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/protocols.ts",
+      "sha256": "fe4d75574d2c6dcae2a337645fcaa9234954a331606d3cd52d69f3a82ac702cc"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/session.ts",
+      "sha256": "0d65c926c84a5b454fe73020cc07292c8ff2a18abbc6218926fa7405a90b0598"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/sse.ts",
+      "sha256": "d527e5b2e87988bc9b04b722847bfd0baccedc2d2aa136bdce8d476014c3f6b0"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/think.ts",
+      "sha256": "1aea5183470edb7f08ef4fbff9413cca361b3c1ceab4b6fb70864c0c437b4a4d"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/tools.ts",
+      "sha256": "1b13a0e934764db6a0aafb1dd50fbbb103ee60def8377ef8152846b3ba3064b1"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/turn.ts",
+      "sha256": "f8f859411ff5a8b3f6748a864eb292c332e6faf5ccb4fad8142eabfea707bbb4"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/scripts/biofoundry.py",
+      "sha256": "075dba5aed4347cb4ee168e26a34dd454ed69e7ad76279e48ad353525d7b4ef2"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/virtual-lab/exports/biofoundry/asset-library.json",
+      "sha256": "23b9109483dbd34ff4e4f8d79f61e1e81c60ac6005472c64d5d7503918ec178d"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/virtual-lab/exports/biofoundry/facility-inventory.json",
+      "sha256": "63070b393578a179d67ceb0944d3cc05cba6b18f0a68558907904e928560255b"
+    },
+    {
+      "path": "/Users/gaoyuan/Documents/test/virtual-lab/exports/biofoundry/library-protocol-checks.json",
+      "sha256": "fc591837ff8107fb6b0fe5d5a92be05e48d46c9af510f9465a0299b46fa462eb"
+    }
+  ],
+  "note": "Two-model execution uses the actual live TS and Python CLI chain, verified before every invocation. Snapshot is the offline scheduling source."
+}

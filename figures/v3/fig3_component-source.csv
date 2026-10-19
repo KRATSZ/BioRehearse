@@ -1,0 +1,10 @@
+experiment,assay,component_category,volume_ul
+E1,BCA,reagent,16000.0
+E1,BCA,samples,1550.0
+E1,BCA,standards,450.0
+E2,PicoGreen,reagent,5400.0
+E2,PicoGreen,samples,4600.0
+E2,PicoGreen,standards,800.0
+E3,GFP,DNA,2.0
+E3,GFP,reagent,36.0
+E3,GFP,water,162.0

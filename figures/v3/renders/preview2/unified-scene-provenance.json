@@ -1,0 +1,721 @@
+{
+  "schema": "biorehearse.v3.render-provenance/1",
+  "renderer": "Blender 5.2.0 LTS",
+  "engine": "BLENDER_WORKBENCH",
+  "samples": null,
+  "color_management": {
+    "view_transform": "Standard",
+    "look": "Medium High Contrast",
+    "exposure": 0.44999998807907104
+  },
+  "transparent_film": true,
+  "shadow_catcher": false,
+  "sources": [
+    {
+      "asset_id": "fluent1080",
+      "station": "device:19",
+      "normalized_glb": "assets/fluent1080.glb",
+      "glb_sha256": "f41cda99a50cc5ff800b11cff6c06e6b18d3d101d824253b0b091ddbe3f44aa6",
+      "contract": "library/fluent1080/asset.contract.json",
+      "contract_sha256": "833c68327f5825d1d9558ed106178f57f25241c6a94df4ca06085ecc3f3206dd",
+      "license": "Project-authored; upstream dimensional sources retain their stated licenses",
+      "source": "/Users/gaoyuan/Documents/test/virtual-lab/sim/biofoundry_geometry.py",
+      "native_dimensions_m": [
+        2.150607,
+        1.033489,
+        1.994862
+      ],
+      "placement_m": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 0.0
+    },
+    {
+      "asset_id": "tecan-fluent780",
+      "station": "device:18",
+      "normalized_glb": "library/tecan-fluent780/model.glb",
+      "glb_sha256": "b3197d259a5250267662fe3fe1c76f0b4e0c729b2830cab1e090a4110aaaf96c",
+      "contract": "library/tecan-fluent780/asset.contract.json",
+      "contract_sha256": "9377a9c4b896231117ce71eb4e6485ba7ec2529da19aa0d41a2ed04f426523bf",
+      "license": "Project-authored illustrative geometry; manufacturer reference images/documents remain Tecan copyright and are not texture assets.",
+      "source": "https://www.tecan.com/hubfs/Knowledgebase/Manuals/Fluent/399706_en%20V2_7.pdf",
+      "native_dimensions_m": [
+        1.65,
+        0.923,
+        1.977
+      ],
+      "placement_m": [
+        3.0,
+        3.0,
+        0.0
+      ],
+      "yaw_rad": 0.0
+    },
+    {
+      "asset_id": "spectramax-id5",
+      "station": "device:67",
+      "normalized_glb": "assets/spectramax-id5.glb",
+      "glb_sha256": "83211c423a70439069d1d8104b1dca58d25e4fdbd7a0b7f53520b18f2e742e8f",
+      "contract": "library/spectramax-id5/asset.contract.json",
+      "contract_sha256": "ce20a61ef572f4c92e96850bb801c0286f244ac04a491829fa8c0731d5dbbf47",
+      "license": "Project-authored; upstream dimensional sources retain their stated licenses",
+      "source": "/Users/gaoyuan/Documents/test/virtual-lab/sim/biofoundry_geometry.py",
+      "native_dimensions_m": [
+        0.532356,
+        0.786832,
+        0.407738
+      ],
+      "placement_m": [
+        0.0,
+        3.0,
+        0.9
+      ],
+      "yaw_rad": 0.0
+    },
+    {
+      "asset_id": "ika_ks4000",
+      "station": "demo:ks4000:1",
+      "normalized_glb": "library/ika_ks4000/model.glb",
+      "glb_sha256": "7585fca7e91e02d6e53b97c97593fc4c84fb3c612a0f2ee6e9cdfdc1c0bd2f54",
+      "contract": "library/ika_ks4000/asset.contract.json",
+      "contract_sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897",
+      "license": "CC BY-NC 4.0; third-party exceptions in NOTICE.md",
+      "source": "https://huggingface.co/datasets/MBZUAI/ChemLab-Assets/tree/ac95c1bcb717a71e3036993ef9102ed20fa028c0/assets/expansion_batch03/t4_measure/ika_ks4000",
+      "native_dimensions_m": [
+        0.58,
+        0.75,
+        0.770705
+      ],
+      "placement_m": [
+        5.0,
+        3.0,
+        0.9
+      ],
+      "yaw_rad": 0.0
+    },
+    {
+      "asset_id": "manual-pipette",
+      "station": "bench",
+      "normalized_glb": "assets/manual-pipette.glb",
+      "glb_sha256": "3971a19763f33121be0136f8b0646ebfe1a74e8d053bba142cb49391a57b67c7",
+      "contract": "library/manual-pipette/asset.contract.json",
+      "contract_sha256": "b7f524ab5e234697a433613d5e134625da76a96d501229ebdd119a3d5fbc6a10",
+      "license": "Project-authored; upstream dimensional sources retain their stated licenses",
+      "source": "/Users/gaoyuan/Documents/test/virtual-lab/sim/biofoundry_geometry.py",
+      "native_dimensions_m": [
+        0.047497,
+        0.027824,
+        0.243755
+      ],
+      "placement_m": [
+        -0.36,
+        -0.14,
+        0.9
+      ],
+      "yaw_rad": -0.35
+    },
+    {
+      "asset_id": "nih-3dpx-023347",
+      "station": "bench",
+      "normalized_glb": "library/nih-3dpx-023347/model.glb",
+      "glb_sha256": "cc8bddc4cc3b10a286ee7abf45cf358ae7506c93b566dd0e8fb269097de88709",
+      "contract": "library/nih-3dpx-023347/asset.contract.json",
+      "contract_sha256": "0826b8c688441791efac6dbfbd1022d49aad95a77de17d5bbccbd8837c500a38",
+      "license": "CC BY 4.0",
+      "source": "https://3d.nih.gov/entries/3DPX-023347",
+      "native_dimensions_m": [
+        0.168,
+        0.051,
+        0.069
+      ],
+      "placement_m": [
+        0.3,
+        0.16,
+        0.9
+      ],
+      "yaw_rad": 0.0
+    },
+    {
+      "asset_id": "tiprack-96",
+      "station": "bench",
+      "normalized_glb": "assets/tiprack-96.glb",
+      "glb_sha256": "2ec2a9d37fb3b7e3e553b82aa05dfca0b8c0e50b1f3b38b69fc72395896e3ed3",
+      "contract": "library/tiprack-96/asset.contract.json",
+      "contract_sha256": "52eea2fa6f163e499453f2af55a79fe7615d6dbbc2a3bd870319fbfb5c73be4e",
+      "license": "Project-authored; upstream dimensional sources retain their stated licenses",
+      "source": "/Users/gaoyuan/Documents/test/virtual-lab/sim/biofoundry_geometry.py",
+      "native_dimensions_m": [
+        0.128,
+        0.118005,
+        0.119921
+      ],
+      "placement_m": [
+        0.64,
+        -0.18,
+        0.9
+      ],
+      "yaw_rad": 0.0
+    }
+  ],
+  "inputs": {
+    "example": {
+      "path": "source-data/v2/example.json",
+      "sha256": "e0b037451c32b93a13bade8ccdf8b7efa6683955082e82e734c96ef1981e12c8"
+    },
+    "material_example": {
+      "path": "source-data/v2/material-example.json",
+      "sha256": "98964f116193f1334993d7cafe53b9699c5caad8a0a11c1f958bd3abbc1e5cd2"
+    },
+    "catalog": {
+      "path": "source-data/v2/catalog.json",
+      "sha256": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de"
+    },
+    "asset_library": {
+      "path": "exports/biofoundry/asset-library.json",
+      "sha256": "23b9109483dbd34ff4e4f8d79f61e1e81c60ac6005472c64d5d7503918ec178d"
+    }
+  },
+  "layout": {
+    "layout_id": "compact-v3-unified-scene",
+    "station_xy_m": {
+      "bench": [
+        0.0,
+        0.0
+      ],
+      "device:19": [
+        3.0,
+        0.0
+      ],
+      "device:18": [
+        3.0,
+        3.0
+      ],
+      "device:67": [
+        0.0,
+        3.0
+      ],
+      "demo:ks4000:1": [
+        5.0,
+        3.0
+      ]
+    },
+    "counter_top_z_m": 0.9,
+    "counter_segments": [
+      {
+        "id": "manual-bench",
+        "center_m": [
+          0.0,
+          0.0
+        ],
+        "width_m": 1.8,
+        "depth_m": 1.2
+      },
+      {
+        "id": "id5-counter",
+        "center_m": [
+          0.0,
+          3.0
+        ],
+        "width_m": 2.6,
+        "depth_m": 1.3
+      },
+      {
+        "id": "ks-counter",
+        "center_m": [
+          5.0,
+          3.0
+        ],
+        "width_m": 2.2,
+        "depth_m": 1.3
+      }
+    ],
+    "surface_z_m": {
+      "bench": 0.93,
+      "device:19": 0.98,
+      "device:18": 0.98,
+      "device:67": 0.96,
+      "demo:ks4000:1": 0.98
+    },
+    "geometry_policy": "source GLBs imported at native metres; rigid translation/yaw only; Fluent cabinets floor-standing; iD5 and KS4000 placed on 0.9-m counters",
+    "not_a_surveyed_floorplan": true
+  },
+  "layout_sha256": "f24ff94875f9bf66bcd103c246258ee209775867d01b36bc780bdf42d6740adc",
+  "images": [
+    {
+      "frame": 1,
+      "task": "E3:assemble",
+      "time_s": 361,
+      "image": "transparent/rehearsal-1.png",
+      "width_px": 1000,
+      "height_px": 625,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "frame": 1,
+      "task": "E3:assemble",
+      "time_s": 361,
+      "inset": true,
+      "image": "transparent/rehearsal-1-closeup.png",
+      "width_px": 900,
+      "height_px": 600,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "frame": 2,
+      "task": "E2:read",
+      "time_s": 1699,
+      "image": "transparent/rehearsal-2.png",
+      "width_px": 1000,
+      "height_px": 625,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "frame": 2,
+      "task": "E2:read",
+      "time_s": 1699,
+      "inset": true,
+      "image": "transparent/rehearsal-2-closeup.png",
+      "width_px": 900,
+      "height_px": 600,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "frame": 3,
+      "task": "E3:prepare_plate",
+      "time_s": 11817,
+      "image": "transparent/rehearsal-3.png",
+      "width_px": 1000,
+      "height_px": 625,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "frame": 3,
+      "task": "E3:prepare_plate",
+      "time_s": 11817,
+      "inset": true,
+      "image": "transparent/rehearsal-3-closeup.png",
+      "width_px": 900,
+      "height_px": 600,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "frame": 4,
+      "task": "E1:read",
+      "time_s": 13972,
+      "image": "transparent/rehearsal-4.png",
+      "width_px": 1000,
+      "height_px": 625,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "frame": 4,
+      "task": "E1:read",
+      "time_s": 13972,
+      "inset": true,
+      "image": "transparent/rehearsal-4-closeup.png",
+      "width_px": 900,
+      "height_px": 600,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "water_case": "injected",
+      "time_s": 11816,
+      "image": "transparent/water-injected.png",
+      "width_px": 1000,
+      "height_px": 625,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "water_case": "injected",
+      "time_s": 11816,
+      "inset": true,
+      "image": "transparent/water-injected-closeup.png",
+      "width_px": 900,
+      "height_px": 600,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "water_case": "correct",
+      "time_s": 11816,
+      "image": "transparent/water-correct.png",
+      "width_px": 1000,
+      "height_px": 625,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    },
+    {
+      "water_case": "correct",
+      "time_s": 11816,
+      "inset": true,
+      "image": "transparent/water-correct-closeup.png",
+      "width_px": 900,
+      "height_px": 600,
+      "engine": "BLENDER_WORKBENCH",
+      "samples": null,
+      "film_transparent": true
+    }
+  ],
+  "state_records": [
+    {
+      "frame": 1,
+      "task": "E3:assemble",
+      "time_s": 361,
+      "selected_containers": [
+        "E3:T1",
+        "E3:T2",
+        "E3:DNA",
+        "E3:MIX",
+        "E3:WATER"
+      ],
+      "glyphs": [
+        {
+          "container_id": "E3:T1",
+          "experiment": "E3",
+          "assay": "GFP",
+          "recorded_location": "device:19:E3:T1",
+          "resolved_station": "device:19",
+          "world_position_m": [
+            2.77,
+            -0.1,
+            0.98
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.391561,
+            0.689462
+          ]
+        },
+        {
+          "container_id": "E3:T2",
+          "experiment": "E3",
+          "assay": "GFP",
+          "recorded_location": "device:19:E3:T2",
+          "resolved_station": "device:19",
+          "world_position_m": [
+            3.0,
+            -0.1,
+            0.98
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.413874,
+            0.704478
+          ]
+        },
+        {
+          "container_id": "E3:DNA",
+          "experiment": "E3",
+          "assay": "GFP",
+          "recorded_location": "device:19:E3:DNA",
+          "resolved_station": "device:19",
+          "world_position_m": [
+            3.23,
+            -0.1,
+            0.98
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.436187,
+            0.719493
+          ]
+        },
+        {
+          "container_id": "E3:MIX",
+          "experiment": "E3",
+          "assay": "GFP",
+          "recorded_location": "device:19:E3:MIX",
+          "resolved_station": "device:19",
+          "world_position_m": [
+            2.77,
+            0.1,
+            0.98
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.404872,
+            0.67043
+          ]
+        },
+        {
+          "container_id": "E3:WATER",
+          "experiment": "E3",
+          "assay": "GFP",
+          "recorded_location": "device:19:E3:WATER",
+          "resolved_station": "device:19",
+          "world_position_m": [
+            3.0,
+            0.1,
+            0.98
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.427185,
+            0.685446
+          ]
+        }
+      ],
+      "active_resources": [
+        "device:19"
+      ],
+      "transfer": null
+    },
+    {
+      "frame": 2,
+      "task": "E2:read",
+      "time_s": 1699,
+      "selected_containers": [
+        "E3:T1",
+        "E3:T2",
+        "E2:P01"
+      ],
+      "glyphs": [
+        {
+          "container_id": "E3:T1",
+          "experiment": "E3",
+          "assay": "GFP",
+          "recorded_location": "demo:ks4000:1:E3:T1",
+          "resolved_station": "demo:ks4000:1",
+          "world_position_m": [
+            4.77,
+            2.9,
+            0.98
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.785249,
+            0.52915
+          ]
+        },
+        {
+          "container_id": "E3:T2",
+          "experiment": "E3",
+          "assay": "GFP",
+          "recorded_location": "demo:ks4000:1:E3:T2",
+          "resolved_station": "demo:ks4000:1",
+          "world_position_m": [
+            5.0,
+            2.9,
+            0.98
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.807562,
+            0.54182
+          ]
+        },
+        {
+          "container_id": "E2:P01",
+          "experiment": "E2",
+          "assay": "PicoGreen",
+          "recorded_location": "device:67:E2:P01",
+          "resolved_station": "device:67",
+          "world_position_m": [
+            0.23,
+            2.9,
+            0.96
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.344815,
+            0.282011
+          ]
+        }
+      ],
+      "active_resources": [
+        "demo:ks4000:1",
+        "device:67"
+      ],
+      "transfer": null
+    },
+    {
+      "frame": 3,
+      "task": "E3:prepare_plate",
+      "time_s": 11817,
+      "selected_containers": [
+        "E1:P01",
+        "E3:P01",
+        "E3:WATER"
+      ],
+      "glyphs": [
+        {
+          "container_id": "E1:P01",
+          "experiment": "E1",
+          "assay": "BCA",
+          "recorded_location": "demo:ks4000:1:E1:P01",
+          "resolved_station": "demo:ks4000:1",
+          "world_position_m": [
+            4.77,
+            2.9,
+            0.98
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.785249,
+            0.52915
+          ]
+        },
+        {
+          "container_id": "E3:P01",
+          "experiment": "E3",
+          "assay": "GFP",
+          "recorded_location": "transit:E3:prepare_plate\u2192E3:read:E3:P01",
+          "resolved_station": "transit",
+          "world_position_m": [
+            0.0,
+            1.5,
+            1.06
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "transfer_source": "bench",
+          "transfer_destination": "device:67",
+          "projection_normalized_xy": [
+            0.229326,
+            0.367033
+          ]
+        },
+        {
+          "container_id": "E3:WATER",
+          "experiment": "E3",
+          "assay": "GFP",
+          "recorded_location": "staging:bench:E3:WATER",
+          "resolved_station": "bench",
+          "world_position_m": [
+            0.23,
+            -0.1,
+            0.93
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.145151,
+            0.527303
+          ]
+        }
+      ],
+      "active_resources": [
+        "demo:ks4000:1",
+        "operator"
+      ],
+      "transfer": {
+        "source": "bench",
+        "destination": "device:67"
+      }
+    },
+    {
+      "frame": 4,
+      "task": "E1:read",
+      "time_s": 13972,
+      "selected_containers": [
+        "E1:P01"
+      ],
+      "glyphs": [
+        {
+          "container_id": "E1:P01",
+          "experiment": "E1",
+          "assay": "BCA",
+          "recorded_location": "device:67:E1:P01",
+          "resolved_station": "device:67",
+          "world_position_m": [
+            -0.23,
+            2.9,
+            0.96
+          ],
+          "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+          "projection_normalized_xy": [
+            0.30019,
+            0.256672
+          ]
+        }
+      ],
+      "active_resources": [
+        "device:67"
+      ],
+      "transfer": null
+    },
+    {
+      "water_case": "injected",
+      "stock": "E3:WATER",
+      "glyph": {
+        "container_id": "E3:WATER",
+        "experiment": "E3",
+        "assay": "GFP",
+        "recorded_location": "device:19",
+        "resolved_station": "device:19",
+        "world_position_m": [
+          2.77,
+          -0.1,
+          0.98
+        ],
+        "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+        "projection_normalized_xy": [
+          0.659649,
+          0.666249
+        ]
+      }
+    },
+    {
+      "water_case": "correct",
+      "stock": "E3:WATER",
+      "glyph": {
+        "container_id": "E3:WATER",
+        "experiment": "E3",
+        "assay": "GFP",
+        "recorded_location": "bench:E3:WATER",
+        "resolved_station": "bench",
+        "world_position_m": [
+          -0.23,
+          -0.1,
+          0.93
+        ],
+        "glyph_geometry": "plate 0.38 x 0.28 m; tube radius 0.095 m, height 0.25 m; visual glyphs exaggerated",
+        "projection_normalized_xy": [
+          0.107703,
+          0.41671
+        ]
+      }
+    }
+  ],
+  "camera": {
+    "type": "ORTHO",
+    "final_target_m": [
+      2.55,
+      1.85,
+      0.92
+    ],
+    "final_ortho_scale_m": 8.5,
+    "projection": "orthographic"
+  },
+  "scope": {
+    "scene": "native digital asset rehearsal; no hardware connection",
+    "geometry": "source GLBs rigidly translated/yawed; no source rescaling",
+    "glyphs": "visual carriers enlarged for readability; not dimensional measurements",
+    "layout": "shared compact scheduler anchors; illustrative U/L counter, not a surveyed facility floorplan"
+  },
+  "state_parser": {
+    "staging_prefix": "removed before station matching",
+    "transit": "represented at source/destination midpoint with transfer path",
+    "missing_station": "not rendered as a carrier"
+  }
+}

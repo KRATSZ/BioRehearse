@@ -1,0 +1,3 @@
+model,calls,fee_low_usd,fee_high_usd,basis
+deepseek-flash,120,0.042,0.084,provider list-price estimate applied to recorded call aggregate; not invoice
+deepseek-v4-pro,120,0.292,0.584,provider list-price estimate applied to recorded call aggregate; not invoice

@@ -1,0 +1,82 @@
+{
+  "layout_id": "compact-v3-unified-scene",
+  "station_xy_m": {
+    "bench": [
+      0.0,
+      0.0
+    ],
+    "device:19": [
+      3.0,
+      0.0
+    ],
+    "device:18": [
+      3.0,
+      3.0
+    ],
+    "device:67": [
+      0.0,
+      3.0
+    ],
+    "demo:ks4000:1": [
+      5.0,
+      3.0
+    ]
+  },
+  "counter_top_z_m": 0.9,
+  "counter_segments": [
+    {
+      "id": "u-left-run",
+      "center_m": [
+        0.0,
+        1.5
+      ],
+      "width_m": 1.7,
+      "depth_m": 3.6
+    },
+    {
+      "id": "u-back-left",
+      "center_m": [
+        1.4,
+        3.0
+      ],
+      "width_m": 1.2,
+      "depth_m": 1.3
+    },
+    {
+      "id": "u-back-right",
+      "center_m": [
+        4.9,
+        3.0
+      ],
+      "width_m": 1.8,
+      "depth_m": 1.3
+    },
+    {
+      "id": "u-back-bridge",
+      "center_m": [
+        3.0,
+        3.65
+      ],
+      "width_m": 4.0,
+      "depth_m": 0.35
+    },
+    {
+      "id": "u-right-run",
+      "center_m": [
+        5.0,
+        1.5
+      ],
+      "width_m": 1.6,
+      "depth_m": 3.6
+    }
+  ],
+  "surface_z_m": {
+    "bench": 0.93,
+    "device:19": 0.98,
+    "device:18": 0.98,
+    "device:67": 0.96,
+    "demo:ks4000:1": 0.98
+  },
+  "geometry_policy": "source GLBs imported at native metres; rigid translation/yaw only; Fluent cabinets floor-standing; iD5 and KS4000 placed on 0.9-m counters",
+  "not_a_surveyed_floorplan": true
+}

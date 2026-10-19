@@ -1,0 +1,172 @@
+{
+  "schema": "biorehearse.scheduling-summary.v3",
+  "design": "benchmarks/v3/design.json",
+  "truth": {
+    "cases": 60,
+    "raw_attempts": 63,
+    "escalated_cases": 2,
+    "final": {
+      "feasible_certificate": 53,
+      "unresolved": 1,
+      "infeasible_proof": 6
+    },
+    "final_status": {
+      "OPTIMAL": 39,
+      "FEASIBLE": 14,
+      "UNKNOWN": 1,
+      "INFEASIBLE": 6
+    },
+    "by_load": {
+      "1": {
+        "cases": 12,
+        "classification": {
+          "feasible_certificate": 12
+        },
+        "status": {
+          "OPTIMAL": 12
+        }
+      },
+      "3": {
+        "cases": 12,
+        "classification": {
+          "feasible_certificate": 12
+        },
+        "status": {
+          "OPTIMAL": 12
+        }
+      },
+      "6": {
+        "cases": 12,
+        "classification": {
+          "feasible_certificate": 12
+        },
+        "status": {
+          "OPTIMAL": 7,
+          "FEASIBLE": 5
+        }
+      },
+      "9": {
+        "cases": 12,
+        "classification": {
+          "feasible_certificate": 11,
+          "unresolved": 1
+        },
+        "status": {
+          "OPTIMAL": 5,
+          "FEASIBLE": 6,
+          "UNKNOWN": 1
+        }
+      },
+      "12": {
+        "cases": 12,
+        "classification": {
+          "feasible_certificate": 6,
+          "infeasible_proof": 6
+        },
+        "status": {
+          "OPTIMAL": 3,
+          "INFEASIBLE": 6,
+          "FEASIBLE": 3
+        }
+      }
+    },
+    "unresolved_final_cases": [
+      "heldout-047"
+    ],
+    "raw_unresolved_attempts": 4
+  },
+  "budget_curve": [
+    {
+      "budget_s": 2,
+      "cases": 20,
+      "returned": 18,
+      "valid": 18,
+      "feasible_certificate": 18,
+      "infeasible_proof": 2,
+      "unresolved": 0,
+      "optimal": 14,
+      "feasible_nonoptimal": 4,
+      "median_wall_s": 0.07627120850156643,
+      "max_wall_s": 2.0765340409998316
+    },
+    {
+      "budget_s": 10,
+      "cases": 20,
+      "returned": 18,
+      "valid": 18,
+      "feasible_certificate": 18,
+      "infeasible_proof": 2,
+      "unresolved": 0,
+      "optimal": 15,
+      "feasible_nonoptimal": 3,
+      "median_wall_s": 0.07668939600080193,
+      "max_wall_s": 10.130946208999376
+    },
+    {
+      "budget_s": 60,
+      "cases": 20,
+      "returned": 18,
+      "valid": 18,
+      "feasible_certificate": 18,
+      "infeasible_proof": 2,
+      "unresolved": 0,
+      "optimal": 15,
+      "feasible_nonoptimal": 3,
+      "median_wall_s": 0.07916820799982816,
+      "max_wall_s": 60.120657332998235
+    }
+  ],
+  "sgs": {
+    "serial_sgs": {
+      "cases": 20,
+      "returned": 12,
+      "valid": 12,
+      "valid_rate": 0.6,
+      "status": {
+        "SERIAL_SGS": 12,
+        "NO_SGS_PLAN": 8
+      },
+      "paired_valid_cases": 12,
+      "median_makespan_s": 14836.0
+    },
+    "parallel_sgs": {
+      "cases": 20,
+      "returned": 4,
+      "valid": 4,
+      "valid_rate": 0.2,
+      "status": {
+        "PARALLEL_SGS": 4,
+        "NO_SGS_PLAN": 16
+      },
+      "paired_valid_cases": 4,
+      "median_makespan_s": 3921.0
+    }
+  },
+  "outage": {
+    "cases": 18,
+    "valid_replans": 9,
+    "failed_replans": 9,
+    "status": {
+      "OPTIMAL": 9,
+      "INFEASIBLE": 9
+    },
+    "delta_makespan_s": {
+      "180": 9
+    },
+    "scope": "Known 180-s outage placed 60 s before an unstarted KS4000 incubate; infeasible re-plans are retained, not imputed."
+  },
+  "reader_reference": {
+    "source": "v2 reader outage reference retained unchanged",
+    "outcomes_sha256": "72c27e4add4eec74766f77e375c294081d5e6c9e312acbc411b7283c5eb0258e",
+    "faults_sha256": "9335aecc7f7d473f281f9984e20d41d847bf0a056453e9a9e65a6fa4bf30068d",
+    "outcome_records": 24,
+    "fault_records": 24,
+    "scope": "v2 reference; no v3 overwrite and no claim of active-operation recovery"
+  },
+  "scope": [
+    "All outcomes are digital schedules under the registered catalog and assumptions.",
+    "A feasible certificate is a returned plan independently scored as valid; an infeasible proof is an explicit CP-SAT INFEASIBLE status; UNKNOWN remains unresolved.",
+    "SGS lookahead is a reported extension to the Kolisch skeleton, not a claim of a verbatim implementation of the original algorithm.",
+    "The KS4000 test is known-outage rescheduling before an unstarted step; it does not demonstrate active hardware recovery."
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "categories": {
+    "access_order": {
+      "layers": {
+        "asset_contract": {
+          "detected": 72,
+          "not_applicable": 0,
+          "rate": 1.0,
+          "total": 72
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "material_location": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "schedule": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        }
+      },
+      "n": 72,
+      "union": 72
+    },
+    "change_volume": {
+      "layers": {
+        "asset_contract": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 72,
+          "not_applicable": 0,
+          "rate": 1.0,
+          "total": 72
+        },
+        "material_location": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 72
+        },
+        "schedule": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 72
+        }
+      },
+      "n": 72,
+      "union": 72
+    },
+    "control": {
+      "layers": {
+        "asset_contract": {
+          "detected": 0,
+          "not_applicable": 40,
+          "rate": null,
+          "total": 0
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 40,
+          "rate": null,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 40
+        },
+        "material_location": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 40
+        },
+        "schedule": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 40
+        }
+      },
+      "n": 40,
+      "union": 0
+    },
+    "delete_transfer": {
+      "layers": {
+        "asset_contract": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 72
+        },
+        "material_location": {
+          "detected": 66,
+          "not_applicable": 0,
+          "rate": 0.9166666666666666,
+          "total": 72
+        },
+        "schedule": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 72
+        }
+      },
+      "n": 72,
+      "union": 66
+    },
+    "incompatible_device": {
+      "layers": {
+        "asset_contract": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 72
+        },
+        "material_location": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 72
+        },
+        "schedule": {
+          "detected": 72,
+          "not_applicable": 0,
+          "rate": 1.0,
+          "total": 72
+        }
+      },
+      "n": 72,
+      "union": 72
+    },
+    "intent_deadline": {
+      "layers": {
+        "asset_contract": {
+          "detected": 0,
+          "not_applicable": 7,
+          "rate": null,
+          "total": 0
+        },
+        "intent": {
+          "detected": 7,
+          "not_applicable": 0,
+          "rate": 1.0,
+          "total": 7
+        },
+        "mass_balance": {
+          "detected": 0,
+          "not_applicable": 7,
+          "rate": null,
+          "total": 0
+        },
+        "material_location": {
+          "detected": 0,
+          "not_applicable": 7,
+          "rate": null,
+          "total": 0
+        },
+        "schedule": {
+          "detected": 0,
+          "not_applicable": 7,
+          "rate": null,
+          "total": 0
+        }
+      },
+      "n": 7,
+      "union": 7
+    },
+    "shift_time": {
+      "layers": {
+        "asset_contract": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 72,
+          "rate": null,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 72
+        },
+        "material_location": {
+          "detected": 0,
+          "not_applicable": 0,
+          "rate": 0.0,
+          "total": 72
+        },
+        "schedule": {
+          "detected": 72,
+          "not_applicable": 0,
+          "rate": 1.0,
+          "total": 72
+        }
+      },
+      "n": 72,
+      "union": 72
+    }
+  },
+  "equivalent_or_control_detections": 0,
+  "known_error_yield": {
+    "detected": 361,
+    "total": 361
+  },
+  "notes": [
+    "This is a raw-record re-score; it does not rerun frozen checkers or infer new truth labels.",
+    "The portable bundle contains metadata and the simulator source snapshot but not GLB files."
+  ],
+  "oracle_counts": {
+    "equivalent_control": 40,
+    "equivalent_mutation": 6,
+    "known_violation": 361
+  },
+  "schema": "biofoundry.v3.1.portable-rescore/1",
+  "total": 407,
+  "union": {
+    "detected": 361,
+    "rate": 0.8869778869778869,
+    "total": 407
+  }
+}

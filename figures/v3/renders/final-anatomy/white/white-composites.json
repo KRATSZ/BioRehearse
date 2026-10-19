@@ -1,0 +1,15 @@
+{
+  "schema": "biorehearse.v3.white-composites/1",
+  "records": [
+    {
+      "source": "fluent-anatomy.png",
+      "source_sha256": "6ba41ca3bdf267819a8beac258cc200efecc330e96c1b2868bbef6b6182124b5",
+      "white_png": "fluent-anatomy.png",
+      "white_sha256": "452e5d12512693b2a11c4c4defcf39d747a742d84140056c54f0fb570517d702",
+      "size_px": [
+        2400,
+        1800
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+error_type,n,intent,schedule,mass_balance,material_location,asset_contract,source
+control,40,nan,0.0,0.0,0.0,nan,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v3/fig6-validation-matrix.csv
+delete_transfer,72,nan,0.0,0.0,0.916667,nan,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v3/fig6-validation-matrix.csv
+incompatible_device,72,nan,1.0,0.0,0.0,nan,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v3/fig6-validation-matrix.csv
+shift_time,72,nan,1.0,0.0,0.0,nan,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v3/fig6-validation-matrix.csv
+change_volume,72,nan,0.0,1.0,0.0,nan,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v3/fig6-validation-matrix.csv
+access_order,72,nan,nan,nan,nan,1.0,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v3/fig6-validation-matrix.csv
+intent_deadline,7,1.0,nan,nan,nan,nan,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v3/fig6-validation-matrix.csv
+"Moderate volume changes (exploratory, n=48)",48,nan,0.0,0.125,0.0,nan,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v3/mutation-challenge.jsonl

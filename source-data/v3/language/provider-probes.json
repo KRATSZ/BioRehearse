@@ -1,0 +1,36 @@
+{
+  "schema": "biorehearse.v3.language-provider-probes/1",
+  "date": "2026-10-19",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+  "credential_route": "GLM_API_KEY",
+  "forbidden_route_used": false,
+  "probes": [
+    {
+      "model": "glm-4.7-flash",
+      "request": "short text completion",
+      "http_status": 200,
+      "observed": "ordinary text response"
+    },
+    {
+      "model": "glm-4.7-flash",
+      "request": "tool-enabled development probes",
+      "http_status": 429,
+      "provider_code": "1305",
+      "observed": "model traffic overload on the required free route"
+    },
+    {
+      "model": "glm-4-flash-250414",
+      "request": "short text completion",
+      "http_status": 200,
+      "observed": "ordinary text response"
+    },
+    {
+      "model": "glm-4-flash-250414",
+      "request": "single function tool probe",
+      "http_status": 200,
+      "tool_calls": 1,
+      "observed": "function tool call accepted by the endpoint"
+    }
+  ],
+  "interpretation": "These are route and schema probes only. They do not measure planning accuracy, and no paid model or coding-plan application route was used."
+}

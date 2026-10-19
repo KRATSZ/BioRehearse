@@ -1,0 +1,72 @@
+{
+  "pdf": "/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/figures/v3/fig5_scheduling.pdf",
+  "auditable": true,
+  "verdict": "REVIEW REQUIRED",
+  "page_count": 1,
+  "visible_text_box_count": 107,
+  "text_trace_count": 107,
+  "stroke_path_count": 133,
+  "filled_region_count": 115,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 0,
+    "warn": 2,
+    "contained_fill_overlays": 58,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 1 filled region(s)",
+      "text": "Staged run up to 60 s: 1 unresolved",
+      "text_bbox": [
+        154.15725708007812,
+        262.2328796386719,
+        242.78309631347656,
+        267.8328857421875
+      ],
+      "other_text": null,
+      "other_bbox": [
+        48.472442626953125,
+        258.5196838378906,
+        237.2598419189453,
+        394.5826721191406
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        63000
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 1 filled region(s)",
+      "text": "20",
+      "text_bbox": [
+        476.4032897949219,
+        311.1995544433594,
+        482.84857177734375,
+        316.9995422363281
+      ],
+      "other_text": null,
+      "other_bbox": [
+        475.1365966796875,
+        307.6535339355469,
+        476.6889953613281,
+        313.0528564453125
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        118
+      ]
+    }
+  ]
+}

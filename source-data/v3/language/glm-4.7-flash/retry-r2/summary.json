@@ -1,0 +1,18 @@
+{
+  "accepted": 2,
+  "fallback": null,
+  "model": "glm-4.7-flash",
+  "n": 4,
+  "provider_errors": 2,
+  "records": [
+    "v3/language/glm-4.7-flash/retry-r2/001-development-language-24-s0.json",
+    "v3/language/glm-4.7-flash/retry-r2/002-development-language-24-s1.json",
+    "v3/language/glm-4.7-flash/retry-r2/003-development-language-24-s2.json",
+    "v3/language/glm-4.7-flash/retry-r2/004-development-language-25-s0.json"
+  ],
+  "round": "r2",
+  "route": "https://open.bigmodel.cn/api/paas/v4",
+  "schema": "biorehearse.v3.glm-language-retry/1",
+  "stop_reason": "all four development probes completed",
+  "wait_s": 60
+}

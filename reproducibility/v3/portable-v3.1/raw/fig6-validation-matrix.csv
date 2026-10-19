@@ -1,0 +1,8 @@
+category,n,intent,schedule,mass_balance,material_location,asset_contract,union
+control,40,NA,0.000000,0.000000,0.000000,NA,0.000000
+delete_transfer,72,NA,0.000000,0.000000,0.916667,NA,0.916667
+incompatible_device,72,NA,1.000000,0.000000,0.000000,NA,1.000000
+shift_time,72,NA,1.000000,0.000000,0.000000,NA,1.000000
+change_volume,72,NA,0.000000,1.000000,0.000000,NA,1.000000
+access_order,72,NA,NA,NA,NA,1.000000,1.000000
+intent_deadline,7,1.000000,NA,NA,NA,NA,1.000000

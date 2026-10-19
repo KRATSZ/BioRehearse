@@ -1,0 +1,45 @@
+{
+  "schema": "biorehearse.v3.white-composites/1",
+  "records": [
+    {
+      "source": "water-correct-closeup.png",
+      "source_sha256": "c424d6f80d75000fc897e0a82a02c0b46c18daa6c7916ef680f2ec85446b834c",
+      "white_png": "water-correct-closeup.png",
+      "white_sha256": "95d1690539e6bfb714f9060c0ccf2de2e02461ccb1c6781837f3f3acf6bb0a51",
+      "size_px": [
+        1200,
+        750
+      ]
+    },
+    {
+      "source": "water-correct.png",
+      "source_sha256": "ff6fd492573fcca8c6646d62180b9fe5f9c901bfeeb901e7a776b950e1d2b6e9",
+      "white_png": "water-correct.png",
+      "white_sha256": "f84d3065d0189b58fedfa6e456755be385b3344e7ebd227dd7df78aaf02fcb79",
+      "size_px": [
+        2400,
+        1500
+      ]
+    },
+    {
+      "source": "water-injected-closeup.png",
+      "source_sha256": "246c17e7ba4d49bc4264e3112ee45f40b5fbe76eaef03120868920186ae5768b",
+      "white_png": "water-injected-closeup.png",
+      "white_sha256": "57ebdd08f8199e79cf2e15fbfe6dae0e5cd3e704af0a83bba48c480e9cfdf611",
+      "size_px": [
+        1200,
+        750
+      ]
+    },
+    {
+      "source": "water-injected.png",
+      "source_sha256": "04801004c3b5299f647a158f8d0952026b1bcc4a614b65453ac4606c8442966f",
+      "white_png": "water-injected.png",
+      "white_sha256": "95893c8ed8207e997a5106761718bdd9fe92e87d5be3aea0c870c2c3ae782c21",
+      "size_px": [
+        2400,
+        1500
+      ]
+    }
+  ]
+}

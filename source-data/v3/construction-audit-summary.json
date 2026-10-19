@@ -1,0 +1,377 @@
+{
+  "audit_rules": {
+    "access_known": "declared asset-contract precondition code is one of the contract lifecycle rejection codes; Workflow.act observation is not used as the oracle",
+    "delete_transfer_equivalent": "original_source == original_destination",
+    "delete_transfer_known": "cross_station AND first_later_use_exists AND first_later_use.required_station == original_destination AND first_later_use.required_station != original_source",
+    "device_known": "new_resource != original_resource AND new_resource not in task.candidates",
+    "intent_known": "recorded actual deadline differs from recorded expected deadline",
+    "shift_known": "recorded_new_start_s < actual_predecessor.end_s",
+    "volume_known": "recorded_new_volume != old_volume AND (new_volume < 0 OR new_volume > old_volume)"
+  },
+  "construction_audit_is_derived": true,
+  "counts_by_suite_category": {
+    "exploratory": {
+      "access_order": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 24,
+        "derived_known_detected_union": 24,
+        "derived_labels": {
+          "known_access_violation": 24
+        },
+        "n": 24,
+        "raw_known_denominator": 24,
+        "raw_labels": {
+          "known_access_violation": 24
+        },
+        "union_detected_raw_layers": 24
+      },
+      "delete_transfer": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 21,
+        "derived_known_detected_union": 21,
+        "derived_labels": {
+          "equivalent_mutation": 3,
+          "known_violation": 21
+        },
+        "n": 24,
+        "raw_known_denominator": 21,
+        "raw_labels": {
+          "equivalent_mutation": 3,
+          "known_violation": 21
+        },
+        "union_detected_raw_layers": 21
+      },
+      "device_resource": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 47,
+        "derived_known_detected_union": 47,
+        "derived_labels": {
+          "candidate_compatible_resource_other_constraints_unlabelled": 1,
+          "known_resource_mismatch": 47
+        },
+        "n": 48,
+        "raw_known_denominator": 47,
+        "raw_labels": {
+          "equivalent_resource": 1,
+          "known_resource_mismatch": 47
+        },
+        "union_detected_raw_layers": 48
+      },
+      "shift_offset": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 22,
+        "derived_known_detected_union": 22,
+        "derived_labels": {
+          "known_precedence_violation": 22,
+          "nonnegative_precedence_offset_other_constraints_unlabelled": 26
+        },
+        "n": 48,
+        "raw_known_denominator": 22,
+        "raw_labels": {
+          "equivalent_time_shift": 26,
+          "known_precedence_violation": 22
+        },
+        "union_detected_raw_layers": 46
+      },
+      "volume_factor": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 48,
+        "derived_known_detected_union": 6,
+        "derived_labels": {
+          "protocol_quantity_mismatch": 48
+        },
+        "n": 48,
+        "raw_known_denominator": 48,
+        "raw_labels": {
+          "protocol_quantity_mismatch": 48
+        },
+        "union_detected_raw_layers": 6
+      }
+    },
+    "v31": {
+      "access_order": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 72,
+        "derived_known_detected_union": 72,
+        "derived_labels": {
+          "known_violation": 72
+        },
+        "n": 72,
+        "raw_known_denominator": 72,
+        "raw_labels": {
+          "known_violation": 72
+        },
+        "union_detected_raw_layers": 72
+      },
+      "change_volume": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 72,
+        "derived_known_detected_union": 72,
+        "derived_labels": {
+          "known_violation": 72
+        },
+        "n": 72,
+        "raw_known_denominator": 72,
+        "raw_labels": {
+          "known_violation": 72
+        },
+        "union_detected_raw_layers": 72
+      },
+      "control": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 0,
+        "derived_known_detected_union": 0,
+        "derived_labels": {
+          "equivalent_control": 40
+        },
+        "n": 40,
+        "raw_known_denominator": 0,
+        "raw_labels": {
+          "equivalent_control": 40
+        },
+        "union_detected_raw_layers": 0
+      },
+      "delete_transfer": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 66,
+        "derived_known_detected_union": 66,
+        "derived_labels": {
+          "equivalent_mutation": 6,
+          "known_violation": 66
+        },
+        "n": 72,
+        "raw_known_denominator": 66,
+        "raw_labels": {
+          "equivalent_mutation": 6,
+          "known_violation": 66
+        },
+        "union_detected_raw_layers": 66
+      },
+      "incompatible_device": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 72,
+        "derived_known_detected_union": 72,
+        "derived_labels": {
+          "known_violation": 72
+        },
+        "n": 72,
+        "raw_known_denominator": 72,
+        "raw_labels": {
+          "known_violation": 72
+        },
+        "union_detected_raw_layers": 72
+      },
+      "intent_deadline": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 7,
+        "derived_known_detected_union": 7,
+        "derived_labels": {
+          "known_violation": 7
+        },
+        "n": 7,
+        "raw_known_denominator": 7,
+        "raw_labels": {
+          "known_violation": 7
+        },
+        "union_detected_raw_layers": 7
+      },
+      "shift_time": {
+        "construction_premise_failures_among_raw_known": 0,
+        "derived_known_denominator": 72,
+        "derived_known_detected_union": 72,
+        "derived_labels": {
+          "known_violation": 72
+        },
+        "n": 72,
+        "raw_known_denominator": 72,
+        "raw_labels": {
+          "known_violation": 72
+        },
+        "union_detected_raw_layers": 72
+      }
+    }
+  },
+  "derived_label_counts": {
+    "exploratory": {
+      "candidate_compatible_resource_other_constraints_unlabelled": 1,
+      "equivalent_mutation": 3,
+      "known_access_violation": 24,
+      "known_precedence_violation": 22,
+      "known_resource_mismatch": 47,
+      "known_violation": 21,
+      "nonnegative_precedence_offset_other_constraints_unlabelled": 26,
+      "protocol_quantity_mismatch": 48
+    },
+    "v31": {
+      "equivalent_control": 40,
+      "equivalent_mutation": 6,
+      "known_violation": 361
+    }
+  },
+  "negative_results_retained": true,
+  "notes": [
+    "This audit is independent of the measured schedule, mass-balance, material-location and asset-contract checkers: it reads source plans and predeclared record parameters only.",
+    "The derived label is the denominator used after construction-audit review; raw JSONL and the original v3.1 freeze remain immutable.",
+    "Asset-action access rows are contract probes. They do not turn compiled portfolio rows into fifth-layer plan passes.",
+    "The exploratory equivalent-resource and nonnegative-time labels remain unlabelled for whole-plan validity; they are not false-positive controls."
+  ],
+  "raw_known_labels_are_not_retroactively_rewritten": true,
+  "raw_label_counts": {
+    "exploratory": {
+      "equivalent_mutation": 3,
+      "equivalent_resource": 1,
+      "equivalent_time_shift": 26,
+      "known_access_violation": 24,
+      "known_precedence_violation": 22,
+      "known_resource_mismatch": 47,
+      "known_violation": 21,
+      "protocol_quantity_mismatch": 48
+    },
+    "v31": {
+      "equivalent_control": 40,
+      "equivalent_mutation": 6,
+      "known_violation": 361
+    }
+  },
+  "raw_records_unchanged": true,
+  "run": {
+    "command": "python3 docs/paper/biofoundry-preprint/benchmarks/v3/construction_audit.py --root /path/to/virtual-lab",
+    "python": "/opt/homebrew/opt/python@3.14/bin/python3.14"
+  },
+  "schema": "biofoundry.v3.construction-audit/1",
+  "source_plan_hashes": [
+    {
+      "id": "001dd6d0c679c512f6a9d6b6",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-015.json",
+      "sha256": "f7c99f459624c3cb865595e47233a3e04d9f11967bfe61fdf7c34f30a3a5a37c"
+    },
+    {
+      "id": "1b3628cbb514457bca1f5c7f",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-006.json",
+      "sha256": "28109f317b54fd95e6201744f0b5b653f96c4370c0be800dc509ad4749d086da"
+    },
+    {
+      "id": "27add5be8c36554f4baf4776",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-019.json",
+      "sha256": "903fd63b6897eaf5e645b9f8b1b88bd58e7f68a58d4a18c3db05b3ac205d0813"
+    },
+    {
+      "id": "29c40743d0174757f760e3f3",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-007.json",
+      "sha256": "2d5e959751d2218a902d43b12f0aaaf7b2833c5a952ffa5147ed357a95fd346a"
+    },
+    {
+      "id": "3838ec9334880a00b6a08d1b",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-002.json",
+      "sha256": "57735232670bc275afbd3a1376268981c6be16ef1b7c709c5618922fbd3d6948"
+    },
+    {
+      "id": "395ae999a5a1aa371f85a602",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-017.json",
+      "sha256": "6c390eccce3919d13c813110021f4710de52f35331d5b6a82ca47a9320ee7ebc"
+    },
+    {
+      "id": "3c1e51ccd28364e36824de33",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-003.json",
+      "sha256": "f98ae1190d08bbee158d8ec294ebf3b8b4f2c2e77c84025fc6f79328be077bcd"
+    },
+    {
+      "id": "4a9998d2b3677784c61bbe52",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-001.json",
+      "sha256": "987ca8410cab1247bceddc83cd7c0df2dddaf02c1262531273a88d791e35d186"
+    },
+    {
+      "id": "4d93c1090539e87d15c19f3d",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-005.json",
+      "sha256": "fc848062299f7fac1e70a7f429d08bd0f511b3f641f663b65232584e26b2d1d9"
+    },
+    {
+      "id": "4e593e709eb12cecf7e62695",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-008.json",
+      "sha256": "caecd5769a9466860bdd7720a81d28e64929a3d8d93fa67ec7dbd6e355a29a4a"
+    },
+    {
+      "id": "6efd6d7e9b4af64b8c9860e0",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-021.json",
+      "sha256": "eca1c49a3c77b30d4c393b594680827a738809609b9474f44e4088ea9537bc3a"
+    },
+    {
+      "id": "777173bdf87b843fc4466ab5",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-010.json",
+      "sha256": "0ed7683880df3fe9060ccb5005723ee2c83efae81f03a1d2fe56f1e3f92b65ad"
+    },
+    {
+      "id": "781df6bc5decb35068e9a9d5",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-022.json",
+      "sha256": "44dd2e934cd0f86634d4b2233e7fa545617238f23c1fd2d8f12f5d6bbe03982e"
+    },
+    {
+      "id": "a6e9e8c6d6e9c1e2e21ef7a8",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-014.json",
+      "sha256": "8e6e0da77e5cdfb354821e3308d2cdd599dae2543115357b2e304c54a5bf9419"
+    },
+    {
+      "id": "b158a4291df2d1b8ccf5e0ae",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-000.json",
+      "sha256": "7db234dbf7b01464a857fdd93cff34bad8b41d51d0b4e1b2a23970e001d3146f"
+    },
+    {
+      "id": "b2aa35282c611f0be3451cdf",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-018.json",
+      "sha256": "31b0314f001b4e505116fb4ab0eff71781997b12124c98c64345097ba58182a0"
+    },
+    {
+      "id": "cd6cc55e37fe234c569f8b9d",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-011.json",
+      "sha256": "70d31766f28074917f1a1610a44165244d0dd45a00b42f60807362b659656545"
+    },
+    {
+      "id": "d26db48f1574e94c8bd0fefb",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-020.json",
+      "sha256": "a8a06ec3597d2816a0f064cab6f0cc69e284c089f8cd0435b5ccde302b03e36a"
+    },
+    {
+      "id": "dca551af97787b84a2d3d8cd",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-013.json",
+      "sha256": "df3c0db0a58763cf34971dbd25b431121f47a27417aae4215883813292be2797"
+    },
+    {
+      "id": "dd339bdbe7ae8cfdabf2fb13",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-012.json",
+      "sha256": "31035f86ec81241b68e190066bea7d277e85b28347f04f462fb3d762628d4120"
+    },
+    {
+      "id": "e188e685febb1ab0221c651f",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-009.json",
+      "sha256": "c55a3862c1ae005640603093291eab044ff12400dc82be71963256e99c31b3d0"
+    },
+    {
+      "id": "e4bbfad10afbefc3335e6480",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-004.json",
+      "sha256": "9be76b9ab261d109c08b67d358eac7351ad41cb19f21d8ab0959a6f0c719eeff"
+    },
+    {
+      "id": "f2c1b6a715d723d0c1e55db4",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-023.json",
+      "sha256": "74ebad1bae5dc20977caee8c84b76ccde797d0b117b0a51421e35175617f4914"
+    },
+    {
+      "id": "f8cdde99f9f0caee914ec2ac",
+      "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-016.json",
+      "sha256": "83f74ccb4cb2583799e43ab484fbac08271314fa6e50254d7ca7caca19660502"
+    }
+  ],
+  "source_sha256": {
+    "code_review": "f7f4105934eb04affd8d1b2f5b7a97a0636d8448bff1d0e884631dc968460e13",
+    "construction_audit.py": "23e0749bd6b41049ba2610dd42b737cbf426b09878951160511ef7865529a609",
+    "exploratory_raw": "2c0182d48a43bb39baf90795c11a639da8c976967b174a240d5624eceeb067a4",
+    "mutation_freeze": "772e9b82ace7a8596e3d0e4974d9130e65d4240c4eb6858fe0bab0eaef5c8d9d",
+    "v31_raw": "3da8184234ec93ff5b5d087e49dbeadc12b8da23a87651e9fd07cde41aa66afc"
+  },
+  "status": "complete",
+  "suites": {
+    "exploratory": 192,
+    "total": 599,
+    "v31": 407
+  }
+}

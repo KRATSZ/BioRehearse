@@ -1,0 +1,8 @@
+model,style,assay_summary,requested_deadline_s,returned_deadline_s,source
+deepseek-flash,open,GFP,21600,25200,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v2/heldout/language/deepseek-flash/heldout-language-00-s1-r0.json
+deepseek-flash,mixed,GFP,21600,25200,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v2/heldout/language/deepseek-flash/heldout-language-00-s2-r0.json
+deepseek-flash,mixed,BCA,21600,25200,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v2/heldout/language/deepseek-flash/heldout-language-09-s2-r0.json
+deepseek-flash,mixed,GFP+PG,21600,18000,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v2/heldout/language/deepseek-flash/heldout-language-12-s2-r0.json
+deepseek-flash,open,PG,21600,25200,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v2/heldout/language/deepseek-flash/heldout-language-18-s1-r0.json
+deepseek-flash,mixed,BCA+PG,28800,25200,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v2/heldout/language/deepseek-flash/heldout-language-23-s2-r0.json
+deepseek-v4-pro,mixed,GFP+BCA+PG,28800,25200,/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v2/heldout/language/deepseek-v4-pro/heldout-language-14-s2-r0.json

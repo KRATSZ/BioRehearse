@@ -1,0 +1,34 @@
+{
+  "schema": "biorehearse.sgs-budget-extension-protocol.v3",
+  "created": "2026-10-19",
+  "v3_freeze_id": "v3-final-2026-10-19",
+  "cases": "benchmarks/v3/design.json common_subset_cases (20 fixed cases)",
+  "budgets_s": [
+    10,
+    60
+  ],
+  "modes": [
+    "serial",
+    "parallel"
+  ],
+  "priority_rule": "input_order",
+  "lookahead": "immediate_window_child_forward_check",
+  "source_hashes": {
+    "<script>": "c552d21d81ad11c880a724cc08e65d0456faab98c6c014dafd98add4e428fa12",
+    "benchmarks/v3/sgs.py": "cdb86452f48edfb801e91cd909ec85ee959ad2f4975b5cb825c7f9a5bf2f71b9",
+    "benchmarks/v2/scorer.py": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c",
+    "benchmarks/v2/common.py": "5a7abd2474e14641b1cd01d90eaa4be13d35fecb6de9f6600013b2ca641b3582",
+    "reproducibility/source-v2/labscriptai/biofoundry/methods.py": "69f29b5d6c8a4d1d149a7ced09dd41f9c4f8cde7de8c5230fd0a2d008c95e2ee",
+    "reproducibility/source-v2/labscriptai/biofoundry/scheduling.py": "e77309aafc7e6ef7f7b8cd7f904abac272f068b6b5793e7c1c32f416ae44751f"
+  },
+  "input_hashes": {
+    "benchmarks/v2/workloads.json": "5ba0470dde587a29eb175a5761d08e913077397b5f9fac1d4187168dd1246eaf",
+    "source-data/v2/catalog.json": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de",
+    "benchmarks/v3/design.json": "a3d7ce8810c1401415503bfb16272da041138f3f773ba3424b576735f0bf9c8c"
+  },
+  "runtime": {
+    "python_version": "3.12.13",
+    "ortools_version": "9.15.6755",
+    "single_solver_worker": true
+  }
+}

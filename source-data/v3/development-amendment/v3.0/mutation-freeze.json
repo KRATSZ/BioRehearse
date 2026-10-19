@@ -1,0 +1,406 @@
+{
+  "counts": {
+    "access_order": 72,
+    "change_volume": 72,
+    "control": 40,
+    "delete_transfer": 72,
+    "incompatible_device": 72,
+    "shift_time": 72
+  },
+  "inputs": {
+    "asset_contracts": [
+      {
+        "path": "exports/biofoundry/library/agilent-1260-infinity-ii-analytical/asset.contract.json",
+        "sha256": "489395ec8a849a09d9caddfef62b654400fb2033ec11844fcd5a4cfbb911c6eb"
+      },
+      {
+        "path": "exports/biofoundry/library/agilent-1260-infinity-ii-semiprep/asset.contract.json",
+        "sha256": "5cedb3bff031825c9d7c65f17459f145cf962c191ddd71bd5497ca2562caf9b0"
+      },
+      {
+        "path": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical/asset.contract.json",
+        "sha256": "64c38e23b40fc244265debd8d282b5d35de90d2f38c78a2b04cabcc10352995e"
+      },
+      {
+        "path": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical-elsd/asset.contract.json",
+        "sha256": "30e9ab2b2076d701c4dc76db2cbe4d3086b76f942718b8b86c323f6dcd0bbb5b"
+      },
+      {
+        "path": "exports/biofoundry/library/agilent-1290-infinity-ii-preparative/asset.contract.json",
+        "sha256": "43b4c18f72d8b87dc383c3da1dc499174ae5d6a6d11f466dac035c2b22da4115"
+      },
+      {
+        "path": "exports/biofoundry/library/agilent-8890-7010b-gcms/asset.contract.json",
+        "sha256": "b2b3f102ee0ec4fac83421a4f9ce191464e17c6d7c5d66d3fb912def818f78cd"
+      },
+      {
+        "path": "exports/biofoundry/library/agilent-8890-gc/asset.contract.json",
+        "sha256": "0b2ad890a3a033ff34195e1e68057fe046fa2e3a01e4c82fc1635485977038ea"
+      },
+      {
+        "path": "exports/biofoundry/library/agilent-rapidfire400-6470/asset.contract.json",
+        "sha256": "1c7ad3b05e79f014e486623fef077047470ac9d296d8465231b1661554535f6b"
+      },
+      {
+        "path": "exports/biofoundry/library/agilent_bravo_assaymap/asset.contract.json",
+        "sha256": "edf7eb2b0ae422d5abba73887d292357646ebecfdc71bc5a71f665dde2dde622"
+      },
+      {
+        "path": "exports/biofoundry/library/azenta_automated_roll_heat_sealer_a4s/asset.contract.json",
+        "sha256": "02683ad99b301666af7428cabee7dae700b62741f74a53adcc66a5c5555b7af5"
+      },
+      {
+        "path": "exports/biofoundry/library/bd_facsaria_fusion/asset.contract.json",
+        "sha256": "19385b2ecdb83dc7898ea84d4b556cec09aa7f3c1a4d1952d216bd361bad9299"
+      },
+      {
+        "path": "exports/biofoundry/library/bd_lsrfortessa/asset.contract.json",
+        "sha256": "013445377c9df0fab2799288c471203aa7296e3d99c8f03bd18371b0655a1b8c"
+      },
+      {
+        "path": "exports/biofoundry/library/beckman_cytoflex_lx/asset.contract.json",
+        "sha256": "8d319d35e51d986aa7eaaad9d11af8f8aa986b08d6524480cbedac3aed83896b"
+      },
+      {
+        "path": "exports/biofoundry/library/beckman_optima_xe100/asset.contract.json",
+        "sha256": "4f5050f9e6f5197cd4e44967eced290bfd121982ae08b73d755acbb4dca061b0"
+      },
+      {
+        "path": "exports/biofoundry/library/beckman_optima_xpn100/asset.contract.json",
+        "sha256": "1b5bf43c5abc697e7a563d2ba5c9064cae97e02770095b5014055eade45648be"
+      },
+      {
+        "path": "exports/biofoundry/library/biorad_miniprotean/asset.contract.json",
+        "sha256": "6528faa16eb3589e3bcf318d0c074d00011b0d4b9cd89a767146c95af032159d"
+      },
+      {
+        "path": "exports/biofoundry/library/biostream_biopilot150/asset.contract.json",
+        "sha256": "a139c50c39774dc8dfdfcbdd646b1bfe6114d912d65915ceef06f9068cd2bb6b"
+      },
+      {
+        "path": "exports/biofoundry/library/biostream_biotwin15l/asset.contract.json",
+        "sha256": "77bf78c184f1857e4b1d97eab384bbd915366952f5c00a90a1855e0fc9a1b389"
+      },
+      {
+        "path": "exports/biofoundry/library/biotek-logphase-600/asset.contract.json",
+        "sha256": "df6825ab8699ecf7e3ec7e714b1fabdafd7bafd7a6170ceb20ed3cf633a9de83"
+      },
+      {
+        "path": "exports/biofoundry/library/biotek_405ts/asset.contract.json",
+        "sha256": "4545d935ddfd7d25d26a4f202f8e2834065bebb1de36567ee7d97428bd79b527"
+      },
+      {
+        "path": "exports/biofoundry/library/bmg_clariostarplus/asset.contract.json",
+        "sha256": "2ec7679937476da642b08f57aff53314ddf08c96b6d9852c0286415bafb34175"
+      },
+      {
+        "path": "exports/biofoundry/library/brooks_preciseflex_400/asset.contract.json",
+        "sha256": "9313b667dd5edfe3588fc7d3f0a6ffe08f65a2f6898a7c879e73e9c1cf7ffdd0"
+      },
+      {
+        "path": "exports/biofoundry/library/bruker_impact_ii/asset.contract.json",
+        "sha256": "a45b4c07071c0b0eb7caf83659cabcd82d8e870842e606360c6b10add9fe6138"
+      },
+      {
+        "path": "exports/biofoundry/library/bruker_nanolr3/asset.contract.json",
+        "sha256": "31ffb2a2cbd462dd32234fb7604a8c8a82d74981b8fef49be08bf2e856dc5271"
+      },
+      {
+        "path": "exports/biofoundry/library/bruker_nanowizard_4_xp/asset.contract.json",
+        "sha256": "dcb000a240740d4a9156e832990c041c969793697ba08ceb8ce36a167f0c4a3d"
+      },
+      {
+        "path": "exports/biofoundry/library/bruker_timstof_pro2/asset.contract.json",
+        "sha256": "9cb4e652392e34b37fd78a1b17b85ccf283213429de2e2322388c7bac62480fa"
+      },
+      {
+        "path": "exports/biofoundry/library/cytiva_akta_pure_25m1/asset.contract.json",
+        "sha256": "89e4dd5acfc7b96ee4afdd4d7a88941e7ee2320febfdbe0b6b36bfbc57d0f0e7"
+      },
+      {
+        "path": "exports/biofoundry/library/cytiva_akta_pure_25m2/asset.contract.json",
+        "sha256": "d1cbad06d96a8c192c5ff6e5933690451d4089ae4e91dead57872611dff89b9e"
+      },
+      {
+        "path": "exports/biofoundry/library/eppendorf_5910ri/asset.contract.json",
+        "sha256": "ef1756feac0ff83d50fb280b7c5dc17949258685a5bc377ccd982801380f7fae"
+      },
+      {
+        "path": "exports/biofoundry/library/eppendorf_cellxpertc170i/asset.contract.json",
+        "sha256": "decef0d01da4113c078228598c5028f01f92f6d0ba164db13eecd4eb297cc633"
+      },
+      {
+        "path": "exports/biofoundry/library/fluent1080/asset.contract.json",
+        "sha256": "833c68327f5825d1d9558ed106178f57f25241c6a94df4ca06085ecc3f3206dd"
+      },
+      {
+        "path": "exports/biofoundry/library/fluidigm_helios/asset.contract.json",
+        "sha256": "121b615da5f1039d720f9852809d2c7538ff004c946bc33520b6b2dcaddf137d"
+      },
+      {
+        "path": "exports/biofoundry/library/his_fusion_x/asset.contract.json",
+        "sha256": "be5475eb8973d97c6e515e3877fe0e113974f4b3f7d50949c2dbe7a0adf264c9"
+      },
+      {
+        "path": "exports/biofoundry/library/ika_ks4000/asset.contract.json",
+        "sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897"
+      },
+      {
+        "path": "exports/biofoundry/library/ika_plate_rctdigital/asset.contract.json",
+        "sha256": "389ac774c761e83f541ea954433cebc0374a7248cdf268081a063b52d0d9a988"
+      },
+      {
+        "path": "exports/biofoundry/library/lit_litone_lbs/asset.contract.json",
+        "sha256": "5312a95c95b268f9f059c45951b690e4ebf4f575db2f9a4e638cd08cc752d200"
+      },
+      {
+        "path": "exports/biofoundry/library/lit_litone_xl/asset.contract.json",
+        "sha256": "ee31fefbef4379aa6a21d46bdad9a95313b8b0392e100f88b49526b3fa3b0d83"
+      },
+      {
+        "path": "exports/biofoundry/library/malvern_microcalpeaq/asset.contract.json",
+        "sha256": "75fca998961db790037ec6f924d6a2ba26461599462e1a52f850efa30290d234"
+      },
+      {
+        "path": "exports/biofoundry/library/manual-pipette/asset.contract.json",
+        "sha256": "b7f524ab5e234697a433613d5e134625da76a96d501229ebdd119a3d5fbc6a10"
+      },
+      {
+        "path": "exports/biofoundry/library/mettler_easymax402/asset.contract.json",
+        "sha256": "b15cbc645b0ad29a2a361b0e5f2c1fdb8e175c26487c08908e6452db9a3dc900"
+      },
+      {
+        "path": "exports/biofoundry/library/mettler_reactraman785/asset.contract.json",
+        "sha256": "c073995a0c3d159dcc0d1e32d9645e570f50eeab405d4708ef55168392b4b06b"
+      },
+      {
+        "path": "exports/biofoundry/library/mgi_dnbseq_g99rs/asset.contract.json",
+        "sha256": "c2117cc4ff4848e95665dd749da788e7ec090cbdd5a0f317c808f8dd85f52a0f"
+      },
+      {
+        "path": "exports/biofoundry/library/mt_xpr204e/asset.contract.json",
+        "sha256": "03ab61e1c9a666ed54d1aab8fd5691644f2c09c6a6d05b2c4045814c62fbfc3e"
+      },
+      {
+        "path": "exports/biofoundry/library/nanoscribe_gt2/asset.contract.json",
+        "sha256": "57e14fd11ecc4ba131d19fc7bce7d708beffe11cb1b2cfcb3c7fada0903488d1"
+      },
+      {
+        "path": "exports/biofoundry/library/nih-3dpx-023347/asset.contract.json",
+        "sha256": "0826b8c688441791efac6dbfbd1022d49aad95a77de17d5bbccbd8837c500a38"
+      },
+      {
+        "path": "exports/biofoundry/library/nikon-ax/asset.contract.json",
+        "sha256": "87e98e492d1310e9fe9392b40e029b302008e1d5b602c05bf0f5009b15bc2b7b"
+      },
+      {
+        "path": "exports/biofoundry/library/nikon-ax-r-mp/asset.contract.json",
+        "sha256": "67d13dac4ad702c2e2dc20ebaea6688a2e3224af7dbc0ce357efc56738f77702"
+      },
+      {
+        "path": "exports/biofoundry/library/nikon-c2/asset.contract.json",
+        "sha256": "0007b6f39cafffcc2875aaee59275c0328cd5b6f4327f220b4e8324236368773"
+      },
+      {
+        "path": "exports/biofoundry/library/nikon-eclipse-ni-e/asset.contract.json",
+        "sha256": "c021734c2f34a3128695b8f80d96f0da2b30ed24456d7f8045b88370e5f67663"
+      },
+      {
+        "path": "exports/biofoundry/library/nikon-eclipse-ti2-e/asset.contract.json",
+        "sha256": "7c0370ae21992a96815180f96226c94103bd45140f37943c47d16cebfb098a32"
+      },
+      {
+        "path": "exports/biofoundry/library/nikon-ti2-n-sim-s-m/asset.contract.json",
+        "sha256": "30e9d3b4a43ce5618f00b75e4759ea199abcce4fbf7bccca42293ef24b16cefd"
+      },
+      {
+        "path": "exports/biofoundry/library/opentrons_flex_project/asset.contract.json",
+        "sha256": "7be541fb5cf541076f5232c9dcd3c3bbc15065767d99d3e37f1041897ba31d48"
+      },
+      {
+        "path": "exports/biofoundry/library/perkinelmer_tga8000/asset.contract.json",
+        "sha256": "20e2e0bcb6311d7c31530a386271d0f6cf5e420991483fee9f54b165e66cb018"
+      },
+      {
+        "path": "exports/biofoundry/library/plate-96/asset.contract.json",
+        "sha256": "11ca4811d83b4452d77079b7446ab7f3108af3c8f0af98c07333c90c93fda337"
+      },
+      {
+        "path": "exports/biofoundry/library/quantum_design_ppms_dynacool/asset.contract.json",
+        "sha256": "cc14395d0d99daa7ca5af6e1da7943964c5c940fd33660e9034311797b275af5"
+      },
+      {
+        "path": "exports/biofoundry/library/rigaku_xtalab_synergy_dw/asset.contract.json",
+        "sha256": "d1c31ccb2c82b7d99f88286077bc3a0da2905c69b38821a4efbe9d50f8c15696"
+      },
+      {
+        "path": "exports/biofoundry/library/roche_lightcycler_480_ii/asset.contract.json",
+        "sha256": "0048dad6d94fc09d04d4c08801903e20f06035bfac118e01dccdcd468ffacbeb"
+      },
+      {
+        "path": "exports/biofoundry/library/sartorius_ambr15/asset.contract.json",
+        "sha256": "8c30e7c6035b49d28d5ef17a3b816c93a7ba42e932adc270b441193155ebac48"
+      },
+      {
+        "path": "exports/biofoundry/library/sartorius_octet_r8/asset.contract.json",
+        "sha256": "0bd27c0c7dba64737dc594fd3cfd30a48c1b2ecc673eaa5f4d785de4e2a07797"
+      },
+      {
+        "path": "exports/biofoundry/library/sciex_zenotof_7600/asset.contract.json",
+        "sha256": "4688ab84a8fddeb4cf602d49fb40cccbc32b0816ec3df128d8057e40bccb583f"
+      },
+      {
+        "path": "exports/biofoundry/library/singlecell_flowracs/asset.contract.json",
+        "sha256": "3fcca2b8748b876fc6eb3caf1f8006eb1291baf17f69ef1b840ab6e53f0b61b6"
+      },
+      {
+        "path": "exports/biofoundry/library/spectramax-i3x/asset.contract.json",
+        "sha256": "d076e41fdefcf887f3642737383671054cc3f6808738d025607f945c2ba03e3a"
+      },
+      {
+        "path": "exports/biofoundry/library/spectramax-id5/asset.contract.json",
+        "sha256": "ce20a61ef572f4c92e96850bb801c0286f244ac04a491829fa8c0731d5dbbf47"
+      },
+      {
+        "path": "exports/biofoundry/library/tecan-fluent780/asset.contract.json",
+        "sha256": "9377a9c4b896231117ce71eb4e6485ba7ec2529da19aa0d41a2ed04f426523bf"
+      },
+      {
+        "path": "exports/biofoundry/library/thermo_ibrightfl1500/asset.contract.json",
+        "sha256": "2148ce503101feb6098defd10bfbfec3872a1c905ca078cc4ed780c55299a109"
+      },
+      {
+        "path": "exports/biofoundry/library/thermo_prima_bt/asset.contract.json",
+        "sha256": "61c8f7d64317d1772bb1fc1c28a62218fe174fd9adf5d77bb4aa541f5dac0a38"
+      },
+      {
+        "path": "exports/biofoundry/library/thermo_sorvall_lynx6000/asset.contract.json",
+        "sha256": "e0340a711f9f4d6a27b30b5a09165662d572cfb1e73c6043f4aa44bbf3e47ca4"
+      },
+      {
+        "path": "exports/biofoundry/library/tiprack-96/asset.contract.json",
+        "sha256": "52eea2fa6f163e499453f2af55a79fe7615d6dbbc2a3bd870319fbfb5c73be4e"
+      },
+      {
+        "path": "exports/biofoundry/library/wyatt_dynapro_nanostar/asset.contract.json",
+        "sha256": "bde2c7e87c128c2e86885b2f87aa61ce4577cd573e8d4ce526865ae2df13f384"
+      },
+      {
+        "path": "exports/biofoundry/library/yokogawa_csuw1/asset.contract.json",
+        "sha256": "dc782ade6012cc76f62279a5679792d8922ef0cc1d0a41fdee8de4162ce9bfb7"
+      },
+      {
+        "path": "exports/biofoundry/library/zolix_finder930_301_sms/asset.contract.json",
+        "sha256": "5abeefa222e7e36af6ef11e6ca370e5a458958993c753221c3e9c6f442f665c5"
+      }
+    ],
+    "base_catalog_sha256": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de",
+    "base_plans": [
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-000.json",
+        "sha256": "7db234dbf7b01464a857fdd93cff34bad8b41d51d0b4e1b2a23970e001d3146f"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-001.json",
+        "sha256": "987ca8410cab1247bceddc83cd7c0df2dddaf02c1262531273a88d791e35d186"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-002.json",
+        "sha256": "57735232670bc275afbd3a1376268981c6be16ef1b7c709c5618922fbd3d6948"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-003.json",
+        "sha256": "f98ae1190d08bbee158d8ec294ebf3b8b4f2c2e77c84025fc6f79328be077bcd"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-004.json",
+        "sha256": "9be76b9ab261d109c08b67d358eac7351ad41cb19f21d8ab0959a6f0c719eeff"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-005.json",
+        "sha256": "fc848062299f7fac1e70a7f429d08bd0f511b3f641f663b65232584e26b2d1d9"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-006.json",
+        "sha256": "28109f317b54fd95e6201744f0b5b653f96c4370c0be800dc509ad4749d086da"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-007.json",
+        "sha256": "2d5e959751d2218a902d43b12f0aaaf7b2833c5a952ffa5147ed357a95fd346a"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-008.json",
+        "sha256": "caecd5769a9466860bdd7720a81d28e64929a3d8d93fa67ec7dbd6e355a29a4a"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-009.json",
+        "sha256": "c55a3862c1ae005640603093291eab044ff12400dc82be71963256e99c31b3d0"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-010.json",
+        "sha256": "0ed7683880df3fe9060ccb5005723ee2c83efae81f03a1d2fe56f1e3f92b65ad"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-011.json",
+        "sha256": "70d31766f28074917f1a1610a44165244d0dd45a00b42f60807362b659656545"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-012.json",
+        "sha256": "31035f86ec81241b68e190066bea7d277e85b28347f04f462fb3d762628d4120"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-013.json",
+        "sha256": "df3c0db0a58763cf34971dbd25b431121f47a27417aae4215883813292be2797"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-014.json",
+        "sha256": "8e6e0da77e5cdfb354821e3308d2cdd599dae2543115357b2e304c54a5bf9419"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-015.json",
+        "sha256": "f7c99f459624c3cb865595e47233a3e04d9f11967bfe61fdf7c34f30a3a5a37c"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-016.json",
+        "sha256": "83f74ccb4cb2583799e43ab484fbac08271314fa6e50254d7ca7caca19660502"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-017.json",
+        "sha256": "6c390eccce3919d13c813110021f4710de52f35331d5b6a82ca47a9320ee7ebc"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-018.json",
+        "sha256": "31b0314f001b4e505116fb4ab0eff71781997b12124c98c64345097ba58182a0"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-019.json",
+        "sha256": "903fd63b6897eaf5e645b9f8b1b88bd58e7f68a58d4a18c3db05b3ac205d0813"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-020.json",
+        "sha256": "a8a06ec3597d2816a0f064cab6f0cc69e284c089f8cd0435b5ccde302b03e36a"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-021.json",
+        "sha256": "eca1c49a3c77b30d4c393b594680827a738809609b9474f44e4088ea9537bc3a"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-022.json",
+        "sha256": "44dd2e934cd0f86634d4b2233e7fa545617238f23c1fd2d8f12f5d6bbe03982e"
+      },
+      {
+        "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-023.json",
+        "sha256": "74ebad1bae5dc20977caee8c84b76ccde797d0b117b0a51421e35175617f4914"
+      }
+    ],
+    "protocol_sha256": "2e0719051822766eb05ffb64b18d1211a4d3794093ecddab723094564542badb",
+    "sim_library_protocols_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "v2_repair_schema_sha256": "b692906b36790b1772ce33fccb25b15127b1916b7da8e71155808a22aedaacc3",
+    "v2_scorer_sha256": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c"
+  },
+  "oracle_rule": "oracle_label is assigned by the predeclared mutator construction; checker outputs are separate fields and never define truth labels",
+  "protocol": "docs/paper/biofoundry-preprint/benchmarks/v3/VALIDATION_PROTOCOL.md",
+  "schema": "biofoundry.v3.mutation-freeze/1",
+  "seed": 20261019,
+  "total_mutations": 400
+}

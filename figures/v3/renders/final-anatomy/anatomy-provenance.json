@@ -1,0 +1,54 @@
+{
+  "schema": "biorehearse.v3.anatomy-render-provenance/1",
+  "renderer": "Blender 5.2.0 LTS",
+  "engine": "BLENDER_WORKBENCH",
+  "studio": "Workbench paint.sl; Standard; Medium High Contrast; cavity and outline; glass doors hidden for anatomy view",
+  "image": "transparent/fluent-anatomy.png",
+  "width_px": 2400,
+  "height_px": 1800,
+  "source": {
+    "asset_id": "fluent1080",
+    "path": "assets/fluent1080.glb",
+    "sha256": "f41cda99a50cc5ff800b11cff6c06e6b18d3d101d824253b0b091ddbe3f44aa6",
+    "native_dimensions_m": [
+      2.150607,
+      1.033489,
+      1.994862
+    ]
+  },
+  "hidden_nodes": [
+    "fluent_glass_door_0",
+    "fluent_glass_door_1"
+  ],
+  "landmarks": {
+    "FCA": {
+      "node": "fca_nozzle_0",
+      "xy": [
+        0.494655,
+        0.443563
+      ]
+    },
+    "MCA96": {
+      "node": "mca96_adapter_B11",
+      "xy": [
+        0.581149,
+        0.478818
+      ]
+    },
+    "Deck": {
+      "node": "deck_index_rail_122",
+      "xy": [
+        0.448705,
+        0.509357
+      ]
+    },
+    "Plate sites": {
+      "node": "fluent_spare_plate_nest_1050_220",
+      "xy": [
+        0.475721,
+        0.495636
+      ]
+    }
+  },
+  "geometry_policy": "native GLB metre scale; rigid framing only; source mesh unchanged"
+}

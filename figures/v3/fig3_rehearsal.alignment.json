@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "python-matplotlib",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 4,
+    "exemptions": 2
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "python-matplotlib",
+    "figure": {
+      "width_pt": 510.23622047244095,
+      "height_pt": 487.5590551181102
+    },
+    "panels": [
+      {
+        "id": "gantt",
+        "bbox_pt": [
+          51.023622047244096,
+          375.4204724409449,
+          489.8267716535433,
+          448.55433070866144
+        ],
+        "panel_label": "a",
+        "panel_label_anchor_pt": [
+          13.725354330708667,
+          450.0170078740158
+        ]
+      },
+      {
+        "id": "frame0",
+        "bbox_pt": [
+          17.858267716535433,
+          224.27716535433072,
+          128.06929133858267,
+          324.2267716535433
+        ]
+      },
+      {
+        "id": "frame1",
+        "bbox_pt": [
+          139.2944881889764,
+          224.27716535433072,
+          249.5055118110236,
+          324.2267716535433
+        ]
+      },
+      {
+        "id": "frame2",
+        "bbox_pt": [
+          260.73070866141734,
+          224.27716535433072,
+          370.94173228346455,
+          324.2267716535433
+        ]
+      },
+      {
+        "id": "frame3",
+        "bbox_pt": [
+          382.1669291338583,
+          224.27716535433072,
+          492.3779527559055,
+          324.2267716535433
+        ]
+      },
+      {
+        "id": "heat0",
+        "bbox_pt": [
+          17.858267716535433,
+          128.43779527559056,
+          96.94488188976378,
+          181.16220472440946
+        ]
+      },
+      {
+        "id": "heat1",
+        "bbox_pt": [
+          125.00787401574803,
+          128.43779527559053,
+          204.09448818897638,
+          181.16220472440946
+        ]
+      },
+      {
+        "id": "heat2",
+        "bbox_pt": [
+          232.15748031496065,
+          128.43779527559056,
+          311.244094488189,
+          181.16220472440946
+        ]
+      },
+      {
+        "id": "components",
+        "bbox_pt": [
+          28.062992125984252,
+          51.193700787401575,
+          339.3070866141733,
+          90.1984251968504
+        ]
+      }
+    ],
+    "row_groups": [
+      {
+        "id": "row-1",
+        "panels": [
+          "frame0",
+          "frame1",
+          "frame2",
+          "frame3"
+        ]
+      },
+      {
+        "id": "row-2",
+        "panels": [
+          "heat0",
+          "heat1",
+          "heat2"
+        ]
+      }
+    ],
+    "column_groups": [],
+    "boundary_groups": [],
+    "exemptions": [
+      {
+        "panels": [
+          "frame0",
+          "frame1",
+          "frame2",
+          "frame3"
+        ],
+        "checks": [
+          "panel-label"
+        ],
+        "reason": "Filmstrip frames are time-indexed and carry frame labels rather than independent panel letters."
+      },
+      {
+        "panels": [
+          "heat0",
+          "heat1",
+          "heat2",
+          "components"
+        ],
+        "checks": [
+          "panel-label"
+        ],
+        "reason": "Volume heatmaps and the component strip are sub-panels of panel c; the shared c label is placed above the block."
+      }
+    ]
+  },
+  "findings": []
+}

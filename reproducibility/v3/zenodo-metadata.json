@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "title": "BioRehearse: executable digital rehearsal for registered biofoundry plans",
+    "upload_type": "software",
+    "creators": [
+      {
+        "name": "Gao, Yuan",
+        "affiliation": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences"
+      },
+      {
+        "name": "Si, Tong",
+        "affiliation": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences; Shenzhen University of Advanced Technology"
+      }
+    ],
+    "description": "Source code, registered-method planning benchmarks and computational evidence for BioRehearse. Includes original outcomes and prospective extension protocols. Manuscript, rendered paper figures, complete third-party geometry and laboratory measurements are excluded from the software archive.",
+    "access_right": "open",
+    "license": "MIT",
+    "version": "0.3.0",
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/KRATSZ/BioRehearse",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "keywords": [
+      "laboratory automation",
+      "resource-constrained scheduling",
+      "digital model",
+      "biofoundry",
+      "reproducibility"
+    ]
+  },
+  "status": "prepared locally; no Zenodo deposit or DOI has been created",
+  "archive_scope": "public code/data release only; paper and complete asset library excluded"
+}

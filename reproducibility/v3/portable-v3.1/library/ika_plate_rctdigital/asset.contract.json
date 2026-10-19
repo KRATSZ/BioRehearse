@@ -1,0 +1,2928 @@
+{
+  "id": "instrument.ika_plate_rctdigital",
+  "chem_id": "CHEM-008",
+  "name": "Magnetic hotplate stirrer",
+  "maker": "IKA",
+  "model": "Plate RCT digital",
+  "name_zh": "磁力加热搅拌器IKA Plate (RCT digital)（25004601，附PT1000）",
+  "domain_name": "Basic Metrology & Sample Handling",
+  "path": "assets/expansion_batch05/t4_measure/ika_plate_rctdigital",
+  "n_components": "31",
+  "n_joints": "8",
+  "n_state_slots": "33",
+  "n_capabilities": "33",
+  "n_readouts": "13",
+  "n_interface_points": "7",
+  "n_sources": "14",
+  "output_templates": "True",
+  "size_x_m": "0.16",
+  "size_y_m": "0.27",
+  "size_z_m": "0.0849",
+  "glb": "assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.glb",
+  "glb_up": "y",
+  "urdf": "assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+  "contract": "assets/expansion_batch05/t4_measure/ika_plate_rctdigital/asset.contract.json",
+  "asset_id": "ika_plate_rctdigital",
+  "source_glb": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.glb",
+  "source_contract": "library/ika_plate_rctdigital/asset.contract.json",
+  "source_urdf": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+  "source": "https://huggingface.co/datasets/MBZUAI/ChemLab-Assets/tree/ac95c1bcb717a71e3036993ef9102ed20fa028c0/assets/expansion_batch05/t4_measure/ika_plate_rctdigital",
+  "license": "CC BY-NC 4.0; third-party exceptions in NOTICE.md",
+  "author": "ChemLab-Assets authors; source-specific credits retained in contract/NOTICE.md",
+  "workflow_adapter_validated": false,
+  "status": "visual_ready",
+  "urdf_links": 32,
+  "urdf_joints": 31,
+  "movable_joints": 8,
+  "raw_package_complete": true,
+  "package_scope": "Complete selected model directory and URDF mesh dependencies; external runtime references are not activated",
+  "normalized_glb": "library/ika_plate_rctdigital/model.glb",
+  "preview": "library/ika_plate_rctdigital/preview.png",
+  "source_package": "library/ika_plate_rctdigital/source.zip",
+  "source_glb_up": "z",
+  "articulation": {
+    "schema": "biofoundry.community-articulation/1",
+    "source_urdf": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+    "movable_joints": 8,
+    "bound_joints": 8,
+    "mapping_coverage": 1.0,
+    "zero_pose_max_world_matrix_error": 2.30673059320452e-07,
+    "original_objects_preserved": 33,
+    "joints": [
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "power_switch_joint",
+        "type": "prismatic",
+        "parent_link": "housing",
+        "child_link": "power_switch",
+        "axis_joint_frame": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "origin_xyz_m": [
+          0.012,
+          -0.1341,
+          0.017
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 0.003,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "m",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.012000000104308128
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.01700001023709774
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            -0.13410000503063202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "ika_plate_rctdigital__power_switch",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "ika_plate_rctdigital__urdf__power_switch_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          0.0,
+          -1.1175870895385742e-08
+        ],
+        "original_visual_descendants": 0
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "temp_push_key_joint",
+        "type": "prismatic",
+        "parent_link": "glass_top",
+        "child_link": "temp_push_key",
+        "axis_joint_frame": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "origin_xyz_m": [
+          -0.054,
+          -0.11,
+          0.0485
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 0.0015,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "m",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.05400000140070915
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.04850000888109207
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            -0.10999999940395355
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "ika_plate_rctdigital__temp_push_key",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "ika_plate_rctdigital__urdf__temp_push_key_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          0.0,
+          -7.450580596923828e-09
+        ],
+        "original_visual_descendants": 1
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "speed_push_key_joint",
+        "type": "prismatic",
+        "parent_link": "glass_top",
+        "child_link": "speed_push_key",
+        "axis_joint_frame": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "origin_xyz_m": [
+          0.046,
+          -0.11,
+          0.0485
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 0.0015,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "m",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.04600000008940697
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.04850000888109207
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            -0.10999999940395355
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "ika_plate_rctdigital__speed_push_key",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "ika_plate_rctdigital__urdf__speed_push_key_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          0.0,
+          -7.450580596923828e-09
+        ],
+        "original_visual_descendants": 1
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "menu_key_joint",
+        "type": "prismatic",
+        "parent_link": "glass_top",
+        "child_link": "menu_key",
+        "axis_joint_frame": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "origin_xyz_m": [
+          -0.03,
+          -0.112,
+          0.0474
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 0.0006,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "m",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.029999999329447746
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.047400008887052536
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            -0.1120000034570694
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "ika_plate_rctdigital__menu_key",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "ika_plate_rctdigital__urdf__menu_key_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          0.0,
+          -7.450580596923828e-09
+        ],
+        "original_visual_descendants": 0
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "timer_key_joint",
+        "type": "prismatic",
+        "parent_link": "glass_top",
+        "child_link": "timer_key",
+        "axis_joint_frame": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "origin_xyz_m": [
+          -0.008,
+          -0.112,
+          0.0474
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 0.0006,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "m",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.00800000037997961
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.047400008887052536
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            -0.1120000034570694
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "ika_plate_rctdigital__timer_key",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "ika_plate_rctdigital__urdf__timer_key_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          0.0,
+          -7.450580596923828e-09
+        ],
+        "original_visual_descendants": 0
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "lock_key_joint",
+        "type": "prismatic",
+        "parent_link": "glass_top",
+        "child_link": "lock_key",
+        "axis_joint_frame": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "origin_xyz_m": [
+          0.014,
+          -0.112,
+          0.0474
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 0.0006,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "m",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.014000000432133675
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.047400008887052536
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            -0.1120000034570694
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "ika_plate_rctdigital__lock_key",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "ika_plate_rctdigital__urdf__lock_key_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          0.0,
+          -7.450580596923828e-09
+        ],
+        "original_visual_descendants": 0
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "knob_temperature_joint",
+        "type": "revolute",
+        "parent_link": "temp_push_key",
+        "child_link": "knob_temperature",
+        "axis_joint_frame": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "origin_xyz_m": [
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 19.4779,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "rad",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            3.725290298461914e-09
+          ],
+          [
+            0.0,
+            -2.8212994607201836e-07,
+            -0.9999998807907104,
+            0.0001999958185479045
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            -2.8212994607201836e-07,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "ika_plate_rctdigital__knob_temperature",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "ika_plate_rctdigital__urdf__knob_temperature_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          0.0,
+          -7.450580596923828e-09
+        ],
+        "original_visual_descendants": 0
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "knob_speed_joint",
+        "type": "revolute",
+        "parent_link": "speed_push_key",
+        "child_link": "knob_speed",
+        "axis_joint_frame": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "origin_xyz_m": [
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 18.8496,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "rad",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            3.725290298461914e-09
+          ],
+          [
+            0.0,
+            -2.8212994607201836e-07,
+            -0.9999998807907104,
+            0.0001999958185479045
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            -2.8212994607201836e-07,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "ika_plate_rctdigital__knob_speed",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "ika_plate_rctdigital__urdf__knob_speed_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          0.0,
+          -7.450580596923828e-09
+        ],
+        "original_visual_descendants": 0
+      }
+    ],
+    "axis_frame": "axis_node_local_gltf and joint_axis_local use Y-up glTF; axis_joint_frame/joint_axis use Blender Z-up; canonical URDF FK at q=0",
+    "workflow_adapter_validated": false
+  },
+  "units": "m",
+  "axis": "X right, Y back, Z up in Blender; standard Y-up glTF export",
+  "dimensions_xyz_m": [
+    0.1599999964237213,
+    0.27000001072883606,
+    0.08490001410245895
+  ],
+  "canonical_to_normalized_translation_m": [
+    -0.0,
+    -0.0,
+    8.455764977099989e-09
+  ],
+  "source_axis_correction_degrees": -90,
+  "mesh_objects": 31,
+  "triangles": 8158,
+  "appearance": {
+    "status": "ready",
+    "basis": "prior_visual_review"
+  },
+  "mechanism": {
+    "status": "digital_roundtrip_passed",
+    "joint_nodes": 8,
+    "sampled_poses": 17,
+    "physical_travel_validated": false,
+    "sweep": {
+      "passed": true,
+      "report": "library-motion-checks.json",
+      "blend_positions": 88,
+      "glb_positions": 88,
+      "physical_clearance_validated": false
+    }
+  },
+  "protocol": {
+    "status": "digital_simulation_passed",
+    "workflow_adapter_validated": false,
+    "hardware_adapter_validated": false,
+    "report": "library-protocol-checks.json",
+    "mode": "joint_bound_digital_simulation",
+    "protocol_scope": "joint_contract_only",
+    "access_lifecycle_tested": false,
+    "liquid_accounting_tested": false,
+    "geometry_replay_report": "library-protocol-motion-checks.json"
+  },
+  "blend": "library/ika_plate_rctdigital/model.blend",
+  "checks": "library/ika_plate_rctdigital/checks.json",
+  "assembly_reference": "library/ika_plate_rctdigital/assembly-reference.json",
+  "origin": {
+    "definition": "bottom centre of closed assembly",
+    "local_frames_preserved": true
+  },
+  "dimension_evidence": {
+    "source": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/asset.contract.json",
+    "basis": "source digital mesh closed-pose bounds; not calibrated manufacturer CAD",
+    "declared_catalog_m": [
+      0.16,
+      0.27,
+      0.0849
+    ]
+  },
+  "validation": {
+    "roundtrip_passed": true,
+    "report": "library/ika_plate_rctdigital/checks.json",
+    "tolerance_m": 2e-05
+  },
+  "upstream_contract": "sources/community/chemlab/assets/expansion_batch05/t4_measure/ika_plate_rctdigital/asset.contract.json",
+  "files_sha256": {
+    "normalized_glb": "4dfd6666168a55ed305ceb87650e2bb40bcfc8de835c1ea11372cdae66c0c53d",
+    "blend": "6ab16718b306685b6f39a6f954bb9e0f40517e4c9e8099a8cf9d7b05791ec414",
+    "preview": "7873a1bc20eda0517d5440d262c44a7ae2687141992a556f93e722c092216dc3",
+    "checks": "db5b0fd13bc489f7e9c8da3d4218980739ca1d8073deb93e974a8f98beaa0047"
+  },
+  "actual_checks": {
+    "id": "ika_plate_rctdigital",
+    "blend": {
+      "passed": true,
+      "missing_nodes": [],
+      "extra_nodes": [],
+      "nodes_checked": 42,
+      "parents_preserved": true,
+      "max_world_matrix_error": 0.0,
+      "max_local_matrix_error": 0.0,
+      "dimension_error_m": 0.0,
+      "pose_checks": [
+        {
+          "frame": 0,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 1,
+          "joint": "ika_plate_rctdigital:18",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0003000013530254364,
+          "passed": true
+        },
+        {
+          "frame": 2,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "joint": "ika_plate_rctdigital:20",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0003000013530254364,
+          "passed": true
+        },
+        {
+          "frame": 4,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "joint": "ika_plate_rctdigital:22",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0007500015199184418,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 7,
+          "joint": "ika_plate_rctdigital:24",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.5000001788139343,
+          "passed": true
+        },
+        {
+          "frame": 8,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 9,
+          "joint": "ika_plate_rctdigital:26",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0007500015199184418,
+          "passed": true
+        },
+        {
+          "frame": 10,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 11,
+          "joint": "ika_plate_rctdigital:28",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.5000001788139343,
+          "passed": true
+        },
+        {
+          "frame": 12,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 13,
+          "joint": "ika_plate_rctdigital:30",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0003000013530254364,
+          "passed": true
+        },
+        {
+          "frame": 14,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 15,
+          "joint": "ika_plate_rctdigital:39",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0014999955892562866,
+          "passed": true
+        },
+        {
+          "frame": 16,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        }
+      ],
+      "failed_nodes": [],
+      "unit_scale_m": 1.0
+    },
+    "glb": {
+      "passed": true,
+      "missing_nodes": [],
+      "extra_nodes": [],
+      "nodes_checked": 42,
+      "parents_preserved": true,
+      "max_world_matrix_error": 4.172325134277344e-07,
+      "max_local_matrix_error": 3.7844416311827445e-07,
+      "dimension_error_m": 2.9802322387695312e-08,
+      "pose_checks": [
+        {
+          "frame": 0,
+          "joint": null,
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 1,
+          "joint": "ika_plate_rctdigital:18",
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0003000013530254364,
+          "passed": true
+        },
+        {
+          "frame": 2,
+          "joint": null,
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "joint": "ika_plate_rctdigital:20",
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0003000013530254364,
+          "passed": true
+        },
+        {
+          "frame": 4,
+          "joint": null,
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "joint": "ika_plate_rctdigital:22",
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0007500015199184418,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "joint": null,
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 7,
+          "joint": "ika_plate_rctdigital:24",
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.5000001788139343,
+          "passed": true
+        },
+        {
+          "frame": 8,
+          "joint": null,
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 9,
+          "joint": "ika_plate_rctdigital:26",
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0007500015199184418,
+          "passed": true
+        },
+        {
+          "frame": 10,
+          "joint": null,
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 11,
+          "joint": "ika_plate_rctdigital:28",
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.5000001788139343,
+          "passed": true
+        },
+        {
+          "frame": 12,
+          "joint": null,
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 13,
+          "joint": "ika_plate_rctdigital:30",
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0003000013530254364,
+          "passed": true
+        },
+        {
+          "frame": 14,
+          "joint": null,
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 15,
+          "joint": "ika_plate_rctdigital:39",
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0014999955892562866,
+          "passed": true
+        },
+        {
+          "frame": 16,
+          "joint": null,
+          "max_world_matrix_error": 4.172325134277344e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        }
+      ],
+      "failed_nodes": [],
+      "surface_check": {
+        "passed": true,
+        "meshes_checked": 31,
+        "max_euclidean_surface_error_m": 5.831001814726733e-08,
+        "failed_meshes": [],
+        "method": "Actual evaluated vertices to triangles in both directions, closed pose; Euclidean metres; all posed transforms independently checked"
+      }
+    },
+    "model_glb_sha256": "4dfd6666168a55ed305ceb87650e2bb40bcfc8de835c1ea11372cdae66c0c53d",
+    "model_blend_sha256": "6ab16718b306685b6f39a6f954bb9e0f40517e4c9e8099a8cf9d7b05791ec414",
+    "reference_sha256": "8e65ff5bad2547fa709fe499c5b93975326457c8074768612eae0390e25791ae",
+    "passed": true
+  },
+  "assembly": {
+    "units": "m at asset root; local translation units follow accumulated parent scale",
+    "nodes": [
+      {
+        "id": "ika_plate_rctdigital:0",
+        "name": "ika_plate_rctdigital",
+        "type": "EMPTY",
+        "parent": null,
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:1",
+        "name": "world",
+        "type": "EMPTY",
+        "parent": "ika_plate_rctdigital:0",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:2",
+        "name": "ika_plate_rctdigital__root",
+        "type": "EMPTY",
+        "parent": "ika_plate_rctdigital:1",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:3",
+        "name": "ika_plate_rctdigital__housing",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:2",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:4",
+        "name": "ika_plate_rctdigital__feet",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:5",
+        "name": "ika_plate_rctdigital__frame",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:6",
+        "name": "ika_plate_rctdigital__glass_top",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:5",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:7",
+        "name": "ika_plate_rctdigital__glass_print",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:8",
+        "name": "ika_plate_rctdigital__hot_lamp",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:9",
+        "name": "ika_plate_rctdigital__lcd",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:10",
+        "name": "ika_plate_rctdigital__heating_lamp",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:9",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:11",
+        "name": "ika_plate_rctdigital__lock_lamp",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:9",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:12",
+        "name": "ika_plate_rctdigital__motor_lamp",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:9",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:13",
+        "name": "ika_plate_rctdigital__sensor_lamp",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:9",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:14",
+        "name": "ika_plate_rctdigital__speed_ring",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:15",
+        "name": "ika_plate_rctdigital__stand_cap",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:16",
+        "name": "ika_plate_rctdigital__standby_led",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:17",
+        "name": "ika_plate_rctdigital__temp_ring",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:18",
+        "name": "ika_plate_rctdigital__urdf__lock_key_joint",
+        "type": "EMPTY",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.014000000432133675,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.047400008887052536,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          -0.1120000034570694,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.014000000432133675,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          -0.1120000034570694,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.047400008887052536,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "prismatic",
+          "joint_axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "joint_limits": [
+            0.0,
+            0.0006
+          ],
+          "joint_units": "m"
+        }
+      },
+      {
+        "id": "ika_plate_rctdigital:19",
+        "name": "ika_plate_rctdigital__lock_key",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:18",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          0.0,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          -1.0023660124147682e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.014000000432133675,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.1120000034570694,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.04740000143647194,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:20",
+        "name": "ika_plate_rctdigital__urdf__menu_key_joint",
+        "type": "EMPTY",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -0.029999999329447746,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.047400008887052536,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          -0.1120000034570694,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.029999999329447746,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          -0.1120000034570694,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.047400008887052536,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "prismatic",
+          "joint_axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "joint_limits": [
+            0.0,
+            0.0006
+          ],
+          "joint_units": "m"
+        }
+      },
+      {
+        "id": "ika_plate_rctdigital:21",
+        "name": "ika_plate_rctdigital__menu_key",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:20",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          0.0,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          -1.0023660124147682e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.029999999329447746,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.1120000034570694,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.04740000143647194,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:22",
+        "name": "ika_plate_rctdigital__urdf__speed_push_key_joint",
+        "type": "EMPTY",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.04600000008940697,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.04850000888109207,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          -0.10999999940395355,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.04600000008940697,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          -0.10999999940395355,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.04850000888109207,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "prismatic",
+          "joint_axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "joint_limits": [
+            0.0,
+            0.0015
+          ],
+          "joint_units": "m"
+        }
+      },
+      {
+        "id": "ika_plate_rctdigital:23",
+        "name": "ika_plate_rctdigital__speed_push_key",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:22",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          3.725290298461914e-09,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          0.0,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          -1.0443374165447494e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.04600000008940697,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.10999999940395355,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.048500001430511475,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:24",
+        "name": "ika_plate_rctdigital__urdf__knob_speed_joint",
+        "type": "EMPTY",
+        "parent": "ika_plate_rctdigital:23",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          3.725290298461914e-09,
+          0.0,
+          -3.029462334325217e-07,
+          -0.9999997615814209,
+          0.00019999507640022784,
+          0.0,
+          0.9999997615814209,
+          -3.029462334325217e-07,
+          7.450580596923828e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.046000003814697266,
+          0.0,
+          1.0,
+          -3.7844421285626595e-07,
+          -0.10999999940395355,
+          0.0,
+          3.7844421285626595e-07,
+          1.0,
+          0.04830000549554825,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "revolute",
+          "joint_axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "joint_limits": [
+            0.0,
+            18.8496
+          ],
+          "joint_units": "rad"
+        }
+      },
+      {
+        "id": "ika_plate_rctdigital:25",
+        "name": "ika_plate_rctdigital__knob_speed",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:24",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -3.725290298461914e-09,
+          0.0,
+          -3.0294629027594056e-07,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          -3.0294629027594056e-07,
+          -3.0746214463306387e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.04600000008940697,
+          0.0,
+          7.54979225803254e-08,
+          1.0,
+          -0.10999999940395355,
+          0.0,
+          -1.0,
+          7.54979225803254e-08,
+          0.04830000177025795,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:26",
+        "name": "ika_plate_rctdigital__urdf__temp_push_key_joint",
+        "type": "EMPTY",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -0.05400000140070915,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.04850000888109207,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          -0.10999999940395355,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.05400000140070915,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          -0.10999999940395355,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.04850000888109207,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "prismatic",
+          "joint_axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "joint_limits": [
+            0.0,
+            0.0015
+          ],
+          "joint_units": "m"
+        }
+      },
+      {
+        "id": "ika_plate_rctdigital:27",
+        "name": "ika_plate_rctdigital__temp_push_key",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:26",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          3.725290298461914e-09,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          0.0,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          -1.0443374165447494e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.05400000140070915,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.10999999940395355,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.048500001430511475,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:28",
+        "name": "ika_plate_rctdigital__urdf__knob_temperature_joint",
+        "type": "EMPTY",
+        "parent": "ika_plate_rctdigital:27",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -3.029462334325217e-07,
+          -0.9999997615814209,
+          0.00019999507640022784,
+          0.0,
+          0.9999997615814209,
+          -3.029462334325217e-07,
+          7.450580596923828e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.053999997675418854,
+          0.0,
+          1.0,
+          -3.7844421285626595e-07,
+          -0.10999999940395355,
+          0.0,
+          3.7844421285626595e-07,
+          1.0,
+          0.04830000549554825,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "revolute",
+          "joint_axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "joint_limits": [
+            0.0,
+            19.4779
+          ],
+          "joint_units": "rad"
+        }
+      },
+      {
+        "id": "ika_plate_rctdigital:29",
+        "name": "ika_plate_rctdigital__knob_temperature",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:28",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -3.725290298461914e-09,
+          0.0,
+          -3.0294629027594056e-07,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          -3.0294629027594056e-07,
+          -3.0746214463306387e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.05400000140070915,
+          0.0,
+          7.54979225803254e-08,
+          1.0,
+          -0.10999999940395355,
+          0.0,
+          -1.0,
+          7.54979225803254e-08,
+          0.04830000177025795,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:30",
+        "name": "ika_plate_rctdigital__urdf__timer_key_joint",
+        "type": "EMPTY",
+        "parent": "ika_plate_rctdigital:6",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -0.00800000037997961,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.047400008887052536,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          -0.1120000034570694,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.00800000037997961,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          -0.1120000034570694,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.047400008887052536,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "prismatic",
+          "joint_axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "joint_limits": [
+            0.0,
+            0.0006
+          ],
+          "joint_units": "m"
+        }
+      },
+      {
+        "id": "ika_plate_rctdigital:31",
+        "name": "ika_plate_rctdigital__timer_key",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:30",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          0.0,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          -1.0023660124147682e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.00800000037997961,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.1120000034570694,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.04740000143647194,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:32",
+        "name": "ika_plate_rctdigital__plate_collar",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:33",
+        "name": "ika_plate_rctdigital__heating_plate",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:32",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:34",
+        "name": "ika_plate_rctdigital__power_surround",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:35",
+        "name": "ika_plate_rctdigital__rear_label",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:36",
+        "name": "ika_plate_rctdigital__rear_panel",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:37",
+        "name": "ika_plate_rctdigital__safety_screw",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:38",
+        "name": "ika_plate_rctdigital__sensor_jack",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:39",
+        "name": "ika_plate_rctdigital__urdf__power_switch_joint",
+        "type": "EMPTY",
+        "parent": "ika_plate_rctdigital:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.012000000104308128,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.01700000837445259,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          -0.13410000503063202,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.012000000104308128,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          -0.13410000503063202,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.01700000837445259,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "prismatic",
+          "joint_axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "joint_limits": [
+            0.0,
+            0.003
+          ],
+          "joint_units": "m"
+        }
+      },
+      {
+        "id": "ika_plate_rctdigital:40",
+        "name": "ika_plate_rctdigital__power_switch",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:39",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -9.313225746154785e-10,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          0.0,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          -9.111117194038343e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.012000000104308128,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.13410000503063202,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.016999999061226845,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "ika_plate_rctdigital:41",
+        "name": "ika_plate_rctdigital__usb_port",
+        "type": "MESH",
+        "parent": "ika_plate_rctdigital:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          8.455764977099989e-09,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "closed_dimensions_xyz_m": [
+      0.1599999964237213,
+      0.27000001072883606,
+      0.08490001410245895
+    ],
+    "axis_metadata": "joint_axis uses Blender Z-up node local coordinates; glTF Y-up equivalent is [x,z,-y]",
+    "sampled_frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  }
+}

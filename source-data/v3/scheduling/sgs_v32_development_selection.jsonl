@@ -1,0 +1,56 @@
+{"split": "development", "case": "development-000", "mode": "serial", "rule": "input_order", "valid": true, "status": "SERIAL_SGS", "makespan_s": 3489, "wall_s": 0.0005327079998096451}
+{"split": "development", "case": "development-001", "mode": "serial", "rule": "input_order", "valid": true, "status": "SERIAL_SGS", "makespan_s": 14634, "wall_s": 0.018556666997028515}
+{"split": "development", "case": "development-002", "mode": "serial", "rule": "input_order", "valid": true, "status": "SERIAL_SGS", "makespan_s": 20709, "wall_s": 0.07953558300141594}
+{"split": "development", "case": "development-003", "mode": "serial", "rule": "input_order", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.03856358400298632}
+{"split": "development", "case": "development-004", "mode": "serial", "rule": "input_order", "valid": true, "status": "SERIAL_SGS", "makespan_s": 27713, "wall_s": 0.14245679099985864}
+{"split": "development", "case": "development-005", "mode": "serial", "rule": "input_order", "valid": true, "status": "SERIAL_SGS", "makespan_s": 14455, "wall_s": 0.018139667001378257}
+{"split": "development", "case": "development-000", "mode": "serial", "rule": "minimum_slack", "valid": true, "status": "SERIAL_SGS", "makespan_s": 3788, "wall_s": 0.0005198750004637986}
+{"split": "development", "case": "development-001", "mode": "serial", "rule": "minimum_slack", "valid": true, "status": "SERIAL_SGS", "makespan_s": 15193, "wall_s": 0.0023756660011713393}
+{"split": "development", "case": "development-002", "mode": "serial", "rule": "minimum_slack", "valid": true, "status": "SERIAL_SGS", "makespan_s": 22139, "wall_s": 0.013119625000399537}
+{"split": "development", "case": "development-003", "mode": "serial", "rule": "minimum_slack", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.02427170900045894}
+{"split": "development", "case": "development-004", "mode": "serial", "rule": "minimum_slack", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.0702715419974993}
+{"split": "development", "case": "development-005", "mode": "serial", "rule": "minimum_slack", "valid": true, "status": "SERIAL_SGS", "makespan_s": 15736, "wall_s": 0.0026527909976721276}
+{"split": "development", "case": "development-000", "mode": "serial", "rule": "longest_remaining_path", "valid": true, "status": "SERIAL_SGS", "makespan_s": 3489, "wall_s": 0.0005151250006747432}
+{"split": "development", "case": "development-001", "mode": "serial", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.019437416001892416}
+{"split": "development", "case": "development-002", "mode": "serial", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.09229266699912841}
+{"split": "development", "case": "development-003", "mode": "serial", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.16122154200274963}
+{"split": "development", "case": "development-004", "mode": "serial", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.41374395900129457}
+{"split": "development", "case": "development-005", "mode": "serial", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.017776374999812106}
+{"split": "development", "case": "development-000", "mode": "serial", "rule": "earliest_release", "valid": true, "status": "SERIAL_SGS", "makespan_s": 3489, "wall_s": 0.0004799589987669606}
+{"split": "development", "case": "development-001", "mode": "serial", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.034432333002769155}
+{"split": "development", "case": "development-002", "mode": "serial", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.12666987500051619}
+{"split": "development", "case": "development-003", "mode": "serial", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.01902183299898752}
+{"split": "development", "case": "development-004", "mode": "serial", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.9241857909983082}
+{"split": "development", "case": "development-005", "mode": "serial", "rule": "earliest_release", "valid": true, "status": "SERIAL_SGS", "makespan_s": 14455, "wall_s": 0.06852766699739732}
+{"split": "development_summary", "mode": "serial", "rule": "input_order", "valid_rate": 0.8333333333333334, "mean_valid_makespan_s": 16200.0, "rule_index": 0}
+{"split": "development_summary", "mode": "serial", "rule": "minimum_slack", "valid_rate": 0.6666666666666666, "mean_valid_makespan_s": 14214.0, "rule_index": 1}
+{"split": "development_summary", "mode": "serial", "rule": "longest_remaining_path", "valid_rate": 0.16666666666666666, "mean_valid_makespan_s": 3489.0, "rule_index": 2}
+{"split": "development_summary", "mode": "serial", "rule": "earliest_release", "valid_rate": 0.3333333333333333, "mean_valid_makespan_s": 8972.0, "rule_index": 3}
+{"split": "development", "case": "development-000", "mode": "parallel", "rule": "input_order", "valid": true, "status": "PARALLEL_SGS", "makespan_s": 3489, "wall_s": 0.00048495900045963936}
+{"split": "development", "case": "development-001", "mode": "parallel", "rule": "input_order", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.0027691249997587875}
+{"split": "development", "case": "development-002", "mode": "parallel", "rule": "input_order", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.2653392920001352}
+{"split": "development", "case": "development-003", "mode": "parallel", "rule": "input_order", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.03539408299911884}
+{"split": "development", "case": "development-004", "mode": "parallel", "rule": "input_order", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 1.3162761249986943}
+{"split": "development", "case": "development-005", "mode": "parallel", "rule": "input_order", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.002271958001074381}
+{"split": "development", "case": "development-000", "mode": "parallel", "rule": "minimum_slack", "valid": true, "status": "PARALLEL_SGS", "makespan_s": 3489, "wall_s": 0.00047308400098700076}
+{"split": "development", "case": "development-001", "mode": "parallel", "rule": "minimum_slack", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.002346625002246583}
+{"split": "development", "case": "development-002", "mode": "parallel", "rule": "minimum_slack", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.031027208002342377}
+{"split": "development", "case": "development-003", "mode": "parallel", "rule": "minimum_slack", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.03908195799886016}
+{"split": "development", "case": "development-004", "mode": "parallel", "rule": "minimum_slack", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.07957537500260514}
+{"split": "development", "case": "development-005", "mode": "parallel", "rule": "minimum_slack", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.0019301249994896352}
+{"split": "development", "case": "development-000", "mode": "parallel", "rule": "longest_remaining_path", "valid": true, "status": "PARALLEL_SGS", "makespan_s": 3489, "wall_s": 0.0004889999981969595}
+{"split": "development", "case": "development-001", "mode": "parallel", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.0025439999990339857}
+{"split": "development", "case": "development-002", "mode": "parallel", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.1065118340011395}
+{"split": "development", "case": "development-003", "mode": "parallel", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.31933266700070817}
+{"split": "development", "case": "development-004", "mode": "parallel", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.8632337080016441}
+{"split": "development", "case": "development-005", "mode": "parallel", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.0023360000013781246}
+{"split": "development", "case": "development-000", "mode": "parallel", "rule": "earliest_release", "valid": true, "status": "PARALLEL_SGS", "makespan_s": 3489, "wall_s": 0.0004785409983014688}
+{"split": "development", "case": "development-001", "mode": "parallel", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.0022246249973250087}
+{"split": "development", "case": "development-002", "mode": "parallel", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.26554562499950407}
+{"split": "development", "case": "development-003", "mode": "parallel", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.029491249999409774}
+{"split": "development", "case": "development-004", "mode": "parallel", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 1.4664732500023092}
+{"split": "development", "case": "development-005", "mode": "parallel", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null, "wall_s": 0.002282041998114437}
+{"split": "development_summary", "mode": "parallel", "rule": "input_order", "valid_rate": 0.16666666666666666, "mean_valid_makespan_s": 3489.0, "rule_index": 0}
+{"split": "development_summary", "mode": "parallel", "rule": "minimum_slack", "valid_rate": 0.16666666666666666, "mean_valid_makespan_s": 3489.0, "rule_index": 1}
+{"split": "development_summary", "mode": "parallel", "rule": "longest_remaining_path", "valid_rate": 0.16666666666666666, "mean_valid_makespan_s": 3489.0, "rule_index": 2}
+{"split": "development_summary", "mode": "parallel", "rule": "earliest_release", "valid_rate": 0.16666666666666666, "mean_valid_makespan_s": 3489.0, "rule_index": 3}

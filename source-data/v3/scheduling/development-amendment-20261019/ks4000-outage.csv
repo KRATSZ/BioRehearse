@@ -1,0 +1,19 @@
+case,fault_resource,fault_kind,now_s,repair_s,affected_step,baseline_makespan_s,baseline_status,status,returned,valid,violations,replanned_makespan_s,delta_makespan_s,frozen_steps,modified_unstarted_only,load,handling_policy
+heldout-000,demo:ks4000:1,known_outage_before_unstarted_step,320,560,E1:incubate,11760,OPTIMAL,OPTIMAL,True,True,[],11940,180,"['E1:manual_inputs', 'E1:manual_inputs→E1:assemble', 'E1:assemble']",True,1,standard
+heldout-003,demo:ks4000:1,known_outage_before_unstarted_step,1070,1310,E1:incubate,3757,OPTIMAL,OPTIMAL,True,True,[],3937,180,"['E1:manual_inputs', 'E1:manual_inputs→E1:assemble', 'E1:assemble']",True,1,standard
+heldout-006,demo:ks4000:1,known_outage_before_unstarted_step,680,920,E1:incubate,3307,OPTIMAL,INFEASIBLE,False,False,[],,,[],,1,tight
+heldout-009,demo:ks4000:1,known_outage_before_unstarted_step,1366,1606,E1:incubate,4085,OPTIMAL,INFEASIBLE,False,False,[],,,[],,1,tight
+heldout-012,demo:ks4000:1,known_outage_before_unstarted_step,478,718,E2:incubate,14263,OPTIMAL,OPTIMAL,True,True,[],14443,180,"['E2:manual_inputs', 'E2:manual_inputs→E2:assemble', 'E2:assemble']",True,3,standard
+heldout-015,demo:ks4000:1,known_outage_before_unstarted_step,570,810,E2:incubate,14022,OPTIMAL,OPTIMAL,True,True,[],14202,180,"['E2:manual_inputs', 'E2:manual_inputs→E2:assemble', 'E2:assemble', 'E1:manual_inputs', 'E1:manual_inputs→E1:assemble']",True,3,standard
+heldout-018,demo:ks4000:1,known_outage_before_unstarted_step,500,740,E2:incubate,14306,OPTIMAL,INFEASIBLE,False,False,[],,,[],,3,tight
+heldout-021,demo:ks4000:1,known_outage_before_unstarted_step,500,740,E1:incubate,14402,OPTIMAL,INFEASIBLE,False,False,[],,,[],,3,tight
+heldout-024,demo:ks4000:1,known_outage_before_unstarted_step,493,733,E6:incubate,18025,OPTIMAL,OPTIMAL,True,True,[],18205,180,"['E6:manual_inputs', 'E6:manual_inputs→E6:assemble', 'E6:assemble', 'E1:manual_inputs', 'E1:manual_inputs→E1:assemble']",True,6,standard
+heldout-027,demo:ks4000:1,known_outage_before_unstarted_step,658,898,E2:incubate,18218,OPTIMAL,OPTIMAL,True,True,[],18398,180,"['E2:manual_inputs', 'E2:manual_inputs→E2:assemble', 'E2:assemble', 'E6:manual_inputs', 'E6:manual_inputs→E6:assemble']",True,6,standard
+heldout-030,demo:ks4000:1,known_outage_before_unstarted_step,320,560,E5:incubate,18972,OPTIMAL,INFEASIBLE,False,False,[],,,[],,6,tight
+heldout-033,demo:ks4000:1,known_outage_before_unstarted_step,478,718,E4:incubate,19134,OPTIMAL,INFEASIBLE,False,False,[],,,[],,6,tight
+heldout-036,demo:ks4000:1,known_outage_before_unstarted_step,658,898,E5:incubate,20230,OPTIMAL,OPTIMAL,True,True,[],20410,180,"['E5:manual_inputs', 'E5:manual_inputs→E5:assemble', 'E5:assemble', 'E2:manual_inputs', 'E2:manual_inputs→E2:assemble']",True,9,standard
+heldout-039,demo:ks4000:1,known_outage_before_unstarted_step,718,958,E3:incubate,20318,OPTIMAL,OPTIMAL,True,True,[],20498,180,"['E3:manual_inputs', 'E3:manual_inputs→E3:assemble', 'E3:assemble', 'E4:manual_inputs']",True,9,standard
+heldout-042,demo:ks4000:1,known_outage_before_unstarted_step,478,718,E7:incubate,21537,FEASIBLE,INFEASIBLE,False,False,[],,,[],,9,tight
+heldout-045,demo:ks4000:1,known_outage_before_unstarted_step,320,560,E9:incubate,21379,FEASIBLE,INFEASIBLE,False,False,[],,,[],,9,tight
+heldout-048,demo:ks4000:1,known_outage_before_unstarted_step,298,538,E7:incubate,24221,OPTIMAL,OPTIMAL,True,True,[],24401,180,"['E7:manual_inputs', 'E7:manual_inputs→E7:assemble', 'E7:assemble']",True,12,standard
+heldout-054,demo:ks4000:1,known_outage_before_unstarted_step,298,538,E11:incubate,26491,FEASIBLE,INFEASIBLE,False,False,[],,,[],,12,tight

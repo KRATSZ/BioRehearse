@@ -1,0 +1,63 @@
+{
+  "bca": {
+    "basis": "manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)",
+    "id": "pierce.bca.microplate/v1",
+    "parameters": {
+      "absorbance_nm": 562,
+      "incubation_s": 1800,
+      "mix_s": 30,
+      "reagent_A_B_ratio": [50, 1],
+      "sample_ul": 25,
+      "standards_ug_ml": [2000, 1500, 1000, 750, 500, 250, 125, 25, 0],
+      "temperature_c": 37,
+      "working_reagent_ul": 200
+    },
+    "source": {
+      "accessed": "2026-10-16",
+      "pages": [2, 3],
+      "url": "https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf",
+      "version": "MAN0011430 Rev D"
+    },
+    "version": "1.0.0"
+  },
+  "gfp": {
+    "basis": "manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions",
+    "id": "genscript.cfxpress.gfp/demo-v2",
+    "parameters": {
+      "DNA_or_water_ul": 5,
+      "emission_nm": 525,
+      "excitation_nm": 488,
+      "incubation_s": 10800,
+      "mix_ul": 45,
+      "reaction_ul": 50,
+      "temperature_c": 30
+    },
+    "source": {
+      "pages": [4, 6],
+      "url": "https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf",
+      "version": "v1.0, 2025-06; accessed 2026-10-15"
+    },
+    "version": "2.0.0"
+  },
+  "picogreen": {
+    "basis": "manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers",
+    "id": "quantit.picogreen.highrange/v2",
+    "parameters": {
+      "emission_nm": 520,
+      "excitation_nm": 480,
+      "incubation_range_s": [120, 300],
+      "prediluted_sample_ul": 100,
+      "protected_from_light": true,
+      "reagent_dilution": 200,
+      "standards_final_ng_ml": [1000, 100, 10, 0],
+      "working_reagent_ul": 100
+    },
+    "source": {
+      "accessed": "2026-10-16",
+      "pages": [3, 4],
+      "url": "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf",
+      "version": "MAN0001931 Rev A.0"
+    },
+    "version": "2.0.0"
+  }
+}

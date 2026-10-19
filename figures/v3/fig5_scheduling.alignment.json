@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "python-matplotlib",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 4,
+    "exemptions": 0
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "python-matplotlib",
+    "figure": {
+      "width_pt": 510.23622047244095,
+      "height_pt": 453.54330708661416
+    },
+    "panels": [
+      {
+        "id": "validity",
+        "bbox_pt": [
+          48.47244094488189,
+          267.59055118110234,
+          237.25984251968504,
+          403.6535433070866
+        ],
+        "panel_label": "a",
+        "panel_label_anchor_pt": [
+          32.425511811023625,
+          406.37480314960624
+        ]
+      },
+      {
+        "id": "budget",
+        "bbox_pt": [
+          301.03937007874015,
+          267.59055118110234,
+          489.8267716535433,
+          403.6535433070866
+        ],
+        "panel_label": "b",
+        "panel_label_anchor_pt": [
+          284.9924409448819,
+          406.37480314960624
+        ]
+      },
+      {
+        "id": "frontier",
+        "bbox_pt": [
+          48.47244094488189,
+          58.960629921259844,
+          237.25984251968504,
+          195.0236220472441
+        ],
+        "panel_label": "c",
+        "panel_label_anchor_pt": [
+          32.425511811023625,
+          197.74488188976375
+        ]
+      },
+      {
+        "id": "outage",
+        "bbox_pt": [
+          301.03937007874015,
+          58.960629921259844,
+          489.8267716535433,
+          195.0236220472441
+        ],
+        "panel_label": "d",
+        "panel_label_anchor_pt": [
+          284.9924409448819,
+          197.74488188976375
+        ]
+      }
+    ],
+    "row_groups": [
+      {
+        "id": "row-1",
+        "panels": [
+          "validity",
+          "budget"
+        ]
+      },
+      {
+        "id": "row-2",
+        "panels": [
+          "frontier",
+          "outage"
+        ]
+      }
+    ],
+    "column_groups": [
+      {
+        "id": "column-1",
+        "panels": [
+          "validity",
+          "frontier"
+        ]
+      },
+      {
+        "id": "column-2",
+        "panels": [
+          "budget",
+          "outage"
+        ]
+      }
+    ],
+    "boundary_groups": [],
+    "exemptions": []
+  },
+  "findings": []
+}

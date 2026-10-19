@@ -1,0 +1,96 @@
+{
+  "pdf": "/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/figures/v3/fig4_language.pdf",
+  "auditable": true,
+  "verdict": "REVIEW REQUIRED",
+  "page_count": 1,
+  "visible_text_box_count": 63,
+  "text_trace_count": 65,
+  "stroke_path_count": 95,
+  "filled_region_count": 77,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 0,
+    "warn": 3,
+    "contained_fill_overlays": 27,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 1 filled region(s)",
+      "text": "Flash",
+      "text_bbox": [
+        283.58624267578125,
+        62.88192367553711,
+        297.0348205566406,
+        68.38191986083984
+      ],
+      "other_text": null,
+      "other_bbox": [
+        45.921260833740234,
+        42.179534912109375,
+        290.83465576171875,
+        154.65826416015625
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        1000
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 1 filled region(s)",
+      "text": "Pro",
+      "text_bbox": [
+        288.47686767578125,
+        129.0458984375,
+        297.03570556640625,
+        134.5458984375
+      ],
+      "other_text": null,
+      "other_bbox": [
+        45.921260833740234,
+        42.179534912109375,
+        290.83465576171875,
+        154.65826416015625
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        1000
+      ]
+    },
+    {
+      "severity": "WARN",
+      "kind": "text-fill-edge",
+      "page": 1,
+      "message": "Text partially overlaps the edge of 1 filled region(s)",
+      "text": "Flash",
+      "text_bbox": [
+        386.13348388671875,
+        62.88192367553711,
+        399.5820617675781,
+        68.38191986083984
+      ],
+      "other_text": null,
+      "other_bbox": [
+        301.03936767578125,
+        42.179534912109375,
+        387.779541015625,
+        154.65826416015625
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        26000
+      ]
+    }
+  ]
+}

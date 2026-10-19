@@ -1,0 +1,2313 @@
+{
+  "id": "instrument.bmg_clariostarplus",
+  "chem_id": "CHEM-173",
+  "name": "Multi-mode microplate reader",
+  "maker": "BMG LABTECH",
+  "model": "CLARIOstar Plus",
+  "name_zh": "多模式微孔板读板仪BMG LABTECH CLARIOstar Plus（光谱仪吸光、LVF单色器荧光、偏振、发光，两个注射泵）",
+  "domain_name": "Biochemical & Wet-Chemistry Assays",
+  "path": "assets/expansion_batch04/t4_measure/bmg_clariostarplus",
+  "n_components": "28",
+  "n_joints": "5",
+  "n_state_slots": "22",
+  "n_capabilities": "37",
+  "n_readouts": "2",
+  "n_interface_points": "7",
+  "n_sources": "11",
+  "output_templates": "True",
+  "size_x_m": "0.4512",
+  "size_y_m": "0.5168",
+  "size_z_m": "0.401",
+  "glb": "assets/expansion_batch04/t4_measure/bmg_clariostarplus/model.glb",
+  "glb_up": "y",
+  "urdf": "assets/expansion_batch04/t4_measure/bmg_clariostarplus/model.urdf",
+  "contract": "assets/expansion_batch04/t4_measure/bmg_clariostarplus/asset.contract.json",
+  "asset_id": "bmg_clariostarplus",
+  "source_glb": "sources/community/chemlab/assets/expansion_batch04/t4_measure/bmg_clariostarplus/model.glb",
+  "source_contract": "library/bmg_clariostarplus/asset.contract.json",
+  "source_urdf": "sources/community/chemlab/assets/expansion_batch04/t4_measure/bmg_clariostarplus/model.urdf",
+  "source": "https://huggingface.co/datasets/MBZUAI/ChemLab-Assets/tree/ac95c1bcb717a71e3036993ef9102ed20fa028c0/assets/expansion_batch04/t4_measure/bmg_clariostarplus",
+  "license": "CC BY-NC 4.0; third-party exceptions in NOTICE.md",
+  "author": "ChemLab-Assets authors; source-specific credits retained in contract/NOTICE.md",
+  "workflow_adapter_validated": false,
+  "status": "visual_ready",
+  "urdf_links": 29,
+  "urdf_joints": 28,
+  "movable_joints": 5,
+  "raw_package_complete": true,
+  "package_scope": "Complete selected model directory and URDF mesh dependencies; external runtime references are not activated",
+  "normalized_glb": "library/bmg_clariostarplus/model.glb",
+  "preview": "library/bmg_clariostarplus/preview.png",
+  "source_package": "library/bmg_clariostarplus/source.zip",
+  "source_glb_up": "z",
+  "articulation": {
+    "schema": "biofoundry.community-articulation/1",
+    "source_urdf": "sources/community/chemlab/assets/expansion_batch04/t4_measure/bmg_clariostarplus/model.urdf",
+    "movable_joints": 5,
+    "bound_joints": 5,
+    "mapping_coverage": 1.0,
+    "zero_pose_max_world_matrix_error": 2.0985675774909396e-07,
+    "original_objects_preserved": 30,
+    "joints": [
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "power_button_joint",
+        "type": "prismatic",
+        "parent_link": "reader_housing",
+        "child_link": "power_button",
+        "axis_joint_frame": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "origin_xyz_m": [
+          -0.187,
+          -0.255,
+          0.152
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 0.0015,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "m",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch04/t4_measure/bmg_clariostarplus/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.18700000643730164
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.15200001001358032
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            -0.2549999952316284
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "bmg_clariostarplus__power_button",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "bmg_clariostarplus__urdf__power_button_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          0.0,
+          -1.4901161193847656e-08
+        ],
+        "original_visual_descendants": 0
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "top_lid_joint",
+        "type": "revolute",
+        "parent_link": "reader_housing",
+        "child_link": "top_lid",
+        "axis_joint_frame": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "axis_node_local_blender": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "axis_node_local_gltf": [
+          -1.0,
+          0.0,
+          -0.0
+        ],
+        "origin_xyz_m": [
+          0.0,
+          0.23,
+          0.382
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 1.25,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "rad",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch04/t4_measure/bmg_clariostarplus/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.3819999694824219
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            0.23000003397464752
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "bmg_clariostarplus__top_lid",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "bmg_clariostarplus__urdf__top_lid_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          -2.9802322387695312e-08,
+          0.0
+        ],
+        "original_visual_descendants": 1
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "plate_carrier_joint",
+        "type": "prismatic",
+        "parent_link": "reader_housing",
+        "child_link": "plate_carrier",
+        "axis_joint_frame": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_xyz_m": [
+          -0.105,
+          -0.18226,
+          0.066
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 0.185,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "m",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch04/t4_measure/bmg_clariostarplus/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.10499999672174454
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.06600001454353333
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            -0.18226000666618347
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "bmg_clariostarplus__plate_carrier",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "bmg_clariostarplus__urdf__plate_carrier_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          0.0,
+          -1.4901161193847656e-08
+        ],
+        "original_visual_descendants": 3
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "injector_a_plunger_joint",
+        "type": "prismatic",
+        "parent_link": "injector_a",
+        "child_link": "injector_a_plunger",
+        "axis_joint_frame": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "origin_xyz_m": [
+          0.075,
+          0.12,
+          0.361
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 0.04,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "m",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch04/t4_measure/bmg_clariostarplus/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.07500000298023224
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.3610000014305115
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            0.12000002712011337
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "bmg_clariostarplus__injector_a_plunger",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "bmg_clariostarplus__urdf__injector_a_plunger_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          -2.9802322387695312e-08,
+          0.0
+        ],
+        "original_visual_descendants": 0
+      },
+      {
+        "schema": "biofoundry.urdf-joint/1",
+        "name": "injector_b_plunger_joint",
+        "type": "prismatic",
+        "parent_link": "injector_b",
+        "child_link": "injector_b_plunger",
+        "axis_joint_frame": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_blender": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "axis_node_local_gltf": [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        "origin_xyz_m": [
+          0.125,
+          0.12,
+          0.361
+        ],
+        "origin_rpy_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "limits": {
+          "lower": 0.0,
+          "upper": 0.04,
+          "effort": 10.0,
+          "velocity": 1.0
+        },
+        "mimic": null,
+        "units": "m",
+        "limit_evidence": "upstream_URDF_simulation_declaration",
+        "source_urdf": "sources/community/chemlab/assets/expansion_batch04/t4_measure/bmg_clariostarplus/model.urdf",
+        "rest_local_matrix_row_major": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.125
+          ],
+          [
+            0.0,
+            7.549790126404332e-08,
+            -1.0,
+            -0.3610000014305115
+          ],
+          [
+            0.0,
+            1.0,
+            7.549790126404332e-08,
+            0.12000002712011337
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "visual_subtree": "bmg_clariostarplus__injector_b_plunger",
+        "mapping_method": "exact_component_suffix",
+        "q": 0.0,
+        "node": "bmg_clariostarplus__urdf__injector_b_plunger_joint",
+        "old_visual_pivot_to_urdf_translation_m": [
+          0.0,
+          -2.9802322387695312e-08,
+          0.0
+        ],
+        "original_visual_descendants": 0
+      }
+    ],
+    "axis_frame": "axis_node_local_gltf and joint_axis_local use Y-up glTF; axis_joint_frame/joint_axis use Blender Z-up; canonical URDF FK at q=0",
+    "workflow_adapter_validated": false
+  },
+  "units": "m",
+  "axis": "X right, Y back, Z up in Blender; standard Y-up glTF export",
+  "dimensions_xyz_m": [
+    0.451200008392334,
+    0.5167999863624573,
+    0.4010000228881836
+  ],
+  "canonical_to_normalized_translation_m": [
+    -0.0,
+    0.0004000067710876465,
+    1.653403991497271e-08
+  ],
+  "source_axis_correction_degrees": -90,
+  "mesh_objects": 28,
+  "triangles": 13982,
+  "appearance": {
+    "status": "ready",
+    "basis": "prior_visual_review"
+  },
+  "mechanism": {
+    "status": "digital_roundtrip_passed",
+    "joint_nodes": 5,
+    "sampled_poses": 11,
+    "physical_travel_validated": false,
+    "sweep": {
+      "passed": true,
+      "report": "library-motion-checks.json",
+      "blend_positions": 55,
+      "glb_positions": 55,
+      "physical_clearance_validated": false
+    }
+  },
+  "protocol": {
+    "status": "digital_simulation_passed",
+    "workflow_adapter_validated": false,
+    "hardware_adapter_validated": false,
+    "report": "library-protocol-checks.json",
+    "mode": "joint_bound_digital_simulation",
+    "protocol_scope": "loading_lifecycle",
+    "access_lifecycle_tested": true,
+    "liquid_accounting_tested": false,
+    "geometry_replay_report": "library-protocol-motion-checks.json"
+  },
+  "blend": "library/bmg_clariostarplus/model.blend",
+  "checks": "library/bmg_clariostarplus/checks.json",
+  "assembly_reference": "library/bmg_clariostarplus/assembly-reference.json",
+  "origin": {
+    "definition": "bottom centre of closed assembly",
+    "local_frames_preserved": true
+  },
+  "dimension_evidence": {
+    "source": "sources/community/chemlab/assets/expansion_batch04/t4_measure/bmg_clariostarplus/asset.contract.json",
+    "basis": "source digital mesh closed-pose bounds; not calibrated manufacturer CAD",
+    "declared_catalog_m": [
+      0.4512,
+      0.5168,
+      0.401
+    ]
+  },
+  "validation": {
+    "roundtrip_passed": true,
+    "report": "library/bmg_clariostarplus/checks.json",
+    "tolerance_m": 2e-05
+  },
+  "upstream_contract": "sources/community/chemlab/assets/expansion_batch04/t4_measure/bmg_clariostarplus/asset.contract.json",
+  "files_sha256": {
+    "normalized_glb": "b1015154d767cf33cea133dddbdf0231782d643ac94b4406653b0217300dd222",
+    "blend": "016cc232a76600a59514638f92fbac00db04548aff343f62133c8c8df10e511b",
+    "preview": "32871bb817d84e6d2aad8a8ba714c63ede3c0de101de28f6da7aa213988abadb",
+    "checks": "d7d8374762915728455c260a610674db59ac6d0784b20661d77e7aae432d9ef8"
+  },
+  "actual_checks": {
+    "id": "bmg_clariostarplus",
+    "blend": {
+      "passed": true,
+      "missing_nodes": [],
+      "extra_nodes": [],
+      "nodes_checked": 36,
+      "parents_preserved": true,
+      "max_world_matrix_error": 0.0,
+      "max_local_matrix_error": 0.0,
+      "dimension_error_m": 0.0,
+      "pose_checks": [
+        {
+          "frame": 0,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 1,
+          "joint": "bmg_clariostarplus:10",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.02000001072883606,
+          "passed": true
+        },
+        {
+          "frame": 2,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "joint": "bmg_clariostarplus:14",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.02000001072883606,
+          "passed": true
+        },
+        {
+          "frame": 4,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "joint": "bmg_clariostarplus:26",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.06000000238418579,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 7,
+          "joint": "bmg_clariostarplus:31",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0007500052452087402,
+          "passed": true
+        },
+        {
+          "frame": 8,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 9,
+          "joint": "bmg_clariostarplus:33",
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.5000001502521201,
+          "passed": true
+        },
+        {
+          "frame": 10,
+          "joint": null,
+          "max_world_matrix_error": 0.0,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        }
+      ],
+      "failed_nodes": [],
+      "unit_scale_m": 1.0
+    },
+    "glb": {
+      "passed": true,
+      "missing_nodes": [],
+      "extra_nodes": [],
+      "nodes_checked": 36,
+      "parents_preserved": true,
+      "max_world_matrix_error": 3.784441844345565e-07,
+      "max_local_matrix_error": 3.7844416311827445e-07,
+      "dimension_error_m": 8.940696716308594e-08,
+      "pose_checks": [
+        {
+          "frame": 0,
+          "joint": null,
+          "max_world_matrix_error": 3.784441844345565e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 1,
+          "joint": "bmg_clariostarplus:10",
+          "max_world_matrix_error": 3.784441844345565e-07,
+          "reference_motion_delta": 0.02000001072883606,
+          "passed": true
+        },
+        {
+          "frame": 2,
+          "joint": null,
+          "max_world_matrix_error": 3.784441844345565e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 3,
+          "joint": "bmg_clariostarplus:14",
+          "max_world_matrix_error": 3.784441844345565e-07,
+          "reference_motion_delta": 0.02000001072883606,
+          "passed": true
+        },
+        {
+          "frame": 4,
+          "joint": null,
+          "max_world_matrix_error": 3.784441844345565e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 5,
+          "joint": "bmg_clariostarplus:26",
+          "max_world_matrix_error": 3.784441844345565e-07,
+          "reference_motion_delta": 0.06000000238418579,
+          "passed": true
+        },
+        {
+          "frame": 6,
+          "joint": null,
+          "max_world_matrix_error": 3.784441844345565e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 7,
+          "joint": "bmg_clariostarplus:31",
+          "max_world_matrix_error": 3.784441844345565e-07,
+          "reference_motion_delta": 0.0007500052452087402,
+          "passed": true
+        },
+        {
+          "frame": 8,
+          "joint": null,
+          "max_world_matrix_error": 3.784441844345565e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        },
+        {
+          "frame": 9,
+          "joint": "bmg_clariostarplus:33",
+          "max_world_matrix_error": 5.960464477539062e-07,
+          "reference_motion_delta": 0.5000001502521201,
+          "passed": true
+        },
+        {
+          "frame": 10,
+          "joint": null,
+          "max_world_matrix_error": 3.784441844345565e-07,
+          "reference_motion_delta": 0.0,
+          "passed": true
+        }
+      ],
+      "failed_nodes": [],
+      "surface_check": {
+        "passed": true,
+        "meshes_checked": 28,
+        "max_euclidean_surface_error_m": 2.995096224367444e-07,
+        "failed_meshes": [],
+        "method": "Actual evaluated vertices to triangles in both directions, closed pose; Euclidean metres; all posed transforms independently checked"
+      }
+    },
+    "model_glb_sha256": "b1015154d767cf33cea133dddbdf0231782d643ac94b4406653b0217300dd222",
+    "model_blend_sha256": "016cc232a76600a59514638f92fbac00db04548aff343f62133c8c8df10e511b",
+    "reference_sha256": "099076c6cf561080e1785872856f9bbf97c994c09ad6f74d80bfdc04a5848bc0",
+    "passed": true
+  },
+  "assembly": {
+    "units": "m at asset root; local translation units follow accumulated parent scale",
+    "nodes": [
+      {
+        "id": "bmg_clariostarplus:0",
+        "name": "bmg_clariostarplus",
+        "type": "EMPTY",
+        "parent": null,
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:1",
+        "name": "world.007",
+        "type": "EMPTY",
+        "parent": "bmg_clariostarplus:0",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:2",
+        "name": "bmg_clariostarplus__root",
+        "type": "EMPTY",
+        "parent": "bmg_clariostarplus:1",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:3",
+        "name": "bmg_clariostarplus__reader_housing",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:2",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:4",
+        "name": "bmg_clariostarplus__carrier_slot",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:5",
+        "name": "bmg_clariostarplus__designation_label",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:6",
+        "name": "bmg_clariostarplus__feet",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:7",
+        "name": "bmg_clariostarplus__incubation_chamber",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:8",
+        "name": "bmg_clariostarplus__injector_a",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:9",
+        "name": "bmg_clariostarplus__injector_a_drive",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:8",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:10",
+        "name": "bmg_clariostarplus__urdf__injector_a_plunger_joint",
+        "type": "EMPTY",
+        "parent": "bmg_clariostarplus:8",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.07500000298023224,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.3610000014305115,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          0.12000002712011337,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.07500000298023224,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          0.12040000408887863,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.36100003123283386,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "prismatic",
+          "joint_axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "joint_limits": [
+            0.0,
+            0.04
+          ],
+          "joint_units": "m"
+        }
+      },
+      {
+        "id": "bmg_clariostarplus:11",
+        "name": "bmg_clariostarplus__injector_a_plunger",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:10",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          -2.9802322387695312e-08,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          3.433790141116333e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.07500000298023224,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          0.12039997428655624,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.36100003123283386,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:12",
+        "name": "bmg_clariostarplus__injector_b",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:13",
+        "name": "bmg_clariostarplus__injector_b_drive",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:12",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:14",
+        "name": "bmg_clariostarplus__urdf__injector_b_plunger_joint",
+        "type": "EMPTY",
+        "parent": "bmg_clariostarplus:12",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.125,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.3610000014305115,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          0.12000002712011337,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.125,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          0.12040000408887863,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.36100003123283386,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "prismatic",
+          "joint_axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "joint_limits": [
+            0.0,
+            0.04
+          ],
+          "joint_units": "m"
+        }
+      },
+      {
+        "id": "bmg_clariostarplus:15",
+        "name": "bmg_clariostarplus__injector_b_plunger",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:14",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          -2.9802322387695312e-08,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          3.433790141116333e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.125,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          0.12039997428655624,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.36100003123283386,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:16",
+        "name": "bmg_clariostarplus__injector_lines",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:17",
+        "name": "bmg_clariostarplus__optical_head",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:18",
+        "name": "bmg_clariostarplus__power_led",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -0.18700000643730164,
+          0.0,
+          1.0,
+          0.0,
+          -0.15199999511241913,
+          0.0,
+          0.0,
+          1.0,
+          -0.2549999952316284,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.18700000643730164,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          -0.25459998846054077,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          0.15199999511241913,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:19",
+        "name": "bmg_clariostarplus__purple_stripe",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:20",
+        "name": "bmg_clariostarplus__reagent_bottle_a",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:21",
+        "name": "bmg_clariostarplus__reagent_bottle_a_cap",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:20",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:22",
+        "name": "bmg_clariostarplus__reagent_bottle_b",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:23",
+        "name": "bmg_clariostarplus__reagent_bottle_b_cap",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:22",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:24",
+        "name": "bmg_clariostarplus__rear_panel",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.700029006457271e-16,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0004000067710876465,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          1.653403991497271e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:25",
+        "name": "bmg_clariostarplus__status_led",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -0.18700000643730164,
+          0.0,
+          1.0,
+          0.0,
+          -0.1720000058412552,
+          0.0,
+          0.0,
+          1.0,
+          -0.2549999952316284,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.18700000643730164,
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          -0.25459998846054077,
+          0.0,
+          -1.0,
+          7.549790126404332e-08,
+          0.1720000058412552,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:26",
+        "name": "bmg_clariostarplus__urdf__plate_carrier_joint",
+        "type": "EMPTY",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -0.10499999672174454,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.06600001454353333,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          -0.18226000666618347,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.10499999672174454,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          -0.18185999989509583,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.06600001454353333,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "prismatic",
+          "joint_axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "joint_limits": [
+            0.0,
+            0.185
+          ],
+          "joint_units": "m"
+        }
+      },
+      {
+        "id": "bmg_clariostarplus:27",
+        "name": "bmg_clariostarplus__plate_carrier",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:26",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          7.450580596923828e-09,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          -1.4901161193847656e-08,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          -1.3989524205726411e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.10499999672174454,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.18185999989509583,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.06599999964237213,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:28",
+        "name": "bmg_clariostarplus__carrier_label",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:27",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -7.450580596923828e-09,
+          0.0,
+          1.0,
+          7.105427357601002e-15,
+          1.1711156489013774e-09,
+          0.0,
+          -7.105427357601002e-15,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.10499999672174454,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.18185999989509583,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.06599999964237213,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:29",
+        "name": "bmg_clariostarplus__microplate",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:27",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -7.450580596923828e-09,
+          0.0,
+          1.0,
+          7.105427357601002e-15,
+          1.1711156489013774e-09,
+          0.0,
+          -7.105427357601002e-15,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.10499999672174454,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.18185999989509583,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.06599999964237213,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:30",
+        "name": "bmg_clariostarplus__microplate_wells",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:29",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -7.450580596923828e-09,
+          0.0,
+          1.0,
+          7.105427357601002e-15,
+          1.1711156489013774e-09,
+          0.0,
+          -7.105427357601002e-15,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.10499999672174454,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.18185999989509583,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.06599999964237213,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:31",
+        "name": "bmg_clariostarplus__urdf__power_button_joint",
+        "type": "EMPTY",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -0.18700000643730164,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.15200001001358032,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          -0.2549999952316284,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.18700000643730164,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          -0.25459998846054077,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.15200001001358032,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "prismatic",
+          "joint_axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "joint_limits": [
+            0.0,
+            0.0015
+          ],
+          "joint_units": "m"
+        }
+      },
+      {
+        "id": "bmg_clariostarplus:32",
+        "name": "bmg_clariostarplus__power_button",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:31",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          -1.4901161193847656e-08,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          0.0,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          -2.1076289158372674e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          -0.18700000643730164,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          -0.25459998846054077,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.15199999511241913,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:33",
+        "name": "bmg_clariostarplus__urdf__top_lid_joint",
+        "type": "EMPTY",
+        "parent": "bmg_clariostarplus:3",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          -0.3819999396800995,
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          0.23000003397464752,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0000001192092896,
+          -2.0985676485452132e-07,
+          0.23040001094341278,
+          0.0,
+          2.0985676485452132e-07,
+          1.0000001192092896,
+          0.38199999928474426,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joint": {
+          "joint_type": "revolute",
+          "joint_axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "joint_limits": [
+            0.0,
+            1.25
+          ],
+          "joint_units": "rad"
+        }
+      },
+      {
+        "id": "bmg_clariostarplus:34",
+        "name": "bmg_clariostarplus__top_lid",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:33",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          -2.9802322387695312e-08,
+          0.0,
+          -1.0000001192092896,
+          -1.3435885648505064e-07,
+          1.1253664666810437e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          0.2303999811410904,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.38200002908706665,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "bmg_clariostarplus:35",
+        "name": "bmg_clariostarplus__lid_grip",
+        "type": "MESH",
+        "parent": "bmg_clariostarplus:34",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          7.105427357601002e-15,
+          -1.2407610938680591e-08,
+          0.0,
+          -7.105427357601002e-15,
+          1.0,
+          -1.4901161193847656e-08,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.54979225803254e-08,
+          1.000000238418579,
+          0.2303999811410904,
+          0.0,
+          -1.000000238418579,
+          7.54979225803254e-08,
+          0.38200002908706665,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "closed_dimensions_xyz_m": [
+      0.451200008392334,
+      0.5167999863624573,
+      0.4009999930858612
+    ],
+    "axis_metadata": "joint_axis uses Blender Z-up node local coordinates; glTF Y-up equivalent is [x,z,-y]",
+    "sampled_frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "release": "v0.3.0",
+  "source_review": "audit/v3/PACKAGING_CODE_REVIEW_R7.json: PASS, current source hashes verified",
+  "offline_isolated_copy": {
+    "stored_schedule_outcomes": 1080,
+    "returned_plans_independently_rescored": 693,
+    "errors": 0,
+    "legacy_location_failures": 16,
+    "legacy_plans": 24,
+    "fresh_contract_positives": 26,
+    "fresh_contract_negative_probes": 156,
+    "fresh_mutations": 407,
+    "fresh_scientific_fields_equal": true,
+    "v2_live_dependencies": 47,
+    "v3_and_v33_protocol_verification": true,
+    "fresh_sgs_modes_valid": [
+      "serial",
+      "parallel"
+    ],
+    "fresh_cp_demo_valid": true
+  },
+  "geometry_replayed": false,
+  "geometry_adapter": "Temporary deterministic placeholders on a constructor hash-only path; no GLB parsing or geometric validation.",
+  "paper_or_render_exports_published": false,
+  "source_sha256": {
+    "reproducibility/public_v3.py": "9fefbbd80fa5a1a848e07795aa7d34a282fd504fd3d7a684149b70432e98dce4",
+    "reproducibility/package_v3.py": "a2af980f44e999c1abff40a51dd52bb7613f712eed42dcc300101c035dbfdf47",
+    "reproducibility/zip_manifest.py": "8d5ee81145f059e167c84694764b50dc9802745e72d1ddcf02e9414314aff2e5"
+  }
+}

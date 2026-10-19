@@ -1,0 +1,185 @@
+{
+  "by_category": {
+    "access_order": {
+      "layers": {
+        "asset_contract": {
+          "detected": 24,
+          "not_applicable": 0,
+          "total": 24
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 24,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 0,
+          "not_applicable": 24,
+          "total": 0
+        },
+        "material_location": {
+          "detected": 0,
+          "not_applicable": 24,
+          "total": 0
+        },
+        "schedule": {
+          "detected": 0,
+          "not_applicable": 24,
+          "total": 0
+        }
+      },
+      "n": 24,
+      "union_detected": 24
+    },
+    "delete_transfer": {
+      "layers": {
+        "asset_contract": {
+          "detected": 0,
+          "not_applicable": 24,
+          "total": 0
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 24,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 0,
+          "not_applicable": 0,
+          "total": 24
+        },
+        "material_location": {
+          "detected": 21,
+          "not_applicable": 0,
+          "total": 24
+        },
+        "schedule": {
+          "detected": 0,
+          "not_applicable": 0,
+          "total": 24
+        }
+      },
+      "n": 24,
+      "union_detected": 21
+    },
+    "device_resource": {
+      "layers": {
+        "asset_contract": {
+          "detected": 0,
+          "not_applicable": 48,
+          "total": 0
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 48,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 0,
+          "not_applicable": 0,
+          "total": 48
+        },
+        "material_location": {
+          "detected": 0,
+          "not_applicable": 0,
+          "total": 48
+        },
+        "schedule": {
+          "detected": 48,
+          "not_applicable": 0,
+          "total": 48
+        }
+      },
+      "n": 48,
+      "union_detected": 48
+    },
+    "shift_offset": {
+      "layers": {
+        "asset_contract": {
+          "detected": 0,
+          "not_applicable": 48,
+          "total": 0
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 48,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 0,
+          "not_applicable": 0,
+          "total": 48
+        },
+        "material_location": {
+          "detected": 0,
+          "not_applicable": 0,
+          "total": 48
+        },
+        "schedule": {
+          "detected": 46,
+          "not_applicable": 0,
+          "total": 48
+        }
+      },
+      "n": 48,
+      "union_detected": 46
+    },
+    "volume_factor": {
+      "layers": {
+        "asset_contract": {
+          "detected": 0,
+          "not_applicable": 48,
+          "total": 0
+        },
+        "intent": {
+          "detected": 0,
+          "not_applicable": 48,
+          "total": 0
+        },
+        "mass_balance": {
+          "detected": 6,
+          "not_applicable": 0,
+          "total": 48
+        },
+        "material_location": {
+          "detected": 0,
+          "not_applicable": 0,
+          "total": 48
+        },
+        "schedule": {
+          "detected": 0,
+          "not_applicable": 0,
+          "total": 48
+        }
+      },
+      "n": 48,
+      "union_detected": 6
+    }
+  },
+  "label_counts": {
+    "candidate_compatible_resource_other_constraints_unlabelled": 1,
+    "equivalent_mutation": 3,
+    "known_access_violation": 24,
+    "known_precedence_violation": 22,
+    "known_resource_mismatch": 47,
+    "known_violation": 21,
+    "nonnegative_precedence_offset_other_constraints_unlabelled": 26,
+    "protocol_quantity_mismatch": 48
+  },
+  "label_map": {
+    "equivalent_resource": "candidate_compatible_resource_other_constraints_unlabelled",
+    "equivalent_time_shift": "nonnegative_precedence_offset_other_constraints_unlabelled"
+  },
+  "notes": [
+    "The raw oracle_label field is preserved; derived_oracle_label is the publication-facing annotation.",
+    "nonnegative_precedence_offset_other_constraints_unlabelled and candidate_compatible_resource_other_constraints_unlabelled are not equivalent-validity or false-positive labels.",
+    "The exploratory challenge is separate from frozen v3.1 and is not a sensitivity estimate."
+  ],
+  "raw_labels_preserved": true,
+  "schema": "biofoundry.v3.exploratory-mutation-challenge-annotated/1",
+  "source_raw": "source-data/v3/mutation-challenge.jsonl",
+  "total": 192,
+  "union_detected": 145,
+  "unlabelled_other_constraint_detections": 25,
+  "unlabelled_other_constraint_records": 27
+}

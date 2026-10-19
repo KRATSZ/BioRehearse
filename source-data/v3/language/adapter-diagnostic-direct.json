@@ -1,0 +1,21 @@
+{
+  "model": "glm-4-flash-250414",
+  "request_messages": 2,
+  "request_tools": 2,
+  "request_max_tokens": 8192,
+  "request_stream": false,
+  "http_status": 200,
+  "response_model": "glm-4-flash-250414",
+  "choices": 1,
+  "finish_reasons": [
+    "stop"
+  ],
+  "tool_calls": 0,
+  "assistant_content_chars": 91,
+  "usage": {
+    "prompt_tokens": 12728,
+    "completion_tokens": 16,
+    "total_tokens": 12744
+  },
+  "wall_s": 2.359
+}

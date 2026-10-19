@@ -1,0 +1,215 @@
+{
+  "schema": "biorehearse.v3.rizon-render-provenance/1",
+  "renderer": "Blender 5.2.0 LTS",
+  "engine": "BLENDER_WORKBENCH",
+  "studio": "Workbench paint.sl; Standard; Medium High Contrast; cavity and outline; long projections disabled",
+  "source_plan": {
+    "path": "exports/biofoundry/island/latest.json",
+    "sha256": "35ab72cd257bceb38d111de23592d3456b1e576c838c3e0828c9a583319d254c",
+    "generator_sha256": {
+      "island_preview.py": "7f0e98743fa70da7488e132bb846d350bf65fee0ca31ac21f251f2057ca52fea",
+      "island_geometry.py": "3a696d582ce4f91b5ba5382a373131c071759797107b826933a0178afa2102e2"
+    }
+  },
+  "scene_role": "separate Rizon4/robot-island asset view for Fig. 2; not the assay rehearsal scene",
+  "geometry_policy": "native GLB metre scale; rigid translation/yaw only; source meshes unchanged",
+  "images": [
+    {
+      "image": "transparent/rizon-island.png",
+      "width_px": 3000,
+      "height_px": 1500,
+      "camera": {
+        "projection": "orthographic",
+        "target_m": [
+          -0.35,
+          0.0,
+          0.95
+        ],
+        "ortho_scale_m": 10.2
+      }
+    }
+  ],
+  "sources": [
+    {
+      "asset_id": "Rizon4-island-base",
+      "path": "demo-blank/model.glb",
+      "sha256": "be3913f63e05406a01a9797b0de791e60808c17a220465dca434a2ba52ea1e1c",
+      "hidden_nodes": [
+        "island_enclosure_end_rail",
+        "island_enclosure_vertical_post.002",
+        "island_enclosure_clear_panel.006",
+        "island_enclosure_long_rail.002",
+        "island_enclosure_vertical_post.008",
+        "island_enclosure_clear_panel.001",
+        "island_enclosure_end_rail.001",
+        "island_enclosure_vertical_post.003",
+        "island_enclosure_vertical_post.009",
+        "island_enclosure_clear_panel.007",
+        "island_enclosure_end_glass",
+        "island_enclosure_long_rail.003",
+        "island_enclosure_clear_panel.002",
+        "island_enclosure_end_rail.002",
+        "island_enclosure_vertical_post.004",
+        "island_enclosure_end_glass.001",
+        "island_enclosure_vertical_post.001",
+        "island_enclosure_vertical_post.005",
+        "island_enclosure_clear_panel.003",
+        "island_enclosure_end_rail.003",
+        "island_enclosure_clear_panel",
+        "island_enclosure_vertical_post",
+        "island_enclosure_vertical_post.006",
+        "island_enclosure_clear_panel.004",
+        "island_enclosure_long_rail",
+        "island_enclosure_vertical_post.007",
+        "island_enclosure_clear_panel.005",
+        "island_enclosure_long_rail.001",
+        "island_optional_black_frame_enclosure"
+      ]
+    },
+    {
+      "station": "bravo",
+      "asset_id": "agilent_bravo_assaymap",
+      "path": "library/agilent_bravo_assaymap/model.glb",
+      "sha256": "dfb940d2722b5e003383b6d044caa248697177ffbd383ae6166902f5ab0418af",
+      "contract": "library/agilent_bravo_assaymap/asset.contract.json",
+      "contract_sha256": "edf7eb2b0ae422d5abba73887d292357646ebecfdc71bc5a71f665dde2dde622",
+      "license": "CC0-1.0 (authored geometry only)",
+      "placement_m": [
+        -1.05,
+        -0.73,
+        0.9
+      ],
+      "yaw_rad": 3.141592653589793,
+      "native_dimensions_m": [
+        0.648,
+        0.438,
+        0.697
+      ]
+    },
+    {
+      "station": "washer",
+      "asset_id": "biotek_405ts",
+      "path": "library/biotek_405ts/model.glb",
+      "sha256": "baeb1fa3d9de0e8620cdc6e7b47ff2f6be6c48e10c6c1c16154e6f57af7b02d8",
+      "contract": "library/biotek_405ts/asset.contract.json",
+      "contract_sha256": "4545d935ddfd7d25d26a4f202f8e2834065bebb1de36567ee7d97428bd79b527",
+      "license": "CC BY-NC 4.0; third-party exceptions in NOTICE.md",
+      "placement_m": [
+        0,
+        -0.79,
+        0.9
+      ],
+      "yaw_rad": 1.5707963267948966,
+      "native_dimensions_m": [
+        0.3556,
+        0.4318,
+        0.254
+      ]
+    },
+    {
+      "station": "pcr",
+      "asset_id": "roche_lightcycler_480_ii",
+      "path": "library/roche_lightcycler_480_ii/model.glb",
+      "sha256": "c3646a6045e4d03502be6721b33d0f9fec9236e8a0d39618f742fdda95d05ce0",
+      "contract": "library/roche_lightcycler_480_ii/asset.contract.json",
+      "contract_sha256": "0048dad6d94fc09d04d4c08801903e20f06035bfac118e01dccdcd468ffacbeb",
+      "license": "CC0-1.0 (authored geometry only)",
+      "placement_m": [
+        1.1,
+        -0.8,
+        0.9
+      ],
+      "yaw_rad": 1.5707963267948966,
+      "native_dimensions_m": [
+        0.634,
+        0.588,
+        0.497
+      ]
+    },
+    {
+      "station": "incubator",
+      "asset_id": "ika_ks4000",
+      "path": "library/ika_ks4000/model.glb",
+      "sha256": "7585fca7e91e02d6e53b97c97593fc4c84fb3c612a0f2ee6e9cdfdc1c0bd2f54",
+      "contract": "library/ika_ks4000/asset.contract.json",
+      "contract_sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897",
+      "license": "CC BY-NC 4.0; third-party exceptions in NOTICE.md",
+      "placement_m": [
+        -1.05,
+        0.8,
+        0.9
+      ],
+      "yaw_rad": 1.5707963267948966,
+      "native_dimensions_m": [
+        0.58,
+        0.75,
+        0.770705
+      ]
+    },
+    {
+      "station": "reader",
+      "asset_id": "spectramax-i3x",
+      "path": "library/spectramax-i3x/model.glb",
+      "sha256": "3b0644c1de355296f89740aa3476b7b243ef7938b13a026ff423306265068f39",
+      "contract": "library/spectramax-i3x/asset.contract.json",
+      "contract_sha256": "d076e41fdefcf887f3642737383671054cc3f6808738d025607f945c2ba03e3a",
+      "license": "CC0-1.0 (original project geometry only; manufacturer and facility references retain their own rights)",
+      "placement_m": [
+        1.05,
+        0.78,
+        0.9
+      ],
+      "yaw_rad": 0,
+      "native_dimensions_m": [
+        0.3923,
+        0.6663,
+        0.4459
+      ]
+    }
+  ],
+  "projection": {
+    "bravo": [
+      0.4032,
+      0.469657
+    ],
+    "washer": [
+      0.485589,
+      0.567782
+    ],
+    "pcr": [
+      0.574776,
+      0.605775
+    ],
+    "incubator": [
+      0.486405,
+      0.342257
+    ],
+    "reader": [
+      0.656621,
+      0.48248
+    ]
+  },
+  "dock_projection": {
+    "bravo": [
+      0.393601,
+      0.497257
+    ],
+    "washer": [
+      0.50174,
+      0.572827
+    ],
+    "pcr": [
+      0.605203,
+      0.579244
+    ],
+    "incubator": [
+      0.502719,
+      0.38159
+    ],
+    "reader": [
+      0.640165,
+      0.51608
+    ]
+  },
+  "route_projection": []
+}

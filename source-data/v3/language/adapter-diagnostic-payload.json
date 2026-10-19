@@ -1,0 +1,30 @@
+{
+  "schema": "biorehearse.v3.language-adapter-payload/1",
+  "model": "glm-4-flash-250414",
+  "message_roles": [
+    "system",
+    "user"
+  ],
+  "message_count": 2,
+  "system_chars": 45164,
+  "user_chars": 600,
+  "user_request_sha256": "159d075d121049b015dc4d9542083d288b105dafdf44419cd921b02af03120b3",
+  "tool_names": [
+    "compile_experiment_graph",
+    "request_clarification"
+  ],
+  "tool_count": 2,
+  "tool_parameter_sha256": [
+    "45171000b93e5f0656bbbe673f42920199792f6d6f83fe7e2b4c6ecd020d5598",
+    "ce62ae27677e6a3b9df5e59b3cb2b70690032cfc7b156b192d6f3e57793d2b9e"
+  ],
+  "tool_choice": null,
+  "max_tokens": 8192,
+  "thinking": {
+    "type": "enabled",
+    "clear_thinking": false
+  },
+  "prompt_sha256": "e9224c8fc8489f7b8b0872b838cf96808cb2d9064f2fecdbafbe4f89d09ed847",
+  "note": "Structural metadata only; full payload is reconstructible from the frozen request, methods and catalog files.",
+  "request_id": "development-language-24-s0"
+}

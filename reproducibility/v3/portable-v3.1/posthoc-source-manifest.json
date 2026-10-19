@@ -1,0 +1,3787 @@
+{
+  "adaptation": "posthoc_public_metadata_bundle",
+  "asset_counts": {
+    "assembly_references": 71,
+    "asset_contracts": 71,
+    "asset_library_entries": 71
+  },
+  "checker_dependency_hashes": [
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/scorer.py",
+      "bytes": 2907,
+      "sha256": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/scorer.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/common.py",
+      "bytes": 1234,
+      "sha256": "5a7abd2474e14641b1cd01d90eaa4be13d35fecb6de9f6600013b2ca641b3582",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/common.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/repair.py",
+      "bytes": 4599,
+      "sha256": "b692906b36790b1772ce33fccb25b15127b1916b7da8e71155808a22aedaacc3",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/repair.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/frozen.json",
+      "bytes": 16294,
+      "sha256": "7d83e77f8f5be5f5bffc6a6e84ef912cde68165dedfd5f360fa9bf0aacd68edc",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/frozen.json"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/scorer.py",
+      "bytes": 5165,
+      "sha256": "66360904c7d730bf1ae93b20591e4d9617f056023f425419d61339694f2e2787",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/scorer.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/common.py",
+      "bytes": 747,
+      "sha256": "b26d931a88e876e0eb5d4d8fd36da4ba21ff9a8a42de685f89306c90c97e4c66",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/common.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/__init__.py",
+      "bytes": 92,
+      "sha256": "7a5f5000cf72aff8befbe9d0ae8fff4f2dbd08736d78b4b83ef452d068919441",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/__init__.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/__init__.py",
+      "bytes": 85,
+      "sha256": "39c75d16d41205ae2deb8affbf42052ed4e31752947a6fb0985a62f404361d4e",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/__init__.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/app.py",
+      "bytes": 32787,
+      "sha256": "e5c84e60f7a1b8501ffe80135d2c18910d934a590574dc6cea529e55a8e5a07c",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/app.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/author.py",
+      "bytes": 1553,
+      "sha256": "8d30d0835e82e437f8ca539d2a23695355fea432573256147c4cd4d819f768ad",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/author.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/baseline.py",
+      "bytes": 5699,
+      "sha256": "5e9ece5bf3b49166f498d9cba3956786102ad6af623fb651444680f703295172",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/baseline.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/capabilities.py",
+      "bytes": 6935,
+      "sha256": "41f41942b05838d82ee18a68e1446729083db05ef48b46e3f989dd13fcde822d",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/capabilities.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/delivery.py",
+      "bytes": 2523,
+      "sha256": "eb88631955a7119144f258d61544e3fdc94c76e4be80cc23e189cb81a1fe605e",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/delivery.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/island.py",
+      "bytes": 12766,
+      "sha256": "18376d1831bf1d2dfa20fa08a0f5f158af66f6c50df6e00b08e7ffee53b0e81b",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/island.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/methods.py",
+      "bytes": 16721,
+      "sha256": "69f29b5d6c8a4d1d149a7ced09dd41f9c4f8cde7de8c5230fd0a2d008c95e2ee",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/methods.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/planning.py",
+      "bytes": 6313,
+      "sha256": "eaa5ad8ee23faa03cc4d897ed26c915066fd036856b425fb80e90d7db91c4491",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/planning.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/playback.py",
+      "bytes": 5048,
+      "sha256": "79a69b925a8c13d0809e9be3a0d2e80047f89e7670ee8806881de3ece697fdef",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/playback.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/portfolio.py",
+      "bytes": 16097,
+      "sha256": "926a8161162a55b3bb5eb5a734b334ac45b4cff2bc501f8c2fc0d0ca79d30d05",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/portfolio.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/reservations.py",
+      "bytes": 4013,
+      "sha256": "145c88372f3189dc0c8c7bfc206020c905c05716346cfdae2396e2ac21d569ec",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/reservations.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/scheduling.py",
+      "bytes": 21684,
+      "sha256": "e77309aafc7e6ef7f7b8cd7f904abac272f068b6b5793e7c1c32f416ae44751f",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/scheduling.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/verify.py",
+      "bytes": 12661,
+      "sha256": "6fb7c8ab89c7155638f1bec9972018b5e72a37808001896c2557b8d8a14b3d04",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/verify.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/workflow.py",
+      "bytes": 19539,
+      "sha256": "845d41dd7a0a629e2ba73fb9503da47737b175208145dcc8eca3bda2210cdcb0",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/workflow.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/__init__.py",
+      "bytes": 636,
+      "sha256": "381c5e26a1aaf3de74decf1e333a85fdd875ad8ee25b526ba3391b8ac99c457b",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/__init__.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/evaluate.py",
+      "bytes": 4496,
+      "sha256": "6e46639bc569629beff8b84ecc7febdf9d1c76c54bd06806d4fcfdc6b9a5f701",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/evaluate.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/plr_sim.py",
+      "bytes": 7723,
+      "sha256": "6fe0e4392d56d43d2126e4f7c6f691323535a97783f148be63404811cdea0b1e",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/plr_sim.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/schema.py",
+      "bytes": 12591,
+      "sha256": "666771df04123080631399224ece6834b1fed660fa99acef162d231b3419a9b3",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/schema.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/skills.py",
+      "bytes": 1745,
+      "sha256": "413c96ba2987e8fe7a8230240262564684d1183a9c03a8daa712cbc75e3f85af",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/skills.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/virtual_deck.py",
+      "bytes": 7712,
+      "sha256": "5fc69893cf1c171d7429931f944a798b65ce0d17f13d6c806abc6fdeb455088c",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/virtual_deck.py"
+    }
+  ],
+  "entries": [
+    {
+      "bundle": "raw/mutation-freeze.json",
+      "bytes": 26519,
+      "sha256": "772e9b82ace7a8596e3d0e4974d9130e65d4240c4eb6858fe0bab0eaef5c8d9d",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/mutation-freeze.json"
+    },
+    {
+      "bundle": "raw/mutation-summary.json",
+      "bytes": 9452,
+      "sha256": "0db7cfdf86d20fbec258160cdf8832b7438f2e38f34ac0d072c6c81d709509b4",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/mutation-summary.json"
+    },
+    {
+      "bundle": "raw/fig6-validation-matrix.csv",
+      "bytes": 467,
+      "sha256": "70d76cdec4e66b6dd3a885eceadb5a3a8cd3b8b46b2fc0347de49d2376528d46",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/fig6-validation-matrix.csv"
+    },
+    {
+      "bundle": "raw/mutations/mutants.jsonl",
+      "bytes": 270847,
+      "sha256": "3da8184234ec93ff5b5d087e49dbeadc12b8da23a87651e9fd07cde41aa66afc",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/mutations/mutants.jsonl"
+    },
+    {
+      "bundle": "raw/validation/contract-lifecycle.json",
+      "bytes": 74588,
+      "sha256": "263414449b65511cdb62dd5735bf33fad3949c65fc1f5f86ad1f0603ca1882ce",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/validation/contract-lifecycle.json"
+    },
+    {
+      "bundle": "raw/validation/workflow-action-probe.json",
+      "bytes": 692,
+      "sha256": "f0454ece1c73c4df1ea7e319c9372d8aa6b202defd9bc8a2f144f15e72849c19",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/validation/workflow-action-probe.json"
+    },
+    {
+      "bundle": "raw/mutation-challenge.jsonl",
+      "bytes": 122550,
+      "sha256": "2c0182d48a43bb39baf90795c11a639da8c976967b174a240d5624eceeb067a4",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/mutation-challenge.jsonl"
+    },
+    {
+      "bundle": "raw/mutation-challenge-summary.json",
+      "bytes": 2480,
+      "sha256": "763d4fc72483c5a0b990d14194c7e495ba19221da0ed66ecae0a314a3c104ac0",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/mutation-challenge-summary.json"
+    },
+    {
+      "bundle": "raw/mutation-challenge-annotated.jsonl",
+      "bytes": 152397,
+      "sha256": "ea0714151cfc59dc0cfb9cc091f54b4e74058f7d20cdb70b12580f695097b693",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/mutation-challenge-annotated.jsonl"
+    },
+    {
+      "bundle": "raw/mutation-challenge-annotated-summary.json",
+      "bytes": 4648,
+      "sha256": "4cc9a7834eab73bbdd8c4e5f81574dbc7a3820a98d4247090265bd01f2504565",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/mutation-challenge-annotated-summary.json"
+    },
+    {
+      "bundle": "raw/construction-audit-407-192.jsonl",
+      "bytes": 673449,
+      "sha256": "32f239922eb2614e80ae533320e68695637f693674634ff51d20bf712b6461d8",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/construction-audit-407-192.jsonl"
+    },
+    {
+      "bundle": "raw/construction-audit-summary.json",
+      "bytes": 14359,
+      "sha256": "0104be894bd78b02a023d77215dbcc55c4c4e5a7c744de7a70da9702670f8faf",
+      "source": "docs/paper/biofoundry-preprint/source-data/v3/construction-audit-summary.json"
+    },
+    {
+      "bundle": "protocol/VALIDATION_PROTOCOL.md",
+      "bytes": 5500,
+      "sha256": "9a3623a6eb85c6504b5c083a860f3b4d29817b0039e3a1ea93fde74062993a71",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v3/VALIDATION_PROTOCOL.md"
+    },
+    {
+      "bundle": "protocol/VALIDATION_AUDIT.md",
+      "bytes": 8858,
+      "sha256": "5f49d0abc28edbb8cffff1a4a16fb41920ded9c2a3073bec90a223a062cbcb07",
+      "source": "docs/paper/biofoundry-preprint/audit/v3/VALIDATION.md"
+    },
+    {
+      "bundle": "protocol/VALIDATION_CONSTRUCTION_AUDIT.md",
+      "bytes": 3087,
+      "sha256": "cde2638735ba88b6cffc70f6795454763640e07eabc87ca49c80877d4f91fdcb",
+      "source": "docs/paper/biofoundry-preprint/audit/v3/VALIDATION_CONSTRUCTION_AUDIT.md"
+    },
+    {
+      "bundle": "protocol/VALIDATION_CODE_REVIEW.json",
+      "bytes": 4144,
+      "sha256": "f7f4105934eb04affd8d1b2f5b7a97a0636d8448bff1d0e884631dc968460e13",
+      "source": "docs/paper/biofoundry-preprint/audit/v3/VALIDATION_CODE_REVIEW.json"
+    },
+    {
+      "bundle": "tools/portable_v31.py",
+      "bytes": 14942,
+      "sha256": "3b8a880d91e5386c4a4b2cb81775e310929f7918ad9f0198f3faca75a8f9fe69",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v3/portable_v31.py"
+    },
+    {
+      "bundle": "tools/construction_audit.py",
+      "bytes": 24068,
+      "sha256": "23e0749bd6b41049ba2610dd42b737cbf426b09878951160511ef7865529a609",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v3/construction_audit.py"
+    },
+    {
+      "bundle": "asset-library.json",
+      "bytes": 635796,
+      "sha256": "23b9109483dbd34ff4e4f8d79f61e1e81c60ac6005472c64d5d7503918ec178d",
+      "source": "exports/biofoundry/asset-library.json"
+    },
+    {
+      "bundle": "sim/library_protocols.py",
+      "bytes": 44082,
+      "sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+      "source": "sim/library_protocols.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/scorer.py",
+      "bytes": 2907,
+      "sha256": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/scorer.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/common.py",
+      "bytes": 1234,
+      "sha256": "5a7abd2474e14641b1cd01d90eaa4be13d35fecb6de9f6600013b2ca641b3582",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/common.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/repair.py",
+      "bytes": 4599,
+      "sha256": "b692906b36790b1772ce33fccb25b15127b1916b7da8e71155808a22aedaacc3",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/repair.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/frozen.json",
+      "bytes": 16294,
+      "sha256": "7d83e77f8f5be5f5bffc6a6e84ef912cde68165dedfd5f360fa9bf0aacd68edc",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/frozen.json"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/scorer.py",
+      "bytes": 5165,
+      "sha256": "66360904c7d730bf1ae93b20591e4d9617f056023f425419d61339694f2e2787",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/scorer.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/common.py",
+      "bytes": 747,
+      "sha256": "b26d931a88e876e0eb5d4d8fd36da4ba21ff9a8a42de685f89306c90c97e4c66",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/common.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/__init__.py",
+      "bytes": 92,
+      "sha256": "7a5f5000cf72aff8befbe9d0ae8fff4f2dbd08736d78b4b83ef452d068919441",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/__init__.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/__init__.py",
+      "bytes": 85,
+      "sha256": "39c75d16d41205ae2deb8affbf42052ed4e31752947a6fb0985a62f404361d4e",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/__init__.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/app.py",
+      "bytes": 32787,
+      "sha256": "e5c84e60f7a1b8501ffe80135d2c18910d934a590574dc6cea529e55a8e5a07c",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/app.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/author.py",
+      "bytes": 1553,
+      "sha256": "8d30d0835e82e437f8ca539d2a23695355fea432573256147c4cd4d819f768ad",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/author.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/baseline.py",
+      "bytes": 5699,
+      "sha256": "5e9ece5bf3b49166f498d9cba3956786102ad6af623fb651444680f703295172",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/baseline.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/capabilities.py",
+      "bytes": 6935,
+      "sha256": "41f41942b05838d82ee18a68e1446729083db05ef48b46e3f989dd13fcde822d",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/capabilities.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/delivery.py",
+      "bytes": 2523,
+      "sha256": "eb88631955a7119144f258d61544e3fdc94c76e4be80cc23e189cb81a1fe605e",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/delivery.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/island.py",
+      "bytes": 12766,
+      "sha256": "18376d1831bf1d2dfa20fa08a0f5f158af66f6c50df6e00b08e7ffee53b0e81b",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/island.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/methods.py",
+      "bytes": 16721,
+      "sha256": "69f29b5d6c8a4d1d149a7ced09dd41f9c4f8cde7de8c5230fd0a2d008c95e2ee",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/methods.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/planning.py",
+      "bytes": 6313,
+      "sha256": "eaa5ad8ee23faa03cc4d897ed26c915066fd036856b425fb80e90d7db91c4491",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/planning.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/playback.py",
+      "bytes": 5048,
+      "sha256": "79a69b925a8c13d0809e9be3a0d2e80047f89e7670ee8806881de3ece697fdef",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/playback.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/portfolio.py",
+      "bytes": 16097,
+      "sha256": "926a8161162a55b3bb5eb5a734b334ac45b4cff2bc501f8c2fc0d0ca79d30d05",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/portfolio.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/reservations.py",
+      "bytes": 4013,
+      "sha256": "145c88372f3189dc0c8c7bfc206020c905c05716346cfdae2396e2ac21d569ec",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/reservations.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/scheduling.py",
+      "bytes": 21684,
+      "sha256": "e77309aafc7e6ef7f7b8cd7f904abac272f068b6b5793e7c1c32f416ae44751f",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/scheduling.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/verify.py",
+      "bytes": 12661,
+      "sha256": "6fb7c8ab89c7155638f1bec9972018b5e72a37808001896c2557b8d8a14b3d04",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/verify.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/workflow.py",
+      "bytes": 19539,
+      "sha256": "845d41dd7a0a629e2ba73fb9503da47737b175208145dcc8eca3bda2210cdcb0",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/workflow.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/__init__.py",
+      "bytes": 636,
+      "sha256": "381c5e26a1aaf3de74decf1e333a85fdd875ad8ee25b526ba3391b8ac99c457b",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/__init__.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/evaluate.py",
+      "bytes": 4496,
+      "sha256": "6e46639bc569629beff8b84ecc7febdf9d1c76c54bd06806d4fcfdc6b9a5f701",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/evaluate.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/plr_sim.py",
+      "bytes": 7723,
+      "sha256": "6fe0e4392d56d43d2126e4f7c6f691323535a97783f148be63404811cdea0b1e",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/plr_sim.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/schema.py",
+      "bytes": 12591,
+      "sha256": "666771df04123080631399224ece6834b1fed660fa99acef162d231b3419a9b3",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/schema.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/skills.py",
+      "bytes": 1745,
+      "sha256": "413c96ba2987e8fe7a8230240262564684d1183a9c03a8daa712cbc75e3f85af",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/skills.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/virtual_deck.py",
+      "bytes": 7712,
+      "sha256": "5fc69893cf1c171d7429931f944a798b65ce0d17f13d6c806abc6fdeb455088c",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/virtual_deck.py"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-analytical/asset.contract.json",
+      "bytes": 293448,
+      "sha256": "489395ec8a849a09d9caddfef62b654400fb2033ec11844fcd5a4cfbb911c6eb",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-analytical/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-analytical/assembly-reference.json",
+      "bytes": 3787842,
+      "sha256": "a0350d70f24aef56d0e8597a73dcca75395092cfdde4297f4263bb6b14961f10",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-analytical/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-semiprep/asset.contract.json",
+      "bytes": 367396,
+      "sha256": "5cedb3bff031825c9d7c65f17459f145cf962c191ddd71bd5497ca2562caf9b0",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-semiprep/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-semiprep/assembly-reference.json",
+      "bytes": 6093026,
+      "sha256": "76f6fd42c6eff721a2482b62d80bd39bb5ba91cbb2cf097757a5d30b48c406f8",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-semiprep/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical/asset.contract.json",
+      "bytes": 271641,
+      "sha256": "64c38e23b40fc244265debd8d282b5d35de90d2f38c78a2b04cabcc10352995e",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical/assembly-reference.json",
+      "bytes": 3097057,
+      "sha256": "eed12b37a95ed1354a3518f2798d1ae6701a6484ab3b8cfec6d579a1e01b3110",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical-elsd/asset.contract.json",
+      "bytes": 284527,
+      "sha256": "30e9ab2b2076d701c4dc76db2cbe4d3086b76f942718b8b86c323f6dcd0bbb5b",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical-elsd/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical-elsd/assembly-reference.json",
+      "bytes": 3262604,
+      "sha256": "a48e64f78f02bc5caeef81188ae4f4a5c270ec00f874dcf1167edf244cfe6b2e",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical-elsd/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-preparative/asset.contract.json",
+      "bytes": 175273,
+      "sha256": "43b4c18f72d8b87dc383c3da1dc499174ae5d6a6d11f466dac035c2b22da4115",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-preparative/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-preparative/assembly-reference.json",
+      "bytes": 1451563,
+      "sha256": "3269d6d0c578b845962d3c0a2d3ccdf6659c802b4d0bd49c085097fe7d6583f2",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-preparative/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-8890-7010b-gcms/asset.contract.json",
+      "bytes": 119748,
+      "sha256": "b2b3f102ee0ec4fac83421a4f9ce191464e17c6d7c5d66d3fb912def818f78cd",
+      "source": "exports/biofoundry/library/agilent-8890-7010b-gcms/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-8890-7010b-gcms/assembly-reference.json",
+      "bytes": 407390,
+      "sha256": "523700bdbaf185923877094eda1ad119665d228d002f32a1932af4d240cab038",
+      "source": "exports/biofoundry/library/agilent-8890-7010b-gcms/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-8890-gc/asset.contract.json",
+      "bytes": 120015,
+      "sha256": "0b2ad890a3a033ff34195e1e68057fe046fa2e3a01e4c82fc1635485977038ea",
+      "source": "exports/biofoundry/library/agilent-8890-gc/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-8890-gc/assembly-reference.json",
+      "bytes": 413688,
+      "sha256": "faecc6a91a8d44e0c6f3e7019cc4c704d004930d0b42a783844e691f7e21e1d9",
+      "source": "exports/biofoundry/library/agilent-8890-gc/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-rapidfire400-6470/asset.contract.json",
+      "bytes": 262884,
+      "sha256": "1c7ad3b05e79f014e486623fef077047470ac9d296d8465231b1661554535f6b",
+      "source": "exports/biofoundry/library/agilent-rapidfire400-6470/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-rapidfire400-6470/assembly-reference.json",
+      "bytes": 4739333,
+      "sha256": "a5fc2f4b305650bbce08a091ca1084043e3355eb4b4d0b646536522a5c3ec7b1",
+      "source": "exports/biofoundry/library/agilent-rapidfire400-6470/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent_bravo_assaymap/asset.contract.json",
+      "bytes": 845342,
+      "sha256": "edf7eb2b0ae422d5abba73887d292357646ebecfdc71bc5a71f665dde2dde622",
+      "source": "exports/biofoundry/library/agilent_bravo_assaymap/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent_bravo_assaymap/assembly-reference.json",
+      "bytes": 5171469,
+      "sha256": "16d217c6f49d403393d3775a3c9bb0ab3e3fd7c95e8ec704ad0e5c1e020b9bbe",
+      "source": "exports/biofoundry/library/agilent_bravo_assaymap/assembly-reference.json"
+    },
+    {
+      "bundle": "library/azenta_automated_roll_heat_sealer_a4s/asset.contract.json",
+      "bytes": 165428,
+      "sha256": "02683ad99b301666af7428cabee7dae700b62741f74a53adcc66a5c5555b7af5",
+      "source": "exports/biofoundry/library/azenta_automated_roll_heat_sealer_a4s/asset.contract.json"
+    },
+    {
+      "bundle": "library/azenta_automated_roll_heat_sealer_a4s/assembly-reference.json",
+      "bytes": 346294,
+      "sha256": "927500b237e1de2a99f98d331b8ec28c5afeccc4f69d6295691f67a55db8ecdb",
+      "source": "exports/biofoundry/library/azenta_automated_roll_heat_sealer_a4s/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bd_facsaria_fusion/asset.contract.json",
+      "bytes": 75332,
+      "sha256": "19385b2ecdb83dc7898ea84d4b556cec09aa7f3c1a4d1952d216bd361bad9299",
+      "source": "exports/biofoundry/library/bd_facsaria_fusion/asset.contract.json"
+    },
+    {
+      "bundle": "library/bd_facsaria_fusion/assembly-reference.json",
+      "bytes": 410246,
+      "sha256": "84d953c660c3f75675faa54bfd5375b43f81cec10addfa44d6d38aa7dbc89350",
+      "source": "exports/biofoundry/library/bd_facsaria_fusion/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bd_lsrfortessa/asset.contract.json",
+      "bytes": 49133,
+      "sha256": "013445377c9df0fab2799288c471203aa7296e3d99c8f03bd18371b0655a1b8c",
+      "source": "exports/biofoundry/library/bd_lsrfortessa/asset.contract.json"
+    },
+    {
+      "bundle": "library/bd_lsrfortessa/assembly-reference.json",
+      "bytes": 167949,
+      "sha256": "851d93b76f0f734d92c496a51081414fc4e4d01f566d1fb714fcc246c44a314f",
+      "source": "exports/biofoundry/library/bd_lsrfortessa/assembly-reference.json"
+    },
+    {
+      "bundle": "library/beckman_cytoflex_lx/asset.contract.json",
+      "bytes": 112394,
+      "sha256": "8d319d35e51d986aa7eaaad9d11af8f8aa986b08d6524480cbedac3aed83896b",
+      "source": "exports/biofoundry/library/beckman_cytoflex_lx/asset.contract.json"
+    },
+    {
+      "bundle": "library/beckman_cytoflex_lx/assembly-reference.json",
+      "bytes": 380227,
+      "sha256": "44ae553286e88183d517ffb2ada6bd6c479d01c4411eb01ca1b3283fba445abc",
+      "source": "exports/biofoundry/library/beckman_cytoflex_lx/assembly-reference.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xe100/asset.contract.json",
+      "bytes": 58676,
+      "sha256": "4f5050f9e6f5197cd4e44967eced290bfd121982ae08b73d755acbb4dca061b0",
+      "source": "exports/biofoundry/library/beckman_optima_xe100/asset.contract.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xe100/assembly-reference.json",
+      "bytes": 202401,
+      "sha256": "88590e5552821744a1cb08c32744cd1029c19ef186576039dfa81e5ae404c7ef",
+      "source": "exports/biofoundry/library/beckman_optima_xe100/assembly-reference.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xpn100/asset.contract.json",
+      "bytes": 59411,
+      "sha256": "1b5bf43c5abc697e7a563d2ba5c9064cae97e02770095b5014055eade45648be",
+      "source": "exports/biofoundry/library/beckman_optima_xpn100/asset.contract.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xpn100/assembly-reference.json",
+      "bytes": 206801,
+      "sha256": "f958bba526e63615b1822f3f946bff3f5a5a85da0aa0211ea0ede296bbdb48cc",
+      "source": "exports/biofoundry/library/beckman_optima_xpn100/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biorad_miniprotean/asset.contract.json",
+      "bytes": 75860,
+      "sha256": "6528faa16eb3589e3bcf318d0c074d00011b0d4b9cd89a767146c95af032159d",
+      "source": "exports/biofoundry/library/biorad_miniprotean/asset.contract.json"
+    },
+    {
+      "bundle": "library/biorad_miniprotean/assembly-reference.json",
+      "bytes": 368399,
+      "sha256": "da2259631dd7577d42890910d9bedfb38aa28ce8e87f9065aefe2ce8ed9801a9",
+      "source": "exports/biofoundry/library/biorad_miniprotean/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biostream_biopilot150/asset.contract.json",
+      "bytes": 110319,
+      "sha256": "a139c50c39774dc8dfdfcbdd646b1bfe6114d912d65915ceef06f9068cd2bb6b",
+      "source": "exports/biofoundry/library/biostream_biopilot150/asset.contract.json"
+    },
+    {
+      "bundle": "library/biostream_biopilot150/assembly-reference.json",
+      "bytes": 602817,
+      "sha256": "b173333dfe336b5b57272a4007c3b9064fd2278130d869966b52675f247f3a1b",
+      "source": "exports/biofoundry/library/biostream_biopilot150/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biostream_biotwin15l/asset.contract.json",
+      "bytes": 75716,
+      "sha256": "77bf78c184f1857e4b1d97eab384bbd915366952f5c00a90a1855e0fc9a1b389",
+      "source": "exports/biofoundry/library/biostream_biotwin15l/asset.contract.json"
+    },
+    {
+      "bundle": "library/biostream_biotwin15l/assembly-reference.json",
+      "bytes": 232399,
+      "sha256": "ba6b8a2d70e53d88101e107ba5496ba4b533a9b71a415de8f4c638355856af44",
+      "source": "exports/biofoundry/library/biostream_biotwin15l/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biotek-logphase-600/asset.contract.json",
+      "bytes": 102228,
+      "sha256": "df6825ab8699ecf7e3ec7e714b1fabdafd7bafd7a6170ceb20ed3cf633a9de83",
+      "source": "exports/biofoundry/library/biotek-logphase-600/asset.contract.json"
+    },
+    {
+      "bundle": "library/biotek-logphase-600/assembly-reference.json",
+      "bytes": 348549,
+      "sha256": "4c6d5c2fd23e27237ea92bef235e3acbb1b78e4d86ade00534d24412141e7540",
+      "source": "exports/biofoundry/library/biotek-logphase-600/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biotek_405ts/asset.contract.json",
+      "bytes": 41219,
+      "sha256": "4545d935ddfd7d25d26a4f202f8e2834065bebb1de36567ee7d97428bd79b527",
+      "source": "exports/biofoundry/library/biotek_405ts/asset.contract.json"
+    },
+    {
+      "bundle": "library/biotek_405ts/assembly-reference.json",
+      "bytes": 100721,
+      "sha256": "69f9e4c85325bdfe92f3e44d5c453ff595436c4d32740dd045e38a6e27906e10",
+      "source": "exports/biofoundry/library/biotek_405ts/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bmg_clariostarplus/asset.contract.json",
+      "bytes": 53424,
+      "sha256": "2ec7679937476da642b08f57aff53314ddf08c96b6d9852c0286415bafb34175",
+      "source": "exports/biofoundry/library/bmg_clariostarplus/asset.contract.json"
+    },
+    {
+      "bundle": "library/bmg_clariostarplus/assembly-reference.json",
+      "bytes": 178447,
+      "sha256": "099076c6cf561080e1785872856f9bbf97c994c09ad6f74d80bfdc04a5848bc0",
+      "source": "exports/biofoundry/library/bmg_clariostarplus/assembly-reference.json"
+    },
+    {
+      "bundle": "library/brooks_preciseflex_400/asset.contract.json",
+      "bytes": 85394,
+      "sha256": "9313b667dd5edfe3588fc7d3f0a6ffe08f65a2f6898a7c879e73e9c1cf7ffdd0",
+      "source": "exports/biofoundry/library/brooks_preciseflex_400/asset.contract.json"
+    },
+    {
+      "bundle": "library/brooks_preciseflex_400/assembly-reference.json",
+      "bytes": 329388,
+      "sha256": "67c5f1f02e46c61520bcf005e245f6845fa5e05713add9103c33d038b43e7ac5",
+      "source": "exports/biofoundry/library/brooks_preciseflex_400/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_impact_ii/asset.contract.json",
+      "bytes": 51599,
+      "sha256": "a45b4c07071c0b0eb7caf83659cabcd82d8e870842e606360c6b10add9fe6138",
+      "source": "exports/biofoundry/library/bruker_impact_ii/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_impact_ii/assembly-reference.json",
+      "bytes": 117329,
+      "sha256": "bab73d4ba591ee4f9e04f638f6dd7bad002155e0f7d47dbc31632ed25ebd22de",
+      "source": "exports/biofoundry/library/bruker_impact_ii/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_nanolr3/asset.contract.json",
+      "bytes": 41742,
+      "sha256": "31ffb2a2cbd462dd32234fb7604a8c8a82d74981b8fef49be08bf2e856dc5271",
+      "source": "exports/biofoundry/library/bruker_nanolr3/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_nanolr3/assembly-reference.json",
+      "bytes": 151944,
+      "sha256": "9752971478aec8bfe399e5e4bd0704a084f176964fbd95532cd37378375b6e63",
+      "source": "exports/biofoundry/library/bruker_nanolr3/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_nanowizard_4_xp/asset.contract.json",
+      "bytes": 95510,
+      "sha256": "dcb000a240740d4a9156e832990c041c969793697ba08ceb8ce36a167f0c4a3d",
+      "source": "exports/biofoundry/library/bruker_nanowizard_4_xp/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_nanowizard_4_xp/assembly-reference.json",
+      "bytes": 706728,
+      "sha256": "7564f2ff07832346065c710959592d3793568c359e25e204c3b7f65f74246caf",
+      "source": "exports/biofoundry/library/bruker_nanowizard_4_xp/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_timstof_pro2/asset.contract.json",
+      "bytes": 60233,
+      "sha256": "9cb4e652392e34b37fd78a1b17b85ccf283213429de2e2322388c7bac62480fa",
+      "source": "exports/biofoundry/library/bruker_timstof_pro2/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_timstof_pro2/assembly-reference.json",
+      "bytes": 137235,
+      "sha256": "067fd47726aa279badd797df63a4e785c699c04397b8a031ef580a6707c478cf",
+      "source": "exports/biofoundry/library/bruker_timstof_pro2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m1/asset.contract.json",
+      "bytes": 175926,
+      "sha256": "89e4dd5acfc7b96ee4afdd4d7a88941e7ee2320febfdbe0b6b36bfbc57d0f0e7",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m1/asset.contract.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m1/assembly-reference.json",
+      "bytes": 358361,
+      "sha256": "1664db583e6676d7e8739c29b35c5265054c7a0ec8b292024b51c3f6fa947db3",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m1/assembly-reference.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m2/asset.contract.json",
+      "bytes": 241568,
+      "sha256": "d1cbad06d96a8c192c5ff6e5933690451d4089ae4e91dead57872611dff89b9e",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m2/asset.contract.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m2/assembly-reference.json",
+      "bytes": 500179,
+      "sha256": "5766c808964015259c4a6afcf030a781b13f3dc1aa4d2144cad9435f0ae99d5e",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/eppendorf_5910ri/asset.contract.json",
+      "bytes": 69812,
+      "sha256": "ef1756feac0ff83d50fb280b7c5dc17949258685a5bc377ccd982801380f7fae",
+      "source": "exports/biofoundry/library/eppendorf_5910ri/asset.contract.json"
+    },
+    {
+      "bundle": "library/eppendorf_5910ri/assembly-reference.json",
+      "bytes": 170363,
+      "sha256": "3a29583edc9ffe7882b7979d01d6eab1f2049c3c546b9e6d702aaa39b65bab12",
+      "source": "exports/biofoundry/library/eppendorf_5910ri/assembly-reference.json"
+    },
+    {
+      "bundle": "library/eppendorf_cellxpertc170i/asset.contract.json",
+      "bytes": 64787,
+      "sha256": "decef0d01da4113c078228598c5028f01f92f6d0ba164db13eecd4eb297cc633",
+      "source": "exports/biofoundry/library/eppendorf_cellxpertc170i/asset.contract.json"
+    },
+    {
+      "bundle": "library/eppendorf_cellxpertc170i/assembly-reference.json",
+      "bytes": 246782,
+      "sha256": "9a8e9236b2c83529fcfae32a65b3e1407154190813702340d89a2722a25387f3",
+      "source": "exports/biofoundry/library/eppendorf_cellxpertc170i/assembly-reference.json"
+    },
+    {
+      "bundle": "library/fluent1080/asset.contract.json",
+      "bytes": 842674,
+      "sha256": "833c68327f5825d1d9558ed106178f57f25241c6a94df4ca06085ecc3f3206dd",
+      "source": "exports/biofoundry/library/fluent1080/asset.contract.json"
+    },
+    {
+      "bundle": "library/fluent1080/assembly-reference.json",
+      "bytes": 1905728,
+      "sha256": "dd7cc8675150628795afb1387885e01f0adb8780ad5404e8bc55a11584c7945b",
+      "source": "exports/biofoundry/library/fluent1080/assembly-reference.json"
+    },
+    {
+      "bundle": "library/fluidigm_helios/asset.contract.json",
+      "bytes": 62812,
+      "sha256": "121b615da5f1039d720f9852809d2c7538ff004c946bc33520b6b2dcaddf137d",
+      "source": "exports/biofoundry/library/fluidigm_helios/asset.contract.json"
+    },
+    {
+      "bundle": "library/fluidigm_helios/assembly-reference.json",
+      "bytes": 191514,
+      "sha256": "fb7d4c8831fd13259e1f2028d053d75c82ca9e23d39f9feb86498fed13f03546",
+      "source": "exports/biofoundry/library/fluidigm_helios/assembly-reference.json"
+    },
+    {
+      "bundle": "library/his_fusion_x/asset.contract.json",
+      "bytes": 66095,
+      "sha256": "be5475eb8973d97c6e515e3877fe0e113974f4b3f7d50949c2dbe7a0adf264c9",
+      "source": "exports/biofoundry/library/his_fusion_x/asset.contract.json"
+    },
+    {
+      "bundle": "library/his_fusion_x/assembly-reference.json",
+      "bytes": 258802,
+      "sha256": "b98238a37d2d19a5b873826596781d4fdcf51d0c740168ad9ef10cdf7dd631ba",
+      "source": "exports/biofoundry/library/his_fusion_x/assembly-reference.json"
+    },
+    {
+      "bundle": "library/ika_ks4000/asset.contract.json",
+      "bytes": 60596,
+      "sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897",
+      "source": "exports/biofoundry/library/ika_ks4000/asset.contract.json"
+    },
+    {
+      "bundle": "library/ika_ks4000/assembly-reference.json",
+      "bytes": 177473,
+      "sha256": "d9826dd2e48589bebea19d9c160cc600a747298d7d1a22c40dbdcfa07057ac57",
+      "source": "exports/biofoundry/library/ika_ks4000/assembly-reference.json"
+    },
+    {
+      "bundle": "library/ika_plate_rctdigital/asset.contract.json",
+      "bytes": 66757,
+      "sha256": "389ac774c761e83f541ea954433cebc0374a7248cdf268081a063b52d0d9a988",
+      "source": "exports/biofoundry/library/ika_plate_rctdigital/asset.contract.json"
+    },
+    {
+      "bundle": "library/ika_plate_rctdigital/assembly-reference.json",
+      "bytes": 295386,
+      "sha256": "8e65ff5bad2547fa709fe499c5b93975326457c8074768612eae0390e25791ae",
+      "source": "exports/biofoundry/library/ika_plate_rctdigital/assembly-reference.json"
+    },
+    {
+      "bundle": "library/lit_litone_lbs/asset.contract.json",
+      "bytes": 94128,
+      "sha256": "5312a95c95b268f9f059c45951b690e4ebf4f575db2f9a4e638cd08cc752d200",
+      "source": "exports/biofoundry/library/lit_litone_lbs/asset.contract.json"
+    },
+    {
+      "bundle": "library/lit_litone_lbs/assembly-reference.json",
+      "bytes": 400709,
+      "sha256": "1fe2e8199fd9d2798a170e88481f252db65a0d4a6d469c4f987534c90f749539",
+      "source": "exports/biofoundry/library/lit_litone_lbs/assembly-reference.json"
+    },
+    {
+      "bundle": "library/lit_litone_xl/asset.contract.json",
+      "bytes": 73561,
+      "sha256": "ee31fefbef4379aa6a21d46bdad9a95313b8b0392e100f88b49526b3fa3b0d83",
+      "source": "exports/biofoundry/library/lit_litone_xl/asset.contract.json"
+    },
+    {
+      "bundle": "library/lit_litone_xl/assembly-reference.json",
+      "bytes": 287259,
+      "sha256": "833541e365233efb9476f05cbe6e9b3e75246b681814a8fd2fede39c8289528a",
+      "source": "exports/biofoundry/library/lit_litone_xl/assembly-reference.json"
+    },
+    {
+      "bundle": "library/malvern_microcalpeaq/asset.contract.json",
+      "bytes": 75771,
+      "sha256": "75fca998961db790037ec6f924d6a2ba26461599462e1a52f850efa30290d234",
+      "source": "exports/biofoundry/library/malvern_microcalpeaq/asset.contract.json"
+    },
+    {
+      "bundle": "library/malvern_microcalpeaq/assembly-reference.json",
+      "bytes": 306485,
+      "sha256": "da40e9cfa6d633e031974304e25ef48d565555a9028c543913f4fcb460784788",
+      "source": "exports/biofoundry/library/malvern_microcalpeaq/assembly-reference.json"
+    },
+    {
+      "bundle": "library/manual-pipette/asset.contract.json",
+      "bytes": 20018,
+      "sha256": "b7f524ab5e234697a433613d5e134625da76a96d501229ebdd119a3d5fbc6a10",
+      "source": "exports/biofoundry/library/manual-pipette/asset.contract.json"
+    },
+    {
+      "bundle": "library/manual-pipette/assembly-reference.json",
+      "bytes": 14232,
+      "sha256": "deecd0fa29e12c4f38290804cd1d726b0ce2092d98fc31fc98bac11cdd06ea9d",
+      "source": "exports/biofoundry/library/manual-pipette/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mettler_easymax402/asset.contract.json",
+      "bytes": 77230,
+      "sha256": "b15cbc645b0ad29a2a361b0e5f2c1fdb8e175c26487c08908e6452db9a3dc900",
+      "source": "exports/biofoundry/library/mettler_easymax402/asset.contract.json"
+    },
+    {
+      "bundle": "library/mettler_easymax402/assembly-reference.json",
+      "bytes": 304519,
+      "sha256": "d0fdfe9baeccb7ef3aa23f90da3da88a7eb7398851b4c3bcbdd87ecd909ab880",
+      "source": "exports/biofoundry/library/mettler_easymax402/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mettler_reactraman785/asset.contract.json",
+      "bytes": 31200,
+      "sha256": "c073995a0c3d159dcc0d1e32d9645e570f50eeab405d4708ef55168392b4b06b",
+      "source": "exports/biofoundry/library/mettler_reactraman785/asset.contract.json"
+    },
+    {
+      "bundle": "library/mettler_reactraman785/assembly-reference.json",
+      "bytes": 47412,
+      "sha256": "6cf3f3f0861c8601efeeb5b17fa339697c4014462f9f1638f3d0f25f0e6eff24",
+      "source": "exports/biofoundry/library/mettler_reactraman785/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mgi_dnbseq_g99rs/asset.contract.json",
+      "bytes": 59989,
+      "sha256": "c2117cc4ff4848e95665dd749da788e7ec090cbdd5a0f317c808f8dd85f52a0f",
+      "source": "exports/biofoundry/library/mgi_dnbseq_g99rs/asset.contract.json"
+    },
+    {
+      "bundle": "library/mgi_dnbseq_g99rs/assembly-reference.json",
+      "bytes": 241873,
+      "sha256": "7e2b3bc93bc4e59122b00be846ba620c91f30873e6f46dbe892f2dbb4597f974",
+      "source": "exports/biofoundry/library/mgi_dnbseq_g99rs/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mt_xpr204e/asset.contract.json",
+      "bytes": 295277,
+      "sha256": "03ab61e1c9a666ed54d1aab8fd5691644f2c09c6a6d05b2c4045814c62fbfc3e",
+      "source": "exports/biofoundry/library/mt_xpr204e/asset.contract.json"
+    },
+    {
+      "bundle": "library/mt_xpr204e/assembly-reference.json",
+      "bytes": 2841334,
+      "sha256": "7b672f5967b9e960c189bb92fbe96d361156691e1ccf4f75c2c19e919b55789f",
+      "source": "exports/biofoundry/library/mt_xpr204e/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nanoscribe_gt2/asset.contract.json",
+      "bytes": 51606,
+      "sha256": "57e14fd11ecc4ba131d19fc7bce7d708beffe11cb1b2cfcb3c7fada0903488d1",
+      "source": "exports/biofoundry/library/nanoscribe_gt2/asset.contract.json"
+    },
+    {
+      "bundle": "library/nanoscribe_gt2/assembly-reference.json",
+      "bytes": 238481,
+      "sha256": "59ae898bc25a002057b6ef6ef8b1e8835c2bdf0fc8ce710f0d0bf52214f9d2f8",
+      "source": "exports/biofoundry/library/nanoscribe_gt2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nih-3dpx-023347/asset.contract.json",
+      "bytes": 9040,
+      "sha256": "0826b8c688441791efac6dbfbd1022d49aad95a77de17d5bbccbd8837c500a38",
+      "source": "exports/biofoundry/library/nih-3dpx-023347/asset.contract.json"
+    },
+    {
+      "bundle": "library/nih-3dpx-023347/assembly-reference.json",
+      "bytes": 2422,
+      "sha256": "3a29962fa87d5caf9fca3468d58a626d0e8db7a771f824f986324a19ed049a83",
+      "source": "exports/biofoundry/library/nih-3dpx-023347/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-ax/asset.contract.json",
+      "bytes": 193527,
+      "sha256": "87e98e492d1310e9fe9392b40e029b302008e1d5b602c05bf0f5009b15bc2b7b",
+      "source": "exports/biofoundry/library/nikon-ax/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-ax/assembly-reference.json",
+      "bytes": 1149030,
+      "sha256": "607d54026f0f7c936e542b6f3efea0430788256bef9c898cd5edfb389813d496",
+      "source": "exports/biofoundry/library/nikon-ax/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-ax-r-mp/asset.contract.json",
+      "bytes": 86584,
+      "sha256": "67d13dac4ad702c2e2dc20ebaea6688a2e3224af7dbc0ce357efc56738f77702",
+      "source": "exports/biofoundry/library/nikon-ax-r-mp/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-ax-r-mp/assembly-reference.json",
+      "bytes": 286075,
+      "sha256": "cb3bf38e7143c00a628ca7821280fb8a4e84f5cf574544e5b619f2beb3ff41bb",
+      "source": "exports/biofoundry/library/nikon-ax-r-mp/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-c2/asset.contract.json",
+      "bytes": 186447,
+      "sha256": "0007b6f39cafffcc2875aaee59275c0328cd5b6f4327f220b4e8324236368773",
+      "source": "exports/biofoundry/library/nikon-c2/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-c2/assembly-reference.json",
+      "bytes": 1109789,
+      "sha256": "2d9fb1727e9189971381f5fab2cfd8b609ef124d732b764b55d8515dc75094b0",
+      "source": "exports/biofoundry/library/nikon-c2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ni-e/asset.contract.json",
+      "bytes": 147392,
+      "sha256": "c021734c2f34a3128695b8f80d96f0da2b30ed24456d7f8045b88370e5f67663",
+      "source": "exports/biofoundry/library/nikon-eclipse-ni-e/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ni-e/assembly-reference.json",
+      "bytes": 652608,
+      "sha256": "d0bd6864a8d1dd96b9b437d09e77ac3f8b6c7bfe2289be28c962518142939653",
+      "source": "exports/biofoundry/library/nikon-eclipse-ni-e/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ti2-e/asset.contract.json",
+      "bytes": 184440,
+      "sha256": "7c0370ae21992a96815180f96226c94103bd45140f37943c47d16cebfb098a32",
+      "source": "exports/biofoundry/library/nikon-eclipse-ti2-e/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ti2-e/assembly-reference.json",
+      "bytes": 1102264,
+      "sha256": "8a7b361e004581ce05e4a4f7a9bbfd6bf94139adc84a31720b0905173c7912b1",
+      "source": "exports/biofoundry/library/nikon-eclipse-ti2-e/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-ti2-n-sim-s-m/asset.contract.json",
+      "bytes": 212277,
+      "sha256": "30e9d3b4a43ce5618f00b75e4759ea199abcce4fbf7bccca42293ef24b16cefd",
+      "source": "exports/biofoundry/library/nikon-ti2-n-sim-s-m/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-ti2-n-sim-s-m/assembly-reference.json",
+      "bytes": 1271089,
+      "sha256": "fdc6cfcb531156614cb00a7af3bd18eb36e530aa815f6c8ad17eb50de3743598",
+      "source": "exports/biofoundry/library/nikon-ti2-n-sim-s-m/assembly-reference.json"
+    },
+    {
+      "bundle": "library/opentrons_flex_project/asset.contract.json",
+      "bytes": 254500,
+      "sha256": "7be541fb5cf541076f5232c9dcd3c3bbc15065767d99d3e37f1041897ba31d48",
+      "source": "exports/biofoundry/library/opentrons_flex_project/asset.contract.json"
+    },
+    {
+      "bundle": "library/opentrons_flex_project/assembly-reference.json",
+      "bytes": 227660,
+      "sha256": "12c73d1a2638917259f4b95c6c8a49472e0bf453edbbc836b5a438dfa3db74e0",
+      "source": "exports/biofoundry/library/opentrons_flex_project/assembly-reference.json"
+    },
+    {
+      "bundle": "library/perkinelmer_tga8000/asset.contract.json",
+      "bytes": 82913,
+      "sha256": "20e2e0bcb6311d7c31530a386271d0f6cf5e420991483fee9f54b165e66cb018",
+      "source": "exports/biofoundry/library/perkinelmer_tga8000/asset.contract.json"
+    },
+    {
+      "bundle": "library/perkinelmer_tga8000/assembly-reference.json",
+      "bytes": 273928,
+      "sha256": "68ad59fdcfb081d1da90717d259a9e6be02b525d51c3b6ef3f9b5746f57f4656",
+      "source": "exports/biofoundry/library/perkinelmer_tga8000/assembly-reference.json"
+    },
+    {
+      "bundle": "library/plate-96/asset.contract.json",
+      "bytes": 263875,
+      "sha256": "11ca4811d83b4452d77079b7446ab7f3108af3c8f0af98c07333c90c93fda337",
+      "source": "exports/biofoundry/library/plate-96/asset.contract.json"
+    },
+    {
+      "bundle": "library/plate-96/assembly-reference.json",
+      "bytes": 233619,
+      "sha256": "5e2a19c69af68f3558fbd7d638a730923ddb2f0a16d214093cbc61a7ee3d0a85",
+      "source": "exports/biofoundry/library/plate-96/assembly-reference.json"
+    },
+    {
+      "bundle": "library/quantum_design_ppms_dynacool/asset.contract.json",
+      "bytes": 50595,
+      "sha256": "cc14395d0d99daa7ca5af6e1da7943964c5c940fd33660e9034311797b275af5",
+      "source": "exports/biofoundry/library/quantum_design_ppms_dynacool/asset.contract.json"
+    },
+    {
+      "bundle": "library/quantum_design_ppms_dynacool/assembly-reference.json",
+      "bytes": 113730,
+      "sha256": "6d477f48580598e186dafd4cc865eb0f1078244ce5328963f6db5cfe72693470",
+      "source": "exports/biofoundry/library/quantum_design_ppms_dynacool/assembly-reference.json"
+    },
+    {
+      "bundle": "library/rigaku_xtalab_synergy_dw/asset.contract.json",
+      "bytes": 86266,
+      "sha256": "d1c31ccb2c82b7d99f88286077bc3a0da2905c69b38821a4efbe9d50f8c15696",
+      "source": "exports/biofoundry/library/rigaku_xtalab_synergy_dw/asset.contract.json"
+    },
+    {
+      "bundle": "library/rigaku_xtalab_synergy_dw/assembly-reference.json",
+      "bytes": 391027,
+      "sha256": "e4443f840f068150ca00500575caed63142d4426405b14b1cac86da0e6e68160",
+      "source": "exports/biofoundry/library/rigaku_xtalab_synergy_dw/assembly-reference.json"
+    },
+    {
+      "bundle": "library/roche_lightcycler_480_ii/asset.contract.json",
+      "bytes": 220714,
+      "sha256": "0048dad6d94fc09d04d4c08801903e20f06035bfac118e01dccdcd468ffacbeb",
+      "source": "exports/biofoundry/library/roche_lightcycler_480_ii/asset.contract.json"
+    },
+    {
+      "bundle": "library/roche_lightcycler_480_ii/assembly-reference.json",
+      "bytes": 803470,
+      "sha256": "127b91f6780edd5083d6ecdb48b122f94374fe72ee16ad83399bddc81c9e5faa",
+      "source": "exports/biofoundry/library/roche_lightcycler_480_ii/assembly-reference.json"
+    },
+    {
+      "bundle": "library/sartorius_ambr15/asset.contract.json",
+      "bytes": 355410,
+      "sha256": "8c30e7c6035b49d28d5ef17a3b816c93a7ba42e932adc270b441193155ebac48",
+      "source": "exports/biofoundry/library/sartorius_ambr15/asset.contract.json"
+    },
+    {
+      "bundle": "library/sartorius_ambr15/assembly-reference.json",
+      "bytes": 7659532,
+      "sha256": "f53cf28f0a9b8da0b19142559ba737863cd6fef4e93921bcc18f9d89ce6eec0e",
+      "source": "exports/biofoundry/library/sartorius_ambr15/assembly-reference.json"
+    },
+    {
+      "bundle": "library/sartorius_octet_r8/asset.contract.json",
+      "bytes": 229533,
+      "sha256": "0bd27c0c7dba64737dc594fd3cfd30a48c1b2ecc673eaa5f4d785de4e2a07797",
+      "source": "exports/biofoundry/library/sartorius_octet_r8/asset.contract.json"
+    },
+    {
+      "bundle": "library/sartorius_octet_r8/assembly-reference.json",
+      "bytes": 1004941,
+      "sha256": "7384ea4adf6d5e7752414097c560186744b0b069c7b00dac4823368c26743141",
+      "source": "exports/biofoundry/library/sartorius_octet_r8/assembly-reference.json"
+    },
+    {
+      "bundle": "library/sciex_zenotof_7600/asset.contract.json",
+      "bytes": 53129,
+      "sha256": "4688ab84a8fddeb4cf602d49fb40cccbc32b0816ec3df128d8057e40bccb583f",
+      "source": "exports/biofoundry/library/sciex_zenotof_7600/asset.contract.json"
+    },
+    {
+      "bundle": "library/sciex_zenotof_7600/assembly-reference.json",
+      "bytes": 122692,
+      "sha256": "92852ebc3d92128cca46f298df2596a5fa4bbbd3c6f019baf9bfff324c6d1d1e",
+      "source": "exports/biofoundry/library/sciex_zenotof_7600/assembly-reference.json"
+    },
+    {
+      "bundle": "library/singlecell_flowracs/asset.contract.json",
+      "bytes": 48123,
+      "sha256": "3fcca2b8748b876fc6eb3caf1f8006eb1291baf17f69ef1b840ab6e53f0b61b6",
+      "source": "exports/biofoundry/library/singlecell_flowracs/asset.contract.json"
+    },
+    {
+      "bundle": "library/singlecell_flowracs/assembly-reference.json",
+      "bytes": 135214,
+      "sha256": "46e4b6cd915c3494d1260c4c95750a4852fb2b6658abe89b48c48dbc50fbaaa2",
+      "source": "exports/biofoundry/library/singlecell_flowracs/assembly-reference.json"
+    },
+    {
+      "bundle": "library/spectramax-i3x/asset.contract.json",
+      "bytes": 72748,
+      "sha256": "d076e41fdefcf887f3642737383671054cc3f6808738d025607f945c2ba03e3a",
+      "source": "exports/biofoundry/library/spectramax-i3x/asset.contract.json"
+    },
+    {
+      "bundle": "library/spectramax-i3x/assembly-reference.json",
+      "bytes": 187229,
+      "sha256": "c42a97ab2ba23b59538d28c138a619337931eed7d8348411c112415ac2917645",
+      "source": "exports/biofoundry/library/spectramax-i3x/assembly-reference.json"
+    },
+    {
+      "bundle": "library/spectramax-id5/asset.contract.json",
+      "bytes": 69874,
+      "sha256": "ce20a61ef572f4c92e96850bb801c0286f244ac04a491829fa8c0731d5dbbf47",
+      "source": "exports/biofoundry/library/spectramax-id5/asset.contract.json"
+    },
+    {
+      "bundle": "library/spectramax-id5/assembly-reference.json",
+      "bytes": 59369,
+      "sha256": "a3707ac69ac5865cdb4ca1af505581d4e720dc7c008c6b2bdf5a6118e8572b93",
+      "source": "exports/biofoundry/library/spectramax-id5/assembly-reference.json"
+    },
+    {
+      "bundle": "library/tecan-fluent780/asset.contract.json",
+      "bytes": 727217,
+      "sha256": "9377a9c4b896231117ce71eb4e6485ba7ec2529da19aa0d41a2ed04f426523bf",
+      "source": "exports/biofoundry/library/tecan-fluent780/asset.contract.json"
+    },
+    {
+      "bundle": "library/tecan-fluent780/assembly-reference.json",
+      "bytes": 17474185,
+      "sha256": "2487189b79b70ead5f5a984aa84b4ec4a8a0a690a8b1bfcb37fef77a280021fa",
+      "source": "exports/biofoundry/library/tecan-fluent780/assembly-reference.json"
+    },
+    {
+      "bundle": "library/thermo_ibrightfl1500/asset.contract.json",
+      "bytes": 36965,
+      "sha256": "2148ce503101feb6098defd10bfbfec3872a1c905ca078cc4ed780c55299a109",
+      "source": "exports/biofoundry/library/thermo_ibrightfl1500/asset.contract.json"
+    },
+    {
+      "bundle": "library/thermo_ibrightfl1500/assembly-reference.json",
+      "bytes": 82859,
+      "sha256": "07d01bfce7f0b5db1676cfc8affe04c672f690655cf5a2cdd229a555eff00343",
+      "source": "exports/biofoundry/library/thermo_ibrightfl1500/assembly-reference.json"
+    },
+    {
+      "bundle": "library/thermo_prima_bt/asset.contract.json",
+      "bytes": 68480,
+      "sha256": "61c8f7d64317d1772bb1fc1c28a62218fe174fd9adf5d77bb4aa541f5dac0a38",
+      "source": "exports/biofoundry/library/thermo_prima_bt/asset.contract.json"
+    },
+    {
+      "bundle": "library/thermo_prima_bt/assembly-reference.json",
+      "bytes": 169327,
+      "sha256": "28982f70e4aa875a228b98b15f893c46ea16026c0ef1a83c63a04b57d296f7e5",
+      "source": "exports/biofoundry/library/thermo_prima_bt/assembly-reference.json"
+    },
+    {
+      "bundle": "library/thermo_sorvall_lynx6000/asset.contract.json",
+      "bytes": 49349,
+      "sha256": "e0340a711f9f4d6a27b30b5a09165662d572cfb1e73c6043f4aa44bbf3e47ca4",
+      "source": "exports/biofoundry/library/thermo_sorvall_lynx6000/asset.contract.json"
+    },
+    {
+      "bundle": "library/thermo_sorvall_lynx6000/assembly-reference.json",
+      "bytes": 140006,
+      "sha256": "feb9c3aa3b60a093a76f9576d7e97f5e9c846e838d2d02ea97a8255e3d7a0990",
+      "source": "exports/biofoundry/library/thermo_sorvall_lynx6000/assembly-reference.json"
+    },
+    {
+      "bundle": "library/tiprack-96/asset.contract.json",
+      "bytes": 104078,
+      "sha256": "52eea2fa6f163e499453f2af55a79fe7615d6dbbc2a3bd870319fbfb5c73be4e",
+      "source": "exports/biofoundry/library/tiprack-96/asset.contract.json"
+    },
+    {
+      "bundle": "library/tiprack-96/assembly-reference.json",
+      "bytes": 89942,
+      "sha256": "e4b0a50231f8165e9d47b8a184a4ac7a3f2cfaefe3a151ce0e9edd279d7ef922",
+      "source": "exports/biofoundry/library/tiprack-96/assembly-reference.json"
+    },
+    {
+      "bundle": "library/wyatt_dynapro_nanostar/asset.contract.json",
+      "bytes": 87568,
+      "sha256": "bde2c7e87c128c2e86885b2f87aa61ce4577cd573e8d4ce526865ae2df13f384",
+      "source": "exports/biofoundry/library/wyatt_dynapro_nanostar/asset.contract.json"
+    },
+    {
+      "bundle": "library/wyatt_dynapro_nanostar/assembly-reference.json",
+      "bytes": 276500,
+      "sha256": "54511cf403fb092961a58c496afddd87886a6080a3b24ae98378aea15d5f23bf",
+      "source": "exports/biofoundry/library/wyatt_dynapro_nanostar/assembly-reference.json"
+    },
+    {
+      "bundle": "library/yokogawa_csuw1/asset.contract.json",
+      "bytes": 42584,
+      "sha256": "dc782ade6012cc76f62279a5679792d8922ef0cc1d0a41fdee8de4162ce9bfb7",
+      "source": "exports/biofoundry/library/yokogawa_csuw1/asset.contract.json"
+    },
+    {
+      "bundle": "library/yokogawa_csuw1/assembly-reference.json",
+      "bytes": 75121,
+      "sha256": "20c2c18555836a5b876c836b2bbc90e894f816285d95c1674bd963ff2b376546",
+      "source": "exports/biofoundry/library/yokogawa_csuw1/assembly-reference.json"
+    },
+    {
+      "bundle": "library/zolix_finder930_301_sms/asset.contract.json",
+      "bytes": 44002,
+      "sha256": "5abeefa222e7e36af6ef11e6ca370e5a458958993c753221c3e9c6f442f665c5",
+      "source": "exports/biofoundry/library/zolix_finder930_301_sms/asset.contract.json"
+    },
+    {
+      "bundle": "library/zolix_finder930_301_sms/assembly-reference.json",
+      "bytes": 149738,
+      "sha256": "e57b2b0197a384f100f09fbd8b0784128e9180fdc2022fda56cfaabfefcd01bd",
+      "source": "exports/biofoundry/library/zolix_finder930_301_sms/assembly-reference.json"
+    },
+    {
+      "bundle": "portable-rescore.json",
+      "bytes": 6077,
+      "sha256": "52f3ae8b4908f9287b6bb2c7d0590267976b33603c50c02307c8452553a27ed3",
+      "source": null
+    }
+  ],
+  "frozen_record": {
+    "source_freeze_file_sha256": "772e9b82ace7a8596e3d0e4974d9130e65d4240c4eb6858fe0bab0eaef5c8d9d",
+    "source_freeze_inputs": {
+      "access_contracts": [
+        {
+          "path": "exports/biofoundry/library/agilent-1260-infinity-ii-analytical/asset.contract.json",
+          "sha256": "489395ec8a849a09d9caddfef62b654400fb2033ec11844fcd5a4cfbb911c6eb"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-1260-infinity-ii-semiprep/asset.contract.json",
+          "sha256": "5cedb3bff031825c9d7c65f17459f145cf962c191ddd71bd5497ca2562caf9b0"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical/asset.contract.json",
+          "sha256": "64c38e23b40fc244265debd8d282b5d35de90d2f38c78a2b04cabcc10352995e"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical-elsd/asset.contract.json",
+          "sha256": "30e9ab2b2076d701c4dc76db2cbe4d3086b76f942718b8b86c323f6dcd0bbb5b"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-rapidfire400-6470/asset.contract.json",
+          "sha256": "1c7ad3b05e79f014e486623fef077047470ac9d296d8465231b1661554535f6b"
+        },
+        {
+          "path": "exports/biofoundry/library/beckman_cytoflex_lx/asset.contract.json",
+          "sha256": "8d319d35e51d986aa7eaaad9d11af8f8aa986b08d6524480cbedac3aed83896b"
+        },
+        {
+          "path": "exports/biofoundry/library/beckman_optima_xe100/asset.contract.json",
+          "sha256": "4f5050f9e6f5197cd4e44967eced290bfd121982ae08b73d755acbb4dca061b0"
+        },
+        {
+          "path": "exports/biofoundry/library/beckman_optima_xpn100/asset.contract.json",
+          "sha256": "1b5bf43c5abc697e7a563d2ba5c9064cae97e02770095b5014055eade45648be"
+        },
+        {
+          "path": "exports/biofoundry/library/biorad_miniprotean/asset.contract.json",
+          "sha256": "6528faa16eb3589e3bcf318d0c074d00011b0d4b9cd89a767146c95af032159d"
+        },
+        {
+          "path": "exports/biofoundry/library/biotek-logphase-600/asset.contract.json",
+          "sha256": "df6825ab8699ecf7e3ec7e714b1fabdafd7bafd7a6170ceb20ed3cf633a9de83"
+        },
+        {
+          "path": "exports/biofoundry/library/biotek_405ts/asset.contract.json",
+          "sha256": "4545d935ddfd7d25d26a4f202f8e2834065bebb1de36567ee7d97428bd79b527"
+        },
+        {
+          "path": "exports/biofoundry/library/bmg_clariostarplus/asset.contract.json",
+          "sha256": "2ec7679937476da642b08f57aff53314ddf08c96b6d9852c0286415bafb34175"
+        },
+        {
+          "path": "exports/biofoundry/library/eppendorf_5910ri/asset.contract.json",
+          "sha256": "ef1756feac0ff83d50fb280b7c5dc17949258685a5bc377ccd982801380f7fae"
+        },
+        {
+          "path": "exports/biofoundry/library/eppendorf_cellxpertc170i/asset.contract.json",
+          "sha256": "decef0d01da4113c078228598c5028f01f92f6d0ba164db13eecd4eb297cc633"
+        },
+        {
+          "path": "exports/biofoundry/library/ika_ks4000/asset.contract.json",
+          "sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897"
+        },
+        {
+          "path": "exports/biofoundry/library/nanoscribe_gt2/asset.contract.json",
+          "sha256": "57e14fd11ecc4ba131d19fc7bce7d708beffe11cb1b2cfcb3c7fada0903488d1"
+        },
+        {
+          "path": "exports/biofoundry/library/perkinelmer_tga8000/asset.contract.json",
+          "sha256": "20e2e0bcb6311d7c31530a386271d0f6cf5e420991483fee9f54b165e66cb018"
+        },
+        {
+          "path": "exports/biofoundry/library/quantum_design_ppms_dynacool/asset.contract.json",
+          "sha256": "cc14395d0d99daa7ca5af6e1da7943964c5c940fd33660e9034311797b275af5"
+        },
+        {
+          "path": "exports/biofoundry/library/rigaku_xtalab_synergy_dw/asset.contract.json",
+          "sha256": "d1c31ccb2c82b7d99f88286077bc3a0da2905c69b38821a4efbe9d50f8c15696"
+        },
+        {
+          "path": "exports/biofoundry/library/roche_lightcycler_480_ii/asset.contract.json",
+          "sha256": "0048dad6d94fc09d04d4c08801903e20f06035bfac118e01dccdcd468ffacbeb"
+        },
+        {
+          "path": "exports/biofoundry/library/sartorius_octet_r8/asset.contract.json",
+          "sha256": "0bd27c0c7dba64737dc594fd3cfd30a48c1b2ecc673eaa5f4d785de4e2a07797"
+        },
+        {
+          "path": "exports/biofoundry/library/spectramax-i3x/asset.contract.json",
+          "sha256": "d076e41fdefcf887f3642737383671054cc3f6808738d025607f945c2ba03e3a"
+        },
+        {
+          "path": "exports/biofoundry/library/tecan-fluent780/asset.contract.json",
+          "sha256": "9377a9c4b896231117ce71eb4e6485ba7ec2529da19aa0d41a2ed04f426523bf"
+        },
+        {
+          "path": "exports/biofoundry/library/thermo_ibrightfl1500/asset.contract.json",
+          "sha256": "2148ce503101feb6098defd10bfbfec3872a1c905ca078cc4ed780c55299a109"
+        },
+        {
+          "path": "exports/biofoundry/library/thermo_sorvall_lynx6000/asset.contract.json",
+          "sha256": "e0340a711f9f4d6a27b30b5a09165662d572cfb1e73c6043f4aa44bbf3e47ca4"
+        },
+        {
+          "path": "exports/biofoundry/library/wyatt_dynapro_nanostar/asset.contract.json",
+          "sha256": "bde2c7e87c128c2e86885b2f87aa61ce4577cd573e8d4ce526865ae2df13f384"
+        }
+      ],
+      "asset_contracts": [
+        {
+          "path": "exports/biofoundry/library/agilent-1260-infinity-ii-analytical/asset.contract.json",
+          "sha256": "489395ec8a849a09d9caddfef62b654400fb2033ec11844fcd5a4cfbb911c6eb"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-1260-infinity-ii-semiprep/asset.contract.json",
+          "sha256": "5cedb3bff031825c9d7c65f17459f145cf962c191ddd71bd5497ca2562caf9b0"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical/asset.contract.json",
+          "sha256": "64c38e23b40fc244265debd8d282b5d35de90d2f38c78a2b04cabcc10352995e"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical-elsd/asset.contract.json",
+          "sha256": "30e9ab2b2076d701c4dc76db2cbe4d3086b76f942718b8b86c323f6dcd0bbb5b"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-1290-infinity-ii-preparative/asset.contract.json",
+          "sha256": "43b4c18f72d8b87dc383c3da1dc499174ae5d6a6d11f466dac035c2b22da4115"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-8890-7010b-gcms/asset.contract.json",
+          "sha256": "b2b3f102ee0ec4fac83421a4f9ce191464e17c6d7c5d66d3fb912def818f78cd"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-8890-gc/asset.contract.json",
+          "sha256": "0b2ad890a3a033ff34195e1e68057fe046fa2e3a01e4c82fc1635485977038ea"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent-rapidfire400-6470/asset.contract.json",
+          "sha256": "1c7ad3b05e79f014e486623fef077047470ac9d296d8465231b1661554535f6b"
+        },
+        {
+          "path": "exports/biofoundry/library/agilent_bravo_assaymap/asset.contract.json",
+          "sha256": "edf7eb2b0ae422d5abba73887d292357646ebecfdc71bc5a71f665dde2dde622"
+        },
+        {
+          "path": "exports/biofoundry/library/azenta_automated_roll_heat_sealer_a4s/asset.contract.json",
+          "sha256": "02683ad99b301666af7428cabee7dae700b62741f74a53adcc66a5c5555b7af5"
+        },
+        {
+          "path": "exports/biofoundry/library/bd_facsaria_fusion/asset.contract.json",
+          "sha256": "19385b2ecdb83dc7898ea84d4b556cec09aa7f3c1a4d1952d216bd361bad9299"
+        },
+        {
+          "path": "exports/biofoundry/library/bd_lsrfortessa/asset.contract.json",
+          "sha256": "013445377c9df0fab2799288c471203aa7296e3d99c8f03bd18371b0655a1b8c"
+        },
+        {
+          "path": "exports/biofoundry/library/beckman_cytoflex_lx/asset.contract.json",
+          "sha256": "8d319d35e51d986aa7eaaad9d11af8f8aa986b08d6524480cbedac3aed83896b"
+        },
+        {
+          "path": "exports/biofoundry/library/beckman_optima_xe100/asset.contract.json",
+          "sha256": "4f5050f9e6f5197cd4e44967eced290bfd121982ae08b73d755acbb4dca061b0"
+        },
+        {
+          "path": "exports/biofoundry/library/beckman_optima_xpn100/asset.contract.json",
+          "sha256": "1b5bf43c5abc697e7a563d2ba5c9064cae97e02770095b5014055eade45648be"
+        },
+        {
+          "path": "exports/biofoundry/library/biorad_miniprotean/asset.contract.json",
+          "sha256": "6528faa16eb3589e3bcf318d0c074d00011b0d4b9cd89a767146c95af032159d"
+        },
+        {
+          "path": "exports/biofoundry/library/biostream_biopilot150/asset.contract.json",
+          "sha256": "a139c50c39774dc8dfdfcbdd646b1bfe6114d912d65915ceef06f9068cd2bb6b"
+        },
+        {
+          "path": "exports/biofoundry/library/biostream_biotwin15l/asset.contract.json",
+          "sha256": "77bf78c184f1857e4b1d97eab384bbd915366952f5c00a90a1855e0fc9a1b389"
+        },
+        {
+          "path": "exports/biofoundry/library/biotek-logphase-600/asset.contract.json",
+          "sha256": "df6825ab8699ecf7e3ec7e714b1fabdafd7bafd7a6170ceb20ed3cf633a9de83"
+        },
+        {
+          "path": "exports/biofoundry/library/biotek_405ts/asset.contract.json",
+          "sha256": "4545d935ddfd7d25d26a4f202f8e2834065bebb1de36567ee7d97428bd79b527"
+        },
+        {
+          "path": "exports/biofoundry/library/bmg_clariostarplus/asset.contract.json",
+          "sha256": "2ec7679937476da642b08f57aff53314ddf08c96b6d9852c0286415bafb34175"
+        },
+        {
+          "path": "exports/biofoundry/library/brooks_preciseflex_400/asset.contract.json",
+          "sha256": "9313b667dd5edfe3588fc7d3f0a6ffe08f65a2f6898a7c879e73e9c1cf7ffdd0"
+        },
+        {
+          "path": "exports/biofoundry/library/bruker_impact_ii/asset.contract.json",
+          "sha256": "a45b4c07071c0b0eb7caf83659cabcd82d8e870842e606360c6b10add9fe6138"
+        },
+        {
+          "path": "exports/biofoundry/library/bruker_nanolr3/asset.contract.json",
+          "sha256": "31ffb2a2cbd462dd32234fb7604a8c8a82d74981b8fef49be08bf2e856dc5271"
+        },
+        {
+          "path": "exports/biofoundry/library/bruker_nanowizard_4_xp/asset.contract.json",
+          "sha256": "dcb000a240740d4a9156e832990c041c969793697ba08ceb8ce36a167f0c4a3d"
+        },
+        {
+          "path": "exports/biofoundry/library/bruker_timstof_pro2/asset.contract.json",
+          "sha256": "9cb4e652392e34b37fd78a1b17b85ccf283213429de2e2322388c7bac62480fa"
+        },
+        {
+          "path": "exports/biofoundry/library/cytiva_akta_pure_25m1/asset.contract.json",
+          "sha256": "89e4dd5acfc7b96ee4afdd4d7a88941e7ee2320febfdbe0b6b36bfbc57d0f0e7"
+        },
+        {
+          "path": "exports/biofoundry/library/cytiva_akta_pure_25m2/asset.contract.json",
+          "sha256": "d1cbad06d96a8c192c5ff6e5933690451d4089ae4e91dead57872611dff89b9e"
+        },
+        {
+          "path": "exports/biofoundry/library/eppendorf_5910ri/asset.contract.json",
+          "sha256": "ef1756feac0ff83d50fb280b7c5dc17949258685a5bc377ccd982801380f7fae"
+        },
+        {
+          "path": "exports/biofoundry/library/eppendorf_cellxpertc170i/asset.contract.json",
+          "sha256": "decef0d01da4113c078228598c5028f01f92f6d0ba164db13eecd4eb297cc633"
+        },
+        {
+          "path": "exports/biofoundry/library/fluent1080/asset.contract.json",
+          "sha256": "833c68327f5825d1d9558ed106178f57f25241c6a94df4ca06085ecc3f3206dd"
+        },
+        {
+          "path": "exports/biofoundry/library/fluidigm_helios/asset.contract.json",
+          "sha256": "121b615da5f1039d720f9852809d2c7538ff004c946bc33520b6b2dcaddf137d"
+        },
+        {
+          "path": "exports/biofoundry/library/his_fusion_x/asset.contract.json",
+          "sha256": "be5475eb8973d97c6e515e3877fe0e113974f4b3f7d50949c2dbe7a0adf264c9"
+        },
+        {
+          "path": "exports/biofoundry/library/ika_ks4000/asset.contract.json",
+          "sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897"
+        },
+        {
+          "path": "exports/biofoundry/library/ika_plate_rctdigital/asset.contract.json",
+          "sha256": "389ac774c761e83f541ea954433cebc0374a7248cdf268081a063b52d0d9a988"
+        },
+        {
+          "path": "exports/biofoundry/library/lit_litone_lbs/asset.contract.json",
+          "sha256": "5312a95c95b268f9f059c45951b690e4ebf4f575db2f9a4e638cd08cc752d200"
+        },
+        {
+          "path": "exports/biofoundry/library/lit_litone_xl/asset.contract.json",
+          "sha256": "ee31fefbef4379aa6a21d46bdad9a95313b8b0392e100f88b49526b3fa3b0d83"
+        },
+        {
+          "path": "exports/biofoundry/library/malvern_microcalpeaq/asset.contract.json",
+          "sha256": "75fca998961db790037ec6f924d6a2ba26461599462e1a52f850efa30290d234"
+        },
+        {
+          "path": "exports/biofoundry/library/manual-pipette/asset.contract.json",
+          "sha256": "b7f524ab5e234697a433613d5e134625da76a96d501229ebdd119a3d5fbc6a10"
+        },
+        {
+          "path": "exports/biofoundry/library/mettler_easymax402/asset.contract.json",
+          "sha256": "b15cbc645b0ad29a2a361b0e5f2c1fdb8e175c26487c08908e6452db9a3dc900"
+        },
+        {
+          "path": "exports/biofoundry/library/mettler_reactraman785/asset.contract.json",
+          "sha256": "c073995a0c3d159dcc0d1e32d9645e570f50eeab405d4708ef55168392b4b06b"
+        },
+        {
+          "path": "exports/biofoundry/library/mgi_dnbseq_g99rs/asset.contract.json",
+          "sha256": "c2117cc4ff4848e95665dd749da788e7ec090cbdd5a0f317c808f8dd85f52a0f"
+        },
+        {
+          "path": "exports/biofoundry/library/mt_xpr204e/asset.contract.json",
+          "sha256": "03ab61e1c9a666ed54d1aab8fd5691644f2c09c6a6d05b2c4045814c62fbfc3e"
+        },
+        {
+          "path": "exports/biofoundry/library/nanoscribe_gt2/asset.contract.json",
+          "sha256": "57e14fd11ecc4ba131d19fc7bce7d708beffe11cb1b2cfcb3c7fada0903488d1"
+        },
+        {
+          "path": "exports/biofoundry/library/nih-3dpx-023347/asset.contract.json",
+          "sha256": "0826b8c688441791efac6dbfbd1022d49aad95a77de17d5bbccbd8837c500a38"
+        },
+        {
+          "path": "exports/biofoundry/library/nikon-ax/asset.contract.json",
+          "sha256": "87e98e492d1310e9fe9392b40e029b302008e1d5b602c05bf0f5009b15bc2b7b"
+        },
+        {
+          "path": "exports/biofoundry/library/nikon-ax-r-mp/asset.contract.json",
+          "sha256": "67d13dac4ad702c2e2dc20ebaea6688a2e3224af7dbc0ce357efc56738f77702"
+        },
+        {
+          "path": "exports/biofoundry/library/nikon-c2/asset.contract.json",
+          "sha256": "0007b6f39cafffcc2875aaee59275c0328cd5b6f4327f220b4e8324236368773"
+        },
+        {
+          "path": "exports/biofoundry/library/nikon-eclipse-ni-e/asset.contract.json",
+          "sha256": "c021734c2f34a3128695b8f80d96f0da2b30ed24456d7f8045b88370e5f67663"
+        },
+        {
+          "path": "exports/biofoundry/library/nikon-eclipse-ti2-e/asset.contract.json",
+          "sha256": "7c0370ae21992a96815180f96226c94103bd45140f37943c47d16cebfb098a32"
+        },
+        {
+          "path": "exports/biofoundry/library/nikon-ti2-n-sim-s-m/asset.contract.json",
+          "sha256": "30e9d3b4a43ce5618f00b75e4759ea199abcce4fbf7bccca42293ef24b16cefd"
+        },
+        {
+          "path": "exports/biofoundry/library/opentrons_flex_project/asset.contract.json",
+          "sha256": "7be541fb5cf541076f5232c9dcd3c3bbc15065767d99d3e37f1041897ba31d48"
+        },
+        {
+          "path": "exports/biofoundry/library/perkinelmer_tga8000/asset.contract.json",
+          "sha256": "20e2e0bcb6311d7c31530a386271d0f6cf5e420991483fee9f54b165e66cb018"
+        },
+        {
+          "path": "exports/biofoundry/library/plate-96/asset.contract.json",
+          "sha256": "11ca4811d83b4452d77079b7446ab7f3108af3c8f0af98c07333c90c93fda337"
+        },
+        {
+          "path": "exports/biofoundry/library/quantum_design_ppms_dynacool/asset.contract.json",
+          "sha256": "cc14395d0d99daa7ca5af6e1da7943964c5c940fd33660e9034311797b275af5"
+        },
+        {
+          "path": "exports/biofoundry/library/rigaku_xtalab_synergy_dw/asset.contract.json",
+          "sha256": "d1c31ccb2c82b7d99f88286077bc3a0da2905c69b38821a4efbe9d50f8c15696"
+        },
+        {
+          "path": "exports/biofoundry/library/roche_lightcycler_480_ii/asset.contract.json",
+          "sha256": "0048dad6d94fc09d04d4c08801903e20f06035bfac118e01dccdcd468ffacbeb"
+        },
+        {
+          "path": "exports/biofoundry/library/sartorius_ambr15/asset.contract.json",
+          "sha256": "8c30e7c6035b49d28d5ef17a3b816c93a7ba42e932adc270b441193155ebac48"
+        },
+        {
+          "path": "exports/biofoundry/library/sartorius_octet_r8/asset.contract.json",
+          "sha256": "0bd27c0c7dba64737dc594fd3cfd30a48c1b2ecc673eaa5f4d785de4e2a07797"
+        },
+        {
+          "path": "exports/biofoundry/library/sciex_zenotof_7600/asset.contract.json",
+          "sha256": "4688ab84a8fddeb4cf602d49fb40cccbc32b0816ec3df128d8057e40bccb583f"
+        },
+        {
+          "path": "exports/biofoundry/library/singlecell_flowracs/asset.contract.json",
+          "sha256": "3fcca2b8748b876fc6eb3caf1f8006eb1291baf17f69ef1b840ab6e53f0b61b6"
+        },
+        {
+          "path": "exports/biofoundry/library/spectramax-i3x/asset.contract.json",
+          "sha256": "d076e41fdefcf887f3642737383671054cc3f6808738d025607f945c2ba03e3a"
+        },
+        {
+          "path": "exports/biofoundry/library/spectramax-id5/asset.contract.json",
+          "sha256": "ce20a61ef572f4c92e96850bb801c0286f244ac04a491829fa8c0731d5dbbf47"
+        },
+        {
+          "path": "exports/biofoundry/library/tecan-fluent780/asset.contract.json",
+          "sha256": "9377a9c4b896231117ce71eb4e6485ba7ec2529da19aa0d41a2ed04f426523bf"
+        },
+        {
+          "path": "exports/biofoundry/library/thermo_ibrightfl1500/asset.contract.json",
+          "sha256": "2148ce503101feb6098defd10bfbfec3872a1c905ca078cc4ed780c55299a109"
+        },
+        {
+          "path": "exports/biofoundry/library/thermo_prima_bt/asset.contract.json",
+          "sha256": "61c8f7d64317d1772bb1fc1c28a62218fe174fd9adf5d77bb4aa541f5dac0a38"
+        },
+        {
+          "path": "exports/biofoundry/library/thermo_sorvall_lynx6000/asset.contract.json",
+          "sha256": "e0340a711f9f4d6a27b30b5a09165662d572cfb1e73c6043f4aa44bbf3e47ca4"
+        },
+        {
+          "path": "exports/biofoundry/library/tiprack-96/asset.contract.json",
+          "sha256": "52eea2fa6f163e499453f2af55a79fe7615d6dbbc2a3bd870319fbfb5c73be4e"
+        },
+        {
+          "path": "exports/biofoundry/library/wyatt_dynapro_nanostar/asset.contract.json",
+          "sha256": "bde2c7e87c128c2e86885b2f87aa61ce4577cd573e8d4ce526865ae2df13f384"
+        },
+        {
+          "path": "exports/biofoundry/library/yokogawa_csuw1/asset.contract.json",
+          "sha256": "dc782ade6012cc76f62279a5679792d8922ef0cc1d0a41fdee8de4162ce9bfb7"
+        },
+        {
+          "path": "exports/biofoundry/library/zolix_finder930_301_sms/asset.contract.json",
+          "sha256": "5abeefa222e7e36af6ef11e6ca370e5a458958993c753221c3e9c6f442f665c5"
+        }
+      ],
+      "base_catalog_sha256": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de",
+      "base_plans": [
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-000.json",
+          "sha256": "7db234dbf7b01464a857fdd93cff34bad8b41d51d0b4e1b2a23970e001d3146f"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-001.json",
+          "sha256": "987ca8410cab1247bceddc83cd7c0df2dddaf02c1262531273a88d791e35d186"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-002.json",
+          "sha256": "57735232670bc275afbd3a1376268981c6be16ef1b7c709c5618922fbd3d6948"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-003.json",
+          "sha256": "f98ae1190d08bbee158d8ec294ebf3b8b4f2c2e77c84025fc6f79328be077bcd"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-004.json",
+          "sha256": "9be76b9ab261d109c08b67d358eac7351ad41cb19f21d8ab0959a6f0c719eeff"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-005.json",
+          "sha256": "fc848062299f7fac1e70a7f429d08bd0f511b3f641f663b65232584e26b2d1d9"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-006.json",
+          "sha256": "28109f317b54fd95e6201744f0b5b653f96c4370c0be800dc509ad4749d086da"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-007.json",
+          "sha256": "2d5e959751d2218a902d43b12f0aaaf7b2833c5a952ffa5147ed357a95fd346a"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-008.json",
+          "sha256": "caecd5769a9466860bdd7720a81d28e64929a3d8d93fa67ec7dbd6e355a29a4a"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-009.json",
+          "sha256": "c55a3862c1ae005640603093291eab044ff12400dc82be71963256e99c31b3d0"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-010.json",
+          "sha256": "0ed7683880df3fe9060ccb5005723ee2c83efae81f03a1d2fe56f1e3f92b65ad"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-011.json",
+          "sha256": "70d31766f28074917f1a1610a44165244d0dd45a00b42f60807362b659656545"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-012.json",
+          "sha256": "31035f86ec81241b68e190066bea7d277e85b28347f04f462fb3d762628d4120"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-013.json",
+          "sha256": "df3c0db0a58763cf34971dbd25b431121f47a27417aae4215883813292be2797"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-014.json",
+          "sha256": "8e6e0da77e5cdfb354821e3308d2cdd599dae2543115357b2e304c54a5bf9419"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-015.json",
+          "sha256": "f7c99f459624c3cb865595e47233a3e04d9f11967bfe61fdf7c34f30a3a5a37c"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-016.json",
+          "sha256": "83f74ccb4cb2583799e43ab484fbac08271314fa6e50254d7ca7caca19660502"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-017.json",
+          "sha256": "6c390eccce3919d13c813110021f4710de52f35331d5b6a82ca47a9320ee7ebc"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-018.json",
+          "sha256": "31b0314f001b4e505116fb4ab0eff71781997b12124c98c64345097ba58182a0"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-019.json",
+          "sha256": "903fd63b6897eaf5e645b9f8b1b88bd58e7f68a58d4a18c3db05b3ac205d0813"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-020.json",
+          "sha256": "a8a06ec3597d2816a0f064cab6f0cc69e284c089f8cd0435b5ccde302b03e36a"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-021.json",
+          "sha256": "eca1c49a3c77b30d4c393b594680827a738809609b9474f44e4088ea9537bc3a"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-022.json",
+          "sha256": "44dd2e934cd0f86634d4b2233e7fa545617238f23c1fd2d8f12f5d6bbe03982e"
+        },
+        {
+          "path": "docs/paper/biofoundry-preprint/source-data/v2/repair/plans/repair-023.json",
+          "sha256": "74ebad1bae5dc20977caee8c84b76ccde797d0b117b0a51421e35175617f4914"
+        }
+      ],
+      "language_diagnostics_sha256": "580801b347da1363f028b156a06b1b866e5e7cb43eca8cda9b223cc84dd4ebea",
+      "protocol_sha256": "9a3623a6eb85c6504b5c083a860f3b4d29817b0039e3a1ea93fde74062993a71",
+      "real_deadline_cases": [
+        {
+          "case": "heldout-language-00-s1",
+          "model": "deepseek-flash",
+          "raw_file": "source-data/v2/heldout/language/deepseek-flash/heldout-language-00-s1-r0.json",
+          "raw_sha256": "de064ae1927417caa7782cc337be499263f61d735df6abb374fd3ce1a08e86b2"
+        },
+        {
+          "case": "heldout-language-00-s2",
+          "model": "deepseek-flash",
+          "raw_file": "source-data/v2/heldout/language/deepseek-flash/heldout-language-00-s2-r0.json",
+          "raw_sha256": "77ce3db855389f0eb7bf583efb5c553bdf6268096830fb76ac7852e9673aee1f"
+        },
+        {
+          "case": "heldout-language-09-s2",
+          "model": "deepseek-flash",
+          "raw_file": "source-data/v2/heldout/language/deepseek-flash/heldout-language-09-s2-r0.json",
+          "raw_sha256": "c607b3f438f762a71932ddb59cb3933706460c45d1c41557015167153c3bf4d9"
+        },
+        {
+          "case": "heldout-language-12-s2",
+          "model": "deepseek-flash",
+          "raw_file": "source-data/v2/heldout/language/deepseek-flash/heldout-language-12-s2-r0.json",
+          "raw_sha256": "037528b76a86dbe2ee018a4dcaa3f56b2213ae8cb1815a08d57fb0e76ada849f"
+        },
+        {
+          "case": "heldout-language-18-s1",
+          "model": "deepseek-flash",
+          "raw_file": "source-data/v2/heldout/language/deepseek-flash/heldout-language-18-s1-r0.json",
+          "raw_sha256": "cb598e74167d3a073ba33c06ba43a28ad463d6c936bfb6a8ddf44c682f6aff60"
+        },
+        {
+          "case": "heldout-language-23-s2",
+          "model": "deepseek-flash",
+          "raw_file": "source-data/v2/heldout/language/deepseek-flash/heldout-language-23-s2-r0.json",
+          "raw_sha256": "2c5639bfa59767b1ee095f482a2c57d9c7df10308bbc215f01491900ffc0e302"
+        },
+        {
+          "case": "heldout-language-14-s2",
+          "model": "deepseek-v4-pro",
+          "raw_file": "source-data/v2/heldout/language/deepseek-v4-pro/heldout-language-14-s2-r0.json",
+          "raw_sha256": "9b4c1659f5cb84edc602de8655797c5f1a3d65ae5183934d76523e6b02efee21"
+        }
+      ],
+      "sim_import_chain": [
+        {
+          "path": "sim/library_protocols.py",
+          "sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d"
+        }
+      ],
+      "v2_repair_schema_sha256": "b692906b36790b1772ce33fccb25b15127b1916b7da8e71155808a22aedaacc3",
+      "v2_scorer_sha256": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c",
+      "v3_mutation_sha256": "3a09db53b4375e7be2a72c5ae27d1c435a3e1e641509739dd9cfbc01731a990e",
+      "v3_validation_sha256": "80a246d79cdc36902ad5c774ebf2fb7a636a7b976ca8953f9094b5c1d4871ec7"
+    }
+  },
+  "notes": [
+    "The asset-library catalogue, 71 contracts, 71 assembly-reference JSON files, simulator source and checker dependency snapshots are included for metadata inspection and adapted re-scoring.",
+    "The original validation.py also hashes normalized GLB files through Library.binding_fingerprint; those GLBs are intentionally not included in this metadata-only bundle. Run the original script in the full virtual-lab tree, or use portable-rescore.json for the frozen raw-record re-score.",
+    "This manifest records source hashes after the v3.1 freeze and does not retroactively add them to mutation-freeze.json. Checker dependencies are a posthoc addendum, not evidence that the original freeze covered them."
+  ],
+  "posthoc_added_hashes": [
+    {
+      "bundle": "asset-library.json",
+      "bytes": 635796,
+      "sha256": "23b9109483dbd34ff4e4f8d79f61e1e81c60ac6005472c64d5d7503918ec178d",
+      "source": "exports/biofoundry/asset-library.json"
+    },
+    {
+      "bundle": "sim/library_protocols.py",
+      "bytes": 44082,
+      "sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+      "source": "sim/library_protocols.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/scorer.py",
+      "bytes": 2907,
+      "sha256": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/scorer.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/common.py",
+      "bytes": 1234,
+      "sha256": "5a7abd2474e14641b1cd01d90eaa4be13d35fecb6de9f6600013b2ca641b3582",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/common.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/repair.py",
+      "bytes": 4599,
+      "sha256": "b692906b36790b1772ce33fccb25b15127b1916b7da8e71155808a22aedaacc3",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/repair.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/v2/frozen.json",
+      "bytes": 16294,
+      "sha256": "7d83e77f8f5be5f5bffc6a6e84ef912cde68165dedfd5f360fa9bf0aacd68edc",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/v2/frozen.json"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/scorer.py",
+      "bytes": 5165,
+      "sha256": "66360904c7d730bf1ae93b20591e4d9617f056023f425419d61339694f2e2787",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/scorer.py"
+    },
+    {
+      "bundle": "checker-dependencies/benchmarks/common.py",
+      "bytes": 747,
+      "sha256": "b26d931a88e876e0eb5d4d8fd36da4ba21ff9a8a42de685f89306c90c97e4c66",
+      "source": "docs/paper/biofoundry-preprint/benchmarks/common.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/__init__.py",
+      "bytes": 92,
+      "sha256": "7a5f5000cf72aff8befbe9d0ae8fff4f2dbd08736d78b4b83ef452d068919441",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/__init__.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/__init__.py",
+      "bytes": 85,
+      "sha256": "39c75d16d41205ae2deb8affbf42052ed4e31752947a6fb0985a62f404361d4e",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/__init__.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/app.py",
+      "bytes": 32787,
+      "sha256": "e5c84e60f7a1b8501ffe80135d2c18910d934a590574dc6cea529e55a8e5a07c",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/app.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/author.py",
+      "bytes": 1553,
+      "sha256": "8d30d0835e82e437f8ca539d2a23695355fea432573256147c4cd4d819f768ad",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/author.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/baseline.py",
+      "bytes": 5699,
+      "sha256": "5e9ece5bf3b49166f498d9cba3956786102ad6af623fb651444680f703295172",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/baseline.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/capabilities.py",
+      "bytes": 6935,
+      "sha256": "41f41942b05838d82ee18a68e1446729083db05ef48b46e3f989dd13fcde822d",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/capabilities.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/delivery.py",
+      "bytes": 2523,
+      "sha256": "eb88631955a7119144f258d61544e3fdc94c76e4be80cc23e189cb81a1fe605e",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/delivery.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/island.py",
+      "bytes": 12766,
+      "sha256": "18376d1831bf1d2dfa20fa08a0f5f158af66f6c50df6e00b08e7ffee53b0e81b",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/island.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/methods.py",
+      "bytes": 16721,
+      "sha256": "69f29b5d6c8a4d1d149a7ced09dd41f9c4f8cde7de8c5230fd0a2d008c95e2ee",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/methods.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/planning.py",
+      "bytes": 6313,
+      "sha256": "eaa5ad8ee23faa03cc4d897ed26c915066fd036856b425fb80e90d7db91c4491",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/planning.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/playback.py",
+      "bytes": 5048,
+      "sha256": "79a69b925a8c13d0809e9be3a0d2e80047f89e7670ee8806881de3ece697fdef",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/playback.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/portfolio.py",
+      "bytes": 16097,
+      "sha256": "926a8161162a55b3bb5eb5a734b334ac45b4cff2bc501f8c2fc0d0ca79d30d05",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/portfolio.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/reservations.py",
+      "bytes": 4013,
+      "sha256": "145c88372f3189dc0c8c7bfc206020c905c05716346cfdae2396e2ac21d569ec",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/reservations.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/scheduling.py",
+      "bytes": 21684,
+      "sha256": "e77309aafc7e6ef7f7b8cd7f904abac272f068b6b5793e7c1c32f416ae44751f",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/scheduling.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/verify.py",
+      "bytes": 12661,
+      "sha256": "6fb7c8ab89c7155638f1bec9972018b5e72a37808001896c2557b8d8a14b3d04",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/verify.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/biofoundry/workflow.py",
+      "bytes": 19539,
+      "sha256": "845d41dd7a0a629e2ba73fb9503da47737b175208145dcc8eca3bda2210cdcb0",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/biofoundry/workflow.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/__init__.py",
+      "bytes": 636,
+      "sha256": "381c5e26a1aaf3de74decf1e333a85fdd875ad8ee25b526ba3391b8ac99c457b",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/__init__.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/evaluate.py",
+      "bytes": 4496,
+      "sha256": "6e46639bc569629beff8b84ecc7febdf9d1c76c54bd06806d4fcfdc6b9a5f701",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/evaluate.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/plr_sim.py",
+      "bytes": 7723,
+      "sha256": "6fe0e4392d56d43d2126e4f7c6f691323535a97783f148be63404811cdea0b1e",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/plr_sim.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/schema.py",
+      "bytes": 12591,
+      "sha256": "666771df04123080631399224ece6834b1fed660fa99acef162d231b3419a9b3",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/schema.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/skills.py",
+      "bytes": 1745,
+      "sha256": "413c96ba2987e8fe7a8230240262564684d1183a9c03a8daa712cbc75e3f85af",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/skills.py"
+    },
+    {
+      "bundle": "checker-dependencies/source-v2/labscriptai/planir/virtual_deck.py",
+      "bytes": 7712,
+      "sha256": "5fc69893cf1c171d7429931f944a798b65ce0d17f13d6c806abc6fdeb455088c",
+      "source": "docs/paper/biofoundry-preprint/reproducibility/source-v2/labscriptai/planir/virtual_deck.py"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-analytical/asset.contract.json",
+      "bytes": 293448,
+      "sha256": "489395ec8a849a09d9caddfef62b654400fb2033ec11844fcd5a4cfbb911c6eb",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-analytical/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-analytical/assembly-reference.json",
+      "bytes": 3787842,
+      "sha256": "a0350d70f24aef56d0e8597a73dcca75395092cfdde4297f4263bb6b14961f10",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-analytical/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-semiprep/asset.contract.json",
+      "bytes": 367396,
+      "sha256": "5cedb3bff031825c9d7c65f17459f145cf962c191ddd71bd5497ca2562caf9b0",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-semiprep/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-semiprep/assembly-reference.json",
+      "bytes": 6093026,
+      "sha256": "76f6fd42c6eff721a2482b62d80bd39bb5ba91cbb2cf097757a5d30b48c406f8",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-semiprep/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical/asset.contract.json",
+      "bytes": 271641,
+      "sha256": "64c38e23b40fc244265debd8d282b5d35de90d2f38c78a2b04cabcc10352995e",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical/assembly-reference.json",
+      "bytes": 3097057,
+      "sha256": "eed12b37a95ed1354a3518f2798d1ae6701a6484ab3b8cfec6d579a1e01b3110",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical-elsd/asset.contract.json",
+      "bytes": 284527,
+      "sha256": "30e9ab2b2076d701c4dc76db2cbe4d3086b76f942718b8b86c323f6dcd0bbb5b",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical-elsd/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical-elsd/assembly-reference.json",
+      "bytes": 3262604,
+      "sha256": "a48e64f78f02bc5caeef81188ae4f4a5c270ec00f874dcf1167edf244cfe6b2e",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical-elsd/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-preparative/asset.contract.json",
+      "bytes": 175273,
+      "sha256": "43b4c18f72d8b87dc383c3da1dc499174ae5d6a6d11f466dac035c2b22da4115",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-preparative/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-preparative/assembly-reference.json",
+      "bytes": 1451563,
+      "sha256": "3269d6d0c578b845962d3c0a2d3ccdf6659c802b4d0bd49c085097fe7d6583f2",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-preparative/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-8890-7010b-gcms/asset.contract.json",
+      "bytes": 119748,
+      "sha256": "b2b3f102ee0ec4fac83421a4f9ce191464e17c6d7c5d66d3fb912def818f78cd",
+      "source": "exports/biofoundry/library/agilent-8890-7010b-gcms/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-8890-7010b-gcms/assembly-reference.json",
+      "bytes": 407390,
+      "sha256": "523700bdbaf185923877094eda1ad119665d228d002f32a1932af4d240cab038",
+      "source": "exports/biofoundry/library/agilent-8890-7010b-gcms/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-8890-gc/asset.contract.json",
+      "bytes": 120015,
+      "sha256": "0b2ad890a3a033ff34195e1e68057fe046fa2e3a01e4c82fc1635485977038ea",
+      "source": "exports/biofoundry/library/agilent-8890-gc/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-8890-gc/assembly-reference.json",
+      "bytes": 413688,
+      "sha256": "faecc6a91a8d44e0c6f3e7019cc4c704d004930d0b42a783844e691f7e21e1d9",
+      "source": "exports/biofoundry/library/agilent-8890-gc/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-rapidfire400-6470/asset.contract.json",
+      "bytes": 262884,
+      "sha256": "1c7ad3b05e79f014e486623fef077047470ac9d296d8465231b1661554535f6b",
+      "source": "exports/biofoundry/library/agilent-rapidfire400-6470/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-rapidfire400-6470/assembly-reference.json",
+      "bytes": 4739333,
+      "sha256": "a5fc2f4b305650bbce08a091ca1084043e3355eb4b4d0b646536522a5c3ec7b1",
+      "source": "exports/biofoundry/library/agilent-rapidfire400-6470/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent_bravo_assaymap/asset.contract.json",
+      "bytes": 845342,
+      "sha256": "edf7eb2b0ae422d5abba73887d292357646ebecfdc71bc5a71f665dde2dde622",
+      "source": "exports/biofoundry/library/agilent_bravo_assaymap/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent_bravo_assaymap/assembly-reference.json",
+      "bytes": 5171469,
+      "sha256": "16d217c6f49d403393d3775a3c9bb0ab3e3fd7c95e8ec704ad0e5c1e020b9bbe",
+      "source": "exports/biofoundry/library/agilent_bravo_assaymap/assembly-reference.json"
+    },
+    {
+      "bundle": "library/azenta_automated_roll_heat_sealer_a4s/asset.contract.json",
+      "bytes": 165428,
+      "sha256": "02683ad99b301666af7428cabee7dae700b62741f74a53adcc66a5c5555b7af5",
+      "source": "exports/biofoundry/library/azenta_automated_roll_heat_sealer_a4s/asset.contract.json"
+    },
+    {
+      "bundle": "library/azenta_automated_roll_heat_sealer_a4s/assembly-reference.json",
+      "bytes": 346294,
+      "sha256": "927500b237e1de2a99f98d331b8ec28c5afeccc4f69d6295691f67a55db8ecdb",
+      "source": "exports/biofoundry/library/azenta_automated_roll_heat_sealer_a4s/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bd_facsaria_fusion/asset.contract.json",
+      "bytes": 75332,
+      "sha256": "19385b2ecdb83dc7898ea84d4b556cec09aa7f3c1a4d1952d216bd361bad9299",
+      "source": "exports/biofoundry/library/bd_facsaria_fusion/asset.contract.json"
+    },
+    {
+      "bundle": "library/bd_facsaria_fusion/assembly-reference.json",
+      "bytes": 410246,
+      "sha256": "84d953c660c3f75675faa54bfd5375b43f81cec10addfa44d6d38aa7dbc89350",
+      "source": "exports/biofoundry/library/bd_facsaria_fusion/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bd_lsrfortessa/asset.contract.json",
+      "bytes": 49133,
+      "sha256": "013445377c9df0fab2799288c471203aa7296e3d99c8f03bd18371b0655a1b8c",
+      "source": "exports/biofoundry/library/bd_lsrfortessa/asset.contract.json"
+    },
+    {
+      "bundle": "library/bd_lsrfortessa/assembly-reference.json",
+      "bytes": 167949,
+      "sha256": "851d93b76f0f734d92c496a51081414fc4e4d01f566d1fb714fcc246c44a314f",
+      "source": "exports/biofoundry/library/bd_lsrfortessa/assembly-reference.json"
+    },
+    {
+      "bundle": "library/beckman_cytoflex_lx/asset.contract.json",
+      "bytes": 112394,
+      "sha256": "8d319d35e51d986aa7eaaad9d11af8f8aa986b08d6524480cbedac3aed83896b",
+      "source": "exports/biofoundry/library/beckman_cytoflex_lx/asset.contract.json"
+    },
+    {
+      "bundle": "library/beckman_cytoflex_lx/assembly-reference.json",
+      "bytes": 380227,
+      "sha256": "44ae553286e88183d517ffb2ada6bd6c479d01c4411eb01ca1b3283fba445abc",
+      "source": "exports/biofoundry/library/beckman_cytoflex_lx/assembly-reference.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xe100/asset.contract.json",
+      "bytes": 58676,
+      "sha256": "4f5050f9e6f5197cd4e44967eced290bfd121982ae08b73d755acbb4dca061b0",
+      "source": "exports/biofoundry/library/beckman_optima_xe100/asset.contract.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xe100/assembly-reference.json",
+      "bytes": 202401,
+      "sha256": "88590e5552821744a1cb08c32744cd1029c19ef186576039dfa81e5ae404c7ef",
+      "source": "exports/biofoundry/library/beckman_optima_xe100/assembly-reference.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xpn100/asset.contract.json",
+      "bytes": 59411,
+      "sha256": "1b5bf43c5abc697e7a563d2ba5c9064cae97e02770095b5014055eade45648be",
+      "source": "exports/biofoundry/library/beckman_optima_xpn100/asset.contract.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xpn100/assembly-reference.json",
+      "bytes": 206801,
+      "sha256": "f958bba526e63615b1822f3f946bff3f5a5a85da0aa0211ea0ede296bbdb48cc",
+      "source": "exports/biofoundry/library/beckman_optima_xpn100/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biorad_miniprotean/asset.contract.json",
+      "bytes": 75860,
+      "sha256": "6528faa16eb3589e3bcf318d0c074d00011b0d4b9cd89a767146c95af032159d",
+      "source": "exports/biofoundry/library/biorad_miniprotean/asset.contract.json"
+    },
+    {
+      "bundle": "library/biorad_miniprotean/assembly-reference.json",
+      "bytes": 368399,
+      "sha256": "da2259631dd7577d42890910d9bedfb38aa28ce8e87f9065aefe2ce8ed9801a9",
+      "source": "exports/biofoundry/library/biorad_miniprotean/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biostream_biopilot150/asset.contract.json",
+      "bytes": 110319,
+      "sha256": "a139c50c39774dc8dfdfcbdd646b1bfe6114d912d65915ceef06f9068cd2bb6b",
+      "source": "exports/biofoundry/library/biostream_biopilot150/asset.contract.json"
+    },
+    {
+      "bundle": "library/biostream_biopilot150/assembly-reference.json",
+      "bytes": 602817,
+      "sha256": "b173333dfe336b5b57272a4007c3b9064fd2278130d869966b52675f247f3a1b",
+      "source": "exports/biofoundry/library/biostream_biopilot150/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biostream_biotwin15l/asset.contract.json",
+      "bytes": 75716,
+      "sha256": "77bf78c184f1857e4b1d97eab384bbd915366952f5c00a90a1855e0fc9a1b389",
+      "source": "exports/biofoundry/library/biostream_biotwin15l/asset.contract.json"
+    },
+    {
+      "bundle": "library/biostream_biotwin15l/assembly-reference.json",
+      "bytes": 232399,
+      "sha256": "ba6b8a2d70e53d88101e107ba5496ba4b533a9b71a415de8f4c638355856af44",
+      "source": "exports/biofoundry/library/biostream_biotwin15l/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biotek-logphase-600/asset.contract.json",
+      "bytes": 102228,
+      "sha256": "df6825ab8699ecf7e3ec7e714b1fabdafd7bafd7a6170ceb20ed3cf633a9de83",
+      "source": "exports/biofoundry/library/biotek-logphase-600/asset.contract.json"
+    },
+    {
+      "bundle": "library/biotek-logphase-600/assembly-reference.json",
+      "bytes": 348549,
+      "sha256": "4c6d5c2fd23e27237ea92bef235e3acbb1b78e4d86ade00534d24412141e7540",
+      "source": "exports/biofoundry/library/biotek-logphase-600/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biotek_405ts/asset.contract.json",
+      "bytes": 41219,
+      "sha256": "4545d935ddfd7d25d26a4f202f8e2834065bebb1de36567ee7d97428bd79b527",
+      "source": "exports/biofoundry/library/biotek_405ts/asset.contract.json"
+    },
+    {
+      "bundle": "library/biotek_405ts/assembly-reference.json",
+      "bytes": 100721,
+      "sha256": "69f9e4c85325bdfe92f3e44d5c453ff595436c4d32740dd045e38a6e27906e10",
+      "source": "exports/biofoundry/library/biotek_405ts/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bmg_clariostarplus/asset.contract.json",
+      "bytes": 53424,
+      "sha256": "2ec7679937476da642b08f57aff53314ddf08c96b6d9852c0286415bafb34175",
+      "source": "exports/biofoundry/library/bmg_clariostarplus/asset.contract.json"
+    },
+    {
+      "bundle": "library/bmg_clariostarplus/assembly-reference.json",
+      "bytes": 178447,
+      "sha256": "099076c6cf561080e1785872856f9bbf97c994c09ad6f74d80bfdc04a5848bc0",
+      "source": "exports/biofoundry/library/bmg_clariostarplus/assembly-reference.json"
+    },
+    {
+      "bundle": "library/brooks_preciseflex_400/asset.contract.json",
+      "bytes": 85394,
+      "sha256": "9313b667dd5edfe3588fc7d3f0a6ffe08f65a2f6898a7c879e73e9c1cf7ffdd0",
+      "source": "exports/biofoundry/library/brooks_preciseflex_400/asset.contract.json"
+    },
+    {
+      "bundle": "library/brooks_preciseflex_400/assembly-reference.json",
+      "bytes": 329388,
+      "sha256": "67c5f1f02e46c61520bcf005e245f6845fa5e05713add9103c33d038b43e7ac5",
+      "source": "exports/biofoundry/library/brooks_preciseflex_400/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_impact_ii/asset.contract.json",
+      "bytes": 51599,
+      "sha256": "a45b4c07071c0b0eb7caf83659cabcd82d8e870842e606360c6b10add9fe6138",
+      "source": "exports/biofoundry/library/bruker_impact_ii/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_impact_ii/assembly-reference.json",
+      "bytes": 117329,
+      "sha256": "bab73d4ba591ee4f9e04f638f6dd7bad002155e0f7d47dbc31632ed25ebd22de",
+      "source": "exports/biofoundry/library/bruker_impact_ii/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_nanolr3/asset.contract.json",
+      "bytes": 41742,
+      "sha256": "31ffb2a2cbd462dd32234fb7604a8c8a82d74981b8fef49be08bf2e856dc5271",
+      "source": "exports/biofoundry/library/bruker_nanolr3/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_nanolr3/assembly-reference.json",
+      "bytes": 151944,
+      "sha256": "9752971478aec8bfe399e5e4bd0704a084f176964fbd95532cd37378375b6e63",
+      "source": "exports/biofoundry/library/bruker_nanolr3/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_nanowizard_4_xp/asset.contract.json",
+      "bytes": 95510,
+      "sha256": "dcb000a240740d4a9156e832990c041c969793697ba08ceb8ce36a167f0c4a3d",
+      "source": "exports/biofoundry/library/bruker_nanowizard_4_xp/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_nanowizard_4_xp/assembly-reference.json",
+      "bytes": 706728,
+      "sha256": "7564f2ff07832346065c710959592d3793568c359e25e204c3b7f65f74246caf",
+      "source": "exports/biofoundry/library/bruker_nanowizard_4_xp/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_timstof_pro2/asset.contract.json",
+      "bytes": 60233,
+      "sha256": "9cb4e652392e34b37fd78a1b17b85ccf283213429de2e2322388c7bac62480fa",
+      "source": "exports/biofoundry/library/bruker_timstof_pro2/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_timstof_pro2/assembly-reference.json",
+      "bytes": 137235,
+      "sha256": "067fd47726aa279badd797df63a4e785c699c04397b8a031ef580a6707c478cf",
+      "source": "exports/biofoundry/library/bruker_timstof_pro2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m1/asset.contract.json",
+      "bytes": 175926,
+      "sha256": "89e4dd5acfc7b96ee4afdd4d7a88941e7ee2320febfdbe0b6b36bfbc57d0f0e7",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m1/asset.contract.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m1/assembly-reference.json",
+      "bytes": 358361,
+      "sha256": "1664db583e6676d7e8739c29b35c5265054c7a0ec8b292024b51c3f6fa947db3",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m1/assembly-reference.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m2/asset.contract.json",
+      "bytes": 241568,
+      "sha256": "d1cbad06d96a8c192c5ff6e5933690451d4089ae4e91dead57872611dff89b9e",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m2/asset.contract.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m2/assembly-reference.json",
+      "bytes": 500179,
+      "sha256": "5766c808964015259c4a6afcf030a781b13f3dc1aa4d2144cad9435f0ae99d5e",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/eppendorf_5910ri/asset.contract.json",
+      "bytes": 69812,
+      "sha256": "ef1756feac0ff83d50fb280b7c5dc17949258685a5bc377ccd982801380f7fae",
+      "source": "exports/biofoundry/library/eppendorf_5910ri/asset.contract.json"
+    },
+    {
+      "bundle": "library/eppendorf_5910ri/assembly-reference.json",
+      "bytes": 170363,
+      "sha256": "3a29583edc9ffe7882b7979d01d6eab1f2049c3c546b9e6d702aaa39b65bab12",
+      "source": "exports/biofoundry/library/eppendorf_5910ri/assembly-reference.json"
+    },
+    {
+      "bundle": "library/eppendorf_cellxpertc170i/asset.contract.json",
+      "bytes": 64787,
+      "sha256": "decef0d01da4113c078228598c5028f01f92f6d0ba164db13eecd4eb297cc633",
+      "source": "exports/biofoundry/library/eppendorf_cellxpertc170i/asset.contract.json"
+    },
+    {
+      "bundle": "library/eppendorf_cellxpertc170i/assembly-reference.json",
+      "bytes": 246782,
+      "sha256": "9a8e9236b2c83529fcfae32a65b3e1407154190813702340d89a2722a25387f3",
+      "source": "exports/biofoundry/library/eppendorf_cellxpertc170i/assembly-reference.json"
+    },
+    {
+      "bundle": "library/fluent1080/asset.contract.json",
+      "bytes": 842674,
+      "sha256": "833c68327f5825d1d9558ed106178f57f25241c6a94df4ca06085ecc3f3206dd",
+      "source": "exports/biofoundry/library/fluent1080/asset.contract.json"
+    },
+    {
+      "bundle": "library/fluent1080/assembly-reference.json",
+      "bytes": 1905728,
+      "sha256": "dd7cc8675150628795afb1387885e01f0adb8780ad5404e8bc55a11584c7945b",
+      "source": "exports/biofoundry/library/fluent1080/assembly-reference.json"
+    },
+    {
+      "bundle": "library/fluidigm_helios/asset.contract.json",
+      "bytes": 62812,
+      "sha256": "121b615da5f1039d720f9852809d2c7538ff004c946bc33520b6b2dcaddf137d",
+      "source": "exports/biofoundry/library/fluidigm_helios/asset.contract.json"
+    },
+    {
+      "bundle": "library/fluidigm_helios/assembly-reference.json",
+      "bytes": 191514,
+      "sha256": "fb7d4c8831fd13259e1f2028d053d75c82ca9e23d39f9feb86498fed13f03546",
+      "source": "exports/biofoundry/library/fluidigm_helios/assembly-reference.json"
+    },
+    {
+      "bundle": "library/his_fusion_x/asset.contract.json",
+      "bytes": 66095,
+      "sha256": "be5475eb8973d97c6e515e3877fe0e113974f4b3f7d50949c2dbe7a0adf264c9",
+      "source": "exports/biofoundry/library/his_fusion_x/asset.contract.json"
+    },
+    {
+      "bundle": "library/his_fusion_x/assembly-reference.json",
+      "bytes": 258802,
+      "sha256": "b98238a37d2d19a5b873826596781d4fdcf51d0c740168ad9ef10cdf7dd631ba",
+      "source": "exports/biofoundry/library/his_fusion_x/assembly-reference.json"
+    },
+    {
+      "bundle": "library/ika_ks4000/asset.contract.json",
+      "bytes": 60596,
+      "sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897",
+      "source": "exports/biofoundry/library/ika_ks4000/asset.contract.json"
+    },
+    {
+      "bundle": "library/ika_ks4000/assembly-reference.json",
+      "bytes": 177473,
+      "sha256": "d9826dd2e48589bebea19d9c160cc600a747298d7d1a22c40dbdcfa07057ac57",
+      "source": "exports/biofoundry/library/ika_ks4000/assembly-reference.json"
+    },
+    {
+      "bundle": "library/ika_plate_rctdigital/asset.contract.json",
+      "bytes": 66757,
+      "sha256": "389ac774c761e83f541ea954433cebc0374a7248cdf268081a063b52d0d9a988",
+      "source": "exports/biofoundry/library/ika_plate_rctdigital/asset.contract.json"
+    },
+    {
+      "bundle": "library/ika_plate_rctdigital/assembly-reference.json",
+      "bytes": 295386,
+      "sha256": "8e65ff5bad2547fa709fe499c5b93975326457c8074768612eae0390e25791ae",
+      "source": "exports/biofoundry/library/ika_plate_rctdigital/assembly-reference.json"
+    },
+    {
+      "bundle": "library/lit_litone_lbs/asset.contract.json",
+      "bytes": 94128,
+      "sha256": "5312a95c95b268f9f059c45951b690e4ebf4f575db2f9a4e638cd08cc752d200",
+      "source": "exports/biofoundry/library/lit_litone_lbs/asset.contract.json"
+    },
+    {
+      "bundle": "library/lit_litone_lbs/assembly-reference.json",
+      "bytes": 400709,
+      "sha256": "1fe2e8199fd9d2798a170e88481f252db65a0d4a6d469c4f987534c90f749539",
+      "source": "exports/biofoundry/library/lit_litone_lbs/assembly-reference.json"
+    },
+    {
+      "bundle": "library/lit_litone_xl/asset.contract.json",
+      "bytes": 73561,
+      "sha256": "ee31fefbef4379aa6a21d46bdad9a95313b8b0392e100f88b49526b3fa3b0d83",
+      "source": "exports/biofoundry/library/lit_litone_xl/asset.contract.json"
+    },
+    {
+      "bundle": "library/lit_litone_xl/assembly-reference.json",
+      "bytes": 287259,
+      "sha256": "833541e365233efb9476f05cbe6e9b3e75246b681814a8fd2fede39c8289528a",
+      "source": "exports/biofoundry/library/lit_litone_xl/assembly-reference.json"
+    },
+    {
+      "bundle": "library/malvern_microcalpeaq/asset.contract.json",
+      "bytes": 75771,
+      "sha256": "75fca998961db790037ec6f924d6a2ba26461599462e1a52f850efa30290d234",
+      "source": "exports/biofoundry/library/malvern_microcalpeaq/asset.contract.json"
+    },
+    {
+      "bundle": "library/malvern_microcalpeaq/assembly-reference.json",
+      "bytes": 306485,
+      "sha256": "da40e9cfa6d633e031974304e25ef48d565555a9028c543913f4fcb460784788",
+      "source": "exports/biofoundry/library/malvern_microcalpeaq/assembly-reference.json"
+    },
+    {
+      "bundle": "library/manual-pipette/asset.contract.json",
+      "bytes": 20018,
+      "sha256": "b7f524ab5e234697a433613d5e134625da76a96d501229ebdd119a3d5fbc6a10",
+      "source": "exports/biofoundry/library/manual-pipette/asset.contract.json"
+    },
+    {
+      "bundle": "library/manual-pipette/assembly-reference.json",
+      "bytes": 14232,
+      "sha256": "deecd0fa29e12c4f38290804cd1d726b0ce2092d98fc31fc98bac11cdd06ea9d",
+      "source": "exports/biofoundry/library/manual-pipette/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mettler_easymax402/asset.contract.json",
+      "bytes": 77230,
+      "sha256": "b15cbc645b0ad29a2a361b0e5f2c1fdb8e175c26487c08908e6452db9a3dc900",
+      "source": "exports/biofoundry/library/mettler_easymax402/asset.contract.json"
+    },
+    {
+      "bundle": "library/mettler_easymax402/assembly-reference.json",
+      "bytes": 304519,
+      "sha256": "d0fdfe9baeccb7ef3aa23f90da3da88a7eb7398851b4c3bcbdd87ecd909ab880",
+      "source": "exports/biofoundry/library/mettler_easymax402/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mettler_reactraman785/asset.contract.json",
+      "bytes": 31200,
+      "sha256": "c073995a0c3d159dcc0d1e32d9645e570f50eeab405d4708ef55168392b4b06b",
+      "source": "exports/biofoundry/library/mettler_reactraman785/asset.contract.json"
+    },
+    {
+      "bundle": "library/mettler_reactraman785/assembly-reference.json",
+      "bytes": 47412,
+      "sha256": "6cf3f3f0861c8601efeeb5b17fa339697c4014462f9f1638f3d0f25f0e6eff24",
+      "source": "exports/biofoundry/library/mettler_reactraman785/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mgi_dnbseq_g99rs/asset.contract.json",
+      "bytes": 59989,
+      "sha256": "c2117cc4ff4848e95665dd749da788e7ec090cbdd5a0f317c808f8dd85f52a0f",
+      "source": "exports/biofoundry/library/mgi_dnbseq_g99rs/asset.contract.json"
+    },
+    {
+      "bundle": "library/mgi_dnbseq_g99rs/assembly-reference.json",
+      "bytes": 241873,
+      "sha256": "7e2b3bc93bc4e59122b00be846ba620c91f30873e6f46dbe892f2dbb4597f974",
+      "source": "exports/biofoundry/library/mgi_dnbseq_g99rs/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mt_xpr204e/asset.contract.json",
+      "bytes": 295277,
+      "sha256": "03ab61e1c9a666ed54d1aab8fd5691644f2c09c6a6d05b2c4045814c62fbfc3e",
+      "source": "exports/biofoundry/library/mt_xpr204e/asset.contract.json"
+    },
+    {
+      "bundle": "library/mt_xpr204e/assembly-reference.json",
+      "bytes": 2841334,
+      "sha256": "7b672f5967b9e960c189bb92fbe96d361156691e1ccf4f75c2c19e919b55789f",
+      "source": "exports/biofoundry/library/mt_xpr204e/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nanoscribe_gt2/asset.contract.json",
+      "bytes": 51606,
+      "sha256": "57e14fd11ecc4ba131d19fc7bce7d708beffe11cb1b2cfcb3c7fada0903488d1",
+      "source": "exports/biofoundry/library/nanoscribe_gt2/asset.contract.json"
+    },
+    {
+      "bundle": "library/nanoscribe_gt2/assembly-reference.json",
+      "bytes": 238481,
+      "sha256": "59ae898bc25a002057b6ef6ef8b1e8835c2bdf0fc8ce710f0d0bf52214f9d2f8",
+      "source": "exports/biofoundry/library/nanoscribe_gt2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nih-3dpx-023347/asset.contract.json",
+      "bytes": 9040,
+      "sha256": "0826b8c688441791efac6dbfbd1022d49aad95a77de17d5bbccbd8837c500a38",
+      "source": "exports/biofoundry/library/nih-3dpx-023347/asset.contract.json"
+    },
+    {
+      "bundle": "library/nih-3dpx-023347/assembly-reference.json",
+      "bytes": 2422,
+      "sha256": "3a29962fa87d5caf9fca3468d58a626d0e8db7a771f824f986324a19ed049a83",
+      "source": "exports/biofoundry/library/nih-3dpx-023347/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-ax/asset.contract.json",
+      "bytes": 193527,
+      "sha256": "87e98e492d1310e9fe9392b40e029b302008e1d5b602c05bf0f5009b15bc2b7b",
+      "source": "exports/biofoundry/library/nikon-ax/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-ax/assembly-reference.json",
+      "bytes": 1149030,
+      "sha256": "607d54026f0f7c936e542b6f3efea0430788256bef9c898cd5edfb389813d496",
+      "source": "exports/biofoundry/library/nikon-ax/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-ax-r-mp/asset.contract.json",
+      "bytes": 86584,
+      "sha256": "67d13dac4ad702c2e2dc20ebaea6688a2e3224af7dbc0ce357efc56738f77702",
+      "source": "exports/biofoundry/library/nikon-ax-r-mp/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-ax-r-mp/assembly-reference.json",
+      "bytes": 286075,
+      "sha256": "cb3bf38e7143c00a628ca7821280fb8a4e84f5cf574544e5b619f2beb3ff41bb",
+      "source": "exports/biofoundry/library/nikon-ax-r-mp/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-c2/asset.contract.json",
+      "bytes": 186447,
+      "sha256": "0007b6f39cafffcc2875aaee59275c0328cd5b6f4327f220b4e8324236368773",
+      "source": "exports/biofoundry/library/nikon-c2/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-c2/assembly-reference.json",
+      "bytes": 1109789,
+      "sha256": "2d9fb1727e9189971381f5fab2cfd8b609ef124d732b764b55d8515dc75094b0",
+      "source": "exports/biofoundry/library/nikon-c2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ni-e/asset.contract.json",
+      "bytes": 147392,
+      "sha256": "c021734c2f34a3128695b8f80d96f0da2b30ed24456d7f8045b88370e5f67663",
+      "source": "exports/biofoundry/library/nikon-eclipse-ni-e/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ni-e/assembly-reference.json",
+      "bytes": 652608,
+      "sha256": "d0bd6864a8d1dd96b9b437d09e77ac3f8b6c7bfe2289be28c962518142939653",
+      "source": "exports/biofoundry/library/nikon-eclipse-ni-e/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ti2-e/asset.contract.json",
+      "bytes": 184440,
+      "sha256": "7c0370ae21992a96815180f96226c94103bd45140f37943c47d16cebfb098a32",
+      "source": "exports/biofoundry/library/nikon-eclipse-ti2-e/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ti2-e/assembly-reference.json",
+      "bytes": 1102264,
+      "sha256": "8a7b361e004581ce05e4a4f7a9bbfd6bf94139adc84a31720b0905173c7912b1",
+      "source": "exports/biofoundry/library/nikon-eclipse-ti2-e/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-ti2-n-sim-s-m/asset.contract.json",
+      "bytes": 212277,
+      "sha256": "30e9d3b4a43ce5618f00b75e4759ea199abcce4fbf7bccca42293ef24b16cefd",
+      "source": "exports/biofoundry/library/nikon-ti2-n-sim-s-m/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-ti2-n-sim-s-m/assembly-reference.json",
+      "bytes": 1271089,
+      "sha256": "fdc6cfcb531156614cb00a7af3bd18eb36e530aa815f6c8ad17eb50de3743598",
+      "source": "exports/biofoundry/library/nikon-ti2-n-sim-s-m/assembly-reference.json"
+    },
+    {
+      "bundle": "library/opentrons_flex_project/asset.contract.json",
+      "bytes": 254500,
+      "sha256": "7be541fb5cf541076f5232c9dcd3c3bbc15065767d99d3e37f1041897ba31d48",
+      "source": "exports/biofoundry/library/opentrons_flex_project/asset.contract.json"
+    },
+    {
+      "bundle": "library/opentrons_flex_project/assembly-reference.json",
+      "bytes": 227660,
+      "sha256": "12c73d1a2638917259f4b95c6c8a49472e0bf453edbbc836b5a438dfa3db74e0",
+      "source": "exports/biofoundry/library/opentrons_flex_project/assembly-reference.json"
+    },
+    {
+      "bundle": "library/perkinelmer_tga8000/asset.contract.json",
+      "bytes": 82913,
+      "sha256": "20e2e0bcb6311d7c31530a386271d0f6cf5e420991483fee9f54b165e66cb018",
+      "source": "exports/biofoundry/library/perkinelmer_tga8000/asset.contract.json"
+    },
+    {
+      "bundle": "library/perkinelmer_tga8000/assembly-reference.json",
+      "bytes": 273928,
+      "sha256": "68ad59fdcfb081d1da90717d259a9e6be02b525d51c3b6ef3f9b5746f57f4656",
+      "source": "exports/biofoundry/library/perkinelmer_tga8000/assembly-reference.json"
+    },
+    {
+      "bundle": "library/plate-96/asset.contract.json",
+      "bytes": 263875,
+      "sha256": "11ca4811d83b4452d77079b7446ab7f3108af3c8f0af98c07333c90c93fda337",
+      "source": "exports/biofoundry/library/plate-96/asset.contract.json"
+    },
+    {
+      "bundle": "library/plate-96/assembly-reference.json",
+      "bytes": 233619,
+      "sha256": "5e2a19c69af68f3558fbd7d638a730923ddb2f0a16d214093cbc61a7ee3d0a85",
+      "source": "exports/biofoundry/library/plate-96/assembly-reference.json"
+    },
+    {
+      "bundle": "library/quantum_design_ppms_dynacool/asset.contract.json",
+      "bytes": 50595,
+      "sha256": "cc14395d0d99daa7ca5af6e1da7943964c5c940fd33660e9034311797b275af5",
+      "source": "exports/biofoundry/library/quantum_design_ppms_dynacool/asset.contract.json"
+    },
+    {
+      "bundle": "library/quantum_design_ppms_dynacool/assembly-reference.json",
+      "bytes": 113730,
+      "sha256": "6d477f48580598e186dafd4cc865eb0f1078244ce5328963f6db5cfe72693470",
+      "source": "exports/biofoundry/library/quantum_design_ppms_dynacool/assembly-reference.json"
+    },
+    {
+      "bundle": "library/rigaku_xtalab_synergy_dw/asset.contract.json",
+      "bytes": 86266,
+      "sha256": "d1c31ccb2c82b7d99f88286077bc3a0da2905c69b38821a4efbe9d50f8c15696",
+      "source": "exports/biofoundry/library/rigaku_xtalab_synergy_dw/asset.contract.json"
+    },
+    {
+      "bundle": "library/rigaku_xtalab_synergy_dw/assembly-reference.json",
+      "bytes": 391027,
+      "sha256": "e4443f840f068150ca00500575caed63142d4426405b14b1cac86da0e6e68160",
+      "source": "exports/biofoundry/library/rigaku_xtalab_synergy_dw/assembly-reference.json"
+    },
+    {
+      "bundle": "library/roche_lightcycler_480_ii/asset.contract.json",
+      "bytes": 220714,
+      "sha256": "0048dad6d94fc09d04d4c08801903e20f06035bfac118e01dccdcd468ffacbeb",
+      "source": "exports/biofoundry/library/roche_lightcycler_480_ii/asset.contract.json"
+    },
+    {
+      "bundle": "library/roche_lightcycler_480_ii/assembly-reference.json",
+      "bytes": 803470,
+      "sha256": "127b91f6780edd5083d6ecdb48b122f94374fe72ee16ad83399bddc81c9e5faa",
+      "source": "exports/biofoundry/library/roche_lightcycler_480_ii/assembly-reference.json"
+    },
+    {
+      "bundle": "library/sartorius_ambr15/asset.contract.json",
+      "bytes": 355410,
+      "sha256": "8c30e7c6035b49d28d5ef17a3b816c93a7ba42e932adc270b441193155ebac48",
+      "source": "exports/biofoundry/library/sartorius_ambr15/asset.contract.json"
+    },
+    {
+      "bundle": "library/sartorius_ambr15/assembly-reference.json",
+      "bytes": 7659532,
+      "sha256": "f53cf28f0a9b8da0b19142559ba737863cd6fef4e93921bcc18f9d89ce6eec0e",
+      "source": "exports/biofoundry/library/sartorius_ambr15/assembly-reference.json"
+    },
+    {
+      "bundle": "library/sartorius_octet_r8/asset.contract.json",
+      "bytes": 229533,
+      "sha256": "0bd27c0c7dba64737dc594fd3cfd30a48c1b2ecc673eaa5f4d785de4e2a07797",
+      "source": "exports/biofoundry/library/sartorius_octet_r8/asset.contract.json"
+    },
+    {
+      "bundle": "library/sartorius_octet_r8/assembly-reference.json",
+      "bytes": 1004941,
+      "sha256": "7384ea4adf6d5e7752414097c560186744b0b069c7b00dac4823368c26743141",
+      "source": "exports/biofoundry/library/sartorius_octet_r8/assembly-reference.json"
+    },
+    {
+      "bundle": "library/sciex_zenotof_7600/asset.contract.json",
+      "bytes": 53129,
+      "sha256": "4688ab84a8fddeb4cf602d49fb40cccbc32b0816ec3df128d8057e40bccb583f",
+      "source": "exports/biofoundry/library/sciex_zenotof_7600/asset.contract.json"
+    },
+    {
+      "bundle": "library/sciex_zenotof_7600/assembly-reference.json",
+      "bytes": 122692,
+      "sha256": "92852ebc3d92128cca46f298df2596a5fa4bbbd3c6f019baf9bfff324c6d1d1e",
+      "source": "exports/biofoundry/library/sciex_zenotof_7600/assembly-reference.json"
+    },
+    {
+      "bundle": "library/singlecell_flowracs/asset.contract.json",
+      "bytes": 48123,
+      "sha256": "3fcca2b8748b876fc6eb3caf1f8006eb1291baf17f69ef1b840ab6e53f0b61b6",
+      "source": "exports/biofoundry/library/singlecell_flowracs/asset.contract.json"
+    },
+    {
+      "bundle": "library/singlecell_flowracs/assembly-reference.json",
+      "bytes": 135214,
+      "sha256": "46e4b6cd915c3494d1260c4c95750a4852fb2b6658abe89b48c48dbc50fbaaa2",
+      "source": "exports/biofoundry/library/singlecell_flowracs/assembly-reference.json"
+    },
+    {
+      "bundle": "library/spectramax-i3x/asset.contract.json",
+      "bytes": 72748,
+      "sha256": "d076e41fdefcf887f3642737383671054cc3f6808738d025607f945c2ba03e3a",
+      "source": "exports/biofoundry/library/spectramax-i3x/asset.contract.json"
+    },
+    {
+      "bundle": "library/spectramax-i3x/assembly-reference.json",
+      "bytes": 187229,
+      "sha256": "c42a97ab2ba23b59538d28c138a619337931eed7d8348411c112415ac2917645",
+      "source": "exports/biofoundry/library/spectramax-i3x/assembly-reference.json"
+    },
+    {
+      "bundle": "library/spectramax-id5/asset.contract.json",
+      "bytes": 69874,
+      "sha256": "ce20a61ef572f4c92e96850bb801c0286f244ac04a491829fa8c0731d5dbbf47",
+      "source": "exports/biofoundry/library/spectramax-id5/asset.contract.json"
+    },
+    {
+      "bundle": "library/spectramax-id5/assembly-reference.json",
+      "bytes": 59369,
+      "sha256": "a3707ac69ac5865cdb4ca1af505581d4e720dc7c008c6b2bdf5a6118e8572b93",
+      "source": "exports/biofoundry/library/spectramax-id5/assembly-reference.json"
+    },
+    {
+      "bundle": "library/tecan-fluent780/asset.contract.json",
+      "bytes": 727217,
+      "sha256": "9377a9c4b896231117ce71eb4e6485ba7ec2529da19aa0d41a2ed04f426523bf",
+      "source": "exports/biofoundry/library/tecan-fluent780/asset.contract.json"
+    },
+    {
+      "bundle": "library/tecan-fluent780/assembly-reference.json",
+      "bytes": 17474185,
+      "sha256": "2487189b79b70ead5f5a984aa84b4ec4a8a0a690a8b1bfcb37fef77a280021fa",
+      "source": "exports/biofoundry/library/tecan-fluent780/assembly-reference.json"
+    },
+    {
+      "bundle": "library/thermo_ibrightfl1500/asset.contract.json",
+      "bytes": 36965,
+      "sha256": "2148ce503101feb6098defd10bfbfec3872a1c905ca078cc4ed780c55299a109",
+      "source": "exports/biofoundry/library/thermo_ibrightfl1500/asset.contract.json"
+    },
+    {
+      "bundle": "library/thermo_ibrightfl1500/assembly-reference.json",
+      "bytes": 82859,
+      "sha256": "07d01bfce7f0b5db1676cfc8affe04c672f690655cf5a2cdd229a555eff00343",
+      "source": "exports/biofoundry/library/thermo_ibrightfl1500/assembly-reference.json"
+    },
+    {
+      "bundle": "library/thermo_prima_bt/asset.contract.json",
+      "bytes": 68480,
+      "sha256": "61c8f7d64317d1772bb1fc1c28a62218fe174fd9adf5d77bb4aa541f5dac0a38",
+      "source": "exports/biofoundry/library/thermo_prima_bt/asset.contract.json"
+    },
+    {
+      "bundle": "library/thermo_prima_bt/assembly-reference.json",
+      "bytes": 169327,
+      "sha256": "28982f70e4aa875a228b98b15f893c46ea16026c0ef1a83c63a04b57d296f7e5",
+      "source": "exports/biofoundry/library/thermo_prima_bt/assembly-reference.json"
+    },
+    {
+      "bundle": "library/thermo_sorvall_lynx6000/asset.contract.json",
+      "bytes": 49349,
+      "sha256": "e0340a711f9f4d6a27b30b5a09165662d572cfb1e73c6043f4aa44bbf3e47ca4",
+      "source": "exports/biofoundry/library/thermo_sorvall_lynx6000/asset.contract.json"
+    },
+    {
+      "bundle": "library/thermo_sorvall_lynx6000/assembly-reference.json",
+      "bytes": 140006,
+      "sha256": "feb9c3aa3b60a093a76f9576d7e97f5e9c846e838d2d02ea97a8255e3d7a0990",
+      "source": "exports/biofoundry/library/thermo_sorvall_lynx6000/assembly-reference.json"
+    },
+    {
+      "bundle": "library/tiprack-96/asset.contract.json",
+      "bytes": 104078,
+      "sha256": "52eea2fa6f163e499453f2af55a79fe7615d6dbbc2a3bd870319fbfb5c73be4e",
+      "source": "exports/biofoundry/library/tiprack-96/asset.contract.json"
+    },
+    {
+      "bundle": "library/tiprack-96/assembly-reference.json",
+      "bytes": 89942,
+      "sha256": "e4b0a50231f8165e9d47b8a184a4ac7a3f2cfaefe3a151ce0e9edd279d7ef922",
+      "source": "exports/biofoundry/library/tiprack-96/assembly-reference.json"
+    },
+    {
+      "bundle": "library/wyatt_dynapro_nanostar/asset.contract.json",
+      "bytes": 87568,
+      "sha256": "bde2c7e87c128c2e86885b2f87aa61ce4577cd573e8d4ce526865ae2df13f384",
+      "source": "exports/biofoundry/library/wyatt_dynapro_nanostar/asset.contract.json"
+    },
+    {
+      "bundle": "library/wyatt_dynapro_nanostar/assembly-reference.json",
+      "bytes": 276500,
+      "sha256": "54511cf403fb092961a58c496afddd87886a6080a3b24ae98378aea15d5f23bf",
+      "source": "exports/biofoundry/library/wyatt_dynapro_nanostar/assembly-reference.json"
+    },
+    {
+      "bundle": "library/yokogawa_csuw1/asset.contract.json",
+      "bytes": 42584,
+      "sha256": "dc782ade6012cc76f62279a5679792d8922ef0cc1d0a41fdee8de4162ce9bfb7",
+      "source": "exports/biofoundry/library/yokogawa_csuw1/asset.contract.json"
+    },
+    {
+      "bundle": "library/yokogawa_csuw1/assembly-reference.json",
+      "bytes": 75121,
+      "sha256": "20c2c18555836a5b876c836b2bbc90e894f816285d95c1674bd963ff2b376546",
+      "source": "exports/biofoundry/library/yokogawa_csuw1/assembly-reference.json"
+    },
+    {
+      "bundle": "library/zolix_finder930_301_sms/asset.contract.json",
+      "bytes": 44002,
+      "sha256": "5abeefa222e7e36af6ef11e6ca370e5a458958993c753221c3e9c6f442f665c5",
+      "source": "exports/biofoundry/library/zolix_finder930_301_sms/asset.contract.json"
+    },
+    {
+      "bundle": "library/zolix_finder930_301_sms/assembly-reference.json",
+      "bytes": 149738,
+      "sha256": "e57b2b0197a384f100f09fbd8b0784128e9180fdc2022fda56cfaabfefcd01bd",
+      "source": "exports/biofoundry/library/zolix_finder930_301_sms/assembly-reference.json"
+    }
+  ],
+  "posthoc_added_hashes_are_not_in_original_freeze": true,
+  "posthoc_asset_hashes": [
+    {
+      "bundle": "asset-library.json",
+      "bytes": 635796,
+      "sha256": "23b9109483dbd34ff4e4f8d79f61e1e81c60ac6005472c64d5d7503918ec178d",
+      "source": "exports/biofoundry/asset-library.json"
+    },
+    {
+      "bundle": "sim/library_protocols.py",
+      "bytes": 44082,
+      "sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+      "source": "sim/library_protocols.py"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-analytical/asset.contract.json",
+      "bytes": 293448,
+      "sha256": "489395ec8a849a09d9caddfef62b654400fb2033ec11844fcd5a4cfbb911c6eb",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-analytical/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-analytical/assembly-reference.json",
+      "bytes": 3787842,
+      "sha256": "a0350d70f24aef56d0e8597a73dcca75395092cfdde4297f4263bb6b14961f10",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-analytical/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-semiprep/asset.contract.json",
+      "bytes": 367396,
+      "sha256": "5cedb3bff031825c9d7c65f17459f145cf962c191ddd71bd5497ca2562caf9b0",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-semiprep/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1260-infinity-ii-semiprep/assembly-reference.json",
+      "bytes": 6093026,
+      "sha256": "76f6fd42c6eff721a2482b62d80bd39bb5ba91cbb2cf097757a5d30b48c406f8",
+      "source": "exports/biofoundry/library/agilent-1260-infinity-ii-semiprep/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical/asset.contract.json",
+      "bytes": 271641,
+      "sha256": "64c38e23b40fc244265debd8d282b5d35de90d2f38c78a2b04cabcc10352995e",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical/assembly-reference.json",
+      "bytes": 3097057,
+      "sha256": "eed12b37a95ed1354a3518f2798d1ae6701a6484ab3b8cfec6d579a1e01b3110",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical-elsd/asset.contract.json",
+      "bytes": 284527,
+      "sha256": "30e9ab2b2076d701c4dc76db2cbe4d3086b76f942718b8b86c323f6dcd0bbb5b",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical-elsd/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-analytical-elsd/assembly-reference.json",
+      "bytes": 3262604,
+      "sha256": "a48e64f78f02bc5caeef81188ae4f4a5c270ec00f874dcf1167edf244cfe6b2e",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical-elsd/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-preparative/asset.contract.json",
+      "bytes": 175273,
+      "sha256": "43b4c18f72d8b87dc383c3da1dc499174ae5d6a6d11f466dac035c2b22da4115",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-preparative/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-1290-infinity-ii-preparative/assembly-reference.json",
+      "bytes": 1451563,
+      "sha256": "3269d6d0c578b845962d3c0a2d3ccdf6659c802b4d0bd49c085097fe7d6583f2",
+      "source": "exports/biofoundry/library/agilent-1290-infinity-ii-preparative/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-8890-7010b-gcms/asset.contract.json",
+      "bytes": 119748,
+      "sha256": "b2b3f102ee0ec4fac83421a4f9ce191464e17c6d7c5d66d3fb912def818f78cd",
+      "source": "exports/biofoundry/library/agilent-8890-7010b-gcms/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-8890-7010b-gcms/assembly-reference.json",
+      "bytes": 407390,
+      "sha256": "523700bdbaf185923877094eda1ad119665d228d002f32a1932af4d240cab038",
+      "source": "exports/biofoundry/library/agilent-8890-7010b-gcms/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-8890-gc/asset.contract.json",
+      "bytes": 120015,
+      "sha256": "0b2ad890a3a033ff34195e1e68057fe046fa2e3a01e4c82fc1635485977038ea",
+      "source": "exports/biofoundry/library/agilent-8890-gc/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-8890-gc/assembly-reference.json",
+      "bytes": 413688,
+      "sha256": "faecc6a91a8d44e0c6f3e7019cc4c704d004930d0b42a783844e691f7e21e1d9",
+      "source": "exports/biofoundry/library/agilent-8890-gc/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent-rapidfire400-6470/asset.contract.json",
+      "bytes": 262884,
+      "sha256": "1c7ad3b05e79f014e486623fef077047470ac9d296d8465231b1661554535f6b",
+      "source": "exports/biofoundry/library/agilent-rapidfire400-6470/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent-rapidfire400-6470/assembly-reference.json",
+      "bytes": 4739333,
+      "sha256": "a5fc2f4b305650bbce08a091ca1084043e3355eb4b4d0b646536522a5c3ec7b1",
+      "source": "exports/biofoundry/library/agilent-rapidfire400-6470/assembly-reference.json"
+    },
+    {
+      "bundle": "library/agilent_bravo_assaymap/asset.contract.json",
+      "bytes": 845342,
+      "sha256": "edf7eb2b0ae422d5abba73887d292357646ebecfdc71bc5a71f665dde2dde622",
+      "source": "exports/biofoundry/library/agilent_bravo_assaymap/asset.contract.json"
+    },
+    {
+      "bundle": "library/agilent_bravo_assaymap/assembly-reference.json",
+      "bytes": 5171469,
+      "sha256": "16d217c6f49d403393d3775a3c9bb0ab3e3fd7c95e8ec704ad0e5c1e020b9bbe",
+      "source": "exports/biofoundry/library/agilent_bravo_assaymap/assembly-reference.json"
+    },
+    {
+      "bundle": "library/azenta_automated_roll_heat_sealer_a4s/asset.contract.json",
+      "bytes": 165428,
+      "sha256": "02683ad99b301666af7428cabee7dae700b62741f74a53adcc66a5c5555b7af5",
+      "source": "exports/biofoundry/library/azenta_automated_roll_heat_sealer_a4s/asset.contract.json"
+    },
+    {
+      "bundle": "library/azenta_automated_roll_heat_sealer_a4s/assembly-reference.json",
+      "bytes": 346294,
+      "sha256": "927500b237e1de2a99f98d331b8ec28c5afeccc4f69d6295691f67a55db8ecdb",
+      "source": "exports/biofoundry/library/azenta_automated_roll_heat_sealer_a4s/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bd_facsaria_fusion/asset.contract.json",
+      "bytes": 75332,
+      "sha256": "19385b2ecdb83dc7898ea84d4b556cec09aa7f3c1a4d1952d216bd361bad9299",
+      "source": "exports/biofoundry/library/bd_facsaria_fusion/asset.contract.json"
+    },
+    {
+      "bundle": "library/bd_facsaria_fusion/assembly-reference.json",
+      "bytes": 410246,
+      "sha256": "84d953c660c3f75675faa54bfd5375b43f81cec10addfa44d6d38aa7dbc89350",
+      "source": "exports/biofoundry/library/bd_facsaria_fusion/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bd_lsrfortessa/asset.contract.json",
+      "bytes": 49133,
+      "sha256": "013445377c9df0fab2799288c471203aa7296e3d99c8f03bd18371b0655a1b8c",
+      "source": "exports/biofoundry/library/bd_lsrfortessa/asset.contract.json"
+    },
+    {
+      "bundle": "library/bd_lsrfortessa/assembly-reference.json",
+      "bytes": 167949,
+      "sha256": "851d93b76f0f734d92c496a51081414fc4e4d01f566d1fb714fcc246c44a314f",
+      "source": "exports/biofoundry/library/bd_lsrfortessa/assembly-reference.json"
+    },
+    {
+      "bundle": "library/beckman_cytoflex_lx/asset.contract.json",
+      "bytes": 112394,
+      "sha256": "8d319d35e51d986aa7eaaad9d11af8f8aa986b08d6524480cbedac3aed83896b",
+      "source": "exports/biofoundry/library/beckman_cytoflex_lx/asset.contract.json"
+    },
+    {
+      "bundle": "library/beckman_cytoflex_lx/assembly-reference.json",
+      "bytes": 380227,
+      "sha256": "44ae553286e88183d517ffb2ada6bd6c479d01c4411eb01ca1b3283fba445abc",
+      "source": "exports/biofoundry/library/beckman_cytoflex_lx/assembly-reference.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xe100/asset.contract.json",
+      "bytes": 58676,
+      "sha256": "4f5050f9e6f5197cd4e44967eced290bfd121982ae08b73d755acbb4dca061b0",
+      "source": "exports/biofoundry/library/beckman_optima_xe100/asset.contract.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xe100/assembly-reference.json",
+      "bytes": 202401,
+      "sha256": "88590e5552821744a1cb08c32744cd1029c19ef186576039dfa81e5ae404c7ef",
+      "source": "exports/biofoundry/library/beckman_optima_xe100/assembly-reference.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xpn100/asset.contract.json",
+      "bytes": 59411,
+      "sha256": "1b5bf43c5abc697e7a563d2ba5c9064cae97e02770095b5014055eade45648be",
+      "source": "exports/biofoundry/library/beckman_optima_xpn100/asset.contract.json"
+    },
+    {
+      "bundle": "library/beckman_optima_xpn100/assembly-reference.json",
+      "bytes": 206801,
+      "sha256": "f958bba526e63615b1822f3f946bff3f5a5a85da0aa0211ea0ede296bbdb48cc",
+      "source": "exports/biofoundry/library/beckman_optima_xpn100/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biorad_miniprotean/asset.contract.json",
+      "bytes": 75860,
+      "sha256": "6528faa16eb3589e3bcf318d0c074d00011b0d4b9cd89a767146c95af032159d",
+      "source": "exports/biofoundry/library/biorad_miniprotean/asset.contract.json"
+    },
+    {
+      "bundle": "library/biorad_miniprotean/assembly-reference.json",
+      "bytes": 368399,
+      "sha256": "da2259631dd7577d42890910d9bedfb38aa28ce8e87f9065aefe2ce8ed9801a9",
+      "source": "exports/biofoundry/library/biorad_miniprotean/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biostream_biopilot150/asset.contract.json",
+      "bytes": 110319,
+      "sha256": "a139c50c39774dc8dfdfcbdd646b1bfe6114d912d65915ceef06f9068cd2bb6b",
+      "source": "exports/biofoundry/library/biostream_biopilot150/asset.contract.json"
+    },
+    {
+      "bundle": "library/biostream_biopilot150/assembly-reference.json",
+      "bytes": 602817,
+      "sha256": "b173333dfe336b5b57272a4007c3b9064fd2278130d869966b52675f247f3a1b",
+      "source": "exports/biofoundry/library/biostream_biopilot150/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biostream_biotwin15l/asset.contract.json",
+      "bytes": 75716,
+      "sha256": "77bf78c184f1857e4b1d97eab384bbd915366952f5c00a90a1855e0fc9a1b389",
+      "source": "exports/biofoundry/library/biostream_biotwin15l/asset.contract.json"
+    },
+    {
+      "bundle": "library/biostream_biotwin15l/assembly-reference.json",
+      "bytes": 232399,
+      "sha256": "ba6b8a2d70e53d88101e107ba5496ba4b533a9b71a415de8f4c638355856af44",
+      "source": "exports/biofoundry/library/biostream_biotwin15l/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biotek-logphase-600/asset.contract.json",
+      "bytes": 102228,
+      "sha256": "df6825ab8699ecf7e3ec7e714b1fabdafd7bafd7a6170ceb20ed3cf633a9de83",
+      "source": "exports/biofoundry/library/biotek-logphase-600/asset.contract.json"
+    },
+    {
+      "bundle": "library/biotek-logphase-600/assembly-reference.json",
+      "bytes": 348549,
+      "sha256": "4c6d5c2fd23e27237ea92bef235e3acbb1b78e4d86ade00534d24412141e7540",
+      "source": "exports/biofoundry/library/biotek-logphase-600/assembly-reference.json"
+    },
+    {
+      "bundle": "library/biotek_405ts/asset.contract.json",
+      "bytes": 41219,
+      "sha256": "4545d935ddfd7d25d26a4f202f8e2834065bebb1de36567ee7d97428bd79b527",
+      "source": "exports/biofoundry/library/biotek_405ts/asset.contract.json"
+    },
+    {
+      "bundle": "library/biotek_405ts/assembly-reference.json",
+      "bytes": 100721,
+      "sha256": "69f9e4c85325bdfe92f3e44d5c453ff595436c4d32740dd045e38a6e27906e10",
+      "source": "exports/biofoundry/library/biotek_405ts/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bmg_clariostarplus/asset.contract.json",
+      "bytes": 53424,
+      "sha256": "2ec7679937476da642b08f57aff53314ddf08c96b6d9852c0286415bafb34175",
+      "source": "exports/biofoundry/library/bmg_clariostarplus/asset.contract.json"
+    },
+    {
+      "bundle": "library/bmg_clariostarplus/assembly-reference.json",
+      "bytes": 178447,
+      "sha256": "099076c6cf561080e1785872856f9bbf97c994c09ad6f74d80bfdc04a5848bc0",
+      "source": "exports/biofoundry/library/bmg_clariostarplus/assembly-reference.json"
+    },
+    {
+      "bundle": "library/brooks_preciseflex_400/asset.contract.json",
+      "bytes": 85394,
+      "sha256": "9313b667dd5edfe3588fc7d3f0a6ffe08f65a2f6898a7c879e73e9c1cf7ffdd0",
+      "source": "exports/biofoundry/library/brooks_preciseflex_400/asset.contract.json"
+    },
+    {
+      "bundle": "library/brooks_preciseflex_400/assembly-reference.json",
+      "bytes": 329388,
+      "sha256": "67c5f1f02e46c61520bcf005e245f6845fa5e05713add9103c33d038b43e7ac5",
+      "source": "exports/biofoundry/library/brooks_preciseflex_400/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_impact_ii/asset.contract.json",
+      "bytes": 51599,
+      "sha256": "a45b4c07071c0b0eb7caf83659cabcd82d8e870842e606360c6b10add9fe6138",
+      "source": "exports/biofoundry/library/bruker_impact_ii/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_impact_ii/assembly-reference.json",
+      "bytes": 117329,
+      "sha256": "bab73d4ba591ee4f9e04f638f6dd7bad002155e0f7d47dbc31632ed25ebd22de",
+      "source": "exports/biofoundry/library/bruker_impact_ii/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_nanolr3/asset.contract.json",
+      "bytes": 41742,
+      "sha256": "31ffb2a2cbd462dd32234fb7604a8c8a82d74981b8fef49be08bf2e856dc5271",
+      "source": "exports/biofoundry/library/bruker_nanolr3/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_nanolr3/assembly-reference.json",
+      "bytes": 151944,
+      "sha256": "9752971478aec8bfe399e5e4bd0704a084f176964fbd95532cd37378375b6e63",
+      "source": "exports/biofoundry/library/bruker_nanolr3/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_nanowizard_4_xp/asset.contract.json",
+      "bytes": 95510,
+      "sha256": "dcb000a240740d4a9156e832990c041c969793697ba08ceb8ce36a167f0c4a3d",
+      "source": "exports/biofoundry/library/bruker_nanowizard_4_xp/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_nanowizard_4_xp/assembly-reference.json",
+      "bytes": 706728,
+      "sha256": "7564f2ff07832346065c710959592d3793568c359e25e204c3b7f65f74246caf",
+      "source": "exports/biofoundry/library/bruker_nanowizard_4_xp/assembly-reference.json"
+    },
+    {
+      "bundle": "library/bruker_timstof_pro2/asset.contract.json",
+      "bytes": 60233,
+      "sha256": "9cb4e652392e34b37fd78a1b17b85ccf283213429de2e2322388c7bac62480fa",
+      "source": "exports/biofoundry/library/bruker_timstof_pro2/asset.contract.json"
+    },
+    {
+      "bundle": "library/bruker_timstof_pro2/assembly-reference.json",
+      "bytes": 137235,
+      "sha256": "067fd47726aa279badd797df63a4e785c699c04397b8a031ef580a6707c478cf",
+      "source": "exports/biofoundry/library/bruker_timstof_pro2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m1/asset.contract.json",
+      "bytes": 175926,
+      "sha256": "89e4dd5acfc7b96ee4afdd4d7a88941e7ee2320febfdbe0b6b36bfbc57d0f0e7",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m1/asset.contract.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m1/assembly-reference.json",
+      "bytes": 358361,
+      "sha256": "1664db583e6676d7e8739c29b35c5265054c7a0ec8b292024b51c3f6fa947db3",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m1/assembly-reference.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m2/asset.contract.json",
+      "bytes": 241568,
+      "sha256": "d1cbad06d96a8c192c5ff6e5933690451d4089ae4e91dead57872611dff89b9e",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m2/asset.contract.json"
+    },
+    {
+      "bundle": "library/cytiva_akta_pure_25m2/assembly-reference.json",
+      "bytes": 500179,
+      "sha256": "5766c808964015259c4a6afcf030a781b13f3dc1aa4d2144cad9435f0ae99d5e",
+      "source": "exports/biofoundry/library/cytiva_akta_pure_25m2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/eppendorf_5910ri/asset.contract.json",
+      "bytes": 69812,
+      "sha256": "ef1756feac0ff83d50fb280b7c5dc17949258685a5bc377ccd982801380f7fae",
+      "source": "exports/biofoundry/library/eppendorf_5910ri/asset.contract.json"
+    },
+    {
+      "bundle": "library/eppendorf_5910ri/assembly-reference.json",
+      "bytes": 170363,
+      "sha256": "3a29583edc9ffe7882b7979d01d6eab1f2049c3c546b9e6d702aaa39b65bab12",
+      "source": "exports/biofoundry/library/eppendorf_5910ri/assembly-reference.json"
+    },
+    {
+      "bundle": "library/eppendorf_cellxpertc170i/asset.contract.json",
+      "bytes": 64787,
+      "sha256": "decef0d01da4113c078228598c5028f01f92f6d0ba164db13eecd4eb297cc633",
+      "source": "exports/biofoundry/library/eppendorf_cellxpertc170i/asset.contract.json"
+    },
+    {
+      "bundle": "library/eppendorf_cellxpertc170i/assembly-reference.json",
+      "bytes": 246782,
+      "sha256": "9a8e9236b2c83529fcfae32a65b3e1407154190813702340d89a2722a25387f3",
+      "source": "exports/biofoundry/library/eppendorf_cellxpertc170i/assembly-reference.json"
+    },
+    {
+      "bundle": "library/fluent1080/asset.contract.json",
+      "bytes": 842674,
+      "sha256": "833c68327f5825d1d9558ed106178f57f25241c6a94df4ca06085ecc3f3206dd",
+      "source": "exports/biofoundry/library/fluent1080/asset.contract.json"
+    },
+    {
+      "bundle": "library/fluent1080/assembly-reference.json",
+      "bytes": 1905728,
+      "sha256": "dd7cc8675150628795afb1387885e01f0adb8780ad5404e8bc55a11584c7945b",
+      "source": "exports/biofoundry/library/fluent1080/assembly-reference.json"
+    },
+    {
+      "bundle": "library/fluidigm_helios/asset.contract.json",
+      "bytes": 62812,
+      "sha256": "121b615da5f1039d720f9852809d2c7538ff004c946bc33520b6b2dcaddf137d",
+      "source": "exports/biofoundry/library/fluidigm_helios/asset.contract.json"
+    },
+    {
+      "bundle": "library/fluidigm_helios/assembly-reference.json",
+      "bytes": 191514,
+      "sha256": "fb7d4c8831fd13259e1f2028d053d75c82ca9e23d39f9feb86498fed13f03546",
+      "source": "exports/biofoundry/library/fluidigm_helios/assembly-reference.json"
+    },
+    {
+      "bundle": "library/his_fusion_x/asset.contract.json",
+      "bytes": 66095,
+      "sha256": "be5475eb8973d97c6e515e3877fe0e113974f4b3f7d50949c2dbe7a0adf264c9",
+      "source": "exports/biofoundry/library/his_fusion_x/asset.contract.json"
+    },
+    {
+      "bundle": "library/his_fusion_x/assembly-reference.json",
+      "bytes": 258802,
+      "sha256": "b98238a37d2d19a5b873826596781d4fdcf51d0c740168ad9ef10cdf7dd631ba",
+      "source": "exports/biofoundry/library/his_fusion_x/assembly-reference.json"
+    },
+    {
+      "bundle": "library/ika_ks4000/asset.contract.json",
+      "bytes": 60596,
+      "sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897",
+      "source": "exports/biofoundry/library/ika_ks4000/asset.contract.json"
+    },
+    {
+      "bundle": "library/ika_ks4000/assembly-reference.json",
+      "bytes": 177473,
+      "sha256": "d9826dd2e48589bebea19d9c160cc600a747298d7d1a22c40dbdcfa07057ac57",
+      "source": "exports/biofoundry/library/ika_ks4000/assembly-reference.json"
+    },
+    {
+      "bundle": "library/ika_plate_rctdigital/asset.contract.json",
+      "bytes": 66757,
+      "sha256": "389ac774c761e83f541ea954433cebc0374a7248cdf268081a063b52d0d9a988",
+      "source": "exports/biofoundry/library/ika_plate_rctdigital/asset.contract.json"
+    },
+    {
+      "bundle": "library/ika_plate_rctdigital/assembly-reference.json",
+      "bytes": 295386,
+      "sha256": "8e65ff5bad2547fa709fe499c5b93975326457c8074768612eae0390e25791ae",
+      "source": "exports/biofoundry/library/ika_plate_rctdigital/assembly-reference.json"
+    },
+    {
+      "bundle": "library/lit_litone_lbs/asset.contract.json",
+      "bytes": 94128,
+      "sha256": "5312a95c95b268f9f059c45951b690e4ebf4f575db2f9a4e638cd08cc752d200",
+      "source": "exports/biofoundry/library/lit_litone_lbs/asset.contract.json"
+    },
+    {
+      "bundle": "library/lit_litone_lbs/assembly-reference.json",
+      "bytes": 400709,
+      "sha256": "1fe2e8199fd9d2798a170e88481f252db65a0d4a6d469c4f987534c90f749539",
+      "source": "exports/biofoundry/library/lit_litone_lbs/assembly-reference.json"
+    },
+    {
+      "bundle": "library/lit_litone_xl/asset.contract.json",
+      "bytes": 73561,
+      "sha256": "ee31fefbef4379aa6a21d46bdad9a95313b8b0392e100f88b49526b3fa3b0d83",
+      "source": "exports/biofoundry/library/lit_litone_xl/asset.contract.json"
+    },
+    {
+      "bundle": "library/lit_litone_xl/assembly-reference.json",
+      "bytes": 287259,
+      "sha256": "833541e365233efb9476f05cbe6e9b3e75246b681814a8fd2fede39c8289528a",
+      "source": "exports/biofoundry/library/lit_litone_xl/assembly-reference.json"
+    },
+    {
+      "bundle": "library/malvern_microcalpeaq/asset.contract.json",
+      "bytes": 75771,
+      "sha256": "75fca998961db790037ec6f924d6a2ba26461599462e1a52f850efa30290d234",
+      "source": "exports/biofoundry/library/malvern_microcalpeaq/asset.contract.json"
+    },
+    {
+      "bundle": "library/malvern_microcalpeaq/assembly-reference.json",
+      "bytes": 306485,
+      "sha256": "da40e9cfa6d633e031974304e25ef48d565555a9028c543913f4fcb460784788",
+      "source": "exports/biofoundry/library/malvern_microcalpeaq/assembly-reference.json"
+    },
+    {
+      "bundle": "library/manual-pipette/asset.contract.json",
+      "bytes": 20018,
+      "sha256": "b7f524ab5e234697a433613d5e134625da76a96d501229ebdd119a3d5fbc6a10",
+      "source": "exports/biofoundry/library/manual-pipette/asset.contract.json"
+    },
+    {
+      "bundle": "library/manual-pipette/assembly-reference.json",
+      "bytes": 14232,
+      "sha256": "deecd0fa29e12c4f38290804cd1d726b0ce2092d98fc31fc98bac11cdd06ea9d",
+      "source": "exports/biofoundry/library/manual-pipette/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mettler_easymax402/asset.contract.json",
+      "bytes": 77230,
+      "sha256": "b15cbc645b0ad29a2a361b0e5f2c1fdb8e175c26487c08908e6452db9a3dc900",
+      "source": "exports/biofoundry/library/mettler_easymax402/asset.contract.json"
+    },
+    {
+      "bundle": "library/mettler_easymax402/assembly-reference.json",
+      "bytes": 304519,
+      "sha256": "d0fdfe9baeccb7ef3aa23f90da3da88a7eb7398851b4c3bcbdd87ecd909ab880",
+      "source": "exports/biofoundry/library/mettler_easymax402/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mettler_reactraman785/asset.contract.json",
+      "bytes": 31200,
+      "sha256": "c073995a0c3d159dcc0d1e32d9645e570f50eeab405d4708ef55168392b4b06b",
+      "source": "exports/biofoundry/library/mettler_reactraman785/asset.contract.json"
+    },
+    {
+      "bundle": "library/mettler_reactraman785/assembly-reference.json",
+      "bytes": 47412,
+      "sha256": "6cf3f3f0861c8601efeeb5b17fa339697c4014462f9f1638f3d0f25f0e6eff24",
+      "source": "exports/biofoundry/library/mettler_reactraman785/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mgi_dnbseq_g99rs/asset.contract.json",
+      "bytes": 59989,
+      "sha256": "c2117cc4ff4848e95665dd749da788e7ec090cbdd5a0f317c808f8dd85f52a0f",
+      "source": "exports/biofoundry/library/mgi_dnbseq_g99rs/asset.contract.json"
+    },
+    {
+      "bundle": "library/mgi_dnbseq_g99rs/assembly-reference.json",
+      "bytes": 241873,
+      "sha256": "7e2b3bc93bc4e59122b00be846ba620c91f30873e6f46dbe892f2dbb4597f974",
+      "source": "exports/biofoundry/library/mgi_dnbseq_g99rs/assembly-reference.json"
+    },
+    {
+      "bundle": "library/mt_xpr204e/asset.contract.json",
+      "bytes": 295277,
+      "sha256": "03ab61e1c9a666ed54d1aab8fd5691644f2c09c6a6d05b2c4045814c62fbfc3e",
+      "source": "exports/biofoundry/library/mt_xpr204e/asset.contract.json"
+    },
+    {
+      "bundle": "library/mt_xpr204e/assembly-reference.json",
+      "bytes": 2841334,
+      "sha256": "7b672f5967b9e960c189bb92fbe96d361156691e1ccf4f75c2c19e919b55789f",
+      "source": "exports/biofoundry/library/mt_xpr204e/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nanoscribe_gt2/asset.contract.json",
+      "bytes": 51606,
+      "sha256": "57e14fd11ecc4ba131d19fc7bce7d708beffe11cb1b2cfcb3c7fada0903488d1",
+      "source": "exports/biofoundry/library/nanoscribe_gt2/asset.contract.json"
+    },
+    {
+      "bundle": "library/nanoscribe_gt2/assembly-reference.json",
+      "bytes": 238481,
+      "sha256": "59ae898bc25a002057b6ef6ef8b1e8835c2bdf0fc8ce710f0d0bf52214f9d2f8",
+      "source": "exports/biofoundry/library/nanoscribe_gt2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nih-3dpx-023347/asset.contract.json",
+      "bytes": 9040,
+      "sha256": "0826b8c688441791efac6dbfbd1022d49aad95a77de17d5bbccbd8837c500a38",
+      "source": "exports/biofoundry/library/nih-3dpx-023347/asset.contract.json"
+    },
+    {
+      "bundle": "library/nih-3dpx-023347/assembly-reference.json",
+      "bytes": 2422,
+      "sha256": "3a29962fa87d5caf9fca3468d58a626d0e8db7a771f824f986324a19ed049a83",
+      "source": "exports/biofoundry/library/nih-3dpx-023347/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-ax/asset.contract.json",
+      "bytes": 193527,
+      "sha256": "87e98e492d1310e9fe9392b40e029b302008e1d5b602c05bf0f5009b15bc2b7b",
+      "source": "exports/biofoundry/library/nikon-ax/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-ax/assembly-reference.json",
+      "bytes": 1149030,
+      "sha256": "607d54026f0f7c936e542b6f3efea0430788256bef9c898cd5edfb389813d496",
+      "source": "exports/biofoundry/library/nikon-ax/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-ax-r-mp/asset.contract.json",
+      "bytes": 86584,
+      "sha256": "67d13dac4ad702c2e2dc20ebaea6688a2e3224af7dbc0ce357efc56738f77702",
+      "source": "exports/biofoundry/library/nikon-ax-r-mp/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-ax-r-mp/assembly-reference.json",
+      "bytes": 286075,
+      "sha256": "cb3bf38e7143c00a628ca7821280fb8a4e84f5cf574544e5b619f2beb3ff41bb",
+      "source": "exports/biofoundry/library/nikon-ax-r-mp/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-c2/asset.contract.json",
+      "bytes": 186447,
+      "sha256": "0007b6f39cafffcc2875aaee59275c0328cd5b6f4327f220b4e8324236368773",
+      "source": "exports/biofoundry/library/nikon-c2/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-c2/assembly-reference.json",
+      "bytes": 1109789,
+      "sha256": "2d9fb1727e9189971381f5fab2cfd8b609ef124d732b764b55d8515dc75094b0",
+      "source": "exports/biofoundry/library/nikon-c2/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ni-e/asset.contract.json",
+      "bytes": 147392,
+      "sha256": "c021734c2f34a3128695b8f80d96f0da2b30ed24456d7f8045b88370e5f67663",
+      "source": "exports/biofoundry/library/nikon-eclipse-ni-e/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ni-e/assembly-reference.json",
+      "bytes": 652608,
+      "sha256": "d0bd6864a8d1dd96b9b437d09e77ac3f8b6c7bfe2289be28c962518142939653",
+      "source": "exports/biofoundry/library/nikon-eclipse-ni-e/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ti2-e/asset.contract.json",
+      "bytes": 184440,
+      "sha256": "7c0370ae21992a96815180f96226c94103bd45140f37943c47d16cebfb098a32",
+      "source": "exports/biofoundry/library/nikon-eclipse-ti2-e/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-eclipse-ti2-e/assembly-reference.json",
+      "bytes": 1102264,
+      "sha256": "8a7b361e004581ce05e4a4f7a9bbfd6bf94139adc84a31720b0905173c7912b1",
+      "source": "exports/biofoundry/library/nikon-eclipse-ti2-e/assembly-reference.json"
+    },
+    {
+      "bundle": "library/nikon-ti2-n-sim-s-m/asset.contract.json",
+      "bytes": 212277,
+      "sha256": "30e9d3b4a43ce5618f00b75e4759ea199abcce4fbf7bccca42293ef24b16cefd",
+      "source": "exports/biofoundry/library/nikon-ti2-n-sim-s-m/asset.contract.json"
+    },
+    {
+      "bundle": "library/nikon-ti2-n-sim-s-m/assembly-reference.json",
+      "bytes": 1271089,
+      "sha256": "fdc6cfcb531156614cb00a7af3bd18eb36e530aa815f6c8ad17eb50de3743598",
+      "source": "exports/biofoundry/library/nikon-ti2-n-sim-s-m/assembly-reference.json"
+    },
+    {
+      "bundle": "library/opentrons_flex_project/asset.contract.json",
+      "bytes": 254500,
+      "sha256": "7be541fb5cf541076f5232c9dcd3c3bbc15065767d99d3e37f1041897ba31d48",
+      "source": "exports/biofoundry/library/opentrons_flex_project/asset.contract.json"
+    },
+    {
+      "bundle": "library/opentrons_flex_project/assembly-reference.json",
+      "bytes": 227660,
+      "sha256": "12c73d1a2638917259f4b95c6c8a49472e0bf453edbbc836b5a438dfa3db74e0",
+      "source": "exports/biofoundry/library/opentrons_flex_project/assembly-reference.json"
+    },
+    {
+      "bundle": "library/perkinelmer_tga8000/asset.contract.json",
+      "bytes": 82913,
+      "sha256": "20e2e0bcb6311d7c31530a386271d0f6cf5e420991483fee9f54b165e66cb018",
+      "source": "exports/biofoundry/library/perkinelmer_tga8000/asset.contract.json"
+    },
+    {
+      "bundle": "library/perkinelmer_tga8000/assembly-reference.json",
+      "bytes": 273928,
+      "sha256": "68ad59fdcfb081d1da90717d259a9e6be02b525d51c3b6ef3f9b5746f57f4656",
+      "source": "exports/biofoundry/library/perkinelmer_tga8000/assembly-reference.json"
+    },
+    {
+      "bundle": "library/plate-96/asset.contract.json",
+      "bytes": 263875,
+      "sha256": "11ca4811d83b4452d77079b7446ab7f3108af3c8f0af98c07333c90c93fda337",
+      "source": "exports/biofoundry/library/plate-96/asset.contract.json"
+    },
+    {
+      "bundle": "library/plate-96/assembly-reference.json",
+      "bytes": 233619,
+      "sha256": "5e2a19c69af68f3558fbd7d638a730923ddb2f0a16d214093cbc61a7ee3d0a85",
+      "source": "exports/biofoundry/library/plate-96/assembly-reference.json"
+    },
+    {
+      "bundle": "library/quantum_design_ppms_dynacool/asset.contract.json",
+      "bytes": 50595,
+      "sha256": "cc14395d0d99daa7ca5af6e1da7943964c5c940fd33660e9034311797b275af5",
+      "source": "exports/biofoundry/library/quantum_design_ppms_dynacool/asset.contract.json"
+    },
+    {
+      "bundle": "library/quantum_design_ppms_dynacool/assembly-reference.json",
+      "bytes": 113730,
+      "sha256": "6d477f48580598e186dafd4cc865eb0f1078244ce5328963f6db5cfe72693470",
+      "source": "exports/biofoundry/library/quantum_design_ppms_dynacool/assembly-reference.json"
+    },
+    {
+      "bundle": "library/rigaku_xtalab_synergy_dw/asset.contract.json",
+      "bytes": 86266,
+      "sha256": "d1c31ccb2c82b7d99f88286077bc3a0da2905c69b38821a4efbe9d50f8c15696",
+      "source": "exports/biofoundry/library/rigaku_xtalab_synergy_dw/asset.contract.json"
+    },
+    {
+      "bundle": "library/rigaku_xtalab_synergy_dw/assembly-reference.json",
+      "bytes": 391027,
+      "sha256": "e4443f840f068150ca00500575caed63142d4426405b14b1cac86da0e6e68160",
+      "source": "exports/biofoundry/library/rigaku_xtalab_synergy_dw/assembly-reference.json"
+    },
+    {
+      "bundle": "library/roche_lightcycler_480_ii/asset.contract.json",
+      "bytes": 220714,
+      "sha256": "0048dad6d94fc09d04d4c08801903e20f06035bfac118e01dccdcd468ffacbeb",
+      "source": "exports/biofoundry/library/roche_lightcycler_480_ii/asset.contract.json"
+    },
+    {
+      "bundle": "library/roche_lightcycler_480_ii/assembly-reference.json",
+      "bytes": 803470,
+      "sha256": "127b91f6780edd5083d6ecdb48b122f94374fe72ee16ad83399bddc81c9e5faa",
+      "source": "exports/biofoundry/library/roche_lightcycler_480_ii/assembly-reference.json"
+    },
+    {
+      "bundle": "library/sartorius_ambr15/asset.contract.json",
+      "bytes": 355410,
+      "sha256": "8c30e7c6035b49d28d5ef17a3b816c93a7ba42e932adc270b441193155ebac48",
+      "source": "exports/biofoundry/library/sartorius_ambr15/asset.contract.json"
+    },
+    {
+      "bundle": "library/sartorius_ambr15/assembly-reference.json",
+      "bytes": 7659532,
+      "sha256": "f53cf28f0a9b8da0b19142559ba737863cd6fef4e93921bcc18f9d89ce6eec0e",
+      "source": "exports/biofoundry/library/sartorius_ambr15/assembly-reference.json"
+    },
+    {
+      "bundle": "library/sartorius_octet_r8/asset.contract.json",
+      "bytes": 229533,
+      "sha256": "0bd27c0c7dba64737dc594fd3cfd30a48c1b2ecc673eaa5f4d785de4e2a07797",
+      "source": "exports/biofoundry/library/sartorius_octet_r8/asset.contract.json"
+    },
+    {
+      "bundle": "library/sartorius_octet_r8/assembly-reference.json",
+      "bytes": 1004941,
+      "sha256": "7384ea4adf6d5e7752414097c560186744b0b069c7b00dac4823368c26743141",
+      "source": "exports/biofoundry/library/sartorius_octet_r8/assembly-reference.json"
+    },
+    {
+      "bundle": "library/sciex_zenotof_7600/asset.contract.json",
+      "bytes": 53129,
+      "sha256": "4688ab84a8fddeb4cf602d49fb40cccbc32b0816ec3df128d8057e40bccb583f",
+      "source": "exports/biofoundry/library/sciex_zenotof_7600/asset.contract.json"
+    },
+    {
+      "bundle": "library/sciex_zenotof_7600/assembly-reference.json",
+      "bytes": 122692,
+      "sha256": "92852ebc3d92128cca46f298df2596a5fa4bbbd3c6f019baf9bfff324c6d1d1e",
+      "source": "exports/biofoundry/library/sciex_zenotof_7600/assembly-reference.json"
+    },
+    {
+      "bundle": "library/singlecell_flowracs/asset.contract.json",
+      "bytes": 48123,
+      "sha256": "3fcca2b8748b876fc6eb3caf1f8006eb1291baf17f69ef1b840ab6e53f0b61b6",
+      "source": "exports/biofoundry/library/singlecell_flowracs/asset.contract.json"
+    },
+    {
+      "bundle": "library/singlecell_flowracs/assembly-reference.json",
+      "bytes": 135214,
+      "sha256": "46e4b6cd915c3494d1260c4c95750a4852fb2b6658abe89b48c48dbc50fbaaa2",
+      "source": "exports/biofoundry/library/singlecell_flowracs/assembly-reference.json"
+    },
+    {
+      "bundle": "library/spectramax-i3x/asset.contract.json",
+      "bytes": 72748,
+      "sha256": "d076e41fdefcf887f3642737383671054cc3f6808738d025607f945c2ba03e3a",
+      "source": "exports/biofoundry/library/spectramax-i3x/asset.contract.json"
+    },
+    {
+      "bundle": "library/spectramax-i3x/assembly-reference.json",
+      "bytes": 187229,
+      "sha256": "c42a97ab2ba23b59538d28c138a619337931eed7d8348411c112415ac2917645",
+      "source": "exports/biofoundry/library/spectramax-i3x/assembly-reference.json"
+    },
+    {
+      "bundle": "library/spectramax-id5/asset.contract.json",
+      "bytes": 69874,
+      "sha256": "ce20a61ef572f4c92e96850bb801c0286f244ac04a491829fa8c0731d5dbbf47",
+      "source": "exports/biofoundry/library/spectramax-id5/asset.contract.json"
+    },
+    {
+      "bundle": "library/spectramax-id5/assembly-reference.json",
+      "bytes": 59369,
+      "sha256": "a3707ac69ac5865cdb4ca1af505581d4e720dc7c008c6b2bdf5a6118e8572b93",
+      "source": "exports/biofoundry/library/spectramax-id5/assembly-reference.json"
+    },
+    {
+      "bundle": "library/tecan-fluent780/asset.contract.json",
+      "bytes": 727217,
+      "sha256": "9377a9c4b896231117ce71eb4e6485ba7ec2529da19aa0d41a2ed04f426523bf",
+      "source": "exports/biofoundry/library/tecan-fluent780/asset.contract.json"
+    },
+    {
+      "bundle": "library/tecan-fluent780/assembly-reference.json",
+      "bytes": 17474185,
+      "sha256": "2487189b79b70ead5f5a984aa84b4ec4a8a0a690a8b1bfcb37fef77a280021fa",
+      "source": "exports/biofoundry/library/tecan-fluent780/assembly-reference.json"
+    },
+    {
+      "bundle": "library/thermo_ibrightfl1500/asset.contract.json",
+      "bytes": 36965,
+      "sha256": "2148ce503101feb6098defd10bfbfec3872a1c905ca078cc4ed780c55299a109",
+      "source": "exports/biofoundry/library/thermo_ibrightfl1500/asset.contract.json"
+    },
+    {
+      "bundle": "library/thermo_ibrightfl1500/assembly-reference.json",
+      "bytes": 82859,
+      "sha256": "07d01bfce7f0b5db1676cfc8affe04c672f690655cf5a2cdd229a555eff00343",
+      "source": "exports/biofoundry/library/thermo_ibrightfl1500/assembly-reference.json"
+    },
+    {
+      "bundle": "library/thermo_prima_bt/asset.contract.json",
+      "bytes": 68480,
+      "sha256": "61c8f7d64317d1772bb1fc1c28a62218fe174fd9adf5d77bb4aa541f5dac0a38",
+      "source": "exports/biofoundry/library/thermo_prima_bt/asset.contract.json"
+    },
+    {
+      "bundle": "library/thermo_prima_bt/assembly-reference.json",
+      "bytes": 169327,
+      "sha256": "28982f70e4aa875a228b98b15f893c46ea16026c0ef1a83c63a04b57d296f7e5",
+      "source": "exports/biofoundry/library/thermo_prima_bt/assembly-reference.json"
+    },
+    {
+      "bundle": "library/thermo_sorvall_lynx6000/asset.contract.json",
+      "bytes": 49349,
+      "sha256": "e0340a711f9f4d6a27b30b5a09165662d572cfb1e73c6043f4aa44bbf3e47ca4",
+      "source": "exports/biofoundry/library/thermo_sorvall_lynx6000/asset.contract.json"
+    },
+    {
+      "bundle": "library/thermo_sorvall_lynx6000/assembly-reference.json",
+      "bytes": 140006,
+      "sha256": "feb9c3aa3b60a093a76f9576d7e97f5e9c846e838d2d02ea97a8255e3d7a0990",
+      "source": "exports/biofoundry/library/thermo_sorvall_lynx6000/assembly-reference.json"
+    },
+    {
+      "bundle": "library/tiprack-96/asset.contract.json",
+      "bytes": 104078,
+      "sha256": "52eea2fa6f163e499453f2af55a79fe7615d6dbbc2a3bd870319fbfb5c73be4e",
+      "source": "exports/biofoundry/library/tiprack-96/asset.contract.json"
+    },
+    {
+      "bundle": "library/tiprack-96/assembly-reference.json",
+      "bytes": 89942,
+      "sha256": "e4b0a50231f8165e9d47b8a184a4ac7a3f2cfaefe3a151ce0e9edd279d7ef922",
+      "source": "exports/biofoundry/library/tiprack-96/assembly-reference.json"
+    },
+    {
+      "bundle": "library/wyatt_dynapro_nanostar/asset.contract.json",
+      "bytes": 87568,
+      "sha256": "bde2c7e87c128c2e86885b2f87aa61ce4577cd573e8d4ce526865ae2df13f384",
+      "source": "exports/biofoundry/library/wyatt_dynapro_nanostar/asset.contract.json"
+    },
+    {
+      "bundle": "library/wyatt_dynapro_nanostar/assembly-reference.json",
+      "bytes": 276500,
+      "sha256": "54511cf403fb092961a58c496afddd87886a6080a3b24ae98378aea15d5f23bf",
+      "source": "exports/biofoundry/library/wyatt_dynapro_nanostar/assembly-reference.json"
+    },
+    {
+      "bundle": "library/yokogawa_csuw1/asset.contract.json",
+      "bytes": 42584,
+      "sha256": "dc782ade6012cc76f62279a5679792d8922ef0cc1d0a41fdee8de4162ce9bfb7",
+      "source": "exports/biofoundry/library/yokogawa_csuw1/asset.contract.json"
+    },
+    {
+      "bundle": "library/yokogawa_csuw1/assembly-reference.json",
+      "bytes": 75121,
+      "sha256": "20c2c18555836a5b876c836b2bbc90e894f816285d95c1674bd963ff2b376546",
+      "source": "exports/biofoundry/library/yokogawa_csuw1/assembly-reference.json"
+    },
+    {
+      "bundle": "library/zolix_finder930_301_sms/asset.contract.json",
+      "bytes": 44002,
+      "sha256": "5abeefa222e7e36af6ef11e6ca370e5a458958993c753221c3e9c6f442f665c5",
+      "source": "exports/biofoundry/library/zolix_finder930_301_sms/asset.contract.json"
+    },
+    {
+      "bundle": "library/zolix_finder930_301_sms/assembly-reference.json",
+      "bytes": 149738,
+      "sha256": "e57b2b0197a384f100f09fbd8b0784128e9180fdc2022fda56cfaabfefcd01bd",
+      "source": "exports/biofoundry/library/zolix_finder930_301_sms/assembly-reference.json"
+    }
+  ],
+  "profile_source": "sim/library_protocols.py snapshot plus asset.contract.json digital_protocol_profile fields",
+  "retroactive_freeze": false,
+  "schema": "biofoundry.v3.1.portable-source-manifest/1"
+}

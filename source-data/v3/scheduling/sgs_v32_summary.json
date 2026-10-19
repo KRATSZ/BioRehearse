@@ -1,0 +1,118 @@
+{
+  "schema": "biorehearse.sgs-v32-summary.v3",
+  "v3_freeze_id": "v3-final-2026-10-19",
+  "config_sha256": "77af55decd0947ef5dff31fd58ea6703dbad6830536ebd3c0a722ff48196a0f7",
+  "runs": 120,
+  "development_runs": 56,
+  "chosen_rules": {
+    "serial": "input_order",
+    "parallel": "input_order"
+  },
+  "groups": [
+    {
+      "mode": "serial",
+      "priority_rule": "input_order",
+      "budget_s": 2,
+      "cases": 20,
+      "returned": 12,
+      "valid": 12,
+      "status": {
+        "SERIAL_SGS": 12,
+        "NO_SGS_PLAN": 8
+      },
+      "median_wall_s": 0.03285368750039197,
+      "max_wall_s": 1.4528865839965874
+    },
+    {
+      "mode": "serial",
+      "priority_rule": "input_order",
+      "budget_s": 10,
+      "cases": 20,
+      "returned": 12,
+      "valid": 12,
+      "status": {
+        "SERIAL_SGS": 12,
+        "NO_SGS_PLAN": 8
+      },
+      "median_wall_s": 0.03291372949934157,
+      "max_wall_s": 1.4518726670030446
+    },
+    {
+      "mode": "serial",
+      "priority_rule": "input_order",
+      "budget_s": 60,
+      "cases": 20,
+      "returned": 12,
+      "valid": 12,
+      "status": {
+        "SERIAL_SGS": 12,
+        "NO_SGS_PLAN": 8
+      },
+      "median_wall_s": 0.03274924950164859,
+      "max_wall_s": 1.4572240000015881
+    },
+    {
+      "mode": "parallel",
+      "priority_rule": "input_order",
+      "budget_s": 2,
+      "cases": 20,
+      "returned": 4,
+      "valid": 4,
+      "status": {
+        "PARALLEL_SGS": 4,
+        "NO_SGS_PLAN": 16
+      },
+      "median_wall_s": 0.020740000500154565,
+      "max_wall_s": 1.255414291001216
+    },
+    {
+      "mode": "parallel",
+      "priority_rule": "input_order",
+      "budget_s": 10,
+      "cases": 20,
+      "returned": 4,
+      "valid": 4,
+      "status": {
+        "PARALLEL_SGS": 4,
+        "NO_SGS_PLAN": 16
+      },
+      "median_wall_s": 0.020755520501552382,
+      "max_wall_s": 1.2579023329999472
+    },
+    {
+      "mode": "parallel",
+      "priority_rule": "input_order",
+      "budget_s": 60,
+      "cases": 20,
+      "returned": 4,
+      "valid": 4,
+      "status": {
+        "PARALLEL_SGS": 4,
+        "NO_SGS_PLAN": 16
+      },
+      "median_wall_s": 0.020712395998998545,
+      "max_wall_s": 1.2740376670008118
+    }
+  ],
+  "independent_runs": "Every case/mode/budget combination was solved separately at 2, 10 and 60 s; no shorter-budget plan was copied.",
+  "scope": "Corrected non-delay parallel SGS comparator; post-hoc v3.2 baseline extension, not a replacement of the v3 prespecified baseline.",
+  "source_hashes": {
+    "<driver>": "1a4ee3c41eeb245b133a1139360f6582af23bce9a08b5bea750a6e66206e7fad",
+    "<sgs_v32>": "6f8cc10b3e03841f4bb7e52160f3dd04e01992c138c4a62de581c107905d53f3",
+    "benchmarks/v2/common.py": "5a7abd2474e14641b1cd01d90eaa4be13d35fecb6de9f6600013b2ca641b3582",
+    "benchmarks/v2/scorer.py": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c",
+    "benchmarks/scorer.py": "66360904c7d730bf1ae93b20591e4d9617f056023f425419d61339694f2e2787",
+    "reproducibility/source-v2/labscriptai/biofoundry/methods.py": "69f29b5d6c8a4d1d149a7ced09dd41f9c4f8cde7de8c5230fd0a2d008c95e2ee",
+    "reproducibility/source-v2/labscriptai/biofoundry/scheduling.py": "e77309aafc7e6ef7f7b8cd7f904abac272f068b6b5793e7c1c32f416ae44751f"
+  },
+  "input_hashes": {
+    "benchmarks/v2/workloads.json": "5ba0470dde587a29eb175a5761d08e913077397b5f9fac1d4187168dd1246eaf",
+    "source-data/v2/catalog.json": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de",
+    "benchmarks/v3/design.json": "8b3c60d5dd29f88f31439810f4294907936d238405b692d6d8937cd3273478a3"
+  },
+  "runtime": {
+    "python_version": "3.12.13",
+    "ortools_version": "9.15.6755",
+    "single_solver_worker": true
+  }
+}

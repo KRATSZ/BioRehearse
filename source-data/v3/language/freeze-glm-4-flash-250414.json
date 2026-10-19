@@ -1,0 +1,58 @@
+{
+  "author_source": "/Users/gaoyuan/Documents/test/Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/biofoundry-author.ts",
+  "author_source_sha256": "d51890ce51bf9510a08c62701219e6861f7a743814cff177d2261782cd250aab",
+  "budget_guard": {
+    "allowed_credentials": [
+      "GLM_API_KEY"
+    ],
+    "fallback": null,
+    "forbidden_credentials": [
+      "ANTHROPIC_AUTH_TOKEN"
+    ],
+    "forbidden_models": [
+      "glm-4.7",
+      "glm-5",
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ]
+  },
+  "catalog_file": "source-data/v2/catalog.json",
+  "catalog_file_sha256": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de",
+  "created": "2026-10-19",
+  "methods_file": "source-data/v3/language/methods.json",
+  "methods_file_sha256": "694ebcd5fe12efb334cd9c5b822057c207cf3be3ab678582a836d491f9abd668",
+  "model_route": {
+    "api": "openai-completions",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4",
+    "fallback": null,
+    "free_model_whitelist": [
+      "glm-4-flash-250414"
+    ],
+    "invoice_status": "not queried; provider pricing page records this model as free",
+    "max_output_tokens": 8192,
+    "model": "glm-4-flash-250414",
+    "nominal_price_cny_per_million": {
+      "cache_read": 0,
+      "input": 0,
+      "output": 0
+    },
+    "provider": "zai"
+  },
+  "official_sources": {
+    "chat_completions": "https://open.bigmodel.cn/api/paas/v4",
+    "model_overview": "https://docs.bigmodel.cn/cn/guide/start/model-overview",
+    "pricing": "https://docs.bigmodel.cn/cn/guide/start/pricing"
+  },
+  "primary_scorer": "benchmarks/v2/language.py",
+  "primary_scorer_sha256": "e4108a09e7b1409fe1969f2df168304a16e47457cc730451c3c8c65b8088f835",
+  "request_file": "benchmarks/v2/language.json",
+  "request_file_sha256": "b6e31ecae8452602635401b0e2087ec8793026b8062f4b7d5af18e717c35fe76",
+  "runner_sha256": "45076d0acd52c9065426e540a1e882b91830356eab9302d1f7c2946b9814c734",
+  "schema": "biorehearse.v3.language-freeze/1",
+  "stage_policy": {
+    "development": "four first requests in the existing v2 file; adapter probes only",
+    "full": "all development and held-out requests in the existing v2 file, one GLM run each",
+    "post_hoc_extension": true,
+    "repeats": 1
+  }
+}

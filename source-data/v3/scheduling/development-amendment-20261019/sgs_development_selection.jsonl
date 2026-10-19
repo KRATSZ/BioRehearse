@@ -1,0 +1,28 @@
+{"split": "development", "case": "development-000", "mode": "serial", "rule": "input_order", "valid": true, "status": "SERIAL_SGS", "makespan_s": 3489}
+{"split": "development", "case": "development-001", "mode": "serial", "rule": "input_order", "valid": true, "status": "SERIAL_SGS", "makespan_s": 14634}
+{"split": "development", "case": "development-002", "mode": "serial", "rule": "input_order", "valid": true, "status": "SERIAL_SGS", "makespan_s": 20709}
+{"split": "development", "case": "development-003", "mode": "serial", "rule": "input_order", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-004", "mode": "serial", "rule": "input_order", "valid": true, "status": "SERIAL_SGS", "makespan_s": 27713}
+{"split": "development", "case": "development-005", "mode": "serial", "rule": "input_order", "valid": true, "status": "SERIAL_SGS", "makespan_s": 14455}
+{"split": "development_summary", "rule": "input_order", "valid_rate": 0.8333333333333334, "mean_valid_makespan_s": 16200.0}
+{"split": "development", "case": "development-000", "mode": "serial", "rule": "minimum_slack", "valid": true, "status": "SERIAL_SGS", "makespan_s": 3788}
+{"split": "development", "case": "development-001", "mode": "serial", "rule": "minimum_slack", "valid": true, "status": "SERIAL_SGS", "makespan_s": 15207}
+{"split": "development", "case": "development-002", "mode": "serial", "rule": "minimum_slack", "valid": true, "status": "SERIAL_SGS", "makespan_s": 22150}
+{"split": "development", "case": "development-003", "mode": "serial", "rule": "minimum_slack", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-004", "mode": "serial", "rule": "minimum_slack", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-005", "mode": "serial", "rule": "minimum_slack", "valid": true, "status": "SERIAL_SGS", "makespan_s": 15728}
+{"split": "development_summary", "rule": "minimum_slack", "valid_rate": 0.6666666666666666, "mean_valid_makespan_s": 14218.25}
+{"split": "development", "case": "development-000", "mode": "serial", "rule": "longest_remaining_path", "valid": true, "status": "SERIAL_SGS", "makespan_s": 3489}
+{"split": "development", "case": "development-001", "mode": "serial", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-002", "mode": "serial", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-003", "mode": "serial", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-004", "mode": "serial", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-005", "mode": "serial", "rule": "longest_remaining_path", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development_summary", "rule": "longest_remaining_path", "valid_rate": 0.16666666666666666, "mean_valid_makespan_s": 3489.0}
+{"split": "development", "case": "development-000", "mode": "serial", "rule": "earliest_release", "valid": true, "status": "SERIAL_SGS", "makespan_s": 3489}
+{"split": "development", "case": "development-001", "mode": "serial", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-002", "mode": "serial", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-003", "mode": "serial", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-004", "mode": "serial", "rule": "earliest_release", "valid": false, "status": "NO_SGS_PLAN", "makespan_s": null}
+{"split": "development", "case": "development-005", "mode": "serial", "rule": "earliest_release", "valid": true, "status": "SERIAL_SGS", "makespan_s": 14455}
+{"split": "development_summary", "rule": "earliest_release", "valid_rate": 0.3333333333333333, "mean_valid_makespan_s": 8972.0}

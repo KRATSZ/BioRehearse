@@ -1,0 +1,85 @@
+{
+  "schema": "biorehearse.v3.white-composites/1",
+  "records": [
+    {
+      "source": "rehearsal-1-closeup.png",
+      "source_sha256": "e8c42bcb0bff6cb07433b7369d6476cc0342ecd4f16d396016c38d492b115dd4",
+      "white_png": "rehearsal-1-closeup.png",
+      "white_sha256": "e4b2c41d6ca60ced926001cdd4687077f13ffe3105e9ebb0e036408cf393f676",
+      "size_px": [
+        1200,
+        750
+      ]
+    },
+    {
+      "source": "rehearsal-1.png",
+      "source_sha256": "6a1e46acfc3bfd51da4f5d825bb51225fa00693e0a5081dfe89e1368e10740f7",
+      "white_png": "rehearsal-1.png",
+      "white_sha256": "4ddcf8254165cb616b85019b6bb42df87ec99de3b9c70993493cc9572114bffd",
+      "size_px": [
+        2400,
+        1500
+      ]
+    },
+    {
+      "source": "rehearsal-2-closeup.png",
+      "source_sha256": "edf0178910d4f50230daba62ca5059e1e706628a37ee45803efc122f03c21b39",
+      "white_png": "rehearsal-2-closeup.png",
+      "white_sha256": "1c81564517a1347ed1f02222a7463cae2a14ba8f707dcbb924cbb05a6d4b9fc2",
+      "size_px": [
+        1200,
+        750
+      ]
+    },
+    {
+      "source": "rehearsal-2.png",
+      "source_sha256": "98933ccfccee02bc7b96ec231a0b44ae0d055e4f8756491357d5cd2d81d46a6c",
+      "white_png": "rehearsal-2.png",
+      "white_sha256": "dde06e008464ca3828605a1dba873733ea2b54abd116741c044f9f3162c6d1bb",
+      "size_px": [
+        2400,
+        1500
+      ]
+    },
+    {
+      "source": "rehearsal-3-closeup.png",
+      "source_sha256": "17f89f002d9731eefbb950d6906935259225c4b8963b601b9e1a934c96f9c1fe",
+      "white_png": "rehearsal-3-closeup.png",
+      "white_sha256": "c2ac4aa06e16ced94057e830d93507077cf6f06bf0818e7cf1d649621a48950d",
+      "size_px": [
+        1200,
+        750
+      ]
+    },
+    {
+      "source": "rehearsal-3.png",
+      "source_sha256": "85eb5bc96d3c3fd4a07a90ba90a5e984e1d8ccf732d0cf5b6fe693b290e3b76b",
+      "white_png": "rehearsal-3.png",
+      "white_sha256": "5399b69d5178c57ed254d22ed38710243c9a96d288cff218cc7728936467cdbc",
+      "size_px": [
+        2400,
+        1500
+      ]
+    },
+    {
+      "source": "rehearsal-4-closeup.png",
+      "source_sha256": "9c634f5ad2df8ef5e16659381117fbe20dd95218e7de10fea581f26f736ba7c3",
+      "white_png": "rehearsal-4-closeup.png",
+      "white_sha256": "107f164ebb07bae00dce417d13b85c673e89d55cf07a4e37b6c4ee9bb2f70514",
+      "size_px": [
+        1200,
+        750
+      ]
+    },
+    {
+      "source": "rehearsal-4.png",
+      "source_sha256": "02b1bdc8dc83fe55bc2d7e1ddb2916624a92362ac98f89fdb695e25a87ed9869",
+      "white_png": "rehearsal-4.png",
+      "white_sha256": "edb340d5c812e5c93c3a601ab2df62ebc3ce2f8f221447943e6db8c9f455b0f9",
+      "size_px": [
+        2400,
+        1500
+      ]
+    }
+  ]
+}

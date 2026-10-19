@@ -1,0 +1,12 @@
+{
+  "schema": "biorehearse.v3.glm-language-strict-summary/1",
+  "stage": "development",
+  "model": "glm-4-flash-250414",
+  "n": 4,
+  "success": 0,
+  "accepted": 0,
+  "strict_scorer": "benchmarks/v2/language.py",
+  "strict_scorer_sha256": "e4108a09e7b1409fe1969f2df168304a16e47457cc730451c3c8c65b8088f835",
+  "records": "source-data/v3/language/glm-4-flash-250414/development-strict-scores.jsonl",
+  "interpretation": "Each record was rescored by the original v2 correct(case,data,error) function; this is a post-hoc extension on the existing v2 request suite."
+}

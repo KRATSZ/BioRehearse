@@ -1,0 +1,245 @@
+{
+  "schema": "biorehearse.v3.white-composites/1",
+  "records": [
+    {
+      "source": "asset-agilent-1290-infinity-ii-analytical.png",
+      "source_sha256": "3a32a452e643d44d5db6083a7fc97a683d856330f8e900b663bcd59a87e1ed4c",
+      "white_png": "asset-agilent-1290-infinity-ii-analytical.png",
+      "white_sha256": "75e3a7cb152d835b2cb030339c84976515078bfc15ba6e27cd39ac3e9eeab2f9",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-agilent-rapidfire400-6470.png",
+      "source_sha256": "9d4680a1f8c97b74c635ff780330e53e6f9b7271d6ccd1465c87a9dd71cabed7",
+      "white_png": "asset-agilent-rapidfire400-6470.png",
+      "white_sha256": "c61e359f632896808557b8f6456a0a6cdb16f7430c9485d5fda1c38234473a8e",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-agilent_bravo_assaymap.png",
+      "source_sha256": "d30d6d7a9c58873e80c2d417a50d36d0552a146870199ba3cad3e5ed31e41969",
+      "white_png": "asset-agilent_bravo_assaymap.png",
+      "white_sha256": "11ae350eec91dcebcf156a26a40820e3bf47bacd7c06f7c0c6b2966f5e66235f",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-bd_lsrfortessa.png",
+      "source_sha256": "23e9082a38b641787446a77679f9cb98c9ad14f486145cf6a8303e7e4918282a",
+      "white_png": "asset-bd_lsrfortessa.png",
+      "white_sha256": "e3720843def649445b13c7181175fb15747f0dc9faf6a069b5eada7795e60bef",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-beckman_cytoflex_lx.png",
+      "source_sha256": "4b552517459b1589cf4028aaa1f1bf542083eb98591dc68426d9c733b9e066a0",
+      "white_png": "asset-beckman_cytoflex_lx.png",
+      "white_sha256": "f6ffce1b6e72cdaec0eb5e4c1f873c3ddd3a632b3d78fcb45b6527f64a2bb576",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-beckman_optima_xe100.png",
+      "source_sha256": "1c5e2541c8c9b71c22270884fd4f60fa229a186dda47e2ad4ff0e4732249099d",
+      "white_png": "asset-beckman_optima_xe100.png",
+      "white_sha256": "ad978d7e09ef9c2a8e7561888bf8c5852155ab5587ea39e60f3981e3dc2dfef1",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-beckman_optima_xpn100.png",
+      "source_sha256": "93a3d3bd1e932ad1e7d96ed90d3a5c5fabf6978252049edc5f5bd4ace049c0e5",
+      "white_png": "asset-beckman_optima_xpn100.png",
+      "white_sha256": "422c21c21b9c62ba854f169365f83d7570fad0e82ffc06fe62b6f866396919cc",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-biotek-logphase-600.png",
+      "source_sha256": "647b296bca2a2e4cc5b808ee67d755c2139804c6522f3b97b7f7c9b2607e0286",
+      "white_png": "asset-biotek-logphase-600.png",
+      "white_sha256": "bc9cd6bdae2c5cf23ddb084184420dad7afe841ca87a008d78ce9986ca789ebe",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-bmg_clariostarplus.png",
+      "source_sha256": "c6f06eee71159b1ec544a66eb54e1eee72391fcc790f6d81197a7ac0ffe23781",
+      "white_png": "asset-bmg_clariostarplus.png",
+      "white_sha256": "069d3745800cb8b1ec9cc23d4ae645cdfc4258b0cbcc217161ec1403af1647e7",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-cytiva_akta_pure_25m1.png",
+      "source_sha256": "e0400336d0499f684a9ec745c8846c65e1657b3cf25d8c87b18f527707b014eb",
+      "white_png": "asset-cytiva_akta_pure_25m1.png",
+      "white_sha256": "81d9f47d569eb8bdcf7d269a6f5e1ff0a7b412b8c10018e95534d2cd8ddc39f5",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-eppendorf_5910ri.png",
+      "source_sha256": "a3ff30a81ac7b276e458c19525dac551c6de7e737460443f4437014188c8382c",
+      "white_png": "asset-eppendorf_5910ri.png",
+      "white_sha256": "00d8660eea92efabfdd09d5ed5482ff1b09eccd93b08484431973349d20c3a03",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-eppendorf_cellxpertc170i.png",
+      "source_sha256": "a05f2319489d15563f44e389604f06b37410ea4afe12425f4ef577b775314a48",
+      "white_png": "asset-eppendorf_cellxpertc170i.png",
+      "white_sha256": "ea5cac2baa01b189d699ec7219aebc5d721806be51c6cccb23ee0bbeb81ec60a",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-fluent1080.png",
+      "source_sha256": "d7dd6adf51bedb8b94fdaac62d4e68a24f2cae7f0ac27fd1b6a93c0aa761a150",
+      "white_png": "asset-fluent1080.png",
+      "white_sha256": "aa4c274639123dad46e3be892da921d1535f4b0dc44e716e9f5de727c6f2782c",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-fluidigm_helios.png",
+      "source_sha256": "197553fe47024f4a8cfeed9362ce79df69468c9d6885b29f709b5cfbd0fb579b",
+      "white_png": "asset-fluidigm_helios.png",
+      "white_sha256": "8c34b8e88a75d518fac580a62787d91f4c4b02245e10085840a7fd4e9b47cbcd",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-ika_ks4000.png",
+      "source_sha256": "450879ea2892b5ac4f928df3e4290e91258dd3db4edfa363ff2c81cbde94bb48",
+      "white_png": "asset-ika_ks4000.png",
+      "white_sha256": "339f0051f02a837b78d0345902aa74873d89197365b2da77b7415d19ee2cedf1",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-mgi_dnbseq_g99rs.png",
+      "source_sha256": "91c99aa2333f4df3054ac4c2d85ca04a948e6466836e55a7285dce35c43b8ff5",
+      "white_png": "asset-mgi_dnbseq_g99rs.png",
+      "white_sha256": "41c1bfb1cd60b55d46ce9c4899b26c8dcc0323f327f3c328ade1d56a9bec2ba2",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-opentrons_flex_project.png",
+      "source_sha256": "b79d2043ca782c55515471ce40b86947d0e71feb6f2d6f455a5e7365374bffa6",
+      "white_png": "asset-opentrons_flex_project.png",
+      "white_sha256": "f89f01caa84f59472727f8646a78cdb2bfe8ca3663758f7f894fd4855a448b55",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-sartorius_ambr15.png",
+      "source_sha256": "e68e64c9ff950eabbe7bfcecc1a94e705795ba9470da9e4826fbfaad99f156a4",
+      "white_png": "asset-sartorius_ambr15.png",
+      "white_sha256": "bf93c2323f13189b9be3c2c30b4349bf9b4f7c366946f7f59978191c14471f40",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-sciex_zenotof_7600.png",
+      "source_sha256": "838e96e709d5a93b454b5266441d226037611d644def530ba6134735512b9b11",
+      "white_png": "asset-sciex_zenotof_7600.png",
+      "white_sha256": "921704c5f3b63a835e57eac1f14a56b8d7b10cad2e4c55809c1a5524add37210",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-spectramax-i3x.png",
+      "source_sha256": "b3e15e3801763efa6e61f2f9fdba757b1e0429e26a69ca845e6b1e57619e4142",
+      "white_png": "asset-spectramax-i3x.png",
+      "white_sha256": "d1b4c7f999ba135301b93e267a6203d15fa3c8e7ee9653f693c125501fc39ac6",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-spectramax-id5.png",
+      "source_sha256": "1f3dcd30b05753552bb621ea9082334d379d57b75cbda11d54967bed7088eeba",
+      "white_png": "asset-spectramax-id5.png",
+      "white_sha256": "8c090592917a1ff5f70178fe2a98fc10a6eb0a4cecfccc1156c5026e1fef0023",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-tecan-fluent780.png",
+      "source_sha256": "ea93dd33178cbc1a607dc4eb6490d56efa4bb9546b7b81b0f383304014d3dc5b",
+      "white_png": "asset-tecan-fluent780.png",
+      "white_sha256": "9bba95a2fa230323d3cbdb54f1909c0a1fbef39cc780e104a8c1f53403392bf4",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-thermo_ibrightfl1500.png",
+      "source_sha256": "e39b3b1059debbbaeda3a48980535bf07004029e7784178e80fe2c18ddf460e9",
+      "white_png": "asset-thermo_ibrightfl1500.png",
+      "white_sha256": "0d28bd6410bf5a9b95fdc5d7463a4f47a313306e898cf77335177d4406eb86d2",
+      "size_px": [
+        1400,
+        1050
+      ]
+    },
+    {
+      "source": "asset-thermo_sorvall_lynx6000.png",
+      "source_sha256": "d1c58a0b6a1cc6f42dc5d008582c16148b2e9f31ca3ec343c0629b036c0c1797",
+      "white_png": "asset-thermo_sorvall_lynx6000.png",
+      "white_sha256": "5dddf25cbfc9a7cb3d25d153f5dac6e0737d89ddce1cbef0f5f1920d6c87bc0f",
+      "size_px": [
+        1400,
+        1050
+      ]
+    }
+  ]
+}

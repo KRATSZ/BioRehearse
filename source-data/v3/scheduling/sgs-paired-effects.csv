@@ -1,0 +1,17 @@
+case,load,baseline,cp_makespan_s,baseline_makespan_s,cp_minus_baseline_s,baseline_cost_cny,cp_cost_cny
+heldout-000,1,serial_sgs,11760,11789,-29,169.37,169.37
+heldout-000,1,parallel_sgs,11760,11789,-29,169.37,169.37
+heldout-003,1,serial_sgs,3757,3757,0,167.5,167.5
+heldout-003,1,parallel_sgs,3757,3757,0,167.5,167.5
+heldout-006,1,serial_sgs,3307,3307,0,113.5,113.5
+heldout-006,1,parallel_sgs,3307,3307,0,113.5,113.5
+heldout-009,1,serial_sgs,4085,4085,0,196.3,196.3
+heldout-009,1,parallel_sgs,4085,4085,0,196.3,196.3
+heldout-012,3,serial_sgs,14263,15044,-781,381.25,382.74
+heldout-015,3,serial_sgs,14022,14309,-287,430.33,432.75
+heldout-018,3,serial_sgs,14306,15407,-1101,471.14,472.68
+heldout-021,3,serial_sgs,14402,14628,-226,500.46,500.46
+heldout-024,6,serial_sgs,18025,19799,-1774,682.47,683.26
+heldout-027,6,serial_sgs,18218,20588,-2370,863.0,869.48
+heldout-036,9,serial_sgs,20230,23882,-3652,1261.19,1265.44
+heldout-054,12,serial_sgs,26491,28065,-1574,1707.71,1703.12

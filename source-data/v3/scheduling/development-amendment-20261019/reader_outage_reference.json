@@ -1,0 +1,8 @@
+{
+  "source": "v2 reader outage reference retained unchanged",
+  "outcomes_sha256": "72c27e4add4eec74766f77e375c294081d5e6c9e312acbc411b7283c5eb0258e",
+  "faults_sha256": "9335aecc7f7d473f281f9984e20d41d847bf0a056453e9a9e65a6fa4bf30068d",
+  "outcome_records": 24,
+  "fault_records": 24,
+  "scope": "v2 reference; no v3 overwrite and no claim of active-operation recovery"
+}

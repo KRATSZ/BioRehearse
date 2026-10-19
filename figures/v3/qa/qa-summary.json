@@ -1,0 +1,98 @@
+[
+  {
+    "source": "figure1_system.py",
+    "static_exit": 0
+  },
+  {
+    "source": "figure2_assets.py",
+    "static_exit": 0
+  },
+  {
+    "source": "figure3_rehearsal.py",
+    "static_exit": 0
+  },
+  {
+    "source": "figure4_language.py",
+    "static_exit": 0
+  },
+  {
+    "source": "figure5_scheduling.py",
+    "static_exit": 0
+  },
+  {
+    "source": "figure6_validation.py",
+    "static_exit": 0
+  },
+  {
+    "figure": "fig1_concept.pdf",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "alignment_verdict": "PASS",
+    "alignment_summary": {
+      "fail": 0,
+      "warn": 0,
+      "comparisons": 1,
+      "exemptions": 1
+    }
+  },
+  {
+    "figure": "fig2_assets.pdf",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "alignment_verdict": "PASS",
+    "alignment_summary": {
+      "fail": 0,
+      "warn": 0,
+      "comparisons": 10,
+      "exemptions": 1
+    }
+  },
+  {
+    "figure": "fig3_rehearsal.pdf",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "alignment_verdict": "PASS",
+    "alignment_summary": {
+      "fail": 0,
+      "warn": 0,
+      "comparisons": 4,
+      "exemptions": 2
+    }
+  },
+  {
+    "figure": "fig4_language.pdf",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "alignment_verdict": "PASS",
+    "alignment_summary": {
+      "fail": 0,
+      "warn": 0,
+      "comparisons": 1,
+      "exemptions": 0
+    }
+  },
+  {
+    "figure": "fig5_scheduling.pdf",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "alignment_verdict": "PASS",
+    "alignment_summary": {
+      "fail": 0,
+      "warn": 0,
+      "comparisons": 4,
+      "exemptions": 0
+    }
+  },
+  {
+    "figure": "fig6_layers.pdf",
+    "font_exit": 0,
+    "collision_exit": 0,
+    "alignment_verdict": "PASS",
+    "alignment_summary": {
+      "fail": 0,
+      "warn": 0,
+      "comparisons": 1,
+      "exemptions": 0
+    }
+  }
+]

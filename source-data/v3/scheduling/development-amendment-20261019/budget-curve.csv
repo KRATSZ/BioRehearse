@@ -1,0 +1,4 @@
+budget_s,cases,returned,valid,feasible_certificate,infeasible_proof,unresolved,optimal,feasible_nonoptimal,median_wall_s,max_wall_s
+2,20,18,18,18,2,0,14,4,0.07627120850156643,2.0765340409998316
+10,20,18,18,18,2,0,15,3,0.07668939600080193,10.130946208999376
+60,20,18,18,18,2,0,15,3,0.07916820799982816,60.120657332998235

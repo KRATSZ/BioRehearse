@@ -1,0 +1,195 @@
+{
+  "version": "v3.3-final",
+  "backend": "python-matplotlib",
+  "journal_target": "Nature Computational Science (author-review preprint draft)",
+  "canvas_mm": [
+    180,
+    180
+  ],
+  "figure_heights_mm": {
+    "fig1_concept": 158,
+    "fig2_assets": 190,
+    "fig3_rehearsal": 172,
+    "fig4_language": 124,
+    "fig5_scheduling": 160,
+    "fig6_layers": 155
+  },
+  "grid_mm": {
+    "double_column": 180,
+    "column": 87,
+    "three_column": 56,
+    "gutter": 6
+  },
+  "typography": {
+    "panel_label_pt": 8,
+    "panel_title_pt": 7,
+    "axis_label_pt": 6.5,
+    "tick_pt": 5.5,
+    "minimum_rendered_pt": 5.5
+  },
+  "exports": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "colors": {
+    "assay": {
+      "gfp": "#2A7F9E",
+      "bca": "#D88A40",
+      "picogreen": "#8A78B0"
+    },
+    "method": {
+      "cp_sat": "#17242E",
+      "parallel_greedy": "#7A858D",
+      "serial_fifo": "#C2C8CD",
+      "serial_sgs": "#3C6E71"
+    },
+    "status": {
+      "pass": "#64727C",
+      "warning": "#B82932",
+      "neutral": "#D9DEE2",
+      "guide": "#A9B3BA"
+    }
+  },
+  "figures": {
+    "fig1_system": {
+      "output_stem": "fig1_concept",
+      "source_script": "figures/v3/source/figure1_system.py",
+      "claim": "A shared representation connects registered-method intent, task graphs, schedules and material state to rehearsal; asset-access contracts are tested on separate action traces.",
+      "archetype": "schematic-led composite",
+      "panels": [
+        "intent-to-typed-request",
+        "task-DAG",
+        "shared-Gantt",
+        "unified-assay-scene",
+        "five-check-layer"
+      ],
+      "source_images": [
+        "figures/v3/renders/final-workbench/white/rehearsal-1.png",
+        "figures/v3/renders/final-workbench/unified-scene-provenance.json"
+      ],
+      "layout_note": "Use the evaluated assay configuration; no conceptual placeholder layout and no in-panel prose about native modules."
+    },
+    "fig2_assets": {
+      "output_stem": "fig2_assets",
+      "source_script": "figures/v3/source/figure2_assets.py",
+      "claim": "The facility is represented by a reusable asset library that binds instrument instances to model, capability and handoff records.",
+      "archetype": "image plate + quant",
+      "panels": [
+        "asset-gallery",
+        "fluent-anatomy",
+        "inventory-binding",
+        "feature-coverage",
+        "rizon-island-capability"
+      ],
+      "source_images": [
+        "figures/v3/renders/final-gallery/asset-gallery-provenance.json",
+        "figures/v3/renders/final-anatomy/anatomy-provenance.json",
+        "figures/v3/renders/final-rizon/rizon-island-provenance.json"
+      ],
+      "source_data": [
+        "source-data/v2/asset-summary.json",
+        "figures/v3/fig2_asset-source.csv"
+      ],
+      "layout_note": "Gallery thumbnails are explicitly not to scale; omit zero hardware-adapter bar from the main panel and retain it in source data/scope notes."
+    },
+    "fig3_rehearsal": {
+      "output_stem": "fig3_rehearsal",
+      "source_script": "figures/v3/source/figure3_rehearsal.py",
+      "claim": "A shared-device three-assay workload remains linked across time, 3D state frames, liquid/component state and configured transfer routes.",
+      "archetype": "asymmetric mixed-modality figure",
+      "panels": [
+        "assay-Gantt",
+        "state-frame-filmstrip",
+        "volume-heatmaps-and-component-bars",
+        "transfer-routes"
+      ],
+      "source_images": [
+        "figures/v3/renders/final-workbench/unified-scene-provenance.json"
+      ],
+      "source_data": [
+        "figures/v3/fig3_state-source.csv",
+        "figures/v3/fig3_component-source.csv",
+        "source-data/v2/example.json"
+      ],
+      "layout_note": "Frames must show distinct state changes and use visible assay-colored plate/tube glyphs; heatmaps require explicit volume/component colorbars."
+    },
+    "fig4_language": {
+      "output_stem": "fig4_language",
+      "source_script": "figures/v3/source/figure4_language.py",
+      "claim": "Typed intent compilation preserves supported natural-language requests while exposing model-specific deadline and clarification boundaries.",
+      "archetype": "quantitative grid",
+      "panels": [
+        "success-by-request-family",
+        "latency",
+        "tariff-estimated-fees",
+        "observed-deadline-mismatches"
+      ],
+      "source_tables": [
+        "figures/v3/fig4_language-source.csv",
+        "figures/v3/fig4_deadline-source.csv",
+        "figures/v3/fig4_cost-source.csv"
+      ],
+      "layout_note": "Show n denominators and parser abstention explicitly; model names retain canonical capitalization."
+    },
+    "fig5_scheduling": {
+      "output_stem": "fig5_scheduling",
+      "source_script": "figures/v3/source/figure5_scheduling.py",
+      "claim": "Constraint programming and standard resource-constrained scheduling heuristics are compared under increasing load, solver budgets and a meaningful KS4000 outage.",
+      "archetype": "quantitative grid",
+      "panels": [
+        "validity-vs-load",
+        "budget-sensitivity",
+        "staged-feasibility-truth",
+        "KS4000-outage-replan"
+      ],
+      "source_tables": [
+        "figures/v3/fig5_scheduling-source.csv",
+        "source-data/v3/scheduling/sgs_v33_runs.jsonl",
+        "source-data/v3/scheduling/truth-final.json",
+        "source-data/v3/scheduling/cp_sat_unknown_300s_followup.json",
+        "source-data/v3/scheduling/ks4000-outage.csv",
+        "source-data/v3/scheduling/ks4000-outage-900s.csv",
+        "source-data/v3/scheduling/ks4000-outage-figure.json"
+      ],
+      "layout_note": "Mark unresolved/no-valid-baseline cases; retain reader-outage result in text or supplement, not as the main fault panel."
+    },
+    "fig6_validation": {
+      "output_stem": "fig6_layers",
+      "source_script": "figures/v3/source/figure6_validation.py",
+      "claim": "Layered validation localizes different classes of plan defects, including material-location and asset-contract errors that arithmetic checks alone cannot see.",
+      "archetype": "image plate + quant",
+      "panels": [
+        "five-layer-mutation-matrix",
+        "incorrect-stock-location",
+        "corrected-stock-location"
+      ],
+      "source_images": [
+        "figures/v3/renders/final-workbench-water/unified-scene-provenance.json",
+        "figures/v3/fig6_validation-source.csv",
+        "source-data/v3/fig6-validation-matrix.csv",
+        "source-data/v3/mutation-challenge.jsonl"
+      ],
+      "layout_note": "Before/after images use the same camera and red location callout with an arrow; mutation outcomes must come from v3 validation output."
+    }
+  },
+  "qa": {
+    "alignment_tolerance_pt": 1.5,
+    "exclude_insets": true,
+    "require_panel_labels": true,
+    "visual_review_required": true,
+    "source_data_required_for_quantitative_panels": true,
+    "no_placeholder_results": true,
+    "runner": "figures/v3/source/qa_figures.py",
+    "summary": "figures/v3/qa/qa-summary.json",
+    "visual_review": "figures/v3/qa/visual_review.md",
+    "canonical_exports": [
+      "fig1_concept",
+      "fig2_assets",
+      "fig3_rehearsal",
+      "fig4_language",
+      "fig5_scheduling",
+      "fig6_layers"
+    ]
+  }
+}

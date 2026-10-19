@@ -1,0 +1,300 @@
+{
+  "asset_id": "nih-3dpx-023347",
+  "source_kind": "community_glb",
+  "name_zh": "13 mm培养管架（NIH 3D社区模型）",
+  "maker": "Ben Braverman",
+  "model": "13mm tube rack / 3DPX-023347",
+  "source": "https://3d.nih.gov/entries/3DPX-023347",
+  "author": "Ben Braverman",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_glb": "sources/community/nih3d/2026-10-16/3DPX-023347/model-meter-preview.glb",
+  "raw_source_glb": "sources/community/nih3d/2026-10-16/3DPX-023347/model.glb",
+  "source_scale_length": 1.0,
+  "raw_source_scale_to_m": 0.001,
+  "glb_up": "y",
+  "source_contract": "library/nih-3dpx-023347/asset.contract.json",
+  "source_package": "sources/community/nih3d/2026-10-16/3DPX-023347/source.zip",
+  "source_package_sha256": "6bd2c918e3babc06d55c748c633314ef97533cbce39c4072f022a588510cd3f2",
+  "raw_package_complete": true,
+  "normalized_glb": "library/nih-3dpx-023347/model.glb",
+  "preview": "library/nih-3dpx-023347/preview.png",
+  "dimensions_m": [
+    0.168,
+    0.051,
+    0.069
+  ],
+  "dimension_evidence": {
+    "basis": "NIH GLB bounds [168,69,51] in raw glTF XYZ; 0.001 root added for meter preview; exported source printUnits blank",
+    "unit_scale_status": "inferred_from_13mm_culture_tube_use",
+    "raw_scale_to_m": 0.001,
+    "raw_blender_bounds_xyz": [
+      168,
+      51,
+      69
+    ],
+    "physical_dimension_validated": false
+  },
+  "movable_joints": null,
+  "workflow_adapter_validated": false,
+  "facility_ids": [],
+  "facility_52_coverage_increment": 0,
+  "units": "m",
+  "category": "consumable",
+  "source_glb_up": "y",
+  "axis": "X right, Y back, Z up in Blender; standard Y-up glTF export",
+  "dimensions_xyz_m": [
+    0.1680000126361847,
+    0.05100000277161598,
+    0.0690000057220459
+  ],
+  "canonical_to_normalized_translation_m": [
+    -0.0,
+    -0.0,
+    -0.0
+  ],
+  "source_axis_correction_degrees": 0,
+  "mesh_objects": 1,
+  "triangles": 43660,
+  "status": "visual_ready",
+  "appearance": {
+    "status": "ready",
+    "basis": "new_model",
+    "review": {
+      "approved": true,
+      "preview_sha256": "62243c3b640b821d2b05bc5e79c755bb546cd1d37f6430b2c9fcaccd1676c656",
+      "reviewer": "primary agent visual comparison",
+      "method": "Actual final-model render inspected beside facility/manufacturer reference; no photographic texture substitution",
+      "note": "Actual downloaded 13 mm tube rack rendered; unit scale explicitly inferred because NIH printUnits is blank; adds no facility coverage.",
+      "manufacturer_cad": false,
+      "physical_motion_calibrated": false,
+      "final_review_sheet": "batches/2026-10-16/final-preview-sheet.png",
+      "final_review_note": "Final evaluated-geometry render reviewed after curve-envelope correction and modifier-preserving export. Shapes compared with the previously inspected facility/manufacturer contact sheets.",
+      "model_glb_sha256": "cc8bddc4cc3b10a286ee7abf45cf358ae7506c93b566dd0e8fb269097de88709",
+      "approved_preview_artifact": "batches/2026-10-16/final-preview-sheet.png",
+      "approval_policy": "Visual approval binds to the exact exported GLB (geometry, materials, hierarchy and animation); PNG date/render-time metadata may change without changing the reviewed model.",
+      "displayed_preview_sha256": "0ef2a70ea1efb0ffd66e77cbb30d683898cd3e01b868a6092fae26a1c479cbe9",
+      "approval_binding": "identical_reviewed_GLB"
+    }
+  },
+  "mechanism": {
+    "status": "static_or_source_scene_only",
+    "joint_nodes": 0,
+    "sampled_poses": 0,
+    "physical_travel_validated": false,
+    "sweep": {
+      "passed": true,
+      "report": "library-motion-checks.json",
+      "blend_positions": 0,
+      "glb_positions": 0,
+      "physical_clearance_validated": false
+    }
+  },
+  "protocol": {
+    "status": "static_only",
+    "workflow_adapter_validated": false,
+    "hardware_adapter_validated": false,
+    "report": "library-protocol-checks.json",
+    "mode": "static_no_protocol_capability",
+    "protocol_scope": "static_no_protocol_capability",
+    "access_lifecycle_tested": false,
+    "liquid_accounting_tested": false,
+    "geometry_replay_report": "library-protocol-motion-checks.json"
+  },
+  "blend": "library/nih-3dpx-023347/model.blend",
+  "checks": "library/nih-3dpx-023347/checks.json",
+  "assembly_reference": "library/nih-3dpx-023347/assembly-reference.json",
+  "origin": {
+    "definition": "bottom centre of closed assembly",
+    "local_frames_preserved": true
+  },
+  "validation": {
+    "roundtrip_passed": true,
+    "report": "library/nih-3dpx-023347/checks.json",
+    "tolerance_m": 2e-05
+  },
+  "upstream_contract": "sources/community/nih3d/2026-10-16/3DPX-023347/provenance.json",
+  "files_sha256": {
+    "normalized_glb": "cc8bddc4cc3b10a286ee7abf45cf358ae7506c93b566dd0e8fb269097de88709",
+    "blend": "420407e05c4f27a02cdf0b8367ddbe7d9775bff8f904f1f87feb6cb76e389d66",
+    "preview": "0ef2a70ea1efb0ffd66e77cbb30d683898cd3e01b868a6092fae26a1c479cbe9",
+    "checks": "380c81c0434a91e661536d0d285c766392c45e2b73faf3b747c4b2e5006e023e"
+  },
+  "actual_checks": {
+    "id": "nih-3dpx-023347",
+    "blend": {
+      "passed": true,
+      "missing_nodes": [],
+      "extra_nodes": [],
+      "nodes_checked": 3,
+      "parents_preserved": true,
+      "max_world_matrix_error": 0.0,
+      "max_local_matrix_error": 0.0,
+      "dimension_error_m": 0.0,
+      "pose_checks": [],
+      "failed_nodes": [],
+      "unit_scale_m": 1.0
+    },
+    "glb": {
+      "passed": true,
+      "missing_nodes": [],
+      "extra_nodes": [],
+      "nodes_checked": 3,
+      "parents_preserved": true,
+      "max_world_matrix_error": 0.0,
+      "max_local_matrix_error": 0.0,
+      "dimension_error_m": 0.0,
+      "pose_checks": [],
+      "failed_nodes": [],
+      "surface_check": {
+        "passed": true,
+        "meshes_checked": 1,
+        "max_euclidean_surface_error_m": 0.0,
+        "failed_meshes": [],
+        "method": "Actual evaluated vertices to triangles in both directions, closed pose; Euclidean metres; all posed transforms independently checked"
+      }
+    },
+    "model_glb_sha256": "cc8bddc4cc3b10a286ee7abf45cf358ae7506c93b566dd0e8fb269097de88709",
+    "model_blend_sha256": "420407e05c4f27a02cdf0b8367ddbe7d9775bff8f904f1f87feb6cb76e389d66",
+    "reference_sha256": "3a29962fa87d5caf9fca3468d58a626d0e8db7a771f824f986324a19ed049a83",
+    "passed": true
+  },
+  "assembly": {
+    "units": "m at asset root; local translation units follow accumulated parent scale",
+    "nodes": [
+      {
+        "id": "nih-3dpx-023347:0",
+        "name": "nih-3dpx-023347",
+        "type": "EMPTY",
+        "parent": null,
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "nih-3dpx-023347:1",
+        "name": "nih_3dpx_023347_millimetre_to_metre_inferred",
+        "type": "EMPTY",
+        "parent": "nih-3dpx-023347:0",
+        "matrix_local": [
+          0.0010000000474974513,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0010000000474974513,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0010000000474974513,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          0.0010000000474974513,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0010000000474974513,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0010000000474974513,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "id": "nih-3dpx-023347:2",
+        "name": "12_5mm_tube_rack",
+        "type": "MESH",
+        "parent": "nih-3dpx-023347:1",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world": [
+          0.0010000000474974513,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0010000000474974513,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0010000000474974513,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "closed_dimensions_xyz_m": [
+      0.1680000126361847,
+      0.05100000277161598,
+      0.0690000057220459
+    ],
+    "axis_metadata": "joint_axis uses Blender Z-up node local coordinates; glTF Y-up equivalent is [x,z,-y]",
+    "sampled_frames": []
+  }
+}

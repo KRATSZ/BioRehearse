@@ -1,0 +1,25 @@
+{
+  "asset_id": "ika_ks4000",
+  "closed_door_load_expected": "ACCESS_CLOSED",
+  "closed_door_load_observed": "ACCESS_CLOSED",
+  "closed_door_load_rejected_atomically": true,
+  "contract_sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897",
+  "event_count": 8,
+  "final_loaded": [],
+  "final_running": false,
+  "input_type": "asset_action_probe",
+  "interface": "sim.library_protocols.Workflow.act",
+  "positive_trace": [
+    "open",
+    "load",
+    "close",
+    "start",
+    "finish",
+    "open",
+    "unload",
+    "close"
+  ],
+  "schema": "biofoundry.v3.asset-workflow-action-probe/1",
+  "state_source": "sim.library_protocols.demo_samples()",
+  "station": "ks4000"
+}

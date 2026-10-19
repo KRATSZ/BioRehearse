@@ -1,0 +1,125 @@
+{
+  "schema": "biorehearse.v3.white-composites/1",
+  "records": [
+    {
+      "source": "rehearsal-1-closeup.png",
+      "source_sha256": "9dbb5ba90e2640ebe9ed0ce670bf5448cb8b807576db0ff672109edb5f1f0acf",
+      "white_png": "rehearsal-1-closeup.png",
+      "white_sha256": "8d0f438c0271b917bdec8b62077f20a03384af5c9d5b7e70c5a33d6b099ebc38",
+      "size_px": [
+        900,
+        600
+      ]
+    },
+    {
+      "source": "rehearsal-1.png",
+      "source_sha256": "6a5717dcd845bcb9178876f65c69a814490b7654e5d4ed774d313986dff60956",
+      "white_png": "rehearsal-1.png",
+      "white_sha256": "fa771d9012cacce4dfd402aca45c61187e5926f05ec46a8ff097e260bba80b84",
+      "size_px": [
+        1000,
+        625
+      ]
+    },
+    {
+      "source": "rehearsal-2-closeup.png",
+      "source_sha256": "ae8340d4e3a8dbe5d9dce223b589cc9aad85d362e5a799b4afdc93dafe2f3464",
+      "white_png": "rehearsal-2-closeup.png",
+      "white_sha256": "109bd921a98b13e3380303ec9fd4ac1b075f71da6d01089f016abb9d3f6bd0fc",
+      "size_px": [
+        900,
+        600
+      ]
+    },
+    {
+      "source": "rehearsal-2.png",
+      "source_sha256": "34dd0345096c89544a52b882adebbfb6f581903dbe1a108fd551c05e714c7231",
+      "white_png": "rehearsal-2.png",
+      "white_sha256": "3f2e7f67a077c6981d214de5554f005e5cd4068e03e6a1ea9f2404bbbc92619b",
+      "size_px": [
+        1000,
+        625
+      ]
+    },
+    {
+      "source": "rehearsal-3-closeup.png",
+      "source_sha256": "4e86bd1fbc89b45471f4fb135bcf7a76a6898df4b715a3d465b1c77cd080ade3",
+      "white_png": "rehearsal-3-closeup.png",
+      "white_sha256": "b3631e9fd1dfae0df6dc513bcd951c91cc75834875490d360a42b4696e131913",
+      "size_px": [
+        900,
+        600
+      ]
+    },
+    {
+      "source": "rehearsal-3.png",
+      "source_sha256": "307553e3e899d583f7b769beaaccdd418d521692f5f43b357fcbde0e2ccad8a5",
+      "white_png": "rehearsal-3.png",
+      "white_sha256": "3a1a721b62d509ae470abccb0c24dfca8ea137f0764da246e8cf0684f91665df",
+      "size_px": [
+        1000,
+        625
+      ]
+    },
+    {
+      "source": "rehearsal-4-closeup.png",
+      "source_sha256": "cece72c69378e83ed3923d020a7bd39fa5a23e184936df4e817aeaa95bce68ab",
+      "white_png": "rehearsal-4-closeup.png",
+      "white_sha256": "60d99b08b5a54c65dbd8c2cd6f98700dc39169c49740c27c99075635fd2ac7dd",
+      "size_px": [
+        900,
+        600
+      ]
+    },
+    {
+      "source": "rehearsal-4.png",
+      "source_sha256": "04b73ac29b0d7e7eae745d03a0803aa324f102df5598aa40ea0360bf72b55af4",
+      "white_png": "rehearsal-4.png",
+      "white_sha256": "f4a6e9558a1c6f9b1576c7dc75be309cdd410dea4b4b81cb32a7d9ba570bfa8b",
+      "size_px": [
+        1000,
+        625
+      ]
+    },
+    {
+      "source": "water-correct-closeup.png",
+      "source_sha256": "535c9cd506fe896b8e78f52d22b419d9d93429456a11df8bbf040a3f68cc4354",
+      "white_png": "water-correct-closeup.png",
+      "white_sha256": "80a9997980e7bcf264164de26e59f2271707234b20fbf2e7574ffd405b79e90f",
+      "size_px": [
+        900,
+        600
+      ]
+    },
+    {
+      "source": "water-correct.png",
+      "source_sha256": "f846030b7ddfeca49fe274815ec586107982be165e4f7f9166a81bd816edf275",
+      "white_png": "water-correct.png",
+      "white_sha256": "46e3134791bc08541e85a3126d4d78a7697acd34717e91da2fb7451b006914d6",
+      "size_px": [
+        1000,
+        625
+      ]
+    },
+    {
+      "source": "water-injected-closeup.png",
+      "source_sha256": "3d0aedf0937a35b407f981ed3addf9045fa34e1b367aa99b685496d78034ba5a",
+      "white_png": "water-injected-closeup.png",
+      "white_sha256": "718802a4c6cab8d77a905f43b7abc0e9a38ae9878ee2f87a23b2b834f2d4f991",
+      "size_px": [
+        900,
+        600
+      ]
+    },
+    {
+      "source": "water-injected.png",
+      "source_sha256": "2c3d617ae171a642ec7503532efd3a0290832a2f252790c8589284c722bdbdf7",
+      "white_png": "water-injected.png",
+      "white_sha256": "c295fbb40c2e79978e8251d6671e3696c5bfdabe85e6d9b280a83f5a19fe40a6",
+      "size_px": [
+        1000,
+        625
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "biorehearse.v3.white-composites/1",
+  "records": [
+    {
+      "source": "rizon-island.png",
+      "source_sha256": "edc83ba7d38b72c9f434ed7ce5d376b4fb850c6659e88909392a860275bc37b4",
+      "white_png": "rizon-island.png",
+      "white_sha256": "a9177d7c112f12b0f96b643cbe67cd1ca1d129c8135edcaabcf3c4d39625dc0c",
+      "size_px": [
+        3000,
+        1500
+      ]
+    }
+  ]
+}

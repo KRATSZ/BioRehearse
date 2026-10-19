@@ -1,0 +1,29 @@
+{
+  "accepted": 0,
+  "interpretation": "Post-hoc cross-provider extension on the existing v2 author-constructed request suite; not an independent external request set.",
+  "invoice_cost_cny": null,
+  "model_route": {
+    "api": "openai-completions",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4",
+    "fallback": null,
+    "free_model_whitelist": [
+      "glm-4-flash-250414"
+    ],
+    "invoice_status": "not queried; provider pricing page records this model as free",
+    "max_output_tokens": 8192,
+    "model": "glm-4-flash-250414",
+    "nominal_price_cny_per_million": {
+      "cache_read": 0,
+      "input": 0,
+      "output": 0
+    },
+    "provider": "zai"
+  },
+  "n": 4,
+  "nominal_cost_cny": 0.0,
+  "provider_errors": 0,
+  "records": "source-data/v3/language/glm-4-flash-250414/development-scores.jsonl",
+  "schema": "biorehearse.v3.glm-language-summary/1",
+  "stage": "development",
+  "tool_proposals": 0
+}

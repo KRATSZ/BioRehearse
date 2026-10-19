@@ -1,0 +1,105 @@
+{
+  "case": {
+    "cluster": "heldout-semantic-15",
+    "decision": "compile",
+    "expected": {
+      "accept_demo_assumptions": true,
+      "budget_cny": 750,
+      "deadline_s": 21600,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "experiments": [
+        {
+          "id": "J1",
+          "method": "bca",
+          "release_s": 0,
+          "replicates": 2,
+          "samples": 3
+        },
+        {
+          "id": "J2",
+          "method": "picogreen",
+          "release_s": 0,
+          "replicates": 1,
+          "samples": 4
+        }
+      ],
+      "mode": "simulation",
+      "unsupported_requests": []
+    },
+    "id": "heldout-language-15-s2",
+    "request": "请编排：Pierce BCA蛋白定量：3个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：4个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 750. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+    "style": "mixed"
+  },
+  "error": null,
+  "result": {
+    "api": "openai-completions",
+    "attempts": 0,
+    "clarification": null,
+    "code": "BLOCKED",
+    "generated": null,
+    "model": "glm-4-flash-250414",
+    "ok": false,
+    "prompt_sha256": "e9224c8fc8489f7b8b0872b838cf96808cb2d9064f2fecdbafbe4f89d09ed847",
+    "provider": "zai",
+    "request": "请编排：Pierce BCA蛋白定量：3个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：4个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 750. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+    "scope": "Digital planning only; provider usage and nominal pricing are retained separately",
+    "source_author": "../../../../Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/biofoundry-author.ts",
+    "tool_choice": "auto",
+    "trace": [
+      {
+        "message": {
+          "content": [
+            {
+              "text": "请编排：Pierce BCA蛋白定量：3个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：4个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 750. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+              "type": "text"
+            }
+          ],
+          "role": "user",
+          "timestamp": 1792395427217
+        },
+        "type": "message_end"
+      },
+      {
+        "message": {
+          "api": "openai-completions",
+          "content": [
+            {
+              "text": "It seems you haven't provided an experimental objective. Could you please specify the experiment you want to compile?",
+              "type": "text"
+            }
+          ],
+          "model": "glm-4-flash-250414",
+          "provider": "zai",
+          "rawStopReason": "stop",
+          "responseId": "202610191537079f81af90a5c54a0e",
+          "role": "assistant",
+          "stopReason": "stop",
+          "timestamp": 1792395427245,
+          "usage": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0,
+              "total": 0
+            },
+            "input": 12728,
+            "output": 23,
+            "reasoning": 0,
+            "totalTokens": 12751
+          }
+        },
+        "type": "message_end"
+      }
+    ]
+  },
+  "wall_s": 3.6946507089996885
+}

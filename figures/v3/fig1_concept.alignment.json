@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "python-matplotlib",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 1,
+    "exemptions": 1
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "python-matplotlib",
+    "figure": {
+      "width_pt": 510.23622047244095,
+      "height_pt": 447.87401574803147
+    },
+    "panels": [
+      {
+        "id": "card0",
+        "bbox_pt": [
+          17.858267716535433,
+          326.948031496063,
+          107.86393700787401,
+          412.04409448818893
+        ],
+        "panel_label": "a",
+        "panel_label_anchor_pt": [
+          10.207785826771655,
+          413.7460157480315
+        ]
+      },
+      {
+        "id": "card1",
+        "bbox_pt": [
+          113.98677165354331,
+          326.948031496063,
+          203.9924409448819,
+          412.04409448818893
+        ],
+        "panel_label": "b",
+        "panel_label_anchor_pt": [
+          106.33628976377953,
+          413.7460157480315
+        ]
+      },
+      {
+        "id": "card2",
+        "bbox_pt": [
+          210.11527559055122,
+          326.948031496063,
+          300.1209448818898,
+          412.04409448818893
+        ],
+        "panel_label": "c",
+        "panel_label_anchor_pt": [
+          202.46479370078745,
+          413.7460157480315
+        ]
+      },
+      {
+        "id": "card3",
+        "bbox_pt": [
+          306.24377952755907,
+          326.948031496063,
+          396.2494488188977,
+          412.04409448818893
+        ],
+        "panel_label": "d",
+        "panel_label_anchor_pt": [
+          298.59329763779533,
+          413.7460157480315
+        ]
+      },
+      {
+        "id": "card4",
+        "bbox_pt": [
+          402.372283464567,
+          326.948031496063,
+          492.37795275590554,
+          412.04409448818893
+        ],
+        "panel_label": "e",
+        "panel_label_anchor_pt": [
+          394.7218015748032,
+          413.7460157480315
+        ]
+      }
+    ],
+    "row_groups": [
+      {
+        "id": "row-1",
+        "panels": [
+          "card0",
+          "card1",
+          "card2",
+          "card3",
+          "card4"
+        ]
+      }
+    ],
+    "column_groups": [],
+    "boundary_groups": [],
+    "exemptions": [
+      {
+        "panels": [
+          "card0",
+          "card1",
+          "card2",
+          "card3",
+          "card4"
+        ],
+        "checks": [
+          "panel-width"
+        ],
+        "reason": "Equal-width intent-to-rehearsal cards are visually encoded as a single flow row; each card has the same measured width."
+      }
+    ]
+  },
+  "findings": []
+}

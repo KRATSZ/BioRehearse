@@ -1,0 +1,621 @@
+{
+  "schema": "biorehearse.v3.asset-gallery-provenance/1",
+  "renderer": "Blender 5.2.0 LTS",
+  "engine": "BLENDER_WORKBENCH",
+  "studio": "Workbench paint.sl; Standard; Medium High Contrast; cavity and outline; long projections disabled",
+  "images": [
+    {
+      "image": "transparent/asset-fluent1080.png",
+      "asset_id": "fluent1080",
+      "group": "Liquid handling",
+      "display_name": "Fluent 1080",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        2.150607,
+        1.033489,
+        1.994862
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-tecan-fluent780.png",
+      "asset_id": "tecan-fluent780",
+      "group": "Liquid handling",
+      "display_name": "Fluent 780",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        1.65,
+        0.923,
+        1.977
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-agilent_bravo_assaymap.png",
+      "asset_id": "agilent_bravo_assaymap",
+      "group": "Liquid handling",
+      "display_name": "AssayMAP Bravo / Bravo 96AM Head",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.648,
+        0.438,
+        0.697
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-opentrons_flex_project.png",
+      "asset_id": "opentrons_flex_project",
+      "group": "Liquid handling",
+      "display_name": "Flex \u00b7 \u672c\u9879\u76ee\u7cbe\u7ec6\u6a21\u578b",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.87,
+        0.6897,
+        0.84
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-spectramax-id5.png",
+      "asset_id": "spectramax-id5",
+      "group": "Optical detection",
+      "display_name": "SpectraMax iD5",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.532356,
+        0.786832,
+        0.407738
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-spectramax-i3x.png",
+      "asset_id": "spectramax-i3x",
+      "group": "Optical detection",
+      "display_name": "SpectraMax i3X with SpectraMax MiniMax 300",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.3923,
+        0.6663,
+        0.4459
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-bmg_clariostarplus.png",
+      "asset_id": "bmg_clariostarplus",
+      "group": "Optical detection",
+      "display_name": "CLARIOstar Plus",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.4512,
+        0.5168,
+        0.401
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-thermo_ibrightfl1500.png",
+      "asset_id": "thermo_ibrightfl1500",
+      "group": "Optical detection",
+      "display_name": "iBright FL1500",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.38,
+        0.679,
+        0.6
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-ika_ks4000.png",
+      "asset_id": "ika_ks4000",
+      "group": "Incubation and culture",
+      "display_name": "KS 4000 i control",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.58,
+        0.75,
+        0.770705
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-biotek-logphase-600.png",
+      "asset_id": "biotek-logphase-600",
+      "group": "Incubation and culture",
+      "display_name": "LogPhase 600",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.6603,
+        0.410016,
+        0.448579
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-eppendorf_cellxpertc170i.png",
+      "asset_id": "eppendorf_cellxpertc170i",
+      "group": "Incubation and culture",
+      "display_name": "CellXpert C170i",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.72,
+        0.7153,
+        0.9
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-sartorius_ambr15.png",
+      "asset_id": "sartorius_ambr15",
+      "group": "Incubation and culture",
+      "display_name": "Ambr 15",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.98,
+        0.528,
+        0.645785
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-cytiva_akta_pure_25m1.png",
+      "asset_id": "cytiva_akta_pure_25m1",
+      "group": "Chromatography and mass spectrometry",
+      "display_name": "AKTA pure/25M1\uff08\u5e38\u89c4\u578b\uff09",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.535,
+        0.47205,
+        0.629
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-agilent-1290-infinity-ii-analytical.png",
+      "asset_id": "agilent-1290-infinity-ii-analytical",
+      "group": "Chromatography and mass spectrometry",
+      "display_name": "1290 Infinity II",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.883701,
+        0.546812,
+        0.792137
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-agilent-rapidfire400-6470.png",
+      "asset_id": "agilent-rapidfire400-6470",
+      "group": "Chromatography and mass spectrometry",
+      "display_name": "Rapidfire400-6470",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        2.49,
+        0.844,
+        1.739
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-sciex_zenotof_7600.png",
+      "asset_id": "sciex_zenotof_7600",
+      "group": "Chromatography and mass spectrometry",
+      "display_name": "ZenoTOF 7600",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.57,
+        1.178,
+        1.12
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-bd_lsrfortessa.png",
+      "asset_id": "bd_lsrfortessa",
+      "group": "Cytometry and sequencing",
+      "display_name": "LSRFortessa (Special Order Research Product)",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.914,
+        0.798,
+        0.965
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-beckman_cytoflex_lx.png",
+      "asset_id": "beckman_cytoflex_lx",
+      "group": "Cytometry and sequencing",
+      "display_name": "CytoFLEX LX",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.605,
+        0.906294,
+        0.451
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-mgi_dnbseq_g99rs.png",
+      "asset_id": "mgi_dnbseq_g99rs",
+      "group": "Cytometry and sequencing",
+      "display_name": "DNBSEQ-G99RS",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.68,
+        0.607,
+        0.7
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-fluidigm_helios.png",
+      "asset_id": "fluidigm_helios",
+      "group": "Cytometry and sequencing",
+      "display_name": "Helios",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        1.03,
+        1.059794,
+        1.32
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-beckman_optima_xe100.png",
+      "asset_id": "beckman_optima_xe100",
+      "group": "Centrifugation",
+      "display_name": "Optima XE-100",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.94,
+        0.681,
+        1.257
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-beckman_optima_xpn100.png",
+      "asset_id": "beckman_optima_xpn100",
+      "group": "Centrifugation",
+      "display_name": "Optima XPN-100",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.94,
+        0.681,
+        1.257
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-thermo_sorvall_lynx6000.png",
+      "asset_id": "thermo_sorvall_lynx6000",
+      "group": "Centrifugation",
+      "display_name": "Sorvall LYNX 6000",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.7,
+        0.805,
+        1.048538
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    },
+    {
+      "image": "transparent/asset-eppendorf_5910ri.png",
+      "asset_id": "eppendorf_5910ri",
+      "group": "Centrifugation",
+      "display_name": "5910 Ri",
+      "width_px": 1400,
+      "height_px": 1050,
+      "native_dimensions_m": [
+        0.72,
+        0.68,
+        0.622811
+      ],
+      "display_scale": "not-to-scale; camera framing only"
+    }
+  ],
+  "sources": [
+    {
+      "asset_id": "fluent1080",
+      "normalized_glb": "assets/fluent1080.glb",
+      "glb_sha256": "f41cda99a50cc5ff800b11cff6c06e6b18d3d101d824253b0b091ddbe3f44aa6",
+      "contract": "library/fluent1080/asset.contract.json",
+      "contract_sha256": "833c68327f5825d1d9558ed106178f57f25241c6a94df4ca06085ecc3f3206dd",
+      "license": "Project-authored; upstream dimensional sources retain their stated licenses",
+      "source": "/Users/gaoyuan/Documents/test/virtual-lab/sim/biofoundry_geometry.py"
+    },
+    {
+      "asset_id": "tecan-fluent780",
+      "normalized_glb": "library/tecan-fluent780/model.glb",
+      "glb_sha256": "b3197d259a5250267662fe3fe1c76f0b4e0c729b2830cab1e090a4110aaaf96c",
+      "contract": "library/tecan-fluent780/asset.contract.json",
+      "contract_sha256": "9377a9c4b896231117ce71eb4e6485ba7ec2529da19aa0d41a2ed04f426523bf",
+      "license": "Project-authored illustrative geometry; manufacturer reference images/documents remain Tecan copyright and are not texture assets.",
+      "source": "https://www.tecan.com/hubfs/Knowledgebase/Manuals/Fluent/399706_en%20V2_7.pdf"
+    },
+    {
+      "asset_id": "agilent_bravo_assaymap",
+      "normalized_glb": "library/agilent_bravo_assaymap/model.glb",
+      "glb_sha256": "dfb940d2722b5e003383b6d044caa248697177ffbd383ae6166902f5ab0418af",
+      "contract": "library/agilent_bravo_assaymap/asset.contract.json",
+      "contract_sha256": "edf7eb2b0ae422d5abba73887d292357646ebecfdc71bc5a71f665dde2dde622",
+      "license": "CC0-1.0 (authored geometry only)",
+      "source": "exports/biofoundry/sources/authored/agilent_bravo_assaymap/research.json"
+    },
+    {
+      "asset_id": "opentrons_flex_project",
+      "normalized_glb": "library/opentrons_flex_project/model.glb",
+      "glb_sha256": "2ed7c36970703d2e2e720d9d3a9c56a2da7c00b8d00e4490b3c45f296385e9c8",
+      "contract": "library/opentrons_flex_project/asset.contract.json",
+      "contract_sha256": "7be541fb5cf541076f5232c9dcd3c3bbc15065767d99d3e37f1041897ba31d48",
+      "license": "Project source; redistribution license not declared",
+      "source": "/Users/gaoyuan/Documents/test/virtual-lab/blender/flex.blend"
+    },
+    {
+      "asset_id": "spectramax-id5",
+      "normalized_glb": "assets/spectramax-id5.glb",
+      "glb_sha256": "83211c423a70439069d1d8104b1dca58d25e4fdbd7a0b7f53520b18f2e742e8f",
+      "contract": "library/spectramax-id5/asset.contract.json",
+      "contract_sha256": "ce20a61ef572f4c92e96850bb801c0286f244ac04a491829fa8c0731d5dbbf47",
+      "license": "Project-authored; upstream dimensional sources retain their stated licenses",
+      "source": "/Users/gaoyuan/Documents/test/virtual-lab/sim/biofoundry_geometry.py"
+    },
+    {
+      "asset_id": "spectramax-i3x",
+      "normalized_glb": "library/spectramax-i3x/model.glb",
+      "glb_sha256": "3b0644c1de355296f89740aa3476b7b243ef7938b13a026ff423306265068f39",
+      "contract": "library/spectramax-i3x/asset.contract.json",
+      "contract_sha256": "d076e41fdefcf887f3642737383671054cc3f6808738d025607f945c2ba03e3a",
+      "license": "CC0-1.0 (original project geometry only; manufacturer and facility references retain their own rights)",
+      "source": "https://www.moleculardevices.com/sites/default/files/en/assets/user-guide/br/spectramax-i3x-user-guide-5039228g.pdf"
+    },
+    {
+      "asset_id": "bmg_clariostarplus",
+      "normalized_glb": "library/bmg_clariostarplus/model.glb",
+      "glb_sha256": "b1015154d767cf33cea133dddbdf0231782d643ac94b4406653b0217300dd222",
+      "contract": "library/bmg_clariostarplus/asset.contract.json",
+      "contract_sha256": "2ec7679937476da642b08f57aff53314ddf08c96b6d9852c0286415bafb34175",
+      "license": "CC BY-NC 4.0; third-party exceptions in NOTICE.md",
+      "source": "https://huggingface.co/datasets/MBZUAI/ChemLab-Assets/tree/ac95c1bcb717a71e3036993ef9102ed20fa028c0/assets/expansion_batch04/t4_measure/bmg_clariostarplus"
+    },
+    {
+      "asset_id": "thermo_ibrightfl1500",
+      "normalized_glb": "library/thermo_ibrightfl1500/model.glb",
+      "glb_sha256": "1fde10e0a519b97e00ea53bf38a55905eb088127bc2fa81204cb105c4e1eba2f",
+      "contract": "library/thermo_ibrightfl1500/asset.contract.json",
+      "contract_sha256": "2148ce503101feb6098defd10bfbfec3872a1c905ca078cc4ed780c55299a109",
+      "license": "CC BY-NC 4.0; third-party exceptions in NOTICE.md",
+      "source": "https://huggingface.co/datasets/MBZUAI/ChemLab-Assets/tree/ac95c1bcb717a71e3036993ef9102ed20fa028c0/assets/expansion_batch03/t4_measure/thermo_ibrightfl1500"
+    },
+    {
+      "asset_id": "ika_ks4000",
+      "normalized_glb": "library/ika_ks4000/model.glb",
+      "glb_sha256": "7585fca7e91e02d6e53b97c97593fc4c84fb3c612a0f2ee6e9cdfdc1c0bd2f54",
+      "contract": "library/ika_ks4000/asset.contract.json",
+      "contract_sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897",
+      "license": "CC BY-NC 4.0; third-party exceptions in NOTICE.md",
+      "source": "https://huggingface.co/datasets/MBZUAI/ChemLab-Assets/tree/ac95c1bcb717a71e3036993ef9102ed20fa028c0/assets/expansion_batch03/t4_measure/ika_ks4000"
+    },
+    {
+      "asset_id": "biotek-logphase-600",
+      "normalized_glb": "library/biotek-logphase-600/model.glb",
+      "glb_sha256": "f08ffcfef6d99a50f679257a6d6b7862389e167d2013c13a318f52ef5e397430",
+      "contract": "library/biotek-logphase-600/asset.contract.json",
+      "contract_sha256": "df6825ab8699ecf7e3ec7e714b1fabdafd7bafd7a6170ceb20ed3cf633a9de83",
+      "license": "CC0-1.0 (original project geometry only; manufacturer and facility references retain their own rights)",
+      "source": "https://www.agilent.com/cs/library/Support/Documents/Sales/Agilent_BioTek_LogPhase600_brochure-Final.pdf"
+    },
+    {
+      "asset_id": "eppendorf_cellxpertc170i",
+      "normalized_glb": "library/eppendorf_cellxpertc170i/model.glb",
+      "glb_sha256": "4bf64ed3deeb53e07e1f885cb5aea49cd74675d01c483893cb6971f7f3cdd21d",
+      "contract": "library/eppendorf_cellxpertc170i/asset.contract.json",
+      "contract_sha256": "decef0d01da4113c078228598c5028f01f92f6d0ba164db13eecd4eb297cc633",
+      "license": "CC BY-NC 4.0; third-party exceptions in NOTICE.md",
+      "source": "https://huggingface.co/datasets/MBZUAI/ChemLab-Assets/tree/ac95c1bcb717a71e3036993ef9102ed20fa028c0/assets/expansion_batch04/t4_measure/eppendorf_cellxpertc170i"
+    },
+    {
+      "asset_id": "sartorius_ambr15",
+      "normalized_glb": "library/sartorius_ambr15/model.glb",
+      "glb_sha256": "97fa757b42dd4a8a9ad2823f55f9982a89b25a2bfd2f09d7af46e91f723385f5",
+      "contract": "library/sartorius_ambr15/asset.contract.json",
+      "contract_sha256": "8c30e7c6035b49d28d5ef17a3b816c93a7ba42e932adc270b441193155ebac48",
+      "license": "CC0-1.0 (original generated geometry only; manufacturer/facility references retain their own rights)",
+      "source": "https://www.sartorius.com/resource/blob/33658/e909f254bafabad2a9cf41c92ae2650c/broch-ambr15-ferment-sbi1542-e--2--data.pdf"
+    },
+    {
+      "asset_id": "cytiva_akta_pure_25m1",
+      "normalized_glb": "library/cytiva_akta_pure_25m1/model.glb",
+      "glb_sha256": "deee35bedce229acba97c8ba539551bcdff51216fe2bfd07301f62ad080d9aa7",
+      "contract": "library/cytiva_akta_pure_25m1/asset.contract.json",
+      "contract_sha256": "89e4dd5acfc7b96ee4afdd4d7a88941e7ee2320febfdbe0b6b36bfbc57d0f0e7",
+      "license": "Project-authored geometry; source reference documents retain their respective copyright.",
+      "source": "https://www.cytivalifesciences.co.kr/model/akta-pure/"
+    },
+    {
+      "asset_id": "agilent-1290-infinity-ii-analytical",
+      "normalized_glb": "library/agilent-1290-infinity-ii-analytical/model.glb",
+      "glb_sha256": "be4d6859a375a514a14f0ccf080d4456a81425d170fc7d533fb7fa774d1521fc",
+      "contract": "library/agilent-1290-infinity-ii-analytical/asset.contract.json",
+      "contract_sha256": "64c38e23b40fc244265debd8d282b5d35de90d2f38c78a2b04cabcc10352995e",
+      "license": "CC BY-NC 4.0 for reused ChemLab components and derivative assemblies; original project additions retain project terms; manufacturer references remain manufacturer copyright",
+      "source": "https://cloudlab.siat.ac.cn/"
+    },
+    {
+      "asset_id": "agilent-rapidfire400-6470",
+      "normalized_glb": "library/agilent-rapidfire400-6470/model.glb",
+      "glb_sha256": "ad47ea53e300fadcb50e0391d097008bac314a435972875428b6ecb4129b81bc",
+      "contract": "library/agilent-rapidfire400-6470/asset.contract.json",
+      "contract_sha256": "1c7ad3b05e79f014e486623fef077047470ac9d296d8465231b1661554535f6b",
+      "license": "CC BY-NC 4.0 for reused ChemLab components and derivative assemblies; original project additions retain project terms; manufacturer references remain manufacturer copyright",
+      "source": "https://cloudlab.siat.ac.cn/"
+    },
+    {
+      "asset_id": "sciex_zenotof_7600",
+      "normalized_glb": "library/sciex_zenotof_7600/model.glb",
+      "glb_sha256": "960883a6a506ef573ba5ea8f884fbc392cca557f0089b774bbe02039b7d9dfd4",
+      "contract": "library/sciex_zenotof_7600/asset.contract.json",
+      "contract_sha256": "4688ab84a8fddeb4cf602d49fb40cccbc32b0816ec3df128d8057e40bccb583f",
+      "license": "Project-authored geometry; manufacturer and facility reference material retain original copyright.",
+      "source": "https://sciex.com/content/dam/SCIEX/pdf/customer-docs/user-guide/7600-system-user-guide-en.pdf"
+    },
+    {
+      "asset_id": "bd_lsrfortessa",
+      "normalized_glb": "library/bd_lsrfortessa/model.glb",
+      "glb_sha256": "dbf477eef7b682594ad800d33d7471130d759d7a761d6a6617e92ad82cb74a42",
+      "contract": "library/bd_lsrfortessa/asset.contract.json",
+      "contract_sha256": "013445377c9df0fab2799288c471203aa7296e3d99c8f03bd18371b0655a1b8c",
+      "license": "CC-BY-4.0",
+      "source": "https://static.bdbiosciences.com/documents/SO_LSRFortessaCellAnalyzer_TechSpec.pdf"
+    },
+    {
+      "asset_id": "beckman_cytoflex_lx",
+      "normalized_glb": "library/beckman_cytoflex_lx/model.glb",
+      "glb_sha256": "55a5ad548ef033614f478ce931617853c154b7127dcc5b6020d5182f342a5ea8",
+      "contract": "library/beckman_cytoflex_lx/asset.contract.json",
+      "contract_sha256": "8d319d35e51d986aa7eaaad9d11af8f8aa986b08d6524480cbedac3aed83896b",
+      "license": "CC-BY-4.0",
+      "source": "https://store.beckman.com/en-AU/p/cytoflex-lx-flow-cytometer/c40312"
+    },
+    {
+      "asset_id": "mgi_dnbseq_g99rs",
+      "normalized_glb": "library/mgi_dnbseq_g99rs/model.glb",
+      "glb_sha256": "0545ce7ac1b83c6f5ea6464962c5ec5eea53ac0d841b95bf854a1254d0ebcb1a",
+      "contract": "library/mgi_dnbseq_g99rs/asset.contract.json",
+      "contract_sha256": "c2117cc4ff4848e95665dd749da788e7ec090cbdd5a0f317c808f8dd85f52a0f",
+      "license": "CC-BY-4.0",
+      "source": "https://framerusercontent.com/assets/Dh6PWFHOUJRP5tQZ2m31pBXhFE.pdf"
+    },
+    {
+      "asset_id": "fluidigm_helios",
+      "normalized_glb": "library/fluidigm_helios/model.glb",
+      "glb_sha256": "ccd8772c77633223dde4b3b41d7af6576cd7df9d49c8fdb19376a5810dace4c6",
+      "contract": "library/fluidigm_helios/asset.contract.json",
+      "contract_sha256": "121b615da5f1039d720f9852809d2c7538ff004c946bc33520b6b2dcaddf137d",
+      "license": "CC-BY-4.0",
+      "source": "https://alab.com.pl/produkt-plik/124/2156/Helios%2BSpecification%2BSheet.pdf"
+    },
+    {
+      "asset_id": "beckman_optima_xe100",
+      "normalized_glb": "library/beckman_optima_xe100/model.glb",
+      "glb_sha256": "b274ffc4c923040c101d0d1efa5d04ba1488858888a73b17eb007ff92af48522",
+      "contract": "library/beckman_optima_xe100/asset.contract.json",
+      "contract_sha256": "4f5050f9e6f5197cd4e44967eced290bfd121982ae08b73d755acbb4dca061b0",
+      "license": "CC-BY-4.0 (original procedural meshes and recipe only; manufacturer documents and facility photos retain their own rights)",
+      "source": "https://infrasynbio.siat.ac.cn/platform/instrumentation/70"
+    },
+    {
+      "asset_id": "beckman_optima_xpn100",
+      "normalized_glb": "library/beckman_optima_xpn100/model.glb",
+      "glb_sha256": "eff4278d00b00a913bddc149041638a60494fbaff2b0fafa49a6298dea09109d",
+      "contract": "library/beckman_optima_xpn100/asset.contract.json",
+      "contract_sha256": "1b5bf43c5abc697e7a563d2ba5c9064cae97e02770095b5014055eade45648be",
+      "license": "CC-BY-4.0 (original procedural meshes and recipe only; manufacturer documents and facility photos retain their own rights)",
+      "source": "https://infrasynbio.siat.ac.cn/platform/instrumentation/66"
+    },
+    {
+      "asset_id": "thermo_sorvall_lynx6000",
+      "normalized_glb": "library/thermo_sorvall_lynx6000/model.glb",
+      "glb_sha256": "acbb8e72512251e26c88edeb382c98d637987cb19e4622c9d8f6b9587b2a1ffe",
+      "contract": "library/thermo_sorvall_lynx6000/asset.contract.json",
+      "contract_sha256": "e0340a711f9f4d6a27b30b5a09165662d572cfb1e73c6043f4aa44bbf3e47ca4",
+      "license": "CC-BY-4.0 (original procedural meshes and recipe only; manufacturer documents and facility photos retain their own rights)",
+      "source": "https://infrasynbio.siat.ac.cn/platform/instrumentation/22"
+    },
+    {
+      "asset_id": "eppendorf_5910ri",
+      "normalized_glb": "library/eppendorf_5910ri/model.glb",
+      "glb_sha256": "89e886caf5308d1dcdd51cabb7d3d494cbc559c9b69b4fb6a62841ed67e081ae",
+      "contract": "library/eppendorf_5910ri/asset.contract.json",
+      "contract_sha256": "ef1756feac0ff83d50fb280b7c5dc17949258685a5bc377ccd982801380f7fae",
+      "license": "CC BY-NC 4.0; third-party exceptions in NOTICE.md",
+      "source": "https://huggingface.co/datasets/MBZUAI/ChemLab-Assets/tree/ac95c1bcb717a71e3036993ef9102ed20fa028c0/assets/basic40_batch02/t3_analytical/eppendorf_5910ri"
+    }
+  ],
+  "geometry_policy": "native GLB metre scale; local-origin normalisation and rigid framing only; no source mesh rescaling",
+  "display_scale": "each tile is independently framed and therefore not-to-scale across assets; native dimensions are recorded per image",
+  "transparent_film": true,
+  "groups": [
+    {
+      "name": "Liquid handling",
+      "asset_ids": [
+        "fluent1080",
+        "tecan-fluent780",
+        "agilent_bravo_assaymap",
+        "opentrons_flex_project"
+      ]
+    },
+    {
+      "name": "Optical detection",
+      "asset_ids": [
+        "spectramax-id5",
+        "spectramax-i3x",
+        "bmg_clariostarplus",
+        "thermo_ibrightfl1500"
+      ]
+    },
+    {
+      "name": "Incubation and culture",
+      "asset_ids": [
+        "ika_ks4000",
+        "biotek-logphase-600",
+        "eppendorf_cellxpertc170i",
+        "sartorius_ambr15"
+      ]
+    },
+    {
+      "name": "Chromatography and mass spectrometry",
+      "asset_ids": [
+        "cytiva_akta_pure_25m1",
+        "agilent-1290-infinity-ii-analytical",
+        "agilent-rapidfire400-6470",
+        "sciex_zenotof_7600"
+      ]
+    },
+    {
+      "name": "Cytometry and sequencing",
+      "asset_ids": [
+        "bd_lsrfortessa",
+        "beckman_cytoflex_lx",
+        "mgi_dnbseq_g99rs",
+        "fluidigm_helios"
+      ]
+    },
+    {
+      "name": "Centrifugation",
+      "asset_ids": [
+        "beckman_optima_xe100",
+        "beckman_optima_xpn100",
+        "thermo_sorvall_lynx6000",
+        "eppendorf_5910ri"
+      ]
+    }
+  ]
+}

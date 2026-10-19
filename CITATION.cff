@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite this software release when using BioRehearse."
-title: "BioRehearse: executable digital rehearsal for registered biofoundry plans"
-version: 0.2.0
+title: "BioRehearse: rehearsing laboratory plans in an executable digital model"
+version: 0.3.0
 date-released: 2026-10-19
 authors:
   - family-names: Gao

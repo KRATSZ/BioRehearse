@@ -1,0 +1,421 @@
+{
+  "base_status": [
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "b158a4291df2d1b8ccf5e0ae",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "4a9998d2b3677784c61bbe52",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "3838ec9334880a00b6a08d1b",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "3c1e51ccd28364e36824de33",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "e4bbfad10afbefc3335e6480",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "4d93c1090539e87d15c19f3d",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "1b3628cbb514457bca1f5c7f",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "29c40743d0174757f760e3f3",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "4e593e709eb12cecf7e62695",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "e188e685febb1ab0221c651f",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "777173bdf87b843fc4466ab5",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "cd6cc55e37fe234c569f8b9d",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "dd339bdbe7ae8cfdabf2fb13",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "dca551af97787b84a2d3d8cd",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "a6e9e8c6d6e9c1e2e21ef7a8",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "001dd6d0c679c512f6a9d6b6",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "f8cdde99f9f0caee914ec2ac",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "395ae999a5a1aa371f85a602",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "b2aa35282c611f0be3451cdf",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "27add5be8c36554f4baf4776",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "d26db48f1574e94c8bd0fefb",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "6efd6d7e9b4af64b8c9860e0",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "781df6bc5decb35068e9a9d5",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "f2c1b6a715d723d0c1e55db4",
+      "schedule_valid": true
+    }
+  ],
+  "counts": {
+    "access_order": 72,
+    "change_volume": 72,
+    "control": 40,
+    "delete_transfer": 72,
+    "incompatible_device": 72,
+    "intent_deadline": 7,
+    "shift_time": 72
+  },
+  "equivalent_false_positive": {
+    "detected": 0,
+    "rate": 0.0,
+    "total": 46
+  },
+  "freeze_sha256": "772e9b82ace7a8596e3d0e4974d9130e65d4240c4eb6858fe0bab0eaef5c8d9d",
+  "known_error_yield": {
+    "detected": 361,
+    "rate": 1.0,
+    "total": 361
+  },
+  "layers": {
+    "access_order": {
+      "asset_contract": {
+        "detected": 72,
+        "not_applicable": 0,
+        "rate": 1.0,
+        "total": 72
+      },
+      "intent": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "mass_balance": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "material_location": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "schedule": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      }
+    },
+    "change_volume": {
+      "asset_contract": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "intent": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "mass_balance": {
+        "detected": 72,
+        "not_applicable": 0,
+        "rate": 1.0,
+        "total": 72
+      },
+      "material_location": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "schedule": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 72
+      }
+    },
+    "control": {
+      "asset_contract": {
+        "detected": 0,
+        "not_applicable": 40,
+        "rate": null,
+        "total": 0
+      },
+      "intent": {
+        "detected": 0,
+        "not_applicable": 40,
+        "rate": null,
+        "total": 0
+      },
+      "mass_balance": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 40
+      },
+      "material_location": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 40
+      },
+      "schedule": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 40
+      }
+    },
+    "delete_transfer": {
+      "asset_contract": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "intent": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "mass_balance": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "material_location": {
+        "detected": 66,
+        "not_applicable": 0,
+        "rate": 0.9166666666666666,
+        "total": 72
+      },
+      "schedule": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 72
+      }
+    },
+    "incompatible_device": {
+      "asset_contract": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "intent": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "mass_balance": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "material_location": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "schedule": {
+        "detected": 72,
+        "not_applicable": 0,
+        "rate": 1.0,
+        "total": 72
+      }
+    },
+    "intent_deadline": {
+      "asset_contract": {
+        "detected": 0,
+        "not_applicable": 7,
+        "rate": null,
+        "total": 0
+      },
+      "intent": {
+        "detected": 7,
+        "not_applicable": 0,
+        "rate": 1.0,
+        "total": 7
+      },
+      "mass_balance": {
+        "detected": 0,
+        "not_applicable": 7,
+        "rate": null,
+        "total": 0
+      },
+      "material_location": {
+        "detected": 0,
+        "not_applicable": 7,
+        "rate": null,
+        "total": 0
+      },
+      "schedule": {
+        "detected": 0,
+        "not_applicable": 7,
+        "rate": null,
+        "total": 0
+      }
+    },
+    "shift_time": {
+      "asset_contract": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "intent": {
+        "detected": 0,
+        "not_applicable": 72,
+        "rate": null,
+        "total": 0
+      },
+      "mass_balance": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "material_location": {
+        "detected": 0,
+        "not_applicable": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "schedule": {
+        "detected": 72,
+        "not_applicable": 0,
+        "rate": 1.0,
+        "total": 72
+      }
+    }
+  },
+  "layers_for_matrix": [
+    "intent",
+    "schedule",
+    "mass_balance",
+    "material_location",
+    "asset_contract"
+  ],
+  "misses": [],
+  "notes": [
+    "Compiled-plan probes and asset-action probes are separate input types; the asset-contract layer is not applied to the 24 portfolio plans.",
+    "Intent is reported only for the seven recorded deadline mismatches; compiled-plan mutations are not re-scored as intent.",
+    "Known/equivalent labels come from predeclared construction or frozen diagnostic records, not checker outputs; all controls and misses are retained.",
+    "No mutation yield is interpreted as natural error prevalence."
+  ],
+  "oracle_counts": {
+    "equivalent_control": 40,
+    "equivalent_mutation": 6,
+    "known_violation": 361
+  },
+  "schema": "biofoundry.v3.1.mutation-summary/1",
+  "seed": 20261020,
+  "unexpected_equivalent_detections": [],
+  "union": {
+    "detected": 361,
+    "rate": 0.8869778869778869,
+    "total": 407
+  }
+}

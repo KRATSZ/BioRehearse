@@ -1,0 +1,97 @@
+{
+  "counts": {
+    "access_order": 24,
+    "delete_transfer": 24,
+    "device_resource": 48,
+    "shift_offset": 48,
+    "volume_factor": 48
+  },
+  "detected_by_label": {
+    "known_access_violation": 24,
+    "known_precedence_violation": 22,
+    "known_resource_mismatch": 47,
+    "known_violation": 21,
+    "protocol_quantity_mismatch": 6
+  },
+  "detected_union": 145,
+  "factors": [
+    0.5,
+    0.8,
+    1.2,
+    1.5
+  ],
+  "misses": [
+    "v3-challenge-0000",
+    "v3-challenge-0001",
+    "v3-challenge-0002",
+    "v3-challenge-0003",
+    "v3-challenge-0004",
+    "v3-challenge-0005",
+    "v3-challenge-0006",
+    "v3-challenge-0007",
+    "v3-challenge-0008",
+    "v3-challenge-0009",
+    "v3-challenge-0010",
+    "v3-challenge-0012",
+    "v3-challenge-0013",
+    "v3-challenge-0014",
+    "v3-challenge-0015",
+    "v3-challenge-0017",
+    "v3-challenge-0018",
+    "v3-challenge-0019",
+    "v3-challenge-0020",
+    "v3-challenge-0021",
+    "v3-challenge-0022",
+    "v3-challenge-0024",
+    "v3-challenge-0025",
+    "v3-challenge-0026",
+    "v3-challenge-0027",
+    "v3-challenge-0028",
+    "v3-challenge-0029",
+    "v3-challenge-0031",
+    "v3-challenge-0032",
+    "v3-challenge-0033",
+    "v3-challenge-0034",
+    "v3-challenge-0035",
+    "v3-challenge-0036",
+    "v3-challenge-0037",
+    "v3-challenge-0038",
+    "v3-challenge-0039",
+    "v3-challenge-0040",
+    "v3-challenge-0042",
+    "v3-challenge-0043",
+    "v3-challenge-0044",
+    "v3-challenge-0046",
+    "v3-challenge-0047"
+  ],
+  "misses_by_label": {
+    "protocol_quantity_mismatch": 42
+  },
+  "notes": [
+    "Exploratory challenge; excluded from frozen v3.1 headline scores.",
+    "protocol_quantity_mismatch labels preserve method-level quantity changes even when mass conservation remains valid.",
+    "Resource and time labels are assigned from declared candidates or arithmetic precedence, while checker detections remain separate.",
+    "Asset-order rows are Workflow.act traces over selected delivered contracts, not portfolio-plan rows."
+  ],
+  "offsets_s": [
+    -600,
+    -60,
+    -1,
+    1,
+    60,
+    600
+  ],
+  "oracle_counts": {
+    "equivalent_mutation": 3,
+    "equivalent_resource": 1,
+    "equivalent_time_shift": 26,
+    "known_access_violation": 24,
+    "known_precedence_violation": 22,
+    "known_resource_mismatch": 47,
+    "known_violation": 21,
+    "protocol_quantity_mismatch": 48
+  },
+  "schema": "biofoundry.v3.exploratory-mutation-challenge/1",
+  "seed": 20261021,
+  "total": 192
+}

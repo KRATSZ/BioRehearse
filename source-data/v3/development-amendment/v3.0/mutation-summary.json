@@ -1,0 +1,356 @@
+{
+  "base_status": [
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "b158a4291df2d1b8ccf5e0ae",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "4a9998d2b3677784c61bbe52",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "3838ec9334880a00b6a08d1b",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "3c1e51ccd28364e36824de33",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "e4bbfad10afbefc3335e6480",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "4d93c1090539e87d15c19f3d",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "1b3628cbb514457bca1f5c7f",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "29c40743d0174757f760e3f3",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "4e593e709eb12cecf7e62695",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "e188e685febb1ab0221c651f",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "777173bdf87b843fc4466ab5",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "cd6cc55e37fe234c569f8b9d",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "dd339bdbe7ae8cfdabf2fb13",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "dca551af97787b84a2d3d8cd",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "a6e9e8c6d6e9c1e2e21ef7a8",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "001dd6d0c679c512f6a9d6b6",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "f8cdde99f9f0caee914ec2ac",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "395ae999a5a1aa371f85a602",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "b2aa35282c611f0be3451cdf",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "27add5be8c36554f4baf4776",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "d26db48f1574e94c8bd0fefb",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "6efd6d7e9b4af64b8c9860e0",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "781df6bc5decb35068e9a9d5",
+      "schedule_valid": true
+    },
+    {
+      "mass_valid": true,
+      "material_valid": true,
+      "plan": "f2c1b6a715d723d0c1e55db4",
+      "schedule_valid": true
+    }
+  ],
+  "counts": {
+    "access_order": 72,
+    "change_volume": 72,
+    "control": 40,
+    "delete_transfer": 72,
+    "incompatible_device": 72,
+    "shift_time": 72
+  },
+  "freeze_sha256": "adec0f1d1ad9f4590b126690ea80f20f8ed353a063b8b60b466795ff46ff9d40",
+  "layers": {
+    "access_order": {
+      "asset_contract": {
+        "detected": 72,
+        "rate": 1.0,
+        "total": 72
+      },
+      "intent": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "mass_balance": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "material_location": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "schedule": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      }
+    },
+    "change_volume": {
+      "asset_contract": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "intent": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "mass_balance": {
+        "detected": 72,
+        "rate": 1.0,
+        "total": 72
+      },
+      "material_location": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "schedule": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      }
+    },
+    "control": {
+      "asset_contract": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 40
+      },
+      "intent": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 40
+      },
+      "mass_balance": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 40
+      },
+      "material_location": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 40
+      },
+      "schedule": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 40
+      }
+    },
+    "delete_transfer": {
+      "asset_contract": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "intent": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "mass_balance": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "material_location": {
+        "detected": 63,
+        "rate": 0.875,
+        "total": 72
+      },
+      "schedule": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      }
+    },
+    "incompatible_device": {
+      "asset_contract": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "intent": {
+        "detected": 72,
+        "rate": 1.0,
+        "total": 72
+      },
+      "mass_balance": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "material_location": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "schedule": {
+        "detected": 72,
+        "rate": 1.0,
+        "total": 72
+      }
+    },
+    "shift_time": {
+      "asset_contract": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "intent": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "mass_balance": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "material_location": {
+        "detected": 0,
+        "rate": 0.0,
+        "total": 72
+      },
+      "schedule": {
+        "detected": 72,
+        "rate": 1.0,
+        "total": 72
+      }
+    }
+  },
+  "layers_for_matrix": [
+    "intent",
+    "schedule",
+    "mass_balance",
+    "material_location",
+    "asset_contract"
+  ],
+  "misses": [
+    "v3-0047",
+    "v3-0056",
+    "v3-0060",
+    "v3-0070",
+    "v3-0072",
+    "v3-0084",
+    "v3-0091",
+    "v3-0098",
+    "v3-0111"
+  ],
+  "notes": [
+    "Mutants are post-compilation probes; intent is not applicable except where explicitly changed by the incompatible-device mutator.",
+    "known_violation labels come from mutator construction, not checker results; controls and misses are retained.",
+    "No mutation rate is interpreted as natural error prevalence."
+  ],
+  "oracle_counts": {
+    "equivalent_control": 40,
+    "known_violation": 360
+  },
+  "schema": "biofoundry.v3.mutation-summary/1",
+  "seed": 20261019,
+  "unexpected_equivalent_detections": [],
+  "union": {
+    "detected": 351,
+    "rate": 0.8775,
+    "total": 400
+  }
+}

@@ -1,0 +1,2262 @@
+[
+  {
+    "access_joint_names": [
+      "agilent-1260-infinity-ii-analytical_sampler_door_L",
+      "agilent-1260-infinity-ii-analytical_sampler_door_R",
+      "agilent-1260-infinity-ii-analytical_sampler_sample_tray"
+    ],
+    "access_node_ids": [
+      "agilent-1260-infinity-ii-analytical:53",
+      "agilent-1260-infinity-ii-analytical:58",
+      "agilent-1260-infinity-ii-analytical:84"
+    ],
+    "asset_id": "agilent-1260-infinity-ii-analytical",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/agilent-1260-infinity-ii-analytical/asset.contract.json",
+    "contract_sha256": "489395ec8a849a09d9caddfef62b654400fb2033ec11844fcd5a4cfbb911c6eb",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 12
+    },
+    "profile_source": "asset.contract.json:digital_protocol_profile",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "agilent-1260-infinity-ii-semiprep_sampler_door_L",
+      "agilent-1260-infinity-ii-semiprep_sampler_door_R",
+      "agilent-1260-infinity-ii-semiprep_sampler_sample_tray"
+    ],
+    "access_node_ids": [
+      "agilent-1260-infinity-ii-semiprep:87",
+      "agilent-1260-infinity-ii-semiprep:92",
+      "agilent-1260-infinity-ii-semiprep:118"
+    ],
+    "asset_id": "agilent-1260-infinity-ii-semiprep",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/agilent-1260-infinity-ii-semiprep/asset.contract.json",
+    "contract_sha256": "5cedb3bff031825c9d7c65f17459f145cf962c191ddd71bd5497ca2562caf9b0",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 12
+    },
+    "profile_source": "asset.contract.json:digital_protocol_profile",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "agilent-1290-infinity-ii-analytical_multisampler_door_L",
+      "agilent-1290-infinity-ii-analytical_multisampler_door_R",
+      "agilent-1290-infinity-ii-analytical_multisampler_sample_tray"
+    ],
+    "access_node_ids": [
+      "agilent-1290-infinity-ii-analytical:11",
+      "agilent-1290-infinity-ii-analytical:16",
+      "agilent-1290-infinity-ii-analytical:46"
+    ],
+    "asset_id": "agilent-1290-infinity-ii-analytical",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical/asset.contract.json",
+    "contract_sha256": "64c38e23b40fc244265debd8d282b5d35de90d2f38c78a2b04cabcc10352995e",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 12
+    },
+    "profile_source": "asset.contract.json:digital_protocol_profile",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "agilent-1290-infinity-ii-analytical-elsd_multisampler_door_L",
+      "agilent-1290-infinity-ii-analytical-elsd_multisampler_door_R",
+      "agilent-1290-infinity-ii-analytical-elsd_multisampler_sample_tray"
+    ],
+    "access_node_ids": [
+      "agilent-1290-infinity-ii-analytical-elsd:82",
+      "agilent-1290-infinity-ii-analytical-elsd:87",
+      "agilent-1290-infinity-ii-analytical-elsd:117"
+    ],
+    "asset_id": "agilent-1290-infinity-ii-analytical-elsd",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/agilent-1290-infinity-ii-analytical-elsd/asset.contract.json",
+    "contract_sha256": "30e9ab2b2076d701c4dc76db2cbe4d3086b76f942718b8b86c323f6dcd0bbb5b",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 12
+    },
+    "profile_source": "asset.contract.json:digital_protocol_profile",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "agilent-rapidfire400-6470_front_guard"
+    ],
+    "access_node_ids": [
+      "agilent-rapidfire400-6470:67"
+    ],
+    "asset_id": "agilent-rapidfire400-6470",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/agilent-rapidfire400-6470/asset.contract.json",
+    "contract_sha256": "1c7ad3b05e79f014e486623fef077047470ac9d296d8465231b1661554535f6b",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "asset.contract.json:digital_protocol_profile",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "beckman_cytoflex_lx_plate_loader_Y"
+    ],
+    "access_node_ids": [
+      "beckman_cytoflex_lx:44"
+    ],
+    "asset_id": "beckman_cytoflex_lx",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/beckman_cytoflex_lx/asset.contract.json",
+    "contract_sha256": "8d319d35e51d986aa7eaaad9d11af8f8aa986b08d6524480cbedac3aed83896b",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "beckman_optima_xe100_chamber_door_slide"
+    ],
+    "access_node_ids": [
+      "beckman_optima_xe100:2"
+    ],
+    "asset_id": "beckman_optima_xe100",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/beckman_optima_xe100/asset.contract.json",
+    "contract_sha256": "4f5050f9e6f5197cd4e44967eced290bfd121982ae08b73d755acbb4dca061b0",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 6
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "beckman_optima_xpn100_chamber_door_slide"
+    ],
+    "access_node_ids": [
+      "beckman_optima_xpn100:2"
+    ],
+    "asset_id": "beckman_optima_xpn100",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/beckman_optima_xpn100/asset.contract.json",
+    "contract_sha256": "1b5bf43c5abc697e7a563d2ba5c9064cae97e02770095b5014055eade45648be",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 6
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "biorad_miniprotean__urdf__lid_joint"
+    ],
+    "access_node_ids": [
+      "biorad_miniprotean:44"
+    ],
+    "asset_id": "biorad_miniprotean",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/biorad_miniprotean/asset.contract.json",
+    "contract_sha256": "6528faa16eb3589e3bcf318d0c074d00011b0d4b9cd89a767146c95af032159d",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "logphase_chamber_lid_hinge"
+    ],
+    "access_node_ids": [
+      "biotek-logphase-600:13"
+    ],
+    "asset_id": "biotek-logphase-600",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/biotek-logphase-600/asset.contract.json",
+    "contract_sha256": "df6825ab8699ecf7e3ec7e714b1fabdafd7bafd7a6170ceb20ed3cf633a9de83",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 8
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "biotek_405ts__urdf__plate_carrier_joint"
+    ],
+    "access_node_ids": [
+      "biotek_405ts:28"
+    ],
+    "asset_id": "biotek_405ts",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/biotek_405ts/asset.contract.json",
+    "contract_sha256": "4545d935ddfd7d25d26a4f202f8e2834065bebb1de36567ee7d97428bd79b527",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "bmg_clariostarplus__urdf__plate_carrier_joint"
+    ],
+    "access_node_ids": [
+      "bmg_clariostarplus:26"
+    ],
+    "asset_id": "bmg_clariostarplus",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/bmg_clariostarplus/asset.contract.json",
+    "contract_sha256": "2ec7679937476da642b08f57aff53314ddf08c96b6d9852c0286415bafb34175",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "eppendorf_5910ri__urdf__lid_joint"
+    ],
+    "access_node_ids": [
+      "eppendorf_5910ri:24"
+    ],
+    "asset_id": "eppendorf_5910ri",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/eppendorf_5910ri/asset.contract.json",
+    "contract_sha256": "ef1756feac0ff83d50fb280b7c5dc17949258685a5bc377ccd982801380f7fae",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 6
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "eppendorf_cellxpertc170i__urdf__outer_door_joint",
+      "eppendorf_cellxpertc170i__urdf__inner_door_joint"
+    ],
+    "access_node_ids": [
+      "eppendorf_cellxpertc170i:31",
+      "eppendorf_cellxpertc170i:26"
+    ],
+    "asset_id": "eppendorf_cellxpertc170i",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/eppendorf_cellxpertc170i/asset.contract.json",
+    "contract_sha256": "decef0d01da4113c078228598c5028f01f92f6d0ba164db13eecd4eb297cc633",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 8
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "ika_ks4000__urdf__hood_joint"
+    ],
+    "access_node_ids": [
+      "ika_ks4000:34"
+    ],
+    "asset_id": "ika_ks4000",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/ika_ks4000/asset.contract.json",
+    "contract_sha256": "420eb334e2c049780532e4000bb63d7ff4f2bd620f9c484511c88e9d37456897",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 8
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "GT2 hinged top print-chamber lid"
+    ],
+    "access_node_ids": [
+      "nanoscribe_gt2:8"
+    ],
+    "asset_id": "nanoscribe_gt2",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/nanoscribe_gt2/asset.contract.json",
+    "contract_sha256": "57e14fd11ecc4ba131d19fc7bce7d708beffe11cb1b2cfcb3c7fada0903488d1",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "perkinelmer_tga8000_furnace_elevator_Z"
+    ],
+    "access_node_ids": [
+      "perkinelmer_tga8000:60"
+    ],
+    "asset_id": "perkinelmer_tga8000",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/perkinelmer_tga8000/asset.contract.json",
+    "contract_sha256": "20e2e0bcb6311d7c31530a386271d0f6cf5e420991483fee9f54b165e66cb018",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "quantum_design_ppms_dynacool_sample_port_cap_Z",
+      "quantum_design_ppms_dynacool_sample_transfer_rod_Z"
+    ],
+    "access_node_ids": [
+      "quantum_design_ppms_dynacool:36",
+      "quantum_design_ppms_dynacool:39"
+    ],
+    "asset_id": "quantum_design_ppms_dynacool",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/quantum_design_ppms_dynacool/asset.contract.json",
+    "contract_sha256": "cc14395d0d99daa7ca5af6e1da7943964c5c940fd33660e9034311797b275af5",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 8
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "rigaku_dw_cabinet_door"
+    ],
+    "access_node_ids": [
+      "rigaku_xtalab_synergy_dw:15"
+    ],
+    "asset_id": "rigaku_xtalab_synergy_dw",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/rigaku_xtalab_synergy_dw/asset.contract.json",
+    "contract_sha256": "d1c31ccb2c82b7d99f88286077bc3a0da2905c69b38821a4efbe9d50f8c15696",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "asset.contract.json:digital_protocol_profile",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "LC480 multiwell plate loader"
+    ],
+    "access_node_ids": [
+      "roche_lightcycler_480_ii:31"
+    ],
+    "asset_id": "roche_lightcycler_480_ii",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/roche_lightcycler_480_ii/asset.contract.json",
+    "contract_sha256": "0048dad6d94fc09d04d4c08801903e20f06035bfac118e01dccdcd468ffacbeb",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "front_top_hood_hinge"
+    ],
+    "access_node_ids": [
+      "sartorius_octet_r8:1"
+    ],
+    "asset_id": "sartorius_octet_r8",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/sartorius_octet_r8/asset.contract.json",
+    "contract_sha256": "0bd27c0c7dba64737dc594fd3cfd30a48c1b2ecc673eaa5f4d785de4e2a07797",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "i3x_plate_drawer_slide"
+    ],
+    "access_node_ids": [
+      "spectramax-i3x:31"
+    ],
+    "asset_id": "spectramax-i3x",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/spectramax-i3x/asset.contract.json",
+    "contract_sha256": "d076e41fdefcf887f3642737383671054cc3f6808738d025607f945c2ba03e3a",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "f780_front_guard_hinge_0",
+      "f780_front_guard_hinge_1"
+    ],
+    "access_node_ids": [
+      "tecan-fluent780:638",
+      "tecan-fluent780:642"
+    ],
+    "asset_id": "tecan-fluent780",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/tecan-fluent780/asset.contract.json",
+    "contract_sha256": "9377a9c4b896231117ce71eb4e6485ba7ec2529da19aa0d41a2ed04f426523bf",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 8
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "thermo_ibrightfl1500__urdf__sample_drawer_joint"
+    ],
+    "access_node_ids": [
+      "thermo_ibrightfl1500:19"
+    ],
+    "asset_id": "thermo_ibrightfl1500",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/thermo_ibrightfl1500/asset.contract.json",
+    "contract_sha256": "2148ce503101feb6098defd10bfbfec3872a1c905ca078cc4ed780c55299a109",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 4
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "thermo_sorvall_lynx6000_lid_hinge"
+    ],
+    "access_node_ids": [
+      "thermo_sorvall_lynx6000:20"
+    ],
+    "asset_id": "thermo_sorvall_lynx6000",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/thermo_sorvall_lynx6000/asset.contract.json",
+    "contract_sha256": "e0340a711f9f4d6a27b30b5a09165662d572cfb1e73c6043f4aa44bbf3e47ca4",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 6
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  },
+  {
+    "access_joint_names": [
+      "wyatt_dynapro_nanostar_sample_hatch_slide_Y",
+      "wyatt_dynapro_nanostar_chamber_cap_Z"
+    ],
+    "access_node_ids": [
+      "wyatt_dynapro_nanostar:56",
+      "wyatt_dynapro_nanostar:15"
+    ],
+    "asset_id": "wyatt_dynapro_nanostar",
+    "cases": [
+      {
+        "case": "load_with_closed_access",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_with_wrong_origin",
+        "error": "sample",
+        "expected_code_from_contract": "WRONG_LOCATION",
+        "observed_code": "WRONG_LOCATION",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "start_with_access_open",
+        "error": "Close every loading access before start",
+        "expected_code_from_contract": "ACCESS_OPEN",
+        "observed_code": "ACCESS_OPEN",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "open_while_running",
+        "error": "open",
+        "expected_code_from_contract": "BUSY",
+        "observed_code": "BUSY",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "load_twice",
+        "error": "load",
+        "expected_code_from_contract": "ACCESS_CLOSED",
+        "observed_code": "ACCESS_CLOSED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      },
+      {
+        "case": "unload_without_load",
+        "error": "sample",
+        "expected_code_from_contract": "NOT_LOADED",
+        "observed_code": "NOT_LOADED",
+        "oracle_independent_of_checker": true,
+        "oracle_label": "known_violation",
+        "rejected": true,
+        "state_unchanged": true
+      }
+    ],
+    "contract_path": "exports/biofoundry/library/wyatt_dynapro_nanostar/asset.contract.json",
+    "contract_sha256": "bde2c7e87c128c2e86885b2f87aa61ce4577cd573e8d4ce526865ae2df13f384",
+    "device_id": null,
+    "positive": {
+      "event_count": 8,
+      "final_loaded": [],
+      "final_running": false,
+      "passed": true,
+      "pose_count": 8
+    },
+    "profile_source": "sim/library_protocols.py:PROFILES",
+    "protocol_access_lifecycle_tested": true,
+    "protocol_scope": "loading_lifecycle",
+    "runner_source_sha256": "12ae3a20966672fe7e93a8a9f19e2fe1c0b86e5f75021ce50678e1aeffe62e5d",
+    "status": "passed"
+  }
+]

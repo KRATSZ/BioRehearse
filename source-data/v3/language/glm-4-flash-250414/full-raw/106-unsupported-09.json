@@ -1,0 +1,77 @@
+{
+  "case": {
+    "cluster": "unsupported-09",
+    "decision": "reject",
+    "expected": null,
+    "id": "unsupported-09",
+    "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Reverse engineer and change the composition of the opaque cellfreeMIX.",
+    "style": "open",
+    "unsupported_reason": "mix_recipe"
+  },
+  "error": null,
+  "result": {
+    "api": "openai-completions",
+    "attempts": 0,
+    "clarification": null,
+    "code": "BLOCKED",
+    "generated": null,
+    "model": "glm-4-flash-250414",
+    "ok": false,
+    "prompt_sha256": "e9224c8fc8489f7b8b0872b838cf96808cb2d9064f2fecdbafbe4f89d09ed847",
+    "provider": "zai",
+    "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Reverse engineer and change the composition of the opaque cellfreeMIX.",
+    "scope": "Digital planning only; provider usage and nominal pricing are retained separately",
+    "source_author": "../../../../Flexagent/Opentrons-Lab-Agent/labscriptai/webdemo/server/src/biofoundry-author.ts",
+    "tool_choice": "auto",
+    "trace": [
+      {
+        "message": {
+          "content": [
+            {
+              "text": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Reverse engineer and change the composition of the opaque cellfreeMIX.",
+              "type": "text"
+            }
+          ],
+          "role": "user",
+          "timestamp": 1792395596638
+        },
+        "type": "message_end"
+      },
+      {
+        "message": {
+          "api": "openai-completions",
+          "content": [
+            {
+              "text": "It looks like you've provided detailed information about various laboratory devices, methods, and a simulation environment for planning experimental workflows. However, I need a specific experimental objective or request to assist you further. Please provide the details of the experiment you want to simulate or execute.",
+              "type": "text"
+            }
+          ],
+          "model": "glm-4-flash-250414",
+          "provider": "zai",
+          "rawStopReason": "stop",
+          "responseId": "20261019153957e68e5c7cdede4243",
+          "role": "assistant",
+          "stopReason": "stop",
+          "timestamp": 1792395596669,
+          "usage": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0,
+              "total": 0
+            },
+            "input": 12728,
+            "output": 55,
+            "reasoning": 0,
+            "totalTokens": 12783
+          }
+        },
+        "type": "message_end"
+      }
+    ]
+  },
+  "wall_s": 3.774483417000738
+}

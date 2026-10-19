@@ -1,0 +1,215 @@
+{
+  "schema": "biorehearse.scheduling-design.v3",
+  "freeze_id": "v3-final-2026-10-19",
+  "created": "2026-10-19",
+  "purpose": "prospective scheduling validation; v2 artifacts remain immutable",
+  "primary_claim": "A constraint-aware planner can produce valid schedules under shared-device, operator, transport, release and sample-window constraints; standard SGS provides an independent parallel scheduling comparator.",
+  "test_split": "v2 heldout workloads; this is a retrospectively extended analysis of an existing computational test stream, prospectively frozen here before v3 runs",
+  "all_test_cases": [
+    "heldout-000",
+    "heldout-001",
+    "heldout-002",
+    "heldout-003",
+    "heldout-004",
+    "heldout-005",
+    "heldout-006",
+    "heldout-007",
+    "heldout-008",
+    "heldout-009",
+    "heldout-010",
+    "heldout-011",
+    "heldout-012",
+    "heldout-013",
+    "heldout-014",
+    "heldout-015",
+    "heldout-016",
+    "heldout-017",
+    "heldout-018",
+    "heldout-019",
+    "heldout-020",
+    "heldout-021",
+    "heldout-022",
+    "heldout-023",
+    "heldout-024",
+    "heldout-025",
+    "heldout-026",
+    "heldout-027",
+    "heldout-028",
+    "heldout-029",
+    "heldout-030",
+    "heldout-031",
+    "heldout-032",
+    "heldout-033",
+    "heldout-034",
+    "heldout-035",
+    "heldout-036",
+    "heldout-037",
+    "heldout-038",
+    "heldout-039",
+    "heldout-040",
+    "heldout-041",
+    "heldout-042",
+    "heldout-043",
+    "heldout-044",
+    "heldout-045",
+    "heldout-046",
+    "heldout-047",
+    "heldout-048",
+    "heldout-049",
+    "heldout-050",
+    "heldout-051",
+    "heldout-052",
+    "heldout-053",
+    "heldout-054",
+    "heldout-055",
+    "heldout-056",
+    "heldout-057",
+    "heldout-058",
+    "heldout-059"
+  ],
+  "common_subset_cases": [
+    "heldout-000",
+    "heldout-003",
+    "heldout-006",
+    "heldout-009",
+    "heldout-012",
+    "heldout-015",
+    "heldout-018",
+    "heldout-021",
+    "heldout-024",
+    "heldout-027",
+    "heldout-030",
+    "heldout-033",
+    "heldout-036",
+    "heldout-039",
+    "heldout-042",
+    "heldout-045",
+    "heldout-048",
+    "heldout-051",
+    "heldout-054",
+    "heldout-057"
+  ],
+  "development_cases": [
+    "development-000",
+    "development-001",
+    "development-002",
+    "development-003",
+    "development-004",
+    "development-005"
+  ],
+  "objectives": [
+    "fastest"
+  ],
+  "cp_sat_budgets_s": [
+    2,
+    10,
+    60
+  ],
+  "budget_curve_cases": "all 20 common-subset cases are run independently at each of 2, 10 and 60 s; a 60-s run is not imputed from a shorter run",
+  "budget_policy": {
+    "truth_escalation": "For the 60-case status table, run 2 s first and extend only cases still unresolved to 10 s and then 60 s. The separate 20-case budget curve runs every case at all three budgets.",
+    "classification": {
+      "feasible_certificate": [
+        "FEASIBLE",
+        "OPTIMAL"
+      ],
+      "infeasible_proof": [
+        "INFEASIBLE"
+      ],
+      "unresolved": [
+        "UNKNOWN",
+        "BUDGET_EXHAUSTED",
+        "SOLVER_UNRESOLVED"
+      ]
+    },
+    "rule": "A solver timeout or UNKNOWN is never reclassified as infeasible."
+  },
+  "sgs": {
+    "family": "Kolisch serial and parallel resource-constrained project scheduling schemes",
+    "variants": [
+      "serial_sgs",
+      "parallel_sgs"
+    ],
+    "candidate_priority_rules": [
+      "input_order",
+      "minimum_slack",
+      "longest_remaining_path",
+      "earliest_release"
+    ],
+    "selection": "Select one fixed rule on the six development cases using valid-plan rate, then mean makespan among valid plans, with input_order as deterministic tie-break. Freeze before test execution.",
+    "lookahead": "A bounded forward-check for immediate maximum-wait children is enabled to avoid dispatching a predecessor that has no legal successor slot; this is an explicit extension to the Kolisch SGS skeleton and is reported separately from the original scheme.",
+    "constraints": [
+      "registered device capability and labware",
+      "device availability and one-instance occupancy",
+      "shared operator occupancy",
+      "precedence and explicit transport reservations",
+      "release times and deadlines",
+      "assay-specific sample waiting windows",
+      "nominal operating budget"
+    ],
+    "scorer": "benchmarks/v2/scorer.py, loaded read-only and unchanged"
+  },
+  "ks4000_outage": {
+    "policy": "known outage before an unstarted KS4000 incubate step; replan only unstarted steps and preserve all rows completed by now",
+    "repair_window_s": 180,
+    "selection": "up to 20 common-subset cases with a valid baseline containing KS4000 incubate; choose earliest eligible case IDs without using post-outage results",
+    "interpretation": "This is bounded digital rescheduling under a known calendar outage, not automatic recovery from an active hardware failure."
+  },
+  "reader_reference": {
+    "source": "source-data/v2/repair/outcomes.jsonl and faults.jsonl",
+    "preserve": true,
+    "interpretation": "The v2 reader-outage result is retained as a negative/zero-delay reference; v3 does not overwrite it."
+  },
+  "execution": {
+    "single_solver_worker": true,
+    "random_seed": 7,
+    "repeats": 1,
+    "reason": "The planners are deterministic under a fixed catalog and seed; this extension measures budget/status sensitivity, not stochastic variance.",
+    "wall_clock_note": "Wall time is recorded and may overlap native rendering on the host; it is not treated as a hardware throughput measurement."
+  },
+  "code_hashes": {
+    "benchmarks/v3/design.py": "9d816c1a8d3118e7513c00c33e8fb2b6fdeef9f88c6edb04081479f51b4e5d30",
+    "benchmarks/v3/run.py": "a10d5204843bad6186868d982ead1281e3671f65262a1c0c137bfaad29ec4a6c",
+    "benchmarks/v3/sgs.py": "cdb86452f48edfb801e91cd909ec85ee959ad2f4975b5cb825c7f9a5bf2f71b9",
+    "benchmarks/v3/schedule_audit.py": "e731a080ddc569bd7c4be8ce92b0e5a56bc03ee778a8cd431fb020f76884db45",
+    "benchmarks/v3/analyse.py": "c3ea31f5329e75a4a58f69eaa562121f165974020848320b5000565dd1de9a07",
+    "benchmarks/v3/ks4000_exploratory.py": "e3ef362bdad2be07207e1043d711ba247a390f6a130251f53e5e631f4b5f571e"
+  },
+  "dependency_hashes": {
+    "benchmarks/v2/common.py": "5a7abd2474e14641b1cd01d90eaa4be13d35fecb6de9f6600013b2ca641b3582",
+    "benchmarks/v2/scorer.py": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c",
+    "benchmarks/v2/frozen.json": "7d83e77f8f5be5f5bffc6a6e84ef912cde68165dedfd5f360fa9bf0aacd68edc",
+    "reproducibility/source-v2/labscriptai/__init__.py": "7a5f5000cf72aff8befbe9d0ae8fff4f2dbd08736d78b4b83ef452d068919441",
+    "reproducibility/source-v2/labscriptai/biofoundry/__init__.py": "39c75d16d41205ae2deb8affbf42052ed4e31752947a6fb0985a62f404361d4e",
+    "reproducibility/source-v2/labscriptai/biofoundry/app.py": "e5c84e60f7a1b8501ffe80135d2c18910d934a590574dc6cea529e55a8e5a07c",
+    "reproducibility/source-v2/labscriptai/biofoundry/author.py": "8d30d0835e82e437f8ca539d2a23695355fea432573256147c4cd4d819f768ad",
+    "reproducibility/source-v2/labscriptai/biofoundry/baseline.py": "5e9ece5bf3b49166f498d9cba3956786102ad6af623fb651444680f703295172",
+    "reproducibility/source-v2/labscriptai/biofoundry/capabilities.py": "41f41942b05838d82ee18a68e1446729083db05ef48b46e3f989dd13fcde822d",
+    "reproducibility/source-v2/labscriptai/biofoundry/delivery.py": "eb88631955a7119144f258d61544e3fdc94c76e4be80cc23e189cb81a1fe605e",
+    "reproducibility/source-v2/labscriptai/biofoundry/island.py": "18376d1831bf1d2dfa20fa08a0f5f158af66f6c50df6e00b08e7ffee53b0e81b",
+    "reproducibility/source-v2/labscriptai/biofoundry/methods.py": "69f29b5d6c8a4d1d149a7ced09dd41f9c4f8cde7de8c5230fd0a2d008c95e2ee",
+    "reproducibility/source-v2/labscriptai/biofoundry/planning.py": "eaa5ad8ee23faa03cc4d897ed26c915066fd036856b425fb80e90d7db91c4491",
+    "reproducibility/source-v2/labscriptai/biofoundry/playback.py": "79a69b925a8c13d0809e9be3a0d2e80047f89e7670ee8806881de3ece697fdef",
+    "reproducibility/source-v2/labscriptai/biofoundry/portfolio.py": "926a8161162a55b3bb5eb5a734b334ac45b4cff2bc501f8c2fc0d0ca79d30d05",
+    "reproducibility/source-v2/labscriptai/biofoundry/reservations.py": "145c88372f3189dc0c8c7bfc206020c905c05716346cfdae2396e2ac21d569ec",
+    "reproducibility/source-v2/labscriptai/biofoundry/scheduling.py": "e77309aafc7e6ef7f7b8cd7f904abac272f068b6b5793e7c1c32f416ae44751f",
+    "reproducibility/source-v2/labscriptai/biofoundry/verify.py": "6fb7c8ab89c7155638f1bec9972018b5e72a37808001896c2557b8d8a14b3d04",
+    "reproducibility/source-v2/labscriptai/biofoundry/workflow.py": "845d41dd7a0a629e2ba73fb9503da47737b175208145dcc8eca3bda2210cdcb0",
+    "reproducibility/source-v2/labscriptai/planir/__init__.py": "381c5e26a1aaf3de74decf1e333a85fdd875ad8ee25b526ba3391b8ac99c457b",
+    "reproducibility/source-v2/labscriptai/planir/evaluate.py": "6e46639bc569629beff8b84ecc7febdf9d1c76c54bd06806d4fcfdc6b9a5f701",
+    "reproducibility/source-v2/labscriptai/planir/plr_sim.py": "6fe0e4392d56d43d2126e4f7c6f691323535a97783f148be63404811cdea0b1e",
+    "reproducibility/source-v2/labscriptai/planir/schema.py": "666771df04123080631399224ece6834b1fed660fa99acef162d231b3419a9b3",
+    "reproducibility/source-v2/labscriptai/planir/skills.py": "413c96ba2987e8fe7a8230240262564684d1183a9c03a8daa712cbc75e3f85af",
+    "reproducibility/source-v2/labscriptai/planir/virtual_deck.py": "5fc69893cf1c171d7429931f944a798b65ce0d17f13d6c806abc6fdeb455088c"
+  },
+  "inputs": {
+    "benchmarks/v2/workloads.json": "5ba0470dde587a29eb175a5761d08e913077397b5f9fac1d4187168dd1246eaf",
+    "source-data/v2/catalog.json": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de"
+  },
+  "runtime": {
+    "python_version": "3.12.13",
+    "ortools_version": "9.15.6755",
+    "single_solver_worker": true
+  },
+  "manifest_sha256": "f0df745c475fb93fe9c0544aea85a1208b1d998de5b50959066012f28eb13acc"
+}

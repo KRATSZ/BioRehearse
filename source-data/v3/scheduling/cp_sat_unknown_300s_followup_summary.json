@@ -1,0 +1,30 @@
+{
+  "schema": "biorehearse.cp-sat-unknown-followup.v3",
+  "case": "heldout-047",
+  "budget_s": 300,
+  "record": "cp_sat_unknown_300s_followup.json",
+  "primary_truth_unchanged": true,
+  "outcome": {
+    "status": "INFEASIBLE",
+    "classification": "infeasible_proof",
+    "returned": false,
+    "valid": false,
+    "wall_s": 93.58576066700334,
+    "objective_value": null,
+    "best_bound": null,
+    "relative_bound_gap": null
+  },
+  "source_hashes": {
+    "<script>": "368f4c87472be3a93c653b117798767ad2b6b41f7c138d049fe8ac51baf938c8",
+    "benchmarks/v2/common.py": "5a7abd2474e14641b1cd01d90eaa4be13d35fecb6de9f6600013b2ca641b3582",
+    "benchmarks/v2/scorer.py": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c",
+    "reproducibility/source-v2/labscriptai/biofoundry/methods.py": "69f29b5d6c8a4d1d149a7ced09dd41f9c4f8cde7de8c5230fd0a2d008c95e2ee",
+    "reproducibility/source-v2/labscriptai/biofoundry/scheduling.py": "e77309aafc7e6ef7f7b8cd7f904abac272f068b6b5793e7c1c32f416ae44751f"
+  },
+  "runtime": {
+    "python_version": "3.12.13",
+    "ortools_version": "9.15.6755",
+    "single_solver_worker": true
+  },
+  "scope": "Post-hoc single-case budget extension; it is not part of the 60-case primary truth table."
+}
