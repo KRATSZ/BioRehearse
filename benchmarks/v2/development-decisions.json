@@ -1,0 +1,20 @@
+[
+  {
+    "id": "dev-ask-budget",
+    "cluster": "dev-ask-budget",
+    "style": "open",
+    "decision": "clarify",
+    "missing_field": "budget_cny",
+    "expected": null,
+    "request": "Coordinate Pierce BCA for six unknown protein samples, every standard and unknown in duplicate. Start at 09:00 Shanghai and finish by 16:00. I have not supplied the operating budget. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls."
+  },
+  {
+    "id": "dev-reject-temperature",
+    "cluster": "dev-reject-temperature",
+    "style": "open",
+    "decision": "reject",
+    "unsupported_reason": "bca_temperature",
+    "expected": null,
+    "request": "Coordinate Pierce BCA for six unknown protein samples, every standard and unknown in duplicate. Start at 09:00 Shanghai and finish by 16:00. Operating budget CNY 500. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Replace the registered 37 C incubation with 25 C; this is a required change."
+  }
+]

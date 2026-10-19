@@ -1,0 +1,14 @@
+{
+  "changes": [
+    "relative config.virtual_lab and live dependency paths",
+    "private account opening balance removed from public evaluation runner; fresh explicit budget required"
+  ],
+  "unchanged_research_logic": [
+    "model prompt/tools",
+    "task design",
+    "compilation",
+    "planners",
+    "scoring"
+  ],
+  "original_manifest": "frozen-original.json"
+}

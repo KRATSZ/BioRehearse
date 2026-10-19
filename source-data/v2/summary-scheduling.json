@@ -1,0 +1,201 @@
+{
+  "fastest/cp_sat": {
+    "runs": 180,
+    "cases": 60,
+    "returned": 156,
+    "valid": 156,
+    "full_valid": 156,
+    "valid_rate_ci": [
+      0.8666666666666667,
+      0.7833333333333333,
+      0.95
+    ],
+    "returned_violations": 0,
+    "material_failures": 0,
+    "mass_failures": 0,
+    "exceptions": 0,
+    "status": {
+      "OPTIMAL": 116,
+      "FEASIBLE": 40,
+      "UNKNOWN": 6,
+      "INFEASIBLE": 18
+    },
+    "planning_s_median": 0.09087256199927651,
+    "planning_s_max": 3.691169915999126,
+    "wall_s_median": 0.12116079149927828,
+    "proven_optimal": 116
+  },
+  "fastest/parallel_greedy": {
+    "runs": 180,
+    "cases": 60,
+    "returned": 96,
+    "valid": 96,
+    "full_valid": 96,
+    "valid_rate_ci": [
+      0.5333333333333333,
+      0.4,
+      0.6666666666666666
+    ],
+    "returned_violations": 0,
+    "material_failures": 0,
+    "mass_failures": 0,
+    "exceptions": 0,
+    "status": {
+      "HEURISTIC": 96,
+      "NO_GREEDY_PLAN": 84
+    },
+    "planning_s_median": 2.0002345619986954,
+    "planning_s_max": 2.2322087499996996,
+    "wall_s_median": 2.0003038130007553,
+    "proven_optimal": 0
+  },
+  "fastest/serial_fifo": {
+    "runs": 180,
+    "cases": 60,
+    "returned": 90,
+    "valid": 90,
+    "full_valid": 90,
+    "valid_rate_ci": [
+      0.5,
+      0.36666666666666664,
+      0.6333333333333333
+    ],
+    "returned_violations": 0,
+    "material_failures": 0,
+    "mass_failures": 0,
+    "exceptions": 0,
+    "status": {
+      "OPTIMAL": 90,
+      "INFEASIBLE": 90
+    },
+    "planning_s_median": 0.04319497949927609,
+    "planning_s_max": 0.930169624998598,
+    "wall_s_median": 0.04779264549961226,
+    "proven_optimal": 90
+  },
+  "fastest/paired/parallel_greedy": {
+    "paired_cases": 32,
+    "makespan_gain_percent_ci": [
+      4.593554016915721,
+      2.5473400947824874,
+      6.747829397387924
+    ],
+    "cost_gain_percent_ci": [
+      0.33113360601842756,
+      0.1793588556694766,
+      0.4935163083161809
+    ]
+  },
+  "fastest/paired/serial_fifo": {
+    "paired_cases": 30,
+    "makespan_gain_percent_ci": [
+      9.667393937774367,
+      6.630905187098991,
+      12.765820376981615
+    ],
+    "cost_gain_percent_ci": [
+      0.44931554442909843,
+      0.2918000625408142,
+      0.6091036735056277
+    ]
+  },
+  "cheapest/cp_sat": {
+    "runs": 180,
+    "cases": 60,
+    "returned": 159,
+    "valid": 159,
+    "full_valid": 159,
+    "valid_rate_ci": [
+      0.8833333333333333,
+      0.8,
+      0.95
+    ],
+    "returned_violations": 0,
+    "material_failures": 0,
+    "mass_failures": 0,
+    "exceptions": 0,
+    "status": {
+      "OPTIMAL": 159,
+      "UNKNOWN": 3,
+      "INFEASIBLE": 18
+    },
+    "planning_s_median": 0.056046541500109015,
+    "planning_s_max": 2.0088571249998495,
+    "wall_s_median": 0.09355879200029449,
+    "proven_optimal": 159
+  },
+  "cheapest/parallel_greedy": {
+    "runs": 180,
+    "cases": 60,
+    "returned": 102,
+    "valid": 102,
+    "full_valid": 102,
+    "valid_rate_ci": [
+      0.5666666666666667,
+      0.43333333333333335,
+      0.6833333333333333
+    ],
+    "returned_violations": 0,
+    "material_failures": 0,
+    "mass_failures": 0,
+    "exceptions": 0,
+    "status": {
+      "HEURISTIC": 102,
+      "NO_GREEDY_PLAN": 78
+    },
+    "planning_s_median": 2.0001862709996203,
+    "planning_s_max": 2.0256713340004353,
+    "wall_s_median": 2.0003519380006765,
+    "proven_optimal": 0
+  },
+  "cheapest/serial_fifo": {
+    "runs": 180,
+    "cases": 60,
+    "returned": 90,
+    "valid": 90,
+    "full_valid": 90,
+    "valid_rate_ci": [
+      0.5,
+      0.36666666666666664,
+      0.6333333333333333
+    ],
+    "returned_violations": 0,
+    "material_failures": 0,
+    "mass_failures": 0,
+    "exceptions": 0,
+    "status": {
+      "OPTIMAL": 90,
+      "INFEASIBLE": 90
+    },
+    "planning_s_median": 0.03882935399997223,
+    "planning_s_max": 1.5075522499992076,
+    "wall_s_median": 0.04638747900025919,
+    "proven_optimal": 90
+  },
+  "cheapest/paired/parallel_greedy": {
+    "paired_cases": 34,
+    "makespan_gain_percent_ci": [
+      4.322446391119892,
+      2.3783635472544455,
+      6.466707628471835
+    ],
+    "cost_gain_percent_ci": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "cheapest/paired/serial_fifo": {
+    "paired_cases": 30,
+    "makespan_gain_percent_ci": [
+      11.119656279777235,
+      7.645181176811502,
+      14.644035208111628
+    ],
+    "cost_gain_percent_ci": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

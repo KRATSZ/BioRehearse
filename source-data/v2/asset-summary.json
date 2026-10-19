@@ -1,0 +1,21 @@
+{
+  "facility_instances": 73,
+  "raw_model_strings": 52,
+  "library_assets": 71,
+  "assigned_instances": 54,
+  "assigned_asset_ids": 43,
+  "unassigned_instances": 19,
+  "assets_with_joint_contract": 64,
+  "checked_joints": 380,
+  "assets_with_animation_poses": 65,
+  "access_lifecycle_assets": 26,
+  "liquid_accounting_assets": 2,
+  "contract_checks_passed": 71,
+  "hardware_adapters": 0,
+  "mode_counts": {
+    "joint_bound_digital_simulation": 64,
+    "existing_animation_frame_replay": 1,
+    "static_no_protocol_capability": 6
+  },
+  "scope": "Fresh execution of digital contract scenarios; counts are assets, not biological replicates or hardware demonstrations."
+}

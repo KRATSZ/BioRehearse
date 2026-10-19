@@ -1,0 +1,4618 @@
+{
+  "development": [
+    {
+      "id": "development-000",
+      "split": "development",
+      "load": 1,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "development-001",
+      "split": "development",
+      "load": 3,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "development-002",
+      "split": "development",
+      "load": 6,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "development-003",
+      "split": "development",
+      "load": 9,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E7",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "development-004",
+      "split": "development",
+      "load": 12,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E10",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E11",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E12",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "development-005",
+      "split": "development",
+      "load": 3,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    }
+  ],
+  "heldout": [
+    {
+      "id": "heldout-000",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-001",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-002",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-003",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-004",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-005",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-006",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-007",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-008",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-009",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-010",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-011",
+      "split": "heldout",
+      "load": 1,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-012",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-013",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-014",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-015",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-016",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-017",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-018",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-019",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-020",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-021",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-022",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-023",
+      "split": "heldout",
+      "load": 3,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-024",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-025",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E5",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-026",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-027",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-028",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-029",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-030",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-031",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E5",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-032",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-033",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-034",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E6",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-035",
+      "split": "heldout",
+      "load": 6,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-036",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E7",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-037",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E7",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-038",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E7",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-039",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E9",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-040",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E7",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-041",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E7",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-042",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E7",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-043",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E7",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-044",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E7",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-045",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-046",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-047",
+      "split": "heldout",
+      "load": 9,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-048",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E7",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E10",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E11",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E12",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 180
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-049",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E10",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E11",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E12",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-050",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E7",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E10",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E11",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E12",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-051",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E10",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E11",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E12",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-052",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E10",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E11",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E12",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-053",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "standard",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E10",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E11",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E12",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "standard"
+      },
+      "layout": "separated",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-054",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E10",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E11",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E12",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "heldout-055",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E7",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E10",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E11",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E12",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-056",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E7",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E10",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E11",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E12",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "heldout-057",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E6",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E7",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E10",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E11",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E12",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "compact",
+      "bookings": [
+        {
+          "task_id": "external-reader",
+          "resource": "device:67",
+          "start_s": 600,
+          "end_s": 1200
+        }
+      ]
+    },
+    {
+      "id": "heldout-058",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E3",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E4",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E5",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E7",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E8",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E9",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E10",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E11",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E12",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "heldout-059",
+      "split": "heldout",
+      "load": 12,
+      "handling_policy": "tight",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 10000,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "E1",
+            "method": "bca",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E2",
+            "method": "bca",
+            "samples": 15,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E3",
+            "method": "picogreen",
+            "samples": 15,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "E4",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E5",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E6",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 60
+          },
+          {
+            "id": "E7",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "E8",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E9",
+            "method": "picogreen",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 180
+          },
+          {
+            "id": "E10",
+            "method": "picogreen",
+            "samples": 23,
+            "replicates": 2,
+            "release_s": 180
+          },
+          {
+            "id": "E11",
+            "method": "bca",
+            "samples": 31,
+            "replicates": 1,
+            "release_s": 60
+          },
+          {
+            "id": "E12",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 60
+          }
+        ],
+        "handling_policy": "tight"
+      },
+      "layout": "separated",
+      "bookings": []
+    }
+  ],
+  "seed_policy": "independent fixed development/heldout streams; no selection by solver outcome"
+}

@@ -1,0 +1,177 @@
+{
+  "mode": "hero",
+  "Blender": "5.2.0 LTS",
+  "sources": [
+    {
+      "asset_id": "robot-island-base",
+      "path": "demo-blank/model.glb",
+      "sha256": "be3913f63e05406a01a9797b0de791e60808c17a220465dca434a2ba52ea1e1c"
+    },
+    {
+      "asset_id": "agilent_bravo_assaymap",
+      "position_m": [
+        -1.05,
+        -0.73,
+        0.9
+      ],
+      "binding": "existing island station",
+      "path": "library/agilent_bravo_assaymap/model.glb",
+      "sha256": "dfb940d2722b5e003383b6d044caa248697177ffbd383ae6166902f5ab0418af"
+    },
+    {
+      "asset_id": "biotek_405ts",
+      "position_m": [
+        0,
+        -0.79,
+        0.9
+      ],
+      "binding": "existing island station",
+      "path": "library/biotek_405ts/model.glb",
+      "sha256": "baeb1fa3d9de0e8620cdc6e7b47ff2f6be6c48e10c6c1c16154e6f57af7b02d8"
+    },
+    {
+      "asset_id": "roche_lightcycler_480_ii",
+      "position_m": [
+        1.1,
+        -0.8,
+        0.9
+      ],
+      "binding": "existing island station",
+      "path": "library/roche_lightcycler_480_ii/model.glb",
+      "sha256": "c3646a6045e4d03502be6721b33d0f9fec9236e8a0d39618f742fdda95d05ce0"
+    },
+    {
+      "asset_id": "ika_ks4000",
+      "position_m": [
+        -1.05,
+        0.8,
+        0.9
+      ],
+      "binding": "existing island station",
+      "path": "library/ika_ks4000/model.glb",
+      "sha256": "7585fca7e91e02d6e53b97c97593fc4c84fb3c612a0f2ee6e9cdfdc1c0bd2f54"
+    },
+    {
+      "asset_id": "spectramax-i3x",
+      "position_m": [
+        1.05,
+        0.78,
+        0.9
+      ],
+      "binding": "existing island station",
+      "path": "library/spectramax-i3x/model.glb",
+      "sha256": "3b0644c1de355296f89740aa3476b7b243ef7938b13a026ff423306265068f39"
+    },
+    {
+      "asset_id": "tecan-fluent780",
+      "path": "library/tecan-fluent780/model.glb",
+      "sha256": "b3197d259a5250267662fe3fe1c76f0b4e0c729b2830cab1e090a4110aaaf96c",
+      "binding": "additional digital module for conceptual illustration"
+    },
+    {
+      "asset_id": "spectramax-id5",
+      "path": "assets/spectramax-id5.glb",
+      "sha256": "83211c423a70439069d1d8104b1dca58d25e4fdbd7a0b7f53520b18f2e742e8f",
+      "binding": "additional digital module for conceptual illustration"
+    }
+  ],
+  "images": [
+    {
+      "image": "hero-island.png",
+      "width": 3000,
+      "height": 1500,
+      "engine": "Cycles",
+      "samples": 64,
+      "device": "GPU",
+      "sha256": "2f7a18cdcc1c867b09ffdcfff9b96fa639a6dac8a20ddf6a90a91f10cba8c7c3"
+    }
+  ],
+  "transforms": "native GLB importer; rigid placement only; source meshes unchanged",
+  "studio": "three area lights; AgX; fixed orthographic viewing direction; neutral floor",
+  "port_projection": {
+    "input": [
+      0.33149316906929016,
+      0.4359830617904663
+    ],
+    "bravo": [
+      0.3937000632286072,
+      0.49979209899902344
+    ],
+    "washer": [
+      0.5035264492034912,
+      0.5765556693077087
+    ],
+    "pcr": [
+      0.6076682806015015,
+      0.582539439201355
+    ],
+    "incubator": [
+      0.5007518529891968,
+      0.37793004512786865
+    ],
+    "reader": [
+      0.6411870718002319,
+      0.5156616568565369
+    ],
+    "output": [
+      0.6706120371818542,
+      0.6547526121139526
+    ]
+  },
+  "projection": {
+    "input": [
+      0.3172817826271057,
+      0.4848209619522095
+    ],
+    "bravo": [
+      0.40367811918258667,
+      0.4734051823616028
+    ],
+    "washer": [
+      0.48736754059791565,
+      0.5719012320041656
+    ],
+    "pcr": [
+      0.5778242945671082,
+      0.6108976304531097
+    ],
+    "incubator": [
+      0.48420944809913635,
+      0.3388873338699341
+    ],
+    "reader": [
+      0.6568517684936523,
+      0.4800668954849243
+    ],
+    "output": [
+      0.6564006209373474,
+      0.7035904824733734
+    ],
+    "fluent780": [
+      0.1928379237651825,
+      0.27137064933776855
+    ],
+    "id5": [
+      0.8327273726463318,
+      0.6480612456798553
+    ],
+    "robot": [
+      0.5500029921531677,
+      0.4006239175796509
+    ]
+  },
+  "route_projection": [],
+  "renderer_script": {
+    "path": "figures/v2/source/render_assets.py",
+    "sha256": "c046f970b7366ca8c503dbd7e02203fdbfe14f010120efc1d30c8056b86e689a"
+  },
+  "input_scene": {
+    "path": "virtual-lab:exports/biofoundry/island/latest.json",
+    "sha256": "35ab72cd257bceb38d111de23592d3456b1e576c838c3e0828c9a583319d254c"
+  },
+  "portable_scene_reference": {
+    "path": "source-data/v2/island-example.json",
+    "sha256": "a79b6a9de3491cfe8abefa272d6ed9833550461795267cdd53699c9791a595c3"
+  },
+  "status": "Native digital geometry render; no hardware execution"
+}

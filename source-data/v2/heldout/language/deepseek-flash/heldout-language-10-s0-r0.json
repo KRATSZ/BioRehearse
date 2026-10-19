@@ -1,0 +1,2561 @@
+{
+  "result": {
+    "ok": true,
+    "code": "COMPILED",
+    "clarification": null,
+    "request": "Plan Quant-iT PicoGreen with 5 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 650. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "api": "openai-completions",
+    "trace": [
+      {
+        "type": "message_end",
+        "message": {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "Plan Quant-iT PicoGreen with 5 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 650. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls."
+            }
+          ],
+          "timestamp": 1792386296407
+        }
+      },
+      {
+        "type": "message_end",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "thinking",
+              "thinking": "Requirements: picogreen, 5 samples, 1 replicate, deadline 7h = 25200, budget 650, enabled devices: device:19, device:18, device:67, demo:ks4000:1, bench. accept_demo_assumptions true. No unsupported requests. Release: absent → 0.\n\nCompile.",
+              "thinkingSignature": "reasoning_content"
+            },
+            {
+              "type": "toolCall",
+              "id": "call_00_cZRVt5ppmq2vur5NNEp47031",
+              "name": "compile_experiment_graph",
+              "arguments": {
+                "mode": "simulation",
+                "accept_demo_assumptions": true,
+                "deadline_s": 25200,
+                "budget_cny": 650,
+                "enabled_devices": [
+                  "device:19",
+                  "device:18",
+                  "device:67",
+                  "demo:ks4000:1",
+                  "bench"
+                ],
+                "unsupported_requests": [],
+                "experiments": [
+                  {
+                    "id": "picogreen-5",
+                    "method": "picogreen",
+                    "samples": 5,
+                    "replicates": 1,
+                    "release_s": 0
+                  }
+                ]
+              }
+            }
+          ],
+          "api": "openai-completions",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "usage": {
+            "input": 292,
+            "output": 294,
+            "cacheRead": 13568,
+            "cacheWrite": 0,
+            "reasoning": 74,
+            "totalTokens": 14154,
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "total": 0
+            }
+          },
+          "stopReason": "toolUse",
+          "timestamp": 1792386296438,
+          "responseId": "24a47515-a907-4bff-81ca-96817d702d50",
+          "rawStopReason": "tool_calls"
+        }
+      },
+      {
+        "type": "tool_execution_start",
+        "toolCallId": "call_00_cZRVt5ppmq2vur5NNEp47031",
+        "toolName": "compile_experiment_graph",
+        "args": {
+          "mode": "simulation",
+          "accept_demo_assumptions": true,
+          "deadline_s": 25200,
+          "budget_cny": 650,
+          "enabled_devices": [
+            "device:19",
+            "device:18",
+            "device:67",
+            "demo:ks4000:1",
+            "bench"
+          ],
+          "unsupported_requests": [],
+          "experiments": [
+            {
+              "id": "picogreen-5",
+              "method": "picogreen",
+              "samples": 5,
+              "replicates": 1,
+              "release_s": 0
+            }
+          ]
+        }
+      },
+      {
+        "type": "tool_execution_end",
+        "toolCallId": "call_00_cZRVt5ppmq2vur5NNEp47031",
+        "toolName": "compile_experiment_graph",
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"ok\":true,\"graph\":{\"schema\":\"biofoundry.taskgraph.v3\",\"mode\":\"simulation\",\"intent\":{\"mode\":\"simulation\",\"accept_demo_assumptions\":true,\"deadline_s\":25200,\"budget_cny\":650,\"enabled_devices\":[\"device:19\",\"device:18\",\"device:67\",\"demo:ks4000:1\",\"bench\"],\"unsupported_requests\":[],\"experiments\":[{\"id\":\"picogreen-5\",\"method\":\"picogreen\",\"samples\":5,\"replicates\":1,\"release_s\":0}]},\"methods\":{\"gfp\":{\"id\":\"genscript.cfxpress.gfp/demo-v2\",\"version\":\"2.0.0\",\"source\":{\"url\":\"https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf\",\"version\":\"v1.0, 2025-06; accessed 2026-10-15\",\"pages\":[4,6]},\"parameters\":{\"reaction_ul\":50,\"mix_ul\":45,\"DNA_or_water_ul\":5,\"temperature_c\":30,\"incubation_s\":10800,\"excitation_nm\":488,\"emission_nm\":525},\"basis\":\"manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions\"},\"bca\":{\"id\":\"pierce.bca.microplate/v1\",\"version\":\"1.0.0\",\"source\":{\"url\":\"https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf\",\"version\":\"MAN0011430 Rev D\",\"pages\":[2,3],\"accessed\":\"2026-10-16\"},\"parameters\":{\"sample_ul\":25,\"working_reagent_ul\":200,\"reagent_A_B_ratio\":[50,1],\"mix_s\":30,\"temperature_c\":37,\"incubation_s\":1800,\"absorbance_nm\":562,\"standards_ug_ml\":[2000,1500,1000,750,500,250,125,25,0]},\"basis\":\"manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)\"},\"picogreen\":{\"id\":\"quantit.picogreen.highrange/v2\",\"version\":\"2.0.0\",\"source\":{\"url\":\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf\",\"version\":\"MAN0001931 Rev A.0\",\"pages\":[3,4],\"accessed\":\"2026-10-16\"},\"parameters\":{\"prediluted_sample_ul\":100,\"working_reagent_ul\":100,\"reagent_dilution\":200,\"incubation_range_s\":[120,300],\"excitation_nm\":480,\"emission_nm\":520,\"standards_final_ng_ml\":[1000,100,10,0],\"protected_from_light\":true},\"basis\":\"manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers\"}},\"experiments\":[{\"id\":\"picogreen-5\",\"method\":\"picogreen\",\"method_id\":\"quantit.picogreen.highrange/v2\",\"samples\":5,\"replicates\":1,\"wells\":9,\"plate\":\"black96\",\"plate_id\":\"picogreen-5:P01\",\"release_s\":0,\"deadline_s\":25200,\"legacy\":null,\"manual_inputs\":\"human-prepared standards and working reagent; sample matrix compatibility unverified\"}],\"tasks\":[{\"id\":\"picogreen-5:manual_inputs\",\"experiment\":\"picogreen-5\",\"name\":\"manual_inputs\",\"capability\":\"manual\",\"depends_on\":[],\"candidates\":[\"bench\"],\"container\":\"black96\",\"load_s\":0,\"process_s\":207,\"clean_s\":0,\"temperature_c\":null,\"manual\":true,\"demand\":9,\"transfers\":[],\"window\":null,\"plate_id\":\"picogreen-5:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen-5:P01\",\"picogreen-5:WR\",\"picogreen-5:std-1000\",\"picogreen-5:std-100\",\"picogreen-5:std-10\",\"picogreen-5:std-0\",\"picogreen-5:sample-1\",\"picogreen-5:sample-2\",\"picogreen-5:sample-3\",\"picogreen-5:sample-4\",\"picogreen-5:sample-5\"],\"dependency_carriers\":{},\"required_labware\":[\"black96\"]},{\"id\":\"picogreen-5:assemble\",\"experiment\":\"picogreen-5\",\"name\":\"assemble\",\"capability\":\"liquid\",\"depends_on\":[\"picogreen-5:manual_inputs\"],\"candidates\":[\"device:19\",\"device:18\"],\"container\":\"black96\",\"load_s\":30,\"process_s\":117,\"clean_s\":30,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[[\"picogreen-5:std-1000\",\"picogreen-5:P01:A1\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A1\",100],[\"picogreen-5:std-100\",\"picogreen-5:P01:A2\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A2\",100],[\"picogreen-5:std-10\",\"picogreen-5:P01:A3\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A3\",100],[\"picogreen-5:std-0\",\"picogreen-5:P01:A4\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A4\",100],[\"picogreen-5:sample-1\",\"picogreen-5:P01:A5\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A5\",100],[\"picogreen-5:sample-2\",\"picogreen-5:P01:A6\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A6\",100],[\"picogreen-5:sample-3\",\"picogreen-5:P01:A7\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A7\",100],[\"picogreen-5:sample-4\",\"picogreen-5:P01:A8\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A8\",100],[\"picogreen-5:sample-5\",\"picogreen-5:P01:A9\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A9\",100]],\"window\":null,\"plate_id\":\"picogreen-5:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen-5:P01\",\"picogreen-5:WR\",\"picogreen-5:sample-1\",\"picogreen-5:sample-2\",\"picogreen-5:sample-3\",\"picogreen-5:sample-4\",\"picogreen-5:sample-5\",\"picogreen-5:std-0\",\"picogreen-5:std-10\",\"picogreen-5:std-100\",\"picogreen-5:std-1000\"],\"dependency_carriers\":{\"picogreen-5:manual_inputs\":[\"picogreen-5:P01\",\"picogreen-5:WR\",\"picogreen-5:sample-1\",\"picogreen-5:sample-2\",\"picogreen-5:sample-3\",\"picogreen-5:sample-4\",\"picogreen-5:sample-5\",\"picogreen-5:std-0\",\"picogreen-5:std-10\",\"picogreen-5:std-100\",\"picogreen-5:std-1000\"]},\"required_labware\":[\"black96\",\"reservoir_50ml\",\"tube_1p5ml\"]},{\"id\":\"picogreen-5:dark_incubation\",\"experiment\":\"picogreen-5\",\"name\":\"dark_incubation\",\"capability\":\"manual\",\"depends_on\":[\"picogreen-5:assemble\"],\"candidates\":[\"bench\"],\"container\":\"black96\",\"load_s\":0,\"process_s\":120,\"clean_s\":0,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[],\"window\":null,\"plate_id\":\"picogreen-5:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen-5:P01\"],\"dependency_carriers\":{\"picogreen-5:assemble\":[\"picogreen-5:P01\"]},\"required_labware\":[\"black96\"]},{\"id\":\"picogreen-5:read\",\"experiment\":\"picogreen-5\",\"name\":\"read\",\"capability\":\"FI\",\"depends_on\":[\"picogreen-5:dark_incubation\"],\"candidates\":[\"device:67\"],\"container\":\"black96\",\"load_s\":30,\"process_s\":63,\"clean_s\":30,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[],\"window\":{\"from\":\"picogreen-5:assemble\",\"max_s\":300,\"min_s\":120,\"basis\":\"manufacturer 2–5min dark incubation; read begins within this bound\"},\"plate_id\":\"picogreen-5:P01\",\"release_s\":0,\"deadline_s\":25200,\"optics\":{\"excitation_nm\":480,\"emission_nm\":520},\"carrier_ids\":[\"picogreen-5:P01\"],\"dependency_carriers\":{\"picogreen-5:dark_incubation\":[\"picogreen-5:P01\"]},\"required_labware\":[\"black96\"]}],\"initial_containers\":{\"picogreen-5:P01\":{\"id\":\"picogreen-5:P01\",\"kind\":\"read_plate\",\"capacity_ul\":0,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"prep:picogreen-5:P01\",\"parent\":null,\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:WR\":{\"id\":\"picogreen-5:WR\",\"kind\":\"stock_tube\",\"capacity_ul\":50000,\"volume_ul\":950,\"components_ul\":{\"picogreen-5:WR\":950},\"sample_ids\":[],\"location\":\"prep:picogreen-5:WR\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\",\"labware\":\"reservoir_50ml\"},\"picogreen-5:std-1000\":{\"id\":\"picogreen-5:std-1000\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:std-1000\":120},\"sample_ids\":[\"picogreen-5:std-1000\"],\"location\":\"prep:picogreen-5:std-1000\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A1\":{\"id\":\"picogreen-5:P01:A1\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A1\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:std-100\":{\"id\":\"picogreen-5:std-100\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:std-100\":120},\"sample_ids\":[\"picogreen-5:std-100\"],\"location\":\"prep:picogreen-5:std-100\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A2\":{\"id\":\"picogreen-5:P01:A2\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A2\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:std-10\":{\"id\":\"picogreen-5:std-10\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:std-10\":120},\"sample_ids\":[\"picogreen-5:std-10\"],\"location\":\"prep:picogreen-5:std-10\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A3\":{\"id\":\"picogreen-5:P01:A3\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A3\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:std-0\":{\"id\":\"picogreen-5:std-0\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:std-0\":120},\"sample_ids\":[\"picogreen-5:std-0\"],\"location\":\"prep:picogreen-5:std-0\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A4\":{\"id\":\"picogreen-5:P01:A4\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A4\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:sample-1\":{\"id\":\"picogreen-5:sample-1\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:sample-1\":120},\"sample_ids\":[\"picogreen-5:sample-1\"],\"location\":\"prep:picogreen-5:sample-1\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A5\":{\"id\":\"picogreen-5:P01:A5\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A5\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:sample-2\":{\"id\":\"picogreen-5:sample-2\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:sample-2\":120},\"sample_ids\":[\"picogreen-5:sample-2\"],\"location\":\"prep:picogreen-5:sample-2\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A6\":{\"id\":\"picogreen-5:P01:A6\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A6\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:sample-3\":{\"id\":\"picogreen-5:sample-3\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:sample-3\":120},\"sample_ids\":[\"picogreen-5:sample-3\"],\"location\":\"prep:picogreen-5:sample-3\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A7\":{\"id\":\"picogreen-5:P01:A7\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A7\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:sample-4\":{\"id\":\"picogreen-5:sample-4\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:sample-4\":120},\"sample_ids\":[\"picogreen-5:sample-4\"],\"location\":\"prep:picogreen-5:sample-4\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A8\":{\"id\":\"picogreen-5:P01:A8\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A8\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:sample-5\":{\"id\":\"picogreen-5:sample-5\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:sample-5\":120},\"sample_ids\":[\"picogreen-5:sample-5\"],\"location\":\"prep:picogreen-5:sample-5\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A9\":{\"id\":\"picogreen-5:P01:A9\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A9\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null}},\"plate_map\":[{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A1\",\"well\":\"A1\",\"sample_id\":\"picogreen-5:std-1000\",\"group\":\"standard\",\"standard_value\":1000,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A2\",\"well\":\"A2\",\"sample_id\":\"picogreen-5:std-100\",\"group\":\"standard\",\"standard_value\":100,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A3\",\"well\":\"A3\",\"sample_id\":\"picogreen-5:std-10\",\"group\":\"standard\",\"standard_value\":10,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A4\",\"well\":\"A4\",\"sample_id\":\"picogreen-5:std-0\",\"group\":\"standard\",\"standard_value\":0,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A5\",\"well\":\"A5\",\"sample_id\":\"picogreen-5:sample-1\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A6\",\"well\":\"A6\",\"sample_id\":\"picogreen-5:sample-2\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A7\",\"well\":\"A7\",\"sample_id\":\"picogreen-5:sample-3\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A8\",\"well\":\"A8\",\"sample_id\":\"picogreen-5:sample-4\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A9\",\"well\":\"A9\",\"sample_id\":\"picogreen-5:sample-5\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1}],\"budget_cny\":650,\"deadline_s\":25200,\"consumables_cny\":42.5,\"input_samples\":5,\"scope\":{\"digital_planning\":true,\"model_motion_demo\":true,\"method_adaptation\":false,\"hardware_validation\":false},\"assumptions\":[\"All costs and handling times are estimates, not quotes or benchmarks\",\"Existing library KS4000 is one demo instance, not a verified installed facility device\",\"No measured assay output; manual MIX/standards/carriers require qualification\"],\"consumable_usage\":{\"tips200ul\":18,\"black96\":1,\"clear96\":0,\"tube_1p5ml\":0,\"reservoir_50ml\":1}},\"checks\":{\"passed\":true,\"ledger_conserved\":true,\"legacy_gfp_preserved\":true,\"PlanIR_batches_passed\":1,\"wells\":9,\"measurement\":null}}"
+            }
+          ],
+          "details": {
+            "payload": {
+              "ok": true,
+              "graph": {
+                "schema": "biofoundry.taskgraph.v3",
+                "mode": "simulation",
+                "intent": {
+                  "mode": "simulation",
+                  "accept_demo_assumptions": true,
+                  "deadline_s": 25200,
+                  "budget_cny": 650,
+                  "enabled_devices": [
+                    "device:19",
+                    "device:18",
+                    "device:67",
+                    "demo:ks4000:1",
+                    "bench"
+                  ],
+                  "unsupported_requests": [],
+                  "experiments": [
+                    {
+                      "id": "picogreen-5",
+                      "method": "picogreen",
+                      "samples": 5,
+                      "replicates": 1,
+                      "release_s": 0
+                    }
+                  ]
+                },
+                "methods": {
+                  "gfp": {
+                    "id": "genscript.cfxpress.gfp/demo-v2",
+                    "version": "2.0.0",
+                    "source": {
+                      "url": "https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf",
+                      "version": "v1.0, 2025-06; accessed 2026-10-15",
+                      "pages": [
+                        4,
+                        6
+                      ]
+                    },
+                    "parameters": {
+                      "reaction_ul": 50,
+                      "mix_ul": 45,
+                      "DNA_or_water_ul": 5,
+                      "temperature_c": 30,
+                      "incubation_s": 10800,
+                      "excitation_nm": 488,
+                      "emission_nm": 525
+                    },
+                    "basis": "manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions"
+                  },
+                  "bca": {
+                    "id": "pierce.bca.microplate/v1",
+                    "version": "1.0.0",
+                    "source": {
+                      "url": "https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf",
+                      "version": "MAN0011430 Rev D",
+                      "pages": [
+                        2,
+                        3
+                      ],
+                      "accessed": "2026-10-16"
+                    },
+                    "parameters": {
+                      "sample_ul": 25,
+                      "working_reagent_ul": 200,
+                      "reagent_A_B_ratio": [
+                        50,
+                        1
+                      ],
+                      "mix_s": 30,
+                      "temperature_c": 37,
+                      "incubation_s": 1800,
+                      "absorbance_nm": 562,
+                      "standards_ug_ml": [
+                        2000,
+                        1500,
+                        1000,
+                        750,
+                        500,
+                        250,
+                        125,
+                        25,
+                        0
+                      ]
+                    },
+                    "basis": "manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)"
+                  },
+                  "picogreen": {
+                    "id": "quantit.picogreen.highrange/v2",
+                    "version": "2.0.0",
+                    "source": {
+                      "url": "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf",
+                      "version": "MAN0001931 Rev A.0",
+                      "pages": [
+                        3,
+                        4
+                      ],
+                      "accessed": "2026-10-16"
+                    },
+                    "parameters": {
+                      "prediluted_sample_ul": 100,
+                      "working_reagent_ul": 100,
+                      "reagent_dilution": 200,
+                      "incubation_range_s": [
+                        120,
+                        300
+                      ],
+                      "excitation_nm": 480,
+                      "emission_nm": 520,
+                      "standards_final_ng_ml": [
+                        1000,
+                        100,
+                        10,
+                        0
+                      ],
+                      "protected_from_light": true
+                    },
+                    "basis": "manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers"
+                  }
+                },
+                "experiments": [
+                  {
+                    "id": "picogreen-5",
+                    "method": "picogreen",
+                    "method_id": "quantit.picogreen.highrange/v2",
+                    "samples": 5,
+                    "replicates": 1,
+                    "wells": 9,
+                    "plate": "black96",
+                    "plate_id": "picogreen-5:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "legacy": null,
+                    "manual_inputs": "human-prepared standards and working reagent; sample matrix compatibility unverified"
+                  }
+                ],
+                "tasks": [
+                  {
+                    "id": "picogreen-5:manual_inputs",
+                    "experiment": "picogreen-5",
+                    "name": "manual_inputs",
+                    "capability": "manual",
+                    "depends_on": [],
+                    "candidates": [
+                      "bench"
+                    ],
+                    "container": "black96",
+                    "load_s": 0,
+                    "process_s": 207,
+                    "clean_s": 0,
+                    "temperature_c": null,
+                    "manual": true,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": null,
+                    "plate_id": "picogreen-5:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen-5:P01",
+                      "picogreen-5:WR",
+                      "picogreen-5:std-1000",
+                      "picogreen-5:std-100",
+                      "picogreen-5:std-10",
+                      "picogreen-5:std-0",
+                      "picogreen-5:sample-1",
+                      "picogreen-5:sample-2",
+                      "picogreen-5:sample-3",
+                      "picogreen-5:sample-4",
+                      "picogreen-5:sample-5"
+                    ],
+                    "dependency_carriers": {},
+                    "required_labware": [
+                      "black96"
+                    ]
+                  },
+                  {
+                    "id": "picogreen-5:assemble",
+                    "experiment": "picogreen-5",
+                    "name": "assemble",
+                    "capability": "liquid",
+                    "depends_on": [
+                      "picogreen-5:manual_inputs"
+                    ],
+                    "candidates": [
+                      "device:19",
+                      "device:18"
+                    ],
+                    "container": "black96",
+                    "load_s": 30,
+                    "process_s": 117,
+                    "clean_s": 30,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [
+                      [
+                        "picogreen-5:std-1000",
+                        "picogreen-5:P01:A1",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A1",
+                        100
+                      ],
+                      [
+                        "picogreen-5:std-100",
+                        "picogreen-5:P01:A2",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A2",
+                        100
+                      ],
+                      [
+                        "picogreen-5:std-10",
+                        "picogreen-5:P01:A3",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A3",
+                        100
+                      ],
+                      [
+                        "picogreen-5:std-0",
+                        "picogreen-5:P01:A4",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A4",
+                        100
+                      ],
+                      [
+                        "picogreen-5:sample-1",
+                        "picogreen-5:P01:A5",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A5",
+                        100
+                      ],
+                      [
+                        "picogreen-5:sample-2",
+                        "picogreen-5:P01:A6",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A6",
+                        100
+                      ],
+                      [
+                        "picogreen-5:sample-3",
+                        "picogreen-5:P01:A7",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A7",
+                        100
+                      ],
+                      [
+                        "picogreen-5:sample-4",
+                        "picogreen-5:P01:A8",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A8",
+                        100
+                      ],
+                      [
+                        "picogreen-5:sample-5",
+                        "picogreen-5:P01:A9",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A9",
+                        100
+                      ]
+                    ],
+                    "window": null,
+                    "plate_id": "picogreen-5:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen-5:P01",
+                      "picogreen-5:WR",
+                      "picogreen-5:sample-1",
+                      "picogreen-5:sample-2",
+                      "picogreen-5:sample-3",
+                      "picogreen-5:sample-4",
+                      "picogreen-5:sample-5",
+                      "picogreen-5:std-0",
+                      "picogreen-5:std-10",
+                      "picogreen-5:std-100",
+                      "picogreen-5:std-1000"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen-5:manual_inputs": [
+                        "picogreen-5:P01",
+                        "picogreen-5:WR",
+                        "picogreen-5:sample-1",
+                        "picogreen-5:sample-2",
+                        "picogreen-5:sample-3",
+                        "picogreen-5:sample-4",
+                        "picogreen-5:sample-5",
+                        "picogreen-5:std-0",
+                        "picogreen-5:std-10",
+                        "picogreen-5:std-100",
+                        "picogreen-5:std-1000"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96",
+                      "reservoir_50ml",
+                      "tube_1p5ml"
+                    ]
+                  },
+                  {
+                    "id": "picogreen-5:dark_incubation",
+                    "experiment": "picogreen-5",
+                    "name": "dark_incubation",
+                    "capability": "manual",
+                    "depends_on": [
+                      "picogreen-5:assemble"
+                    ],
+                    "candidates": [
+                      "bench"
+                    ],
+                    "container": "black96",
+                    "load_s": 0,
+                    "process_s": 120,
+                    "clean_s": 0,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": null,
+                    "plate_id": "picogreen-5:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen-5:P01"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen-5:assemble": [
+                        "picogreen-5:P01"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96"
+                    ]
+                  },
+                  {
+                    "id": "picogreen-5:read",
+                    "experiment": "picogreen-5",
+                    "name": "read",
+                    "capability": "FI",
+                    "depends_on": [
+                      "picogreen-5:dark_incubation"
+                    ],
+                    "candidates": [
+                      "device:67"
+                    ],
+                    "container": "black96",
+                    "load_s": 30,
+                    "process_s": 63,
+                    "clean_s": 30,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": {
+                      "from": "picogreen-5:assemble",
+                      "max_s": 300,
+                      "min_s": 120,
+                      "basis": "manufacturer 2–5min dark incubation; read begins within this bound"
+                    },
+                    "plate_id": "picogreen-5:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "optics": {
+                      "excitation_nm": 480,
+                      "emission_nm": 520
+                    },
+                    "carrier_ids": [
+                      "picogreen-5:P01"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen-5:dark_incubation": [
+                        "picogreen-5:P01"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96"
+                    ]
+                  }
+                ],
+                "initial_containers": {
+                  "picogreen-5:P01": {
+                    "id": "picogreen-5:P01",
+                    "kind": "read_plate",
+                    "capacity_ul": 0,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "prep:picogreen-5:P01",
+                    "parent": null,
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:WR": {
+                    "id": "picogreen-5:WR",
+                    "kind": "stock_tube",
+                    "capacity_ul": 50000,
+                    "volume_ul": 950,
+                    "components_ul": {
+                      "picogreen-5:WR": 950
+                    },
+                    "sample_ids": [],
+                    "location": "prep:picogreen-5:WR",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open",
+                    "labware": "reservoir_50ml"
+                  },
+                  "picogreen-5:std-1000": {
+                    "id": "picogreen-5:std-1000",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:std-1000": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:std-1000"
+                    ],
+                    "location": "prep:picogreen-5:std-1000",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A1": {
+                    "id": "picogreen-5:P01:A1",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A1",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:std-100": {
+                    "id": "picogreen-5:std-100",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:std-100": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:std-100"
+                    ],
+                    "location": "prep:picogreen-5:std-100",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A2": {
+                    "id": "picogreen-5:P01:A2",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A2",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:std-10": {
+                    "id": "picogreen-5:std-10",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:std-10": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:std-10"
+                    ],
+                    "location": "prep:picogreen-5:std-10",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A3": {
+                    "id": "picogreen-5:P01:A3",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A3",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:std-0": {
+                    "id": "picogreen-5:std-0",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:std-0": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:std-0"
+                    ],
+                    "location": "prep:picogreen-5:std-0",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A4": {
+                    "id": "picogreen-5:P01:A4",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A4",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:sample-1": {
+                    "id": "picogreen-5:sample-1",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:sample-1": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:sample-1"
+                    ],
+                    "location": "prep:picogreen-5:sample-1",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A5": {
+                    "id": "picogreen-5:P01:A5",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A5",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:sample-2": {
+                    "id": "picogreen-5:sample-2",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:sample-2": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:sample-2"
+                    ],
+                    "location": "prep:picogreen-5:sample-2",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A6": {
+                    "id": "picogreen-5:P01:A6",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A6",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:sample-3": {
+                    "id": "picogreen-5:sample-3",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:sample-3": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:sample-3"
+                    ],
+                    "location": "prep:picogreen-5:sample-3",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A7": {
+                    "id": "picogreen-5:P01:A7",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A7",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:sample-4": {
+                    "id": "picogreen-5:sample-4",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:sample-4": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:sample-4"
+                    ],
+                    "location": "prep:picogreen-5:sample-4",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A8": {
+                    "id": "picogreen-5:P01:A8",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A8",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:sample-5": {
+                    "id": "picogreen-5:sample-5",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:sample-5": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:sample-5"
+                    ],
+                    "location": "prep:picogreen-5:sample-5",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A9": {
+                    "id": "picogreen-5:P01:A9",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A9",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  }
+                },
+                "plate_map": [
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A1",
+                    "well": "A1",
+                    "sample_id": "picogreen-5:std-1000",
+                    "group": "standard",
+                    "standard_value": 1000,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A2",
+                    "well": "A2",
+                    "sample_id": "picogreen-5:std-100",
+                    "group": "standard",
+                    "standard_value": 100,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A3",
+                    "well": "A3",
+                    "sample_id": "picogreen-5:std-10",
+                    "group": "standard",
+                    "standard_value": 10,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A4",
+                    "well": "A4",
+                    "sample_id": "picogreen-5:std-0",
+                    "group": "standard",
+                    "standard_value": 0,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A5",
+                    "well": "A5",
+                    "sample_id": "picogreen-5:sample-1",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A6",
+                    "well": "A6",
+                    "sample_id": "picogreen-5:sample-2",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A7",
+                    "well": "A7",
+                    "sample_id": "picogreen-5:sample-3",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A8",
+                    "well": "A8",
+                    "sample_id": "picogreen-5:sample-4",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A9",
+                    "well": "A9",
+                    "sample_id": "picogreen-5:sample-5",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  }
+                ],
+                "budget_cny": 650,
+                "deadline_s": 25200,
+                "consumables_cny": 42.5,
+                "input_samples": 5,
+                "scope": {
+                  "digital_planning": true,
+                  "model_motion_demo": true,
+                  "method_adaptation": false,
+                  "hardware_validation": false
+                },
+                "assumptions": [
+                  "All costs and handling times are estimates, not quotes or benchmarks",
+                  "Existing library KS4000 is one demo instance, not a verified installed facility device",
+                  "No measured assay output; manual MIX/standards/carriers require qualification"
+                ],
+                "consumable_usage": {
+                  "tips200ul": 18,
+                  "black96": 1,
+                  "clear96": 0,
+                  "tube_1p5ml": 0,
+                  "reservoir_50ml": 1
+                }
+              },
+              "checks": {
+                "passed": true,
+                "ledger_conserved": true,
+                "legacy_gfp_preserved": true,
+                "PlanIR_batches_passed": 1,
+                "wells": 9,
+                "measurement": null
+              }
+            }
+          }
+        },
+        "isError": false
+      },
+      {
+        "type": "message_end",
+        "message": {
+          "role": "toolResult",
+          "toolCallId": "call_00_cZRVt5ppmq2vur5NNEp47031",
+          "toolName": "compile_experiment_graph",
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"ok\":true,\"graph\":{\"schema\":\"biofoundry.taskgraph.v3\",\"mode\":\"simulation\",\"intent\":{\"mode\":\"simulation\",\"accept_demo_assumptions\":true,\"deadline_s\":25200,\"budget_cny\":650,\"enabled_devices\":[\"device:19\",\"device:18\",\"device:67\",\"demo:ks4000:1\",\"bench\"],\"unsupported_requests\":[],\"experiments\":[{\"id\":\"picogreen-5\",\"method\":\"picogreen\",\"samples\":5,\"replicates\":1,\"release_s\":0}]},\"methods\":{\"gfp\":{\"id\":\"genscript.cfxpress.gfp/demo-v2\",\"version\":\"2.0.0\",\"source\":{\"url\":\"https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf\",\"version\":\"v1.0, 2025-06; accessed 2026-10-15\",\"pages\":[4,6]},\"parameters\":{\"reaction_ul\":50,\"mix_ul\":45,\"DNA_or_water_ul\":5,\"temperature_c\":30,\"incubation_s\":10800,\"excitation_nm\":488,\"emission_nm\":525},\"basis\":\"manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions\"},\"bca\":{\"id\":\"pierce.bca.microplate/v1\",\"version\":\"1.0.0\",\"source\":{\"url\":\"https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf\",\"version\":\"MAN0011430 Rev D\",\"pages\":[2,3],\"accessed\":\"2026-10-16\"},\"parameters\":{\"sample_ul\":25,\"working_reagent_ul\":200,\"reagent_A_B_ratio\":[50,1],\"mix_s\":30,\"temperature_c\":37,\"incubation_s\":1800,\"absorbance_nm\":562,\"standards_ug_ml\":[2000,1500,1000,750,500,250,125,25,0]},\"basis\":\"manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)\"},\"picogreen\":{\"id\":\"quantit.picogreen.highrange/v2\",\"version\":\"2.0.0\",\"source\":{\"url\":\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf\",\"version\":\"MAN0001931 Rev A.0\",\"pages\":[3,4],\"accessed\":\"2026-10-16\"},\"parameters\":{\"prediluted_sample_ul\":100,\"working_reagent_ul\":100,\"reagent_dilution\":200,\"incubation_range_s\":[120,300],\"excitation_nm\":480,\"emission_nm\":520,\"standards_final_ng_ml\":[1000,100,10,0],\"protected_from_light\":true},\"basis\":\"manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers\"}},\"experiments\":[{\"id\":\"picogreen-5\",\"method\":\"picogreen\",\"method_id\":\"quantit.picogreen.highrange/v2\",\"samples\":5,\"replicates\":1,\"wells\":9,\"plate\":\"black96\",\"plate_id\":\"picogreen-5:P01\",\"release_s\":0,\"deadline_s\":25200,\"legacy\":null,\"manual_inputs\":\"human-prepared standards and working reagent; sample matrix compatibility unverified\"}],\"tasks\":[{\"id\":\"picogreen-5:manual_inputs\",\"experiment\":\"picogreen-5\",\"name\":\"manual_inputs\",\"capability\":\"manual\",\"depends_on\":[],\"candidates\":[\"bench\"],\"container\":\"black96\",\"load_s\":0,\"process_s\":207,\"clean_s\":0,\"temperature_c\":null,\"manual\":true,\"demand\":9,\"transfers\":[],\"window\":null,\"plate_id\":\"picogreen-5:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen-5:P01\",\"picogreen-5:WR\",\"picogreen-5:std-1000\",\"picogreen-5:std-100\",\"picogreen-5:std-10\",\"picogreen-5:std-0\",\"picogreen-5:sample-1\",\"picogreen-5:sample-2\",\"picogreen-5:sample-3\",\"picogreen-5:sample-4\",\"picogreen-5:sample-5\"],\"dependency_carriers\":{},\"required_labware\":[\"black96\"]},{\"id\":\"picogreen-5:assemble\",\"experiment\":\"picogreen-5\",\"name\":\"assemble\",\"capability\":\"liquid\",\"depends_on\":[\"picogreen-5:manual_inputs\"],\"candidates\":[\"device:19\",\"device:18\"],\"container\":\"black96\",\"load_s\":30,\"process_s\":117,\"clean_s\":30,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[[\"picogreen-5:std-1000\",\"picogreen-5:P01:A1\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A1\",100],[\"picogreen-5:std-100\",\"picogreen-5:P01:A2\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A2\",100],[\"picogreen-5:std-10\",\"picogreen-5:P01:A3\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A3\",100],[\"picogreen-5:std-0\",\"picogreen-5:P01:A4\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A4\",100],[\"picogreen-5:sample-1\",\"picogreen-5:P01:A5\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A5\",100],[\"picogreen-5:sample-2\",\"picogreen-5:P01:A6\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A6\",100],[\"picogreen-5:sample-3\",\"picogreen-5:P01:A7\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A7\",100],[\"picogreen-5:sample-4\",\"picogreen-5:P01:A8\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A8\",100],[\"picogreen-5:sample-5\",\"picogreen-5:P01:A9\",100],[\"picogreen-5:WR\",\"picogreen-5:P01:A9\",100]],\"window\":null,\"plate_id\":\"picogreen-5:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen-5:P01\",\"picogreen-5:WR\",\"picogreen-5:sample-1\",\"picogreen-5:sample-2\",\"picogreen-5:sample-3\",\"picogreen-5:sample-4\",\"picogreen-5:sample-5\",\"picogreen-5:std-0\",\"picogreen-5:std-10\",\"picogreen-5:std-100\",\"picogreen-5:std-1000\"],\"dependency_carriers\":{\"picogreen-5:manual_inputs\":[\"picogreen-5:P01\",\"picogreen-5:WR\",\"picogreen-5:sample-1\",\"picogreen-5:sample-2\",\"picogreen-5:sample-3\",\"picogreen-5:sample-4\",\"picogreen-5:sample-5\",\"picogreen-5:std-0\",\"picogreen-5:std-10\",\"picogreen-5:std-100\",\"picogreen-5:std-1000\"]},\"required_labware\":[\"black96\",\"reservoir_50ml\",\"tube_1p5ml\"]},{\"id\":\"picogreen-5:dark_incubation\",\"experiment\":\"picogreen-5\",\"name\":\"dark_incubation\",\"capability\":\"manual\",\"depends_on\":[\"picogreen-5:assemble\"],\"candidates\":[\"bench\"],\"container\":\"black96\",\"load_s\":0,\"process_s\":120,\"clean_s\":0,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[],\"window\":null,\"plate_id\":\"picogreen-5:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen-5:P01\"],\"dependency_carriers\":{\"picogreen-5:assemble\":[\"picogreen-5:P01\"]},\"required_labware\":[\"black96\"]},{\"id\":\"picogreen-5:read\",\"experiment\":\"picogreen-5\",\"name\":\"read\",\"capability\":\"FI\",\"depends_on\":[\"picogreen-5:dark_incubation\"],\"candidates\":[\"device:67\"],\"container\":\"black96\",\"load_s\":30,\"process_s\":63,\"clean_s\":30,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[],\"window\":{\"from\":\"picogreen-5:assemble\",\"max_s\":300,\"min_s\":120,\"basis\":\"manufacturer 2–5min dark incubation; read begins within this bound\"},\"plate_id\":\"picogreen-5:P01\",\"release_s\":0,\"deadline_s\":25200,\"optics\":{\"excitation_nm\":480,\"emission_nm\":520},\"carrier_ids\":[\"picogreen-5:P01\"],\"dependency_carriers\":{\"picogreen-5:dark_incubation\":[\"picogreen-5:P01\"]},\"required_labware\":[\"black96\"]}],\"initial_containers\":{\"picogreen-5:P01\":{\"id\":\"picogreen-5:P01\",\"kind\":\"read_plate\",\"capacity_ul\":0,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"prep:picogreen-5:P01\",\"parent\":null,\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:WR\":{\"id\":\"picogreen-5:WR\",\"kind\":\"stock_tube\",\"capacity_ul\":50000,\"volume_ul\":950,\"components_ul\":{\"picogreen-5:WR\":950},\"sample_ids\":[],\"location\":\"prep:picogreen-5:WR\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\",\"labware\":\"reservoir_50ml\"},\"picogreen-5:std-1000\":{\"id\":\"picogreen-5:std-1000\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:std-1000\":120},\"sample_ids\":[\"picogreen-5:std-1000\"],\"location\":\"prep:picogreen-5:std-1000\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A1\":{\"id\":\"picogreen-5:P01:A1\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A1\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:std-100\":{\"id\":\"picogreen-5:std-100\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:std-100\":120},\"sample_ids\":[\"picogreen-5:std-100\"],\"location\":\"prep:picogreen-5:std-100\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A2\":{\"id\":\"picogreen-5:P01:A2\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A2\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:std-10\":{\"id\":\"picogreen-5:std-10\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:std-10\":120},\"sample_ids\":[\"picogreen-5:std-10\"],\"location\":\"prep:picogreen-5:std-10\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A3\":{\"id\":\"picogreen-5:P01:A3\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A3\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:std-0\":{\"id\":\"picogreen-5:std-0\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:std-0\":120},\"sample_ids\":[\"picogreen-5:std-0\"],\"location\":\"prep:picogreen-5:std-0\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A4\":{\"id\":\"picogreen-5:P01:A4\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A4\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:sample-1\":{\"id\":\"picogreen-5:sample-1\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:sample-1\":120},\"sample_ids\":[\"picogreen-5:sample-1\"],\"location\":\"prep:picogreen-5:sample-1\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A5\":{\"id\":\"picogreen-5:P01:A5\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A5\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:sample-2\":{\"id\":\"picogreen-5:sample-2\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:sample-2\":120},\"sample_ids\":[\"picogreen-5:sample-2\"],\"location\":\"prep:picogreen-5:sample-2\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A6\":{\"id\":\"picogreen-5:P01:A6\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A6\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:sample-3\":{\"id\":\"picogreen-5:sample-3\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:sample-3\":120},\"sample_ids\":[\"picogreen-5:sample-3\"],\"location\":\"prep:picogreen-5:sample-3\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A7\":{\"id\":\"picogreen-5:P01:A7\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A7\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:sample-4\":{\"id\":\"picogreen-5:sample-4\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:sample-4\":120},\"sample_ids\":[\"picogreen-5:sample-4\"],\"location\":\"prep:picogreen-5:sample-4\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A8\":{\"id\":\"picogreen-5:P01:A8\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A8\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen-5:sample-5\":{\"id\":\"picogreen-5:sample-5\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen-5:sample-5\":120},\"sample_ids\":[\"picogreen-5:sample-5\"],\"location\":\"prep:picogreen-5:sample-5\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen-5:P01:A9\":{\"id\":\"picogreen-5:P01:A9\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen-5:P01:A9\",\"parent\":\"picogreen-5:P01\",\"dead_volume_ul\":0,\"closure\":null}},\"plate_map\":[{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A1\",\"well\":\"A1\",\"sample_id\":\"picogreen-5:std-1000\",\"group\":\"standard\",\"standard_value\":1000,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A2\",\"well\":\"A2\",\"sample_id\":\"picogreen-5:std-100\",\"group\":\"standard\",\"standard_value\":100,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A3\",\"well\":\"A3\",\"sample_id\":\"picogreen-5:std-10\",\"group\":\"standard\",\"standard_value\":10,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A4\",\"well\":\"A4\",\"sample_id\":\"picogreen-5:std-0\",\"group\":\"standard\",\"standard_value\":0,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A5\",\"well\":\"A5\",\"sample_id\":\"picogreen-5:sample-1\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A6\",\"well\":\"A6\",\"sample_id\":\"picogreen-5:sample-2\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A7\",\"well\":\"A7\",\"sample_id\":\"picogreen-5:sample-3\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A8\",\"well\":\"A8\",\"sample_id\":\"picogreen-5:sample-4\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen-5\",\"container\":\"picogreen-5:P01:A9\",\"well\":\"A9\",\"sample_id\":\"picogreen-5:sample-5\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1}],\"budget_cny\":650,\"deadline_s\":25200,\"consumables_cny\":42.5,\"input_samples\":5,\"scope\":{\"digital_planning\":true,\"model_motion_demo\":true,\"method_adaptation\":false,\"hardware_validation\":false},\"assumptions\":[\"All costs and handling times are estimates, not quotes or benchmarks\",\"Existing library KS4000 is one demo instance, not a verified installed facility device\",\"No measured assay output; manual MIX/standards/carriers require qualification\"],\"consumable_usage\":{\"tips200ul\":18,\"black96\":1,\"clear96\":0,\"tube_1p5ml\":0,\"reservoir_50ml\":1}},\"checks\":{\"passed\":true,\"ledger_conserved\":true,\"legacy_gfp_preserved\":true,\"PlanIR_batches_passed\":1,\"wells\":9,\"measurement\":null}}"
+            }
+          ],
+          "details": {
+            "payload": {
+              "ok": true,
+              "graph": {
+                "schema": "biofoundry.taskgraph.v3",
+                "mode": "simulation",
+                "intent": {
+                  "mode": "simulation",
+                  "accept_demo_assumptions": true,
+                  "deadline_s": 25200,
+                  "budget_cny": 650,
+                  "enabled_devices": [
+                    "device:19",
+                    "device:18",
+                    "device:67",
+                    "demo:ks4000:1",
+                    "bench"
+                  ],
+                  "unsupported_requests": [],
+                  "experiments": [
+                    {
+                      "id": "picogreen-5",
+                      "method": "picogreen",
+                      "samples": 5,
+                      "replicates": 1,
+                      "release_s": 0
+                    }
+                  ]
+                },
+                "methods": {
+                  "gfp": {
+                    "id": "genscript.cfxpress.gfp/demo-v2",
+                    "version": "2.0.0",
+                    "source": {
+                      "url": "https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf",
+                      "version": "v1.0, 2025-06; accessed 2026-10-15",
+                      "pages": [
+                        4,
+                        6
+                      ]
+                    },
+                    "parameters": {
+                      "reaction_ul": 50,
+                      "mix_ul": 45,
+                      "DNA_or_water_ul": 5,
+                      "temperature_c": 30,
+                      "incubation_s": 10800,
+                      "excitation_nm": 488,
+                      "emission_nm": 525
+                    },
+                    "basis": "manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions"
+                  },
+                  "bca": {
+                    "id": "pierce.bca.microplate/v1",
+                    "version": "1.0.0",
+                    "source": {
+                      "url": "https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf",
+                      "version": "MAN0011430 Rev D",
+                      "pages": [
+                        2,
+                        3
+                      ],
+                      "accessed": "2026-10-16"
+                    },
+                    "parameters": {
+                      "sample_ul": 25,
+                      "working_reagent_ul": 200,
+                      "reagent_A_B_ratio": [
+                        50,
+                        1
+                      ],
+                      "mix_s": 30,
+                      "temperature_c": 37,
+                      "incubation_s": 1800,
+                      "absorbance_nm": 562,
+                      "standards_ug_ml": [
+                        2000,
+                        1500,
+                        1000,
+                        750,
+                        500,
+                        250,
+                        125,
+                        25,
+                        0
+                      ]
+                    },
+                    "basis": "manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)"
+                  },
+                  "picogreen": {
+                    "id": "quantit.picogreen.highrange/v2",
+                    "version": "2.0.0",
+                    "source": {
+                      "url": "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf",
+                      "version": "MAN0001931 Rev A.0",
+                      "pages": [
+                        3,
+                        4
+                      ],
+                      "accessed": "2026-10-16"
+                    },
+                    "parameters": {
+                      "prediluted_sample_ul": 100,
+                      "working_reagent_ul": 100,
+                      "reagent_dilution": 200,
+                      "incubation_range_s": [
+                        120,
+                        300
+                      ],
+                      "excitation_nm": 480,
+                      "emission_nm": 520,
+                      "standards_final_ng_ml": [
+                        1000,
+                        100,
+                        10,
+                        0
+                      ],
+                      "protected_from_light": true
+                    },
+                    "basis": "manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers"
+                  }
+                },
+                "experiments": [
+                  {
+                    "id": "picogreen-5",
+                    "method": "picogreen",
+                    "method_id": "quantit.picogreen.highrange/v2",
+                    "samples": 5,
+                    "replicates": 1,
+                    "wells": 9,
+                    "plate": "black96",
+                    "plate_id": "picogreen-5:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "legacy": null,
+                    "manual_inputs": "human-prepared standards and working reagent; sample matrix compatibility unverified"
+                  }
+                ],
+                "tasks": [
+                  {
+                    "id": "picogreen-5:manual_inputs",
+                    "experiment": "picogreen-5",
+                    "name": "manual_inputs",
+                    "capability": "manual",
+                    "depends_on": [],
+                    "candidates": [
+                      "bench"
+                    ],
+                    "container": "black96",
+                    "load_s": 0,
+                    "process_s": 207,
+                    "clean_s": 0,
+                    "temperature_c": null,
+                    "manual": true,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": null,
+                    "plate_id": "picogreen-5:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen-5:P01",
+                      "picogreen-5:WR",
+                      "picogreen-5:std-1000",
+                      "picogreen-5:std-100",
+                      "picogreen-5:std-10",
+                      "picogreen-5:std-0",
+                      "picogreen-5:sample-1",
+                      "picogreen-5:sample-2",
+                      "picogreen-5:sample-3",
+                      "picogreen-5:sample-4",
+                      "picogreen-5:sample-5"
+                    ],
+                    "dependency_carriers": {},
+                    "required_labware": [
+                      "black96"
+                    ]
+                  },
+                  {
+                    "id": "picogreen-5:assemble",
+                    "experiment": "picogreen-5",
+                    "name": "assemble",
+                    "capability": "liquid",
+                    "depends_on": [
+                      "picogreen-5:manual_inputs"
+                    ],
+                    "candidates": [
+                      "device:19",
+                      "device:18"
+                    ],
+                    "container": "black96",
+                    "load_s": 30,
+                    "process_s": 117,
+                    "clean_s": 30,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [
+                      [
+                        "picogreen-5:std-1000",
+                        "picogreen-5:P01:A1",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A1",
+                        100
+                      ],
+                      [
+                        "picogreen-5:std-100",
+                        "picogreen-5:P01:A2",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A2",
+                        100
+                      ],
+                      [
+                        "picogreen-5:std-10",
+                        "picogreen-5:P01:A3",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A3",
+                        100
+                      ],
+                      [
+                        "picogreen-5:std-0",
+                        "picogreen-5:P01:A4",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A4",
+                        100
+                      ],
+                      [
+                        "picogreen-5:sample-1",
+                        "picogreen-5:P01:A5",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A5",
+                        100
+                      ],
+                      [
+                        "picogreen-5:sample-2",
+                        "picogreen-5:P01:A6",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A6",
+                        100
+                      ],
+                      [
+                        "picogreen-5:sample-3",
+                        "picogreen-5:P01:A7",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A7",
+                        100
+                      ],
+                      [
+                        "picogreen-5:sample-4",
+                        "picogreen-5:P01:A8",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A8",
+                        100
+                      ],
+                      [
+                        "picogreen-5:sample-5",
+                        "picogreen-5:P01:A9",
+                        100
+                      ],
+                      [
+                        "picogreen-5:WR",
+                        "picogreen-5:P01:A9",
+                        100
+                      ]
+                    ],
+                    "window": null,
+                    "plate_id": "picogreen-5:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen-5:P01",
+                      "picogreen-5:WR",
+                      "picogreen-5:sample-1",
+                      "picogreen-5:sample-2",
+                      "picogreen-5:sample-3",
+                      "picogreen-5:sample-4",
+                      "picogreen-5:sample-5",
+                      "picogreen-5:std-0",
+                      "picogreen-5:std-10",
+                      "picogreen-5:std-100",
+                      "picogreen-5:std-1000"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen-5:manual_inputs": [
+                        "picogreen-5:P01",
+                        "picogreen-5:WR",
+                        "picogreen-5:sample-1",
+                        "picogreen-5:sample-2",
+                        "picogreen-5:sample-3",
+                        "picogreen-5:sample-4",
+                        "picogreen-5:sample-5",
+                        "picogreen-5:std-0",
+                        "picogreen-5:std-10",
+                        "picogreen-5:std-100",
+                        "picogreen-5:std-1000"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96",
+                      "reservoir_50ml",
+                      "tube_1p5ml"
+                    ]
+                  },
+                  {
+                    "id": "picogreen-5:dark_incubation",
+                    "experiment": "picogreen-5",
+                    "name": "dark_incubation",
+                    "capability": "manual",
+                    "depends_on": [
+                      "picogreen-5:assemble"
+                    ],
+                    "candidates": [
+                      "bench"
+                    ],
+                    "container": "black96",
+                    "load_s": 0,
+                    "process_s": 120,
+                    "clean_s": 0,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": null,
+                    "plate_id": "picogreen-5:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen-5:P01"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen-5:assemble": [
+                        "picogreen-5:P01"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96"
+                    ]
+                  },
+                  {
+                    "id": "picogreen-5:read",
+                    "experiment": "picogreen-5",
+                    "name": "read",
+                    "capability": "FI",
+                    "depends_on": [
+                      "picogreen-5:dark_incubation"
+                    ],
+                    "candidates": [
+                      "device:67"
+                    ],
+                    "container": "black96",
+                    "load_s": 30,
+                    "process_s": 63,
+                    "clean_s": 30,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": {
+                      "from": "picogreen-5:assemble",
+                      "max_s": 300,
+                      "min_s": 120,
+                      "basis": "manufacturer 2–5min dark incubation; read begins within this bound"
+                    },
+                    "plate_id": "picogreen-5:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "optics": {
+                      "excitation_nm": 480,
+                      "emission_nm": 520
+                    },
+                    "carrier_ids": [
+                      "picogreen-5:P01"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen-5:dark_incubation": [
+                        "picogreen-5:P01"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96"
+                    ]
+                  }
+                ],
+                "initial_containers": {
+                  "picogreen-5:P01": {
+                    "id": "picogreen-5:P01",
+                    "kind": "read_plate",
+                    "capacity_ul": 0,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "prep:picogreen-5:P01",
+                    "parent": null,
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:WR": {
+                    "id": "picogreen-5:WR",
+                    "kind": "stock_tube",
+                    "capacity_ul": 50000,
+                    "volume_ul": 950,
+                    "components_ul": {
+                      "picogreen-5:WR": 950
+                    },
+                    "sample_ids": [],
+                    "location": "prep:picogreen-5:WR",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open",
+                    "labware": "reservoir_50ml"
+                  },
+                  "picogreen-5:std-1000": {
+                    "id": "picogreen-5:std-1000",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:std-1000": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:std-1000"
+                    ],
+                    "location": "prep:picogreen-5:std-1000",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A1": {
+                    "id": "picogreen-5:P01:A1",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A1",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:std-100": {
+                    "id": "picogreen-5:std-100",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:std-100": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:std-100"
+                    ],
+                    "location": "prep:picogreen-5:std-100",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A2": {
+                    "id": "picogreen-5:P01:A2",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A2",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:std-10": {
+                    "id": "picogreen-5:std-10",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:std-10": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:std-10"
+                    ],
+                    "location": "prep:picogreen-5:std-10",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A3": {
+                    "id": "picogreen-5:P01:A3",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A3",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:std-0": {
+                    "id": "picogreen-5:std-0",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:std-0": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:std-0"
+                    ],
+                    "location": "prep:picogreen-5:std-0",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A4": {
+                    "id": "picogreen-5:P01:A4",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A4",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:sample-1": {
+                    "id": "picogreen-5:sample-1",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:sample-1": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:sample-1"
+                    ],
+                    "location": "prep:picogreen-5:sample-1",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A5": {
+                    "id": "picogreen-5:P01:A5",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A5",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:sample-2": {
+                    "id": "picogreen-5:sample-2",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:sample-2": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:sample-2"
+                    ],
+                    "location": "prep:picogreen-5:sample-2",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A6": {
+                    "id": "picogreen-5:P01:A6",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A6",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:sample-3": {
+                    "id": "picogreen-5:sample-3",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:sample-3": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:sample-3"
+                    ],
+                    "location": "prep:picogreen-5:sample-3",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A7": {
+                    "id": "picogreen-5:P01:A7",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A7",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:sample-4": {
+                    "id": "picogreen-5:sample-4",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:sample-4": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:sample-4"
+                    ],
+                    "location": "prep:picogreen-5:sample-4",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A8": {
+                    "id": "picogreen-5:P01:A8",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A8",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen-5:sample-5": {
+                    "id": "picogreen-5:sample-5",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen-5:sample-5": 120
+                    },
+                    "sample_ids": [
+                      "picogreen-5:sample-5"
+                    ],
+                    "location": "prep:picogreen-5:sample-5",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen-5:P01:A9": {
+                    "id": "picogreen-5:P01:A9",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen-5:P01:A9",
+                    "parent": "picogreen-5:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  }
+                },
+                "plate_map": [
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A1",
+                    "well": "A1",
+                    "sample_id": "picogreen-5:std-1000",
+                    "group": "standard",
+                    "standard_value": 1000,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A2",
+                    "well": "A2",
+                    "sample_id": "picogreen-5:std-100",
+                    "group": "standard",
+                    "standard_value": 100,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A3",
+                    "well": "A3",
+                    "sample_id": "picogreen-5:std-10",
+                    "group": "standard",
+                    "standard_value": 10,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A4",
+                    "well": "A4",
+                    "sample_id": "picogreen-5:std-0",
+                    "group": "standard",
+                    "standard_value": 0,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A5",
+                    "well": "A5",
+                    "sample_id": "picogreen-5:sample-1",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A6",
+                    "well": "A6",
+                    "sample_id": "picogreen-5:sample-2",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A7",
+                    "well": "A7",
+                    "sample_id": "picogreen-5:sample-3",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A8",
+                    "well": "A8",
+                    "sample_id": "picogreen-5:sample-4",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen-5",
+                    "container": "picogreen-5:P01:A9",
+                    "well": "A9",
+                    "sample_id": "picogreen-5:sample-5",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  }
+                ],
+                "budget_cny": 650,
+                "deadline_s": 25200,
+                "consumables_cny": 42.5,
+                "input_samples": 5,
+                "scope": {
+                  "digital_planning": true,
+                  "model_motion_demo": true,
+                  "method_adaptation": false,
+                  "hardware_validation": false
+                },
+                "assumptions": [
+                  "All costs and handling times are estimates, not quotes or benchmarks",
+                  "Existing library KS4000 is one demo instance, not a verified installed facility device",
+                  "No measured assay output; manual MIX/standards/carriers require qualification"
+                ],
+                "consumable_usage": {
+                  "tips200ul": 18,
+                  "black96": 1,
+                  "clear96": 0,
+                  "tube_1p5ml": 0,
+                  "reservoir_50ml": 1
+                }
+              },
+              "checks": {
+                "passed": true,
+                "ledger_conserved": true,
+                "legacy_gfp_preserved": true,
+                "PlanIR_batches_passed": 1,
+                "wells": 9,
+                "measurement": null
+              }
+            }
+          },
+          "isError": false,
+          "timestamp": 1792386298411
+        }
+      }
+    ],
+    "generated": {
+      "ok": true,
+      "graph": {
+        "schema": "biofoundry.taskgraph.v3",
+        "mode": "simulation",
+        "intent": {
+          "mode": "simulation",
+          "accept_demo_assumptions": true,
+          "deadline_s": 25200,
+          "budget_cny": 650,
+          "enabled_devices": [
+            "device:19",
+            "device:18",
+            "device:67",
+            "demo:ks4000:1",
+            "bench"
+          ],
+          "unsupported_requests": [],
+          "experiments": [
+            {
+              "id": "picogreen-5",
+              "method": "picogreen",
+              "samples": 5,
+              "replicates": 1,
+              "release_s": 0
+            }
+          ]
+        },
+        "methods": {
+          "gfp": {
+            "id": "genscript.cfxpress.gfp/demo-v2",
+            "version": "2.0.0",
+            "source": {
+              "url": "https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf",
+              "version": "v1.0, 2025-06; accessed 2026-10-15",
+              "pages": [
+                4,
+                6
+              ]
+            },
+            "parameters": {
+              "reaction_ul": 50,
+              "mix_ul": 45,
+              "DNA_or_water_ul": 5,
+              "temperature_c": 30,
+              "incubation_s": 10800,
+              "excitation_nm": 488,
+              "emission_nm": 525
+            },
+            "basis": "manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions"
+          },
+          "bca": {
+            "id": "pierce.bca.microplate/v1",
+            "version": "1.0.0",
+            "source": {
+              "url": "https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf",
+              "version": "MAN0011430 Rev D",
+              "pages": [
+                2,
+                3
+              ],
+              "accessed": "2026-10-16"
+            },
+            "parameters": {
+              "sample_ul": 25,
+              "working_reagent_ul": 200,
+              "reagent_A_B_ratio": [
+                50,
+                1
+              ],
+              "mix_s": 30,
+              "temperature_c": 37,
+              "incubation_s": 1800,
+              "absorbance_nm": 562,
+              "standards_ug_ml": [
+                2000,
+                1500,
+                1000,
+                750,
+                500,
+                250,
+                125,
+                25,
+                0
+              ]
+            },
+            "basis": "manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)"
+          },
+          "picogreen": {
+            "id": "quantit.picogreen.highrange/v2",
+            "version": "2.0.0",
+            "source": {
+              "url": "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf",
+              "version": "MAN0001931 Rev A.0",
+              "pages": [
+                3,
+                4
+              ],
+              "accessed": "2026-10-16"
+            },
+            "parameters": {
+              "prediluted_sample_ul": 100,
+              "working_reagent_ul": 100,
+              "reagent_dilution": 200,
+              "incubation_range_s": [
+                120,
+                300
+              ],
+              "excitation_nm": 480,
+              "emission_nm": 520,
+              "standards_final_ng_ml": [
+                1000,
+                100,
+                10,
+                0
+              ],
+              "protected_from_light": true
+            },
+            "basis": "manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers"
+          }
+        },
+        "experiments": [
+          {
+            "id": "picogreen-5",
+            "method": "picogreen",
+            "method_id": "quantit.picogreen.highrange/v2",
+            "samples": 5,
+            "replicates": 1,
+            "wells": 9,
+            "plate": "black96",
+            "plate_id": "picogreen-5:P01",
+            "release_s": 0,
+            "deadline_s": 25200,
+            "legacy": null,
+            "manual_inputs": "human-prepared standards and working reagent; sample matrix compatibility unverified"
+          }
+        ],
+        "tasks": [
+          {
+            "id": "picogreen-5:manual_inputs",
+            "experiment": "picogreen-5",
+            "name": "manual_inputs",
+            "capability": "manual",
+            "depends_on": [],
+            "candidates": [
+              "bench"
+            ],
+            "container": "black96",
+            "load_s": 0,
+            "process_s": 207,
+            "clean_s": 0,
+            "temperature_c": null,
+            "manual": true,
+            "demand": 9,
+            "transfers": [],
+            "window": null,
+            "plate_id": "picogreen-5:P01",
+            "release_s": 0,
+            "deadline_s": 25200,
+            "carrier_ids": [
+              "picogreen-5:P01",
+              "picogreen-5:WR",
+              "picogreen-5:std-1000",
+              "picogreen-5:std-100",
+              "picogreen-5:std-10",
+              "picogreen-5:std-0",
+              "picogreen-5:sample-1",
+              "picogreen-5:sample-2",
+              "picogreen-5:sample-3",
+              "picogreen-5:sample-4",
+              "picogreen-5:sample-5"
+            ],
+            "dependency_carriers": {},
+            "required_labware": [
+              "black96"
+            ]
+          },
+          {
+            "id": "picogreen-5:assemble",
+            "experiment": "picogreen-5",
+            "name": "assemble",
+            "capability": "liquid",
+            "depends_on": [
+              "picogreen-5:manual_inputs"
+            ],
+            "candidates": [
+              "device:19",
+              "device:18"
+            ],
+            "container": "black96",
+            "load_s": 30,
+            "process_s": 117,
+            "clean_s": 30,
+            "temperature_c": null,
+            "manual": false,
+            "demand": 9,
+            "transfers": [
+              [
+                "picogreen-5:std-1000",
+                "picogreen-5:P01:A1",
+                100
+              ],
+              [
+                "picogreen-5:WR",
+                "picogreen-5:P01:A1",
+                100
+              ],
+              [
+                "picogreen-5:std-100",
+                "picogreen-5:P01:A2",
+                100
+              ],
+              [
+                "picogreen-5:WR",
+                "picogreen-5:P01:A2",
+                100
+              ],
+              [
+                "picogreen-5:std-10",
+                "picogreen-5:P01:A3",
+                100
+              ],
+              [
+                "picogreen-5:WR",
+                "picogreen-5:P01:A3",
+                100
+              ],
+              [
+                "picogreen-5:std-0",
+                "picogreen-5:P01:A4",
+                100
+              ],
+              [
+                "picogreen-5:WR",
+                "picogreen-5:P01:A4",
+                100
+              ],
+              [
+                "picogreen-5:sample-1",
+                "picogreen-5:P01:A5",
+                100
+              ],
+              [
+                "picogreen-5:WR",
+                "picogreen-5:P01:A5",
+                100
+              ],
+              [
+                "picogreen-5:sample-2",
+                "picogreen-5:P01:A6",
+                100
+              ],
+              [
+                "picogreen-5:WR",
+                "picogreen-5:P01:A6",
+                100
+              ],
+              [
+                "picogreen-5:sample-3",
+                "picogreen-5:P01:A7",
+                100
+              ],
+              [
+                "picogreen-5:WR",
+                "picogreen-5:P01:A7",
+                100
+              ],
+              [
+                "picogreen-5:sample-4",
+                "picogreen-5:P01:A8",
+                100
+              ],
+              [
+                "picogreen-5:WR",
+                "picogreen-5:P01:A8",
+                100
+              ],
+              [
+                "picogreen-5:sample-5",
+                "picogreen-5:P01:A9",
+                100
+              ],
+              [
+                "picogreen-5:WR",
+                "picogreen-5:P01:A9",
+                100
+              ]
+            ],
+            "window": null,
+            "plate_id": "picogreen-5:P01",
+            "release_s": 0,
+            "deadline_s": 25200,
+            "carrier_ids": [
+              "picogreen-5:P01",
+              "picogreen-5:WR",
+              "picogreen-5:sample-1",
+              "picogreen-5:sample-2",
+              "picogreen-5:sample-3",
+              "picogreen-5:sample-4",
+              "picogreen-5:sample-5",
+              "picogreen-5:std-0",
+              "picogreen-5:std-10",
+              "picogreen-5:std-100",
+              "picogreen-5:std-1000"
+            ],
+            "dependency_carriers": {
+              "picogreen-5:manual_inputs": [
+                "picogreen-5:P01",
+                "picogreen-5:WR",
+                "picogreen-5:sample-1",
+                "picogreen-5:sample-2",
+                "picogreen-5:sample-3",
+                "picogreen-5:sample-4",
+                "picogreen-5:sample-5",
+                "picogreen-5:std-0",
+                "picogreen-5:std-10",
+                "picogreen-5:std-100",
+                "picogreen-5:std-1000"
+              ]
+            },
+            "required_labware": [
+              "black96",
+              "reservoir_50ml",
+              "tube_1p5ml"
+            ]
+          },
+          {
+            "id": "picogreen-5:dark_incubation",
+            "experiment": "picogreen-5",
+            "name": "dark_incubation",
+            "capability": "manual",
+            "depends_on": [
+              "picogreen-5:assemble"
+            ],
+            "candidates": [
+              "bench"
+            ],
+            "container": "black96",
+            "load_s": 0,
+            "process_s": 120,
+            "clean_s": 0,
+            "temperature_c": null,
+            "manual": false,
+            "demand": 9,
+            "transfers": [],
+            "window": null,
+            "plate_id": "picogreen-5:P01",
+            "release_s": 0,
+            "deadline_s": 25200,
+            "carrier_ids": [
+              "picogreen-5:P01"
+            ],
+            "dependency_carriers": {
+              "picogreen-5:assemble": [
+                "picogreen-5:P01"
+              ]
+            },
+            "required_labware": [
+              "black96"
+            ]
+          },
+          {
+            "id": "picogreen-5:read",
+            "experiment": "picogreen-5",
+            "name": "read",
+            "capability": "FI",
+            "depends_on": [
+              "picogreen-5:dark_incubation"
+            ],
+            "candidates": [
+              "device:67"
+            ],
+            "container": "black96",
+            "load_s": 30,
+            "process_s": 63,
+            "clean_s": 30,
+            "temperature_c": null,
+            "manual": false,
+            "demand": 9,
+            "transfers": [],
+            "window": {
+              "from": "picogreen-5:assemble",
+              "max_s": 300,
+              "min_s": 120,
+              "basis": "manufacturer 2–5min dark incubation; read begins within this bound"
+            },
+            "plate_id": "picogreen-5:P01",
+            "release_s": 0,
+            "deadline_s": 25200,
+            "optics": {
+              "excitation_nm": 480,
+              "emission_nm": 520
+            },
+            "carrier_ids": [
+              "picogreen-5:P01"
+            ],
+            "dependency_carriers": {
+              "picogreen-5:dark_incubation": [
+                "picogreen-5:P01"
+              ]
+            },
+            "required_labware": [
+              "black96"
+            ]
+          }
+        ],
+        "initial_containers": {
+          "picogreen-5:P01": {
+            "id": "picogreen-5:P01",
+            "kind": "read_plate",
+            "capacity_ul": 0,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "prep:picogreen-5:P01",
+            "parent": null,
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen-5:WR": {
+            "id": "picogreen-5:WR",
+            "kind": "stock_tube",
+            "capacity_ul": 50000,
+            "volume_ul": 950,
+            "components_ul": {
+              "picogreen-5:WR": 950
+            },
+            "sample_ids": [],
+            "location": "prep:picogreen-5:WR",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open",
+            "labware": "reservoir_50ml"
+          },
+          "picogreen-5:std-1000": {
+            "id": "picogreen-5:std-1000",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen-5:std-1000": 120
+            },
+            "sample_ids": [
+              "picogreen-5:std-1000"
+            ],
+            "location": "prep:picogreen-5:std-1000",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen-5:P01:A1": {
+            "id": "picogreen-5:P01:A1",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen-5:P01:A1",
+            "parent": "picogreen-5:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen-5:std-100": {
+            "id": "picogreen-5:std-100",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen-5:std-100": 120
+            },
+            "sample_ids": [
+              "picogreen-5:std-100"
+            ],
+            "location": "prep:picogreen-5:std-100",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen-5:P01:A2": {
+            "id": "picogreen-5:P01:A2",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen-5:P01:A2",
+            "parent": "picogreen-5:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen-5:std-10": {
+            "id": "picogreen-5:std-10",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen-5:std-10": 120
+            },
+            "sample_ids": [
+              "picogreen-5:std-10"
+            ],
+            "location": "prep:picogreen-5:std-10",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen-5:P01:A3": {
+            "id": "picogreen-5:P01:A3",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen-5:P01:A3",
+            "parent": "picogreen-5:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen-5:std-0": {
+            "id": "picogreen-5:std-0",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen-5:std-0": 120
+            },
+            "sample_ids": [
+              "picogreen-5:std-0"
+            ],
+            "location": "prep:picogreen-5:std-0",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen-5:P01:A4": {
+            "id": "picogreen-5:P01:A4",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen-5:P01:A4",
+            "parent": "picogreen-5:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen-5:sample-1": {
+            "id": "picogreen-5:sample-1",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen-5:sample-1": 120
+            },
+            "sample_ids": [
+              "picogreen-5:sample-1"
+            ],
+            "location": "prep:picogreen-5:sample-1",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen-5:P01:A5": {
+            "id": "picogreen-5:P01:A5",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen-5:P01:A5",
+            "parent": "picogreen-5:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen-5:sample-2": {
+            "id": "picogreen-5:sample-2",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen-5:sample-2": 120
+            },
+            "sample_ids": [
+              "picogreen-5:sample-2"
+            ],
+            "location": "prep:picogreen-5:sample-2",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen-5:P01:A6": {
+            "id": "picogreen-5:P01:A6",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen-5:P01:A6",
+            "parent": "picogreen-5:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen-5:sample-3": {
+            "id": "picogreen-5:sample-3",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen-5:sample-3": 120
+            },
+            "sample_ids": [
+              "picogreen-5:sample-3"
+            ],
+            "location": "prep:picogreen-5:sample-3",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen-5:P01:A7": {
+            "id": "picogreen-5:P01:A7",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen-5:P01:A7",
+            "parent": "picogreen-5:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen-5:sample-4": {
+            "id": "picogreen-5:sample-4",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen-5:sample-4": 120
+            },
+            "sample_ids": [
+              "picogreen-5:sample-4"
+            ],
+            "location": "prep:picogreen-5:sample-4",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen-5:P01:A8": {
+            "id": "picogreen-5:P01:A8",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen-5:P01:A8",
+            "parent": "picogreen-5:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen-5:sample-5": {
+            "id": "picogreen-5:sample-5",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen-5:sample-5": 120
+            },
+            "sample_ids": [
+              "picogreen-5:sample-5"
+            ],
+            "location": "prep:picogreen-5:sample-5",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen-5:P01:A9": {
+            "id": "picogreen-5:P01:A9",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen-5:P01:A9",
+            "parent": "picogreen-5:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          }
+        },
+        "plate_map": [
+          {
+            "experiment": "picogreen-5",
+            "container": "picogreen-5:P01:A1",
+            "well": "A1",
+            "sample_id": "picogreen-5:std-1000",
+            "group": "standard",
+            "standard_value": 1000,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen-5",
+            "container": "picogreen-5:P01:A2",
+            "well": "A2",
+            "sample_id": "picogreen-5:std-100",
+            "group": "standard",
+            "standard_value": 100,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen-5",
+            "container": "picogreen-5:P01:A3",
+            "well": "A3",
+            "sample_id": "picogreen-5:std-10",
+            "group": "standard",
+            "standard_value": 10,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen-5",
+            "container": "picogreen-5:P01:A4",
+            "well": "A4",
+            "sample_id": "picogreen-5:std-0",
+            "group": "standard",
+            "standard_value": 0,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen-5",
+            "container": "picogreen-5:P01:A5",
+            "well": "A5",
+            "sample_id": "picogreen-5:sample-1",
+            "group": "unknown",
+            "standard_value": null,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen-5",
+            "container": "picogreen-5:P01:A6",
+            "well": "A6",
+            "sample_id": "picogreen-5:sample-2",
+            "group": "unknown",
+            "standard_value": null,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen-5",
+            "container": "picogreen-5:P01:A7",
+            "well": "A7",
+            "sample_id": "picogreen-5:sample-3",
+            "group": "unknown",
+            "standard_value": null,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen-5",
+            "container": "picogreen-5:P01:A8",
+            "well": "A8",
+            "sample_id": "picogreen-5:sample-4",
+            "group": "unknown",
+            "standard_value": null,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen-5",
+            "container": "picogreen-5:P01:A9",
+            "well": "A9",
+            "sample_id": "picogreen-5:sample-5",
+            "group": "unknown",
+            "standard_value": null,
+            "replicate": 1
+          }
+        ],
+        "budget_cny": 650,
+        "deadline_s": 25200,
+        "consumables_cny": 42.5,
+        "input_samples": 5,
+        "scope": {
+          "digital_planning": true,
+          "model_motion_demo": true,
+          "method_adaptation": false,
+          "hardware_validation": false
+        },
+        "assumptions": [
+          "All costs and handling times are estimates, not quotes or benchmarks",
+          "Existing library KS4000 is one demo instance, not a verified installed facility device",
+          "No measured assay output; manual MIX/standards/carriers require qualification"
+        ],
+        "consumable_usage": {
+          "tips200ul": 18,
+          "black96": 1,
+          "clear96": 0,
+          "tube_1p5ml": 0,
+          "reservoir_50ml": 1
+        }
+      },
+      "checks": {
+        "passed": true,
+        "ledger_conserved": true,
+        "legacy_gfp_preserved": true,
+        "PlanIR_batches_passed": 1,
+        "wells": 9,
+        "measurement": null
+      }
+    },
+    "attempts": 1,
+    "scope": "Digital planning only; actual provider usage retained separately from operating cost"
+  },
+  "error": null,
+  "wall_s": 2.4170107079989975
+}

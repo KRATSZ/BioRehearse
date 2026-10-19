@@ -1,0 +1,3161 @@
+{
+  "development": [
+    {
+      "id": "development-language-24-s0",
+      "cluster": "development-semantic-24",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 930. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 930,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-24-s1",
+      "cluster": "development-semantic-24",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 930. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 930,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-24-s2",
+      "cluster": "development-semantic-24",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组1次反应. 工作日09:00开始，15:00前完成。 Operating budget CNY 930. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 930,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-25-s0",
+      "cluster": "development-semantic-25",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Pierce BCA with 6 unknown samples, 2 replicates. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 950. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 950,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 6,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-25-s1",
+      "cluster": "development-semantic-25",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For protein quantification, I have six unknowns for Pierce BCA; measure every unknown and standard in duplicate. The day starts at 09:00 Shanghai time, with everything finished by 16:00. Operating budget CNY 950. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 950,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 6,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-25-s2",
+      "cluster": "development-semantic-25",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Pierce BCA蛋白定量：6个未知样品，各2个技术重复，保留注册标准曲线. 工作日09:00开始，16:00前完成。 Operating budget CNY 950. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 950,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 6,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-26-s0",
+      "cluster": "development-semantic-26",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Quant-iT PicoGreen with 7 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 970. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 970,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 7,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-26-s1",
+      "cluster": "development-semantic-26",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For DNA quantification, I have seven unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 17:00. Operating budget CNY 970. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 970,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 7,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-26-s2",
+      "cluster": "development-semantic-26",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Quant-iT PicoGreen DNA定量：7个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，17:00前完成。 Operating budget CNY 970. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 970,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 7,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-27-s0",
+      "cluster": "development-semantic-27",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 2 replicates per group; Pierce BCA with 2 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 990. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 990,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-27-s1",
+      "cluster": "development-semantic-27",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in duplicate; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 990. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 990,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "development-language-27-s2",
+      "cluster": "development-semantic-27",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组2次反应; Pierce BCA蛋白定量：2个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 990. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 990,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    }
+  ],
+  "heldout": [
+    {
+      "id": "heldout-language-00-s0",
+      "cluster": "heldout-semantic-00",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 450. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 450,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-00-s1",
+      "cluster": "heldout-semantic-00",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 450. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 450,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-00-s2",
+      "cluster": "heldout-semantic-00",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组1次反应. 工作日09:00开始，15:00前完成。 Operating budget CNY 450. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 450,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-01-s0",
+      "cluster": "heldout-semantic-01",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Pierce BCA with 3 unknown samples, 2 replicates. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 470. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 470,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-01-s1",
+      "cluster": "heldout-semantic-01",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For protein quantification, I have three unknowns for Pierce BCA; measure every unknown and standard in duplicate. The day starts at 09:00 Shanghai time, with everything finished by 16:00. Operating budget CNY 470. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 470,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-01-s2",
+      "cluster": "heldout-semantic-01",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Pierce BCA蛋白定量：3个未知样品，各2个技术重复，保留注册标准曲线. 工作日09:00开始，16:00前完成。 Operating budget CNY 470. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 470,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-02-s0",
+      "cluster": "heldout-semantic-02",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Quant-iT PicoGreen with 4 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 490. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 490,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-02-s1",
+      "cluster": "heldout-semantic-02",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For DNA quantification, I have four unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 17:00. Operating budget CNY 490. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 490,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-02-s2",
+      "cluster": "heldout-semantic-02",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Quant-iT PicoGreen DNA定量：4个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，17:00前完成。 Operating budget CNY 490. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 490,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-03-s0",
+      "cluster": "heldout-semantic-03",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 2 replicates per group; Pierce BCA with 6 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 510. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 510,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-03-s1",
+      "cluster": "heldout-semantic-03",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in duplicate; For protein quantification, I have six unknowns for Pierce BCA; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 510. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 510,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-03-s2",
+      "cluster": "heldout-semantic-03",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组2次反应; Pierce BCA蛋白定量：6个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 510. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 510,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-04-s0",
+      "cluster": "heldout-semantic-04",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group; Quant-iT PicoGreen with 7 unknown samples, 2 replicates. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 530. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 530,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 7,
+            "replicates": 2,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-04-s1",
+      "cluster": "heldout-semantic-04",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For DNA quantification, I have seven unknowns for Quant-iT PicoGreen; measure every unknown and standard in duplicate. The day starts at 09:00 Shanghai time, with everything finished by 16:00. Operating budget CNY 530. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 530,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 7,
+            "replicates": 2,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-04-s2",
+      "cluster": "heldout-semantic-04",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组1次反应; Quant-iT PicoGreen DNA定量：7个未知样品，各2个技术重复，保留注册标准曲线. 工作日09:00开始，16:00前完成。 Operating budget CNY 530. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 530,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 7,
+            "replicates": 2,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-05-s0",
+      "cluster": "heldout-semantic-05",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Pierce BCA with 7 unknown samples, 2 replicates; Quant-iT PicoGreen with 8 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 550. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 550,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-05-s1",
+      "cluster": "heldout-semantic-05",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For protein quantification, I have seven unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have eight unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 17:00. Operating budget CNY 550. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 550,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-05-s2",
+      "cluster": "heldout-semantic-05",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Pierce BCA蛋白定量：7个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：8个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，17:00前完成。 Operating budget CNY 550. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 550,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-06-s0",
+      "cluster": "heldout-semantic-06",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group; Pierce BCA with 2 unknown samples, 2 replicates; Quant-iT PicoGreen with 3 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 570,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-06-s1",
+      "cluster": "heldout-semantic-06",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 570,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-06-s2",
+      "cluster": "heldout-semantic-06",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组1次反应; Pierce BCA蛋白定量：2个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：3个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 570,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-07-s0",
+      "cluster": "heldout-semantic-07",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Pierce BCA with 2 unknown samples, 2 replicates; Quant-iT PicoGreen with 3 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 590. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 590,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-07-s1",
+      "cluster": "heldout-semantic-07",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 16:00. Operating budget CNY 590. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 590,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-07-s2",
+      "cluster": "heldout-semantic-07",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Pierce BCA蛋白定量：2个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：3个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，16:00前完成。 Operating budget CNY 590. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 590,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-08-s0",
+      "cluster": "heldout-semantic-08",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 610. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 610,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-08-s1",
+      "cluster": "heldout-semantic-08",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction. The day starts at 09:00 Shanghai time, with everything finished by 17:00. Operating budget CNY 610. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 610,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-08-s2",
+      "cluster": "heldout-semantic-08",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组1次反应. 工作日09:00开始，17:00前完成。 Operating budget CNY 610. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 610,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-09-s0",
+      "cluster": "heldout-semantic-09",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Pierce BCA with 4 unknown samples, 2 replicates. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 630. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 630,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 4,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-09-s1",
+      "cluster": "heldout-semantic-09",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For protein quantification, I have four unknowns for Pierce BCA; measure every unknown and standard in duplicate. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 630. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 630,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 4,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-09-s2",
+      "cluster": "heldout-semantic-09",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Pierce BCA蛋白定量：4个未知样品，各2个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 630. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 630,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 4,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-10-s0",
+      "cluster": "heldout-semantic-10",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Quant-iT PicoGreen with 5 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 650. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 650,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-10-s1",
+      "cluster": "heldout-semantic-10",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For DNA quantification, I have five unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 16:00. Operating budget CNY 650. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 650,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-10-s2",
+      "cluster": "heldout-semantic-10",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Quant-iT PicoGreen DNA定量：5个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，16:00前完成。 Operating budget CNY 650. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 650,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-11-s0",
+      "cluster": "heldout-semantic-11",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 2 replicates per group; Pierce BCA with 7 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 670. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 670,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-11-s1",
+      "cluster": "heldout-semantic-11",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in duplicate; For protein quantification, I have seven unknowns for Pierce BCA; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 17:00. Operating budget CNY 670. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 670,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-11-s2",
+      "cluster": "heldout-semantic-11",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组2次反应; Pierce BCA蛋白定量：7个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，17:00前完成。 Operating budget CNY 670. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 670,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-12-s0",
+      "cluster": "heldout-semantic-12",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group; Quant-iT PicoGreen with 8 unknown samples, 2 replicates. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 690. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 690,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-12-s1",
+      "cluster": "heldout-semantic-12",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For DNA quantification, I have eight unknowns for Quant-iT PicoGreen; measure every unknown and standard in duplicate. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 690. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 690,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-12-s2",
+      "cluster": "heldout-semantic-12",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组1次反应; Quant-iT PicoGreen DNA定量：8个未知样品，各2个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 690. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 690,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-13-s0",
+      "cluster": "heldout-semantic-13",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Pierce BCA with 8 unknown samples, 2 replicates; Quant-iT PicoGreen with 2 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 710. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 710,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 2,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-13-s1",
+      "cluster": "heldout-semantic-13",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For protein quantification, I have eight unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have two unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 16:00. Operating budget CNY 710. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 710,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 2,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-13-s2",
+      "cluster": "heldout-semantic-13",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Pierce BCA蛋白定量：8个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：2个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，16:00前完成。 Operating budget CNY 710. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 710,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 2,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-14-s0",
+      "cluster": "heldout-semantic-14",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group; Pierce BCA with 3 unknown samples, 2 replicates; Quant-iT PicoGreen with 4 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 730. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 730,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-14-s1",
+      "cluster": "heldout-semantic-14",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have three unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have four unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 17:00. Operating budget CNY 730. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 730,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-14-s2",
+      "cluster": "heldout-semantic-14",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组1次反应; Pierce BCA蛋白定量：3个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：4个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，17:00前完成。 Operating budget CNY 730. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 730,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-15-s0",
+      "cluster": "heldout-semantic-15",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Pierce BCA with 3 unknown samples, 2 replicates; Quant-iT PicoGreen with 4 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 750. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 750,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-15-s1",
+      "cluster": "heldout-semantic-15",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For protein quantification, I have three unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have four unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 750. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 750,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-15-s2",
+      "cluster": "heldout-semantic-15",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Pierce BCA蛋白定量：3个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：4个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 750. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 750,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-16-s0",
+      "cluster": "heldout-semantic-16",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 770. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 770,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-16-s1",
+      "cluster": "heldout-semantic-16",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction. The day starts at 09:00 Shanghai time, with everything finished by 16:00. Operating budget CNY 770. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 770,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-16-s2",
+      "cluster": "heldout-semantic-16",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组1次反应. 工作日09:00开始，16:00前完成。 Operating budget CNY 770. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 770,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-17-s0",
+      "cluster": "heldout-semantic-17",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Pierce BCA with 5 unknown samples, 2 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 790. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 790,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 5,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-17-s1",
+      "cluster": "heldout-semantic-17",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For protein quantification, I have five unknowns for Pierce BCA; measure every unknown and standard in duplicate. The day starts at 09:00 Shanghai time, with everything finished by 17:00. Operating budget CNY 790. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 790,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 5,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-17-s2",
+      "cluster": "heldout-semantic-17",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Pierce BCA蛋白定量：5个未知样品，各2个技术重复，保留注册标准曲线. 工作日09:00开始，17:00前完成。 Operating budget CNY 790. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 790,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 5,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-18-s0",
+      "cluster": "heldout-semantic-18",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Quant-iT PicoGreen with 6 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 810. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 810,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-18-s1",
+      "cluster": "heldout-semantic-18",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For DNA quantification, I have six unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 810. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 810,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-18-s2",
+      "cluster": "heldout-semantic-18",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Quant-iT PicoGreen DNA定量：6个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 810. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 810,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-19-s0",
+      "cluster": "heldout-semantic-19",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 2 replicates per group; Pierce BCA with 8 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 830. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 830,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-19-s1",
+      "cluster": "heldout-semantic-19",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in duplicate; For protein quantification, I have eight unknowns for Pierce BCA; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 16:00. Operating budget CNY 830. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 830,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-19-s2",
+      "cluster": "heldout-semantic-19",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组2次反应; Pierce BCA蛋白定量：8个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，16:00前完成。 Operating budget CNY 830. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 830,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-20-s0",
+      "cluster": "heldout-semantic-20",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group; Quant-iT PicoGreen with 2 unknown samples, 2 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 850. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 850,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-20-s1",
+      "cluster": "heldout-semantic-20",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For DNA quantification, I have two unknowns for Quant-iT PicoGreen; measure every unknown and standard in duplicate. The day starts at 09:00 Shanghai time, with everything finished by 17:00. Operating budget CNY 850. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 850,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-20-s2",
+      "cluster": "heldout-semantic-20",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组1次反应; Quant-iT PicoGreen DNA定量：2个未知样品，各2个技术重复，保留注册标准曲线. 工作日09:00开始，17:00前完成。 Operating budget CNY 850. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 850,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 3600
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 3600
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-21-s0",
+      "cluster": "heldout-semantic-21",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Pierce BCA with 2 unknown samples, 2 replicates; Quant-iT PicoGreen with 3 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 870. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 870,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-21-s1",
+      "cluster": "heldout-semantic-21",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 870. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 870,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-21-s2",
+      "cluster": "heldout-semantic-21",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Pierce BCA蛋白定量：2个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：3个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，15:00前完成。 Operating budget CNY 870. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 21600,
+        "budget_cny": 870,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-22-s0",
+      "cluster": "heldout-semantic-22",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group; Pierce BCA with 4 unknown samples, 2 replicates; Quant-iT PicoGreen with 5 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 7 hours. Operating budget CNY 890. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 890,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 4,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-22-s1",
+      "cluster": "heldout-semantic-22",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have four unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have five unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 16:00. Operating budget CNY 890. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 890,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 4,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-22-s2",
+      "cluster": "heldout-semantic-22",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：CFXpress GFP：一个阳性模板加无模板对照，每组1次反应; Pierce BCA蛋白定量：4个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：5个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，16:00前完成。 Operating budget CNY 890. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 25200,
+        "budget_cny": 890,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 4,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-23-s0",
+      "cluster": "heldout-semantic-23",
+      "style": "controlled",
+      "decision": "compile",
+      "request": "Plan Pierce BCA with 4 unknown samples, 2 replicates; Quant-iT PicoGreen with 5 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 910. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 910,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 4,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-23-s1",
+      "cluster": "heldout-semantic-23",
+      "style": "open",
+      "decision": "compile",
+      "request": "Please coordinate the following work: For protein quantification, I have four unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have five unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 17:00. Operating budget CNY 910. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 910,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 4,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "heldout-language-23-s2",
+      "cluster": "heldout-semantic-23",
+      "style": "mixed",
+      "decision": "compile",
+      "request": "请编排：Pierce BCA蛋白定量：4个未知样品，各2个技术重复，保留注册标准曲线; Quant-iT PicoGreen DNA定量：5个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，17:00前完成。 Operating budget CNY 910. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 910,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 4,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "clarify-00",
+      "cluster": "clarify-00",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan Quant-iT PicoGreen with 4 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 8 hours. Please ask me for the operating budget. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "budget_cny"
+    },
+    {
+      "id": "clarify-01",
+      "cluster": "clarify-01",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 2 replicates per group; Pierce BCA with 6 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 6 hours. Please ask me for the operating budget. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "budget_cny"
+    },
+    {
+      "id": "clarify-02",
+      "cluster": "clarify-02",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group; Quant-iT PicoGreen with 7 unknown samples, 2 replicates. Start the workday at 09:00 and finish within 7 hours. Please ask me for the operating budget. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "budget_cny"
+    },
+    {
+      "id": "clarify-03",
+      "cluster": "clarify-03",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan Quant-iT PicoGreen with 4 unknown samples, 1 replicates. Start the workday at 09:00 ; I have not decided the deadline. Operating budget CNY 490. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "deadline_s"
+    },
+    {
+      "id": "clarify-04",
+      "cluster": "clarify-04",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 2 replicates per group; Pierce BCA with 6 unknown samples, 1 replicates. Start the workday at 09:00 ; I have not decided the deadline. Operating budget CNY 510. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "deadline_s"
+    },
+    {
+      "id": "clarify-05",
+      "cluster": "clarify-05",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 1 replicates per group; Quant-iT PicoGreen with 7 unknown samples, 2 replicates. Start the workday at 09:00 ; I have not decided the deadline. Operating budget CNY 530. No experiment may start before 10:00. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "deadline_s"
+    },
+    {
+      "id": "clarify-06",
+      "cluster": "clarify-06",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan Quant-iT PicoGreen with an unspecified number of unknown samples, 1 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 490. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "samples"
+    },
+    {
+      "id": "clarify-07",
+      "cluster": "clarify-07",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan CFXpress GFP with one positive template and NTC, 2 replicates per group; Pierce BCA with an unspecified number of unknown samples, 1 replicates. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 510. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "samples"
+    },
+    {
+      "id": "clarify-08",
+      "cluster": "clarify-08",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan Quant-iT PicoGreen with 4 unknown samples, an unspecified number of replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 490. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "replicates"
+    },
+    {
+      "id": "clarify-09",
+      "cluster": "clarify-09",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan CFXpress GFP with one positive template and NTC, an unspecified number of replicates per group; Pierce BCA with 6 unknown samples, an unspecified number of replicates. Start the workday at 09:00 and finish within 6 hours. Operating budget CNY 510. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "replicates"
+    },
+    {
+      "id": "clarify-10",
+      "cluster": "clarify-10",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan Quant-iT PicoGreen with 4 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 490. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. The hard completion deadline is both 12:00 and 16:00; neither is preferred. Ask which one to use.",
+      "expected": null,
+      "missing_field": "conflicting_constraints"
+    },
+    {
+      "id": "clarify-11",
+      "cluster": "clarify-11",
+      "style": "controlled",
+      "decision": "clarify",
+      "request": "Plan Quant-iT PicoGreen with 4 unknown samples, 1 replicates. Start the workday at 09:00 and finish within 8 hours. Operating budget CNY 490. These are digital planning requests. I have not yet agreed to any estimated costs, durations, carriers or layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+      "expected": null,
+      "missing_field": "accept_demo_assumptions"
+    },
+    {
+      "id": "unsupported-00",
+      "cluster": "unsupported-00",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Use BCA incubation at 25 C instead of 37 C.",
+      "expected": null,
+      "unsupported_reason": "bca_temperature"
+    },
+    {
+      "id": "unsupported-01",
+      "cluster": "unsupported-01",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Run CFXpress at 45 C, replacing the registered incubation temperature.",
+      "expected": null,
+      "unsupported_reason": "gfp_temperature"
+    },
+    {
+      "id": "unsupported-02",
+      "cluster": "unsupported-02",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Replace the registered assays with PCR amplification.",
+      "expected": null,
+      "unsupported_reason": "pcr"
+    },
+    {
+      "id": "unsupported-03",
+      "cluster": "unsupported-03",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Replace all robot liquid assembly by hand pipetting; no liquid workstation may be used.",
+      "expected": null,
+      "unsupported_reason": "manual_assembly"
+    },
+    {
+      "id": "unsupported-04",
+      "cluster": "unsupported-04",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Use an unregistered reader device:99 instead of device:67.",
+      "expected": null,
+      "unsupported_reason": "unknown_device"
+    },
+    {
+      "id": "unsupported-05",
+      "cluster": "unsupported-05",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. The final read must be a Raman spectrum on iD5.",
+      "expected": null,
+      "unsupported_reason": "raman"
+    },
+    {
+      "id": "unsupported-06",
+      "cluster": "unsupported-06",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Replace all assays by an ELISA assay not in the registry.",
+      "expected": null,
+      "unsupported_reason": "elisa"
+    },
+    {
+      "id": "unsupported-07",
+      "cluster": "unsupported-07",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Expose the PicoGreen reaction to bright light throughout incubation instead of protecting it.",
+      "expected": null,
+      "unsupported_reason": "light"
+    },
+    {
+      "id": "unsupported-08",
+      "cluster": "unsupported-08",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Remove the GFP no-template control entirely.",
+      "expected": null,
+      "unsupported_reason": "no_control"
+    },
+    {
+      "id": "unsupported-09",
+      "cluster": "unsupported-09",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Reverse engineer and change the composition of the opaque cellfreeMIX.",
+      "expected": null,
+      "unsupported_reason": "mix_recipe"
+    },
+    {
+      "id": "unsupported-10",
+      "cluster": "unsupported-10",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Discard all BCA and PicoGreen standards; measure unknowns only.",
+      "expected": null,
+      "unsupported_reason": "no_standards"
+    },
+    {
+      "id": "unsupported-11",
+      "cluster": "unsupported-11",
+      "style": "open",
+      "decision": "reject",
+      "request": "Please coordinate the following work: Use CFXpress to express a positive GFP template alongside a no-DNA control; prepare each group in a single reaction; For protein quantification, I have two unknowns for Pierce BCA; measure every unknown and standard in duplicate; For DNA quantification, I have three unknowns for Quant-iT PicoGreen; measure every unknown and standard in a single well. The day starts at 09:00 Shanghai time, with everything finished by 15:00. Operating budget CNY 570. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls. Change every PicoGreen reaction to 500 uL per well without altering the method name.",
+      "expected": null,
+      "unsupported_reason": "volume"
+    }
+  ],
+  "extra_repeat_ids": [
+    "heldout-language-00-s0",
+    "heldout-language-03-s0",
+    "heldout-language-06-s0",
+    "heldout-language-09-s0",
+    "heldout-language-12-s0",
+    "heldout-language-15-s0",
+    "heldout-language-18-s0",
+    "heldout-language-21-s0",
+    "clarify-00",
+    "clarify-06",
+    "unsupported-00",
+    "unsupported-06"
+  ],
+  "models": [
+    "deepseek-flash",
+    "deepseek-v4-pro"
+  ],
+  "repetitions": "one for every request; two additional executions for 12 prespecified requests",
+  "note": "No model-generated references or explicit negative-case signature marker."
+}

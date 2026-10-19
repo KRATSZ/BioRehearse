@@ -1,0 +1,63 @@
+{
+  "mode": "anatomy",
+  "Blender": "5.2.0 LTS",
+  "sources": [
+    {
+      "asset_id": "fluent1080",
+      "path": "assets/fluent1080.glb",
+      "sha256": "f41cda99a50cc5ff800b11cff6c06e6b18d3d101d824253b0b091ddbe3f44aa6"
+    }
+  ],
+  "images": [
+    {
+      "image": "fluent-anatomy.png",
+      "width": 2200,
+      "height": 1800,
+      "engine": "Cycles",
+      "samples": 64,
+      "device": "GPU",
+      "sha256": "565f55125235aa5557c2ba8fad7cb07f76cdc1e239eeac705c2b2cf2f01e8eb3"
+    }
+  ],
+  "transforms": "native GLB importer; rigid placement only; source meshes unchanged",
+  "studio": "three area lights; AgX; fixed orthographic viewing direction; neutral floor",
+  "hidden_for_cutaway": [
+    "fluent_glass_door_0",
+    "fluent_glass_door_1"
+  ],
+  "landmarks": {
+    "FCA": {
+      "node": "fca_nozzle_0",
+      "xy": [
+        0.49845507740974426,
+        0.45475006103515625
+      ]
+    },
+    "MCA96": {
+      "node": "mca96_adapter_F6",
+      "xy": [
+        0.5746023654937744,
+        0.48677337169647217
+      ]
+    },
+    "Deck": {
+      "node": "deck_index_rail_122",
+      "xy": [
+        0.44931304454803467,
+        0.5221870541572571
+      ]
+    },
+    "Plate sites": {
+      "node": "fluent_spare_plate_nest_1050_220",
+      "xy": [
+        0.476558655500412,
+        0.5074558258056641
+      ]
+    }
+  },
+  "renderer_script": {
+    "path": "figures/v2/source/render_assets.py",
+    "sha256": "c046f970b7366ca8c503dbd7e02203fdbfe14f010120efc1d30c8056b86e689a"
+  },
+  "status": "Native digital geometry render; no hardware execution"
+}

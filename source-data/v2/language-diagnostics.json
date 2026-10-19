@@ -1,0 +1,152 @@
+{
+  "timing": "Post-study diagnostic, not a replacement primary score",
+  "annotations": [
+    {
+      "model": "deepseek-flash",
+      "case": "heldout-language-00-s1",
+      "primary_success": false,
+      "diagnostic": "deadline mismatch",
+      "expected_deadline_s": 21600,
+      "actual_deadline_s": 25200
+    },
+    {
+      "model": "deepseek-flash",
+      "case": "heldout-language-00-s2",
+      "primary_success": false,
+      "diagnostic": "deadline mismatch",
+      "expected_deadline_s": 21600,
+      "actual_deadline_s": 25200
+    },
+    {
+      "model": "deepseek-flash",
+      "case": "heldout-language-09-s2",
+      "primary_success": false,
+      "diagnostic": "deadline mismatch",
+      "expected_deadline_s": 21600,
+      "actual_deadline_s": 25200
+    },
+    {
+      "model": "deepseek-flash",
+      "case": "heldout-language-12-s2",
+      "primary_success": false,
+      "diagnostic": "deadline mismatch",
+      "expected_deadline_s": 21600,
+      "actual_deadline_s": 18000
+    },
+    {
+      "model": "deepseek-flash",
+      "case": "heldout-language-18-s1",
+      "primary_success": false,
+      "diagnostic": "deadline mismatch",
+      "expected_deadline_s": 21600,
+      "actual_deadline_s": 25200
+    },
+    {
+      "model": "deepseek-flash",
+      "case": "heldout-language-23-s2",
+      "primary_success": false,
+      "diagnostic": "deadline mismatch",
+      "expected_deadline_s": 28800,
+      "actual_deadline_s": 25200
+    },
+    {
+      "model": "deepseek-flash",
+      "case": "clarify-06",
+      "primary_success": false,
+      "diagnostic": "matching nested/free-text field identifier outside frozen aliases",
+      "fields": [
+        "experiments[].samples"
+      ],
+      "expected_field": "samples",
+      "secondary_field_equivalence": true,
+      "question": "How many unknown samples should the PicoGreen assay run (samples counts unknown samples only; the registered method adds its four standards and 1 replicate per group)?"
+    },
+    {
+      "model": "deepseek-flash",
+      "case": "clarify-07",
+      "primary_success": false,
+      "diagnostic": "matching nested/free-text field identifier outside frozen aliases",
+      "fields": [
+        "experiments[bca].samples"
+      ],
+      "expected_field": "samples",
+      "secondary_field_equivalence": true,
+      "question": "How many unknown samples should the Pierce BCA experiment measure (this count excludes the nine registered standards)?"
+    },
+    {
+      "model": "deepseek-flash",
+      "case": "clarify-08",
+      "primary_success": false,
+      "diagnostic": "matching nested/free-text field identifier outside frozen aliases",
+      "fields": [
+        "experiments[0].replicates"
+      ],
+      "expected_field": "replicates",
+      "secondary_field_equivalence": true,
+      "question": "How many replicates per group should the PicoGreen run use (an integer from 1 to 4)?"
+    },
+    {
+      "model": "deepseek-flash",
+      "case": "clarify-09",
+      "primary_success": false,
+      "diagnostic": "matching nested/free-text field identifier outside frozen aliases",
+      "fields": [
+        "experiments[gfp].replicates",
+        "experiments[bca].replicates"
+      ],
+      "expected_field": "replicates",
+      "secondary_field_equivalence": true,
+      "question": "How many replicates per group should be used for the GFP run (positive template + its NTC) and for the BCA run (6 unknown samples, each with its own standards)? Please give a number 1\u20134 for each, as it changes well counts, tips/vessel usage, cost and timing."
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "case": "heldout-language-14-s2",
+      "primary_success": false,
+      "diagnostic": "deadline mismatch",
+      "expected_deadline_s": 28800,
+      "actual_deadline_s": 25200
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "case": "clarify-07",
+      "primary_success": false,
+      "diagnostic": "matching nested/free-text field identifier outside frozen aliases",
+      "fields": [
+        "bca samples"
+      ],
+      "expected_field": "samples",
+      "secondary_field_equivalence": true,
+      "question": "How many unknown samples should the Pierce BCA assay measure (the number of unknown sample conditions, each with 1 replicate)?"
+    }
+  ],
+  "fees": {
+    "deepseek-flash": {
+      "usage": {
+        "input_tokens": 37286,
+        "cache_read_tokens": 1876352,
+        "output_tokens": 51518,
+        "reasoning_tokens": 16485,
+        "total_tokens": 1965156
+      },
+      "estimated_usd_offpeak": 0.042132756,
+      "estimated_usd_peak": 0.084265512,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "accessed": "2026-10-19",
+      "scope": "Usage-based provider tariff estimate for120 model runs; not an invoice; no account-balance attribution."
+    },
+    "deepseek-v4-pro": {
+      "usage": {
+        "input_tokens": 18224,
+        "cache_read_tokens": 1908608,
+        "output_tokens": 120081,
+        "reasoning_tokens": 84165,
+        "total_tokens": 2046913
+      },
+      "estimated_usd_offpeak": 0.29177759600000003,
+      "estimated_usd_peak": 0.5835551920000001,
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "accessed": "2026-10-19",
+      "scope": "Usage-based provider tariff estimate for120 model runs; not an invoice; no account-balance attribution."
+    }
+  }
+}

@@ -1,0 +1,1814 @@
+{
+  "schema": "biofoundry.schedule.v2",
+  "id": "540d78cceb417e30",
+  "mode": "simulation",
+  "ok": true,
+  "status": "OPTIMAL",
+  "proven_optimal": true,
+  "objective": "fastest",
+  "objective_value": 3206.0,
+  "best_bound": 3206.0,
+  "solver": "OR-Tools CP-SAT",
+  "solve_seconds": 0.0011,
+  "layout": "compact",
+  "layout_name": "紧凑工作岛（假设）",
+  "rows": [
+    {
+      "id": "J1:manual_inputs",
+      "experiment": "J1",
+      "name": "manual_inputs",
+      "capability": "manual",
+      "depends_on": [],
+      "candidates": [
+        "bench"
+      ],
+      "container": "clear96",
+      "load_s": 0,
+      "process_s": 231,
+      "clean_s": 0,
+      "temperature_c": null,
+      "manual": true,
+      "demand": 17,
+      "transfers": [],
+      "window": null,
+      "plate_id": "J1:P01",
+      "release_s": 120,
+      "deadline_s": 28800,
+      "required_labware": [
+        "clear96"
+      ],
+      "resource": "bench",
+      "duration_s": 231,
+      "operator_s": 231,
+      "cost_cents": 385,
+      "machine_cents": 0,
+      "labor_cents": 385,
+      "duration_assumed_range_s": [
+        161,
+        347
+      ],
+      "start_s": 120,
+      "end_s": 351,
+      "process_start_s": 120,
+      "process_end_s": 351,
+      "kind": "operation"
+    },
+    {
+      "id": "J1:manual_inputs→J1:assemble",
+      "name": "manual_transfer",
+      "kind": "transfer",
+      "experiment": "J1",
+      "resource": "operator",
+      "source": "bench",
+      "destination": "device:19",
+      "depends_on": [
+        "J1:manual_inputs"
+      ],
+      "to_task": "J1:assemble",
+      "start_s": 351,
+      "end_s": 375,
+      "duration_s": 24,
+      "distance_m": 3,
+      "cost_cents": 40,
+      "plate_id": "J1:P01",
+      "transfers": [],
+      "manual": true
+    },
+    {
+      "id": "J1:assemble",
+      "experiment": "J1",
+      "name": "assemble",
+      "capability": "liquid",
+      "depends_on": [
+        "J1:manual_inputs"
+      ],
+      "candidates": [
+        "device:19",
+        "device:18"
+      ],
+      "container": "clear96",
+      "load_s": 30,
+      "process_s": 211,
+      "clean_s": 30,
+      "temperature_c": null,
+      "manual": false,
+      "demand": 17,
+      "transfers": [
+        [
+          "J1:std-2000",
+          "J1:P01:A1",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A1",
+          200
+        ],
+        [
+          "J1:std-1500",
+          "J1:P01:A2",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A2",
+          200
+        ],
+        [
+          "J1:std-1000",
+          "J1:P01:A3",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A3",
+          200
+        ],
+        [
+          "J1:std-750",
+          "J1:P01:A4",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A4",
+          200
+        ],
+        [
+          "J1:std-500",
+          "J1:P01:A5",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A5",
+          200
+        ],
+        [
+          "J1:std-250",
+          "J1:P01:A6",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A6",
+          200
+        ],
+        [
+          "J1:std-125",
+          "J1:P01:A7",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A7",
+          200
+        ],
+        [
+          "J1:std-25",
+          "J1:P01:A8",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A8",
+          200
+        ],
+        [
+          "J1:std-0",
+          "J1:P01:A9",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A9",
+          200
+        ],
+        [
+          "J1:sample-1",
+          "J1:P01:A10",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A10",
+          200
+        ],
+        [
+          "J1:sample-2",
+          "J1:P01:A11",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A11",
+          200
+        ],
+        [
+          "J1:sample-3",
+          "J1:P01:A12",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:A12",
+          200
+        ],
+        [
+          "J1:sample-4",
+          "J1:P01:B1",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:B1",
+          200
+        ],
+        [
+          "J1:sample-5",
+          "J1:P01:B2",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:B2",
+          200
+        ],
+        [
+          "J1:sample-6",
+          "J1:P01:B3",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:B3",
+          200
+        ],
+        [
+          "J1:sample-7",
+          "J1:P01:B4",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:B4",
+          200
+        ],
+        [
+          "J1:sample-8",
+          "J1:P01:B5",
+          25
+        ],
+        [
+          "J1:WR",
+          "J1:P01:B5",
+          200
+        ]
+      ],
+      "window": null,
+      "plate_id": "J1:P01",
+      "release_s": 120,
+      "deadline_s": 28800,
+      "required_labware": [
+        "clear96",
+        "reservoir_50ml",
+        "tube_1p5ml"
+      ],
+      "resource": "device:19",
+      "duration_s": 271,
+      "operator_s": 60,
+      "cost_cents": 1455,
+      "machine_cents": 1355,
+      "labor_cents": 100,
+      "duration_assumed_range_s": [
+        189,
+        407
+      ],
+      "start_s": 375,
+      "end_s": 646,
+      "process_start_s": 405,
+      "process_end_s": 616,
+      "kind": "operation"
+    },
+    {
+      "id": "J1:assemble→J1:incubate",
+      "name": "manual_transfer",
+      "kind": "transfer",
+      "experiment": "J1",
+      "resource": "operator",
+      "source": "device:19",
+      "destination": "demo:ks4000:1",
+      "depends_on": [
+        "J1:assemble"
+      ],
+      "to_task": "J1:incubate",
+      "start_s": 646,
+      "end_s": 673,
+      "duration_s": 27,
+      "distance_m": 5,
+      "cost_cents": 45,
+      "plate_id": "J1:P01",
+      "transfers": [],
+      "manual": true
+    },
+    {
+      "id": "J1:incubate",
+      "experiment": "J1",
+      "name": "incubate",
+      "capability": "incubate",
+      "depends_on": [
+        "J1:assemble"
+      ],
+      "candidates": [
+        "demo:ks4000:1"
+      ],
+      "container": "clear96",
+      "load_s": 180,
+      "process_s": 1800,
+      "clean_s": 60,
+      "temperature_c": 37,
+      "manual": false,
+      "demand": 17,
+      "transfers": [],
+      "window": {
+        "from": "J1:assemble",
+        "max_s": 600,
+        "basis": "explicit conservative planning assumption: begin incubation within 10min of assembly completion"
+      },
+      "plate_id": "J1:P01",
+      "release_s": 120,
+      "deadline_s": 28800,
+      "required_labware": [
+        "clear96"
+      ],
+      "resource": "demo:ks4000:1",
+      "duration_s": 2040,
+      "operator_s": 240,
+      "cost_cents": 1817,
+      "machine_cents": 1417,
+      "labor_cents": 400,
+      "duration_assumed_range_s": [
+        1968,
+        2160
+      ],
+      "start_s": 673,
+      "end_s": 2713,
+      "process_start_s": 853,
+      "process_end_s": 2653,
+      "kind": "operation"
+    },
+    {
+      "id": "J1:incubate→J1:equilibrate",
+      "name": "manual_transfer",
+      "kind": "transfer",
+      "experiment": "J1",
+      "resource": "operator",
+      "source": "demo:ks4000:1",
+      "destination": "bench",
+      "depends_on": [
+        "J1:incubate"
+      ],
+      "to_task": "J1:equilibrate",
+      "start_s": 2713,
+      "end_s": 2743,
+      "duration_s": 30,
+      "distance_m": 8,
+      "cost_cents": 50,
+      "plate_id": "J1:P01",
+      "transfers": [],
+      "manual": true
+    },
+    {
+      "id": "J1:equilibrate",
+      "experiment": "J1",
+      "name": "equilibrate",
+      "capability": "manual",
+      "depends_on": [
+        "J1:incubate"
+      ],
+      "candidates": [
+        "bench"
+      ],
+      "container": "clear96",
+      "load_s": 0,
+      "process_s": 300,
+      "clean_s": 0,
+      "temperature_c": null,
+      "manual": true,
+      "demand": 17,
+      "transfers": [],
+      "window": {
+        "from": "J1:incubate",
+        "max_s": 300,
+        "basis": "explicit planning assumption for prompt cold stop or room-temperature handoff"
+      },
+      "plate_id": "J1:P01",
+      "release_s": 120,
+      "deadline_s": 28800,
+      "required_labware": [
+        "clear96"
+      ],
+      "resource": "bench",
+      "duration_s": 300,
+      "operator_s": 300,
+      "cost_cents": 500,
+      "machine_cents": 0,
+      "labor_cents": 500,
+      "duration_assumed_range_s": [
+        210,
+        450
+      ],
+      "start_s": 2743,
+      "end_s": 3043,
+      "process_start_s": 2743,
+      "process_end_s": 3043,
+      "kind": "operation"
+    },
+    {
+      "id": "J1:equilibrate→J1:read",
+      "name": "manual_transfer",
+      "kind": "transfer",
+      "experiment": "J1",
+      "resource": "operator",
+      "source": "bench",
+      "destination": "device:67",
+      "depends_on": [
+        "J1:equilibrate"
+      ],
+      "to_task": "J1:read",
+      "start_s": 3043,
+      "end_s": 3067,
+      "duration_s": 24,
+      "distance_m": 3,
+      "cost_cents": 40,
+      "plate_id": "J1:P01",
+      "transfers": [],
+      "manual": true
+    },
+    {
+      "id": "J1:read",
+      "experiment": "J1",
+      "name": "read",
+      "capability": "ABS",
+      "depends_on": [
+        "J1:equilibrate"
+      ],
+      "candidates": [
+        "device:67"
+      ],
+      "container": "clear96",
+      "load_s": 30,
+      "process_s": 79,
+      "clean_s": 30,
+      "temperature_c": null,
+      "manual": false,
+      "demand": 17,
+      "transfers": [],
+      "window": {
+        "from": "J1:equilibrate",
+        "max_s": 600,
+        "basis": "explicit planning assumption; not measured sample stability"
+      },
+      "plate_id": "J1:P01",
+      "release_s": 120,
+      "deadline_s": 28800,
+      "optics": {
+        "absorbance_nm": 562
+      },
+      "required_labware": [
+        "clear96"
+      ],
+      "resource": "device:67",
+      "duration_s": 139,
+      "operator_s": 60,
+      "cost_cents": 448,
+      "machine_cents": 348,
+      "labor_cents": 100,
+      "duration_assumed_range_s": [
+        97,
+        209
+      ],
+      "start_s": 3067,
+      "end_s": 3206,
+      "process_start_s": 3097,
+      "process_end_s": 3176,
+      "kind": "operation"
+    }
+  ],
+  "reservations": [
+    {
+      "task_id": "J1:manual_inputs",
+      "resource": "bench",
+      "start_s": 120,
+      "end_s": 351
+    },
+    {
+      "task_id": "J1:manual_inputs",
+      "resource": "operator",
+      "start_s": 120,
+      "end_s": 351
+    },
+    {
+      "task_id": "J1:assemble",
+      "resource": "device:19",
+      "start_s": 375,
+      "end_s": 646
+    },
+    {
+      "task_id": "J1:assemble",
+      "resource": "operator",
+      "start_s": 375,
+      "end_s": 405
+    },
+    {
+      "task_id": "J1:assemble",
+      "resource": "operator",
+      "start_s": 616,
+      "end_s": 646
+    },
+    {
+      "task_id": "J1:incubate",
+      "resource": "demo:ks4000:1",
+      "start_s": 673,
+      "end_s": 2713
+    },
+    {
+      "task_id": "J1:incubate",
+      "resource": "operator",
+      "start_s": 673,
+      "end_s": 853
+    },
+    {
+      "task_id": "J1:incubate",
+      "resource": "operator",
+      "start_s": 2653,
+      "end_s": 2713
+    },
+    {
+      "task_id": "J1:equilibrate",
+      "resource": "bench",
+      "start_s": 2743,
+      "end_s": 3043
+    },
+    {
+      "task_id": "J1:equilibrate",
+      "resource": "operator",
+      "start_s": 2743,
+      "end_s": 3043
+    },
+    {
+      "task_id": "J1:read",
+      "resource": "device:67",
+      "start_s": 3067,
+      "end_s": 3206
+    },
+    {
+      "task_id": "J1:read",
+      "resource": "operator",
+      "start_s": 3067,
+      "end_s": 3097
+    },
+    {
+      "task_id": "J1:read",
+      "resource": "operator",
+      "start_s": 3176,
+      "end_s": 3206
+    },
+    {
+      "task_id": "J1:manual_inputs→J1:assemble",
+      "resource": "operator",
+      "start_s": 351,
+      "end_s": 375
+    },
+    {
+      "task_id": "J1:assemble→J1:incubate",
+      "resource": "operator",
+      "start_s": 646,
+      "end_s": 673
+    },
+    {
+      "task_id": "J1:incubate→J1:equilibrate",
+      "resource": "operator",
+      "start_s": 2713,
+      "end_s": 2743
+    },
+    {
+      "task_id": "J1:equilibrate→J1:read",
+      "resource": "operator",
+      "start_s": 3043,
+      "end_s": 3067
+    }
+  ],
+  "makespan_s": 3206,
+  "cost_cny": 82.9,
+  "cost_range_cny": [
+    58.03,
+    124.35
+  ],
+  "budget_basis": "nominal planning estimate; high end is sensitivity, not a guaranteed budget",
+  "cost_breakdown_cny": {
+    "consumables": 35.1,
+    "machine": 31.2,
+    "operator": 16.6,
+    "model_api": null
+  },
+  "samples_per_hour": 8.98,
+  "wells_per_hour": 19.09,
+  "utilization": {
+    "demo:ks4000:1": 0.6363,
+    "device:67": 0.0434,
+    "bench": 0.1656,
+    "operator": 0.3107,
+    "device:19": 0.0845
+  },
+  "bottleneck": "demo:ks4000:1",
+  "transport_distance_m": 19,
+  "transport_seconds": 105,
+  "explanation": [
+    "demo:ks4000:1 occupies 63.6% of elapsed time; one job per physical instance",
+    "KS4000 30°C / 37°C batches serialize; 180s setup includes assumed temperature changeover",
+    "Every transfer, load, unload and cleaning reserves the shared operator",
+    "PicoGreen read begins 120–300s after reagent completion; unknown reader i3x options excluded",
+    "compact: transport 105s included",
+    "Balanced objective = makespan_seconds + 200 × cost_CNY"
+  ],
+  "graph": {
+    "schema": "biofoundry.taskgraph.v2",
+    "mode": "simulation",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 1500,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "J1",
+          "method": "bca",
+          "samples": 8,
+          "replicates": 1,
+          "release_s": 120
+        }
+      ]
+    },
+    "methods": {
+      "gfp": {
+        "id": "genscript.cfxpress.gfp/demo-v2",
+        "version": "2.0.0",
+        "source": {
+          "url": "https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf",
+          "version": "v1.0, 2025-06; accessed 2026-10-15",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        "parameters": {
+          "reaction_ul": 50,
+          "mix_ul": 45,
+          "DNA_or_water_ul": 5,
+          "temperature_c": 30,
+          "incubation_s": 10800,
+          "excitation_nm": 488,
+          "emission_nm": 525
+        },
+        "basis": "manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions"
+      },
+      "bca": {
+        "id": "pierce.bca.microplate/v1",
+        "version": "1.0.0",
+        "source": {
+          "url": "https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf",
+          "version": "MAN0011430 Rev D",
+          "pages": [
+            2,
+            3
+          ],
+          "accessed": "2026-10-16"
+        },
+        "parameters": {
+          "sample_ul": 25,
+          "working_reagent_ul": 200,
+          "reagent_A_B_ratio": [
+            50,
+            1
+          ],
+          "mix_s": 30,
+          "temperature_c": 37,
+          "incubation_s": 1800,
+          "absorbance_nm": 562,
+          "standards_ug_ml": [
+            2000,
+            1500,
+            1000,
+            750,
+            500,
+            250,
+            125,
+            25,
+            0
+          ]
+        },
+        "basis": "manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)"
+      },
+      "picogreen": {
+        "id": "quantit.picogreen.highrange/v1",
+        "version": "1.0.0",
+        "source": {
+          "url": "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf",
+          "version": "MAN0001931 Rev A.0",
+          "pages": [
+            3,
+            4
+          ],
+          "accessed": "2026-10-16"
+        },
+        "parameters": {
+          "prediluted_sample_ul": 100,
+          "working_reagent_ul": 100,
+          "reagent_dilution": 200,
+          "incubation_range_s": [
+            120,
+            300
+          ],
+          "excitation_nm": 480,
+          "emission_nm": 520,
+          "standards_final_ng_ml": [
+            1000,
+            100,
+            10,
+            1,
+            0
+          ],
+          "protected_from_light": true
+        },
+        "basis": "manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers"
+      }
+    },
+    "experiments": [
+      {
+        "id": "J1",
+        "method": "bca",
+        "method_id": "pierce.bca.microplate/v1",
+        "samples": 8,
+        "replicates": 1,
+        "wells": 17,
+        "plate": "clear96",
+        "plate_id": "J1:P01",
+        "release_s": 120,
+        "deadline_s": 28800,
+        "legacy": null,
+        "manual_inputs": "human-prepared standards and working reagent; sample matrix compatibility unverified"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "J1:manual_inputs",
+        "experiment": "J1",
+        "name": "manual_inputs",
+        "capability": "manual",
+        "depends_on": [],
+        "candidates": [
+          "bench"
+        ],
+        "container": "clear96",
+        "load_s": 0,
+        "process_s": 231,
+        "clean_s": 0,
+        "temperature_c": null,
+        "manual": true,
+        "demand": 17,
+        "transfers": [],
+        "window": null,
+        "plate_id": "J1:P01",
+        "release_s": 120,
+        "deadline_s": 28800,
+        "required_labware": [
+          "clear96"
+        ]
+      },
+      {
+        "id": "J1:assemble",
+        "experiment": "J1",
+        "name": "assemble",
+        "capability": "liquid",
+        "depends_on": [
+          "J1:manual_inputs"
+        ],
+        "candidates": [
+          "device:19",
+          "device:18"
+        ],
+        "container": "clear96",
+        "load_s": 30,
+        "process_s": 211,
+        "clean_s": 30,
+        "temperature_c": null,
+        "manual": false,
+        "demand": 17,
+        "transfers": [
+          [
+            "J1:std-2000",
+            "J1:P01:A1",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A1",
+            200
+          ],
+          [
+            "J1:std-1500",
+            "J1:P01:A2",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A2",
+            200
+          ],
+          [
+            "J1:std-1000",
+            "J1:P01:A3",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A3",
+            200
+          ],
+          [
+            "J1:std-750",
+            "J1:P01:A4",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A4",
+            200
+          ],
+          [
+            "J1:std-500",
+            "J1:P01:A5",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A5",
+            200
+          ],
+          [
+            "J1:std-250",
+            "J1:P01:A6",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A6",
+            200
+          ],
+          [
+            "J1:std-125",
+            "J1:P01:A7",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A7",
+            200
+          ],
+          [
+            "J1:std-25",
+            "J1:P01:A8",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A8",
+            200
+          ],
+          [
+            "J1:std-0",
+            "J1:P01:A9",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A9",
+            200
+          ],
+          [
+            "J1:sample-1",
+            "J1:P01:A10",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A10",
+            200
+          ],
+          [
+            "J1:sample-2",
+            "J1:P01:A11",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A11",
+            200
+          ],
+          [
+            "J1:sample-3",
+            "J1:P01:A12",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:A12",
+            200
+          ],
+          [
+            "J1:sample-4",
+            "J1:P01:B1",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:B1",
+            200
+          ],
+          [
+            "J1:sample-5",
+            "J1:P01:B2",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:B2",
+            200
+          ],
+          [
+            "J1:sample-6",
+            "J1:P01:B3",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:B3",
+            200
+          ],
+          [
+            "J1:sample-7",
+            "J1:P01:B4",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:B4",
+            200
+          ],
+          [
+            "J1:sample-8",
+            "J1:P01:B5",
+            25
+          ],
+          [
+            "J1:WR",
+            "J1:P01:B5",
+            200
+          ]
+        ],
+        "window": null,
+        "plate_id": "J1:P01",
+        "release_s": 120,
+        "deadline_s": 28800,
+        "required_labware": [
+          "clear96",
+          "reservoir_50ml",
+          "tube_1p5ml"
+        ]
+      },
+      {
+        "id": "J1:incubate",
+        "experiment": "J1",
+        "name": "incubate",
+        "capability": "incubate",
+        "depends_on": [
+          "J1:assemble"
+        ],
+        "candidates": [
+          "demo:ks4000:1"
+        ],
+        "container": "clear96",
+        "load_s": 180,
+        "process_s": 1800,
+        "clean_s": 60,
+        "temperature_c": 37,
+        "manual": false,
+        "demand": 17,
+        "transfers": [],
+        "window": {
+          "from": "J1:assemble",
+          "max_s": 600,
+          "basis": "explicit conservative planning assumption: begin incubation within 10min of assembly completion"
+        },
+        "plate_id": "J1:P01",
+        "release_s": 120,
+        "deadline_s": 28800,
+        "required_labware": [
+          "clear96"
+        ]
+      },
+      {
+        "id": "J1:equilibrate",
+        "experiment": "J1",
+        "name": "equilibrate",
+        "capability": "manual",
+        "depends_on": [
+          "J1:incubate"
+        ],
+        "candidates": [
+          "bench"
+        ],
+        "container": "clear96",
+        "load_s": 0,
+        "process_s": 300,
+        "clean_s": 0,
+        "temperature_c": null,
+        "manual": true,
+        "demand": 17,
+        "transfers": [],
+        "window": {
+          "from": "J1:incubate",
+          "max_s": 300,
+          "basis": "explicit planning assumption for prompt cold stop or room-temperature handoff"
+        },
+        "plate_id": "J1:P01",
+        "release_s": 120,
+        "deadline_s": 28800,
+        "required_labware": [
+          "clear96"
+        ]
+      },
+      {
+        "id": "J1:read",
+        "experiment": "J1",
+        "name": "read",
+        "capability": "ABS",
+        "depends_on": [
+          "J1:equilibrate"
+        ],
+        "candidates": [
+          "device:67"
+        ],
+        "container": "clear96",
+        "load_s": 30,
+        "process_s": 79,
+        "clean_s": 30,
+        "temperature_c": null,
+        "manual": false,
+        "demand": 17,
+        "transfers": [],
+        "window": {
+          "from": "J1:equilibrate",
+          "max_s": 600,
+          "basis": "explicit planning assumption; not measured sample stability"
+        },
+        "plate_id": "J1:P01",
+        "release_s": 120,
+        "deadline_s": 28800,
+        "optics": {
+          "absorbance_nm": 562
+        },
+        "required_labware": [
+          "clear96"
+        ]
+      }
+    ],
+    "initial_containers": {
+      "J1:P01": {
+        "id": "J1:P01",
+        "kind": "read_plate",
+        "capacity_ul": 0,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "prep:J1:P01",
+        "parent": null,
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:WR": {
+        "id": "J1:WR",
+        "kind": "stock_tube",
+        "capacity_ul": 50000,
+        "volume_ul": 3450,
+        "components_ul": {
+          "J1:WR": 3450
+        },
+        "sample_ids": [],
+        "location": "prep:J1:WR",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open",
+        "labware": "reservoir_50ml"
+      },
+      "J1:std-2000": {
+        "id": "J1:std-2000",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:std-2000": 45
+        },
+        "sample_ids": [
+          "J1:std-2000"
+        ],
+        "location": "prep:J1:std-2000",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A1": {
+        "id": "J1:P01:A1",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A1",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:std-1500": {
+        "id": "J1:std-1500",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:std-1500": 45
+        },
+        "sample_ids": [
+          "J1:std-1500"
+        ],
+        "location": "prep:J1:std-1500",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A2": {
+        "id": "J1:P01:A2",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A2",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:std-1000": {
+        "id": "J1:std-1000",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:std-1000": 45
+        },
+        "sample_ids": [
+          "J1:std-1000"
+        ],
+        "location": "prep:J1:std-1000",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A3": {
+        "id": "J1:P01:A3",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A3",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:std-750": {
+        "id": "J1:std-750",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:std-750": 45
+        },
+        "sample_ids": [
+          "J1:std-750"
+        ],
+        "location": "prep:J1:std-750",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A4": {
+        "id": "J1:P01:A4",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A4",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:std-500": {
+        "id": "J1:std-500",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:std-500": 45
+        },
+        "sample_ids": [
+          "J1:std-500"
+        ],
+        "location": "prep:J1:std-500",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A5": {
+        "id": "J1:P01:A5",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A5",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:std-250": {
+        "id": "J1:std-250",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:std-250": 45
+        },
+        "sample_ids": [
+          "J1:std-250"
+        ],
+        "location": "prep:J1:std-250",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A6": {
+        "id": "J1:P01:A6",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A6",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:std-125": {
+        "id": "J1:std-125",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:std-125": 45
+        },
+        "sample_ids": [
+          "J1:std-125"
+        ],
+        "location": "prep:J1:std-125",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A7": {
+        "id": "J1:P01:A7",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A7",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:std-25": {
+        "id": "J1:std-25",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:std-25": 45
+        },
+        "sample_ids": [
+          "J1:std-25"
+        ],
+        "location": "prep:J1:std-25",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A8": {
+        "id": "J1:P01:A8",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A8",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:std-0": {
+        "id": "J1:std-0",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:std-0": 45
+        },
+        "sample_ids": [
+          "J1:std-0"
+        ],
+        "location": "prep:J1:std-0",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A9": {
+        "id": "J1:P01:A9",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A9",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:sample-1": {
+        "id": "J1:sample-1",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:sample-1": 45
+        },
+        "sample_ids": [
+          "J1:sample-1"
+        ],
+        "location": "prep:J1:sample-1",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A10": {
+        "id": "J1:P01:A10",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A10",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:sample-2": {
+        "id": "J1:sample-2",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:sample-2": 45
+        },
+        "sample_ids": [
+          "J1:sample-2"
+        ],
+        "location": "prep:J1:sample-2",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A11": {
+        "id": "J1:P01:A11",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A11",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:sample-3": {
+        "id": "J1:sample-3",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:sample-3": 45
+        },
+        "sample_ids": [
+          "J1:sample-3"
+        ],
+        "location": "prep:J1:sample-3",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:A12": {
+        "id": "J1:P01:A12",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:A12",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:sample-4": {
+        "id": "J1:sample-4",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:sample-4": 45
+        },
+        "sample_ids": [
+          "J1:sample-4"
+        ],
+        "location": "prep:J1:sample-4",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:B1": {
+        "id": "J1:P01:B1",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:B1",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:sample-5": {
+        "id": "J1:sample-5",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:sample-5": 45
+        },
+        "sample_ids": [
+          "J1:sample-5"
+        ],
+        "location": "prep:J1:sample-5",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:B2": {
+        "id": "J1:P01:B2",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:B2",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:sample-6": {
+        "id": "J1:sample-6",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:sample-6": 45
+        },
+        "sample_ids": [
+          "J1:sample-6"
+        ],
+        "location": "prep:J1:sample-6",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:B3": {
+        "id": "J1:P01:B3",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:B3",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:sample-7": {
+        "id": "J1:sample-7",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:sample-7": 45
+        },
+        "sample_ids": [
+          "J1:sample-7"
+        ],
+        "location": "prep:J1:sample-7",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:B4": {
+        "id": "J1:P01:B4",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:B4",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      },
+      "J1:sample-8": {
+        "id": "J1:sample-8",
+        "kind": "stock_tube",
+        "capacity_ul": 1500,
+        "volume_ul": 45,
+        "components_ul": {
+          "J1:sample-8": 45
+        },
+        "sample_ids": [
+          "J1:sample-8"
+        ],
+        "location": "prep:J1:sample-8",
+        "parent": null,
+        "dead_volume_ul": 5,
+        "closure": "open"
+      },
+      "J1:P01:B5": {
+        "id": "J1:P01:B5",
+        "kind": "well",
+        "capacity_ul": 360,
+        "volume_ul": 0,
+        "components_ul": {},
+        "sample_ids": [],
+        "location": "J1:P01:B5",
+        "parent": "J1:P01",
+        "dead_volume_ul": 0,
+        "closure": null
+      }
+    },
+    "plate_map": [
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A1",
+        "well": "A1",
+        "sample_id": "J1:std-2000",
+        "group": "standard",
+        "standard_value": 2000,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A2",
+        "well": "A2",
+        "sample_id": "J1:std-1500",
+        "group": "standard",
+        "standard_value": 1500,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A3",
+        "well": "A3",
+        "sample_id": "J1:std-1000",
+        "group": "standard",
+        "standard_value": 1000,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A4",
+        "well": "A4",
+        "sample_id": "J1:std-750",
+        "group": "standard",
+        "standard_value": 750,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A5",
+        "well": "A5",
+        "sample_id": "J1:std-500",
+        "group": "standard",
+        "standard_value": 500,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A6",
+        "well": "A6",
+        "sample_id": "J1:std-250",
+        "group": "standard",
+        "standard_value": 250,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A7",
+        "well": "A7",
+        "sample_id": "J1:std-125",
+        "group": "standard",
+        "standard_value": 125,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A8",
+        "well": "A8",
+        "sample_id": "J1:std-25",
+        "group": "standard",
+        "standard_value": 25,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A9",
+        "well": "A9",
+        "sample_id": "J1:std-0",
+        "group": "standard",
+        "standard_value": 0,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A10",
+        "well": "A10",
+        "sample_id": "J1:sample-1",
+        "group": "unknown",
+        "standard_value": null,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A11",
+        "well": "A11",
+        "sample_id": "J1:sample-2",
+        "group": "unknown",
+        "standard_value": null,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:A12",
+        "well": "A12",
+        "sample_id": "J1:sample-3",
+        "group": "unknown",
+        "standard_value": null,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:B1",
+        "well": "B1",
+        "sample_id": "J1:sample-4",
+        "group": "unknown",
+        "standard_value": null,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:B2",
+        "well": "B2",
+        "sample_id": "J1:sample-5",
+        "group": "unknown",
+        "standard_value": null,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:B3",
+        "well": "B3",
+        "sample_id": "J1:sample-6",
+        "group": "unknown",
+        "standard_value": null,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:B4",
+        "well": "B4",
+        "sample_id": "J1:sample-7",
+        "group": "unknown",
+        "standard_value": null,
+        "replicate": 1
+      },
+      {
+        "experiment": "J1",
+        "container": "J1:P01:B5",
+        "well": "B5",
+        "sample_id": "J1:sample-8",
+        "group": "unknown",
+        "standard_value": null,
+        "replicate": 1
+      }
+    ],
+    "budget_cny": 1500,
+    "deadline_s": 28800,
+    "consumables_cny": 35.1,
+    "input_samples": 8,
+    "scope": {
+      "digital_planning": true,
+      "model_motion_demo": true,
+      "method_adaptation": false,
+      "hardware_validation": false
+    },
+    "assumptions": [
+      "All costs and handling times are estimates, not quotes or benchmarks",
+      "Existing library KS4000 is one demo instance, not a verified installed facility device",
+      "No measured assay output; manual MIX/standards/carriers require qualification"
+    ],
+    "consumable_usage": {
+      "tips200ul": 34,
+      "black96": 0,
+      "clear96": 1,
+      "tube_1p5ml": 0,
+      "reservoir_50ml": 1
+    }
+  },
+  "equipment": [
+    {
+      "resource": "bench",
+      "name": "manual station",
+      "busy_s": 531
+    },
+    {
+      "resource": "demo:ks4000:1",
+      "name": "IKA KS 4000 i control",
+      "busy_s": 2040
+    },
+    {
+      "resource": "device:19",
+      "name": "Instrument Fluent 1080 - TECAN",
+      "busy_s": 271
+    },
+    {
+      "resource": "device:67",
+      "name": "SpectraMax iD5 - Molecular Devices",
+      "busy_s": 139
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "checks": [
+      "method DAG and ledger",
+      "capability/container/temperature/capacity",
+      "precedence and all transport",
+      "device and human exclusivity",
+      "load/unload/clean",
+      "sample windows",
+      "availability/deadline",
+      "itemized nominal budget"
+    ],
+    "measurement": null
+  }
+}

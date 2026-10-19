@@ -1,0 +1,1316 @@
+[
+  {
+    "id": "repair-000",
+    "split": "repair",
+    "load": 6,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E4",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E5",
+          "method": "bca",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E6",
+          "method": "bca",
+          "samples": 8,
+          "replicates": 2,
+          "release_s": 180
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "separated",
+    "bookings": []
+  },
+  {
+    "id": "repair-001",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 2,
+          "release_s": 60
+        },
+        {
+          "id": "E2",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 60
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "compact",
+    "bookings": [
+      {
+        "task_id": "external-reader",
+        "resource": "device:67",
+        "start_s": 600,
+        "end_s": 1200
+      }
+    ]
+  },
+  {
+    "id": "repair-002",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 23,
+          "replicates": 2,
+          "release_s": 180
+        },
+        {
+          "id": "E3",
+          "method": "picogreen",
+          "samples": 8,
+          "replicates": 1,
+          "release_s": 180
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "linear",
+    "bookings": []
+  },
+  {
+    "id": "repair-003",
+    "split": "repair",
+    "load": 6,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "bca",
+          "samples": 23,
+          "replicates": 2,
+          "release_s": 180
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E3",
+          "method": "picogreen",
+          "samples": 15,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E4",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E5",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 180
+        },
+        {
+          "id": "E6",
+          "method": "bca",
+          "samples": 15,
+          "replicates": 1,
+          "release_s": 60
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "separated",
+    "bookings": []
+  },
+  {
+    "id": "repair-004",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "picogreen",
+          "samples": 8,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "bca",
+          "samples": 8,
+          "replicates": 2,
+          "release_s": 60
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "compact",
+    "bookings": []
+  },
+  {
+    "id": "repair-005",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "bca",
+          "samples": 15,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "picogreen",
+          "samples": 31,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E3",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 0
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "linear",
+    "bookings": [
+      {
+        "task_id": "external-reader",
+        "resource": "device:67",
+        "start_s": 600,
+        "end_s": 1200
+      }
+    ]
+  },
+  {
+    "id": "repair-006",
+    "split": "repair",
+    "load": 6,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 2,
+          "release_s": 60
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 15,
+          "replicates": 2,
+          "release_s": 60
+        },
+        {
+          "id": "E3",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E4",
+          "method": "bca",
+          "samples": 23,
+          "replicates": 2,
+          "release_s": 180
+        },
+        {
+          "id": "E5",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 2,
+          "release_s": 60
+        },
+        {
+          "id": "E6",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 0
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "separated",
+    "bookings": []
+  },
+  {
+    "id": "repair-007",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 15,
+          "replicates": 1,
+          "release_s": 60
+        },
+        {
+          "id": "E3",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 0
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "compact",
+    "bookings": []
+  },
+  {
+    "id": "repair-008",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "picogreen",
+          "samples": 8,
+          "replicates": 2,
+          "release_s": 0
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "linear",
+    "bookings": []
+  },
+  {
+    "id": "repair-009",
+    "split": "repair",
+    "load": 6,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "picogreen",
+          "samples": 15,
+          "replicates": 2,
+          "release_s": 180
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 15,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E4",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 2,
+          "release_s": 60
+        },
+        {
+          "id": "E5",
+          "method": "picogreen",
+          "samples": 15,
+          "replicates": 1,
+          "release_s": 60
+        },
+        {
+          "id": "E6",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 60
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "separated",
+    "bookings": [
+      {
+        "task_id": "external-reader",
+        "resource": "device:67",
+        "start_s": 600,
+        "end_s": 1200
+      }
+    ]
+  },
+  {
+    "id": "repair-010",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "picogreen",
+          "samples": 31,
+          "replicates": 2,
+          "release_s": 60
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 8,
+          "replicates": 1,
+          "release_s": 60
+        },
+        {
+          "id": "E3",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 60
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "compact",
+    "bookings": []
+  },
+  {
+    "id": "repair-011",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "picogreen",
+          "samples": 8,
+          "replicates": 2,
+          "release_s": 180
+        },
+        {
+          "id": "E3",
+          "method": "bca",
+          "samples": 8,
+          "replicates": 2,
+          "release_s": 60
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "linear",
+    "bookings": []
+  },
+  {
+    "id": "repair-012",
+    "split": "repair",
+    "load": 6,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E2",
+          "method": "picogreen",
+          "samples": 31,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E4",
+          "method": "bca",
+          "samples": 8,
+          "replicates": 2,
+          "release_s": 60
+        },
+        {
+          "id": "E5",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E6",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 60
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "separated",
+    "bookings": []
+  },
+  {
+    "id": "repair-013",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 15,
+          "replicates": 1,
+          "release_s": 60
+        },
+        {
+          "id": "E3",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 0
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "compact",
+    "bookings": [
+      {
+        "task_id": "external-reader",
+        "resource": "device:67",
+        "start_s": 600,
+        "end_s": 1200
+      }
+    ]
+  },
+  {
+    "id": "repair-014",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 2,
+          "release_s": 60
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 0
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "linear",
+    "bookings": []
+  },
+  {
+    "id": "repair-015",
+    "split": "repair",
+    "load": 6,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "picogreen",
+          "samples": 31,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E3",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 60
+        },
+        {
+          "id": "E4",
+          "method": "bca",
+          "samples": 8,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E5",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E6",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 2,
+          "release_s": 180
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "separated",
+    "bookings": []
+  },
+  {
+    "id": "repair-016",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "picogreen",
+          "samples": 15,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 180
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "compact",
+    "bookings": []
+  },
+  {
+    "id": "repair-017",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 60
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 15,
+          "replicates": 1,
+          "release_s": 60
+        },
+        {
+          "id": "E3",
+          "method": "picogreen",
+          "samples": 8,
+          "replicates": 1,
+          "release_s": 60
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "linear",
+    "bookings": [
+      {
+        "task_id": "external-reader",
+        "resource": "device:67",
+        "start_s": 600,
+        "end_s": 1200
+      }
+    ]
+  },
+  {
+    "id": "repair-018",
+    "split": "repair",
+    "load": 6,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 2,
+          "release_s": 60
+        },
+        {
+          "id": "E2",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "bca",
+          "samples": 15,
+          "replicates": 2,
+          "release_s": 180
+        },
+        {
+          "id": "E4",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E5",
+          "method": "picogreen",
+          "samples": 31,
+          "replicates": 2,
+          "release_s": 180
+        },
+        {
+          "id": "E6",
+          "method": "bca",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 60
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "separated",
+    "bookings": []
+  },
+  {
+    "id": "repair-019",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "picogreen",
+          "samples": 15,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E2",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "bca",
+          "samples": 8,
+          "replicates": 2,
+          "release_s": 0
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "compact",
+    "bookings": []
+  },
+  {
+    "id": "repair-020",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 60
+        },
+        {
+          "id": "E2",
+          "method": "picogreen",
+          "samples": 8,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E3",
+          "method": "bca",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 180
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "linear",
+    "bookings": []
+  },
+  {
+    "id": "repair-021",
+    "split": "repair",
+    "load": 6,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "bca",
+          "samples": 8,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "bca",
+          "samples": 15,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E4",
+          "method": "picogreen",
+          "samples": 31,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E5",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 2,
+          "release_s": 180
+        },
+        {
+          "id": "E6",
+          "method": "picogreen",
+          "samples": 8,
+          "replicates": 1,
+          "release_s": 0
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "separated",
+    "bookings": [
+      {
+        "task_id": "external-reader",
+        "resource": "device:67",
+        "start_s": 600,
+        "end_s": 1200
+      }
+    ]
+  },
+  {
+    "id": "repair-022",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "tight",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "picogreen",
+          "samples": 15,
+          "replicates": 1,
+          "release_s": 180
+        },
+        {
+          "id": "E3",
+          "method": "bca",
+          "samples": 8,
+          "replicates": 1,
+          "release_s": 0
+        }
+      ],
+      "handling_policy": "tight"
+    },
+    "layout": "compact",
+    "bookings": []
+  },
+  {
+    "id": "repair-023",
+    "split": "repair",
+    "load": 3,
+    "handling_policy": "standard",
+    "intent": {
+      "mode": "simulation",
+      "accept_demo_assumptions": true,
+      "deadline_s": 28800,
+      "budget_cny": 10000,
+      "enabled_devices": [
+        "device:19",
+        "device:18",
+        "device:67",
+        "demo:ks4000:1",
+        "bench"
+      ],
+      "unsupported_requests": [],
+      "experiments": [
+        {
+          "id": "E1",
+          "method": "bca",
+          "samples": 31,
+          "replicates": 2,
+          "release_s": 0
+        },
+        {
+          "id": "E2",
+          "method": "gfp",
+          "samples": 1,
+          "replicates": 1,
+          "release_s": 0
+        },
+        {
+          "id": "E3",
+          "method": "picogreen",
+          "samples": 23,
+          "replicates": 1,
+          "release_s": 0
+        }
+      ],
+      "handling_policy": "standard"
+    },
+    "layout": "linear",
+    "bookings": []
+  }
+]

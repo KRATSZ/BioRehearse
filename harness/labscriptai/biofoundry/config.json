@@ -1,0 +1,10 @@
+{
+  "virtual_lab": "../virtual-lab",
+  "output": "exports/biofoundry",
+  "render_python": "/usr/bin/python3",
+  "blender": "/Applications/Blender.app/Contents/MacOS/Blender",
+  "project_flex_blend": "blender/flex.blend",
+  "project_flex_scene": "exports/mujoco/flex.xml",
+  "host": "127.0.0.1",
+  "port": 8792
+}

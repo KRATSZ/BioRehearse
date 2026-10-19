@@ -1,0 +1,16 @@
+model,category,n,success
+rules,controlled,24,24
+rules,open,24,0
+rules,mixed,24,0
+rules,clarify,12,0
+rules,reject,12,0
+deepseek-flash,controlled,24,24
+deepseek-flash,open,24,22
+deepseek-flash,mixed,24,20
+deepseek-flash,clarify,12,8
+deepseek-flash,reject,12,12
+deepseek-v4-pro,controlled,24,24
+deepseek-v4-pro,open,24,24
+deepseek-v4-pro,mixed,24,23
+deepseek-v4-pro,clarify,12,11
+deepseek-v4-pro,reject,12,12

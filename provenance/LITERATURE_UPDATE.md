@@ -1,0 +1,9 @@
+# Primary-source update, 19 October 2026
+
+Rechecked original sources: Coscientist https://www.nature.com/articles/s41586-023-06792-0 ; LabUtopia https://arxiv.org/abs/2505.22634 ; AutoBio v3 https://arxiv.org/abs/2505.14030v3 ; LabGuard v2 https://arxiv.org/abs/2606.31045v2 ; LabCompiler v1 https://arxiv.org/abs/2610.19550v1 ; SciHorizon-eLab v1 https://arxiv.org/abs/2609.30971v1 . Existing bibliography retains exact version provenance for other prior checks.
+
+Positioning: BioRehearse is not the first laboratory simulator, protocol compiler, embodied benchmark or runtime guard. Its evaluated combination binds a facility-linked asset resource to registered concurrent assay task graphs, tracks stock movement alongside liquid components and exposes a reproducible counterexample/repair cycle where location consistency detects a defect missed by schedule arithmetic and conservation. Broader superiority, hardware synchronization and geometric safety are not supported.
+
+NCS live formatting: https://www.nature.com/natcomputsci/submission-guidelines/aip-and-formatting specifies 180 mm maximum figure width, >=300 dpi and 5–7 pt sans-serif labels. Six figures fit the research Article display budget listed at https://www.nature.com/natcomputsci/content . Current preparation page https://www.nature.com/natcomputsci/submission-guidelines/preparing-your-submission requires reproducible Methods, authors/affiliations and documentation of LLM assistance.
+
+Official DeepSeek pricing/model mapping: https://api-docs.deepseek.com/quick_start/pricing/ (accessed same date), Flash=DeepSeek-V4.1-Flash-1017; Pro=DeepSeek-V4-Pro-0813. USD per million tokens, offpeak/peak cachehit .003/.006 and .022/.044; cachemiss .15/.30 and .66/1.32; output .60/1.20 and 1.98/3.96. Estimates use token usage rather than account-balance deltas. Exact server weights not independently verified.

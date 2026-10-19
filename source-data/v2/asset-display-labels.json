@@ -1,0 +1,98 @@
+{
+  "fluent1080": {
+    "label": "Fluent 1080",
+    "original_display_name": "Fluent 1080"
+  },
+  "tecan-fluent780": {
+    "label": "Fluent 780",
+    "original_display_name": "Fluent 780"
+  },
+  "agilent_bravo_assaymap": {
+    "label": "AssayMAP Bravo",
+    "original_display_name": "AssayMAP Bravo / Bravo 96AM Head"
+  },
+  "opentrons_flex_project": {
+    "label": "Opentrons Flex",
+    "original_display_name": "Flex \u00b7 \u672c\u9879\u76ee\u7cbe\u7ec6\u6a21\u578b"
+  },
+  "spectramax-id5": {
+    "label": "SpectraMax iD5",
+    "original_display_name": "SpectraMax iD5"
+  },
+  "spectramax-i3x": {
+    "label": "SpectraMax i3x",
+    "original_display_name": "SpectraMax i3X with SpectraMax MiniMax 300"
+  },
+  "bmg_clariostarplus": {
+    "label": "CLARIOstar Plus",
+    "original_display_name": "CLARIOstar Plus"
+  },
+  "thermo_ibrightfl1500": {
+    "label": "iBright FL1500",
+    "original_display_name": "iBright FL1500"
+  },
+  "ika_ks4000": {
+    "label": "KS4000",
+    "original_display_name": "KS 4000 i control"
+  },
+  "biotek-logphase-600": {
+    "label": "LogPhase 600",
+    "original_display_name": "LogPhase 600"
+  },
+  "eppendorf_cellxpertc170i": {
+    "label": "CellXpert C170i",
+    "original_display_name": "CellXpert C170i"
+  },
+  "sartorius_ambr15": {
+    "label": "ambr 15",
+    "original_display_name": "Ambr 15"
+  },
+  "cytiva_akta_pure_25m1": {
+    "label": "AKTA pure 25M1",
+    "original_display_name": "AKTA pure/25M1\uff08\u5e38\u89c4\u578b\uff09"
+  },
+  "agilent-1290-infinity-ii-analytical": {
+    "label": "1290 Infinity II",
+    "original_display_name": "1290 Infinity II"
+  },
+  "agilent-rapidfire400-6470": {
+    "label": "RapidFire 400 / 6470",
+    "original_display_name": "Rapidfire400-6470"
+  },
+  "sciex_zenotof_7600": {
+    "label": "ZenoTOF 7600",
+    "original_display_name": "ZenoTOF 7600"
+  },
+  "bd_lsrfortessa": {
+    "label": "LSRFortessa",
+    "original_display_name": "LSRFortessa (Special Order Research Product)"
+  },
+  "beckman_cytoflex_lx": {
+    "label": "CytoFLEX LX",
+    "original_display_name": "CytoFLEX LX"
+  },
+  "mgi_dnbseq_g99rs": {
+    "label": "DNBSEQ G99RS",
+    "original_display_name": "DNBSEQ-G99RS"
+  },
+  "fluidigm_helios": {
+    "label": "Helios",
+    "original_display_name": "Helios"
+  },
+  "beckman_optima_xe100": {
+    "label": "Optima XE100",
+    "original_display_name": "Optima XE-100"
+  },
+  "beckman_optima_xpn100": {
+    "label": "Optima XPN100",
+    "original_display_name": "Optima XPN-100"
+  },
+  "thermo_sorvall_lynx6000": {
+    "label": "Sorvall LYNX6000",
+    "original_display_name": "Sorvall LYNX 6000"
+  },
+  "eppendorf_5910ri": {
+    "label": "Eppendorf 5910Ri",
+    "original_display_name": "5910 Ri"
+  }
+}

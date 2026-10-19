@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "labscriptai"
+version = "0.1.0"
+description = "LabscriptAI lean agent (5-tool loop: chat, doctor, recover)"
+readme = { text = "See repo-root README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+biofoundry = ["ortools==9.15.6755", "mujoco>=3.2", "Pillow>=10", "scipy>=1.11", "trimesh==5.1.1", "python-fcl==0.7.0.11", "manifold3d==3.5.4"]
+
+[project.scripts]
+# Colleague install: `cd labscriptai && pip install -e .` then `labscriptai …`
+# Do not install this package and `core/` into the same venv (both claim this script).
+labscriptai = "labscriptai.agent.cli:main"
+
+[tool.setuptools]
+packages = [
+    "labscriptai",
+    "labscriptai.agent",
+    "labscriptai.biofoundry",
+    "labscriptai.benchmark",
+    "labscriptai.benchmark.logicpass",
+    "labscriptai.fake_robot",
+    "labscriptai.planir",
+]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+"labscriptai" = "."
+"labscriptai.agent" = "agent"
+"labscriptai.biofoundry" = "biofoundry"
+"labscriptai.benchmark" = "benchmark"
+"labscriptai.benchmark.logicpass" = "benchmark/logicpass"
+"labscriptai.fake_robot" = "fake_robot"
+"labscriptai.planir" = "planir"
+
+# Ship skills + MCP sources with the wheel/sdist. node_modules stays out
+# (exclude-package-data + .gitignore); colleagues run `npm install` under plugins/mcp.
+[tool.setuptools.package-data]
+labscriptai = [
+  "biofoundry/config.json",
+  "plugins/__init__.py",
+  "plugins/skills/*.md",
+  "plugins/mcp/__init__.py",
+  "plugins/mcp/opentrons-mcp/index.js",
+  "plugins/mcp/opentrons-mcp/package.json",
+  "plugins/mcp/opentrons-mcp/package-lock.json",
+  "plugins/mcp/opentrons-mcp/README.md",
+  "plugins/mcp/opentrons-mcp/.gitignore",
+  "plugins/mcp/opentrons-mcp/lib/**/*.js",
+  "plugins/mcp/opentrons-mcp/scripts/*.py",
+  "plugins/mcp/opentrons-mcp/scripts/*.mjs",
+  "plugins/mcp/opentrons-mcp/scripts/*.sh",
+  "plugins/mcp/opentrons-mcp/scripts/*.json",
+  "plugins/mcp/opentrons-mcp/examples/*",
+]
+
+[tool.setuptools.exclude-package-data]
+labscriptai = [
+  "plugins/mcp/*/node_modules",
+  "plugins/mcp/*/node_modules/*",
+  "plugins/mcp/*/node_modules/**/*",
+  "qa_artifacts",
+  "qa_artifacts/*",
+  "*.egg-info",
+  "*.egg-info/*",
+  ".pytest_cache",
+  ".pytest_cache/*",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Repo-root parent so `import labscriptai` resolves without editable install.
+pythonpath = [".."]
+markers = ["llm: live DeepSeek API tests (pytest -m llm)"]

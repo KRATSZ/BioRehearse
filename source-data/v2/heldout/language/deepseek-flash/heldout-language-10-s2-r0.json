@@ -1,0 +1,2566 @@
+{
+  "result": {
+    "ok": true,
+    "code": "COMPILED",
+    "clarification": null,
+    "request": "请编排：Quant-iT PicoGreen DNA定量：5个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，16:00前完成。 Operating budget CNY 650. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls.",
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "api": "openai-completions",
+    "trace": [
+      {
+        "type": "message_end",
+        "message": {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "请编排：Quant-iT PicoGreen DNA定量：5个未知样品，各1个技术重复，保留注册标准曲线. 工作日09:00开始，16:00前完成。 Operating budget CNY 650. These are digital planning requests. I explicitly accept estimated costs, handling durations, digital carriers and layout assumptions. A person prepares cellfreeMIX, standards and working reagents; manual transport is allowed, but liquid-workstation assembly must remain automated. Use only device:19, device:18, device:67, demo:ks4000:1 and bench. Keep every registered assay condition and its controls."
+            }
+          ],
+          "timestamp": 1792386303215
+        }
+      },
+      {
+        "type": "message_end",
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "thinking",
+              "thinking": "PicoGreen, 5 samples, 1 replicate, keep registered standards. Deadline 16:00 = 25200s. Budget 650. Enabled devices: device:19, device:18, device:67, demo:ks4000:1, bench. accept_demo_assumptions true. No unsupported requests. release_s absent = 0.",
+              "thinkingSignature": "reasoning_content"
+            },
+            {
+              "type": "toolCall",
+              "id": "call_00_yRFz2o2p8haUdm302r5w1305",
+              "name": "compile_experiment_graph",
+              "arguments": {
+                "mode": "simulation",
+                "accept_demo_assumptions": true,
+                "deadline_s": 25200,
+                "budget_cny": 650,
+                "enabled_devices": [
+                  "device:19",
+                  "device:18",
+                  "device:67",
+                  "demo:ks4000:1",
+                  "bench"
+                ],
+                "unsupported_requests": [],
+                "experiments": [
+                  {
+                    "id": "picogreen_dna_quant",
+                    "method": "picogreen",
+                    "samples": 5,
+                    "replicates": 1,
+                    "release_s": 0,
+                    "deadline_s": 25200
+                  }
+                ]
+              }
+            }
+          ],
+          "api": "openai-completions",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "usage": {
+            "input": 300,
+            "output": 306,
+            "cacheRead": 13568,
+            "cacheWrite": 0,
+            "reasoning": 75,
+            "totalTokens": 14174,
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "total": 0
+            }
+          },
+          "stopReason": "toolUse",
+          "timestamp": 1792386303253,
+          "responseId": "3be7d2cc-3a4a-4a42-905b-3be8a50076cf",
+          "rawStopReason": "tool_calls"
+        }
+      },
+      {
+        "type": "tool_execution_start",
+        "toolCallId": "call_00_yRFz2o2p8haUdm302r5w1305",
+        "toolName": "compile_experiment_graph",
+        "args": {
+          "mode": "simulation",
+          "accept_demo_assumptions": true,
+          "deadline_s": 25200,
+          "budget_cny": 650,
+          "enabled_devices": [
+            "device:19",
+            "device:18",
+            "device:67",
+            "demo:ks4000:1",
+            "bench"
+          ],
+          "unsupported_requests": [],
+          "experiments": [
+            {
+              "id": "picogreen_dna_quant",
+              "method": "picogreen",
+              "samples": 5,
+              "replicates": 1,
+              "release_s": 0,
+              "deadline_s": 25200
+            }
+          ]
+        }
+      },
+      {
+        "type": "tool_execution_end",
+        "toolCallId": "call_00_yRFz2o2p8haUdm302r5w1305",
+        "toolName": "compile_experiment_graph",
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"ok\":true,\"graph\":{\"schema\":\"biofoundry.taskgraph.v3\",\"mode\":\"simulation\",\"intent\":{\"mode\":\"simulation\",\"accept_demo_assumptions\":true,\"deadline_s\":25200,\"budget_cny\":650,\"enabled_devices\":[\"device:19\",\"device:18\",\"device:67\",\"demo:ks4000:1\",\"bench\"],\"unsupported_requests\":[],\"experiments\":[{\"id\":\"picogreen_dna_quant\",\"method\":\"picogreen\",\"samples\":5,\"replicates\":1,\"release_s\":0,\"deadline_s\":25200}]},\"methods\":{\"gfp\":{\"id\":\"genscript.cfxpress.gfp/demo-v2\",\"version\":\"2.0.0\",\"source\":{\"url\":\"https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf\",\"version\":\"v1.0, 2025-06; accessed 2026-10-15\",\"pages\":[4,6]},\"parameters\":{\"reaction_ul\":50,\"mix_ul\":45,\"DNA_or_water_ul\":5,\"temperature_c\":30,\"incubation_s\":10800,\"excitation_nm\":488,\"emission_nm\":525},\"basis\":\"manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions\"},\"bca\":{\"id\":\"pierce.bca.microplate/v1\",\"version\":\"1.0.0\",\"source\":{\"url\":\"https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf\",\"version\":\"MAN0011430 Rev D\",\"pages\":[2,3],\"accessed\":\"2026-10-16\"},\"parameters\":{\"sample_ul\":25,\"working_reagent_ul\":200,\"reagent_A_B_ratio\":[50,1],\"mix_s\":30,\"temperature_c\":37,\"incubation_s\":1800,\"absorbance_nm\":562,\"standards_ug_ml\":[2000,1500,1000,750,500,250,125,25,0]},\"basis\":\"manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)\"},\"picogreen\":{\"id\":\"quantit.picogreen.highrange/v2\",\"version\":\"2.0.0\",\"source\":{\"url\":\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf\",\"version\":\"MAN0001931 Rev A.0\",\"pages\":[3,4],\"accessed\":\"2026-10-16\"},\"parameters\":{\"prediluted_sample_ul\":100,\"working_reagent_ul\":100,\"reagent_dilution\":200,\"incubation_range_s\":[120,300],\"excitation_nm\":480,\"emission_nm\":520,\"standards_final_ng_ml\":[1000,100,10,0],\"protected_from_light\":true},\"basis\":\"manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers\"}},\"experiments\":[{\"id\":\"picogreen_dna_quant\",\"method\":\"picogreen\",\"method_id\":\"quantit.picogreen.highrange/v2\",\"samples\":5,\"replicates\":1,\"wells\":9,\"plate\":\"black96\",\"plate_id\":\"picogreen_dna_quant:P01\",\"release_s\":0,\"deadline_s\":25200,\"legacy\":null,\"manual_inputs\":\"human-prepared standards and working reagent; sample matrix compatibility unverified\"}],\"tasks\":[{\"id\":\"picogreen_dna_quant:manual_inputs\",\"experiment\":\"picogreen_dna_quant\",\"name\":\"manual_inputs\",\"capability\":\"manual\",\"depends_on\":[],\"candidates\":[\"bench\"],\"container\":\"black96\",\"load_s\":0,\"process_s\":207,\"clean_s\":0,\"temperature_c\":null,\"manual\":true,\"demand\":9,\"transfers\":[],\"window\":null,\"plate_id\":\"picogreen_dna_quant:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen_dna_quant:P01\",\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:std-1000\",\"picogreen_dna_quant:std-100\",\"picogreen_dna_quant:std-10\",\"picogreen_dna_quant:std-0\",\"picogreen_dna_quant:sample-1\",\"picogreen_dna_quant:sample-2\",\"picogreen_dna_quant:sample-3\",\"picogreen_dna_quant:sample-4\",\"picogreen_dna_quant:sample-5\"],\"dependency_carriers\":{},\"required_labware\":[\"black96\"]},{\"id\":\"picogreen_dna_quant:assemble\",\"experiment\":\"picogreen_dna_quant\",\"name\":\"assemble\",\"capability\":\"liquid\",\"depends_on\":[\"picogreen_dna_quant:manual_inputs\"],\"candidates\":[\"device:19\",\"device:18\"],\"container\":\"black96\",\"load_s\":30,\"process_s\":117,\"clean_s\":30,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[[\"picogreen_dna_quant:std-1000\",\"picogreen_dna_quant:P01:A1\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A1\",100],[\"picogreen_dna_quant:std-100\",\"picogreen_dna_quant:P01:A2\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A2\",100],[\"picogreen_dna_quant:std-10\",\"picogreen_dna_quant:P01:A3\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A3\",100],[\"picogreen_dna_quant:std-0\",\"picogreen_dna_quant:P01:A4\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A4\",100],[\"picogreen_dna_quant:sample-1\",\"picogreen_dna_quant:P01:A5\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A5\",100],[\"picogreen_dna_quant:sample-2\",\"picogreen_dna_quant:P01:A6\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A6\",100],[\"picogreen_dna_quant:sample-3\",\"picogreen_dna_quant:P01:A7\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A7\",100],[\"picogreen_dna_quant:sample-4\",\"picogreen_dna_quant:P01:A8\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A8\",100],[\"picogreen_dna_quant:sample-5\",\"picogreen_dna_quant:P01:A9\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A9\",100]],\"window\":null,\"plate_id\":\"picogreen_dna_quant:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen_dna_quant:P01\",\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:sample-1\",\"picogreen_dna_quant:sample-2\",\"picogreen_dna_quant:sample-3\",\"picogreen_dna_quant:sample-4\",\"picogreen_dna_quant:sample-5\",\"picogreen_dna_quant:std-0\",\"picogreen_dna_quant:std-10\",\"picogreen_dna_quant:std-100\",\"picogreen_dna_quant:std-1000\"],\"dependency_carriers\":{\"picogreen_dna_quant:manual_inputs\":[\"picogreen_dna_quant:P01\",\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:sample-1\",\"picogreen_dna_quant:sample-2\",\"picogreen_dna_quant:sample-3\",\"picogreen_dna_quant:sample-4\",\"picogreen_dna_quant:sample-5\",\"picogreen_dna_quant:std-0\",\"picogreen_dna_quant:std-10\",\"picogreen_dna_quant:std-100\",\"picogreen_dna_quant:std-1000\"]},\"required_labware\":[\"black96\",\"reservoir_50ml\",\"tube_1p5ml\"]},{\"id\":\"picogreen_dna_quant:dark_incubation\",\"experiment\":\"picogreen_dna_quant\",\"name\":\"dark_incubation\",\"capability\":\"manual\",\"depends_on\":[\"picogreen_dna_quant:assemble\"],\"candidates\":[\"bench\"],\"container\":\"black96\",\"load_s\":0,\"process_s\":120,\"clean_s\":0,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[],\"window\":null,\"plate_id\":\"picogreen_dna_quant:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen_dna_quant:P01\"],\"dependency_carriers\":{\"picogreen_dna_quant:assemble\":[\"picogreen_dna_quant:P01\"]},\"required_labware\":[\"black96\"]},{\"id\":\"picogreen_dna_quant:read\",\"experiment\":\"picogreen_dna_quant\",\"name\":\"read\",\"capability\":\"FI\",\"depends_on\":[\"picogreen_dna_quant:dark_incubation\"],\"candidates\":[\"device:67\"],\"container\":\"black96\",\"load_s\":30,\"process_s\":63,\"clean_s\":30,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[],\"window\":{\"from\":\"picogreen_dna_quant:assemble\",\"max_s\":300,\"min_s\":120,\"basis\":\"manufacturer 2–5min dark incubation; read begins within this bound\"},\"plate_id\":\"picogreen_dna_quant:P01\",\"release_s\":0,\"deadline_s\":25200,\"optics\":{\"excitation_nm\":480,\"emission_nm\":520},\"carrier_ids\":[\"picogreen_dna_quant:P01\"],\"dependency_carriers\":{\"picogreen_dna_quant:dark_incubation\":[\"picogreen_dna_quant:P01\"]},\"required_labware\":[\"black96\"]}],\"initial_containers\":{\"picogreen_dna_quant:P01\":{\"id\":\"picogreen_dna_quant:P01\",\"kind\":\"read_plate\",\"capacity_ul\":0,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"prep:picogreen_dna_quant:P01\",\"parent\":null,\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:WR\":{\"id\":\"picogreen_dna_quant:WR\",\"kind\":\"stock_tube\",\"capacity_ul\":50000,\"volume_ul\":950,\"components_ul\":{\"picogreen_dna_quant:WR\":950},\"sample_ids\":[],\"location\":\"prep:picogreen_dna_quant:WR\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\",\"labware\":\"reservoir_50ml\"},\"picogreen_dna_quant:std-1000\":{\"id\":\"picogreen_dna_quant:std-1000\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:std-1000\":120},\"sample_ids\":[\"picogreen_dna_quant:std-1000\"],\"location\":\"prep:picogreen_dna_quant:std-1000\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A1\":{\"id\":\"picogreen_dna_quant:P01:A1\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A1\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:std-100\":{\"id\":\"picogreen_dna_quant:std-100\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:std-100\":120},\"sample_ids\":[\"picogreen_dna_quant:std-100\"],\"location\":\"prep:picogreen_dna_quant:std-100\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A2\":{\"id\":\"picogreen_dna_quant:P01:A2\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A2\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:std-10\":{\"id\":\"picogreen_dna_quant:std-10\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:std-10\":120},\"sample_ids\":[\"picogreen_dna_quant:std-10\"],\"location\":\"prep:picogreen_dna_quant:std-10\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A3\":{\"id\":\"picogreen_dna_quant:P01:A3\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A3\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:std-0\":{\"id\":\"picogreen_dna_quant:std-0\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:std-0\":120},\"sample_ids\":[\"picogreen_dna_quant:std-0\"],\"location\":\"prep:picogreen_dna_quant:std-0\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A4\":{\"id\":\"picogreen_dna_quant:P01:A4\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A4\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:sample-1\":{\"id\":\"picogreen_dna_quant:sample-1\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:sample-1\":120},\"sample_ids\":[\"picogreen_dna_quant:sample-1\"],\"location\":\"prep:picogreen_dna_quant:sample-1\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A5\":{\"id\":\"picogreen_dna_quant:P01:A5\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A5\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:sample-2\":{\"id\":\"picogreen_dna_quant:sample-2\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:sample-2\":120},\"sample_ids\":[\"picogreen_dna_quant:sample-2\"],\"location\":\"prep:picogreen_dna_quant:sample-2\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A6\":{\"id\":\"picogreen_dna_quant:P01:A6\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A6\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:sample-3\":{\"id\":\"picogreen_dna_quant:sample-3\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:sample-3\":120},\"sample_ids\":[\"picogreen_dna_quant:sample-3\"],\"location\":\"prep:picogreen_dna_quant:sample-3\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A7\":{\"id\":\"picogreen_dna_quant:P01:A7\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A7\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:sample-4\":{\"id\":\"picogreen_dna_quant:sample-4\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:sample-4\":120},\"sample_ids\":[\"picogreen_dna_quant:sample-4\"],\"location\":\"prep:picogreen_dna_quant:sample-4\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A8\":{\"id\":\"picogreen_dna_quant:P01:A8\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A8\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:sample-5\":{\"id\":\"picogreen_dna_quant:sample-5\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:sample-5\":120},\"sample_ids\":[\"picogreen_dna_quant:sample-5\"],\"location\":\"prep:picogreen_dna_quant:sample-5\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A9\":{\"id\":\"picogreen_dna_quant:P01:A9\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A9\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null}},\"plate_map\":[{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A1\",\"well\":\"A1\",\"sample_id\":\"picogreen_dna_quant:std-1000\",\"group\":\"standard\",\"standard_value\":1000,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A2\",\"well\":\"A2\",\"sample_id\":\"picogreen_dna_quant:std-100\",\"group\":\"standard\",\"standard_value\":100,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A3\",\"well\":\"A3\",\"sample_id\":\"picogreen_dna_quant:std-10\",\"group\":\"standard\",\"standard_value\":10,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A4\",\"well\":\"A4\",\"sample_id\":\"picogreen_dna_quant:std-0\",\"group\":\"standard\",\"standard_value\":0,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A5\",\"well\":\"A5\",\"sample_id\":\"picogreen_dna_quant:sample-1\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A6\",\"well\":\"A6\",\"sample_id\":\"picogreen_dna_quant:sample-2\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A7\",\"well\":\"A7\",\"sample_id\":\"picogreen_dna_quant:sample-3\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A8\",\"well\":\"A8\",\"sample_id\":\"picogreen_dna_quant:sample-4\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A9\",\"well\":\"A9\",\"sample_id\":\"picogreen_dna_quant:sample-5\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1}],\"budget_cny\":650,\"deadline_s\":25200,\"consumables_cny\":42.5,\"input_samples\":5,\"scope\":{\"digital_planning\":true,\"model_motion_demo\":true,\"method_adaptation\":false,\"hardware_validation\":false},\"assumptions\":[\"All costs and handling times are estimates, not quotes or benchmarks\",\"Existing library KS4000 is one demo instance, not a verified installed facility device\",\"No measured assay output; manual MIX/standards/carriers require qualification\"],\"consumable_usage\":{\"tips200ul\":18,\"black96\":1,\"clear96\":0,\"tube_1p5ml\":0,\"reservoir_50ml\":1}},\"checks\":{\"passed\":true,\"ledger_conserved\":true,\"legacy_gfp_preserved\":true,\"PlanIR_batches_passed\":1,\"wells\":9,\"measurement\":null}}"
+            }
+          ],
+          "details": {
+            "payload": {
+              "ok": true,
+              "graph": {
+                "schema": "biofoundry.taskgraph.v3",
+                "mode": "simulation",
+                "intent": {
+                  "mode": "simulation",
+                  "accept_demo_assumptions": true,
+                  "deadline_s": 25200,
+                  "budget_cny": 650,
+                  "enabled_devices": [
+                    "device:19",
+                    "device:18",
+                    "device:67",
+                    "demo:ks4000:1",
+                    "bench"
+                  ],
+                  "unsupported_requests": [],
+                  "experiments": [
+                    {
+                      "id": "picogreen_dna_quant",
+                      "method": "picogreen",
+                      "samples": 5,
+                      "replicates": 1,
+                      "release_s": 0,
+                      "deadline_s": 25200
+                    }
+                  ]
+                },
+                "methods": {
+                  "gfp": {
+                    "id": "genscript.cfxpress.gfp/demo-v2",
+                    "version": "2.0.0",
+                    "source": {
+                      "url": "https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf",
+                      "version": "v1.0, 2025-06; accessed 2026-10-15",
+                      "pages": [
+                        4,
+                        6
+                      ]
+                    },
+                    "parameters": {
+                      "reaction_ul": 50,
+                      "mix_ul": 45,
+                      "DNA_or_water_ul": 5,
+                      "temperature_c": 30,
+                      "incubation_s": 10800,
+                      "excitation_nm": 488,
+                      "emission_nm": 525
+                    },
+                    "basis": "manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions"
+                  },
+                  "bca": {
+                    "id": "pierce.bca.microplate/v1",
+                    "version": "1.0.0",
+                    "source": {
+                      "url": "https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf",
+                      "version": "MAN0011430 Rev D",
+                      "pages": [
+                        2,
+                        3
+                      ],
+                      "accessed": "2026-10-16"
+                    },
+                    "parameters": {
+                      "sample_ul": 25,
+                      "working_reagent_ul": 200,
+                      "reagent_A_B_ratio": [
+                        50,
+                        1
+                      ],
+                      "mix_s": 30,
+                      "temperature_c": 37,
+                      "incubation_s": 1800,
+                      "absorbance_nm": 562,
+                      "standards_ug_ml": [
+                        2000,
+                        1500,
+                        1000,
+                        750,
+                        500,
+                        250,
+                        125,
+                        25,
+                        0
+                      ]
+                    },
+                    "basis": "manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)"
+                  },
+                  "picogreen": {
+                    "id": "quantit.picogreen.highrange/v2",
+                    "version": "2.0.0",
+                    "source": {
+                      "url": "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf",
+                      "version": "MAN0001931 Rev A.0",
+                      "pages": [
+                        3,
+                        4
+                      ],
+                      "accessed": "2026-10-16"
+                    },
+                    "parameters": {
+                      "prediluted_sample_ul": 100,
+                      "working_reagent_ul": 100,
+                      "reagent_dilution": 200,
+                      "incubation_range_s": [
+                        120,
+                        300
+                      ],
+                      "excitation_nm": 480,
+                      "emission_nm": 520,
+                      "standards_final_ng_ml": [
+                        1000,
+                        100,
+                        10,
+                        0
+                      ],
+                      "protected_from_light": true
+                    },
+                    "basis": "manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers"
+                  }
+                },
+                "experiments": [
+                  {
+                    "id": "picogreen_dna_quant",
+                    "method": "picogreen",
+                    "method_id": "quantit.picogreen.highrange/v2",
+                    "samples": 5,
+                    "replicates": 1,
+                    "wells": 9,
+                    "plate": "black96",
+                    "plate_id": "picogreen_dna_quant:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "legacy": null,
+                    "manual_inputs": "human-prepared standards and working reagent; sample matrix compatibility unverified"
+                  }
+                ],
+                "tasks": [
+                  {
+                    "id": "picogreen_dna_quant:manual_inputs",
+                    "experiment": "picogreen_dna_quant",
+                    "name": "manual_inputs",
+                    "capability": "manual",
+                    "depends_on": [],
+                    "candidates": [
+                      "bench"
+                    ],
+                    "container": "black96",
+                    "load_s": 0,
+                    "process_s": 207,
+                    "clean_s": 0,
+                    "temperature_c": null,
+                    "manual": true,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": null,
+                    "plate_id": "picogreen_dna_quant:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen_dna_quant:P01",
+                      "picogreen_dna_quant:WR",
+                      "picogreen_dna_quant:std-1000",
+                      "picogreen_dna_quant:std-100",
+                      "picogreen_dna_quant:std-10",
+                      "picogreen_dna_quant:std-0",
+                      "picogreen_dna_quant:sample-1",
+                      "picogreen_dna_quant:sample-2",
+                      "picogreen_dna_quant:sample-3",
+                      "picogreen_dna_quant:sample-4",
+                      "picogreen_dna_quant:sample-5"
+                    ],
+                    "dependency_carriers": {},
+                    "required_labware": [
+                      "black96"
+                    ]
+                  },
+                  {
+                    "id": "picogreen_dna_quant:assemble",
+                    "experiment": "picogreen_dna_quant",
+                    "name": "assemble",
+                    "capability": "liquid",
+                    "depends_on": [
+                      "picogreen_dna_quant:manual_inputs"
+                    ],
+                    "candidates": [
+                      "device:19",
+                      "device:18"
+                    ],
+                    "container": "black96",
+                    "load_s": 30,
+                    "process_s": 117,
+                    "clean_s": 30,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [
+                      [
+                        "picogreen_dna_quant:std-1000",
+                        "picogreen_dna_quant:P01:A1",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A1",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:std-100",
+                        "picogreen_dna_quant:P01:A2",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A2",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:std-10",
+                        "picogreen_dna_quant:P01:A3",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A3",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:std-0",
+                        "picogreen_dna_quant:P01:A4",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A4",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:sample-1",
+                        "picogreen_dna_quant:P01:A5",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A5",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:sample-2",
+                        "picogreen_dna_quant:P01:A6",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A6",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:sample-3",
+                        "picogreen_dna_quant:P01:A7",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A7",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:sample-4",
+                        "picogreen_dna_quant:P01:A8",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A8",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:sample-5",
+                        "picogreen_dna_quant:P01:A9",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A9",
+                        100
+                      ]
+                    ],
+                    "window": null,
+                    "plate_id": "picogreen_dna_quant:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen_dna_quant:P01",
+                      "picogreen_dna_quant:WR",
+                      "picogreen_dna_quant:sample-1",
+                      "picogreen_dna_quant:sample-2",
+                      "picogreen_dna_quant:sample-3",
+                      "picogreen_dna_quant:sample-4",
+                      "picogreen_dna_quant:sample-5",
+                      "picogreen_dna_quant:std-0",
+                      "picogreen_dna_quant:std-10",
+                      "picogreen_dna_quant:std-100",
+                      "picogreen_dna_quant:std-1000"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen_dna_quant:manual_inputs": [
+                        "picogreen_dna_quant:P01",
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:sample-1",
+                        "picogreen_dna_quant:sample-2",
+                        "picogreen_dna_quant:sample-3",
+                        "picogreen_dna_quant:sample-4",
+                        "picogreen_dna_quant:sample-5",
+                        "picogreen_dna_quant:std-0",
+                        "picogreen_dna_quant:std-10",
+                        "picogreen_dna_quant:std-100",
+                        "picogreen_dna_quant:std-1000"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96",
+                      "reservoir_50ml",
+                      "tube_1p5ml"
+                    ]
+                  },
+                  {
+                    "id": "picogreen_dna_quant:dark_incubation",
+                    "experiment": "picogreen_dna_quant",
+                    "name": "dark_incubation",
+                    "capability": "manual",
+                    "depends_on": [
+                      "picogreen_dna_quant:assemble"
+                    ],
+                    "candidates": [
+                      "bench"
+                    ],
+                    "container": "black96",
+                    "load_s": 0,
+                    "process_s": 120,
+                    "clean_s": 0,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": null,
+                    "plate_id": "picogreen_dna_quant:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen_dna_quant:P01"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen_dna_quant:assemble": [
+                        "picogreen_dna_quant:P01"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96"
+                    ]
+                  },
+                  {
+                    "id": "picogreen_dna_quant:read",
+                    "experiment": "picogreen_dna_quant",
+                    "name": "read",
+                    "capability": "FI",
+                    "depends_on": [
+                      "picogreen_dna_quant:dark_incubation"
+                    ],
+                    "candidates": [
+                      "device:67"
+                    ],
+                    "container": "black96",
+                    "load_s": 30,
+                    "process_s": 63,
+                    "clean_s": 30,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": {
+                      "from": "picogreen_dna_quant:assemble",
+                      "max_s": 300,
+                      "min_s": 120,
+                      "basis": "manufacturer 2–5min dark incubation; read begins within this bound"
+                    },
+                    "plate_id": "picogreen_dna_quant:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "optics": {
+                      "excitation_nm": 480,
+                      "emission_nm": 520
+                    },
+                    "carrier_ids": [
+                      "picogreen_dna_quant:P01"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen_dna_quant:dark_incubation": [
+                        "picogreen_dna_quant:P01"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96"
+                    ]
+                  }
+                ],
+                "initial_containers": {
+                  "picogreen_dna_quant:P01": {
+                    "id": "picogreen_dna_quant:P01",
+                    "kind": "read_plate",
+                    "capacity_ul": 0,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "prep:picogreen_dna_quant:P01",
+                    "parent": null,
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:WR": {
+                    "id": "picogreen_dna_quant:WR",
+                    "kind": "stock_tube",
+                    "capacity_ul": 50000,
+                    "volume_ul": 950,
+                    "components_ul": {
+                      "picogreen_dna_quant:WR": 950
+                    },
+                    "sample_ids": [],
+                    "location": "prep:picogreen_dna_quant:WR",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open",
+                    "labware": "reservoir_50ml"
+                  },
+                  "picogreen_dna_quant:std-1000": {
+                    "id": "picogreen_dna_quant:std-1000",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:std-1000": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:std-1000"
+                    ],
+                    "location": "prep:picogreen_dna_quant:std-1000",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A1": {
+                    "id": "picogreen_dna_quant:P01:A1",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A1",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:std-100": {
+                    "id": "picogreen_dna_quant:std-100",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:std-100": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:std-100"
+                    ],
+                    "location": "prep:picogreen_dna_quant:std-100",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A2": {
+                    "id": "picogreen_dna_quant:P01:A2",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A2",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:std-10": {
+                    "id": "picogreen_dna_quant:std-10",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:std-10": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:std-10"
+                    ],
+                    "location": "prep:picogreen_dna_quant:std-10",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A3": {
+                    "id": "picogreen_dna_quant:P01:A3",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A3",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:std-0": {
+                    "id": "picogreen_dna_quant:std-0",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:std-0": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:std-0"
+                    ],
+                    "location": "prep:picogreen_dna_quant:std-0",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A4": {
+                    "id": "picogreen_dna_quant:P01:A4",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A4",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:sample-1": {
+                    "id": "picogreen_dna_quant:sample-1",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:sample-1": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:sample-1"
+                    ],
+                    "location": "prep:picogreen_dna_quant:sample-1",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A5": {
+                    "id": "picogreen_dna_quant:P01:A5",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A5",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:sample-2": {
+                    "id": "picogreen_dna_quant:sample-2",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:sample-2": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:sample-2"
+                    ],
+                    "location": "prep:picogreen_dna_quant:sample-2",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A6": {
+                    "id": "picogreen_dna_quant:P01:A6",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A6",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:sample-3": {
+                    "id": "picogreen_dna_quant:sample-3",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:sample-3": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:sample-3"
+                    ],
+                    "location": "prep:picogreen_dna_quant:sample-3",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A7": {
+                    "id": "picogreen_dna_quant:P01:A7",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A7",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:sample-4": {
+                    "id": "picogreen_dna_quant:sample-4",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:sample-4": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:sample-4"
+                    ],
+                    "location": "prep:picogreen_dna_quant:sample-4",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A8": {
+                    "id": "picogreen_dna_quant:P01:A8",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A8",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:sample-5": {
+                    "id": "picogreen_dna_quant:sample-5",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:sample-5": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:sample-5"
+                    ],
+                    "location": "prep:picogreen_dna_quant:sample-5",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A9": {
+                    "id": "picogreen_dna_quant:P01:A9",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A9",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  }
+                },
+                "plate_map": [
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A1",
+                    "well": "A1",
+                    "sample_id": "picogreen_dna_quant:std-1000",
+                    "group": "standard",
+                    "standard_value": 1000,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A2",
+                    "well": "A2",
+                    "sample_id": "picogreen_dna_quant:std-100",
+                    "group": "standard",
+                    "standard_value": 100,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A3",
+                    "well": "A3",
+                    "sample_id": "picogreen_dna_quant:std-10",
+                    "group": "standard",
+                    "standard_value": 10,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A4",
+                    "well": "A4",
+                    "sample_id": "picogreen_dna_quant:std-0",
+                    "group": "standard",
+                    "standard_value": 0,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A5",
+                    "well": "A5",
+                    "sample_id": "picogreen_dna_quant:sample-1",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A6",
+                    "well": "A6",
+                    "sample_id": "picogreen_dna_quant:sample-2",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A7",
+                    "well": "A7",
+                    "sample_id": "picogreen_dna_quant:sample-3",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A8",
+                    "well": "A8",
+                    "sample_id": "picogreen_dna_quant:sample-4",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A9",
+                    "well": "A9",
+                    "sample_id": "picogreen_dna_quant:sample-5",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  }
+                ],
+                "budget_cny": 650,
+                "deadline_s": 25200,
+                "consumables_cny": 42.5,
+                "input_samples": 5,
+                "scope": {
+                  "digital_planning": true,
+                  "model_motion_demo": true,
+                  "method_adaptation": false,
+                  "hardware_validation": false
+                },
+                "assumptions": [
+                  "All costs and handling times are estimates, not quotes or benchmarks",
+                  "Existing library KS4000 is one demo instance, not a verified installed facility device",
+                  "No measured assay output; manual MIX/standards/carriers require qualification"
+                ],
+                "consumable_usage": {
+                  "tips200ul": 18,
+                  "black96": 1,
+                  "clear96": 0,
+                  "tube_1p5ml": 0,
+                  "reservoir_50ml": 1
+                }
+              },
+              "checks": {
+                "passed": true,
+                "ledger_conserved": true,
+                "legacy_gfp_preserved": true,
+                "PlanIR_batches_passed": 1,
+                "wells": 9,
+                "measurement": null
+              }
+            }
+          }
+        },
+        "isError": false
+      },
+      {
+        "type": "message_end",
+        "message": {
+          "role": "toolResult",
+          "toolCallId": "call_00_yRFz2o2p8haUdm302r5w1305",
+          "toolName": "compile_experiment_graph",
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"ok\":true,\"graph\":{\"schema\":\"biofoundry.taskgraph.v3\",\"mode\":\"simulation\",\"intent\":{\"mode\":\"simulation\",\"accept_demo_assumptions\":true,\"deadline_s\":25200,\"budget_cny\":650,\"enabled_devices\":[\"device:19\",\"device:18\",\"device:67\",\"demo:ks4000:1\",\"bench\"],\"unsupported_requests\":[],\"experiments\":[{\"id\":\"picogreen_dna_quant\",\"method\":\"picogreen\",\"samples\":5,\"replicates\":1,\"release_s\":0,\"deadline_s\":25200}]},\"methods\":{\"gfp\":{\"id\":\"genscript.cfxpress.gfp/demo-v2\",\"version\":\"2.0.0\",\"source\":{\"url\":\"https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf\",\"version\":\"v1.0, 2025-06; accessed 2026-10-15\",\"pages\":[4,6]},\"parameters\":{\"reaction_ul\":50,\"mix_ul\":45,\"DNA_or_water_ul\":5,\"temperature_c\":30,\"incubation_s\":10800,\"excitation_nm\":488,\"emission_nm\":525},\"basis\":\"manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions\"},\"bca\":{\"id\":\"pierce.bca.microplate/v1\",\"version\":\"1.0.0\",\"source\":{\"url\":\"https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf\",\"version\":\"MAN0011430 Rev D\",\"pages\":[2,3],\"accessed\":\"2026-10-16\"},\"parameters\":{\"sample_ul\":25,\"working_reagent_ul\":200,\"reagent_A_B_ratio\":[50,1],\"mix_s\":30,\"temperature_c\":37,\"incubation_s\":1800,\"absorbance_nm\":562,\"standards_ug_ml\":[2000,1500,1000,750,500,250,125,25,0]},\"basis\":\"manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)\"},\"picogreen\":{\"id\":\"quantit.picogreen.highrange/v2\",\"version\":\"2.0.0\",\"source\":{\"url\":\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf\",\"version\":\"MAN0001931 Rev A.0\",\"pages\":[3,4],\"accessed\":\"2026-10-16\"},\"parameters\":{\"prediluted_sample_ul\":100,\"working_reagent_ul\":100,\"reagent_dilution\":200,\"incubation_range_s\":[120,300],\"excitation_nm\":480,\"emission_nm\":520,\"standards_final_ng_ml\":[1000,100,10,0],\"protected_from_light\":true},\"basis\":\"manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers\"}},\"experiments\":[{\"id\":\"picogreen_dna_quant\",\"method\":\"picogreen\",\"method_id\":\"quantit.picogreen.highrange/v2\",\"samples\":5,\"replicates\":1,\"wells\":9,\"plate\":\"black96\",\"plate_id\":\"picogreen_dna_quant:P01\",\"release_s\":0,\"deadline_s\":25200,\"legacy\":null,\"manual_inputs\":\"human-prepared standards and working reagent; sample matrix compatibility unverified\"}],\"tasks\":[{\"id\":\"picogreen_dna_quant:manual_inputs\",\"experiment\":\"picogreen_dna_quant\",\"name\":\"manual_inputs\",\"capability\":\"manual\",\"depends_on\":[],\"candidates\":[\"bench\"],\"container\":\"black96\",\"load_s\":0,\"process_s\":207,\"clean_s\":0,\"temperature_c\":null,\"manual\":true,\"demand\":9,\"transfers\":[],\"window\":null,\"plate_id\":\"picogreen_dna_quant:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen_dna_quant:P01\",\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:std-1000\",\"picogreen_dna_quant:std-100\",\"picogreen_dna_quant:std-10\",\"picogreen_dna_quant:std-0\",\"picogreen_dna_quant:sample-1\",\"picogreen_dna_quant:sample-2\",\"picogreen_dna_quant:sample-3\",\"picogreen_dna_quant:sample-4\",\"picogreen_dna_quant:sample-5\"],\"dependency_carriers\":{},\"required_labware\":[\"black96\"]},{\"id\":\"picogreen_dna_quant:assemble\",\"experiment\":\"picogreen_dna_quant\",\"name\":\"assemble\",\"capability\":\"liquid\",\"depends_on\":[\"picogreen_dna_quant:manual_inputs\"],\"candidates\":[\"device:19\",\"device:18\"],\"container\":\"black96\",\"load_s\":30,\"process_s\":117,\"clean_s\":30,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[[\"picogreen_dna_quant:std-1000\",\"picogreen_dna_quant:P01:A1\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A1\",100],[\"picogreen_dna_quant:std-100\",\"picogreen_dna_quant:P01:A2\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A2\",100],[\"picogreen_dna_quant:std-10\",\"picogreen_dna_quant:P01:A3\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A3\",100],[\"picogreen_dna_quant:std-0\",\"picogreen_dna_quant:P01:A4\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A4\",100],[\"picogreen_dna_quant:sample-1\",\"picogreen_dna_quant:P01:A5\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A5\",100],[\"picogreen_dna_quant:sample-2\",\"picogreen_dna_quant:P01:A6\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A6\",100],[\"picogreen_dna_quant:sample-3\",\"picogreen_dna_quant:P01:A7\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A7\",100],[\"picogreen_dna_quant:sample-4\",\"picogreen_dna_quant:P01:A8\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A8\",100],[\"picogreen_dna_quant:sample-5\",\"picogreen_dna_quant:P01:A9\",100],[\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:P01:A9\",100]],\"window\":null,\"plate_id\":\"picogreen_dna_quant:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen_dna_quant:P01\",\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:sample-1\",\"picogreen_dna_quant:sample-2\",\"picogreen_dna_quant:sample-3\",\"picogreen_dna_quant:sample-4\",\"picogreen_dna_quant:sample-5\",\"picogreen_dna_quant:std-0\",\"picogreen_dna_quant:std-10\",\"picogreen_dna_quant:std-100\",\"picogreen_dna_quant:std-1000\"],\"dependency_carriers\":{\"picogreen_dna_quant:manual_inputs\":[\"picogreen_dna_quant:P01\",\"picogreen_dna_quant:WR\",\"picogreen_dna_quant:sample-1\",\"picogreen_dna_quant:sample-2\",\"picogreen_dna_quant:sample-3\",\"picogreen_dna_quant:sample-4\",\"picogreen_dna_quant:sample-5\",\"picogreen_dna_quant:std-0\",\"picogreen_dna_quant:std-10\",\"picogreen_dna_quant:std-100\",\"picogreen_dna_quant:std-1000\"]},\"required_labware\":[\"black96\",\"reservoir_50ml\",\"tube_1p5ml\"]},{\"id\":\"picogreen_dna_quant:dark_incubation\",\"experiment\":\"picogreen_dna_quant\",\"name\":\"dark_incubation\",\"capability\":\"manual\",\"depends_on\":[\"picogreen_dna_quant:assemble\"],\"candidates\":[\"bench\"],\"container\":\"black96\",\"load_s\":0,\"process_s\":120,\"clean_s\":0,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[],\"window\":null,\"plate_id\":\"picogreen_dna_quant:P01\",\"release_s\":0,\"deadline_s\":25200,\"carrier_ids\":[\"picogreen_dna_quant:P01\"],\"dependency_carriers\":{\"picogreen_dna_quant:assemble\":[\"picogreen_dna_quant:P01\"]},\"required_labware\":[\"black96\"]},{\"id\":\"picogreen_dna_quant:read\",\"experiment\":\"picogreen_dna_quant\",\"name\":\"read\",\"capability\":\"FI\",\"depends_on\":[\"picogreen_dna_quant:dark_incubation\"],\"candidates\":[\"device:67\"],\"container\":\"black96\",\"load_s\":30,\"process_s\":63,\"clean_s\":30,\"temperature_c\":null,\"manual\":false,\"demand\":9,\"transfers\":[],\"window\":{\"from\":\"picogreen_dna_quant:assemble\",\"max_s\":300,\"min_s\":120,\"basis\":\"manufacturer 2–5min dark incubation; read begins within this bound\"},\"plate_id\":\"picogreen_dna_quant:P01\",\"release_s\":0,\"deadline_s\":25200,\"optics\":{\"excitation_nm\":480,\"emission_nm\":520},\"carrier_ids\":[\"picogreen_dna_quant:P01\"],\"dependency_carriers\":{\"picogreen_dna_quant:dark_incubation\":[\"picogreen_dna_quant:P01\"]},\"required_labware\":[\"black96\"]}],\"initial_containers\":{\"picogreen_dna_quant:P01\":{\"id\":\"picogreen_dna_quant:P01\",\"kind\":\"read_plate\",\"capacity_ul\":0,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"prep:picogreen_dna_quant:P01\",\"parent\":null,\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:WR\":{\"id\":\"picogreen_dna_quant:WR\",\"kind\":\"stock_tube\",\"capacity_ul\":50000,\"volume_ul\":950,\"components_ul\":{\"picogreen_dna_quant:WR\":950},\"sample_ids\":[],\"location\":\"prep:picogreen_dna_quant:WR\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\",\"labware\":\"reservoir_50ml\"},\"picogreen_dna_quant:std-1000\":{\"id\":\"picogreen_dna_quant:std-1000\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:std-1000\":120},\"sample_ids\":[\"picogreen_dna_quant:std-1000\"],\"location\":\"prep:picogreen_dna_quant:std-1000\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A1\":{\"id\":\"picogreen_dna_quant:P01:A1\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A1\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:std-100\":{\"id\":\"picogreen_dna_quant:std-100\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:std-100\":120},\"sample_ids\":[\"picogreen_dna_quant:std-100\"],\"location\":\"prep:picogreen_dna_quant:std-100\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A2\":{\"id\":\"picogreen_dna_quant:P01:A2\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A2\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:std-10\":{\"id\":\"picogreen_dna_quant:std-10\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:std-10\":120},\"sample_ids\":[\"picogreen_dna_quant:std-10\"],\"location\":\"prep:picogreen_dna_quant:std-10\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A3\":{\"id\":\"picogreen_dna_quant:P01:A3\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A3\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:std-0\":{\"id\":\"picogreen_dna_quant:std-0\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:std-0\":120},\"sample_ids\":[\"picogreen_dna_quant:std-0\"],\"location\":\"prep:picogreen_dna_quant:std-0\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A4\":{\"id\":\"picogreen_dna_quant:P01:A4\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A4\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:sample-1\":{\"id\":\"picogreen_dna_quant:sample-1\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:sample-1\":120},\"sample_ids\":[\"picogreen_dna_quant:sample-1\"],\"location\":\"prep:picogreen_dna_quant:sample-1\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A5\":{\"id\":\"picogreen_dna_quant:P01:A5\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A5\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:sample-2\":{\"id\":\"picogreen_dna_quant:sample-2\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:sample-2\":120},\"sample_ids\":[\"picogreen_dna_quant:sample-2\"],\"location\":\"prep:picogreen_dna_quant:sample-2\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A6\":{\"id\":\"picogreen_dna_quant:P01:A6\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A6\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:sample-3\":{\"id\":\"picogreen_dna_quant:sample-3\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:sample-3\":120},\"sample_ids\":[\"picogreen_dna_quant:sample-3\"],\"location\":\"prep:picogreen_dna_quant:sample-3\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A7\":{\"id\":\"picogreen_dna_quant:P01:A7\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A7\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:sample-4\":{\"id\":\"picogreen_dna_quant:sample-4\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:sample-4\":120},\"sample_ids\":[\"picogreen_dna_quant:sample-4\"],\"location\":\"prep:picogreen_dna_quant:sample-4\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A8\":{\"id\":\"picogreen_dna_quant:P01:A8\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A8\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null},\"picogreen_dna_quant:sample-5\":{\"id\":\"picogreen_dna_quant:sample-5\",\"kind\":\"stock_tube\",\"capacity_ul\":1500,\"volume_ul\":120,\"components_ul\":{\"picogreen_dna_quant:sample-5\":120},\"sample_ids\":[\"picogreen_dna_quant:sample-5\"],\"location\":\"prep:picogreen_dna_quant:sample-5\",\"parent\":null,\"dead_volume_ul\":5,\"closure\":\"open\"},\"picogreen_dna_quant:P01:A9\":{\"id\":\"picogreen_dna_quant:P01:A9\",\"kind\":\"well\",\"capacity_ul\":360,\"volume_ul\":0,\"components_ul\":{},\"sample_ids\":[],\"location\":\"picogreen_dna_quant:P01:A9\",\"parent\":\"picogreen_dna_quant:P01\",\"dead_volume_ul\":0,\"closure\":null}},\"plate_map\":[{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A1\",\"well\":\"A1\",\"sample_id\":\"picogreen_dna_quant:std-1000\",\"group\":\"standard\",\"standard_value\":1000,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A2\",\"well\":\"A2\",\"sample_id\":\"picogreen_dna_quant:std-100\",\"group\":\"standard\",\"standard_value\":100,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A3\",\"well\":\"A3\",\"sample_id\":\"picogreen_dna_quant:std-10\",\"group\":\"standard\",\"standard_value\":10,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A4\",\"well\":\"A4\",\"sample_id\":\"picogreen_dna_quant:std-0\",\"group\":\"standard\",\"standard_value\":0,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A5\",\"well\":\"A5\",\"sample_id\":\"picogreen_dna_quant:sample-1\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A6\",\"well\":\"A6\",\"sample_id\":\"picogreen_dna_quant:sample-2\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A7\",\"well\":\"A7\",\"sample_id\":\"picogreen_dna_quant:sample-3\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A8\",\"well\":\"A8\",\"sample_id\":\"picogreen_dna_quant:sample-4\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1},{\"experiment\":\"picogreen_dna_quant\",\"container\":\"picogreen_dna_quant:P01:A9\",\"well\":\"A9\",\"sample_id\":\"picogreen_dna_quant:sample-5\",\"group\":\"unknown\",\"standard_value\":null,\"replicate\":1}],\"budget_cny\":650,\"deadline_s\":25200,\"consumables_cny\":42.5,\"input_samples\":5,\"scope\":{\"digital_planning\":true,\"model_motion_demo\":true,\"method_adaptation\":false,\"hardware_validation\":false},\"assumptions\":[\"All costs and handling times are estimates, not quotes or benchmarks\",\"Existing library KS4000 is one demo instance, not a verified installed facility device\",\"No measured assay output; manual MIX/standards/carriers require qualification\"],\"consumable_usage\":{\"tips200ul\":18,\"black96\":1,\"clear96\":0,\"tube_1p5ml\":0,\"reservoir_50ml\":1}},\"checks\":{\"passed\":true,\"ledger_conserved\":true,\"legacy_gfp_preserved\":true,\"PlanIR_batches_passed\":1,\"wells\":9,\"measurement\":null}}"
+            }
+          ],
+          "details": {
+            "payload": {
+              "ok": true,
+              "graph": {
+                "schema": "biofoundry.taskgraph.v3",
+                "mode": "simulation",
+                "intent": {
+                  "mode": "simulation",
+                  "accept_demo_assumptions": true,
+                  "deadline_s": 25200,
+                  "budget_cny": 650,
+                  "enabled_devices": [
+                    "device:19",
+                    "device:18",
+                    "device:67",
+                    "demo:ks4000:1",
+                    "bench"
+                  ],
+                  "unsupported_requests": [],
+                  "experiments": [
+                    {
+                      "id": "picogreen_dna_quant",
+                      "method": "picogreen",
+                      "samples": 5,
+                      "replicates": 1,
+                      "release_s": 0,
+                      "deadline_s": 25200
+                    }
+                  ]
+                },
+                "methods": {
+                  "gfp": {
+                    "id": "genscript.cfxpress.gfp/demo-v2",
+                    "version": "2.0.0",
+                    "source": {
+                      "url": "https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf",
+                      "version": "v1.0, 2025-06; accessed 2026-10-15",
+                      "pages": [
+                        4,
+                        6
+                      ]
+                    },
+                    "parameters": {
+                      "reaction_ul": 50,
+                      "mix_ul": 45,
+                      "DNA_or_water_ul": 5,
+                      "temperature_c": 30,
+                      "incubation_s": 10800,
+                      "excitation_nm": 488,
+                      "emission_nm": 525
+                    },
+                    "basis": "manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions"
+                  },
+                  "bca": {
+                    "id": "pierce.bca.microplate/v1",
+                    "version": "1.0.0",
+                    "source": {
+                      "url": "https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf",
+                      "version": "MAN0011430 Rev D",
+                      "pages": [
+                        2,
+                        3
+                      ],
+                      "accessed": "2026-10-16"
+                    },
+                    "parameters": {
+                      "sample_ul": 25,
+                      "working_reagent_ul": 200,
+                      "reagent_A_B_ratio": [
+                        50,
+                        1
+                      ],
+                      "mix_s": 30,
+                      "temperature_c": 37,
+                      "incubation_s": 1800,
+                      "absorbance_nm": 562,
+                      "standards_ug_ml": [
+                        2000,
+                        1500,
+                        1000,
+                        750,
+                        500,
+                        250,
+                        125,
+                        25,
+                        0
+                      ]
+                    },
+                    "basis": "manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)"
+                  },
+                  "picogreen": {
+                    "id": "quantit.picogreen.highrange/v2",
+                    "version": "2.0.0",
+                    "source": {
+                      "url": "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf",
+                      "version": "MAN0001931 Rev A.0",
+                      "pages": [
+                        3,
+                        4
+                      ],
+                      "accessed": "2026-10-16"
+                    },
+                    "parameters": {
+                      "prediluted_sample_ul": 100,
+                      "working_reagent_ul": 100,
+                      "reagent_dilution": 200,
+                      "incubation_range_s": [
+                        120,
+                        300
+                      ],
+                      "excitation_nm": 480,
+                      "emission_nm": 520,
+                      "standards_final_ng_ml": [
+                        1000,
+                        100,
+                        10,
+                        0
+                      ],
+                      "protected_from_light": true
+                    },
+                    "basis": "manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers"
+                  }
+                },
+                "experiments": [
+                  {
+                    "id": "picogreen_dna_quant",
+                    "method": "picogreen",
+                    "method_id": "quantit.picogreen.highrange/v2",
+                    "samples": 5,
+                    "replicates": 1,
+                    "wells": 9,
+                    "plate": "black96",
+                    "plate_id": "picogreen_dna_quant:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "legacy": null,
+                    "manual_inputs": "human-prepared standards and working reagent; sample matrix compatibility unverified"
+                  }
+                ],
+                "tasks": [
+                  {
+                    "id": "picogreen_dna_quant:manual_inputs",
+                    "experiment": "picogreen_dna_quant",
+                    "name": "manual_inputs",
+                    "capability": "manual",
+                    "depends_on": [],
+                    "candidates": [
+                      "bench"
+                    ],
+                    "container": "black96",
+                    "load_s": 0,
+                    "process_s": 207,
+                    "clean_s": 0,
+                    "temperature_c": null,
+                    "manual": true,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": null,
+                    "plate_id": "picogreen_dna_quant:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen_dna_quant:P01",
+                      "picogreen_dna_quant:WR",
+                      "picogreen_dna_quant:std-1000",
+                      "picogreen_dna_quant:std-100",
+                      "picogreen_dna_quant:std-10",
+                      "picogreen_dna_quant:std-0",
+                      "picogreen_dna_quant:sample-1",
+                      "picogreen_dna_quant:sample-2",
+                      "picogreen_dna_quant:sample-3",
+                      "picogreen_dna_quant:sample-4",
+                      "picogreen_dna_quant:sample-5"
+                    ],
+                    "dependency_carriers": {},
+                    "required_labware": [
+                      "black96"
+                    ]
+                  },
+                  {
+                    "id": "picogreen_dna_quant:assemble",
+                    "experiment": "picogreen_dna_quant",
+                    "name": "assemble",
+                    "capability": "liquid",
+                    "depends_on": [
+                      "picogreen_dna_quant:manual_inputs"
+                    ],
+                    "candidates": [
+                      "device:19",
+                      "device:18"
+                    ],
+                    "container": "black96",
+                    "load_s": 30,
+                    "process_s": 117,
+                    "clean_s": 30,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [
+                      [
+                        "picogreen_dna_quant:std-1000",
+                        "picogreen_dna_quant:P01:A1",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A1",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:std-100",
+                        "picogreen_dna_quant:P01:A2",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A2",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:std-10",
+                        "picogreen_dna_quant:P01:A3",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A3",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:std-0",
+                        "picogreen_dna_quant:P01:A4",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A4",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:sample-1",
+                        "picogreen_dna_quant:P01:A5",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A5",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:sample-2",
+                        "picogreen_dna_quant:P01:A6",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A6",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:sample-3",
+                        "picogreen_dna_quant:P01:A7",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A7",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:sample-4",
+                        "picogreen_dna_quant:P01:A8",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A8",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:sample-5",
+                        "picogreen_dna_quant:P01:A9",
+                        100
+                      ],
+                      [
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:P01:A9",
+                        100
+                      ]
+                    ],
+                    "window": null,
+                    "plate_id": "picogreen_dna_quant:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen_dna_quant:P01",
+                      "picogreen_dna_quant:WR",
+                      "picogreen_dna_quant:sample-1",
+                      "picogreen_dna_quant:sample-2",
+                      "picogreen_dna_quant:sample-3",
+                      "picogreen_dna_quant:sample-4",
+                      "picogreen_dna_quant:sample-5",
+                      "picogreen_dna_quant:std-0",
+                      "picogreen_dna_quant:std-10",
+                      "picogreen_dna_quant:std-100",
+                      "picogreen_dna_quant:std-1000"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen_dna_quant:manual_inputs": [
+                        "picogreen_dna_quant:P01",
+                        "picogreen_dna_quant:WR",
+                        "picogreen_dna_quant:sample-1",
+                        "picogreen_dna_quant:sample-2",
+                        "picogreen_dna_quant:sample-3",
+                        "picogreen_dna_quant:sample-4",
+                        "picogreen_dna_quant:sample-5",
+                        "picogreen_dna_quant:std-0",
+                        "picogreen_dna_quant:std-10",
+                        "picogreen_dna_quant:std-100",
+                        "picogreen_dna_quant:std-1000"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96",
+                      "reservoir_50ml",
+                      "tube_1p5ml"
+                    ]
+                  },
+                  {
+                    "id": "picogreen_dna_quant:dark_incubation",
+                    "experiment": "picogreen_dna_quant",
+                    "name": "dark_incubation",
+                    "capability": "manual",
+                    "depends_on": [
+                      "picogreen_dna_quant:assemble"
+                    ],
+                    "candidates": [
+                      "bench"
+                    ],
+                    "container": "black96",
+                    "load_s": 0,
+                    "process_s": 120,
+                    "clean_s": 0,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": null,
+                    "plate_id": "picogreen_dna_quant:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "carrier_ids": [
+                      "picogreen_dna_quant:P01"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen_dna_quant:assemble": [
+                        "picogreen_dna_quant:P01"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96"
+                    ]
+                  },
+                  {
+                    "id": "picogreen_dna_quant:read",
+                    "experiment": "picogreen_dna_quant",
+                    "name": "read",
+                    "capability": "FI",
+                    "depends_on": [
+                      "picogreen_dna_quant:dark_incubation"
+                    ],
+                    "candidates": [
+                      "device:67"
+                    ],
+                    "container": "black96",
+                    "load_s": 30,
+                    "process_s": 63,
+                    "clean_s": 30,
+                    "temperature_c": null,
+                    "manual": false,
+                    "demand": 9,
+                    "transfers": [],
+                    "window": {
+                      "from": "picogreen_dna_quant:assemble",
+                      "max_s": 300,
+                      "min_s": 120,
+                      "basis": "manufacturer 2–5min dark incubation; read begins within this bound"
+                    },
+                    "plate_id": "picogreen_dna_quant:P01",
+                    "release_s": 0,
+                    "deadline_s": 25200,
+                    "optics": {
+                      "excitation_nm": 480,
+                      "emission_nm": 520
+                    },
+                    "carrier_ids": [
+                      "picogreen_dna_quant:P01"
+                    ],
+                    "dependency_carriers": {
+                      "picogreen_dna_quant:dark_incubation": [
+                        "picogreen_dna_quant:P01"
+                      ]
+                    },
+                    "required_labware": [
+                      "black96"
+                    ]
+                  }
+                ],
+                "initial_containers": {
+                  "picogreen_dna_quant:P01": {
+                    "id": "picogreen_dna_quant:P01",
+                    "kind": "read_plate",
+                    "capacity_ul": 0,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "prep:picogreen_dna_quant:P01",
+                    "parent": null,
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:WR": {
+                    "id": "picogreen_dna_quant:WR",
+                    "kind": "stock_tube",
+                    "capacity_ul": 50000,
+                    "volume_ul": 950,
+                    "components_ul": {
+                      "picogreen_dna_quant:WR": 950
+                    },
+                    "sample_ids": [],
+                    "location": "prep:picogreen_dna_quant:WR",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open",
+                    "labware": "reservoir_50ml"
+                  },
+                  "picogreen_dna_quant:std-1000": {
+                    "id": "picogreen_dna_quant:std-1000",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:std-1000": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:std-1000"
+                    ],
+                    "location": "prep:picogreen_dna_quant:std-1000",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A1": {
+                    "id": "picogreen_dna_quant:P01:A1",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A1",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:std-100": {
+                    "id": "picogreen_dna_quant:std-100",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:std-100": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:std-100"
+                    ],
+                    "location": "prep:picogreen_dna_quant:std-100",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A2": {
+                    "id": "picogreen_dna_quant:P01:A2",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A2",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:std-10": {
+                    "id": "picogreen_dna_quant:std-10",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:std-10": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:std-10"
+                    ],
+                    "location": "prep:picogreen_dna_quant:std-10",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A3": {
+                    "id": "picogreen_dna_quant:P01:A3",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A3",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:std-0": {
+                    "id": "picogreen_dna_quant:std-0",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:std-0": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:std-0"
+                    ],
+                    "location": "prep:picogreen_dna_quant:std-0",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A4": {
+                    "id": "picogreen_dna_quant:P01:A4",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A4",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:sample-1": {
+                    "id": "picogreen_dna_quant:sample-1",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:sample-1": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:sample-1"
+                    ],
+                    "location": "prep:picogreen_dna_quant:sample-1",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A5": {
+                    "id": "picogreen_dna_quant:P01:A5",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A5",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:sample-2": {
+                    "id": "picogreen_dna_quant:sample-2",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:sample-2": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:sample-2"
+                    ],
+                    "location": "prep:picogreen_dna_quant:sample-2",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A6": {
+                    "id": "picogreen_dna_quant:P01:A6",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A6",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:sample-3": {
+                    "id": "picogreen_dna_quant:sample-3",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:sample-3": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:sample-3"
+                    ],
+                    "location": "prep:picogreen_dna_quant:sample-3",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A7": {
+                    "id": "picogreen_dna_quant:P01:A7",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A7",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:sample-4": {
+                    "id": "picogreen_dna_quant:sample-4",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:sample-4": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:sample-4"
+                    ],
+                    "location": "prep:picogreen_dna_quant:sample-4",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A8": {
+                    "id": "picogreen_dna_quant:P01:A8",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A8",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  },
+                  "picogreen_dna_quant:sample-5": {
+                    "id": "picogreen_dna_quant:sample-5",
+                    "kind": "stock_tube",
+                    "capacity_ul": 1500,
+                    "volume_ul": 120,
+                    "components_ul": {
+                      "picogreen_dna_quant:sample-5": 120
+                    },
+                    "sample_ids": [
+                      "picogreen_dna_quant:sample-5"
+                    ],
+                    "location": "prep:picogreen_dna_quant:sample-5",
+                    "parent": null,
+                    "dead_volume_ul": 5,
+                    "closure": "open"
+                  },
+                  "picogreen_dna_quant:P01:A9": {
+                    "id": "picogreen_dna_quant:P01:A9",
+                    "kind": "well",
+                    "capacity_ul": 360,
+                    "volume_ul": 0,
+                    "components_ul": {},
+                    "sample_ids": [],
+                    "location": "picogreen_dna_quant:P01:A9",
+                    "parent": "picogreen_dna_quant:P01",
+                    "dead_volume_ul": 0,
+                    "closure": null
+                  }
+                },
+                "plate_map": [
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A1",
+                    "well": "A1",
+                    "sample_id": "picogreen_dna_quant:std-1000",
+                    "group": "standard",
+                    "standard_value": 1000,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A2",
+                    "well": "A2",
+                    "sample_id": "picogreen_dna_quant:std-100",
+                    "group": "standard",
+                    "standard_value": 100,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A3",
+                    "well": "A3",
+                    "sample_id": "picogreen_dna_quant:std-10",
+                    "group": "standard",
+                    "standard_value": 10,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A4",
+                    "well": "A4",
+                    "sample_id": "picogreen_dna_quant:std-0",
+                    "group": "standard",
+                    "standard_value": 0,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A5",
+                    "well": "A5",
+                    "sample_id": "picogreen_dna_quant:sample-1",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A6",
+                    "well": "A6",
+                    "sample_id": "picogreen_dna_quant:sample-2",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A7",
+                    "well": "A7",
+                    "sample_id": "picogreen_dna_quant:sample-3",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A8",
+                    "well": "A8",
+                    "sample_id": "picogreen_dna_quant:sample-4",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  },
+                  {
+                    "experiment": "picogreen_dna_quant",
+                    "container": "picogreen_dna_quant:P01:A9",
+                    "well": "A9",
+                    "sample_id": "picogreen_dna_quant:sample-5",
+                    "group": "unknown",
+                    "standard_value": null,
+                    "replicate": 1
+                  }
+                ],
+                "budget_cny": 650,
+                "deadline_s": 25200,
+                "consumables_cny": 42.5,
+                "input_samples": 5,
+                "scope": {
+                  "digital_planning": true,
+                  "model_motion_demo": true,
+                  "method_adaptation": false,
+                  "hardware_validation": false
+                },
+                "assumptions": [
+                  "All costs and handling times are estimates, not quotes or benchmarks",
+                  "Existing library KS4000 is one demo instance, not a verified installed facility device",
+                  "No measured assay output; manual MIX/standards/carriers require qualification"
+                ],
+                "consumable_usage": {
+                  "tips200ul": 18,
+                  "black96": 1,
+                  "clear96": 0,
+                  "tube_1p5ml": 0,
+                  "reservoir_50ml": 1
+                }
+              },
+              "checks": {
+                "passed": true,
+                "ledger_conserved": true,
+                "legacy_gfp_preserved": true,
+                "PlanIR_batches_passed": 1,
+                "wells": 9,
+                "measurement": null
+              }
+            }
+          },
+          "isError": false,
+          "timestamp": 1792386305177
+        }
+      }
+    ],
+    "generated": {
+      "ok": true,
+      "graph": {
+        "schema": "biofoundry.taskgraph.v3",
+        "mode": "simulation",
+        "intent": {
+          "mode": "simulation",
+          "accept_demo_assumptions": true,
+          "deadline_s": 25200,
+          "budget_cny": 650,
+          "enabled_devices": [
+            "device:19",
+            "device:18",
+            "device:67",
+            "demo:ks4000:1",
+            "bench"
+          ],
+          "unsupported_requests": [],
+          "experiments": [
+            {
+              "id": "picogreen_dna_quant",
+              "method": "picogreen",
+              "samples": 5,
+              "replicates": 1,
+              "release_s": 0,
+              "deadline_s": 25200
+            }
+          ]
+        },
+        "methods": {
+          "gfp": {
+            "id": "genscript.cfxpress.gfp/demo-v2",
+            "version": "2.0.0",
+            "source": {
+              "url": "https://www.genscript.com/gsfiles/techfiles/CFXpress_Ecoli_Cell-free_Kit_Instruction_Manual.pdf",
+              "version": "v1.0, 2025-06; accessed 2026-10-15",
+              "pages": [
+                4,
+                6
+              ]
+            },
+            "parameters": {
+              "reaction_ul": 50,
+              "mix_ul": 45,
+              "DNA_or_water_ul": 5,
+              "temperature_c": 30,
+              "incubation_s": 10800,
+              "excitation_nm": 488,
+              "emission_nm": 525
+            },
+            "basis": "manufacturer incubation and wavelengths; 45+5 recipe, DNA100ng/uL and 5x read dilution are retained demo assumptions"
+          },
+          "bca": {
+            "id": "pierce.bca.microplate/v1",
+            "version": "1.0.0",
+            "source": {
+              "url": "https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011430_Pierce_BCA_Protein_Asy_UG.pdf",
+              "version": "MAN0011430 Rev D",
+              "pages": [
+                2,
+                3
+              ],
+              "accessed": "2026-10-16"
+            },
+            "parameters": {
+              "sample_ul": 25,
+              "working_reagent_ul": 200,
+              "reagent_A_B_ratio": [
+                50,
+                1
+              ],
+              "mix_s": 30,
+              "temperature_c": 37,
+              "incubation_s": 1800,
+              "absorbance_nm": 562,
+              "standards_ug_ml": [
+                2000,
+                1500,
+                1000,
+                750,
+                500,
+                250,
+                125,
+                25,
+                0
+              ]
+            },
+            "basis": "manufacturer microplate protocol; equilibration 300s and post-equilibration read window 600s are conservative planning assumptions (10min note is for tubes)"
+          },
+          "picogreen": {
+            "id": "quantit.picogreen.highrange/v2",
+            "version": "2.0.0",
+            "source": {
+              "url": "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/mp07581.pdf",
+              "version": "MAN0001931 Rev A.0",
+              "pages": [
+                3,
+                4
+              ],
+              "accessed": "2026-10-16"
+            },
+            "parameters": {
+              "prediluted_sample_ul": 100,
+              "working_reagent_ul": 100,
+              "reagent_dilution": 200,
+              "incubation_range_s": [
+                120,
+                300
+              ],
+              "excitation_nm": 480,
+              "emission_nm": 520,
+              "standards_final_ng_ml": [
+                1000,
+                100,
+                10,
+                0
+              ],
+              "protected_from_light": true
+            },
+            "basis": "manufacturer 200uL microplate format, 1:1 addition; all standards pre-diluted manually, avoiding unqualified sub-5uL robot transfers"
+          }
+        },
+        "experiments": [
+          {
+            "id": "picogreen_dna_quant",
+            "method": "picogreen",
+            "method_id": "quantit.picogreen.highrange/v2",
+            "samples": 5,
+            "replicates": 1,
+            "wells": 9,
+            "plate": "black96",
+            "plate_id": "picogreen_dna_quant:P01",
+            "release_s": 0,
+            "deadline_s": 25200,
+            "legacy": null,
+            "manual_inputs": "human-prepared standards and working reagent; sample matrix compatibility unverified"
+          }
+        ],
+        "tasks": [
+          {
+            "id": "picogreen_dna_quant:manual_inputs",
+            "experiment": "picogreen_dna_quant",
+            "name": "manual_inputs",
+            "capability": "manual",
+            "depends_on": [],
+            "candidates": [
+              "bench"
+            ],
+            "container": "black96",
+            "load_s": 0,
+            "process_s": 207,
+            "clean_s": 0,
+            "temperature_c": null,
+            "manual": true,
+            "demand": 9,
+            "transfers": [],
+            "window": null,
+            "plate_id": "picogreen_dna_quant:P01",
+            "release_s": 0,
+            "deadline_s": 25200,
+            "carrier_ids": [
+              "picogreen_dna_quant:P01",
+              "picogreen_dna_quant:WR",
+              "picogreen_dna_quant:std-1000",
+              "picogreen_dna_quant:std-100",
+              "picogreen_dna_quant:std-10",
+              "picogreen_dna_quant:std-0",
+              "picogreen_dna_quant:sample-1",
+              "picogreen_dna_quant:sample-2",
+              "picogreen_dna_quant:sample-3",
+              "picogreen_dna_quant:sample-4",
+              "picogreen_dna_quant:sample-5"
+            ],
+            "dependency_carriers": {},
+            "required_labware": [
+              "black96"
+            ]
+          },
+          {
+            "id": "picogreen_dna_quant:assemble",
+            "experiment": "picogreen_dna_quant",
+            "name": "assemble",
+            "capability": "liquid",
+            "depends_on": [
+              "picogreen_dna_quant:manual_inputs"
+            ],
+            "candidates": [
+              "device:19",
+              "device:18"
+            ],
+            "container": "black96",
+            "load_s": 30,
+            "process_s": 117,
+            "clean_s": 30,
+            "temperature_c": null,
+            "manual": false,
+            "demand": 9,
+            "transfers": [
+              [
+                "picogreen_dna_quant:std-1000",
+                "picogreen_dna_quant:P01:A1",
+                100
+              ],
+              [
+                "picogreen_dna_quant:WR",
+                "picogreen_dna_quant:P01:A1",
+                100
+              ],
+              [
+                "picogreen_dna_quant:std-100",
+                "picogreen_dna_quant:P01:A2",
+                100
+              ],
+              [
+                "picogreen_dna_quant:WR",
+                "picogreen_dna_quant:P01:A2",
+                100
+              ],
+              [
+                "picogreen_dna_quant:std-10",
+                "picogreen_dna_quant:P01:A3",
+                100
+              ],
+              [
+                "picogreen_dna_quant:WR",
+                "picogreen_dna_quant:P01:A3",
+                100
+              ],
+              [
+                "picogreen_dna_quant:std-0",
+                "picogreen_dna_quant:P01:A4",
+                100
+              ],
+              [
+                "picogreen_dna_quant:WR",
+                "picogreen_dna_quant:P01:A4",
+                100
+              ],
+              [
+                "picogreen_dna_quant:sample-1",
+                "picogreen_dna_quant:P01:A5",
+                100
+              ],
+              [
+                "picogreen_dna_quant:WR",
+                "picogreen_dna_quant:P01:A5",
+                100
+              ],
+              [
+                "picogreen_dna_quant:sample-2",
+                "picogreen_dna_quant:P01:A6",
+                100
+              ],
+              [
+                "picogreen_dna_quant:WR",
+                "picogreen_dna_quant:P01:A6",
+                100
+              ],
+              [
+                "picogreen_dna_quant:sample-3",
+                "picogreen_dna_quant:P01:A7",
+                100
+              ],
+              [
+                "picogreen_dna_quant:WR",
+                "picogreen_dna_quant:P01:A7",
+                100
+              ],
+              [
+                "picogreen_dna_quant:sample-4",
+                "picogreen_dna_quant:P01:A8",
+                100
+              ],
+              [
+                "picogreen_dna_quant:WR",
+                "picogreen_dna_quant:P01:A8",
+                100
+              ],
+              [
+                "picogreen_dna_quant:sample-5",
+                "picogreen_dna_quant:P01:A9",
+                100
+              ],
+              [
+                "picogreen_dna_quant:WR",
+                "picogreen_dna_quant:P01:A9",
+                100
+              ]
+            ],
+            "window": null,
+            "plate_id": "picogreen_dna_quant:P01",
+            "release_s": 0,
+            "deadline_s": 25200,
+            "carrier_ids": [
+              "picogreen_dna_quant:P01",
+              "picogreen_dna_quant:WR",
+              "picogreen_dna_quant:sample-1",
+              "picogreen_dna_quant:sample-2",
+              "picogreen_dna_quant:sample-3",
+              "picogreen_dna_quant:sample-4",
+              "picogreen_dna_quant:sample-5",
+              "picogreen_dna_quant:std-0",
+              "picogreen_dna_quant:std-10",
+              "picogreen_dna_quant:std-100",
+              "picogreen_dna_quant:std-1000"
+            ],
+            "dependency_carriers": {
+              "picogreen_dna_quant:manual_inputs": [
+                "picogreen_dna_quant:P01",
+                "picogreen_dna_quant:WR",
+                "picogreen_dna_quant:sample-1",
+                "picogreen_dna_quant:sample-2",
+                "picogreen_dna_quant:sample-3",
+                "picogreen_dna_quant:sample-4",
+                "picogreen_dna_quant:sample-5",
+                "picogreen_dna_quant:std-0",
+                "picogreen_dna_quant:std-10",
+                "picogreen_dna_quant:std-100",
+                "picogreen_dna_quant:std-1000"
+              ]
+            },
+            "required_labware": [
+              "black96",
+              "reservoir_50ml",
+              "tube_1p5ml"
+            ]
+          },
+          {
+            "id": "picogreen_dna_quant:dark_incubation",
+            "experiment": "picogreen_dna_quant",
+            "name": "dark_incubation",
+            "capability": "manual",
+            "depends_on": [
+              "picogreen_dna_quant:assemble"
+            ],
+            "candidates": [
+              "bench"
+            ],
+            "container": "black96",
+            "load_s": 0,
+            "process_s": 120,
+            "clean_s": 0,
+            "temperature_c": null,
+            "manual": false,
+            "demand": 9,
+            "transfers": [],
+            "window": null,
+            "plate_id": "picogreen_dna_quant:P01",
+            "release_s": 0,
+            "deadline_s": 25200,
+            "carrier_ids": [
+              "picogreen_dna_quant:P01"
+            ],
+            "dependency_carriers": {
+              "picogreen_dna_quant:assemble": [
+                "picogreen_dna_quant:P01"
+              ]
+            },
+            "required_labware": [
+              "black96"
+            ]
+          },
+          {
+            "id": "picogreen_dna_quant:read",
+            "experiment": "picogreen_dna_quant",
+            "name": "read",
+            "capability": "FI",
+            "depends_on": [
+              "picogreen_dna_quant:dark_incubation"
+            ],
+            "candidates": [
+              "device:67"
+            ],
+            "container": "black96",
+            "load_s": 30,
+            "process_s": 63,
+            "clean_s": 30,
+            "temperature_c": null,
+            "manual": false,
+            "demand": 9,
+            "transfers": [],
+            "window": {
+              "from": "picogreen_dna_quant:assemble",
+              "max_s": 300,
+              "min_s": 120,
+              "basis": "manufacturer 2–5min dark incubation; read begins within this bound"
+            },
+            "plate_id": "picogreen_dna_quant:P01",
+            "release_s": 0,
+            "deadline_s": 25200,
+            "optics": {
+              "excitation_nm": 480,
+              "emission_nm": 520
+            },
+            "carrier_ids": [
+              "picogreen_dna_quant:P01"
+            ],
+            "dependency_carriers": {
+              "picogreen_dna_quant:dark_incubation": [
+                "picogreen_dna_quant:P01"
+              ]
+            },
+            "required_labware": [
+              "black96"
+            ]
+          }
+        ],
+        "initial_containers": {
+          "picogreen_dna_quant:P01": {
+            "id": "picogreen_dna_quant:P01",
+            "kind": "read_plate",
+            "capacity_ul": 0,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "prep:picogreen_dna_quant:P01",
+            "parent": null,
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen_dna_quant:WR": {
+            "id": "picogreen_dna_quant:WR",
+            "kind": "stock_tube",
+            "capacity_ul": 50000,
+            "volume_ul": 950,
+            "components_ul": {
+              "picogreen_dna_quant:WR": 950
+            },
+            "sample_ids": [],
+            "location": "prep:picogreen_dna_quant:WR",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open",
+            "labware": "reservoir_50ml"
+          },
+          "picogreen_dna_quant:std-1000": {
+            "id": "picogreen_dna_quant:std-1000",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen_dna_quant:std-1000": 120
+            },
+            "sample_ids": [
+              "picogreen_dna_quant:std-1000"
+            ],
+            "location": "prep:picogreen_dna_quant:std-1000",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen_dna_quant:P01:A1": {
+            "id": "picogreen_dna_quant:P01:A1",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen_dna_quant:P01:A1",
+            "parent": "picogreen_dna_quant:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen_dna_quant:std-100": {
+            "id": "picogreen_dna_quant:std-100",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen_dna_quant:std-100": 120
+            },
+            "sample_ids": [
+              "picogreen_dna_quant:std-100"
+            ],
+            "location": "prep:picogreen_dna_quant:std-100",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen_dna_quant:P01:A2": {
+            "id": "picogreen_dna_quant:P01:A2",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen_dna_quant:P01:A2",
+            "parent": "picogreen_dna_quant:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen_dna_quant:std-10": {
+            "id": "picogreen_dna_quant:std-10",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen_dna_quant:std-10": 120
+            },
+            "sample_ids": [
+              "picogreen_dna_quant:std-10"
+            ],
+            "location": "prep:picogreen_dna_quant:std-10",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen_dna_quant:P01:A3": {
+            "id": "picogreen_dna_quant:P01:A3",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen_dna_quant:P01:A3",
+            "parent": "picogreen_dna_quant:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen_dna_quant:std-0": {
+            "id": "picogreen_dna_quant:std-0",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen_dna_quant:std-0": 120
+            },
+            "sample_ids": [
+              "picogreen_dna_quant:std-0"
+            ],
+            "location": "prep:picogreen_dna_quant:std-0",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen_dna_quant:P01:A4": {
+            "id": "picogreen_dna_quant:P01:A4",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen_dna_quant:P01:A4",
+            "parent": "picogreen_dna_quant:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen_dna_quant:sample-1": {
+            "id": "picogreen_dna_quant:sample-1",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen_dna_quant:sample-1": 120
+            },
+            "sample_ids": [
+              "picogreen_dna_quant:sample-1"
+            ],
+            "location": "prep:picogreen_dna_quant:sample-1",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen_dna_quant:P01:A5": {
+            "id": "picogreen_dna_quant:P01:A5",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen_dna_quant:P01:A5",
+            "parent": "picogreen_dna_quant:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen_dna_quant:sample-2": {
+            "id": "picogreen_dna_quant:sample-2",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen_dna_quant:sample-2": 120
+            },
+            "sample_ids": [
+              "picogreen_dna_quant:sample-2"
+            ],
+            "location": "prep:picogreen_dna_quant:sample-2",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen_dna_quant:P01:A6": {
+            "id": "picogreen_dna_quant:P01:A6",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen_dna_quant:P01:A6",
+            "parent": "picogreen_dna_quant:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen_dna_quant:sample-3": {
+            "id": "picogreen_dna_quant:sample-3",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen_dna_quant:sample-3": 120
+            },
+            "sample_ids": [
+              "picogreen_dna_quant:sample-3"
+            ],
+            "location": "prep:picogreen_dna_quant:sample-3",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen_dna_quant:P01:A7": {
+            "id": "picogreen_dna_quant:P01:A7",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen_dna_quant:P01:A7",
+            "parent": "picogreen_dna_quant:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen_dna_quant:sample-4": {
+            "id": "picogreen_dna_quant:sample-4",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen_dna_quant:sample-4": 120
+            },
+            "sample_ids": [
+              "picogreen_dna_quant:sample-4"
+            ],
+            "location": "prep:picogreen_dna_quant:sample-4",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen_dna_quant:P01:A8": {
+            "id": "picogreen_dna_quant:P01:A8",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen_dna_quant:P01:A8",
+            "parent": "picogreen_dna_quant:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          },
+          "picogreen_dna_quant:sample-5": {
+            "id": "picogreen_dna_quant:sample-5",
+            "kind": "stock_tube",
+            "capacity_ul": 1500,
+            "volume_ul": 120,
+            "components_ul": {
+              "picogreen_dna_quant:sample-5": 120
+            },
+            "sample_ids": [
+              "picogreen_dna_quant:sample-5"
+            ],
+            "location": "prep:picogreen_dna_quant:sample-5",
+            "parent": null,
+            "dead_volume_ul": 5,
+            "closure": "open"
+          },
+          "picogreen_dna_quant:P01:A9": {
+            "id": "picogreen_dna_quant:P01:A9",
+            "kind": "well",
+            "capacity_ul": 360,
+            "volume_ul": 0,
+            "components_ul": {},
+            "sample_ids": [],
+            "location": "picogreen_dna_quant:P01:A9",
+            "parent": "picogreen_dna_quant:P01",
+            "dead_volume_ul": 0,
+            "closure": null
+          }
+        },
+        "plate_map": [
+          {
+            "experiment": "picogreen_dna_quant",
+            "container": "picogreen_dna_quant:P01:A1",
+            "well": "A1",
+            "sample_id": "picogreen_dna_quant:std-1000",
+            "group": "standard",
+            "standard_value": 1000,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen_dna_quant",
+            "container": "picogreen_dna_quant:P01:A2",
+            "well": "A2",
+            "sample_id": "picogreen_dna_quant:std-100",
+            "group": "standard",
+            "standard_value": 100,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen_dna_quant",
+            "container": "picogreen_dna_quant:P01:A3",
+            "well": "A3",
+            "sample_id": "picogreen_dna_quant:std-10",
+            "group": "standard",
+            "standard_value": 10,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen_dna_quant",
+            "container": "picogreen_dna_quant:P01:A4",
+            "well": "A4",
+            "sample_id": "picogreen_dna_quant:std-0",
+            "group": "standard",
+            "standard_value": 0,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen_dna_quant",
+            "container": "picogreen_dna_quant:P01:A5",
+            "well": "A5",
+            "sample_id": "picogreen_dna_quant:sample-1",
+            "group": "unknown",
+            "standard_value": null,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen_dna_quant",
+            "container": "picogreen_dna_quant:P01:A6",
+            "well": "A6",
+            "sample_id": "picogreen_dna_quant:sample-2",
+            "group": "unknown",
+            "standard_value": null,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen_dna_quant",
+            "container": "picogreen_dna_quant:P01:A7",
+            "well": "A7",
+            "sample_id": "picogreen_dna_quant:sample-3",
+            "group": "unknown",
+            "standard_value": null,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen_dna_quant",
+            "container": "picogreen_dna_quant:P01:A8",
+            "well": "A8",
+            "sample_id": "picogreen_dna_quant:sample-4",
+            "group": "unknown",
+            "standard_value": null,
+            "replicate": 1
+          },
+          {
+            "experiment": "picogreen_dna_quant",
+            "container": "picogreen_dna_quant:P01:A9",
+            "well": "A9",
+            "sample_id": "picogreen_dna_quant:sample-5",
+            "group": "unknown",
+            "standard_value": null,
+            "replicate": 1
+          }
+        ],
+        "budget_cny": 650,
+        "deadline_s": 25200,
+        "consumables_cny": 42.5,
+        "input_samples": 5,
+        "scope": {
+          "digital_planning": true,
+          "model_motion_demo": true,
+          "method_adaptation": false,
+          "hardware_validation": false
+        },
+        "assumptions": [
+          "All costs and handling times are estimates, not quotes or benchmarks",
+          "Existing library KS4000 is one demo instance, not a verified installed facility device",
+          "No measured assay output; manual MIX/standards/carriers require qualification"
+        ],
+        "consumable_usage": {
+          "tips200ul": 18,
+          "black96": 1,
+          "clear96": 0,
+          "tube_1p5ml": 0,
+          "reservoir_50ml": 1
+        }
+      },
+      "checks": {
+        "passed": true,
+        "ledger_conserved": true,
+        "legacy_gfp_preserved": true,
+        "PlanIR_batches_passed": 1,
+        "wells": 9,
+        "measurement": null
+      }
+    },
+    "attempts": 1,
+    "scope": "Digital planning only; actual provider usage retained separately from operating cost"
+  },
+  "error": null,
+  "wall_s": 2.4514684999994643
+}

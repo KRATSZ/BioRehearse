@@ -1,0 +1,1843 @@
+{
+  "development": [
+    {
+      "id": "dev-00",
+      "split": "dev",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "device:19",
+          "start_s": 0,
+          "end_s": 240
+        }
+      ]
+    },
+    {
+      "id": "dev-01",
+      "split": "dev",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 300
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "dev-02",
+      "split": "dev",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 10,
+            "replicates": 2,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "dev-03",
+      "split": "dev",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "dev-04",
+      "split": "dev",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 10,
+            "replicates": 2,
+            "release_s": 300
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 12,
+            "replicates": 2,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "device:19",
+          "start_s": 0,
+          "end_s": 240
+        }
+      ]
+    },
+    {
+      "id": "dev-05",
+      "split": "dev",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 8,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "dev-06",
+      "split": "dev",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 4,
+            "replicates": 2,
+            "release_s": 120
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "dev-07",
+      "split": "dev",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 1,
+            "release_s": 300
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "dev-08",
+      "split": "dev",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 120
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 10,
+            "replicates": 2,
+            "release_s": 120
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "device:19",
+          "start_s": 0,
+          "end_s": 240
+        }
+      ]
+    }
+  ],
+  "heldout": [
+    {
+      "id": "test-00",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 300
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "device:19",
+          "start_s": 0,
+          "end_s": 240
+        }
+      ]
+    },
+    {
+      "id": "test-01",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "test-02",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "test-03",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "test-04",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "device:19",
+          "start_s": 0,
+          "end_s": 240
+        }
+      ]
+    },
+    {
+      "id": "test-05",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 11,
+            "replicates": 1,
+            "release_s": 300
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "test-06",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "test-07",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "test-08",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "picogreen",
+            "samples": 11,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "device:19",
+          "start_s": 0,
+          "end_s": 240
+        }
+      ]
+    },
+    {
+      "id": "test-09",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 120
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 5,
+            "replicates": 2,
+            "release_s": 300
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "test-10",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 120
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 12,
+            "replicates": 1,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "test-11",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 11,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 6,
+            "replicates": 2,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "test-12",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 1,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "device:19",
+          "start_s": 0,
+          "end_s": 240
+        }
+      ]
+    },
+    {
+      "id": "test-13",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 300
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 300
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "test-14",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "bca",
+            "samples": 9,
+            "replicates": 2,
+            "release_s": 300
+          },
+          {
+            "id": "J2",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "test-15",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 120
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "test-16",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 120
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 11,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "device:19",
+          "start_s": 0,
+          "end_s": 240
+        }
+      ]
+    },
+    {
+      "id": "test-17",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 9,
+            "replicates": 1,
+            "release_s": 300
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "test-18",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 11,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "test-19",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 2,
+            "release_s": 300
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 12,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "test-20",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 300
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 10,
+            "replicates": 2,
+            "release_s": 120
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 10,
+            "replicates": 2,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "device:19",
+          "start_s": 0,
+          "end_s": 240
+        }
+      ]
+    },
+    {
+      "id": "test-21",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 300
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 5,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 9,
+            "replicates": 1,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": []
+    },
+    {
+      "id": "test-22",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 120
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 11,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": []
+    },
+    {
+      "id": "test-23",
+      "split": "test",
+      "expected": "feasible",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 120
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": []
+    },
+    {
+      "id": "negative-00",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 300
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 11,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": [],
+      "reason": "budget"
+    },
+    {
+      "id": "negative-01",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 600,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 9,
+            "replicates": 1,
+            "release_s": 300
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 6,
+            "replicates": 2,
+            "release_s": 300
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": [],
+      "reason": "deadline"
+    },
+    {
+      "id": "negative-02",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 40,
+            "replicates": 4,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 6,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": [],
+      "reason": "capacity"
+    },
+    {
+      "id": "negative-03",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "pcr",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 120
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 9,
+            "replicates": 2,
+            "release_s": 120
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 12,
+            "replicates": 2,
+            "release_s": 300
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": [],
+      "reason": "unknown_method"
+    },
+    {
+      "id": "negative-04",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": false,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 0
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 120
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": [],
+      "reason": "no_acceptance"
+    },
+    {
+      "id": "negative-05",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench",
+          "unregistered"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 1,
+            "release_s": 120
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 9,
+            "replicates": 2,
+            "release_s": 300
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 10,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": [],
+      "reason": "unknown_device"
+    },
+    {
+      "id": "negative-06",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 300
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 7,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 1,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": [],
+      "reason": "no_reader"
+    },
+    {
+      "id": "negative-07",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 2,
+            "release_s": 120
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 9,
+            "replicates": 2,
+            "release_s": 120
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": [],
+      "reason": "no_shaker"
+    },
+    {
+      "id": "negative-08",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 300
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 3,
+            "replicates": 1,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 12,
+            "replicates": 2,
+            "release_s": 0
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "operator",
+          "start_s": 0,
+          "end_s": 28800
+        }
+      ],
+      "reason": "operator_busy"
+    },
+    {
+      "id": "negative-09",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 300
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 6,
+            "replicates": 1,
+            "release_s": 120
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 4,
+            "replicates": 1,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "compact",
+      "bookings": [
+        {
+          "task_id": "external",
+          "resource": "device:67",
+          "start_s": 0,
+          "end_s": 28800
+        }
+      ],
+      "reason": "reader_busy"
+    },
+    {
+      "id": "negative-10",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 300
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 10,
+            "replicates": 2,
+            "release_s": 0
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 2,
+            "replicates": 2,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "linear",
+      "bookings": [],
+      "reason": "missing_budget"
+    },
+    {
+      "id": "negative-11",
+      "split": "test",
+      "expected": "reject",
+      "intent": {
+        "mode": "simulation",
+        "accept_demo_assumptions": true,
+        "deadline_s": 28800,
+        "budget_cny": 1500,
+        "enabled_devices": [
+          "device:19",
+          "device:18",
+          "device:67",
+          "demo:ks4000:1",
+          "bench"
+        ],
+        "unsupported_requests": [],
+        "experiments": [
+          {
+            "id": "J1",
+            "method": "gfp",
+            "samples": 1,
+            "replicates": 3,
+            "release_s": 120
+          },
+          {
+            "id": "J2",
+            "method": "bca",
+            "samples": 8,
+            "replicates": 1,
+            "release_s": 0,
+            "temperature_c": 25
+          },
+          {
+            "id": "J3",
+            "method": "picogreen",
+            "samples": 5,
+            "replicates": 2,
+            "release_s": 120
+          }
+        ]
+      },
+      "layout": "separated",
+      "bookings": [],
+      "reason": "override"
+    }
+  ]
+}

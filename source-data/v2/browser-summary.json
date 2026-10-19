@@ -1,0 +1,205 @@
+{
+  "scope": "Post-study secondary audit of state fields, not pixels, collisions or hardware",
+  "source": "web/plan-state.js",
+  "sha256": "50a17c85b26b34a23cf6d77be9fbb885c1035a01a120e95a1ac13db35aece539",
+  "plans": 24,
+  "timestamps": 2334,
+  "max_volume_component_difference_ul": 0,
+  "location_differences": 0,
+  "action_differences": 0,
+  "identity_differences": 0,
+  "results": [
+    {
+      "case": "repair-000",
+      "timestamps": 139,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-001",
+      "timestamps": 77,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-002",
+      "timestamps": 73,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-003",
+      "timestamps": 147,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-004",
+      "timestamps": 73,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-005",
+      "timestamps": 75,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-006",
+      "timestamps": 137,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-007",
+      "timestamps": 75,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-008",
+      "timestamps": 73,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-009",
+      "timestamps": 141,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-010",
+      "timestamps": 75,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-011",
+      "timestamps": 75,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-012",
+      "timestamps": 139,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-013",
+      "timestamps": 79,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-014",
+      "timestamps": 73,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-015",
+      "timestamps": 151,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-016",
+      "timestamps": 75,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-017",
+      "timestamps": 79,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-018",
+      "timestamps": 133,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-019",
+      "timestamps": 75,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-020",
+      "timestamps": 75,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-021",
+      "timestamps": 149,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-022",
+      "timestamps": 71,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    },
+    {
+      "case": "repair-023",
+      "timestamps": 75,
+      "max_volume_component_difference_ul": 0,
+      "location_differences": 0,
+      "action_differences": 0,
+      "identity_differences": 0
+    }
+  ]
+}

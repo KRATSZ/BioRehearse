@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this software release when using BioRehearse."
+title: "BioRehearse: executable digital rehearsal for registered biofoundry plans"
+version: 0.2.0
+date-released: 2026-10-19
+authors:
+  - family-names: Gao
+    given-names: Yuan
+  - family-names: Si
+    given-names: Tong
+repository-code: "https://github.com/KRATSZ/BioRehearse"
+license: MIT

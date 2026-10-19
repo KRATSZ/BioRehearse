@@ -1,0 +1,513 @@
+[
+  {
+    "instance": 70,
+    "raw_model": "Optima XE-100 - Beckman Coulter",
+    "room": "光明科学城/E栋/2F/0202谱学前处理实验室",
+    "asset_id": "beckman_optima_xe100",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/70"
+  },
+  {
+    "instance": 54,
+    "raw_model": "AKTA pure/25M1（常规型） - Cytiva",
+    "room": "光明科学城/E栋/2F/0204摇床/培养箱室 E204",
+    "asset_id": "cytiva_akta_pure_25m1",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/54"
+  },
+  {
+    "instance": 69,
+    "raw_model": "TI2-N-SIM-S-M - Nikon",
+    "room": "光明科学城/E栋/3F/0325暗室12",
+    "asset_id": "nikon-ti2-n-sim-s-m",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/69"
+  },
+  {
+    "instance": 68,
+    "raw_model": "SpectraMax i3X - Molecular Devices",
+    "room": "光明科学城/E栋/2F/0202谱学前处理实验室",
+    "asset_id": "spectramax-i3x",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/68"
+  },
+  {
+    "instance": 67,
+    "raw_model": "SpectraMax iD5 - Molecular Devices",
+    "room": "光明科学城/E栋/2F/0202谱学前处理实验室",
+    "asset_id": "spectramax-id5",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/67"
+  },
+  {
+    "instance": 66,
+    "raw_model": "Optima XPN-100 - Beckman Coulter",
+    "room": "光明科学城/E栋/2F/0202谱学前处理实验室",
+    "asset_id": "beckman_optima_xpn100",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/66"
+  },
+  {
+    "instance": 65,
+    "raw_model": "MicroCal PEAQ-ITC - Malvern",
+    "room": "光明科学城/E栋/2F/0206分析仪器室 E206",
+    "asset_id": "malvern_microcalpeaq",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/65"
+  },
+  {
+    "instance": 64,
+    "raw_model": "DynaPro NanoStar - WYATT",
+    "room": "光明科学城/E栋/2F/0208液相色谱分析室 E208",
+    "asset_id": "wyatt_dynapro_nanostar",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/64"
+  },
+  {
+    "instance": 63,
+    "raw_model": "AX - Nikon",
+    "room": "光明科学城/E栋/3F/0315暗室2",
+    "asset_id": "nikon-ax",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/63"
+  },
+  {
+    "instance": 62,
+    "raw_model": "Helios - FLUIDIGM",
+    "room": "光明科学城/E栋/2F/0220流式质谱分析室",
+    "asset_id": "fluidigm_helios",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/62"
+  },
+  {
+    "instance": 61,
+    "raw_model": "PPMS DynaCool - Quantum Design",
+    "room": "光明科学城/E栋/2F/0214质谱分析室二",
+    "asset_id": "quantum_design_ppms_dynacool",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/61"
+  },
+  {
+    "instance": 60,
+    "raw_model": "Nano Wizard 4 XP - Bruker",
+    "room": "光明科学城/A栋/7F/默认房间号",
+    "asset_id": "bruker_nanowizard_4_xp",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/60"
+  },
+  {
+    "instance": 59,
+    "raw_model": "Photonic Professional GT2 - Nanoscribe",
+    "room": "光明科学城/E栋/2F/0206分析仪器室",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/59"
+  },
+  {
+    "instance": 58,
+    "raw_model": "TGA 8000 - PerkinElmer",
+    "room": "光明科学城/E栋/2F/0206分析仪器室",
+    "asset_id": "perkinelmer_tga8000",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/58"
+  },
+  {
+    "instance": 57,
+    "raw_model": "1260 Infinity II - Agilent technologies",
+    "room": "光明科学城/E栋/2F/0208液相色谱分析室",
+    "asset_id": "agilent-1260-infinity-ii-semiprep",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/57"
+  },
+  {
+    "instance": 56,
+    "raw_model": "nanolR3 - Bruker",
+    "room": "光明科学城/E栋/3F/0314暗室1",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/56"
+  },
+  {
+    "instance": 55,
+    "raw_model": "AKTA pure/25M1（常规型） - Cytiva",
+    "room": "光明科学城/E栋/2F/0204摇床/培养箱室 E204",
+    "asset_id": "cytiva_akta_pure_25m1",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/55"
+  },
+  {
+    "instance": 90,
+    "raw_model": "8890-7010B - Agilent technologies",
+    "room": "光明科学城/E栋/2F/0210气相色谱分析室",
+    "asset_id": "agilent-8890-7010b-gcms",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/90"
+  },
+  {
+    "instance": 80,
+    "raw_model": "timsTOF Pro 2 - Bruker",
+    "room": "光明科学城/E栋/2F/0214质谱分析室二",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/80"
+  },
+  {
+    "instance": 89,
+    "raw_model": "8890-7010B - Agilent technologies",
+    "room": "光明科学城/E栋/2F/0210气相色谱分析室",
+    "asset_id": "agilent-8890-7010b-gcms",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/89"
+  },
+  {
+    "instance": 88,
+    "raw_model": "Rapidfire400-6470 - Agilent",
+    "room": "光明科学城/E栋/5F/0526自动化实验区二区",
+    "asset_id": "agilent-rapidfire400-6470",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/88"
+  },
+  {
+    "instance": 87,
+    "raw_model": "1290 Infinity II - Agilent technologies",
+    "room": "光明科学城/E栋/2F/0210气相色谱分析室",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/87"
+  },
+  {
+    "instance": 85,
+    "raw_model": "ReactRaman785 - METTLER TOLEDO",
+    "room": "光明科学城/E栋/1F/0111中试发酵工艺开发室",
+    "asset_id": "mettler_reactraman785",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/85"
+  },
+  {
+    "instance": 84,
+    "raw_model": "EasyMax402 - METTLER TOLEDO",
+    "room": "光明科学城/E栋/1F/0111中试发酵工艺开发室",
+    "asset_id": "mettler_easymax402",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/84"
+  },
+  {
+    "instance": 83,
+    "raw_model": "Prima BT - Thermo Scientific",
+    "room": "光明科学城/E栋/1F/0109化学分析室",
+    "asset_id": "thermo_prima_bt",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/83"
+  },
+  {
+    "instance": 82,
+    "raw_model": "Ambr 15 - Sartorius",
+    "room": "光明科学城/E栋/1F/0119小试发酵工艺开发室",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/82"
+  },
+  {
+    "instance": 81,
+    "raw_model": "BioPilot 150 - Biostream",
+    "room": "光明科学城/E栋/1F/0111中试发酵工艺开发室",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/81"
+  },
+  {
+    "instance": 71,
+    "raw_model": "Optima XE-100 - Beckman Coulter",
+    "room": "光明科学城/E栋/5F/0517试剂耗材准备间",
+    "asset_id": "beckman_optima_xe100",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/71"
+  },
+  {
+    "instance": 79,
+    "raw_model": "timsTOF Pro 2 - Bruker",
+    "room": "光明科学城/E栋/2F/0214质谱分析室二",
+    "asset_id": "bruker_timstof_pro2",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/79"
+  },
+  {
+    "instance": 78,
+    "raw_model": "BioTwin 15L - Biostream",
+    "room": "光明科学城/E栋/1F/0111中试发酵工艺开发室",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/78"
+  },
+  {
+    "instance": 77,
+    "raw_model": "BioTwin 15L - Biostream",
+    "room": "光明科学城/E栋/1F/0111中试发酵工艺开发室",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/77"
+  },
+  {
+    "instance": 76,
+    "raw_model": "ECLIPSE Ni-E - Nikon",
+    "room": "光明科学城/E栋/3F/0316暗室3",
+    "asset_id": "nikon-eclipse-ni-e",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/76"
+  },
+  {
+    "instance": 75,
+    "raw_model": "ECLIPSE Ni-E - Nikon",
+    "room": "光明科学城/E栋/3F/0316暗室3",
+    "asset_id": "nikon-eclipse-ni-e",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/75"
+  },
+  {
+    "instance": 74,
+    "raw_model": "ZenoTOF 7600 - SCIEX",
+    "room": "光明科学城/E栋/2F/0216质谱分析室三",
+    "asset_id": "sciex_zenotof_7600",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/74"
+  },
+  {
+    "instance": 73,
+    "raw_model": "impact Ⅱ - Bruker",
+    "room": "光明科学城/E栋/2F/0216质谱分析室三",
+    "asset_id": "bruker_impact_ii",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/73"
+  },
+  {
+    "instance": 72,
+    "raw_model": "Fusion X - 超视计",
+    "room": "光明科学城/E栋/3F/0326暗室13",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/72"
+  },
+  {
+    "instance": 25,
+    "raw_model": "FACSAria Fusion - BD",
+    "room": "光明科学城/E栋/12F/1214细胞室2",
+    "asset_id": "bd_facsaria_fusion",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/25"
+  },
+  {
+    "instance": 34,
+    "raw_model": "AX - Nikon",
+    "room": "光明科学城/E栋/3F/0318暗室5",
+    "asset_id": "nikon-ax",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/34"
+  },
+  {
+    "instance": 33,
+    "raw_model": "AX R MP - Nikon",
+    "room": "光明科学城/E栋/3F/0327暗室14",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/33"
+  },
+  {
+    "instance": 32,
+    "raw_model": "CSUW1 - YOKOGAWA",
+    "room": "光明科学城/E栋/3F/0325暗室12",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/32"
+  },
+  {
+    "instance": 31,
+    "raw_model": "Agilent  8890 - Agilent",
+    "room": "光明科学城/E栋/2F/0210气相色谱分析室",
+    "asset_id": "agilent-8890-gc",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/31"
+  },
+  {
+    "instance": 30,
+    "raw_model": "AX - Nikon",
+    "room": "光明科学城/E栋/3F/0318暗室5",
+    "asset_id": "nikon-ax",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/30"
+  },
+  {
+    "instance": 29,
+    "raw_model": "LiTone XL - LiT",
+    "room": "光明科学城/E栋/3F/0319暗室6",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/29"
+  },
+  {
+    "instance": 28,
+    "raw_model": "ECLIPSE TI2-E - Nikon",
+    "room": "光明科学城/E栋/3F/0314暗室1",
+    "asset_id": "nikon-eclipse-ti2-e",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/28"
+  },
+  {
+    "instance": 27,
+    "raw_model": "LightCycler480II - Roche",
+    "room": "光明科学城/E栋/6F/0635自动化实验区二区 D37",
+    "asset_id": "roche_lightcycler_480_ii",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/27"
+  },
+  {
+    "instance": 26,
+    "raw_model": "LSRFortessa - BD",
+    "room": "光明科学城/E栋/1F/0107NMR室",
+    "asset_id": "bd_lsrfortessa",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/26"
+  },
+  {
+    "instance": 35,
+    "raw_model": "BioTwin 15L - Biostream",
+    "room": "光明科学城/E栋/1F/0111中试发酵工艺开发室",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/35"
+  },
+  {
+    "instance": 24,
+    "raw_model": "FlowRACS - 星赛",
+    "room": "光明科学城/E栋/1F",
+    "asset_id": "singlecell_flowracs",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/24"
+  },
+  {
+    "instance": 23,
+    "raw_model": "LogPhase 600 - BioTek",
+    "room": "光明科学城/E栋/6F/0635自动化实验区二区",
+    "asset_id": "biotek-logphase-600",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/23"
+  },
+  {
+    "instance": 22,
+    "raw_model": "Sorvall Lynx 6000 - Thermo Scientific",
+    "room": "光明科学城/E栋/2F/0202谱学前处理实验室",
+    "asset_id": "thermo_sorvall_lynx6000",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/22"
+  },
+  {
+    "instance": 21,
+    "raw_model": "DNBSEQ-G99RS - 华大智造",
+    "room": "光明科学城/E栋/2F/0204-1洁净操作室",
+    "asset_id": "mgi_dnbseq_g99rs",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/21"
+  },
+  {
+    "instance": 20,
+    "raw_model": "DNBSEQ-G99RS - 华大智造",
+    "room": "光明科学城/E栋/2F/0204-1洁净操作室",
+    "asset_id": "mgi_dnbseq_g99rs",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/20"
+  },
+  {
+    "instance": 19,
+    "raw_model": "Instrument Fluent 1080 - TECAN",
+    "room": "光明科学城/E栋/1F/0115纯化工艺开发室",
+    "asset_id": "fluent1080",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/19"
+  },
+  {
+    "instance": 18,
+    "raw_model": "Instrument Fluent 780 - TECAN",
+    "room": "光明科学城/E栋/6F/0645分装间",
+    "asset_id": "tecan-fluent780",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/18"
+  },
+  {
+    "instance": 17,
+    "raw_model": "CytoFLEX LX - Beckman Coulter",
+    "room": "光明科学城/E栋/7F/0739自动化实验二区",
+    "asset_id": "beckman_cytoflex_lx",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/17"
+  },
+  {
+    "instance": 44,
+    "raw_model": "BioTwin 15L - Biostream",
+    "room": "光明科学城/E栋/1F/0111中试发酵工艺开发室",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/44"
+  },
+  {
+    "instance": 52,
+    "raw_model": "OCTET R8 - Sartorius",
+    "room": "光明科学城/E栋/2F/0208液相色谱分析室 E208",
+    "asset_id": "sartorius_octet_r8",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/52"
+  },
+  {
+    "instance": 51,
+    "raw_model": "AX - Nikon",
+    "room": "光明科学城/E栋/5F/0517试剂耗材准备间",
+    "asset_id": "nikon-ax",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/51"
+  },
+  {
+    "instance": 50,
+    "raw_model": "ECLIPSE TI2-E - Nikon",
+    "room": "光明科学城/E栋/5F/0512工艺研发室",
+    "asset_id": "nikon-eclipse-ti2-e",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/50"
+  },
+  {
+    "instance": 49,
+    "raw_model": "1260 Infinity II - Agilent technologies",
+    "room": "光明科学城/E栋/2F/0208液相色谱分析室",
+    "asset_id": "agilent-1260-infinity-ii-analytical",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/49"
+  },
+  {
+    "instance": 48,
+    "raw_model": "1290 Infinity II - Agilent technologies",
+    "room": "光明科学城/E栋/2F/0208液相色谱分析室",
+    "asset_id": "agilent-1290-infinity-ii-analytical-elsd",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/48"
+  },
+  {
+    "instance": 47,
+    "raw_model": "1290 Infinity II - Agilent technologies",
+    "room": "光明科学城/E栋/2F/0208液相色谱分析室",
+    "asset_id": "agilent-1290-infinity-ii-preparative",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/47"
+  },
+  {
+    "instance": 46,
+    "raw_model": "BioTwin 15L - Biostream",
+    "room": "光明科学城/E栋/1F/0111中试发酵工艺开发室",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/46"
+  },
+  {
+    "instance": 45,
+    "raw_model": "BioTwin 15L - Biostream",
+    "room": "光明科学城/E栋/1F/0111中试发酵工艺开发室",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/45"
+  },
+  {
+    "instance": 53,
+    "raw_model": "AKTA pure/25M2（多入口筛选型） - Cytiva",
+    "room": "光明科学城/E栋/5F/0517试剂耗材准备间 E517",
+    "asset_id": "cytiva_akta_pure_25m2",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/53"
+  },
+  {
+    "instance": 43,
+    "raw_model": "Bravo - Agilent technologies",
+    "room": "光明科学城/E栋/5F/0526自动化实验区二区",
+    "asset_id": "agilent_bravo_assaymap",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/43"
+  },
+  {
+    "instance": 42,
+    "raw_model": "XtaLAB Synergy-DW - Rigaku",
+    "room": "光明科学城/E栋/3F/0323暗室10",
+    "asset_id": "rigaku_xtalab_synergy_dw",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/42"
+  },
+  {
+    "instance": 41,
+    "raw_model": "ECLIPSE TI2-E - Nikon",
+    "room": "光明科学城/E栋/3F/0322暗室9",
+    "asset_id": "nikon-eclipse-ti2-e",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/41"
+  },
+  {
+    "instance": 40,
+    "raw_model": "CSUW1 - YOKOGAWA",
+    "room": "光明科学城/E栋/3F/0320暗室7",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/40"
+  },
+  {
+    "instance": 39,
+    "raw_model": "C2 - Nikon",
+    "room": "光明科学城/E栋/3F/0314暗室1",
+    "asset_id": "nikon-c2",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/39"
+  },
+  {
+    "instance": 38,
+    "raw_model": "AX - Nikon",
+    "room": "光明科学城/E栋/3F/0315暗室2",
+    "asset_id": "nikon-ax",
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/38"
+  },
+  {
+    "instance": 37,
+    "raw_model": "LiTone LBS - LiT",
+    "room": "光明科学城/E栋/3F/0319暗室6",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/37"
+  },
+  {
+    "instance": 36,
+    "raw_model": "Finder930-301- SMS - 卓立汉光",
+    "room": "光明科学城/E栋/3F/0317暗室4",
+    "asset_id": null,
+    "official_url": "https://infrasynbio.siat.ac.cn/platform/instrumentation/36"
+  }
+]

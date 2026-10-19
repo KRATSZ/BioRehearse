@@ -1,0 +1,263 @@
+{
+  "mode": "rehearsal",
+  "Blender": "5.2.0 LTS",
+  "sources": [
+    {
+      "station": "device:19",
+      "asset_id": "fluent1080",
+      "path": "assets/fluent1080.glb",
+      "sha256": "f41cda99a50cc5ff800b11cff6c06e6b18d3d101d824253b0b091ddbe3f44aa6"
+    },
+    {
+      "station": "device:18",
+      "asset_id": "tecan-fluent780",
+      "path": "library/tecan-fluent780/model.glb",
+      "sha256": "b3197d259a5250267662fe3fe1c76f0b4e0c729b2830cab1e090a4110aaaf96c"
+    },
+    {
+      "station": "device:67",
+      "asset_id": "spectramax-id5",
+      "path": "assets/spectramax-id5.glb",
+      "sha256": "83211c423a70439069d1d8104b1dca58d25e4fdbd7a0b7f53520b18f2e742e8f"
+    },
+    {
+      "station": "demo:ks4000:1",
+      "asset_id": "ika_ks4000",
+      "path": "library/ika_ks4000/model.glb",
+      "sha256": "7585fca7e91e02d6e53b97c97593fc4c84fb3c612a0f2ee6e9cdfdc1c0bd2f54"
+    }
+  ],
+  "images": [
+    {
+      "image": "rehearsal-1.png",
+      "width": 1800,
+      "height": 1200,
+      "engine": "Cycles",
+      "samples": 32,
+      "device": "GPU",
+      "time_s": 361,
+      "task": "E3:assemble",
+      "container_projection": {
+        "E3:MIX": [
+          0.4285072684288025,
+          0.6209267675876617
+        ],
+        "E3:DNA": [
+          0.44203025102615356,
+          0.6309254765510559
+        ],
+        "E3:WATER": [
+          0.455553263425827,
+          0.6409241855144501
+        ],
+        "E3:T1": [
+          0.4690762162208557,
+          0.650922954082489
+        ],
+        "E3:T2": [
+          0.4825991988182068,
+          0.6609216630458832
+        ]
+      },
+      "sha256": "23f11c401f8f76861b9e5b3f5db148012270550f6f259c5f764481cadf591265"
+    },
+    {
+      "image": "rehearsal-2.png",
+      "width": 1800,
+      "height": 1200,
+      "engine": "Cycles",
+      "samples": 32,
+      "device": "GPU",
+      "time_s": 1699,
+      "task": "E2:read",
+      "container_projection": {
+        "E2:P01": [
+          0.34647440910339355,
+          0.21967047452926636
+        ],
+        "E3:T1": [
+          0.7690679430961609,
+          0.47365158796310425
+        ],
+        "E3:T2": [
+          0.7825909852981567,
+          0.48208802938461304
+        ]
+      },
+      "sha256": "59db9c214d0cbcddce37a85b56de7bb0ba30ed3800f98f71d4ac3c2e0161218c"
+    },
+    {
+      "image": "rehearsal-3.png",
+      "width": 1800,
+      "height": 1200,
+      "engine": "Cycles",
+      "samples": 32,
+      "device": "GPU",
+      "time_s": 11817,
+      "task": "E3:prepare_plate",
+      "container_projection": {
+        "E1:P01": [
+          0.7690679430961609,
+          0.48330873250961304
+        ]
+      },
+      "sha256": "f78ca97f39171b9e3ec95ad0a17b1e20c1dca36e23ef492c7cf23bb0717046a8"
+    },
+    {
+      "image": "rehearsal-4.png",
+      "width": 1800,
+      "height": 1200,
+      "engine": "Cycles",
+      "samples": 32,
+      "device": "GPU",
+      "time_s": 13972,
+      "task": "E1:read",
+      "container_projection": {
+        "E1:P01": [
+          0.34647440910339355,
+          0.21967047452926636
+        ]
+      },
+      "sha256": "7cac8f4d42dbaa529a40bfcfed3ab9860a442beb75fee655c1bca7b68cdbf541"
+    },
+    {
+      "image": "water-injected.png",
+      "width": 1800,
+      "height": 1200,
+      "engine": "Cycles",
+      "samples": 32,
+      "device": "GPU",
+      "time_s": 11816,
+      "container_projection": {
+        "E1:P01": [
+          0.7690679430961609,
+          0.48330873250961304
+        ],
+        "E3:P01": [
+          0.17495110630989075,
+          0.4836848974227905
+        ],
+        "E3:WATER": [
+          0.4285072684288025,
+          0.602031946182251
+        ],
+        "E3:T1": [
+          0.18847408890724182,
+          0.48246413469314575
+        ],
+        "E3:T2": [
+          0.20199710130691528,
+          0.49090051651000977
+        ]
+      },
+      "sha256": "57ecdb802bcd7700b53f6a20c39d87d01a169cdc8387418acf9ee24b484e5f6f"
+    },
+    {
+      "image": "water-correct.png",
+      "width": 1800,
+      "height": 1200,
+      "engine": "Cycles",
+      "samples": 32,
+      "device": "GPU",
+      "time_s": 11816,
+      "container_projection": {
+        "E1:P01": [
+          0.7690679430961609,
+          0.48330873250961304
+        ],
+        "E3:P01": [
+          0.17495110630989075,
+          0.4836848974227905
+        ],
+        "E3:WATER": [
+          0.18847408890724182,
+          0.48246413469314575
+        ],
+        "E3:T1": [
+          0.20199710130691528,
+          0.49090051651000977
+        ],
+        "E3:T2": [
+          0.21552006900310516,
+          0.49933695793151855
+        ]
+      },
+      "sha256": "55e9b4eafd670d109255c6de13b58d2e0792627ce2910895ea62bd9401254215"
+    }
+  ],
+  "transforms": "native GLB importer; rigid placement only; source meshes unchanged",
+  "studio": "three area lights; AgX; fixed orthographic viewing direction; neutral floor",
+  "input_plan": {
+    "path": "source-data/v2/repair/plans/repair-001.json",
+    "sha256": "987ca8410cab1247bceddc83cd7c0df2dddaf02c1262531273a88d791e35d186"
+  },
+  "layout": "compact",
+  "positions_m": {
+    "bench": [
+      0,
+      0
+    ],
+    "device:19": [
+      3,
+      0
+    ],
+    "device:18": [
+      3,
+      3
+    ],
+    "device:67": [
+      0,
+      3
+    ],
+    "device:68": [
+      0,
+      5
+    ],
+    "demo:ks4000:1": [
+      5,
+      3
+    ]
+  },
+  "plan_id": "4a9998d2b3677784c61bbe52",
+  "note": "Actual recorded station states; carrier glyph dimensions are illustrative. Layout is a configured scenario, not a surveyed facility floorplan.",
+  "station_projection": {
+    "bench": [
+      0.5,
+      0.5
+    ],
+    "device:19": [
+      0.8061224222183228,
+      0.5
+    ],
+    "device:18": [
+      0.8061224222183228,
+      -0.044217705726623535
+    ],
+    "device:67": [
+      0.5,
+      -0.044217705726623535
+    ],
+    "demo:ks4000:1": [
+      1.0102040767669678,
+      -0.044217705726623535
+    ]
+  },
+  "renderer_script": {
+    "path": "figures/v2/source/render_rehearsal.py",
+    "sha256": "10272b93af84306b5570d9d4e5aea2a6796086be0e0d476fb7f612c8f6755b4c"
+  },
+  "frame_source": {
+    "path": "source-data/v2/example.json",
+    "sha256": "e0b037451c32b93a13bade8ccdf8b7efa6683955082e82e734c96ef1981e12c8"
+  },
+  "layout_source": {
+    "path": "source-data/v2/catalog.json",
+    "sha256": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de"
+  },
+  "material_state_source": {
+    "path": "source-data/v2/material-example.json",
+    "sha256": "98964f116193f1334993d7cafe53b9699c5caad8a0a11c1f958bd3abbc1e5cd2"
+  },
+  "generated_geometry": "Human bench, station pedestals and carrier glyphs are generated visual proxies; source station meshes are recorded separately.",
+  "status": "Native digital geometry render; no hardware execution"
+}

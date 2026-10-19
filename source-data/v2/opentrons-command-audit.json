@@ -1,0 +1,240 @@
+[
+  {
+    "file": "exports/flex-modules/module_visual_probe.analysis.json",
+    "sha256": "cbf2045f86d8467661cf46089a782458e3419f756c66dee6fd34a42bf19adb27",
+    "commands": 24,
+    "errors": 0,
+    "command_types": {
+      "home": 1,
+      "loadModule": 5,
+      "loadLabware": 2,
+      "loadLiquid": 1,
+      "loadPipette": 1,
+      "heaterShaker/openLabwareLatch": 1,
+      "heaterShaker/closeLabwareLatch": 1,
+      "thermocycler/openLid": 2,
+      "pickUpTip": 1,
+      "aspirate": 1,
+      "dispense": 1,
+      "dropTip": 1,
+      "thermocycler/closeLid": 1,
+      "temperatureModule/setTargetTemperature": 1,
+      "temperatureModule/waitForTemperature": 1,
+      "temperatureModule/deactivate": 1,
+      "absorbanceReader/openLid": 1,
+      "absorbanceReader/closeLid": 1
+    },
+    "successful_commands": 24,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/flex-modules/playback/modules.analysis.json",
+    "sha256": "dacb8867c3790d3a6626fd1e4d3a537f84f588eb9819184ce74557bca5bf018c",
+    "commands": 11,
+    "errors": 0,
+    "command_types": {
+      "loadModule": 5,
+      "thermocycler/closeLid": 1,
+      "thermocycler/openLid": 1,
+      "heaterShaker/openLabwareLatch": 1,
+      "heaterShaker/closeLabwareLatch": 1,
+      "absorbanceReader/openLid": 1,
+      "absorbanceReader/closeLid": 1
+    },
+    "successful_commands": 0,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/611f8d9cb24f8c3c/611f8d9cb24f8c3c.analysis.json",
+    "sha256": "611f8d9cb24f8c3c495eb0e2480830e3a750e759e5ae69007dc6df0e2dd035e5",
+    "commands": 56,
+    "errors": 0,
+    "command_types": {
+      "home": 1,
+      "loadLabware": 3,
+      "loadPipette": 1,
+      "loadLiquid": 2,
+      "pickUpTip": 2,
+      "aspirate": 22,
+      "dispense": 21,
+      "moveToAddressableAreaForDropTip": 2,
+      "dropTipInPlace": 2
+    },
+    "successful_commands": 56,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/657b4aebe28658c3/657b4aebe28658c3.analysis.json",
+    "sha256": "657b4aebe28658c353c3525e8d40e73f0f6843860834afaa1694f41b76c9dc08",
+    "commands": 1,
+    "errors": 0,
+    "command_types": {
+      "loadPipette": 1
+    },
+    "successful_commands": 0,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/6674f3bc6784b0c1/6674f3bc6784b0c1.analysis.json",
+    "sha256": "6674f3bc6784b0c1be1ad6a84e919899a4783f64022a4fdc8b89e0b1ac5dc2b9",
+    "commands": 45,
+    "errors": 0,
+    "command_types": {
+      "home": 1,
+      "loadLabware": 3,
+      "loadPipette": 1,
+      "pickUpTip": 8,
+      "aspirate": 8,
+      "dispense": 8,
+      "moveToAddressableAreaForDropTip": 8,
+      "dropTipInPlace": 8
+    },
+    "successful_commands": 45,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/683f45f2fb6df279/683f45f2fb6df279.analysis.json",
+    "sha256": "683f45f2fb6df279a23628dd4047ca6346d281fdb46f2b51207dfe6f0490b5d6",
+    "commands": 1,
+    "errors": 0,
+    "command_types": {
+      "loadPipette": 1
+    },
+    "successful_commands": 0,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/9e79849255cd763d/9e79849255cd763d.analysis.json",
+    "sha256": "9e79849255cd763dd0a338ec14e8adf667e2daa21ef5b71dc1dd7b5a75ecfed8",
+    "commands": 100,
+    "errors": 0,
+    "command_types": {
+      "home": 1,
+      "loadPipette": 2,
+      "loadLabware": 4,
+      "pickUpTip": 2,
+      "aspirate": 39,
+      "dispense": 39,
+      "dropTip": 2,
+      "touchTip": 11
+    },
+    "successful_commands": 100,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/ab76e5cc57a6d359/ab76e5cc57a6d359.analysis.json",
+    "sha256": "ab76e5cc57a6d35934db9a6feab515be86e4ea2bd96e28fea0c5b586ea293349",
+    "commands": 56,
+    "errors": 0,
+    "command_types": {
+      "home": 1,
+      "loadLabware": 3,
+      "loadPipette": 1,
+      "loadLiquid": 2,
+      "pickUpTip": 2,
+      "aspirate": 22,
+      "dispense": 21,
+      "moveToAddressableAreaForDropTip": 2,
+      "dropTipInPlace": 2
+    },
+    "successful_commands": 56,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/abbfe48a6d828c1a/abbfe48a6d828c1a.analysis.json",
+    "sha256": "abbfe48a6d828c1a1cd23f0ef439a156919c2a1c6824cbace7e88ea9a25d5d38",
+    "commands": 154,
+    "errors": 0,
+    "command_types": {
+      "home": 1,
+      "loadLabware": 3,
+      "loadPipette": 1,
+      "pickUpTip": 12,
+      "aspirate": 56,
+      "dispense": 55,
+      "moveToAddressableAreaForDropTip": 13,
+      "dropTipInPlace": 12,
+      "dispenseInPlace": 1
+    },
+    "successful_commands": 154,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/b4a64260a98b609e/b4a64260a98b609e.analysis.json",
+    "sha256": "b4a64260a98b609ed9853b54dffdd3a0fe2f90c393123435136a7513ea471450",
+    "commands": 56,
+    "errors": 0,
+    "command_types": {
+      "home": 1,
+      "loadLabware": 3,
+      "loadPipette": 1,
+      "loadLiquid": 2,
+      "pickUpTip": 2,
+      "aspirate": 22,
+      "dispense": 21,
+      "moveToAddressableAreaForDropTip": 2,
+      "dropTipInPlace": 2
+    },
+    "successful_commands": 56,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/df04c482461e7cde/df04c482461e7cde.analysis.json",
+    "sha256": "df04c482461e7cde89e8834fb455f490babd95b175b3391f1bd4602c6b20989f",
+    "commands": 56,
+    "errors": 0,
+    "command_types": {
+      "home": 1,
+      "loadLabware": 3,
+      "loadPipette": 1,
+      "loadLiquid": 2,
+      "pickUpTip": 2,
+      "aspirate": 22,
+      "dispense": 21,
+      "moveToAddressableAreaForDropTip": 2,
+      "dropTipInPlace": 2
+    },
+    "successful_commands": 56,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/eec82679f122eda6/eec82679f122eda6.analysis.json",
+    "sha256": "eec82679f122eda65a7cc487d2133e3072729e83ba39566b9844c08350f2f4b7",
+    "commands": 100,
+    "errors": 0,
+    "command_types": {
+      "home": 1,
+      "loadPipette": 2,
+      "loadLabware": 4,
+      "pickUpTip": 2,
+      "aspirate": 39,
+      "dispense": 39,
+      "dropTip": 2,
+      "touchTip": 11
+    },
+    "successful_commands": 100,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/f577e9c259bfe4d1/f577e9c259bfe4d1.analysis.json",
+    "sha256": "f577e9c259bfe4d1a691692219f50738959ea21debf3e20d05a3c92e6c163dd3",
+    "commands": 1,
+    "errors": 0,
+    "command_types": {
+      "loadPipette": 1
+    },
+    "successful_commands": 0,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  },
+  {
+    "file": "exports/mujoco/live/fc3d5966f6595937/fc3d5966f6595937.analysis.json",
+    "sha256": "fc3d5966f65959373f10c73b3c2a400fe5f430da60656c225e1a54d089f84459",
+    "commands": 1,
+    "errors": 0,
+    "command_types": {
+      "loadPipette": 1
+    },
+    "successful_commands": 0,
+    "protocol_binding": "existing command-stream example; not an automatic export of the three-assay portfolio"
+  }
+]

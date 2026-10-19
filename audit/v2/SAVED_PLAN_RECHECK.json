@@ -1,0 +1,6 @@
+{
+  "primary_outcomes": 1080,
+  "returned": 693,
+  "errors": [],
+  "note": "All stored returned plans independently re-scored; planners/models not rerun."
+}
