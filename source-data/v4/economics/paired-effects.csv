@@ -1,0 +1,13 @@
+objective,comparison,baseline,metric,n_workloads,paired_mean_pct_reduction,paired_median_pct_reduction,min_pct_reduction,max_pct_reduction,bootstrap_CI95_low,bootstrap_CI95_high
+cheapest,cp_sat_vs_parallel_greedy,parallel_greedy,time,34,4.323931268,1.80490686,0,21.23738146,,
+cheapest,cp_sat_vs_parallel_greedy,parallel_greedy,cost,34,0,0,0,0,,
+cheapest,cp_sat_vs_parallel_greedy,parallel_greedy,EPI,34,2.23813028,0.9065627141,0,11.2516938,1.232262951,3.367555781
+cheapest,cp_sat_vs_serial_fifo,serial_fifo,time,30,11.11965628,13.83570872,0,29.25433168,,
+cheapest,cp_sat_vs_serial_fifo,serial_fifo,cost,30,0,0,0,0,,
+cheapest,cp_sat_vs_serial_fifo,serial_fifo,EPI,30,5.870589874,7.175342256,0,15.88955575,4.01458373,7.774201392
+fastest,cp_sat_vs_parallel_greedy,parallel_greedy,time,32,4.595031297,1.833614441,0,17.69782202,,
+fastest,cp_sat_vs_parallel_greedy,parallel_greedy,cost,32,0.3311475194,0.001463528861,-0.2525106942,1.29294821,,
+fastest,cp_sat_vs_parallel_greedy,parallel_greedy,EPI,32,2.536634534,1.195958932,0,9.280779903,1.44663351,3.70582135
+fastest,cp_sat_vs_serial_fifo,serial_fifo,time,30,9.667393938,12.32445222,0,25.58234406,,
+fastest,cp_sat_vs_serial_fifo,serial_fifo,cost,30,0.4493155444,0.5507156444,0,1.440849646,,
+fastest,cp_sat_vs_serial_fifo,serial_fifo,EPI,30,5.273160748,6.701436999,0,14.04426078,3.593092734,6.992010563

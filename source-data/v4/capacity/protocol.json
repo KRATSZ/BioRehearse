@@ -1,0 +1,42 @@
+{
+  "study": "capacity_sensitivity",
+  "suite": "formal",
+  "generated_utc": "2026-10-19T11:03:22.668162+00:00",
+  "paper": "/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint",
+  "budget_s_per_solve": 2.0,
+  "planned_runs": 180,
+  "formal_planned_runs": 180,
+  "scenarios": [
+    "baseline",
+    "add_shaker",
+    "add_reader"
+  ],
+  "inputs": {
+    "workloads": {
+      "path": "benchmarks/v2/workloads.json",
+      "sha256": "5ba0470dde587a29eb175a5761d08e913077397b5f9fac1d4187168dd1246eaf"
+    },
+    "catalog": {
+      "path": "source-data/v2/catalog.json",
+      "sha256": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de"
+    }
+  },
+  "run_order": "original case order 0..59; each case baseline/add_shaker/add_reader",
+  "source": {
+    "reproducibility/source-v2/labscriptai/biofoundry/methods.py": "69f29b5d6c8a4d1d149a7ced09dd41f9c4f8cde7de8c5230fd0a2d008c95e2ee",
+    "reproducibility/source-v2/labscriptai/biofoundry/scheduling.py": "e77309aafc7e6ef7f7b8cd7f904abac272f068b6b5793e7c1c32f416ae44751f",
+    "reproducibility/source-v2/labscriptai/biofoundry/portfolio.py": "926a8161162a55b3bb5eb5a734b334ac45b4cff2bc501f8c2fc0d0ca79d30d05",
+    "reproducibility/source-v2/labscriptai/biofoundry/workflow.py": "845d41dd7a0a629e2ba73fb9503da47737b175208145dcc8eca3bda2210cdcb0",
+    "reproducibility/source-v2/labscriptai/biofoundry/capabilities.py": "41f41942b05838d82ee18a68e1446729083db05ef48b46e3f989dd13fcde822d",
+    "benchmarks/v2/scorer.py": "0583209dd70c9368dd2cf028e462bedb23a3fc19548b910e6b5d37b02180ee4c",
+    "benchmarks/scorer.py": "66360904c7d730bf1ae93b20591e4d9617f056023f425419d61339694f2e2787",
+    "benchmarks/v2/common.py": "5a7abd2474e14641b1cd01d90eaa4be13d35fecb6de9f6600013b2ca641b3582"
+  },
+  "runner_sha256": "e6a5bbb03f023fa979f2bfe19d58c5c980820d57c8fab7744a6faae97024dc47",
+  "frozen_v2_manifest_sha256": "7d83e77f8f5be5f5bffc6a6e84ef912cde68165dedfd5f360fa9bf0aacd68edc",
+  "unit_and_descriptive_analysis": "Units: seconds (wall clock, makespan), CNY (cost), samples/hour (throughput). Descriptive only: per-scenario/load counts and paired within-case reductions where baseline and scenario are jointly valid; no inferential statistics.",
+  "cloning_limitation": "add_shaker/add_reader are hypothetical scalar-resource clones of demo:ks4000:1 and device:67 with identical properties and layout coordinates offset by [0.6,0] / [0,0.6]. They are not live installations; geometry/transport effects are modelled, not measured.",
+  "procurement_roi": "Not assessed: no procurement cost, lead time or ROI analysis is performed.",
+  "budget_note": "The same --budget solver time limit applies to every run and scenario.",
+  "scorer": "benchmarks/v2/scorer.py independent arithmetic scorer + states audit"
+}

@@ -1,0 +1,112 @@
+{
+  "basis": "conditional recovery scenario, no realized savings",
+  "water_branch": {
+    "operator_seconds": 34,
+    "nominal_cost_cny": 0.58,
+    "source": "source-data/v2/example.json",
+    "rows": [
+      {
+        "id": "E3:assemble\u2192E3:stage_dilution_water",
+        "name": "manual_transfer",
+        "kind": "transfer",
+        "experiment": "E3",
+        "resource": "operator",
+        "source": "device:19",
+        "destination": "bench",
+        "depends_on": [
+          "E3:assemble"
+        ],
+        "to_task": "E3:stage_dilution_water",
+        "start_s": 994,
+        "end_s": 1018,
+        "duration_s": 24,
+        "distance_m": 3,
+        "cost_cents": 40,
+        "plate_id": "E3:P01",
+        "transfers": [],
+        "manual": true
+      },
+      {
+        "id": "E3:stage_dilution_water",
+        "experiment": "E3",
+        "name": "stage_dilution_water",
+        "capability": "manual",
+        "depends_on": [
+          "E3:assemble"
+        ],
+        "candidates": [
+          "bench"
+        ],
+        "container": "tube_1p5ml",
+        "load_s": 0,
+        "process_s": 5,
+        "clean_s": 0,
+        "temperature_c": null,
+        "manual": true,
+        "demand": 2,
+        "transfers": [],
+        "window": null,
+        "plate_id": "E3:P01",
+        "release_s": 60,
+        "deadline_s": 28800,
+        "carrier_ids": [
+          "E3:WATER"
+        ],
+        "dependency_carriers": {
+          "E3:assemble": [
+            "E3:WATER"
+          ]
+        },
+        "required_labware": [
+          "tube_1p5ml"
+        ],
+        "resource": "bench",
+        "duration_s": 5,
+        "operator_s": 5,
+        "cost_cents": 9,
+        "machine_cents": 0,
+        "labor_cents": 9,
+        "duration_assumed_range_s": [
+          3,
+          8
+        ],
+        "start_s": 1018,
+        "end_s": 1023,
+        "process_start_s": 1018,
+        "process_end_s": 1023,
+        "kind": "operation"
+      },
+      {
+        "id": "E3:stage_dilution_water\u2192E3:prepare_plate",
+        "name": "manual_transfer",
+        "kind": "transfer",
+        "experiment": "E3",
+        "resource": "operator",
+        "source": "bench",
+        "destination": "bench",
+        "depends_on": [
+          "E3:stage_dilution_water"
+        ],
+        "to_task": "E3:prepare_plate",
+        "start_s": 1023,
+        "end_s": 1028,
+        "duration_s": 5,
+        "distance_m": 0,
+        "cost_cents": 9,
+        "plate_id": "E3:P01",
+        "transfers": [],
+        "manual": true
+      }
+    ]
+  },
+  "expected_avoided_cost_formula": "prevalence * probability_unrecoverable * repeat_cost - rehearsal_and_review_cost",
+  "unobserved": [
+    "natural error prevalence",
+    "late recovery success",
+    "actual reagent invoices",
+    "real tariffs",
+    "operator measurement",
+    "biological failure probability"
+  ],
+  "do_not_assume": "Missing dilution water can be manually staged; it does not by itself imply loss of the preceding 3-hour expression incubation."
+}

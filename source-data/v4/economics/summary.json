@@ -1,0 +1,318 @@
+{
+  "assumptions": [
+    "Recipes and rates are the supplied benchmark's demo planning assumptions, not vendor quotes or measured facility tariffs.",
+    "EPI = sqrt((time_h/n_samples)*(cost_CNY/n_samples)); it is simulated and not a full techno-economic assessment.",
+    "Costs are nominal and no economic realized savings are inferred.",
+    "Assay mix varies with load; heterogeneous sample counts are not comparable biological output.",
+    "Failed outcomes are retained with null computed time/cost/EPI; failure costs and times are never imputed."
+  ],
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20261019,
+    "statistic": "paired mean EPI percent reduction",
+    "unit": "workload"
+  },
+  "counts": {
+    "catalog_devices": 75,
+    "invalid_records": 387,
+    "outcomes": 1080,
+    "paired_effect_rows": 12,
+    "plans": 1080,
+    "scheduling_records": 1080,
+    "utilization_rows": 82080,
+    "valid_records": 693,
+    "workload_metric_groups": 360,
+    "workloads": 60
+  },
+  "input_sha256": {
+    "plans": "888744a301fbed3f54cb41fa079506acf51a7f0d3f8dd0c1eb37530d163df358",
+    "scheduling": "21578b2797fa1c5432e4662966bd999f41c9ecb4d28788023f1f5f64a8568b3b",
+    "workloads": "5ba0470dde587a29eb175a5761d08e913077397b5f9fac1d4187168dd1246eaf"
+  },
+  "labels": {
+    "EPI": "simulated model-based screening index, not a full techno-economic assessment",
+    "costs": "nominal planning costs (CNY), not realized savings",
+    "sample_denominator": "sum of intent.experiments[].samples; controls and technical replicates excluded"
+  },
+  "paired_effects": [
+    {
+      "baseline": "parallel_greedy",
+      "comparison": "cp_sat_vs_parallel_greedy",
+      "max_pct_reduction": 21.23738146222086,
+      "metric": "time",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 34,
+      "objective": "cheapest",
+      "paired_mean_pct_reduction": 4.323931268404575,
+      "paired_median_pct_reduction": 1.8049068597619828
+    },
+    {
+      "baseline": "parallel_greedy",
+      "comparison": "cp_sat_vs_parallel_greedy",
+      "max_pct_reduction": 0.0,
+      "metric": "cost",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 34,
+      "objective": "cheapest",
+      "paired_mean_pct_reduction": 0.0,
+      "paired_median_pct_reduction": 0.0
+    },
+    {
+      "baseline": "parallel_greedy",
+      "bootstrap_CI95_high": 3.367555780792334,
+      "bootstrap_CI95_low": 1.2322629507837366,
+      "comparison": "cp_sat_vs_parallel_greedy",
+      "max_pct_reduction": 11.251693797695987,
+      "metric": "EPI",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 34,
+      "objective": "cheapest",
+      "paired_mean_pct_reduction": 2.2381302796370734,
+      "paired_median_pct_reduction": 0.9065627140819084
+    },
+    {
+      "baseline": "serial_fifo",
+      "comparison": "cp_sat_vs_serial_fifo",
+      "max_pct_reduction": 29.254331683168314,
+      "metric": "time",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 30,
+      "objective": "cheapest",
+      "paired_mean_pct_reduction": 11.119656279777235,
+      "paired_median_pct_reduction": 13.835708720845236
+    },
+    {
+      "baseline": "serial_fifo",
+      "comparison": "cp_sat_vs_serial_fifo",
+      "max_pct_reduction": 0.0,
+      "metric": "cost",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 30,
+      "objective": "cheapest",
+      "paired_mean_pct_reduction": 0.0,
+      "paired_median_pct_reduction": 0.0
+    },
+    {
+      "baseline": "serial_fifo",
+      "bootstrap_CI95_high": 7.774201392347921,
+      "bootstrap_CI95_low": 4.0145837301607115,
+      "comparison": "cp_sat_vs_serial_fifo",
+      "max_pct_reduction": 15.889555751481325,
+      "metric": "EPI",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 30,
+      "objective": "cheapest",
+      "paired_mean_pct_reduction": 5.870589874195518,
+      "paired_median_pct_reduction": 7.175342256279592
+    },
+    {
+      "baseline": "parallel_greedy",
+      "comparison": "cp_sat_vs_parallel_greedy",
+      "max_pct_reduction": 17.69782201725948,
+      "metric": "time",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 32,
+      "objective": "fastest",
+      "paired_mean_pct_reduction": 4.595031297278028,
+      "paired_median_pct_reduction": 1.8336144413738502
+    },
+    {
+      "baseline": "parallel_greedy",
+      "comparison": "cp_sat_vs_parallel_greedy",
+      "max_pct_reduction": 1.2929482100410552,
+      "metric": "cost",
+      "min_pct_reduction": -0.2525106942314629,
+      "n_workloads": 32,
+      "objective": "fastest",
+      "paired_mean_pct_reduction": 0.3311475194175073,
+      "paired_median_pct_reduction": 0.0014635288608044418
+    },
+    {
+      "baseline": "parallel_greedy",
+      "bootstrap_CI95_high": 3.705821350027988,
+      "bootstrap_CI95_low": 1.4466335097749106,
+      "comparison": "cp_sat_vs_parallel_greedy",
+      "max_pct_reduction": 9.280779902776478,
+      "metric": "EPI",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 32,
+      "objective": "fastest",
+      "paired_mean_pct_reduction": 2.5366345342780963,
+      "paired_median_pct_reduction": 1.1959589316514485
+    },
+    {
+      "baseline": "serial_fifo",
+      "comparison": "cp_sat_vs_serial_fifo",
+      "max_pct_reduction": 25.582344062334275,
+      "metric": "time",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 30,
+      "objective": "fastest",
+      "paired_mean_pct_reduction": 9.667393937774367,
+      "paired_median_pct_reduction": 12.32445221872861
+    },
+    {
+      "baseline": "serial_fifo",
+      "comparison": "cp_sat_vs_serial_fifo",
+      "max_pct_reduction": 1.4408496457811373,
+      "metric": "cost",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 30,
+      "objective": "fastest",
+      "paired_mean_pct_reduction": 0.4493155444290981,
+      "paired_median_pct_reduction": 0.5507156443685164
+    },
+    {
+      "baseline": "serial_fifo",
+      "bootstrap_CI95_high": 6.992010562715616,
+      "bootstrap_CI95_low": 3.593092734310452,
+      "comparison": "cp_sat_vs_serial_fifo",
+      "max_pct_reduction": 14.044260781606226,
+      "metric": "EPI",
+      "min_pct_reduction": 0.0,
+      "n_workloads": 30,
+      "objective": "fastest",
+      "paired_mean_pct_reduction": 5.2731607478331455,
+      "paired_median_pct_reduction": 6.7014369991909835
+    }
+  ],
+  "per_load": {
+    "1": {
+      "mean_cost_CNY": 156.19333333333336,
+      "mean_model_EPI": 10.107292678975249,
+      "mean_time_h": 1.8870949074074075,
+      "n_fully_valid_workloads": 12,
+      "n_runs": 216,
+      "n_valid_runs": 216,
+      "n_workloads": 12
+    },
+    "12": {
+      "mean_cost_CNY": 1565.6725,
+      "mean_model_EPI": 0.5361904749485683,
+      "mean_time_h": 7.112175925925927,
+      "n_fully_valid_workloads": 0,
+      "n_runs": 216,
+      "n_valid_runs": 36,
+      "n_workloads": 12
+    },
+    "3": {
+      "mean_cost_CNY": 422.98791666666665,
+      "mean_model_EPI": 1.2319528473972752,
+      "mean_time_h": 4.214340277777778,
+      "n_fully_valid_workloads": 12,
+      "n_runs": 216,
+      "n_valid_runs": 216,
+      "n_workloads": 12
+    },
+    "6": {
+      "mean_cost_CNY": 765.5224528301886,
+      "mean_model_EPI": 0.7311022530077141,
+      "mean_time_h": 5.83933787561146,
+      "n_fully_valid_workloads": 5,
+      "n_runs": 216,
+      "n_valid_runs": 159,
+      "n_workloads": 12
+    },
+    "9": {
+      "mean_cost_CNY": 1184.6477272727273,
+      "mean_model_EPI": 0.540172112292197,
+      "mean_time_h": 5.8743602693602694,
+      "n_fully_valid_workloads": 0,
+      "n_runs": 216,
+      "n_valid_runs": 66,
+      "n_workloads": 12
+    }
+  },
+  "rates_assumed": {
+    "basis": "Planning assumption in CNY, not a vendor quote or measured facility tariff; low/high = 0.7/1.5 \u00d7 estimate",
+    "bca_well": 0.6,
+    "black96": 15,
+    "clear96": 8,
+    "currency": "CNY",
+    "gfp_reaction": 12,
+    "operator_per_hour": 60,
+    "picogreen_well": 1.8,
+    "reservoir_50ml": 5,
+    "tip": 0.35
+  },
+  "recipes_assumed": {
+    "bca": {
+      "id": "pierce.bca.microplate/v1",
+      "parameters": {
+        "absorbance_nm": 562,
+        "incubation_s": 1800,
+        "mix_s": 30,
+        "reagent_A_B_ratio": [
+          50,
+          1
+        ],
+        "sample_ul": 25,
+        "standards_ug_ml": [
+          2000,
+          1500,
+          1000,
+          750,
+          500,
+          250,
+          125,
+          25,
+          0
+        ],
+        "temperature_c": 37,
+        "working_reagent_ul": 200
+      },
+      "version": "1.0.0"
+    },
+    "gfp": {
+      "id": "genscript.cfxpress.gfp/demo-v2",
+      "parameters": {
+        "DNA_or_water_ul": 5,
+        "emission_nm": 525,
+        "excitation_nm": 488,
+        "incubation_s": 10800,
+        "mix_ul": 45,
+        "reaction_ul": 50,
+        "temperature_c": 30
+      },
+      "version": "2.0.0"
+    },
+    "picogreen": {
+      "id": "quantit.picogreen.highrange/v2",
+      "parameters": {
+        "emission_nm": 520,
+        "excitation_nm": 480,
+        "incubation_range_s": [
+          120,
+          300
+        ],
+        "prediluted_sample_ul": 100,
+        "protected_from_light": true,
+        "reagent_dilution": 200,
+        "standards_final_ng_ml": [
+          1000,
+          100,
+          10,
+          0
+        ],
+        "working_reagent_ul": 100
+      },
+      "version": "2.0.0"
+    }
+  },
+  "schema_notes": {
+    "bootstrap": "10000 workload draws with replacement, seed 20261019, percentile 95% CI for mean EPI reduction",
+    "outcomes": "one row per matched record; invalid outcomes retained with null computed metrics",
+    "paired-effects.csv": "CP versus each baseline for each objective, restricted to workloads jointly valid for every repeat of both methods; reduction=(baseline-CP)/baseline*100",
+    "utilization.csv": "union of busy reservation seconds per resource / makespan; zero-busy catalog devices included; null ratio if no makespan",
+    "workload-metrics.csv": "means within case/objective/method over repeated valid runs; n_runs and n_valid reported"
+  },
+  "source_files": {
+    "catalog": "/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v2/catalog.json",
+    "plans": "/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v2/heldout/plans.jsonl.gz",
+    "scheduling": "/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/source-data/v2/heldout/scheduling.jsonl",
+    "workloads": "/Users/gaoyuan/Documents/test/virtual-lab/docs/paper/biofoundry-preprint/benchmarks/v2/workloads.json"
+  },
+  "supporting_input_sha256": {
+    "catalog": "d7f0a25586c4102265c2ac01db213f59094e66aee9843c5e75f3ba240317e6de"
+  }
+}

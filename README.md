@@ -1,4 +1,4 @@
-# BioRehearse v0.3.0
+# BioRehearse v0.4.0
 
 An executable digital model for rehearsing registered biofoundry plans: typed intent → method graph → shared-resource schedule → liquid and material-location state → 3D replay.
 
@@ -37,6 +37,14 @@ The asset resource contains71 assets, of which64 have joint contracts. Facility 
 
 A staged certificate analysis of the same60 workload designs yields53 feasible schedules and7 solver-declared infeasible cases, the final proof coming from a separate93.6-s follow-up. On a fixed20-case subset independently run at2/10/60s, CP-SAT returns18 valid plans at each allowance; the corrected serial/parallel SGS variants return12/4. `sgs_v33` is the current comparator; superseded implementations, explicit timeouts and every failure remain recorded. These retrospective extensions are not a new unseen test set or a universal ranking of scheduling heuristics.
 
-For a known180-s KS4000 outage,9/18 cases admit a checked repair with180s added makespan;9 are infeasible. The metadata bundle allows actual checker replay of26 positive asset traces,156 invalid orders and407 mutation records. Asset-action traces are separate from compiled assay plans. The exploratory challenge retains42 moderate quantity errors that escaped conservation/location/schedule checks. A retrospective free GLM probe produces0/96 successful test tool proposals;12 development requests are separate.
+For a known240-s KS4000 outage,9/18 cases admit a checked repair with180s added makespan;9 are infeasible. The metadata bundle allows actual checker replay of26 positive asset traces,156 invalid orders and407 mutation records. Asset-action traces are separate from compiled assay plans. The exploratory challenge retains42 moderate quantity errors that escaped conservation/location/schedule checks. A retrospective free GLM probe produces0/96 successful test tool proposals;12 development requests are separate.
 
 `reproducibility/README-v3.md` explains units, runtime, source amendments, source-tree requirements and metadata-only replay. Temporary GLB placeholders serve only the constructor hash path in that replay; geometry is neither parsed nor certified. No new paid API call, hardware result, human inspection study or biological result is needed for the offline checks. Existing primary result files are protected from overwrite.
+
+## v0.4 model-based economics and capacity
+
+`benchmarks/v4` and `source-data/v4` contain all1,080-outcome economic summaries and180 fresh, matched2-s capacity solves, including15 nonreturns. `python reproducibility/verify_v4.py` independently replays the saved schedules and material states and links raw makespan, nominal cost and throughput to each scored plan. No API call or geometry library is required. See `reproducibility/README-v4.md` for commands.
+
+Model-based EPI is sqrt((elapsed hours/input samples)*(nominal CNY/input samples)); controls and technical replication are excluded from this EPI denominator. CP-SAT reduces EPI2.54% versus parallel greedy on32 jointly valid fastest-objective workload means (workload-bootstrap95% interval1.45–3.71%). All34 cheapest-objective paired costs tie. An additional hypothetical shaker returns60/60 valid plans versus52/60 original and53/60 extra reader. Among52 shaker pairs, mean within-workload elapsed-time and EPI reductions are24.70% and13.72%, with mean nominal cost increasing CNY0.27. These are finite-budget model sensitivities, not measured savings, geometry qualification or equipment ROI.
+
+The earlier outage label is corrected here: the recorded outage window is240s; the nine valid repairs finish180s later. Original raw bytes are unchanged. Source/result SHA-256 values for this addition are in `provenance/v4-public-source-map.json`; the capacity protocol retains its recorded original v2 manifest hash and path metadata. No new prospective test-set registration is implied. The local manuscript, exported figures, videos and complete meshes are excluded from this software release.

@@ -1,0 +1,624 @@
+{
+  "suite": "formal",
+  "generated_utc": "2026-10-19T11:05:36.932419+00:00",
+  "planned_runs": 180,
+  "records": 180,
+  "budget_s": 2.0,
+  "counts_by_scenario_and_load": {
+    "baseline": {
+      "1": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 0.05358194791673062,
+        "mean_makespan_s_valid": 6699.75,
+        "mean_cost_cny_valid": 157.35166666666666
+      },
+      "3": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 0.06481884008341392,
+        "mean_makespan_s_valid": 14245.25,
+        "mean_cost_cny_valid": 424.21166666666664
+      },
+      "6": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 1.0442585000840456,
+        "mean_makespan_s_valid": 18670.583333333332,
+        "mean_cost_cny_valid": 760.6891666666667
+      },
+      "9": {
+        "runs": 12,
+        "returned": 10,
+        "valid": 10,
+        "no_return": 2,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 1.5897384203335605,
+        "mean_makespan_s_valid": 20753.6,
+        "mean_cost_cny_valid": 1197.984
+      },
+      "12": {
+        "runs": 12,
+        "returned": 6,
+        "valid": 6,
+        "no_return": 6,
+        "infeasible": 6,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 0.9291917186671222,
+        "mean_makespan_s_valid": 25589,
+        "mean_cost_cny_valid": 1575.32
+      }
+    },
+    "add_shaker": {
+      "1": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 0.01635475675084308,
+        "mean_makespan_s_valid": 6699.75,
+        "mean_cost_cny_valid": 157.35166666666666
+      },
+      "3": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 0.05416919458366465,
+        "mean_makespan_s_valid": 11864.833333333334,
+        "mean_cost_cny_valid": 424.35333333333335
+      },
+      "6": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 0.17318218391695459,
+        "mean_makespan_s_valid": 11859,
+        "mean_cost_cny_valid": 761.8625
+      },
+      "9": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 1.2881362465832353,
+        "mean_makespan_s_valid": 12004.833333333334,
+        "mean_cost_cny_valid": 1201.2825
+      },
+      "12": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 2.3731824409160254,
+        "mean_makespan_s_valid": 15881.416666666666,
+        "mean_cost_cny_valid": 1616.0491666666667
+      }
+    },
+    "add_reader": {
+      "1": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 0.014512482750130099,
+        "mean_makespan_s_valid": 6677.666666666667,
+        "mean_cost_cny_valid": 157.53
+      },
+      "3": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 0.06799717016656359,
+        "mean_makespan_s_valid": 14245.25,
+        "mean_cost_cny_valid": 424.2241666666667
+      },
+      "6": {
+        "runs": 12,
+        "returned": 12,
+        "valid": 12,
+        "no_return": 0,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 1.1300921076669208,
+        "mean_makespan_s_valid": 18706.916666666668,
+        "mean_cost_cny_valid": 761.4791666666667
+      },
+      "9": {
+        "runs": 12,
+        "returned": 11,
+        "valid": 11,
+        "no_return": 1,
+        "infeasible": 0,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 1.328856666583306,
+        "mean_makespan_s_valid": 20838.454545454544,
+        "mean_cost_cny_valid": 1200.1781818181819
+      },
+      "12": {
+        "runs": 12,
+        "returned": 6,
+        "valid": 6,
+        "no_return": 6,
+        "infeasible": 6,
+        "compiler_reject": 0,
+        "exceptions": 0,
+        "mean_wall_s": 0.8287683644991072,
+        "mean_makespan_s_valid": 25565,
+        "mean_cost_cny_valid": 1574.2266666666667
+      }
+    }
+  },
+  "counts_by_scenario": {
+    "baseline": {
+      "runs": 60,
+      "returned": 52,
+      "valid": 52,
+      "no_return": 8,
+      "infeasible": 6,
+      "compiler_reject": 0,
+      "exceptions": 0,
+      "mean_wall_s": 0.7363178854169746,
+      "mean_makespan_s_valid": 16085.711538461539,
+      "mean_cost_cny_valid": 721.8998076923077
+    },
+    "add_shaker": {
+      "runs": 60,
+      "returned": 60,
+      "valid": 60,
+      "no_return": 0,
+      "infeasible": 0,
+      "compiler_reject": 0,
+      "exceptions": 0,
+      "mean_wall_s": 0.7810049645501446,
+      "mean_makespan_s_valid": 11661.966666666667,
+      "mean_cost_cny_valid": 832.1798333333334
+    },
+    "add_reader": {
+      "runs": 60,
+      "returned": 53,
+      "valid": 53,
+      "no_return": 7,
+      "infeasible": 6,
+      "compiler_reject": 0,
+      "exceptions": 0,
+      "mean_wall_s": 0.6740453583332056,
+      "mean_makespan_s_valid": 16191.905660377359,
+      "mean_cost_cny_valid": 731.4362264150943
+    }
+  },
+  "status_counts": {
+    "baseline": {
+      "FEASIBLE": 13,
+      "INFEASIBLE": 6,
+      "OPTIMAL": 39,
+      "UNKNOWN": 2
+    },
+    "add_shaker": {
+      "FEASIBLE": 16,
+      "INFEASIBLE": 0,
+      "OPTIMAL": 44,
+      "UNKNOWN": 0
+    },
+    "add_reader": {
+      "FEASIBLE": 14,
+      "INFEASIBLE": 6,
+      "OPTIMAL": 39,
+      "UNKNOWN": 1
+    }
+  },
+  "paired_vs_baseline_jointly_valid": {
+    "add_shaker": {
+      "overall": {
+        "n_paired_valid": 52,
+        "makespan_reduction_s": {
+          "n": 52,
+          "mean": 4914.211538461538,
+          "median": 6266.5,
+          "min": 0,
+          "max": 11566
+        },
+        "cost_reduction_cny": {
+          "n": 52,
+          "mean": -0.2730769230769316,
+          "median": 0.0,
+          "min": -17.590000000000146,
+          "max": 7.320000000000164
+        },
+        "samples_per_hour_delta": {
+          "n": 52,
+          "mean": 12.331153846153846,
+          "median": 10.445,
+          "min": 0.0,
+          "max": 35.56
+        }
+      },
+      "by_load": {
+        "1": {
+          "n_paired_valid": 12,
+          "makespan_reduction_s": {
+            "n": 12,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "max": 0
+          },
+          "cost_reduction_cny": {
+            "n": 12,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "samples_per_hour_delta": {
+            "n": 12,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "3": {
+          "n_paired_valid": 12,
+          "makespan_reduction_s": {
+            "n": 12,
+            "mean": 2380.4166666666665,
+            "median": 2394.0,
+            "min": 2235,
+            "max": 2462
+          },
+          "cost_reduction_cny": {
+            "n": 12,
+            "mean": -0.14166666666666572,
+            "median": -0.03499999999999659,
+            "min": -3.230000000000018,
+            "max": 2.3899999999999864
+          },
+          "samples_per_hour_delta": {
+            "n": 12,
+            "mean": 3.0149999999999997,
+            "median": 2.8049999999999997,
+            "min": 1.2299999999999995,
+            "max": 4.890000000000001
+          }
+        },
+        "6": {
+          "n_paired_valid": 12,
+          "makespan_reduction_s": {
+            "n": 12,
+            "mean": 6811.583333333333,
+            "median": 6825.5,
+            "min": 6255,
+            "max": 7370
+          },
+          "cost_reduction_cny": {
+            "n": 12,
+            "mean": -1.1733333333333462,
+            "median": -0.10500000000001819,
+            "min": -9.129999999999995,
+            "max": 3.6399999999999864
+          },
+          "samples_per_hour_delta": {
+            "n": 12,
+            "mean": 13.797500000000001,
+            "median": 14.379999999999999,
+            "min": 9.98,
+            "max": 18.040000000000003
+          }
+        },
+        "9": {
+          "n_paired_valid": 10,
+          "makespan_reduction_s": {
+            "n": 10,
+            "mean": 8802.6,
+            "median": 8435.5,
+            "min": 8175,
+            "max": 9773
+          },
+          "cost_reduction_cny": {
+            "n": 10,
+            "mean": 2.292999999999961,
+            "median": 1.5799999999999272,
+            "min": -1.0900000000001455,
+            "max": 6.5
+          },
+          "samples_per_hour_delta": {
+            "n": 10,
+            "mean": 28.919999999999998,
+            "median": 30.29,
+            "min": 22.219999999999995,
+            "max": 35.56
+          }
+        },
+        "12": {
+          "n_paired_valid": 6,
+          "makespan_reduction_s": {
+            "n": 6,
+            "mean": 9534.833333333334,
+            "median": 10067.5,
+            "min": 5292,
+            "max": 11566
+          },
+          "cost_reduction_cny": {
+            "n": 6,
+            "mean": -3.558333333333318,
+            "median": -4.365000000000009,
+            "min": -17.590000000000146,
+            "max": 7.320000000000164
+          },
+          "samples_per_hour_delta": {
+            "n": 6,
+            "mean": 25.045,
+            "median": 23.595,
+            "min": 16.590000000000003,
+            "max": 35.34
+          }
+        }
+      }
+    },
+    "add_reader": {
+      "overall": {
+        "n_paired_valid": 52,
+        "makespan_reduction_s": {
+          "n": 52,
+          "mean": -2.673076923076923,
+          "median": 0.0,
+          "min": -400,
+          "max": 654
+        },
+        "cost_reduction_cny": {
+          "n": 52,
+          "mean": -0.505769230769243,
+          "median": -0.014999999999986358,
+          "min": -8.519999999999982,
+          "max": 11.559999999999945
+        },
+        "samples_per_hour_delta": {
+          "n": 52,
+          "mean": 0.19249999999999995,
+          "median": 0.0,
+          "min": -0.5300000000000011,
+          "max": 10.369999999999997
+        }
+      },
+      "by_load": {
+        "1": {
+          "n_paired_valid": 12,
+          "makespan_reduction_s": {
+            "n": 12,
+            "mean": 22.083333333333332,
+            "median": 0.0,
+            "min": 0,
+            "max": 265
+          },
+          "cost_reduction_cny": {
+            "n": 12,
+            "mean": -0.1783333333333322,
+            "median": 0.0,
+            "min": -2.1399999999999864,
+            "max": 0.0
+          },
+          "samples_per_hour_delta": {
+            "n": 12,
+            "mean": 0.8641666666666664,
+            "median": 0.0,
+            "min": 0.0,
+            "max": 10.369999999999997
+          }
+        },
+        "3": {
+          "n_paired_valid": 12,
+          "makespan_reduction_s": {
+            "n": 12,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "max": 0
+          },
+          "cost_reduction_cny": {
+            "n": 12,
+            "mean": -0.012499999999998105,
+            "median": -0.01999999999998181,
+            "min": -0.020000000000038654,
+            "max": 0.0
+          },
+          "samples_per_hour_delta": {
+            "n": 12,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "6": {
+          "n_paired_valid": 12,
+          "makespan_reduction_s": {
+            "n": 12,
+            "mean": -36.333333333333336,
+            "median": 0.0,
+            "min": -400,
+            "max": 4
+          },
+          "cost_reduction_cny": {
+            "n": 12,
+            "mean": -0.7900000000000205,
+            "median": -0.06999999999999318,
+            "min": -4.600000000000023,
+            "max": 5.069999999999936
+          },
+          "samples_per_hour_delta": {
+            "n": 12,
+            "mean": -0.044166666666666764,
+            "median": 0.0,
+            "min": -0.4800000000000004,
+            "max": 0.00999999999999801
+          }
+        },
+        "9": {
+          "n_paired_valid": 10,
+          "makespan_reduction_s": {
+            "n": 10,
+            "mean": -11.2,
+            "median": 0.0,
+            "min": -89,
+            "max": 24
+          },
+          "cost_reduction_cny": {
+            "n": 10,
+            "mean": -2.10900000000006,
+            "median": -2.5850000000000364,
+            "min": -6.75,
+            "max": 4.349999999999909
+          },
+          "samples_per_hour_delta": {
+            "n": 10,
+            "mean": -0.021999999999999888,
+            "median": 0.0,
+            "min": -0.1700000000000017,
+            "max": 0.03999999999999915
+          }
+        },
+        "12": {
+          "n_paired_valid": 6,
+          "makespan_reduction_s": {
+            "n": 6,
+            "mean": 24,
+            "median": 0.0,
+            "min": -284,
+            "max": 654
+          },
+          "cost_reduction_cny": {
+            "n": 6,
+            "mean": 1.0933333333333621,
+            "median": 0.8700000000000045,
+            "min": -8.519999999999982,
+            "max": 11.559999999999945
+          },
+          "samples_per_hour_delta": {
+            "n": 6,
+            "mean": 0.0650000000000001,
+            "median": 0.0,
+            "min": -0.5300000000000011,
+            "max": 1.1799999999999997
+          }
+        }
+      }
+    }
+  },
+  "newly_feasible_over_no_baseline_return": {
+    "add_shaker": {
+      "rule": "scenario valid while baseline returned no plan; baseline only called infeasible when status==INFEASIBLE",
+      "count": 8,
+      "by_load": {
+        "1": 0,
+        "3": 0,
+        "6": 0,
+        "9": 2,
+        "12": 6
+      },
+      "cases": [
+        {
+          "case": "heldout-046",
+          "load": 9,
+          "baseline_status": "UNKNOWN"
+        },
+        {
+          "case": "heldout-047",
+          "load": 9,
+          "baseline_status": "UNKNOWN"
+        },
+        {
+          "case": "heldout-051",
+          "load": 12,
+          "baseline_status": "INFEASIBLE"
+        },
+        {
+          "case": "heldout-052",
+          "load": 12,
+          "baseline_status": "INFEASIBLE"
+        },
+        {
+          "case": "heldout-053",
+          "load": 12,
+          "baseline_status": "INFEASIBLE"
+        },
+        {
+          "case": "heldout-057",
+          "load": 12,
+          "baseline_status": "INFEASIBLE"
+        },
+        {
+          "case": "heldout-058",
+          "load": 12,
+          "baseline_status": "INFEASIBLE"
+        },
+        {
+          "case": "heldout-059",
+          "load": 12,
+          "baseline_status": "INFEASIBLE"
+        }
+      ]
+    },
+    "add_reader": {
+      "rule": "scenario valid while baseline returned no plan; baseline only called infeasible when status==INFEASIBLE",
+      "count": 1,
+      "by_load": {
+        "1": 0,
+        "3": 0,
+        "6": 0,
+        "9": 1,
+        "12": 0
+      },
+      "cases": [
+        {
+          "case": "heldout-046",
+          "load": 9,
+          "baseline_status": "UNKNOWN"
+        }
+      ]
+    }
+  }
+}

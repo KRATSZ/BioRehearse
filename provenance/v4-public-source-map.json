@@ -1,0 +1,102 @@
+{
+  "scope": "software and computational data only; no manuscript or paper figure/media publication",
+  "adaptation": "none: exact v4 source/result bytes copied; recorded original machine paths in protocol metadata are provenance, not import dependencies",
+  "original_v2_manifest": "capacity protocol retains original frozen manifest hash; earlier public v2 administrative adaptations remain documented separately",
+  "files": [
+    {
+      "path": "benchmarks/v4/PROTOCOL.md",
+      "sha256": "383ac11a21a1eecb9b56b1c7c42f5f2f0e7bd16f672d8c15da9f1f4f5d258b29",
+      "bytes": 2062
+    },
+    {
+      "path": "benchmarks/v4/aggregate_economics.py",
+      "sha256": "5c2639be294c3e69c4584bffd2d803f7ca9fa18f081e09b6e8982c183e3011c7",
+      "bytes": 16360
+    },
+    {
+      "path": "benchmarks/v4/capacity_sensitivity.py",
+      "sha256": "e6a5bbb03f023fa979f2bfe19d58c5c980820d57c8fab7744a6faae97024dc47",
+      "bytes": 13593
+    },
+    {
+      "path": "benchmarks/v4/derive_reporting.py",
+      "sha256": "0a431667457c98be0a104df6977ad08b704a2930311caa385ea71bc1d59c02b7",
+      "bytes": 2974
+    },
+    {
+      "path": "benchmarks/v4/human-and-vendor-study.md",
+      "sha256": "e539d3f8fd6d3277ae75256e34221711fb73bb9e3ad9d20e5da55a72bd9f3192",
+      "bytes": 3970
+    },
+    {
+      "path": "reproducibility/README-v4.md",
+      "sha256": "536b1ebbe6aca310bff6b36d68454a539e8d24daabcd0433a5dd7351f83bdf8c",
+      "bytes": 3358
+    },
+    {
+      "path": "reproducibility/verify_v4.py",
+      "sha256": "2bb02af3093cbfbab3c14907f7a623d3598fbb9fdc677523cde9ee2d50b28b98",
+      "bytes": 3395
+    },
+    {
+      "path": "source-data/v4/capacity/paired-economics.csv",
+      "sha256": "80ef0f8e2dc8216feb985383f12a6c655e405d7b4136ce2fc943b907bcb49d93",
+      "bytes": 7110
+    },
+    {
+      "path": "source-data/v4/capacity/plans.jsonl.gz",
+      "sha256": "119d927936b40a20a6185ec16309244dce064cbbd62294998cf0eee3c8177b8c",
+      "bytes": 6238542
+    },
+    {
+      "path": "source-data/v4/capacity/protocol.json",
+      "sha256": "f525f6129114bba512824d05c1b6b803ac0dea7d34f5c99c0524835fdc708b98",
+      "bytes": 2778
+    },
+    {
+      "path": "source-data/v4/capacity/raw.jsonl",
+      "sha256": "f95f141ce9c1ab9c06bf58feb6fa9b2b91a4cefabc1baa9dd4f2dd64255d0653",
+      "bytes": 569086
+    },
+    {
+      "path": "source-data/v4/capacity/summary.json",
+      "sha256": "78e6b3818aa2af78ad21444fd3608379a87096438eaf2ff2eb88441bb79418dc",
+      "bytes": 16158
+    },
+    {
+      "path": "source-data/v4/economics/outcomes.csv",
+      "sha256": "8c289909b4bd8689a9865484fb1c86015240cb36192b91a41aba3208dbbc00e3",
+      "bytes": 88892
+    },
+    {
+      "path": "source-data/v4/economics/paired-effects.csv",
+      "sha256": "08140e10eae8b3d3ee5166c07746e625b868f26d3571359a30a4210987e9f624",
+      "bytes": 1361
+    },
+    {
+      "path": "source-data/v4/economics/recovery-scenarios.json",
+      "sha256": "d8dfec9b70b14a37733112b6620aeb97992899b5984973c93026e4fb8abe4d71",
+      "bytes": 3003
+    },
+    {
+      "path": "source-data/v4/economics/summary.json",
+      "sha256": "1b24e0b83dcdf0637963e52762de4148f2b3378a4a244860e36c57b6226a438f",
+      "bytes": 10588
+    },
+    {
+      "path": "source-data/v4/economics/utilization-summary.json",
+      "sha256": "4c30f9e824d3bfe046e0381589fd53090853762741993348fb043bdc0c747dfb",
+      "bytes": 350
+    },
+    {
+      "path": "source-data/v4/economics/utilization.csv",
+      "sha256": "ce092f945db331b2542376bdfd37fae1b89476c8f169b63c2ab50c8a8c158aae",
+      "bytes": 4831412
+    },
+    {
+      "path": "source-data/v4/economics/workload-metrics.csv",
+      "sha256": "39424507441e1a64de07fbce14116826242adf3e0277369bdfea12146519fc48",
+      "bytes": 21815
+    }
+  ]
+}
